@@ -11,7 +11,7 @@
 const siteConfig = {
   title: 'Diagrams',
   tagline: 'Diagram as Code',
-  url: 'diagrams.mingrammer.com',
+  url: 'https://diagrams.mingrammer.com',
   baseUrl: '/',
   cname: 'diagrams.mingrammer.com',
   projectName: 'diagrams',
@@ -47,7 +47,7 @@ const siteConfig = {
   cleanUrl: true,
 
   // Open Graph and Twitter card images.
-  ogImage: 'img/diagrams.png',
+  ogImage: 'img/diagrams.svg',
 
   docsSideNavCollapsible: false,
 
