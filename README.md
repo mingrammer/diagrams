@@ -1,8 +1,7 @@
-<p align="center">
-	<img src="assets/img/diagrams.png"/>
-</p>
+![diagrams logo](assets/img/diagrams.png)
 
-<h1 align="center">Diagrams</h1>
+# Diagrams
+
 **Diagram as Code**.
 
 Diagrams lets you to draw the cloud system architecture **in Python code**. It was born for **prototyping** a new system architecture design without any design tools. You can also describe or visualize the existing system architecture as well. Diagrams currently supports three major cloud providers: `AWS`, `Azure`, `GCP`.
