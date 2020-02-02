@@ -47,7 +47,7 @@ const siteConfig = {
   cleanUrl: true,
 
   // Open Graph and Twitter card images.
-  ogImage: 'img/diagrams.svg',
+  ogImage: 'img/diagrams.png',
 
   docsSideNavCollapsible: false,
 
