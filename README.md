@@ -3,20 +3,15 @@
 </p>
 
 <h1 align="center">Diagrams</h1>
-
 **Diagram as Code**.
 
-Diagrams lets you to draw the cloud system architecture **in Python code**.
+Diagrams lets you to draw the cloud system architecture **in Python code**. It was born for **prototyping** a new system architecture without any design tools. You can also describe or visualize the existing system architecture as well.
 
-It was born for **prototyping** a new system architecture without any design tools. You can also describe or visualize the existing system architecture as well.
-
-> NOTE: It does not control the actual cloud resources like cloudformation or terraform, but just for drawing the system architecutrre.
-
-**Diagram as Code** allows you to **tracking** the architecture diagram changes on any **version control** system.
+**Diagram as Code** also allows you to **tracking** the architecture diagram changes on any **version control** system.
 
 Diagrams currently supports three major cloud providers: `AWS`, `Azure`, `GCP`.
 
-> Let me know if you are using diagrams! I'll add you in showcase page. (I'm working on it!) :)
+>  NOTE: It does not control any actual cloud resources like cloudformation or terraform, but just for drawing the cloud system architecutrre diagram.
 
 ## Getting Started
 
@@ -35,6 +30,8 @@ You can find some examples in [examples](https://diagrams.mingrammer.com/docs/ex
 ## Contributing
 
 To contribute to diagram, check out [contribution guidelines](CONTRIBUTING.md).
+
+> Let me know if you are using diagrams! I'll add you in showcase page. (I'm working on it!) :)
 
 ## License
 
