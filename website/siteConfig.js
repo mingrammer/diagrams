@@ -11,9 +11,9 @@
 const siteConfig = {
   title: 'Diagrams',
   tagline: 'Diagram as Code',
-  url: 'diagrams.mingrrammer.com',
+  url: 'diagrams.mingrammer.com',
   baseUrl: '/',
-  cname: 'diagrams.mingrrammer.com',
+  cname: 'diagrams.mingrammer.com',
   projectName: 'diagrams',
   organizationName: 'mingrammer',
 
