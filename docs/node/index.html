@@ -1,0 +1,147 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Nodes · Diagrams</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="Node is a second object representing a node or system component."/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Nodes · Diagrams"/><meta property="og:type" content="website"/><meta property="og:url" content="diagrams.mingrrammer.com/"/><meta property="og:description" content="Node is a second object representing a node or system component."/><meta property="og:image" content="diagrams.mingrrammer.com/img/diagrams.svg"/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/img/diagrams.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/diagrams.ico" alt="Diagrams"/><h2 class="headerTitleWithLogo">Diagrams</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docs/installation" target="_self">Docs</a></li><li class="siteNavGroupActive"><a href="/docs/diagram" target="_self">Guides</a></li><li class=""><a href="https://github.com/mingrammer/diagrams" target="_self">GitHub</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Guides</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Getting Started</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/installation">Installation</a></li><li class="navListItem"><a class="navItem" href="/docs/examples">Examples</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Guides</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/diagram">Diagrams</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docs/node">Nodes</a></li><li class="navListItem"><a class="navItem" href="/docs/cluster">Clusters</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Nodes</h1></header><article><div><span><p>Node is a second object representing a node or system component.</p>
+<h2><a class="anchor" aria-hidden="true" id="basic"></a><a href="#basic" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Basic</h2>
+<p>Node is an abstract concept that represents a single system component object.</p>
+<p>A node object consists of three parts: <strong>provider</strong>, <strong>resource type</strong> and <strong>name</strong>. You may already have seen each part in the previous example.</p>
+<pre><code class="hljs css language-python"><span class="hljs-keyword">from</span> diagrams <span class="hljs-keyword">import</span> Diagram
+<span class="hljs-keyword">from</span> diagrams.aws.compute <span class="hljs-keyword">import</span> EC2
+
+<span class="hljs-keyword">with</span> Diagram(<span class="hljs-string">"Simple Diagram"</span>):
+    EC2(<span class="hljs-string">"web"</span>)
+</code></pre>
+<p>In above example, the <code>EC2</code> is a node of <code>compute</code> resource type which provided by <code>aws</code> provider.</p>
+<p>You can use other node objects in a similar manner like:</p>
+<pre><code class="hljs css language-python"><span class="hljs-comment"># aws resources</span>
+<span class="hljs-keyword">from</span> diagrams.aws.compute <span class="hljs-keyword">import</span> ECS, Lambda
+<span class="hljs-keyword">from</span> diagrams.aws.database <span class="hljs-keyword">import</span> RDS, ElastiCache
+<span class="hljs-keyword">from</span> diagrams.aws.network <span class="hljs-keyword">import</span> ELB, Route53, VPC
+...
+
+<span class="hljs-comment"># azure resources</span>
+<span class="hljs-keyword">from</span> diagrams.azure.compute <span class="hljs-keyword">import</span> FunctionApps
+<span class="hljs-keyword">from</span> diagrams.azure.storage <span class="hljs-keyword">import</span> BlobStorage
+...
+
+<span class="hljs-comment"># gcp resources</span>
+<span class="hljs-keyword">from</span> diagrams.gcp.compute <span class="hljs-keyword">import</span> AppEngine, GKE
+<span class="hljs-keyword">from</span> diagrams.gcp.ml <span class="hljs-keyword">import</span> AutoML 
+...
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="data-flow"></a><a href="#data-flow" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Data Flow</h2>
+<p>You can represent data flow by connecting the nodes with these operators: <code>&gt;&gt;</code>, <code>&lt;&lt;</code> and <code>-</code>.</p>
+<ul>
+<li><strong>&gt;&gt;</strong>: Connect nodes in left to right direction.</li>
+<li><strong>&lt;&lt;</strong>: Connect nodes in right to left direction.</li>
+<li><strong>-</strong>: Connect nodes in no direction. Undirected.</li>
+</ul>
+<pre><code class="hljs css language-python"><span class="hljs-keyword">from</span> diagrams <span class="hljs-keyword">import</span> Diagram
+<span class="hljs-keyword">from</span> diagrams.aws.compute <span class="hljs-keyword">import</span> EC2
+<span class="hljs-keyword">from</span> diagrams.aws.database <span class="hljs-keyword">import</span> RDS
+<span class="hljs-keyword">from</span> diagrams.aws.network <span class="hljs-keyword">import</span> ELB
+<span class="hljs-keyword">from</span> diagrams.aws.storage <span class="hljs-keyword">import</span> S3
+
+<span class="hljs-keyword">with</span> Diagram(<span class="hljs-string">"Web Services"</span>, show=<span class="hljs-literal">False</span>):
+    ELB(<span class="hljs-string">"lb"</span>) &gt;&gt; EC2(<span class="hljs-string">"web"</span>) &gt;&gt; RDS(<span class="hljs-string">"userdb"</span>) &gt;&gt; S3(<span class="hljs-string">"store"</span>)
+    ELB(<span class="hljs-string">"lb"</span>) &gt;&gt; EC2(<span class="hljs-string">"web"</span>) &gt;&gt; RDS(<span class="hljs-string">"userdb"</span>) &lt;&lt; EC2(<span class="hljs-string">"stat"</span>)
+    (ELB(<span class="hljs-string">"lb"</span>) &gt;&gt; EC2(<span class="hljs-string">"web"</span>)) - EC2(<span class="hljs-string">"web"</span>) &gt;&gt; RDS(<span class="hljs-string">"userdb"</span>)
+</code></pre>
+<blockquote>
+<p>Be careful when using the <code>-</code> and any shift operators together, which could cause unexpected results due to operator precedence.</p>
+</blockquote>
+<p><img src="/img/web_services_diagram.png" alt="web services diagram"></p>
+<blockquote>
+<p>The order of rendered diagrams is the reverse of the declaration order.</p>
+</blockquote>
+<p>You can change the data flow direction with <code>direction</code> parameter. Default is <strong>LR</strong>.</p>
+<blockquote>
+<p>(TB, BT, LR and RL) are allowed.</p>
+</blockquote>
+<pre><code class="hljs css language-python"><span class="hljs-keyword">from</span> diagrams <span class="hljs-keyword">import</span> Diagram
+<span class="hljs-keyword">from</span> diagrams.aws.compute <span class="hljs-keyword">import</span> EC2
+<span class="hljs-keyword">from</span> diagrams.aws.database <span class="hljs-keyword">import</span> RDS
+<span class="hljs-keyword">from</span> diagrams.aws.network <span class="hljs-keyword">import</span> ELB
+
+<span class="hljs-keyword">with</span> Diagram(<span class="hljs-string">"Workers"</span>, show=<span class="hljs-literal">False</span>, direction=<span class="hljs-string">"TB"</span>):
+    lb = ELB(<span class="hljs-string">"lb"</span>)
+    db = RDS(<span class="hljs-string">"events"</span>)
+    lb &gt;&gt; EC2(<span class="hljs-string">"worker1"</span>) &gt;&gt; db
+    lb &gt;&gt; EC2(<span class="hljs-string">"worker2"</span>) &gt;&gt; db
+    lb &gt;&gt; EC2(<span class="hljs-string">"worker3"</span>) &gt;&gt; db
+    lb &gt;&gt; EC2(<span class="hljs-string">"worker4"</span>) &gt;&gt; db
+    lb &gt;&gt; EC2(<span class="hljs-string">"worker5"</span>) &gt;&gt; db
+</code></pre>
+<p><img src="/img/workers_diagram.png" alt="workers diagram"></p>
+<h2><a class="anchor" aria-hidden="true" id="group-data-flow"></a><a href="#group-data-flow" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Group Data Flow</h2>
+<p>Above worker example has too many redundant flows. In this case, you can group nodes into a list so that all nodes are connected to other nodes at once.</p>
+<pre><code class="hljs css language-python"><span class="hljs-keyword">from</span> diagrams <span class="hljs-keyword">import</span> Diagram
+<span class="hljs-keyword">from</span> diagrams.aws.compute <span class="hljs-keyword">import</span> EC2
+<span class="hljs-keyword">from</span> diagrams.aws.database <span class="hljs-keyword">import</span> RDS
+<span class="hljs-keyword">from</span> diagrams.aws.network <span class="hljs-keyword">import</span> ELB
+
+<span class="hljs-keyword">with</span> Diagram(<span class="hljs-string">"Grouped Workers"</span>, show=<span class="hljs-literal">False</span>, direction=<span class="hljs-string">"TB"</span>):
+    ELB(<span class="hljs-string">"lb"</span>) &gt;&gt; [EC2(<span class="hljs-string">"worker1"</span>),
+                  EC2(<span class="hljs-string">"worker2"</span>),
+                  EC2(<span class="hljs-string">"worker3"</span>),
+                  EC2(<span class="hljs-string">"worker4"</span>),
+                  EC2(<span class="hljs-string">"worker5"</span>)] &gt;&gt; RDS(<span class="hljs-string">"events"</span>)
+</code></pre>
+<p><img src="/img/grouped_workers_diagram.png" alt="grouped workers diagram"></p>
+<blockquote>
+<p>You can't connect two <strong>lists</strong> directly because shift/arithmetic operations between lists are not allowed in Python.</p>
+</blockquote>
+</span></div></article></div><div class="docLastUpdate"><em>Last updated on 2020-2-3</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/diagram"><span class="arrow-prev">← </span><span>Diagrams</span></a><a class="docs-next button" href="/docs/cluster"><span>Clusters</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#basic">Basic</a></li><li><a href="#data-flow">Data Flow</a></li><li><a href="#group-data-flow">Group Data Flow</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/diagrams.ico" alt="Diagrams" width="66" height="58"/></a><div><h5>Docs</h5><a href="/docs/en/installation">Getting Started</a><a href="/docs/en/diagram">Guides</a></div><div><h5>More</h5><a href="https://github.com/mingrammer/diagrams">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/mingrammer/diagrams/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright">Copyright © 2020 mingrammer</section></footer></div></body></html>
