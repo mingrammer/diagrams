@@ -1,0 +1,6 @@
+{
+  "docs": {
+    "Getting Started": ["installation", "examples"],
+    "Guides": ["diagram", "node", "cluster"]
+  }
+}

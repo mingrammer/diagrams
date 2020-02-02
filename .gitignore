@@ -1,0 +1,21 @@
+# ide & editor
+.idea/
+.vscode/
+
+# compiled & binary
+*.egg-info/
+__pycache__/
+*.pyc
+*.egg-info
+
+# graphviz
+*.gv*
+
+# dist
+dist
+
+# node modules
+node_modules
+
+# trash
+.DS_Store

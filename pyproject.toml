@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "diagrams"
+version = "0.1.0"
+description = "Diagram as Code"
+license = "MIT"
+authors = ["mingrammer <mingrammer@gmail.com>"]
+readme = "README.md"
+homepage = "https://diagrams.mingrammer.com"
+repository = "https://github.com/mingrammer/diagrams"
+include = ["resources/**/*"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+graphviz = "^0.13.2"
+jinja2 = "^2.10"
+
+[tool.poetry.dev-dependencies]
+pytest = "^3.0"
+pylint = "^2.4"
+black = {version = "^18.3-alpha.0", allows-prereleases = true}
+rope = "^0.14.0"
+isort = "^4.3"
+
+[tool.black]
+line-length = 120
