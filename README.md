@@ -18,7 +18,7 @@ It uses [Graphviz](https://www.graphviz.org/) to render the diagram, so you need
 $ pip install diagrams
 ```
 
-You can start with [quick start](https://diagram.mingrammer.com/docs/installattion/#quick-start). And you can find [guides](https://diagram.mingrammer.com/diagram) for more details. 
+You can start with [quick start](https://diagrams.mingrammer.com/docs/installattion/#quick-start). And you can find [guides](https://diagrams.mingrammer.com/diagram) for more details. 
 
 ## Examples
 
