@@ -97,7 +97,7 @@ class Index extends React.Component {
         style={{textAlign: 'center'}}>
         <h2>About Diagram</h2>
         <MarkdownBlock>
-            Diagrams lets you to draw the cloud system architecture **in Python code**.
+            Diagrams lets you draw the cloud system architecture **in Python code**.
         </MarkdownBlock>
         <MarkdownBlock>
             It was born for **prototyping** a new system architecture without any design tools. You can also describe or visualize the existing system architecture as well.
