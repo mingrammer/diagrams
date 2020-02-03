@@ -35,7 +35,7 @@ You can start with [quick start](https://diagrams.mingrammer.com/docs/installati
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | ![grouped workers](https://diagrams.mingrammer.com/img/grouped_workers_diagram.png) | ![clustered web services](https://diagrams.mingrammer.com/img/clustered_web_services_diagram.png) | ![event processing](https://diagrams.mingrammer.com/img/event_processing_diagram.png) |
 
-You can find all examples in [examples](https://diagrams.mingrammer.com/docs/examples) page.
+You can find all the examples on the [examples](https://diagrams.mingrammer.com/docs/examples) page.
 
 ## Contributing
 
