@@ -8,7 +8,7 @@ Diagrams lets you draw the cloud system architecture **in Python code**. It was 
 
 **Diagram as Code** also allows you to **tracking** the architecture diagram changes on any **version control** system.
 
->  NOTE: It does not control any actual cloud resources like cloudformation or terraform, but just for drawing the cloud system architecutrre diagram.
+>  NOTE: It does not control any actual cloud resources nor generate cloud formation or terraform code, but just for drawing the cloud system architecture diagrams.
 
 ## Getting Started
 
