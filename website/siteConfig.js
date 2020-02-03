@@ -47,19 +47,13 @@ const siteConfig = {
   cleanUrl: true,
 
   // Open Graph and Twitter card images.
+  facebookComments: false,
   twitterImage: 'img/diagrams.png',
   ogImage: 'img/diagrams.png',
 
   docsSideNavCollapsible: false,
 
-  // Show documentation's last contributor's name.
-  // enableUpdateBy: true,
-
   enableUpdateTime: true,
-
-  // You may provide arbitrary config keys to be used as needed by your
-  // template. For example, if you need your repo's URL...
-  //   repoUrl: 'https://github.com/facebook/test-site',
 };
 
 module.exports = siteConfig;
