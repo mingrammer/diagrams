@@ -17,7 +17,14 @@ It uses [Graphviz](https://www.graphviz.org/) to render the diagram, so you need
 > macOS users can download the Graphviz via `brew install graphviz` if you're using [Homebrew](https://brew.sh).
 
 ```shell
+# using pip (pip3)
 $ pip install diagrams
+
+# using pipenv
+$ pipenv install diagrams
+
+# using poetry
+$ poetry add diagrams
 ```
 
 You can start with [quick start](https://diagrams.mingrammer.com/docs/installation#quick-start). And you can go [guides](https://diagrams.mingrammer.com/docs/diagram) for more details. 
