@@ -31,7 +31,7 @@ You can start with [quick start](https://diagrams.mingrammer.com/docs/installati
 
 ## Examples
 
-| Grouped Workers                                              | Stateful Architecture                                        | Event Processing                                             |
+| Grouped Workers on AWS                                       | Stateful Architecture on k8s                                 | Event Processing on AWS                                      |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | ![grouped workers](https://diagrams.mingrammer.com/img/grouped_workers_diagram.png) | ![stateful architecture](https://diagrams.mingrammer.com/img/stateful_architecture_diagram.png) | ![event processing](https://diagrams.mingrammer.com/img/event_processing_diagram.png) |
 
