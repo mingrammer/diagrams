@@ -39,6 +39,11 @@ from diagrams.azure.storage import BlobStorage
 from diagrams.gcp.compute import AppEngine, GKE
 from diagrams.gcp.ml import AutoML 
 ...
+
+# k8s resources
+from diagrams.k8s.compute import Pod, StatefulSet
+from diagrams.k8s.network import Service
+from diagrams.k8s.storage import PV, PVC, StorageClass
 ```
 
 ## Data Flow
