@@ -126,3 +126,46 @@ with Diagram("Message Collecting", show=False):
 ```
 
 ![message collecting diagram](/img/message_collecting_diagram.png)
+
+## Exposed Pod with 3 Replicas on k8s
+
+```python
+from diagrams import Diagram
+from diagrams.k8s.clusterconfig import HPA
+from diagrams.k8s.compute import Deployment, Pod, ReplicaSet
+from diagrams.k8s.network import Ingress, Service
+
+with Diagram("Exposed Pod with 3 Replicas", show=False):
+    net = Ingress("domain.com") >> Service("svc")
+    net >> [Pod("pod1"),
+            Pod("pod2"),
+            Pod("pod3")] << ReplicaSet("rs") << Deployment("dp") << HPA("hpa")
+
+```
+
+![exposed pod with 3 replicas diagram](/img/exposed_pod_with_3_replicas_diagram.png)
+
+## Stateful Architecture on k8s
+
+```python
+from diagrams import Cluster, Diagram
+from diagrams.k8s.compute import Pod, StatefulSet
+from diagrams.k8s.network import Service
+from diagrams.k8s.storage import PV, PVC, StorageClass
+
+with Diagram("Stateful Architecture", show=False):
+    with Cluster("App Cluster"):
+        svc = Service("svc")
+        sts = StatefulSet("sts")
+
+        apps = []
+        for _ in range(3):
+            pod = Pod("pod")
+            pvc = PVC("pvc")
+            pod - sts - pvc
+            apps.append(svc >> pod >> pvc)
+
+    apps << PV("pv") << StorageClass("sc")
+```
+
+![stateful architecture diagram](/img/stateful_architecture_diagram.png)

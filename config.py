@@ -10,7 +10,7 @@ DIR_APP_ROOT = "diagrams"
 DIR_RESOURCE = "resources"
 DIR_TEMPLATE = "templates"
 
-PROVIDERS = ("base", "aws", "azure", "gcp")
+PROVIDERS = ("base", "aws", "azure", "gcp", "k8s")
 
 #########################
 #  Resource Processing  #
@@ -24,7 +24,8 @@ CMD_SVG2PNG_OPTS = ("-z", "-w", "256", "-h", "256", "--export-type", "png")
 FILE_PREFIXES = {
     "aws": ("amazon-", "aws-"),
     "azure": ("azure-",),
-    "gcp": ("cloud-",)
+    "gcp": ("cloud-",),
+    "k8s": (),
 }
 
 #########################
@@ -37,6 +38,9 @@ UPPER_WORDS = {
     "aws": ("aws", "api", "ebs", "ec2", "efs", "emr", "rds", "ml", "mq", "vpc", "waf"),
     "azure": ("ad", "b2c", "ai", "api", "cdn", "ddos", "dns", "fxt", "hana", "hd", "id", "sap", "sql", "vm"),
     "gcp": ("gcp", "ai", "api", "cdn", "dns", "gke", "gpu", "ml", "nat", "os", "sdk", "sql", "tpu", "vpn"),
+    "k8s": (
+        "api", "cm", "ccm", "crb", "crd", "ds", "etcd", "hpa", "ns", "psp", "pv", "pvc", "rb", "rs", "sa", "sc", "sts",
+        "svc"),
 }
 
 # TODO: check if the classname exists
@@ -145,4 +149,46 @@ ALIASES = {
             "Storage": "GCS",
         },
     },
+    "k8s": {
+        "clusterconfig": {
+            "Limits": "LimitRange",
+            "HPA": "HorizontalPodAutoscaler",
+        },
+        "compute": {
+            "Deploy": "Deployment",
+            "DS": "DaemonSet",
+            "RS": "ReplicaSet",
+            "STS": "StatefulSet"
+        },
+        "controlplane": {
+            "API": "APIServer",
+            "CM": "ControllerManager",
+            "KProxy": "KubeProxy",
+            "Sched": "Scheduler",
+        },
+        "group": {
+            "NS": "Namespace",
+        },
+        "network": {
+            "Ep": "Endpoint",
+            "Ing": "Ingress",
+            "Netpol": "NetworkPolicy",
+            "SVC": "Service",
+        },
+        "podconfig": {
+            "CM": "ConfigMap",
+        },
+        "rbac": {
+            "CRole": "ClusterRole",
+            "CRB": "ClusterRoleBinding",
+            "RB": "RoleBinding",
+            "SA": "ServiceAccount",
+        },
+        "storage": {
+            "PV": "PersistnetVolume",
+            "PVC": "PersistentVolumeClaim",
+            "SC": "StorageClass",
+            "Vol": "Volume",
+        },
+    }
 }
