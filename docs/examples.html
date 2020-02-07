@@ -182,7 +182,7 @@
 <span class="hljs-keyword">from</span> diagrams.k8s.storage <span class="hljs-keyword">import</span> PV, PVC, StorageClass
 
 <span class="hljs-keyword">with</span> Diagram(<span class="hljs-string">"Stateful Architecture"</span>, show=<span class="hljs-literal">False</span>):
-    <span class="hljs-keyword">with</span> Cluster(<span class="hljs-string">"App Cluster"</span>):
+    <span class="hljs-keyword">with</span> Cluster(<span class="hljs-string">"Apps"</span>):
         svc = Service(<span class="hljs-string">"svc"</span>)
         sts = StatefulSet(<span class="hljs-string">"sts"</span>)
 
