@@ -16,6 +16,10 @@ class Athena(_Analytics):
     _icon = "athena.png"
 
 
+class CloudsearchSearchDocuments(_Analytics):
+    _icon = "cloudsearch-search-documents.png"
+
+
 class Cloudsearch(_Analytics):
     _icon = "cloudsearch.png"
 
@@ -28,8 +32,24 @@ class ElasticsearchService(_Analytics):
     _icon = "elasticsearch-service.png"
 
 
+class EMRCluster(_Analytics):
+    _icon = "emr-cluster.png"
+
+
+class EMRHdfsCluster(_Analytics):
+    _icon = "emr-hdfs-cluster.png"
+
+
 class EMR(_Analytics):
     _icon = "emr.png"
+
+
+class GlueCrawlers(_Analytics):
+    _icon = "glue-crawlers.png"
+
+
+class GlueDataCatalog(_Analytics):
+    _icon = "glue-data-catalog.png"
 
 
 class Glue(_Analytics):
@@ -66,6 +86,14 @@ class ManagedStreamingForKafka(_Analytics):
 
 class Quicksight(_Analytics):
     _icon = "quicksight.png"
+
+
+class RedshiftDenseComputeNode(_Analytics):
+    _icon = "redshift-dense-compute-node.png"
+
+
+class RedshiftDenseStorageNode(_Analytics):
+    _icon = "redshift-dense-storage-node.png"
 
 
 class Redshift(_Analytics):
