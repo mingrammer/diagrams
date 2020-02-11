@@ -45,4 +45,4 @@ To contribute to diagram, check out [contribution guidelines](CONTRIBUTING.md).
 
 ## License
 
-[MIT](LICENSE.md)
+[MIT](LICENSE)
