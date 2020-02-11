@@ -61,7 +61,8 @@ class Diagram:
         "width": "1.4",
         "height": "1.4",
         "labelloc": "b",
-        "imagepos": "tc",
+        # imagepos attribute is not backward compatible
+        # "imagepos": "tc",
         "imagescale": "true",
         "fontname": "Sans-Serif",
         "fontsize": "13",
@@ -252,7 +253,7 @@ class Node:
         # that label being spanned between icon image and white space.
         self.attrs = {
             "shape": "none",
-            "height": "1.7",
+            "height": "1.9",
             "image": self._load_icon(),
         } if self._icon else {}
         # fmt: on
