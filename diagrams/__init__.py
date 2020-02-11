@@ -252,7 +252,7 @@ class Node:
         # that label being spanned between icon image and white space.
         self.attrs = {
             "shape": "none",
-            "height": "1.6",
+            "height": "1.7",
             "image": self._load_icon(),
         } if self._icon else {}
         # fmt: on
