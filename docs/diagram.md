@@ -51,9 +51,9 @@ with Diagram("Simple Diagram", show=False):
     EC2("web")
 ```
 
-If you are familiar with Graphviz, you can customize the diagrams with Graphviz attribute config options.
+It allows custom Graphviz dot attributes options.
 
-> `graph_attr`, `node_attr` and `edge_attr` are allowed. Here is a [reference link](https://www.graphviz.org/doc/info/attrs.html).
+> `graph_attr`, `node_attr` and `edge_attr` are supported. Here is a [reference link](https://www.graphviz.org/doc/info/attrs.html).
 
 ```python
 from diagrams import Diagram
@@ -61,7 +61,7 @@ from diagrams.aws.compute import EC2
 
 graph_attr = {
 	"fontsize": 45,
-  "bgcolor": "transparent"
+	"bgcolor": "transparent"
 }
 
 with Diagram("Simple Diagram", show=False, graph_attr=graph_attr):
