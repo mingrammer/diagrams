@@ -95,7 +95,7 @@ class Index extends React.Component {
       <div
         className="productShowcaseSection paddingBottom"
         style={{textAlign: 'center'}}>
-        <h2>About Diagram</h2>
+        <h2>About Diagrams</h2>
         <MarkdownBlock>
             Diagrams lets you draw the cloud system architecture **in Python code**.
         </MarkdownBlock>
