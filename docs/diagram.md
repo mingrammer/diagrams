@@ -23,7 +23,7 @@ And if you run the above script with below command,
 
 ```shell
 $ python diagram.py
-``` 
+```
 
 It will generate an image file with single `EC2` node drawn as `simple_diagram.png` on your working directory, and open that created image file immediately.
 
@@ -49,5 +49,21 @@ from diagrams.aws.compute import EC2
 
 with Diagram("Simple Diagram", show=False):
     EC2("web")
-```  
- 
+```
+
+If you are familiar with Graphviz, you can customize the diagrams with Graphviz attribute config options.
+
+> `graph_attr`, `node_attr` and `edge_attr` are allowed. Here is a [reference link](https://www.graphviz.org/doc/info/attrs.html).
+
+```python
+from diagrams import Diagram
+from diagrams.aws.compute import EC2
+
+graph_attr = {
+	"fontsize": 45,
+  "bgcolor": "transparent"
+}
+
+with Diagram("Simple Diagram", show=False, graph_attr=graph_attr):
+    EC2("web")
+```
