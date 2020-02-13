@@ -76,13 +76,18 @@ class Diagram:
 
     # TODO: Label position option
     # TODO: Save directory option (filename + directory?)
-    def __init__(self, name: str = "", direction: str = "LR", outformat: str = "png", show: bool = True):
+    def __init__(self, name: str = "", direction: str = "LR",
+                    outformat: str = "png", show: bool = True,
+                    graph_attr: dict = {}, node_attr: dict = {}, edge_attr: dict = {}):
         """Diagram represents a global diagrams context.
 
         :param name: Diagram name. It will be used for output filename.
         :param direction: Data flow direction. Default is 'left to right'.
         :param outformat: Output file format. Default is 'png'.
         :param show: Open generated image after save if true, just only save otherwise.
+        :param graph_attr: Provide graph_attr dot config attributes.
+        :param node_attr: Provide node_attr dot config attributes.
+        :param edge_attr: Provide edge_attr dot config attributes.
         """
         self.name = name
 
@@ -105,6 +110,11 @@ class Diagram:
         if not self._validate_outformat(outformat):
             raise ValueError(f'"{outformat}" is not a valid output format')
         self.outformat = outformat
+
+        # Merge passed in attributes
+        self.dot.graph_attr.update(graph_attr)
+        self.dot.node_attr.update(node_attr)
+        self.dot.edge_attr.update(edge_attr)
 
         self.show = show
 
