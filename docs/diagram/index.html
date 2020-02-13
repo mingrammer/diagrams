@@ -86,16 +86,16 @@
 <span class="hljs-keyword">with</span> Diagram(<span class="hljs-string">"Simple Diagram"</span>, show=<span class="hljs-literal">False</span>):
     EC2(<span class="hljs-string">"web"</span>)
 </code></pre>
-<p>If you are familiar with Graphviz, you can customize the diagrams with Graphviz attribute config options.</p>
+<p>It allows custom Graphviz dot attributes options.</p>
 <blockquote>
-<p><code>graph_attr</code>, <code>node_attr</code> and <code>edge_attr</code> are allowed. Here is a <a href="https://www.graphviz.org/doc/info/attrs.html">reference link</a>.</p>
+<p><code>graph_attr</code>, <code>node_attr</code> and <code>edge_attr</code> are supported. Here is a <a href="https://www.graphviz.org/doc/info/attrs.html">reference link</a>.</p>
 </blockquote>
 <pre><code class="hljs css language-python"><span class="hljs-keyword">from</span> diagrams <span class="hljs-keyword">import</span> Diagram
 <span class="hljs-keyword">from</span> diagrams.aws.compute <span class="hljs-keyword">import</span> EC2
 
 graph_attr = {
     <span class="hljs-string">"fontsize"</span>: <span class="hljs-number">45</span>,
-  <span class="hljs-string">"bgcolor"</span>: <span class="hljs-string">"transparent"</span>
+    <span class="hljs-string">"bgcolor"</span>: <span class="hljs-string">"transparent"</span>
 }
 
 <span class="hljs-keyword">with</span> Diagram(<span class="hljs-string">"Simple Diagram"</span>, show=<span class="hljs-literal">False</span>, graph_attr=graph_attr):
