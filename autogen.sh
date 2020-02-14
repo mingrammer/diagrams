@@ -28,9 +28,9 @@ for pvd in "${providers[@]}"; do
   fi
 done
 
-# generate the module classes
+# generate the module classes and docs
 for pvd in "${providers[@]}"; do
-  echo "generating the modules for provider '$pvd'"
+  echo "generating the modules & docs for provider '$pvd'"
   python -m scripts.generate "$pvd"
 done
 

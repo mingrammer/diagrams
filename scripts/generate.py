@@ -5,7 +5,7 @@ from typing import Iterable
 from jinja2 import Environment, FileSystemLoader, Template
 
 import config as cfg
-from . import app_root_dir, resource_dir, template_dir
+from . import app_root_dir, doc_root_dir, resource_dir, template_dir
 
 _usage = "Usage: generate.py <aws|gcp|azure>"
 
@@ -24,6 +24,8 @@ def gen_classes(pvd: str, typ: str, paths: Iterable[str]) -> str:
     """Generate all service node classes based on resources paths with class templates."""
     tmpl = load_tmpl(cfg.TMPL_MODULE)
 
+    # TODO: extract the gen class metas for sharing
+    # TODO: independent function for generating all pvd/typ/paths pairs
     def _gen_class_meta(path: str) -> dict:
         base = os.path.splitext(path)[0]
         name = "".join([up_or_title(pvd, s) for s in base.split("-")])
@@ -34,6 +36,24 @@ def gen_classes(pvd: str, typ: str, paths: Iterable[str]) -> str:
     return tmpl.render(pvd=pvd, typ=typ, metas=metas, aliases=aliases)
 
 
+def gen_apidoc(pvd: str, typ_paths: dict) -> str:
+    tmpl = load_tmpl(cfg.TMPL_APIDOC)
+
+    # TODO: remove
+    def _gen_class_name(path: str) -> str:
+        base = os.path.splitext(path)[0]
+        name = "".join([up_or_title(pvd, s) for s in base.split("-")])
+        return name
+
+    typ_classes = {}
+    for typ, paths in typ_paths.items():
+        typ_classes[typ] = []
+        for name in map(_gen_class_name, paths):
+            alias = cfg.ALIASES[pvd].get(typ, {}).get(name)
+            typ_classes[typ].append({'name': name, 'alias': alias})
+    return tmpl.render(pvd=pvd, typ_classes=typ_classes)
+
+
 def make_module(pvd: str, typ: str, classes: str) -> None:
     """Create a module file"""
     mod_path = os.path.join(app_root_dir(pvd), f"{typ}.py")
@@ -41,13 +61,21 @@ def make_module(pvd: str, typ: str, classes: str) -> None:
         f.write(classes)
 
 
+def make_apidoc(pvd: str, content: str) -> None:
+    """Create an api documentation file"""
+    mod_path = os.path.join(doc_root_dir(), f"{pvd}.md")
+    with open(mod_path, "w+") as f:
+        f.write(content)
+
+
 def generate(pvd: str) -> None:
     """Generates a service node classes."""
+    typ_paths = {}
     for root, _, files in os.walk(resource_dir(pvd)):
         # Extract the names and paths from resources.
         files.sort()
-        pngs = filter(lambda f: f.endswith(".png"), files)
-        paths = filter(lambda f: "rounded" not in f, pngs)
+        pngs = list(filter(lambda f: f.endswith(".png"), files))
+        paths = list(filter(lambda f: "rounded" not in f, pngs))
 
         # Skip the top-root directory.
         typ = os.path.basename(root)
@@ -56,6 +84,11 @@ def generate(pvd: str) -> None:
 
         classes = gen_classes(pvd, typ, paths)
         make_module(pvd, typ, classes)
+
+        typ_paths[typ] = paths
+    # Build API documentation
+    apidoc = gen_apidoc(pvd, typ_paths)
+    make_apidoc(pvd, apidoc)
 
 
 if __name__ == "__main__":

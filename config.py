@@ -6,6 +6,7 @@
 
 APP_NAME = "diagrams"
 
+DIR_DOC_ROOT = "docs/nodes"
 DIR_APP_ROOT = "diagrams"
 DIR_RESOURCE = "resources"
 DIR_TEMPLATE = "templates"
@@ -29,6 +30,12 @@ FILE_PREFIXES = {
 }
 
 #########################
+#  Doc Auto Generation  #
+#########################
+
+TMPL_APIDOC = "apidoc.tmpl"
+
+#########################
 # Class Auto Generation #
 #########################
 
@@ -39,8 +46,9 @@ UPPER_WORDS = {
     "azure": ("ad", "b2c", "ai", "api", "cdn", "ddos", "dns", "fxt", "hana", "hd", "id", "sap", "sql", "vm"),
     "gcp": ("gcp", "ai", "api", "cdn", "dns", "gke", "gpu", "ml", "nat", "os", "sdk", "sql", "tpu", "vpn"),
     "k8s": (
-        "api", "cm", "ccm", "crb", "crd", "ds", "etcd", "hpa", "ns", "psp", "pv", "pvc", "rb", "rs", "sa", "sc", "sts",
-        "svc"),
+        "api", "cm", "ccm", "crb", "crd", "ds", "etcd", "hpa", "k8s", "ns", "psp", "pv", "pvc", "rb", "rs",
+        "sa", "sc", "sts", "svc",
+    ),
 }
 
 # TODO: check if the classname exists

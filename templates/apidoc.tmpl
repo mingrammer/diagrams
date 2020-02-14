@@ -1,0 +1,11 @@
+---
+id: {{ pvd }}
+title: {{ pvd|up_or_title(pvd) }}
+---
+
+Node classes list of {{ pvd }} provider.
+{% for typ, classes in typ_classes.items() %}
+## {{ pvd }}.{{ typ }}
+{% for class in classes %}
+- **diagrams.{{ pvd }}.{{ typ }}.{{ class['name'] }}**{% if class['alias'] %}, **{{ class['alias'] }}** (alias){% endif %}{% endfor %}
+{% endfor %}
