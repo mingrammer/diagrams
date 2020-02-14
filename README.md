@@ -27,7 +27,7 @@ $ pipenv install diagrams
 $ poetry add diagrams
 ```
 
-You can start with [quick start](https://diagrams.mingrammer.com/docs/getting-started/installation#quick-start). And you can go [guides](https://diagrams.mingrammer.com/docs/guides/diagram) for more details. 
+You can start with [quick start](https://diagrams.mingrammer.com/docs/getting-started/installation#quick-start). Check out [guides](https://diagrams.mingrammer.com/docs/guides/diagram) for more details, and you can find all available nodes list in [Here](https://diagrams.mingrammer.com/docs/nodes/aws).
 
 ## Examples
 
