@@ -9,9 +9,9 @@ from graphviz import Digraph
 
 __version__ = "0.1.0"
 
-# Global context for a diagrams and a cluster.
+# Global contexts for a diagrams and a cluster.
 #
-# Theses global contexts are for letting the clusters and nodes know
+# These global contexts are for letting the clusters and nodes know
 # where context they are belong to. So the all clusters and nodes does
 # not need to specify the current diagrams or cluster via parameters.
 __diagram = contextvars.ContextVar("diagrams")
