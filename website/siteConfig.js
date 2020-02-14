@@ -18,8 +18,9 @@ const siteConfig = {
   organizationName: 'mingrammer',
 
   headerLinks: [
-    {doc: 'installation', label: 'Docs'},
-    {doc: 'diagram', label: 'Guides'},
+    {doc: 'getting-started/installation', label: 'Docs'},
+    {doc: 'guides/diagram', label: 'Guides'},
+    {doc: 'nodes/aws', label: 'Nodes'},
     {href: 'https://github.com/mingrammer/diagrams', label: 'GitHub'},
   ],
 

@@ -5,30 +5,44 @@
     "previous": "Previous",
     "tagline": "Diagram as Code",
     "docs": {
-      "cluster": {
-        "title": "Clusters"
-      },
-      "diagram": {
-        "title": "Diagrams"
-      },
-      "examples": {
+      "getting-started/examples": {
         "title": "Examples"
       },
-      "installation": {
+      "getting-started/installation": {
         "title": "Installation"
       },
-      "node": {
+      "guides/cluster": {
+        "title": "Clusters"
+      },
+      "guides/diagram": {
+        "title": "Diagrams"
+      },
+      "guides/node": {
         "title": "Nodes"
+      },
+      "nodes/aws": {
+        "title": "AWS"
+      },
+      "nodes/azure": {
+        "title": "Azure"
+      },
+      "nodes/gcp": {
+        "title": "GCP"
+      },
+      "nodes/k8s": {
+        "title": "K8S"
       }
     },
     "links": {
       "Docs": "Docs",
       "Guides": "Guides",
+      "Nodes": "Nodes",
       "GitHub": "GitHub"
     },
     "categories": {
       "Getting Started": "Getting Started",
-      "Guides": "Guides"
+      "Guides": "Guides",
+      "Nodes": "Nodes"
     }
   },
   "pages-strings": {

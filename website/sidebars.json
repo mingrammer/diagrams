@@ -1,6 +1,19 @@
 {
   "docs": {
-    "Getting Started": ["installation", "examples"],
-    "Guides": ["diagram", "node", "cluster"]
+    "Getting Started": [
+      "getting-started/installation",
+      "getting-started/examples"
+    ],
+    "Guides": [
+      "guides/diagram",
+      "guides/node",
+      "guides/cluster"
+    ],
+    "Nodes": [
+      "nodes/aws",
+      "nodes/azure",
+      "nodes/gcp",
+      "nodes/k8s"
+    ]
   }
 }
