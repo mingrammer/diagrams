@@ -43,4 +43,4 @@ It will be saved as `web_service.png` on your working directory.
 
 ## Next
 
-See more [Examples](/docs/examples) or see [Guides](/docs/diagram) page for more details.
+See more [Examples](/docs/getting-started/examples) or see [Guides](/docs/guides/diagram) page for more details.
