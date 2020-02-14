@@ -1,0 +1,257 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>AWS · Diagrams</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="Node classes list of aws provider."/><meta name="docsearch:language" content="en"/><meta property="og:title" content="AWS · Diagrams"/><meta property="og:type" content="website"/><meta property="og:url" content="https://diagrams.mingrammer.com/"/><meta property="og:description" content="Node classes list of aws provider."/><meta property="og:image" content="https://diagrams.mingrammer.com/img/diagrams.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://diagrams.mingrammer.com/img/diagrams.png"/><link rel="shortcut icon" href="/img/diagrams.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/diagrams.ico" alt="Diagrams"/><h2 class="headerTitleWithLogo">Diagrams</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docs/getting-started/installation" target="_self">Docs</a></li><li class="siteNavGroupActive"><a href="/docs/guides/diagram" target="_self">Guides</a></li><li class="siteNavGroupActive siteNavItemActive"><a href="/docs/nodes/aws" target="_self">Nodes</a></li><li class=""><a href="https://github.com/mingrammer/diagrams" target="_self">GitHub</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Nodes</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Getting Started</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/getting-started/installation">Installation</a></li><li class="navListItem"><a class="navItem" href="/docs/getting-started/examples">Examples</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Guides</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/guides/diagram">Diagrams</a></li><li class="navListItem"><a class="navItem" href="/docs/guides/node">Nodes</a></li><li class="navListItem"><a class="navItem" href="/docs/guides/cluster">Clusters</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Nodes</h3><ul class=""><li class="navListItem navListItemActive"><a class="navItem" href="/docs/nodes/aws">AWS</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/azure">Azure</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/gcp">GCP</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/k8s">K8S</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">AWS</h1></header><article><div><span><p>Node classes list of aws provider.</p>
+<h2><a class="anchor" aria-hidden="true" id="awsdatabase"></a><a href="#awsdatabase" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>aws.database</h2>
+<ul>
+<li><strong>diagrams.aws.database.Aurora</strong></li>
+<li><strong>diagrams.aws.database.DatabaseMigrationService</strong>, <strong>DMS</strong> (alias)</li>
+<li><strong>diagrams.aws.database.Database</strong>, <strong>DB</strong> (alias)</li>
+<li><strong>diagrams.aws.database.DocumentdbMongodbCompatibility</strong>, <strong>DocumentDB</strong> (alias)</li>
+<li><strong>diagrams.aws.database.Dynamodb</strong>, <strong>DDB</strong> (alias)</li>
+<li><strong>diagrams.aws.database.Elasticache</strong>, <strong>ElastiCache</strong> (alias)</li>
+<li><strong>diagrams.aws.database.Neptune</strong></li>
+<li><strong>diagrams.aws.database.QuantumLedgerDatabaseQldb</strong>, <strong>QLDB</strong> (alias)</li>
+<li><strong>diagrams.aws.database.RDSOnVmware</strong></li>
+<li><strong>diagrams.aws.database.RDS</strong></li>
+<li><strong>diagrams.aws.database.Redshift</strong></li>
+<li><strong>diagrams.aws.database.Timestream</strong></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="awssecurity"></a><a href="#awssecurity" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>aws.security</h2>
+<ul>
+<li><strong>diagrams.aws.security.Artifact</strong></li>
+<li><strong>diagrams.aws.security.CertificateManager</strong>, <strong>ACM</strong> (alias)</li>
+<li><strong>diagrams.aws.security.CloudDirectory</strong></li>
+<li><strong>diagrams.aws.security.Cloudhsm</strong>, <strong>CloudHSM</strong> (alias)</li>
+<li><strong>diagrams.aws.security.Cognito</strong></li>
+<li><strong>diagrams.aws.security.DirectoryService</strong>, <strong>DS</strong> (alias)</li>
+<li><strong>diagrams.aws.security.FirewallManager</strong>, <strong>FMS</strong> (alias)</li>
+<li><strong>diagrams.aws.security.Guardduty</strong></li>
+<li><strong>diagrams.aws.security.IdentityAndAccessManagementIam</strong>, <strong>IAM</strong> (alias)</li>
+<li><strong>diagrams.aws.security.Inspector</strong></li>
+<li><strong>diagrams.aws.security.KeyManagementService</strong>, <strong>KMS</strong> (alias)</li>
+<li><strong>diagrams.aws.security.Macie</strong></li>
+<li><strong>diagrams.aws.security.ResourceAccessManager</strong>, <strong>RAM</strong> (alias)</li>
+<li><strong>diagrams.aws.security.SecretsManager</strong></li>
+<li><strong>diagrams.aws.security.SecurityHub</strong></li>
+<li><strong>diagrams.aws.security.SecurityIdentityAndCompliance</strong></li>
+<li><strong>diagrams.aws.security.Shield</strong></li>
+<li><strong>diagrams.aws.security.SingleSignOn</strong></li>
+<li><strong>diagrams.aws.security.WAF</strong></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="awsintegration"></a><a href="#awsintegration" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>aws.integration</h2>
+<ul>
+<li><strong>diagrams.aws.integration.ApplicationIntegration</strong></li>
+<li><strong>diagrams.aws.integration.Appsync</strong></li>
+<li><strong>diagrams.aws.integration.ConsoleMobileApplication</strong></li>
+<li><strong>diagrams.aws.integration.Eventbridge</strong></li>
+<li><strong>diagrams.aws.integration.MQ</strong></li>
+<li><strong>diagrams.aws.integration.SimpleNotificationServiceSns</strong>, <strong>SNS</strong> (alias)</li>
+<li><strong>diagrams.aws.integration.SimpleQueueServiceSqs</strong>, <strong>SQS</strong> (alias)</li>
+<li><strong>diagrams.aws.integration.StepFunctions</strong>, <strong>SF</strong> (alias)</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="awsnetwork"></a><a href="#awsnetwork" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>aws.network</h2>
+<ul>
+<li><strong>diagrams.aws.network.APIGateway</strong></li>
+<li><strong>diagrams.aws.network.AppMesh</strong></li>
+<li><strong>diagrams.aws.network.ClientVpn</strong></li>
+<li><strong>diagrams.aws.network.CloudMap</strong></li>
+<li><strong>diagrams.aws.network.Cloudfront</strong>, <strong>CF</strong> (alias)</li>
+<li><strong>diagrams.aws.network.DirectConnect</strong></li>
+<li><strong>diagrams.aws.network.ElasticLoadBalancing</strong>, <strong>ELB</strong> (alias)</li>
+<li><strong>diagrams.aws.network.GlobalAccelerator</strong>, <strong>GAX</strong> (alias)</li>
+<li><strong>diagrams.aws.network.NetworkingAndContentDelivery</strong></li>
+<li><strong>diagrams.aws.network.Privatelink</strong></li>
+<li><strong>diagrams.aws.network.Route53</strong></li>
+<li><strong>diagrams.aws.network.SiteToSiteVpn</strong></li>
+<li><strong>diagrams.aws.network.TransitGateway</strong></li>
+<li><strong>diagrams.aws.network.VPC</strong></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="awsstorage"></a><a href="#awsstorage" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>aws.storage</h2>
+<ul>
+<li><strong>diagrams.aws.storage.Backup</strong></li>
+<li><strong>diagrams.aws.storage.CloudendureDisasterRecovery</strong>, <strong>CDR</strong> (alias)</li>
+<li><strong>diagrams.aws.storage.EFSInfrequentaccessPrimaryBg</strong></li>
+<li><strong>diagrams.aws.storage.EFSStandardPrimaryBg</strong></li>
+<li><strong>diagrams.aws.storage.ElasticBlockStoreEBS</strong>, <strong>EBS</strong> (alias)</li>
+<li><strong>diagrams.aws.storage.ElasticFileSystemEFS</strong>, <strong>EFS</strong> (alias)</li>
+<li><strong>diagrams.aws.storage.FsxForLustre</strong></li>
+<li><strong>diagrams.aws.storage.FsxForWindowsFileServer</strong></li>
+<li><strong>diagrams.aws.storage.Fsx</strong>, <strong>FSx</strong> (alias)</li>
+<li><strong>diagrams.aws.storage.S3Glacier</strong></li>
+<li><strong>diagrams.aws.storage.SimpleStorageServiceS3</strong>, <strong>S3</strong> (alias)</li>
+<li><strong>diagrams.aws.storage.SnowballEdge</strong></li>
+<li><strong>diagrams.aws.storage.Snowball</strong></li>
+<li><strong>diagrams.aws.storage.Snowmobile</strong></li>
+<li><strong>diagrams.aws.storage.StorageGateway</strong></li>
+<li><strong>diagrams.aws.storage.Storage</strong></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="awsiot"></a><a href="#awsiot" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>aws.iot</h2>
+<ul>
+<li><strong>diagrams.aws.iot.Freertos</strong>, <strong>FreeRTOS</strong> (alias)</li>
+<li><strong>diagrams.aws.iot.InternetOfThings</strong></li>
+<li><strong>diagrams.aws.iot.Iot1Click</strong></li>
+<li><strong>diagrams.aws.iot.IotAnalytics</strong></li>
+<li><strong>diagrams.aws.iot.IotButton</strong></li>
+<li><strong>diagrams.aws.iot.IotCore</strong></li>
+<li><strong>diagrams.aws.iot.IotDeviceDefender</strong></li>
+<li><strong>diagrams.aws.iot.IotDeviceManagement</strong></li>
+<li><strong>diagrams.aws.iot.IotEvents</strong></li>
+<li><strong>diagrams.aws.iot.IotGreengrass</strong></li>
+<li><strong>diagrams.aws.iot.IotSitewise</strong></li>
+<li><strong>diagrams.aws.iot.IotThingsGraph</strong></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="awscompute"></a><a href="#awscompute" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>aws.compute</h2>
+<ul>
+<li><strong>diagrams.aws.compute.ApplicationAutoScaling</strong>, <strong>AutoScaling</strong> (alias)</li>
+<li><strong>diagrams.aws.compute.Batch</strong></li>
+<li><strong>diagrams.aws.compute.Compute</strong></li>
+<li><strong>diagrams.aws.compute.EC2ContainerRegistry</strong>, <strong>ECR</strong> (alias)</li>
+<li><strong>diagrams.aws.compute.EC2</strong></li>
+<li><strong>diagrams.aws.compute.ElasticBeanstalk</strong>, <strong>EB</strong> (alias)</li>
+<li><strong>diagrams.aws.compute.ElasticContainerService</strong>, <strong>ECS</strong> (alias)</li>
+<li><strong>diagrams.aws.compute.ElasticKubernetesService</strong>, <strong>EKS</strong> (alias)</li>
+<li><strong>diagrams.aws.compute.Fargate</strong></li>
+<li><strong>diagrams.aws.compute.Lambda</strong></li>
+<li><strong>diagrams.aws.compute.Lightsail</strong></li>
+<li><strong>diagrams.aws.compute.Outposts</strong></li>
+<li><strong>diagrams.aws.compute.ServerlessApplicationRepository</strong>, <strong>SAR</strong> (alias)</li>
+<li><strong>diagrams.aws.compute.ThinkboxDeadline</strong></li>
+<li><strong>diagrams.aws.compute.ThinkboxDraft</strong></li>
+<li><strong>diagrams.aws.compute.ThinkboxFrost</strong></li>
+<li><strong>diagrams.aws.compute.ThinkboxKrakatoa</strong></li>
+<li><strong>diagrams.aws.compute.ThinkboxSequoia</strong></li>
+<li><strong>diagrams.aws.compute.ThinkboxStoke</strong></li>
+<li><strong>diagrams.aws.compute.ThinkboxXmesh</strong></li>
+<li><strong>diagrams.aws.compute.VmwareCloudOnAWS</strong></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="awsdevtools"></a><a href="#awsdevtools" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>aws.devtools</h2>
+<ul>
+<li><strong>diagrams.aws.devtools.CloudDevelopmentKit</strong></li>
+<li><strong>diagrams.aws.devtools.Cloud9</strong></li>
+<li><strong>diagrams.aws.devtools.Codebuild</strong></li>
+<li><strong>diagrams.aws.devtools.Codecommit</strong></li>
+<li><strong>diagrams.aws.devtools.Codedeploy</strong></li>
+<li><strong>diagrams.aws.devtools.Codepipeline</strong></li>
+<li><strong>diagrams.aws.devtools.Codestar</strong></li>
+<li><strong>diagrams.aws.devtools.CommandLineInterface</strong>, <strong>CLI</strong> (alias)</li>
+<li><strong>diagrams.aws.devtools.DeveloperTools</strong>, <strong>DevTools</strong> (alias)</li>
+<li><strong>diagrams.aws.devtools.ToolsAndSdks</strong></li>
+<li><strong>diagrams.aws.devtools.XRay</strong></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="awsml"></a><a href="#awsml" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>aws.ml</h2>
+<ul>
+<li><strong>diagrams.aws.ml.ApacheMxnetOnAWS</strong></li>
+<li><strong>diagrams.aws.ml.Comprehend</strong></li>
+<li><strong>diagrams.aws.ml.DeepLearningAmis</strong></li>
+<li><strong>diagrams.aws.ml.DeepLearningContainers</strong>, <strong>DLC</strong> (alias)</li>
+<li><strong>diagrams.aws.ml.Deeplens</strong></li>
+<li><strong>diagrams.aws.ml.Deepracer</strong></li>
+<li><strong>diagrams.aws.ml.ElasticInference</strong></li>
+<li><strong>diagrams.aws.ml.Forecast</strong></li>
+<li><strong>diagrams.aws.ml.Lex</strong></li>
+<li><strong>diagrams.aws.ml.MachineLearning</strong></li>
+<li><strong>diagrams.aws.ml.Personalize</strong></li>
+<li><strong>diagrams.aws.ml.Polly</strong></li>
+<li><strong>diagrams.aws.ml.Rekognition</strong></li>
+<li><strong>diagrams.aws.ml.SagemakerGroundTruth</strong></li>
+<li><strong>diagrams.aws.ml.Sagemaker</strong></li>
+<li><strong>diagrams.aws.ml.TensorflowOnAWS</strong></li>
+<li><strong>diagrams.aws.ml.Textract</strong></li>
+<li><strong>diagrams.aws.ml.Transcribe</strong></li>
+<li><strong>diagrams.aws.ml.Translate</strong></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="awsmigration"></a><a href="#awsmigration" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>aws.migration</h2>
+<ul>
+<li><strong>diagrams.aws.migration.ApplicationDiscoveryService</strong>, <strong>ADS</strong> (alias)</li>
+<li><strong>diagrams.aws.migration.CloudendureMigration</strong>, <strong>CEM</strong> (alias)</li>
+<li><strong>diagrams.aws.migration.DatabaseMigrationService</strong>, <strong>DMS</strong> (alias)</li>
+<li><strong>diagrams.aws.migration.Datasync</strong></li>
+<li><strong>diagrams.aws.migration.MigrationAndTransfer</strong>, <strong>MAT</strong> (alias)</li>
+<li><strong>diagrams.aws.migration.MigrationHub</strong></li>
+<li><strong>diagrams.aws.migration.ServerMigrationService</strong>, <strong>SMS</strong> (alias)</li>
+<li><strong>diagrams.aws.migration.SnowballEdge</strong></li>
+<li><strong>diagrams.aws.migration.Snowball</strong></li>
+<li><strong>diagrams.aws.migration.Snowmobile</strong></li>
+<li><strong>diagrams.aws.migration.TransferForSftp</strong></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="awsanalytics"></a><a href="#awsanalytics" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>aws.analytics</h2>
+<ul>
+<li><strong>diagrams.aws.analytics.Analytics</strong></li>
+<li><strong>diagrams.aws.analytics.Athena</strong></li>
+<li><strong>diagrams.aws.analytics.CloudsearchSearchDocuments</strong></li>
+<li><strong>diagrams.aws.analytics.Cloudsearch</strong></li>
+<li><strong>diagrams.aws.analytics.DataPipeline</strong></li>
+<li><strong>diagrams.aws.analytics.ElasticsearchService</strong>, <strong>ES</strong> (alias)</li>
+<li><strong>diagrams.aws.analytics.EMRCluster</strong></li>
+<li><strong>diagrams.aws.analytics.EMRHdfsCluster</strong></li>
+<li><strong>diagrams.aws.analytics.EMR</strong></li>
+<li><strong>diagrams.aws.analytics.GlueCrawlers</strong></li>
+<li><strong>diagrams.aws.analytics.GlueDataCatalog</strong></li>
+<li><strong>diagrams.aws.analytics.Glue</strong></li>
+<li><strong>diagrams.aws.analytics.KinesisDataAnalytics</strong></li>
+<li><strong>diagrams.aws.analytics.KinesisDataFirehose</strong></li>
+<li><strong>diagrams.aws.analytics.KinesisDataStreams</strong></li>
+<li><strong>diagrams.aws.analytics.KinesisVideoStreams</strong></li>
+<li><strong>diagrams.aws.analytics.Kinesis</strong></li>
+<li><strong>diagrams.aws.analytics.LakeFormation</strong></li>
+<li><strong>diagrams.aws.analytics.ManagedStreamingForKafka</strong></li>
+<li><strong>diagrams.aws.analytics.Quicksight</strong></li>
+<li><strong>diagrams.aws.analytics.RedshiftDenseComputeNode</strong></li>
+<li><strong>diagrams.aws.analytics.RedshiftDenseStorageNode</strong></li>
+<li><strong>diagrams.aws.analytics.Redshift</strong></li>
+</ul>
+</span></div></article></div><div class="docLastUpdate"><em>Last updated on 2020-2-14</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/guides/cluster"><span class="arrow-prev">← </span><span>Clusters</span></a><a class="docs-next button" href="/docs/nodes/azure"><span>Azure</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#awsdatabase">aws.database</a></li><li><a href="#awssecurity">aws.security</a></li><li><a href="#awsintegration">aws.integration</a></li><li><a href="#awsnetwork">aws.network</a></li><li><a href="#awsstorage">aws.storage</a></li><li><a href="#awsiot">aws.iot</a></li><li><a href="#awscompute">aws.compute</a></li><li><a href="#awsdevtools">aws.devtools</a></li><li><a href="#awsml">aws.ml</a></li><li><a href="#awsmigration">aws.migration</a></li><li><a href="#awsanalytics">aws.analytics</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/diagrams.ico" alt="Diagrams" width="66" height="58"/></a><div><h5>Docs</h5><a href="/docs/en/installation">Getting Started</a><a href="/docs/en/diagram">Guides</a></div><div><h5>More</h5><a href="https://github.com/mingrammer/diagrams">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/mingrammer/diagrams/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright">Copyright © 2020 mingrammer</section></footer></div></body></html>
