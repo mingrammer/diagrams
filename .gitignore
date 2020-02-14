@@ -13,6 +13,7 @@ __pycache__/
 
 # dist
 dist
+website/build
 
 # node modules
 node_modules
