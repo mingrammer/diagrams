@@ -7,8 +7,6 @@ from typing import List, Union
 
 from graphviz import Digraph
 
-__version__ = "0.1.0"
-
 # Global contexts for a diagrams and a cluster.
 #
 # These global contexts are for letting the clusters and nodes know
