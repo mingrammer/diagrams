@@ -57,11 +57,20 @@ def cleaner_k8s(f):
     return f.lower()
 
 
+def cleaner_alibabacloud(f):
+    for p in cfg.FILE_PREFIXES["alibabacloud"]:
+        if f.startswith(p):
+            f = f[len(p):]
+            break
+    return f.lower()
+
+
 cleaners = {
     "aws": cleaner_aws,
     "azure": cleaner_azure,
     "gcp": cleaner_gcp,
     "k8s": cleaner_k8s,
+    "alibabacloud": cleaner_alibabacloud,
 }
 
 
