@@ -7,7 +7,7 @@ from jinja2 import Environment, FileSystemLoader, Template
 import config as cfg
 from . import app_root_dir, doc_root_dir, resource_dir, template_dir
 
-_usage = "Usage: generate.py <aws|gcp|azure>"
+_usage = "Usage: generate.py <aws|gcp|azure|alibabacloud>"
 
 
 def load_tmpl(tmpl: str) -> Template:
@@ -17,7 +17,11 @@ def load_tmpl(tmpl: str) -> Template:
 
 
 def up_or_title(pvd: str, s: str) -> str:
-    return s.upper() if s in cfg.UPPER_WORDS[pvd] else s.title()
+    if s in cfg.UPPER_WORDS.get(pvd, ()):
+        return s.upper()
+    elif s in cfg.TITLE_WORDS.get(pvd, {}):
+        return cfg.TITLE_WORDS[pvd][s]
+    return s.title()
 
 
 def gen_classes(pvd: str, typ: str, paths: Iterable[str]) -> str:

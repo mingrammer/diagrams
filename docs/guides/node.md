@@ -35,6 +35,11 @@ from diagrams.azure.compute import FunctionApps
 from diagrams.azure.storage import BlobStorage
 ...
 
+# alibaba cloud resources
+from diagrams.alibabacloud.compute import ECS
+from diagrams.alibabacloud.storage import ObjectTableStore
+...
+
 # gcp resources
 from diagrams.gcp.compute import AppEngine, GKE
 from diagrams.gcp.ml import AutoML 

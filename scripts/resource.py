@@ -57,6 +57,14 @@ def cleaner_k8s(f):
     return f.lower()
 
 
+def cleaner_alibabacloud(f):
+    for p in cfg.FILE_PREFIXES["alibabacloud"]:
+        if f.startswith(p):
+            f = f[len(p):]
+            break
+    return f.lower()
+
+
 def cleaner_oci(f):
     f = f.replace("-", "_")
     f = f.replace("_grey", "")
@@ -72,6 +80,7 @@ cleaners = {
     "azure": cleaner_azure,
     "gcp": cleaner_gcp,
     "k8s": cleaner_k8s,
+    "alibabacloud": cleaner_alibabacloud,
     "oci": cleaner_oci,
 }
 
