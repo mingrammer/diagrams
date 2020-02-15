@@ -2,6 +2,10 @@
 
 # Diagrams
 
+[![license](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
+[![pypi version](https://badge.fury.io/py/diagrams.svg)](https://badge.fury.io/py/diagrams)
+![python version](https://img.shields.io/badge/python-3.6%2C3.7-blue?logo=python)
+
 **Diagram as Code**.
 
 Diagrams lets you draw the cloud system architecture **in Python code**. It was born for **prototyping** a new system architecture design without any design tools. You can also describe or visualize the existing system architecture as well. Diagrams currently supports four major providers: `AWS`, `Azure`, `GCP` and `Kubernetes`.
