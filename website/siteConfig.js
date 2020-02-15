@@ -55,6 +55,8 @@ const siteConfig = {
   docsSideNavCollapsible: false,
 
   enableUpdateTime: true,
+
+  gaTrackingId: 'UA-84081627-3',
 };
 
 module.exports = siteConfig;
