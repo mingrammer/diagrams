@@ -51,7 +51,7 @@ from diagrams.k8s.network import Service
 from diagrams.k8s.storage import PV, PVC, StorageClass
 ...
 
-# Oracle resources
+# oracle resources
 from diagrams.oci.compute import VirtualMachine, Container
 from diagrams.oci.network import Firewall
 from diagrams.oci.storage import Filestorage, Storagegateway

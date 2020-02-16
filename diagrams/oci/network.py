@@ -32,8 +32,8 @@ class Securitylists(_Network):
     _icon = "securitylists.png"
 
 
-class Service_Gateway(_Network):
-    _icon = "service_gateway.png"
+class ServiceGateway(_Network):
+    _icon = "service-gateway.png"
 
 
 class Vcloudnetwork(_Network):

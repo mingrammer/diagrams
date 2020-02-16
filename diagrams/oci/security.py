@@ -28,8 +28,8 @@ class Groups(_Security):
     _icon = "groups.png"
 
 
-class Id_Access(_Security):
-    _icon = "id_access.png"
+class IdAccess(_Security):
+    _icon = "id-access.png"
 
 
 class Keymgmt(_Security):

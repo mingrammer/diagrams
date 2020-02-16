@@ -31,7 +31,7 @@ FILE_PREFIXES = {
     "gcp": ("cloud-",),
     "k8s": (),
     "alibabacloud": (),
-    "oci": ("OCI_",),
+    "oci": ("OCI-",),
 }
 
 #########################

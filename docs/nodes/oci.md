@@ -56,7 +56,7 @@ Node classes list of oci provider.
 - **diagrams.oci.network.Loadbalance**
 - **diagrams.oci.network.Routetable**
 - **diagrams.oci.network.Securitylists**
-- **diagrams.oci.network.Service_Gateway**
+- **diagrams.oci.network.ServiceGateway**
 - **diagrams.oci.network.Vcloudnetwork**
 
 ## oci.security
@@ -66,7 +66,7 @@ Node classes list of oci provider.
 - **diagrams.oci.security.Ddos**
 - **diagrams.oci.security.Encryption**
 - **diagrams.oci.security.Groups**
-- **diagrams.oci.security.Id_Access**
+- **diagrams.oci.security.IdAccess**
 - **diagrams.oci.security.Keymgmt**
 - **diagrams.oci.security.Ocid**
 - **diagrams.oci.security.Policies**
