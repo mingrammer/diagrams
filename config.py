@@ -11,7 +11,7 @@ DIR_APP_ROOT = "diagrams"
 DIR_RESOURCE = "resources"
 DIR_TEMPLATE = "templates"
 
-PROVIDERS = ("base", "aws", "azure", "gcp", "k8s")
+PROVIDERS = ("base", "aws", "azure", "gcp", "k8s", "alibabacloud")
 
 #########################
 #  Resource Processing  #
@@ -27,6 +27,7 @@ FILE_PREFIXES = {
     "azure": ("azure-",),
     "gcp": ("cloud-",),
     "k8s": (),
+    "alibabacloud": (),
 }
 
 #########################
@@ -48,7 +49,13 @@ UPPER_WORDS = {
     "k8s": (
         "api", "cm", "ccm", "crb", "crd", "ds", "etcd", "hpa", "k8s", "ns", "psp", "pv", "pvc", "rb", "rs",
         "sa", "sc", "sts", "svc",
-    ),
+    )
+}
+
+TITLE_WORDS = {
+    "alibabacloud": {
+        "alibabacloud": "AlibabaCloud"
+    }
 }
 
 # TODO: check if the classname exists
@@ -198,5 +205,56 @@ ALIASES = {
             "SC": "StorageClass",
             "Vol": "Volume",
         },
+    },
+    "alibabacloud": {
+        "application": {
+            "LogService": "SLS",
+            "MessageNotificationService": "MNS",
+            "PerformanceTestingService": "PTS",
+            "SmartConversationAnalysis": "SCA",
+        },
+        "compute": {
+            "AutoScaling": "ESS",
+            "ElasticComputeService": "ECS",
+            "ElasticContainerInstance": "ECI",
+            "ElasticHighPerformanceComputing": "EHPC",
+            "FunctionCompute": "FC",
+            "OperationOrchestrationService": "OOS",
+            "ResourceOrchestrationService": "ROS",
+            "ServerLoadBalancer": "SLB",
+            "ServerlessAppEngine": "SAE",
+            "SimpleApplicationServer": "SAS",
+            "WebAppService": "WAS",
+        },
+        "database": {
+            "DataManagementService": "DMS",
+            "DataTransmissionService": "DTS",
+            "DatabaseBackupService": "DBS",
+            "DisributeRelationalDatabaseService": "DRDS",
+            "GraphDatabaseService": "GDS",
+            "RelationalDatabaseService": "RDS",
+        },
+        "network": {
+            "CloudEnterpriseNetwork": "CEN",
+            "ElasticIpAddress": "EIP",
+            "ServerLoadBalancer": "SLB",
+            "VirtualPrivateCloud": "VPC",
+        },
+        "security": {
+            "AntiBotService": "ABS",
+            "AntifraudService": "AS",
+            "CloudFirewall": "CFW",
+            "ContentModeration": "CM",
+            "DataEncryptionService": "DES",
+            "WebApplicationFirewall": "WAF",
+        },
+        "storage": {
+            "FileStorageHdfs": "HDFS",
+            "FileStorageNas": "NAS",
+            "HybridBackupRecovery": "HBR",
+            "HybridCloudDisasterRecovery": "HDR",
+            "ObjectStorageService": "OSS",
+            "ObjectTableStore": "OTS",
+        }
     }
 }
