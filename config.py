@@ -11,7 +11,7 @@ DIR_APP_ROOT = "diagrams"
 DIR_RESOURCE = "resources"
 DIR_TEMPLATE = "templates"
 
-PROVIDERS = ("base", "aws", "azure", "gcp", "k8s")
+PROVIDERS = ("base", "aws", "azure", "gcp", "k8s", "oci")
 
 #########################
 #  Resource Processing  #
@@ -21,12 +21,16 @@ CMD_ROUND = "round"
 CMD_ROUND_OPTS = ("-w",)
 CMD_SVG2PNG = "inkscape"
 CMD_SVG2PNG_OPTS = ("-z", "-w", "256", "-h", "256", "--export-type", "png")
+CMD_SVG2PNG_IM = "convert"
+CMD_SVG2PNG_IM_OPTS = ("-shave", "25%x25%", "-resize", "256x256!")
+
 
 FILE_PREFIXES = {
     "aws": ("amazon-", "aws-"),
     "azure": ("azure-",),
     "gcp": ("cloud-",),
     "k8s": (),
+    "oci": ("OCI_",),
 }
 
 #########################
@@ -49,6 +53,7 @@ UPPER_WORDS = {
         "api", "cm", "ccm", "crb", "crd", "ds", "etcd", "hpa", "k8s", "ns", "psp", "pv", "pvc", "rb", "rs",
         "sa", "sc", "sts", "svc",
     ),
+    "oci": ("oci",),
 }
 
 # TODO: check if the classname exists
@@ -197,6 +202,12 @@ ALIASES = {
             "PVC": "PersistentVolumeClaim",
             "SC": "StorageClass",
             "Vol": "Volume",
+        },
+    },
+    "oci": {
+        "compute": {
+            "Vm": "VirtualMachine",
+            "Bm": "BareMetal"
         },
     }
 }

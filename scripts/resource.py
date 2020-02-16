@@ -57,11 +57,22 @@ def cleaner_k8s(f):
     return f.lower()
 
 
+def cleaner_oci(f):
+    f = f.replace("-", "_")
+    f = f.replace("_grey", "")
+    for p in cfg.FILE_PREFIXES["oci"]:
+        if f.startswith(p):
+            f = f[len(p) :]
+            break
+    return f.lower()
+
+
 cleaners = {
     "aws": cleaner_aws,
     "azure": cleaner_azure,
     "gcp": cleaner_gcp,
     "k8s": cleaner_k8s,
+    "oci": cleaner_oci,
 }
 
 
@@ -105,11 +116,26 @@ def svg2png(pvd: str) -> None:
         [_convert(root, path) for path in svgs]
 
 
+def svg2png2(pvd: str) -> None:
+    """Convert the svg into png using image magick"""
+
+    def _convert(base: str, path: str):
+        path_src = os.path.join(base, path)
+        path_dest = path_src.replace(".svg", ".png")
+        subprocess.call([cfg.CMD_SVG2PNG_IM, *cfg.CMD_SVG2PNG_IM_OPTS, path_src, path_dest])
+        subprocess.call(['rm', path_src])
+
+    for root, _, files in os.walk(resource_dir(pvd)):
+        svgs = filter(lambda f: f.endswith(".svg"), files)
+        [_convert(root, path) for path in svgs]
+
+
 # fmt: off
 commands = {
     "clean": clean_png,
     "round": round_png,
     "svg2png": svg2png,
+    "svg2png2": svg2png2,
 }
 # fmt: on
 
