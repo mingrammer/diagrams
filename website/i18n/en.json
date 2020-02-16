@@ -20,6 +20,9 @@
       "guides/node": {
         "title": "Nodes"
       },
+      "nodes/alibabacloud": {
+        "title": "AlibabaCloud"
+      },
       "nodes/aws": {
         "title": "AWS"
       },

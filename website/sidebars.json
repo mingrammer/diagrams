@@ -13,7 +13,8 @@
       "nodes/aws",
       "nodes/azure",
       "nodes/gcp",
-      "nodes/k8s"
+      "nodes/k8s",
+      "nodes/alibabacloud"
     ]
   }
 }
