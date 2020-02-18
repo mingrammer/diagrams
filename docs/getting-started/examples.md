@@ -169,3 +169,19 @@ with Diagram("Stateful Architecture", show=False):
 ```
 
 ![stateful architecture diagram](/img/stateful_architecture_diagram.png)
+
+## Using Custom Images
+
+```python
+from diagrams import Diagram
+from diagrams.custom import Custom
+from diagrams.k8s.compute import Pod
+
+with Diagram("Custom Node Example", show=False):
+    pod = Pod("pod")
+    node = Custom("service", "/img/diagrams.png")
+
+    node >> pod
+````
+
+![custom node diagram](/img/custom_node_example_diagram.png)
