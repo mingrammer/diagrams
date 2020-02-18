@@ -74,9 +74,16 @@ class Diagram:
 
     # TODO: Label position option
     # TODO: Save directory option (filename + directory?)
-    def __init__(self, name: str = "", direction: str = "LR",
-                    outformat: str = "png", show: bool = True,
-                    graph_attr: dict = {}, node_attr: dict = {}, edge_attr: dict = {}):
+    def __init__(
+        self,
+        name: str = "",
+        direction: str = "LR",
+        outformat: str = "png",
+        show: bool = True,
+        graph_attr: dict = {},
+        node_attr: dict = {},
+        edge_attr: dict = {},
+    ):
         """Diagram represents a global diagrams context.
 
         :param name: Diagram name. It will be used for output filename.
