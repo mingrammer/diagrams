@@ -14,7 +14,8 @@
       "nodes/azure",
       "nodes/gcp",
       "nodes/k8s",
-      "nodes/alibabacloud"
+      "nodes/alibabacloud",
+      "nodes/oci"
     ]
   }
 }
