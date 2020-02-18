@@ -106,7 +106,7 @@ class Index extends React.Component {
             `Diagram as Code` allows you to **tracking** the architecture diagram changes on any **version control** system.
         </MarkdownBlock>
         <MarkdownBlock>
-            Diagrams currently supports four major providers: `AWS`, `Azure`, `GCP`, `Kubernetes` and `Alibaba Cloud`.
+            Diagrams currently supports four major providers: `AWS`, `Azure`, `GCP`, `Kubernetes`, `Alibaba Cloud` and `Oracle Cloud`.
         </MarkdownBlock>
       </div>
     );

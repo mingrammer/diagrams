@@ -11,7 +11,7 @@ DIR_APP_ROOT = "diagrams"
 DIR_RESOURCE = "resources"
 DIR_TEMPLATE = "templates"
 
-PROVIDERS = ("base", "aws", "azure", "gcp", "k8s", "alibabacloud")
+PROVIDERS = ("base", "aws", "azure", "gcp", "k8s", "alibabacloud", "oci")
 
 #########################
 #  Resource Processing  #
@@ -21,6 +21,9 @@ CMD_ROUND = "round"
 CMD_ROUND_OPTS = ("-w",)
 CMD_SVG2PNG = "inkscape"
 CMD_SVG2PNG_OPTS = ("-z", "-w", "256", "-h", "256", "--export-type", "png")
+CMD_SVG2PNG_IM = "convert"
+CMD_SVG2PNG_IM_OPTS = ("-shave", "25%x25%", "-resize", "256x256!")
+
 
 FILE_PREFIXES = {
     "aws": ("amazon-", "aws-"),
@@ -28,6 +31,7 @@ FILE_PREFIXES = {
     "gcp": ("cloud-",),
     "k8s": (),
     "alibabacloud": (),
+    "oci": ("OCI-",),
 }
 
 #########################
@@ -49,7 +53,8 @@ UPPER_WORDS = {
     "k8s": (
         "api", "cm", "ccm", "crb", "crd", "ds", "etcd", "hpa", "k8s", "ns", "psp", "pv", "pvc", "rb", "rs",
         "sa", "sc", "sts", "svc",
-    )
+    ),
+    "oci": ("oci",),
 }
 
 TITLE_WORDS = {
@@ -256,5 +261,11 @@ ALIASES = {
             "ObjectStorageService": "OSS",
             "ObjectTableStore": "OTS",
         }
+    },
+    "oci": {
+        "compute": {
+            "Vm": "VirtualMachine",
+            "Bm": "BareMetal"
+        },
     }
 }

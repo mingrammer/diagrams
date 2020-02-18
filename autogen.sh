@@ -2,22 +2,33 @@
 app_root_dir="diagrams"
 
 # NOTE: azure icon set is not latest version
-providers=("aws" "azure" "gcp" "k8s" "alibabacloud")
+providers=("aws" "azure" "gcp" "k8s" "alibabacloud" "oci")
 
 if ! [ -x "$(command -v round)" ]; then
   echo 'round is not installed'
+  exit 1
 fi
 
 if ! [ -x "$(command -v inkscape)" ]; then
   echo 'inkscape is not installed'
+  exit 1
+fi
+
+if ! [ -x "$(command -v convert)" ]; then
+  echo 'image magick is not installed'
+  exit 1
 fi
 
 # preprocess the resources
 for pvd in "${providers[@]}"; do
   # convert the svg to png for azure provider
   if [ "$pvd" = "azure" ]; then
-    echo "converting the svg to png for provider '$pvd'"
+    echo "converting the svg to png using inkscape for provider '$pvd'"
     python -m scripts.resource svg2png "$pvd"
+  fi
+  if [ "$pvd" == "oci" ]; then
+    echo "converting the svg to png using image magick for provider '$pvd'"
+    python -m scripts.resource svg2png2 "$pvd"
   fi
   echo "cleaning the resource names for provider '$pvd'"
   python -m scripts.resource clean "$pvd"

@@ -34,6 +34,9 @@
       },
       "nodes/k8s": {
         "title": "K8S"
+      },
+      "nodes/oci": {
+        "title": "Oracle Cloud"
       }
     },
     "links": {
