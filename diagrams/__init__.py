@@ -77,6 +77,7 @@ class Diagram:
     def __init__(
         self,
         name: str = "",
+        filename: str = "",
         direction: str = "LR",
         outformat: str = "png",
         show: bool = True,
@@ -86,7 +87,10 @@ class Diagram:
     ):
         """Diagram represents a global diagrams context.
 
-        :param name: Diagram name. It will be used for output filename.
+        :param name: Diagram name. It will be used for output filename if the
+            filename isn't given.
+        :param filename: The output filename, without the extension (.png).
+            If not given, it will be generated from the name.
         :param direction: Data flow direction. Default is 'left to right'.
         :param outformat: Output file format. Default is 'png'.
         :param show: Open generated image after save if true, just only save otherwise.
@@ -96,7 +100,9 @@ class Diagram:
         """
         self.name = name
 
-        self.filename = "_".join(self.name.split()).lower()
+        if not filename:
+            filename = "_".join(self.name.split()).lower()
+        self.filename = filename
         self.dot = Digraph(self.name, filename=self.filename)
 
         # Set attributes.

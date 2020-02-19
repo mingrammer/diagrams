@@ -73,6 +73,18 @@ class DiagramTest(unittest.TestCase):
             self.assertEqual(nodes >> node1, node1)
             self.assertEqual(nodes << node1, node1)
 
+    def test_default_filename(self):
+        self.name = "example_1"
+        with Diagram(name="Example 1", show=False):
+            Node("node1")
+        self.assertTrue(os.path.exists(f"{self.name}.png"))
+
+    def test_custom_filename(self):
+        self.name = "my_custom_name"
+        with Diagram(name="Example 1", filename=self.name, show=False):
+            Node("node1")
+        self.assertTrue(os.path.exists(f"{self.name}.png"))
+
 
 class ClusterTest(unittest.TestCase):
     def setUp(self):
