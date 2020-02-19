@@ -170,18 +170,33 @@ with Diagram("Stateful Architecture", show=False):
 
 ![stateful architecture diagram](/img/stateful_architecture_diagram.png)
 
-## Using Custom Images
+## RabbitMQ Consumers with custom nodes
 
 ```python
-from diagrams import Diagram
+from urllib.request import urlretrieve
+
+from diagrams import Cluster, Diagram
 from diagrams.custom import Custom
+from diagrams.aws.database import Aurora
 from diagrams.k8s.compute import Pod
 
-with Diagram("Custom Node Example", show=False):
-    pod = Pod("pod")
-    node = Custom("service", "/img/diagrams.png")
+# Download an image to be used into a Custom Node class
+rabbitMQ_url = "https://jpadilla.github.io/rabbitmqapp/assets/img/icon.png"
+rabbitMQ_icon = "rabbitmq.png"
+urlretrieve(rabbitMQ_url, rabbitMQ_icon)
 
-    node >> pod
+
+with Diagram("Broker Consumers", show=False):
+    with Cluster("Consumers"):
+        consumers = [
+            Pod("worker"),
+            Pod("worker"),
+            Pod("worker")
+        ]
+
+    queue = Custom("Message queue", rabbitMQ_icon)
+
+    queue >> consumers >> Aurora("Database")
 ````
 
-![custom node diagram](/img/custom_node_example_diagram.png)
+![rabbitmq consumers diagram](/img/rabbitmq_consumers_diagram.png)
