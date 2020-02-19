@@ -41,6 +41,16 @@ with Diagram("Simple Diagram", outformat="jpg"):
     EC2("web")
 ```
 
+You can specify the output filename with `filename` parameter. The extension shouldn't be included, it's determined by the `outformat` parameter.
+
+```python
+from diagrams import Diagram
+from diagrams.aws.compute import EC2
+
+with Diagram("Simple Diagram", filename="my_diagram"):
+    EC2("web")
+```
+
 You can also disable the automatic file opening by setting the `show` parameter as **false**. Default is **true**.
 
 ```python
