@@ -181,9 +181,9 @@ from diagrams.aws.database import Aurora
 from diagrams.k8s.compute import Pod
 
 # Download an image to be used into a Custom Node class
-rabbitMQ_url = "https://jpadilla.github.io/rabbitmqapp/assets/img/icon.png"
-rabbitMQ_icon = "rabbitmq.png"
-urlretrieve(rabbitMQ_url, rabbitMQ_icon)
+rabbitmq_url = "https://jpadilla.github.io/rabbitmqapp/assets/img/icon.png"
+rabbitmq_icon = "rabbitmq.png"
+urlretrieve(rabbitmq_url, rabbitmq_icon)
 
 
 with Diagram("Broker Consumers", show=False):
@@ -194,7 +194,7 @@ with Diagram("Broker Consumers", show=False):
             Pod("worker")
         ]
 
-    queue = Custom("Message queue", rabbitMQ_icon)
+    queue = Custom("Message queue", rabbitmq_icon)
 
     queue >> consumers >> Aurora("Database")
 ````
