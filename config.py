@@ -108,7 +108,7 @@ ALIASES = {
             "DeepLearningContainers": "DLC",
         },
         "network": {
-            "Cloudfront": "CF",
+            "CloudFront": "CF",
             "ElasticLoadBalancing": "ELB",
             "GlobalAccelerator": "GAX",
         },
