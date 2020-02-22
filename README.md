@@ -41,9 +41,9 @@ You can start with [quick start](https://diagrams.mingrammer.com/docs/getting-st
 
 ## Examples
 
-| Grouped Workers on AWS                                       | Stateful Architecture on k8s                                 | Event Processing on AWS                                      |
+| Event Processing on AWS                                      | Stateful Architecture on k8s                                 | On-Premise System Architecture                               |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![grouped workers](https://diagrams.mingrammer.com/img/grouped_workers_diagram.png) | ![stateful architecture](https://diagrams.mingrammer.com/img/stateful_architecture_diagram.png) | ![event processing](https://diagrams.mingrammer.com/img/event_processing_diagram.png) |
+| ![event processing](https://diagrams.mingrammer.com/img/event_processing_diagram.png) | ![stateful architecture](https://diagrams.mingrammer.com/img/stateful_architecture_diagram.png) | ![on-premise system architecture diagram](https://diagrams.mingrammer.com/img/on-premise_system_architecture.png) |
 
 You can find all the examples on the [examples](https://diagrams.mingrammer.com/docs/getting-started/examples) page.
 
