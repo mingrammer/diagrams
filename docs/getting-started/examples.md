@@ -201,7 +201,7 @@ with Diagram("Broker Consumers", show=False):
 
 ![rabbitmq consumers diagram](/img/rabbitmq_consumers_diagram.png)
 
-## On-Premise System Architecture
+## Advanced Web Service with On-Premise
 
 ```python
 from diagrams import Cluster, Diagram
