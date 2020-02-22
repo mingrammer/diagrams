@@ -5,16 +5,17 @@
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 [![pypi version](https://badge.fury.io/py/diagrams.svg)](https://badge.fury.io/py/diagrams)
 ![python version](https://img.shields.io/badge/python-3.6%2C3.7%2C3.8-blue?logo=python)
+![on premise provider](https://img.shields.io/badge/provider-OnPremise-orange?color=5f87bf)
 ![aws provider](https://img.shields.io/badge/provider-AWS-orange?logo=amazon-aws&color=ff9900)
 ![azure provider](https://img.shields.io/badge/provider-Azure-orange?logo=microsoft-azure&color=0089d6)
 ![gcp provider](https://img.shields.io/badge/provider-GCP-orange?logo=google-cloud&color=4285f4)
 ![kubernetes provider](https://img.shields.io/badge/provider-Kubernetes-orange?logo=kubernetes&color=326ce5)
 ![alibaba cloud provider](https://img.shields.io/badge/provider-AlibabaCloud-orange)
-![oracle cloud provider](https://img.shields.io/badge/provider-OracleCloud-orange?logo=oraclecolor=f80000)
+![oracle cloud provider](https://img.shields.io/badge/provider-OracleCloud-orange?logo=oracle&color=f80000)
 
 **Diagram as Code**.
 
-Diagrams lets you draw the cloud system architecture **in Python code**. It was born for **prototyping** a new system architecture design without any design tools. You can also describe or visualize the existing system architecture as well. Diagrams currently supports six major providers: `AWS`, `Azure`, `GCP`, `Kubernetes`, `Alibaba Cloud` and `Oracle Cloud`.
+Diagrams lets you draw the cloud system architecture **in Python code**. It was born for **prototyping** a new system architecture design without any design tools. You can also describe or visualize the existing system architecture as well. Diagrams currently supports six major providers: `AWS`, `Azure`, `GCP`, `Kubernetes`, `Alibaba Cloud` and `Oracle Cloud`.  It now also supports `On-Premise` nodes.
 
 **Diagram as Code** also allows you to **tracking** the architecture diagram changes on any **version control** system.
 
