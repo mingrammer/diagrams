@@ -239,42 +239,35 @@ urlretrieve(rabbitmq_url, rabbitmq_icon)
 <span class="hljs-keyword">from</span> diagrams.onprem.inmemory <span class="hljs-keyword">import</span> Redis
 <span class="hljs-keyword">from</span> diagrams.onprem.logging <span class="hljs-keyword">import</span> Fluentd
 <span class="hljs-keyword">from</span> diagrams.onprem.monitoring <span class="hljs-keyword">import</span> Grafana, Prometheus
-<span class="hljs-keyword">from</span> diagrams.onprem.network <span class="hljs-keyword">import</span> Linkerd, Nginx
+<span class="hljs-keyword">from</span> diagrams.onprem.network <span class="hljs-keyword">import</span> Nginx
 <span class="hljs-keyword">from</span> diagrams.onprem.queue <span class="hljs-keyword">import</span> Kafka
-<span class="hljs-keyword">from</span> diagrams.onprem.workflow <span class="hljs-keyword">import</span> Airflow
 
 <span class="hljs-keyword">with</span> Diagram(<span class="hljs-string">"On-Premise System Architecture"</span>, show=<span class="hljs-literal">False</span>):
     ingress = Nginx(<span class="hljs-string">"ingress"</span>)
 
+    metrics = Prometheus(<span class="hljs-string">"metric"</span>)
+    metrics &lt;&lt; Grafana(<span class="hljs-string">"monitoring"</span>)
+
     <span class="hljs-keyword">with</span> Cluster(<span class="hljs-string">"Service Cluster"</span>):
-        svcmesh = Linkerd(<span class="hljs-string">"svcmesh"</span>)
-        grpcsvc = [Server(<span class="hljs-string">"grpc1"</span>), Server(<span class="hljs-string">"grpc2"</span>), Server(<span class="hljs-string">"grpc3"</span>)]
-        svcmesh &gt;&gt; grpcsvc
-
-    <span class="hljs-keyword">with</span> Cluster(<span class="hljs-string">"Database HA"</span>):
-        maindb_master = PostgreSQL(<span class="hljs-string">"maindb"</span>)
-        maindb_replica = PostgreSQL(<span class="hljs-string">"replica"</span>)
-        maindb_master - maindb_replica
-        grpcsvc &gt;&gt; maindb_master
-
-    maindb_replica &gt;&gt; Airflow(<span class="hljs-string">"scheduler"</span>)
+        grpcsvc = [
+            Server(<span class="hljs-string">"grpc1"</span>),
+            Server(<span class="hljs-string">"grpc2"</span>),
+            Server(<span class="hljs-string">"grpc3"</span>)]
 
     <span class="hljs-keyword">with</span> Cluster(<span class="hljs-string">"Sessions HA"</span>):
-        session_master = Redis(<span class="hljs-string">"session"</span>)
-        session_master - Redis(<span class="hljs-string">"replica"</span>)
-        grpcsvc &gt;&gt; session_master
+        master = Redis(<span class="hljs-string">"session"</span>)
+        master - Redis(<span class="hljs-string">"replica"</span>) &lt;&lt; metrics
+        grpcsvc &gt;&gt; master
 
-    logaggr = Fluentd(<span class="hljs-string">"aggregator"</span>)
-    logaggr &gt;&gt; Kafka(<span class="hljs-string">"stream"</span>) &gt;&gt; Spark(<span class="hljs-string">"log analytics"</span>)
-    grpcsvc &gt;&gt; logaggr
+    <span class="hljs-keyword">with</span> Cluster(<span class="hljs-string">"Database HA"</span>):
+        master = PostgreSQL(<span class="hljs-string">"users"</span>)
+        master - PostgreSQL(<span class="hljs-string">"slave"</span>) &lt;&lt; metrics
+        grpcsvc &gt;&gt; master
 
-    metricq = Kafka(<span class="hljs-string">"buffer"</span>)
-    metricq &gt;&gt; Prometheus(<span class="hljs-string">"metric"</span>) &gt;&gt; Grafana(<span class="hljs-string">"monitoring"</span>)
+    aggregator = Fluentd(<span class="hljs-string">"logging"</span>)
+    aggregator &gt;&gt; Kafka(<span class="hljs-string">"stream"</span>) &gt;&gt; Spark(<span class="hljs-string">"analytics"</span>)
 
-    logaggr &gt;&gt; metricq
-    svcmesh &gt;&gt; metricq
-
-    ingress &gt;&gt; svcmesh
+    ingress &gt;&gt; grpcsvc &gt;&gt; aggregator
 </code></pre>
 <p><img src="/img/on-premise_system_architecture.png" alt="on-premise system architecture diagram"></p>
 </span></div></article></div><div class="docLastUpdate"><em>Last updated on 2020-2-23</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/getting-started/installation"><span class="arrow-prev">← </span><span>Installation</span></a><a class="docs-next button" href="/docs/guides/diagram"><span>Diagrams</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#grouped-workers">Grouped Workers</a></li><li><a href="#clustered-web-services">Clustered Web Services</a></li><li><a href="#event-processing">Event Processing</a></li><li><a href="#message-collecting-system">Message Collecting System</a></li><li><a href="#exposed-pod-with-3-replicas-on-k8s">Exposed Pod with 3 Replicas on k8s</a></li><li><a href="#stateful-architecture-on-k8s">Stateful Architecture on k8s</a></li><li><a href="#rabbitmq-consumers-with-custom-nodes">RabbitMQ Consumers with custom nodes</a></li><li><a href="#on-premise-system-architecture">On-Premise System Architecture</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/diagrams.ico" alt="Diagrams" width="66" height="58"/></a><div><h5>Docs</h5><a href="/docs/getting-started/installation">Getting Started</a><a href="/docs/guides/diagram">Guides</a><a href="/docs/nodes/aws">Nodes</a></div><div><h5>More</h5><a href="https://github.com/mingrammer/diagrams">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/mingrammer/diagrams/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright">Copyright © 2020 mingrammer</section></footer></div></body></html>
