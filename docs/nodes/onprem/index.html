@@ -1,0 +1,162 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>OnPrem · Diagrams</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="Node classes list of onprem provider."/><meta name="docsearch:language" content="en"/><meta property="og:title" content="OnPrem · Diagrams"/><meta property="og:type" content="website"/><meta property="og:url" content="https://diagrams.mingrammer.com/"/><meta property="og:description" content="Node classes list of onprem provider."/><meta property="og:image" content="https://diagrams.mingrammer.com/img/diagrams.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://diagrams.mingrammer.com/img/diagrams.png"/><link rel="shortcut icon" href="/img/diagrams.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script>
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+              ga('create', 'UA-84081627-3', 'auto');
+              ga('send', 'pageview');
+            </script><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/diagrams.ico" alt="Diagrams"/><h2 class="headerTitleWithLogo">Diagrams</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docs/getting-started/installation" target="_self">Docs</a></li><li class="siteNavGroupActive"><a href="/docs/guides/diagram" target="_self">Guides</a></li><li class="siteNavGroupActive"><a href="/docs/nodes/aws" target="_self">Nodes</a></li><li class=""><a href="https://github.com/mingrammer/diagrams" target="_self">GitHub</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Nodes</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Getting Started</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/getting-started/installation">Installation</a></li><li class="navListItem"><a class="navItem" href="/docs/getting-started/examples">Examples</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Guides</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/guides/diagram">Diagrams</a></li><li class="navListItem"><a class="navItem" href="/docs/guides/node">Nodes</a></li><li class="navListItem"><a class="navItem" href="/docs/guides/cluster">Clusters</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Nodes</h3><ul class=""><li class="navListItem navListItemActive"><a class="navItem" href="/docs/nodes/onprem">OnPrem</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/aws">AWS</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/azure">Azure</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/gcp">GCP</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/k8s">K8S</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/alibabacloud">AlibabaCloud</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/oci">OCI</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">OnPrem</h1></header><article><div><span><p>Node classes list of onprem provider.</p>
+<h2><a class="anchor" aria-hidden="true" id="onpremdatabase"></a><a href="#onpremdatabase" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>onprem.database</h2>
+<ul>
+<li><strong>diagrams.onprem.database.Cassandra</strong></li>
+<li><strong>diagrams.onprem.database.Cockroachdb</strong>, <strong>CockroachDB</strong> (alias)</li>
+<li><strong>diagrams.onprem.database.Couchdb</strong>, <strong>CouchDB</strong> (alias)</li>
+<li><strong>diagrams.onprem.database.Hbase</strong>, <strong>HBase</strong> (alias)</li>
+<li><strong>diagrams.onprem.database.Influxdb</strong>, <strong>InfluxDB</strong> (alias)</li>
+<li><strong>diagrams.onprem.database.Mariadb</strong>, <strong>MariaDB</strong> (alias)</li>
+<li><strong>diagrams.onprem.database.Mongodb</strong>, <strong>MongoDB</strong> (alias)</li>
+<li><strong>diagrams.onprem.database.Mssql</strong>, <strong>MSSQL</strong> (alias)</li>
+<li><strong>diagrams.onprem.database.Mysql</strong>, <strong>MySQL</strong> (alias)</li>
+<li><strong>diagrams.onprem.database.Neo4J</strong></li>
+<li><strong>diagrams.onprem.database.Oracle</strong></li>
+<li><strong>diagrams.onprem.database.Postgresql</strong>, <strong>PostgreSQL</strong> (alias)</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="onpremci"></a><a href="#onpremci" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>onprem.ci</h2>
+<ul>
+<li><strong>diagrams.onprem.ci.Circleci</strong>, <strong>CircleCI</strong> (alias)</li>
+<li><strong>diagrams.onprem.ci.Jenkins</strong></li>
+<li><strong>diagrams.onprem.ci.Travisci</strong>, <strong>TravisCI</strong> (alias)</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="onpremnetwork"></a><a href="#onpremnetwork" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>onprem.network</h2>
+<ul>
+<li><strong>diagrams.onprem.network.Apache</strong></li>
+<li><strong>diagrams.onprem.network.Caddy</strong></li>
+<li><strong>diagrams.onprem.network.Consul</strong></li>
+<li><strong>diagrams.onprem.network.Envoy</strong></li>
+<li><strong>diagrams.onprem.network.Etcd</strong></li>
+<li><strong>diagrams.onprem.network.Haproxy</strong></li>
+<li><strong>diagrams.onprem.network.Istio</strong></li>
+<li><strong>diagrams.onprem.network.Kong</strong></li>
+<li><strong>diagrams.onprem.network.Linkerd</strong></li>
+<li><strong>diagrams.onprem.network.Nginx</strong></li>
+<li><strong>diagrams.onprem.network.Tomcat</strong></li>
+<li><strong>diagrams.onprem.network.Traefik</strong></li>
+<li><strong>diagrams.onprem.network.Zookeeper</strong></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="onpreminmemory"></a><a href="#onpreminmemory" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>onprem.inmemory</h2>
+<ul>
+<li><strong>diagrams.onprem.inmemory.Aerospike</strong></li>
+<li><strong>diagrams.onprem.inmemory.Hazelcast</strong></li>
+<li><strong>diagrams.onprem.inmemory.Memcached</strong></li>
+<li><strong>diagrams.onprem.inmemory.Redis</strong></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="onpremsearch"></a><a href="#onpremsearch" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>onprem.search</h2>
+<ul>
+<li><strong>diagrams.onprem.search.Elasticsearch</strong></li>
+<li><strong>diagrams.onprem.search.Solr</strong></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="onpremcontainer"></a><a href="#onpremcontainer" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>onprem.container</h2>
+<ul>
+<li><strong>diagrams.onprem.container.Docker</strong></li>
+<li><strong>diagrams.onprem.container.Rkt</strong>, <strong>RKT</strong> (alias)</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="onpremcompute"></a><a href="#onpremcompute" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>onprem.compute</h2>
+<ul>
+<li><strong>diagrams.onprem.compute.Server</strong></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="onpremworkflow"></a><a href="#onpremworkflow" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>onprem.workflow</h2>
+<ul>
+<li><strong>diagrams.onprem.workflow.Airflow</strong></li>
+<li><strong>diagrams.onprem.workflow.Kubeflow</strong>, <strong>KubeFlow</strong> (alias)</li>
+<li><strong>diagrams.onprem.workflow.Nifi</strong>, <strong>NiFi</strong> (alias)</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="onpremqueue"></a><a href="#onpremqueue" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>onprem.queue</h2>
+<ul>
+<li><strong>diagrams.onprem.queue.Activemq</strong></li>
+<li><strong>diagrams.onprem.queue.Kafka</strong></li>
+<li><strong>diagrams.onprem.queue.Rabbitmq</strong></li>
+<li><strong>diagrams.onprem.queue.Zeromq</strong>, <strong>ZeroMQ</strong> (alias)</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="onpremgitops"></a><a href="#onpremgitops" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>onprem.gitops</h2>
+<ul>
+<li><strong>diagrams.onprem.gitops.Argocd</strong>, <strong>ArgoCD</strong> (alias)</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="onpremmonitoring"></a><a href="#onpremmonitoring" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>onprem.monitoring</h2>
+<ul>
+<li><strong>diagrams.onprem.monitoring.Datadog</strong></li>
+<li><strong>diagrams.onprem.monitoring.Grafana</strong></li>
+<li><strong>diagrams.onprem.monitoring.Kibana</strong></li>
+<li><strong>diagrams.onprem.monitoring.Prometheus</strong></li>
+<li><strong>diagrams.onprem.monitoring.Splunk</strong></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="onpremlogging"></a><a href="#onpremlogging" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>onprem.logging</h2>
+<ul>
+<li><strong>diagrams.onprem.logging.Fluentd</strong></li>
+<li><strong>diagrams.onprem.logging.Logstash</strong>, <strong>LogStash</strong> (alias)</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="onpremanalytics"></a><a href="#onpremanalytics" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>onprem.analytics</h2>
+<ul>
+<li><strong>diagrams.onprem.analytics.Flink</strong></li>
+<li><strong>diagrams.onprem.analytics.Hadoop</strong></li>
+<li><strong>diagrams.onprem.analytics.Hive</strong></li>
+<li><strong>diagrams.onprem.analytics.Spark</strong></li>
+<li><strong>diagrams.onprem.analytics.Storm</strong></li>
+</ul>
+</span></div></article></div><div class="docLastUpdate"><em>Last updated on 2020-2-23</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/guides/cluster"><span class="arrow-prev">← </span><span>Clusters</span></a><a class="docs-next button" href="/docs/nodes/aws"><span>AWS</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#onpremdatabase">onprem.database</a></li><li><a href="#onpremci">onprem.ci</a></li><li><a href="#onpremnetwork">onprem.network</a></li><li><a href="#onpreminmemory">onprem.inmemory</a></li><li><a href="#onpremsearch">onprem.search</a></li><li><a href="#onpremcontainer">onprem.container</a></li><li><a href="#onpremcompute">onprem.compute</a></li><li><a href="#onpremworkflow">onprem.workflow</a></li><li><a href="#onpremqueue">onprem.queue</a></li><li><a href="#onpremgitops">onprem.gitops</a></li><li><a href="#onpremmonitoring">onprem.monitoring</a></li><li><a href="#onpremlogging">onprem.logging</a></li><li><a href="#onpremanalytics">onprem.analytics</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/diagrams.ico" alt="Diagrams" width="66" height="58"/></a><div><h5>Docs</h5><a href="/docs/getting-started/installation">Getting Started</a><a href="/docs/guides/diagram">Guides</a><a href="/docs/nodes/aws">Nodes</a></div><div><h5>More</h5><a href="https://github.com/mingrammer/diagrams">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/mingrammer/diagrams/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright">Copyright © 2020 mingrammer</section></footer></div></body></html>
