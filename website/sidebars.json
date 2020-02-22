@@ -10,6 +10,7 @@
       "guides/cluster"
     ],
     "Nodes": [
+      "nodes/onprem",
       "nodes/aws",
       "nodes/azure",
       "nodes/gcp",

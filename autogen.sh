@@ -2,7 +2,7 @@
 app_root_dir="diagrams"
 
 # NOTE: azure icon set is not latest version
-providers=("aws" "azure" "gcp" "k8s" "alibabacloud" "oci")
+providers=("onprem" "aws" "azure" "gcp" "k8s" "alibabacloud" "oci")
 
 if ! [ -x "$(command -v round)" ]; then
   echo 'round is not installed'
@@ -22,7 +22,7 @@ fi
 # preprocess the resources
 for pvd in "${providers[@]}"; do
   # convert the svg to png for azure provider
-  if [ "$pvd" = "azure" ]; then
+  if [ "$pvd" = "onprem" ] || [ "$pvd" = "azure" ]; then
     echo "converting the svg to png using inkscape for provider '$pvd'"
     python -m scripts.resource svg2png "$pvd"
   fi
