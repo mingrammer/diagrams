@@ -37,6 +37,9 @@
       },
       "nodes/oci": {
         "title": "OCI"
+      },
+      "nodes/onprem": {
+        "title": "OnPrem"
       }
     },
     "links": {
