@@ -200,3 +200,53 @@ with Diagram("Broker Consumers", show=False):
 ````
 
 ![rabbitmq consumers diagram](/img/rabbitmq_consumers_diagram.png)
+
+## On-Premise System Architecture
+
+```python
+from diagrams import Cluster, Diagram
+from diagrams.onprem.analytics import Spark
+from diagrams.onprem.compute import Server
+from diagrams.onprem.database import PostgreSQL
+from diagrams.onprem.inmemory import Redis
+from diagrams.onprem.logging import Fluentd
+from diagrams.onprem.monitoring import Grafana, Prometheus
+from diagrams.onprem.network import Linkerd, Nginx
+from diagrams.onprem.queue import Kafka
+from diagrams.onprem.workflow import Airflow
+
+with Diagram("On-Premise System Architecture", show=False):
+    ingress = Nginx("ingress")
+
+    with Cluster("Service Cluster"):
+        svcmesh = Linkerd("svcmesh")
+        grpcsvc = [Server("grpc1"), Server("grpc2"), Server("grpc3")]
+        svcmesh >> grpcsvc
+
+    with Cluster("Database HA"):
+        maindb_master = PostgreSQL("maindb")
+        maindb_replica = PostgreSQL("replica")
+        maindb_master - maindb_replica
+        grpcsvc >> maindb_master
+
+    maindb_replica >> Airflow("scheduler")
+
+    with Cluster("Sessions HA"):
+        session_master = Redis("session")
+        session_master - Redis("replica")
+        grpcsvc >> session_master
+
+    logaggr = Fluentd("aggregator")
+    logaggr >> Kafka("stream") >> Spark("log analytics")
+    grpcsvc >> logaggr
+
+    metricq = Kafka("buffer")
+    metricq >> Prometheus("metric") >> Grafana("monitoring")
+
+    logaggr >> metricq
+    svcmesh >> metricq
+
+    ingress >> svcmesh
+```
+
+![on-premise system architecture diagram](/img/on-premise_system_architecture.png)
