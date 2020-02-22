@@ -11,7 +11,7 @@ DIR_APP_ROOT = "diagrams"
 DIR_RESOURCE = "resources"
 DIR_TEMPLATE = "templates"
 
-PROVIDERS = ("base", "aws", "azure", "gcp", "k8s", "alibabacloud", "oci")
+PROVIDERS = ("base", "onprem", "aws", "azure", "gcp", "k8s", "alibabacloud", "oci")
 
 #########################
 #  Resource Processing  #
@@ -24,8 +24,8 @@ CMD_SVG2PNG_OPTS = ("-z", "-w", "256", "-h", "256", "--export-type", "png")
 CMD_SVG2PNG_IM = "convert"
 CMD_SVG2PNG_IM_OPTS = ("-shave", "25%x25%", "-resize", "256x256!")
 
-
 FILE_PREFIXES = {
+    "onprem": (),
     "aws": ("amazon-", "aws-"),
     "azure": ("azure-",),
     "gcp": ("cloud-",),
@@ -58,6 +58,9 @@ UPPER_WORDS = {
 }
 
 TITLE_WORDS = {
+    "onprem": {
+        "onprem": "OnPrem",
+    },
     "alibabacloud": {
         "alibabacloud": "AlibabaCloud"
     }
@@ -65,6 +68,43 @@ TITLE_WORDS = {
 
 # TODO: check if the classname exists
 ALIASES = {
+    "onprem": {
+        "ci": {
+            "Circleci": "CircleCI",
+            "Travisci": "TravisCI",
+        },
+        "container": {
+            "Rkt": "RKT",
+        },
+        "database": {
+            "Cockroachdb": "CockroachDB",
+            "Couchdb": "CouchDB",
+            "Hbase": "HBase",
+            "Influxdb": "InfluxDB",
+            "Mariadb": "MariaDB",
+            "Mongodb": "MongoDB",
+            "Mssql": "MSSQL",
+            "Mysql": "MySQL",
+            "Postgresql": "PostgreSQL",
+        },
+        "gitops": {
+            "Argocd": "ArgoCD",
+        },
+        "logging": {
+            "Logstash": "LogStash",
+        },
+        "netowrk": {
+            "Etcd": "ETCD",
+            "Haproxy": "HAProxy",
+        },
+        "queue": {
+            "Zeromq": "ZeroMQ",
+        },
+        "workflow": {
+            "Kubeflow": "KubeFlow",
+            "Nifi": "NiFi",
+        }
+    },
     "aws": {
         "analytics": {
             "ElasticsearchService": "ES",

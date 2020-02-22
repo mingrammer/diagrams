@@ -16,6 +16,11 @@ from . import resource_dir
 _usage = "Usage: resources.py <cmd> <pvd>"
 
 
+def cleaner_onprem(f):
+    f = f.replace("_", "-")
+    return f.lower()
+
+
 def cleaner_aws(f):
     f = f.replace("_", "-")
     f = f.replace("@4x", "")
@@ -76,6 +81,7 @@ def cleaner_oci(f):
 
 
 cleaners = {
+    "onprem": cleaner_onprem,
     "aws": cleaner_aws,
     "azure": cleaner_azure,
     "gcp": cleaner_gcp,
