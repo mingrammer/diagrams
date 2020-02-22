@@ -5,20 +5,6 @@ title: OCI
 
 Node classes list of oci provider.
 
-## oci.compute
-
-- **diagrams.oci.compute.Bm**, **BareMetal** (alias)
-- **diagrams.oci.compute.Container**
-- **diagrams.oci.compute.Vm**, **VirtualMachine** (alias)
-
-## oci.connectivity
-
-- **diagrams.oci.connectivity.Backbone**
-- **diagrams.oci.connectivity.Customerdatacenter**
-- **diagrams.oci.connectivity.Customerpremisesequip**
-- **diagrams.oci.connectivity.Fastconnect**
-- **diagrams.oci.connectivity.Vpn**
-
 ## oci.database
 
 - **diagrams.oci.database.Databaseservice**
@@ -28,36 +14,13 @@ Node classes list of oci provider.
 - **diagrams.oci.devops.Apiservice**
 - **diagrams.oci.devops.Resourcemgmt**
 
-## oci.edge
+## oci.connectivity
 
-- **diagrams.oci.edge.Cdn**
-- **diagrams.oci.edge.Dns**
-- **diagrams.oci.edge.Emaildelivery**
-- **diagrams.oci.edge.Waf**
-
-## oci.monitoring
-
-- **diagrams.oci.monitoring.Alarm**
-- **diagrams.oci.monitoring.Event**
-- **diagrams.oci.monitoring.Healthcheck**
-- **diagrams.oci.monitoring.Logging**
-- **diagrams.oci.monitoring.Notifications**
-- **diagrams.oci.monitoring.Queuing**
-- **diagrams.oci.monitoring.Search**
-- **diagrams.oci.monitoring.Streaming**
-- **diagrams.oci.monitoring.Telemetry**
-- **diagrams.oci.monitoring.Workflow**
-
-## oci.network
-
-- **diagrams.oci.network.Drg**
-- **diagrams.oci.network.Firewall**
-- **diagrams.oci.network.Internetgateway**
-- **diagrams.oci.network.Loadbalance**
-- **diagrams.oci.network.Routetable**
-- **diagrams.oci.network.Securitylists**
-- **diagrams.oci.network.ServiceGateway**
-- **diagrams.oci.network.Vcloudnetwork**
+- **diagrams.oci.connectivity.Backbone**
+- **diagrams.oci.connectivity.Customerdatacenter**
+- **diagrams.oci.connectivity.Customerpremisesequip**
+- **diagrams.oci.connectivity.Fastconnect**
+- **diagrams.oci.connectivity.Vpn**
 
 ## oci.security
 
@@ -72,6 +35,24 @@ Node classes list of oci provider.
 - **diagrams.oci.security.Policies**
 - **diagrams.oci.security.Tagging**
 
+## oci.network
+
+- **diagrams.oci.network.Drg**
+- **diagrams.oci.network.Firewall**
+- **diagrams.oci.network.Internetgateway**
+- **diagrams.oci.network.Loadbalance**
+- **diagrams.oci.network.Routetable**
+- **diagrams.oci.network.Securitylists**
+- **diagrams.oci.network.ServiceGateway**
+- **diagrams.oci.network.Vcloudnetwork**
+
+## oci.edge
+
+- **diagrams.oci.edge.Cdn**
+- **diagrams.oci.edge.Dns**
+- **diagrams.oci.edge.Emaildelivery**
+- **diagrams.oci.edge.Waf**
+
 ## oci.storage
 
 - **diagrams.oci.storage.Backuprestore**
@@ -81,3 +62,22 @@ Node classes list of oci provider.
 - **diagrams.oci.storage.Filestorage**
 - **diagrams.oci.storage.Objectstorage**
 - **diagrams.oci.storage.Storagegateway**
+
+## oci.compute
+
+- **diagrams.oci.compute.Bm**, **BareMetal** (alias)
+- **diagrams.oci.compute.Container**
+- **diagrams.oci.compute.Vm**, **VirtualMachine** (alias)
+
+## oci.monitoring
+
+- **diagrams.oci.monitoring.Alarm**
+- **diagrams.oci.monitoring.Event**
+- **diagrams.oci.monitoring.Healthcheck**
+- **diagrams.oci.monitoring.Logging**
+- **diagrams.oci.monitoring.Notifications**
+- **diagrams.oci.monitoring.Queuing**
+- **diagrams.oci.monitoring.Search**
+- **diagrams.oci.monitoring.Streaming**
+- **diagrams.oci.monitoring.Telemetry**
+- **diagrams.oci.monitoring.Workflow**
