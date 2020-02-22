@@ -242,7 +242,7 @@ urlretrieve(rabbitmq_url, rabbitmq_icon)
 <span class="hljs-keyword">from</span> diagrams.onprem.network <span class="hljs-keyword">import</span> Nginx
 <span class="hljs-keyword">from</span> diagrams.onprem.queue <span class="hljs-keyword">import</span> Kafka
 
-<span class="hljs-keyword">with</span> Diagram(<span class="hljs-string">"On-Premise System Architecture"</span>, show=<span class="hljs-literal">False</span>):
+<span class="hljs-keyword">with</span> Diagram(<span class="hljs-string">"Advanced Web Service with On-Premise"</span>, show=<span class="hljs-literal">False</span>):
     ingress = Nginx(<span class="hljs-string">"ingress"</span>)
 
     metrics = Prometheus(<span class="hljs-string">"metric"</span>)
@@ -269,5 +269,5 @@ urlretrieve(rabbitmq_url, rabbitmq_icon)
 
     ingress &gt;&gt; grpcsvc &gt;&gt; aggregator
 </code></pre>
-<p><img src="/img/on-premise_system_architecture.png" alt="on-premise system architecture diagram"></p>
+<p><img src="/img/advanced_web_service_with_on-premise.png" alt="advanced web service with on-premise diagram"></p>
 </span></div></article></div><div class="docLastUpdate"><em>Last updated on 2020-2-23</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/getting-started/installation"><span class="arrow-prev">← </span><span>Installation</span></a><a class="docs-next button" href="/docs/guides/diagram"><span>Diagrams</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#grouped-workers">Grouped Workers</a></li><li><a href="#clustered-web-services">Clustered Web Services</a></li><li><a href="#event-processing">Event Processing</a></li><li><a href="#message-collecting-system">Message Collecting System</a></li><li><a href="#exposed-pod-with-3-replicas-on-k8s">Exposed Pod with 3 Replicas on k8s</a></li><li><a href="#stateful-architecture-on-k8s">Stateful Architecture on k8s</a></li><li><a href="#rabbitmq-consumers-with-custom-nodes">RabbitMQ Consumers with custom nodes</a></li><li><a href="#on-premise-system-architecture">On-Premise System Architecture</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/diagrams.ico" alt="Diagrams" width="66" height="58"/></a><div><h5>Docs</h5><a href="/docs/getting-started/installation">Getting Started</a><a href="/docs/guides/diagram">Guides</a><a href="/docs/nodes/aws">Nodes</a></div><div><h5>More</h5><a href="https://github.com/mingrammer/diagrams">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/mingrammer/diagrams/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright">Copyright © 2020 mingrammer</section></footer></div></body></html>
