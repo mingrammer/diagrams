@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "diagrams"
-version = "0.5.0"
+version = "0.6.0"
 description = "Diagram as Code"
 license = "MIT"
 authors = ["mingrammer <mingrammer@gmail.com>"]
