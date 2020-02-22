@@ -236,9 +236,8 @@ with Diagram("On-Premise System Architecture", show=False):
         master - PostgreSQL("slave") << metrics
         grpcsvc >> master
 
-    with Cluster("Log Streaming"):
-        aggregator = Fluentd("logging")
-        aggregator >> Kafka("stream") >> Spark("analytics")
+    aggregator = Fluentd("logging")
+    aggregator >> Kafka("stream") >> Spark("analytics")
 
     ingress >> grpcsvc >> aggregator
 ```
