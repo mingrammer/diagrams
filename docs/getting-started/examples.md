@@ -5,7 +5,7 @@ title: Examples
 
 Here are some more examples.
 
-## Grouped Workers
+## Grouped Workers on AWS
 
 ```python
 from diagrams import Diagram
@@ -54,7 +54,7 @@ with Diagram("Clustered Web Services", show=False):
 
 ![clustered web services diagram](/img/clustered_web_services_diagram.png)
 
-## Event Processing
+## Event Processing on AWS
 
 ```python
 from diagrams import Cluster, Diagram
@@ -89,7 +89,7 @@ with Diagram("Event Processing", show=False):
 
 ![event processing diagram](/img/event_processing_diagram.png)
 
-## Message Collecting System
+## Message Collecting System on GCP
 
 ```python
 from diagrams import Cluster, Diagram
@@ -127,7 +127,7 @@ with Diagram("Message Collecting", show=False):
 
 ![message collecting diagram](/img/message_collecting_diagram.png)
 
-## Exposed Pod with 3 Replicas on k8s
+## Exposed Pod with 3 Replicas on Kubernetes
 
 ```python
 from diagrams import Diagram
@@ -145,7 +145,7 @@ with Diagram("Exposed Pod with 3 Replicas", show=False):
 
 ![exposed pod with 3 replicas diagram](/img/exposed_pod_with_3_replicas_diagram.png)
 
-## Stateful Architecture on k8s
+## Stateful Architecture on Kubernetes
 
 ```python
 from diagrams import Cluster, Diagram
@@ -169,37 +169,6 @@ with Diagram("Stateful Architecture", show=False):
 ```
 
 ![stateful architecture diagram](/img/stateful_architecture_diagram.png)
-
-## RabbitMQ Consumers with custom nodes
-
-```python
-from urllib.request import urlretrieve
-
-from diagrams import Cluster, Diagram
-from diagrams.custom import Custom
-from diagrams.aws.database import Aurora
-from diagrams.k8s.compute import Pod
-
-# Download an image to be used into a Custom Node class
-rabbitmq_url = "https://jpadilla.github.io/rabbitmqapp/assets/img/icon.png"
-rabbitmq_icon = "rabbitmq.png"
-urlretrieve(rabbitmq_url, rabbitmq_icon)
-
-
-with Diagram("Broker Consumers", show=False):
-    with Cluster("Consumers"):
-        consumers = [
-            Pod("worker"),
-            Pod("worker"),
-            Pod("worker")
-        ]
-
-    queue = Custom("Message queue", rabbitmq_icon)
-
-    queue >> consumers >> Aurora("Database")
-````
-
-![rabbitmq consumers diagram](/img/rabbitmq_consumers_diagram.png)
 
 ## Advanced Web Service with On-Premise
 
@@ -243,3 +212,34 @@ with Diagram("Advanced Web Service with On-Premise", show=False):
 ```
 
 ![advanced web service with on-premise diagram](/img/advanced_web_service_with_on-premise.png)
+
+## RabbitMQ Consumers with Custom Nodes
+
+```python
+from urllib.request import urlretrieve
+
+from diagrams import Cluster, Diagram
+from diagrams.custom import Custom
+from diagrams.aws.database import Aurora
+from diagrams.k8s.compute import Pod
+
+# Download an image to be used into a Custom Node class
+rabbitmq_url = "https://jpadilla.github.io/rabbitmqapp/assets/img/icon.png"
+rabbitmq_icon = "rabbitmq.png"
+urlretrieve(rabbitmq_url, rabbitmq_icon)
+
+
+with Diagram("Broker Consumers", show=False):
+    with Cluster("Consumers"):
+        consumers = [
+            Pod("worker"),
+            Pod("worker"),
+            Pod("worker")
+        ]
+
+    queue = Custom("Message queue", rabbitmq_icon)
+
+    queue >> consumers >> Aurora("Database")
+````
+
+![rabbitmq consumers diagram](/img/rabbitmq_consumers_diagram.png)

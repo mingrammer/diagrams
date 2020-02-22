@@ -42,7 +42,7 @@ You can start with [quick start](https://diagrams.mingrammer.com/docs/getting-st
 
 ## Examples
 
-| Event Processing on AWS                                      | Stateful Architecture on k8s                                 | On-Premise System Architecture                               |
+| Event Processing                                             | Stateful Architecture                                        | Advanced Web Service                                         |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | ![event processing](https://diagrams.mingrammer.com/img/event_processing_diagram.png) | ![stateful architecture](https://diagrams.mingrammer.com/img/stateful_architecture_diagram.png) | ![advanced web service with on-premise](https://diagrams.mingrammer.com/img/advanced_web_service_with_on-premise.png) |
 
