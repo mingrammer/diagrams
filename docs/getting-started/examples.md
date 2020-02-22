@@ -214,7 +214,7 @@ from diagrams.onprem.monitoring import Grafana, Prometheus
 from diagrams.onprem.network import Nginx
 from diagrams.onprem.queue import Kafka
 
-with Diagram("On-Premise System Architecture", show=False):
+with Diagram("Advanced Web Service with On-Premise", show=False):
     ingress = Nginx("ingress")
 
     metrics = Prometheus("metric")
@@ -242,4 +242,4 @@ with Diagram("On-Premise System Architecture", show=False):
     ingress >> grpcsvc >> aggregator
 ```
 
-![on-premise system architecture diagram](/img/on-premise_system_architecture.png)
+![advanced web service with on-premise diagram](/img/advanced_web_service_with_on-premise.png)
