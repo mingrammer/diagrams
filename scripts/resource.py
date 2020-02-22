@@ -52,7 +52,7 @@ def cleaner_k8s(f):
     f = f.replace("-256", "")
     for p in cfg.FILE_PREFIXES["k8s"]:
         if f.startswith(p):
-            f = f[len(p) :]
+            f = f[len(p):]
             break
     return f.lower()
 
@@ -65,13 +65,12 @@ def cleaner_alibabacloud(f):
     return f.lower()
 
 
-
 def cleaner_oci(f):
     f = f.replace("_", "-")
     f = f.replace("-grey", "")
     for p in cfg.FILE_PREFIXES["oci"]:
         if f.startswith(p):
-            f = f[len(p) :]
+            f = f[len(p):]
             break
     return f.lower()
 
