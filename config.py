@@ -98,6 +98,8 @@ ALIASES = {
             "Haproxy": "HAProxy",
         },
         "queue": {
+            "Activemq": "ActiveMQ",
+            "Rabbitmq": "RabbitMQ",
             "Zeromq": "ZeroMQ",
         },
         "workflow": {

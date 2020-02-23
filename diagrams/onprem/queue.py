@@ -26,4 +26,6 @@ class Zeromq(_Queue):
 
 # Aliases
 
+ActiveMQ = Activemq
+RabbitMQ = Rabbitmq
 ZeroMQ = Zeromq
