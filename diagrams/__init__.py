@@ -139,6 +139,9 @@ class Diagram:
         os.remove(self.filename)
         setdiagram(None)
 
+    def _repr_png_(self):
+        return self.dot.pipe(format='png')
+
     def _validate_direction(self, direction: str) -> bool:
         direction = direction.upper()
         for v in self.__directions:
