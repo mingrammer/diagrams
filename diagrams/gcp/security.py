@@ -12,6 +12,10 @@ class Iam(_Security):
     _icon = "iam.png"
 
 
+class Iap(_Security):
+    _icon = "iap.png"
+
+
 class KeyManagementService(_Security):
     _icon = "key-management-service.png"
 
@@ -29,6 +33,5 @@ class SecurityScanner(_Security):
 
 
 # Aliases
-
 KMS = KeyManagementService
 SCC = SecurityCommandCenter
