@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - uses: actions/setup-python@master
-      - run: pip install black codespell flake8 isort pytest
+      - run: pip install black codespell contextvars flake8 graphviz isort jinja2 poetry pytest
       - run: black . --diff || true
       - run: codespell --quiet-level=2 || true  # --ignore-words-list="" --skip=""
       - run: flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
