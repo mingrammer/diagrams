@@ -27,6 +27,19 @@ $ python diagram.py
 
 It will generate an image file with single `EC2` node drawn as `simple_diagram.png` on your working directory, and open that created image file immediately.
 
+## Jupyter Notebooks
+
+Diagrams can be also rendered directly inside the notebook as like this:
+
+```python
+from diagrams import Diagram
+from diagrams.aws.compute import EC2
+
+with Diagram("Simple Diagram") as diag:
+    EC2("web")
+diag
+```
+
 ## Options
 
 You can specify the output file format with `outformat` parameter. Default is **png**.

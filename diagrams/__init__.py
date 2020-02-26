@@ -139,6 +139,9 @@ class Diagram:
         os.remove(self.filename)
         setdiagram(None)
 
+    def _repr_png_(self):
+        return self.dot.pipe(format='png')
+
     def _validate_direction(self, direction: str) -> bool:
         direction = direction.upper()
         for v in self.__directions:
@@ -260,6 +263,8 @@ class Node:
     _icon_dir = None
     _icon = None
 
+    _height = 1.9
+
     def __init__(self, label: str = ""):
         """Node represents a system component.
 
@@ -272,9 +277,11 @@ class Node:
         # fmt: off
         # If a node has an icon, increase the height slightly to avoid
         # that label being spanned between icon image and white space.
+        # Increase the height by the number of new lines included in the label.
+        padding = 0.4 * (label.count('\n'))
         self.attrs = {
             "shape": "none",
-            "height": "1.9",
+            "height": str(self._height + padding),
             "image": self._load_icon(),
         } if self._icon else {}
         # fmt: on

@@ -5,7 +5,7 @@ title: Examples
 
 Here are some more examples.
 
-## Grouped Workers
+## Grouped Workers on AWS
 
 ```python
 from diagrams import Diagram
@@ -54,7 +54,7 @@ with Diagram("Clustered Web Services", show=False):
 
 ![clustered web services diagram](/img/clustered_web_services_diagram.png)
 
-## Event Processing
+## Event Processing on AWS
 
 ```python
 from diagrams import Cluster, Diagram
@@ -89,7 +89,7 @@ with Diagram("Event Processing", show=False):
 
 ![event processing diagram](/img/event_processing_diagram.png)
 
-## Message Collecting System
+## Message Collecting System on GCP
 
 ```python
 from diagrams import Cluster, Diagram
@@ -127,7 +127,7 @@ with Diagram("Message Collecting", show=False):
 
 ![message collecting diagram](/img/message_collecting_diagram.png)
 
-## Exposed Pod with 3 Replicas on k8s
+## Exposed Pod with 3 Replicas on Kubernetes
 
 ```python
 from diagrams import Diagram
@@ -145,7 +145,7 @@ with Diagram("Exposed Pod with 3 Replicas", show=False):
 
 ![exposed pod with 3 replicas diagram](/img/exposed_pod_with_3_replicas_diagram.png)
 
-## Stateful Architecture on k8s
+## Stateful Architecture on Kubernetes
 
 ```python
 from diagrams import Cluster, Diagram
@@ -170,7 +170,50 @@ with Diagram("Stateful Architecture", show=False):
 
 ![stateful architecture diagram](/img/stateful_architecture_diagram.png)
 
-## RabbitMQ Consumers with custom nodes
+## Advanced Web Service with On-Premise
+
+```python
+from diagrams import Cluster, Diagram
+from diagrams.onprem.analytics import Spark
+from diagrams.onprem.compute import Server
+from diagrams.onprem.database import PostgreSQL
+from diagrams.onprem.inmemory import Redis
+from diagrams.onprem.logging import Fluentd
+from diagrams.onprem.monitoring import Grafana, Prometheus
+from diagrams.onprem.network import Nginx
+from diagrams.onprem.queue import Kafka
+
+with Diagram("Advanced Web Service with On-Premise", show=False):
+    ingress = Nginx("ingress")
+
+    metrics = Prometheus("metric")
+    metrics << Grafana("monitoring")
+
+    with Cluster("Service Cluster"):
+        grpcsvc = [
+            Server("grpc1"),
+            Server("grpc2"),
+            Server("grpc3")]
+
+    with Cluster("Sessions HA"):
+        master = Redis("session")
+        master - Redis("replica") << metrics
+        grpcsvc >> master
+
+    with Cluster("Database HA"):
+        master = PostgreSQL("users")
+        master - PostgreSQL("slave") << metrics
+        grpcsvc >> master
+
+    aggregator = Fluentd("logging")
+    aggregator >> Kafka("stream") >> Spark("analytics")
+
+    ingress >> grpcsvc >> aggregator
+```
+
+![advanced web service with on-premise diagram](/img/advanced_web_service_with_on-premise.png)
+
+## RabbitMQ Consumers with Custom Nodes
 
 ```python
 from urllib.request import urlretrieve
@@ -200,53 +243,3 @@ with Diagram("Broker Consumers", show=False):
 ````
 
 ![rabbitmq consumers diagram](/img/rabbitmq_consumers_diagram.png)
-
-## On-Premise System Architecture
-
-```python
-from diagrams import Cluster, Diagram
-from diagrams.onprem.analytics import Spark
-from diagrams.onprem.compute import Server
-from diagrams.onprem.database import PostgreSQL
-from diagrams.onprem.inmemory import Redis
-from diagrams.onprem.logging import Fluentd
-from diagrams.onprem.monitoring import Grafana, Prometheus
-from diagrams.onprem.network import Linkerd, Nginx
-from diagrams.onprem.queue import Kafka
-from diagrams.onprem.workflow import Airflow
-
-with Diagram("On-Premise System Architecture", show=False):
-    ingress = Nginx("ingress")
-
-    with Cluster("Service Cluster"):
-        svcmesh = Linkerd("svcmesh")
-        grpcsvc = [Server("grpc1"), Server("grpc2"), Server("grpc3")]
-        svcmesh >> grpcsvc
-
-    with Cluster("Database HA"):
-        maindb_master = PostgreSQL("maindb")
-        maindb_replica = PostgreSQL("replica")
-        maindb_master - maindb_replica
-        grpcsvc >> maindb_master
-
-    maindb_replica >> Airflow("scheduler")
-
-    with Cluster("Sessions HA"):
-        session_master = Redis("session")
-        session_master - Redis("replica")
-        grpcsvc >> session_master
-
-    logaggr = Fluentd("aggregator")
-    logaggr >> Kafka("stream") >> Spark("log analytics")
-    grpcsvc >> logaggr
-
-    metricq = Kafka("buffer")
-    metricq >> Prometheus("metric") >> Grafana("monitoring")
-
-    logaggr >> metricq
-    svcmesh >> metricq
-
-    ingress >> svcmesh
-```
-
-![on-premise system architecture diagram](/img/on-premise_system_architecture.png)
