@@ -17,9 +17,9 @@
 
 Diagrams lets you draw the cloud system architecture **in Python code**. It was born for **prototyping** a new system architecture design without any design tools. You can also describe or visualize the existing system architecture as well. Diagrams currently supports six major providers: `AWS`, `Azure`, `GCP`, `Kubernetes`, `Alibaba Cloud` and `Oracle Cloud`.  It now also supports `On-Premise` nodes.
 
-**Diagram as Code** also allows you to **tracking** the architecture diagram changes on any **version control** system.
+**Diagram as Code** also allows you to **track** the architecture diagram changes in any **version control** system.
 
->  NOTE: It does not control any actual cloud resources nor generate cloud formation or terraform code, but just for drawing the cloud system architecture diagrams.
+>  NOTE: It does not control any actual cloud resources nor does it generate cloud formation or terraform code. It is just for drawing the cloud system architecture diagrams.
 
 ## Getting Started
 
