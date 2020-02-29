@@ -103,7 +103,7 @@ class Index extends React.Component {
             It was born for **prototyping** a new system architecture without any design tools. You can also describe or visualize the existing system architecture as well.
         </MarkdownBlock>
         <MarkdownBlock>
-            `Diagram as Code` allows you to **tracking** the architecture diagram changes on any **version control** system.
+            `Diagram as Code` allows you to **track** the architecture diagram changes in any **version control** system.
         </MarkdownBlock>
         <MarkdownBlock>
             Diagrams currently supports six major providers: `AWS`, `Azure`, `GCP`, `Kubernetes`, `Alibaba Cloud` and `Oracle Cloud`. It now also supports `On-Premise` nodes.
