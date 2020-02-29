@@ -26,9 +26,9 @@ CMD_SVG2PNG_IM_OPTS = ("-shave", "25%x25%", "-resize", "256x256!")
 
 FILE_PREFIXES = {
     "onprem": (),
-    "aws": ("amazon-", "aws-"),
-    "azure": ("azure-",),
-    "gcp": ("cloud-",),
+    "aws": ("Amazon-", "AWS-"),
+    "azure": ("Azure-",),
+    "gcp": ("Cloud-",),
     "k8s": (),
     "alibabacloud": (),
     "oci": ("OCI-",),
