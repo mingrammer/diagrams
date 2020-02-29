@@ -70,6 +70,27 @@ Node classes list of aws provider.
 - **diagrams.aws.network.TransitGateway**
 - **diagrams.aws.network.VPC**
 
+## aws.management
+
+- **diagrams.aws.management.AutoScaling**
+- **diagrams.aws.management.Cloudformation**
+- **diagrams.aws.management.Cloudtrail**
+- **diagrams.aws.management.Cloudwatch**
+- **diagrams.aws.management.Codeguru**
+- **diagrams.aws.management.CommandLineInterface**
+- **diagrams.aws.management.Config**
+- **diagrams.aws.management.ControlTower**
+- **diagrams.aws.management.LicenseManager**
+- **diagrams.aws.management.ManagedServices**
+- **diagrams.aws.management.ManagementConsole**
+- **diagrams.aws.management.Opsworks**
+- **diagrams.aws.management.Organizations**
+- **diagrams.aws.management.ServiceCatalog**
+- **diagrams.aws.management.SystemsManagerParameterStore**, **ParameterStore** (alias)
+- **diagrams.aws.management.SystemsManager**, **SSM** (alias)
+- **diagrams.aws.management.TrustedAdvisor**
+- **diagrams.aws.management.WellArchitectedTool**
+
 ## aws.storage
 
 - **diagrams.aws.storage.Backup**

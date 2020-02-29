@@ -139,6 +139,10 @@ ALIASES = {
         "iot": {
             "Freertos": "FreeRTOS",
         },
+        "management": {
+            "SystemsManager": "SSM",
+            "SystemsManagerParameterStore": "ParameterStore",
+        },
         "migration": {
             "ApplicationDiscoveryService": "ADS",
             "CloudendureMigration": "CEM",
