@@ -402,7 +402,8 @@ class Edge:
                  forward: bool = False,
                  reverse: bool = False,
                  label: str = "",
-                 color: str = ""
+                 color: str = "",
+                 style: str = ""
                  ):
         """Edge represents an edge between two nodes.
 
@@ -411,15 +412,17 @@ class Edge:
         :param reverse: Points backward.
         :param label: Edge label.
         :param color: Edge color.
+        :param style: Edge style.
         """
         if node is not None:
-            assert type(node) is Node
+            assert isinstance(node, Node)
 
         self.node = node
         self.forward = forward
         self.reverse = reverse
         self.label = label
         self.color = color
+        self.style = style
 
     def __sub__(self, other: Union["Node", "Edge", List["Node"]]):
         """Implement Self - Node or Edge and Self - [Nodes]"""
@@ -453,11 +456,13 @@ class Edge:
             if isinstance(o, Edge):
                 o.color = self.color
                 o.label = self.label
+                o.style = self.style
                 o.forward = forward if forward is not None else o.forward
                 o.reverse = forward if forward is not None else o.reverse
                 result.append(o)
             else:
-                result.append(Edge(o, forward=forward, reverse=reverse, color=self.color, label=self.label))
+                result.append(Edge(o, forward=forward, reverse=reverse,
+                                   color=self.color, label=self.label, style=self.style))
         return result
 
     def connect(self, other: Union["Node", "Edge", List["Node"]]):
@@ -468,6 +473,7 @@ class Edge:
         elif isinstance(other, Edge):
             self.label = other.label
             self.color = other.color
+            self.style = other.style
             return self
         else:
             if self.node is not None:
@@ -490,6 +496,8 @@ class Edge:
             dot['label'] = self.label
         if self.color:
             dot['color'] = self.color
+        if self.style:
+            dot['style'] = self.style
         return dot
 
 
