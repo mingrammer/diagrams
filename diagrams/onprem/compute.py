@@ -8,6 +8,10 @@ class _Compute(_OnPrem):
     _icon_dir = "resources/onprem/compute"
 
 
+class Nomad(_Compute):
+    _icon = "nomad.png"
+
+
 class Server(_Compute):
     _icon = "server.png"
 

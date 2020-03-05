@@ -32,6 +32,10 @@ class Haproxy(_Network):
     _icon = "haproxy.png"
 
 
+class Internet(_Network):
+    _icon = "internet.png"
+
+
 class Istio(_Network):
     _icon = "istio.png"
 

@@ -20,6 +20,10 @@ Node classes list of onprem provider.
 - **diagrams.onprem.database.Oracle**
 - **diagrams.onprem.database.Postgresql**, **PostgreSQL** (alias)
 
+## onprem.security
+
+- **diagrams.onprem.security.Vault**
+
 ## onprem.ci
 
 - **diagrams.onprem.ci.Circleci**, **CircleCI** (alias)
@@ -34,6 +38,7 @@ Node classes list of onprem provider.
 - **diagrams.onprem.network.Envoy**
 - **diagrams.onprem.network.Etcd**, **ETCD** (alias)
 - **diagrams.onprem.network.Haproxy**, **HAProxy** (alias)
+- **diagrams.onprem.network.Internet**
 - **diagrams.onprem.network.Istio**
 - **diagrams.onprem.network.Kong**
 - **diagrams.onprem.network.Linkerd**
@@ -61,6 +66,7 @@ Node classes list of onprem provider.
 
 ## onprem.compute
 
+- **diagrams.onprem.compute.Nomad**
 - **diagrams.onprem.compute.Server**
 
 ## onprem.workflow
@@ -87,6 +93,12 @@ Node classes list of onprem provider.
 - **diagrams.onprem.monitoring.Kibana**
 - **diagrams.onprem.monitoring.Prometheus**
 - **diagrams.onprem.monitoring.Splunk**
+
+## onprem.client
+
+- **diagrams.onprem.client.Client**
+- **diagrams.onprem.client.User**
+- **diagrams.onprem.client.Users**
 
 ## onprem.logging
 

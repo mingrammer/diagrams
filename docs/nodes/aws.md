@@ -63,6 +63,8 @@ Node classes list of aws provider.
 - **diagrams.aws.network.DirectConnect**
 - **diagrams.aws.network.ElasticLoadBalancing**, **ELB** (alias)
 - **diagrams.aws.network.GlobalAccelerator**, **GAX** (alias)
+- **diagrams.aws.network.InternetGateway**
+- **diagrams.aws.network.NATGateway**
 - **diagrams.aws.network.NetworkingAndContentDelivery**
 - **diagrams.aws.network.Privatelink**
 - **diagrams.aws.network.Route53**
