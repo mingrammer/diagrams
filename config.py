@@ -93,7 +93,7 @@ ALIASES = {
         "logging": {
             "Logstash": "LogStash",
         },
-        "netowrk": {
+        "network": {
             "Etcd": "ETCD",
             "Haproxy": "HAProxy",
         },
