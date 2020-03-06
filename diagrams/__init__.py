@@ -165,7 +165,7 @@ class Diagram:
 
     def connect(self, node: "Node", node2: "Node", edge: "Edge") -> None:
         """Connect the two Nodes."""
-        self.dot.edge(node.hashid, node2.hashid, **edge.to_dot())
+        self.dot.edge(node.hashid, node2.hashid, **edge.attrs())
 
     def subgraph(self, dot: Digraph) -> None:
         """Create a subgraph for clustering"""
@@ -403,7 +403,7 @@ class Edge:
                  reverse: bool = False,
                  label: str = "",
                  color: str = "",
-                 style: str = ""
+                 style: str = "",
                  ):
         """Edge represents an edge between two nodes.
 
@@ -420,9 +420,9 @@ class Edge:
         self.node = node
         self.forward = forward
         self.reverse = reverse
-        self.label = label
-        self.color = color
-        self.style = style
+
+        # graphviz complains about using label for edges, so replacing it with xlabel
+        self._attrs = {"xlabel": label, "color": color, "style": style}
 
     def __sub__(self, other: Union["Node", "Edge", List["Node"]]):
         """Implement Self - Node or Edge and Self - [Nodes]"""
@@ -454,15 +454,12 @@ class Edge:
         result = []
         for o in other:
             if isinstance(o, Edge):
-                o.color = self.color
-                o.label = self.label
-                o.style = self.style
                 o.forward = forward if forward is not None else o.forward
                 o.reverse = forward if forward is not None else o.reverse
+                self._attrs = o._attrs.copy()
                 result.append(o)
             else:
-                result.append(Edge(o, forward=forward, reverse=reverse,
-                                   color=self.color, label=self.label, style=self.style))
+                result.append(Edge(o, forward=forward, reverse=reverse, **self._attrs))
         return result
 
     def connect(self, other: Union["Node", "Edge", List["Node"]]):
@@ -471,9 +468,7 @@ class Edge:
                 self.node.connect(node, self)
             return other
         elif isinstance(other, Edge):
-            self.label = other.label
-            self.color = other.color
-            self.style = other.style
+            self._attrs = other._attrs.copy()
             return self
         else:
             if self.node is not None:
@@ -482,23 +477,17 @@ class Edge:
                 self.node = other
                 return self
 
-    def to_dot(self) -> Dict:
-        dot = {}
+    def attrs(self) -> Dict:
         if self.forward and self.reverse:
-            dot['dir'] = 'both'
+            direction = 'both'
         elif self.forward:
-            dot['dir'] = 'forward'
+            direction = 'forward'
         elif self.reverse:
-            dot['dir'] = 'back'
+            direction = 'back'
         else:
-            dot['dir'] = 'none'
-        if self.label:
-            dot['label'] = self.label
-        if self.color:
-            dot['color'] = self.color
-        if self.style:
-            dot['style'] = self.style
-        return dot
+            direction = 'none'
+
+        return {**self._attrs, 'dir': direction}
 
 
 Group = Cluster
