@@ -32,8 +32,8 @@ Node classes list of onprem provider.
 - **diagrams.onprem.network.Caddy**
 - **diagrams.onprem.network.Consul**
 - **diagrams.onprem.network.Envoy**
-- **diagrams.onprem.network.Etcd**
-- **diagrams.onprem.network.Haproxy**
+- **diagrams.onprem.network.Etcd**, **ETCD** (alias)
+- **diagrams.onprem.network.Haproxy**, **HAProxy** (alias)
 - **diagrams.onprem.network.Istio**
 - **diagrams.onprem.network.Kong**
 - **diagrams.onprem.network.Linkerd**
