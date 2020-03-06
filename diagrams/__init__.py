@@ -401,6 +401,7 @@ class Edge:
                  node: "Node" = None,
                  forward: bool = False,
                  reverse: bool = False,
+                 xlabel: str = "",
                  label: str = "",
                  color: str = "",
                  style: str = "",
@@ -421,8 +422,8 @@ class Edge:
         self.forward = forward
         self.reverse = reverse
 
-        # graphviz complains about using label for edges, so replacing it with xlabel
-        self._attrs = {"xlabel": label, "color": color, "style": style}
+        # graphviz complaining about using label for edges, so replace it with xlabel
+        self._attrs = {"xlabel": label if label else xlabel, "color": color, "style": style}
 
     def __sub__(self, other: Union["Node", "Edge", List["Node"]]):
         """Implement Self - Node or Edge and Self - [Nodes]"""
