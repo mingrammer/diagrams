@@ -27,7 +27,7 @@ def cleaner_aws(f):
     f = f.replace("-light-bg", "")
     for p in cfg.FILE_PREFIXES["aws"]:
         if f.startswith(p):
-            f = f[len(p):]
+            f = f[len(p) :]
             break
     return f.lower()
 
@@ -38,7 +38,7 @@ def cleaner_azure(f):
     f = "-".join(f.split())
     for p in cfg.FILE_PREFIXES["azure"]:
         if f.startswith(p):
-            f = f[len(p):]
+            f = f[len(p) :]
             break
     return f.lower()
 
@@ -48,7 +48,7 @@ def cleaner_gcp(f):
     f = "-".join(f.split())
     for p in cfg.FILE_PREFIXES["gcp"]:
         if f.startswith(p):
-            f = f[len(p):]
+            f = f[len(p) :]
             break
     return f.lower()
 
@@ -57,7 +57,7 @@ def cleaner_k8s(f):
     f = f.replace("-256", "")
     for p in cfg.FILE_PREFIXES["k8s"]:
         if f.startswith(p):
-            f = f[len(p):]
+            f = f[len(p) :]
             break
     return f.lower()
 
@@ -65,7 +65,7 @@ def cleaner_k8s(f):
 def cleaner_alibabacloud(f):
     for p in cfg.FILE_PREFIXES["alibabacloud"]:
         if f.startswith(p):
-            f = f[len(p):]
+            f = f[len(p) :]
             break
     return f.lower()
 
@@ -75,7 +75,7 @@ def cleaner_oci(f):
     f = f.replace("-grey", "")
     for p in cfg.FILE_PREFIXES["oci"]:
         if f.startswith(p):
-            f = f[len(p):]
+            f = f[len(p) :]
             break
     return f.lower()
 
@@ -124,7 +124,7 @@ def svg2png(pvd: str) -> None:
     def _convert(base: str, path: str):
         path = os.path.join(base, path)
         subprocess.call([cfg.CMD_SVG2PNG, *cfg.CMD_SVG2PNG_OPTS, path])
-        subprocess.call(['rm', path])
+        subprocess.call(["rm", path])
 
     for root, _, files in os.walk(resource_dir(pvd)):
         svgs = filter(lambda f: f.endswith(".svg"), files)
@@ -138,7 +138,7 @@ def svg2png2(pvd: str) -> None:
         path_src = os.path.join(base, path)
         path_dest = path_src.replace(".svg", ".png")
         subprocess.call([cfg.CMD_SVG2PNG_IM, *cfg.CMD_SVG2PNG_IM_OPTS, path_src, path_dest])
-        subprocess.call(['rm', path_src])
+        subprocess.call(["rm", path_src])
 
     for root, _, files in os.walk(resource_dir(pvd)):
         svgs = filter(lambda f: f.endswith(".svg"), files)
