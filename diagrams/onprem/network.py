@@ -61,3 +61,6 @@ class Zookeeper(_Network):
 
 
 # Aliases
+
+ETCD = Etcd
+HAProxy = Haproxy
