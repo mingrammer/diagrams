@@ -12,22 +12,42 @@ Node is an abstract concept that represents a single system component object.
 An edge object contains three attributes: **label**, **color** and **style** which mirror corresponding graphviz edge attributes.
 
 ```python
-from diagrams import Edge
-from diagrams.aws.compute import EC2
+from diagrams import Cluster, Diagram, Edge
+from diagrams.onprem.analytics import Spark
+from diagrams.onprem.compute import Server
+from diagrams.onprem.database import PostgreSQL
+from diagrams.onprem.inmemory import Redis
+from diagrams.onprem.logging import Fluentd
+from diagrams.onprem.monitoring import Grafana, Prometheus
+from diagrams.onprem.network import Nginx
+from diagrams.onprem.queue import Kafka
 
-# line
-[EC2("node3"), EC2("node4")] - Edge(color='red', label='label1', style='dotted') - EC2("node")
+with Diagram(name="Advanced Web Service with On-Premise (colored)", show=False):
+    ingress = Nginx("ingress")
 
-# list of nodes, one directional
-[EC2("node3"), EC2("node4")] >> Edge(color='red', label='label1', style='dotted') >> EC2("node")
-[EC2("node3"), EC2("node4")] << Edge(color='green', label='label2', style='dashed') << EC2("node")
+    metrics = Prometheus("metric")
+    metrics << Edge(color="firebrick", style="dashed") << Grafana("monitoring")
 
-# both directional
-EC2("node") << Edge(color='blue', label='label3', style='bold') >> EC2("node")
+    with Cluster("Service Cluster"):
+        grpcsvc = [
+            Server("grpc1"),
+            Server("grpc2"),
+            Server("grpc3")]
 
-# loop
-node = EC2("node")
-node >> Edge(color='pink', label='label4', style='solid') << node
+    with Cluster("Sessions HA"):
+        master = Redis("session")
+        master - Edge(color="brown", style="dashed") - Redis("replica") << Edge(label="collect") << metrics
+        grpcsvc >> Edge(color="brown") >> master
+
+    with Cluster("Database HA"):
+        master = PostgreSQL("users")
+        master - Edge(color="brown", style="dotted") - PostgreSQL("slave") << Edge(label="collect") << metrics
+        grpcsvc >> Edge(color="black") >> master
+
+    aggregator = Fluentd("logging")
+    aggregator >> Edge(label="parse") >> Kafka("stream") >> Edge(color="black", style="bold") >> Spark("analytics")
+
+    ingress >> Edge(color="darkgreen") << grpcsvc >> Edge(color="darkorange") >> aggregator
 ```
 
-![custom edges diagram](/img/custom_edges_diagram.png)
+![advanced web service with on-premise diagram colored](/img/advanced_web_service_with_on-premise_colored.png)

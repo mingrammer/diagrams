@@ -254,7 +254,7 @@ with Diagram(name="Advanced Web Service with On-Premise (colored)", show=False):
     ingress >> Edge(color="darkgreen") << grpcsvc >> Edge(color="darkorange") >> aggregator
 ```
 
-![advanced web service with on-premise diagram](/img/advanced_web_service_with_on-premise_colored.png)
+![advanced web service with on-premise diagram colored](/img/advanced_web_service_with_on-premise_colored.png)
 
 ## RabbitMQ Consumers with Custom Nodes
 
