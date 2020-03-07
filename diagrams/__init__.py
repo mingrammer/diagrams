@@ -165,7 +165,7 @@ class Diagram:
 
     def connect(self, node: "Node", node2: "Node", edge: "Edge") -> None:
         """Connect the two Nodes."""
-        self.dot.edge(node.hashid, node2.hashid, **edge.attrs())
+        self.dot.edge(node.hashid, node2.hashid, **edge.attrs)
 
     def subgraph(self, dot: Digraph) -> None:
         """Create a subgraph for clustering"""
@@ -397,6 +397,12 @@ class Node:
 class Edge:
     """Edge represents an edge between two nodes."""
 
+    _default_edge_attrs = {
+        "fontcolor": "#2D3436",
+        "fontname": "Sans-Serif",
+        "fontsize": "13",
+    }
+
     def __init__(self,
                  node: "Node" = None,
                  forward: bool = False,
@@ -405,6 +411,9 @@ class Edge:
                  label: str = "",
                  color: str = "",
                  style: str = "",
+                 fontcolor: str = "",
+                 fontname: str = "",
+                 fontsize: str = "",
                  ):
         """Edge represents an edge between two nodes.
 
@@ -414,6 +423,9 @@ class Edge:
         :param label: Edge label.
         :param color: Edge color.
         :param style: Edge style.
+        :param label: Edge font color.
+        :param color: Edge font name.
+        :param style: Edge font size.
         """
         if node is not None:
             assert isinstance(node, Node)
@@ -422,8 +434,19 @@ class Edge:
         self.forward = forward
         self.reverse = reverse
 
-        # graphviz complaining about using label for edges, so replace it with xlabel
-        self._attrs = {"xlabel": label if label else xlabel, "color": color, "style": style}
+        self._attrs = {}
+
+        # Set attributes.
+        for k, v in self._default_edge_attrs.items():
+            self._attrs[k] = v
+
+        # Graphviz complaining about using label for edges, so replace it with xlabel.
+        self._attrs["xlabel"] = label if label else xlabel
+        self._attrs["color"] = color
+        self._attrs["style"] = style
+        self._attrs["fontcolor"] = fontcolor
+        self._attrs["fontname"] = fontname
+        self._attrs["fontsize"] = fontsize
 
     def __sub__(self, other: Union["Node", "Edge", List["Node"]]):
         """Implement Self - Node or Edge and Self - [Nodes]"""
@@ -478,6 +501,7 @@ class Edge:
                 self.node = other
                 return self
 
+    @property
     def attrs(self) -> Dict:
         if self.forward and self.reverse:
             direction = 'both'
