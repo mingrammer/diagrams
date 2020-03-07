@@ -40,6 +40,14 @@ class GlobalAccelerator(_Network):
     _icon = "global-accelerator.png"
 
 
+class InternetGateway(_Network):
+    _icon = "internet-gateway.png"
+
+
+class NATGateway(_Network):
+    _icon = "nat-gateway.png"
+
+
 class NetworkingAndContentDelivery(_Network):
     _icon = "networking-and-content-delivery.png"
 
