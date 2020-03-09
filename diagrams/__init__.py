@@ -3,7 +3,7 @@ import os
 from hashlib import md5
 from pathlib import Path
 from random import getrandbits
-from typing import List, Union
+from typing import List, Union, Dict
 
 from graphviz import Digraph
 
@@ -75,15 +75,15 @@ class Diagram:
     # TODO: Label position option
     # TODO: Save directory option (filename + directory?)
     def __init__(
-        self,
-        name: str = "",
-        filename: str = "",
-        direction: str = "LR",
-        outformat: str = "png",
-        show: bool = True,
-        graph_attr: dict = {},
-        node_attr: dict = {},
-        edge_attr: dict = {},
+            self,
+            name: str = "",
+            filename: str = "",
+            direction: str = "LR",
+            outformat: str = "png",
+            show: bool = True,
+            graph_attr: dict = {},
+            node_attr: dict = {},
+            edge_attr: dict = {},
     ):
         """Diagram represents a global diagrams context.
 
@@ -129,6 +129,9 @@ class Diagram:
 
         self.show = show
 
+    def __str__(self) -> str:
+        return str(self.dot)
+
     def __enter__(self):
         setdiagram(self)
         return self
@@ -160,15 +163,9 @@ class Diagram:
         """Create a new node."""
         self.dot.node(hashid, label=label, **attrs)
 
-    def connect(self, node: "Node", node2: "Node", directed=True) -> None:
+    def connect(self, node: "Node", node2: "Node", edge: "Edge") -> None:
         """Connect the two Nodes."""
-        attrs = {"dir": "none"} if not directed else {}
-        self.dot.edge(node.hashid, node2.hashid, **attrs)
-
-    def reverse(self, node: "Node", node2: "Node", directed=True) -> None:
-        """Connect the two Nodes in reverse direction."""
-        attrs = {"dir": "none"} if not directed else {"dir": "back"}
-        self.dot.edge(node.hashid, node2.hashid, **attrs)
+        self.dot.edge(node.hashid, node2.hashid, **edge.attrs)
 
     def subgraph(self, dot: Digraph) -> None:
         """Create a subgraph for clustering"""
@@ -302,54 +299,70 @@ class Node:
         _name = self.__class__.__name__
         return f"<{self._provider}.{self._type}.{_name}>"
 
-    def __sub__(self, other: Union["Node", List["Node"]]):
-        """Implement Self - Node and Self - [Nodes]"""
-        if not isinstance(other, list):
-            return self.connect(other, directed=False)
-        for node in other:
-            self.connect(node, directed=False)
-        return other
+    def __sub__(self, other: Union["Node", List["Node"], "Edge"]):
+        """Implement Self - Node, Self - [Nodes] and Self - Edge."""
+        if isinstance(other, list):
+            for node in other:
+                self.connect(node, Edge(self))
+            return other
+        elif isinstance(other, Node):
+            return self.connect(other, Edge(self))
+        else:
+            other.node = self
+            return other
 
-    def __rsub__(self, other: List["Node"]):
-        """
-        Called for [Nodes] - Self because list of Nodes don't have
-        __sub__ operators.
-        """
-        self.__sub__(other)
+    def __rsub__(self, other: Union[List["Node"], List["Edge"]]):
+        """ Called for [Nodes] and [Edges] - Self because list don't have __sub__ operators. """
+        for o in other:
+            if isinstance(o, Edge):
+                o.connect(self)
+            else:
+                o.connect(self, Edge(self))
         return self
 
-    def __rshift__(self, other: Union["Node", List["Node"]]):
-        """Implements Self >> Node and Self >> [Nodes]."""
-        if not isinstance(other, list):
-            return self.connect(other)
-        for node in other:
-            self.connect(node)
-        return other
+    def __rshift__(self, other: Union["Node", List["Node"], "Edge"]):
+        """Implements Self >> Node, Self >> [Nodes] and Self Edge."""
+        if isinstance(other, list):
+            for node in other:
+                self.connect(node, Edge(self, forward=True))
+            return other
+        elif isinstance(other, Node):
+            return self.connect(other, Edge(self, forward=True))
+        else:
+            other.forward = True
+            other.node = self
+            return other
 
-    def __lshift__(self, other: Union["Node", List["Node"]]):
-        """Implements Self << Node and Self << [Nodes]."""
-        if not isinstance(other, list):
-            return self.reverse(other)
-        for node in other:
-            self.reverse(node)
-        return other
+    def __lshift__(self, other: Union["Node", List["Node"], "Edge"]):
+        """Implements Self << Node, Self << [Nodes] and Self << Edge."""
+        if isinstance(other, list):
+            for node in other:
+                self.connect(node, Edge(self, reverse=True))
+            return other
+        elif isinstance(other, Node):
+            return self.connect(other, Edge(self, reverse=True))
+        else:
+            other.reverse = True
+            return other.connect(self)
 
-    def __rrshift__(self, other: List["Node"]):
-        """
-        Called for [Nodes] >> Self because list of Nodes don't have
-        __rshift__ operators.
-        """
-        for node in other:
-            node.connect(self)
+    def __rrshift__(self, other: Union[List["Node"], List["Edge"]]):
+        """Called for [Nodes] and [Edges] >> Self because list don't have __rshift__ operators."""
+        for o in other:
+            if isinstance(o, Edge):
+                o.forward = True
+                o.connect(self)
+            else:
+                o.connect(self, Edge(self, forward=True))
         return self
 
-    def __rlshift__(self, other: List["Node"]):
-        """
-        Called for [Nodes] << Self because list of Nodes don't have
-        __lshift__ operators.
-        """
-        for node in other:
-            node.reverse(self)
+    def __rlshift__(self, other: Union[List["Node"], List["Edge"]]):
+        """Called for [Nodes] << Self because list of Nodes don't have __lshift__ operators."""
+        for o in other:
+            if isinstance(o, Edge):
+                o.reverse = True
+                o.connect(self)
+            else:
+                o.connect(self, Edge(self, reverse=True))
         return self
 
     @property
@@ -357,30 +370,19 @@ class Node:
         return self._hash
 
     # TODO: option for adding flow description to the connection edge
-    def connect(self, node: "Node", directed=True):
+    def connect(self, node: "Node", edge: "Edge"):
         """Connect to other node.
 
         :param node: Other node instance.
-        :param directed: Whether the flow is directed or not.
+        :param edge: Type of the edge.
         :return: Connected node.
         """
         if not isinstance(node, Node):
             ValueError(f"{node} is not a valid Node")
+        if not isinstance(node, Edge):
+            ValueError(f"{node} is not a valid Edge")
         # An edge must be added on the global diagrams, not a cluster.
-        self._diagram.connect(self, node, directed)
-        return node
-
-    def reverse(self, node: "Node", directed=True):
-        """Connect to other node in reverse direction.
-
-        :param node: Other node instance.
-        :param directed: Whether the flow is directed or not.
-        :return: Connected node.
-        """
-        if not isinstance(node, Node):
-            ValueError(f"{node} is not a valid Node")
-        # An edge must be added on the global diagrams, not a cluster.
-        self._diagram.reverse(self, node, directed)
+        self._diagram.connect(self, node, edge)
         return node
 
     @staticmethod
@@ -390,6 +392,127 @@ class Node:
     def _load_icon(self):
         basedir = Path(os.path.abspath(os.path.dirname(__file__)))
         return os.path.join(basedir.parent, self._icon_dir, self._icon)
+
+
+class Edge:
+    """Edge represents an edge between two nodes."""
+
+    _default_edge_attrs = {
+        "fontcolor": "#2D3436",
+        "fontname": "Sans-Serif",
+        "fontsize": "13",
+    }
+
+    def __init__(self,
+                 node: "Node" = None,
+                 forward: bool = False,
+                 reverse: bool = False,
+                 xlabel: str = "",
+                 label: str = "",
+                 color: str = "",
+                 style: str = "",
+                 fontcolor: str = "",
+                 fontname: str = "",
+                 fontsize: str = "",
+                 ):
+        """Edge represents an edge between two nodes.
+
+        :param node: Parent node.
+        :param forward: Points forward.
+        :param reverse: Points backward.
+        :param label: Edge label.
+        :param color: Edge color.
+        :param style: Edge style.
+        :param label: Edge font color.
+        :param color: Edge font name.
+        :param style: Edge font size.
+        """
+        if node is not None:
+            assert isinstance(node, Node)
+
+        self.node = node
+        self.forward = forward
+        self.reverse = reverse
+
+        self._attrs = {}
+
+        # Set attributes.
+        for k, v in self._default_edge_attrs.items():
+            self._attrs[k] = v
+
+        # Graphviz complaining about using label for edges, so replace it with xlabel.
+        self._attrs["xlabel"] = label if label else xlabel
+        self._attrs["color"] = color
+        self._attrs["style"] = style
+        self._attrs["fontcolor"] = fontcolor
+        self._attrs["fontname"] = fontname
+        self._attrs["fontsize"] = fontsize
+
+    def __sub__(self, other: Union["Node", "Edge", List["Node"]]):
+        """Implement Self - Node or Edge and Self - [Nodes]"""
+        return self.connect(other)
+
+    def __rsub__(self, other: Union[List["Node"], List["Edge"]]) -> List["Edge"]:
+        """Called for [Nodes] or [Edges] - Self because list don't have __sub__ operators."""
+        return self.append(other)
+
+    def __rshift__(self, other: Union["Node", "Edge", List["Node"]]):
+        """Implements Self >> Node or Edge and Self >> [Nodes]."""
+        self.forward = True
+        return self.connect(other)
+
+    def __lshift__(self, other: Union["Node", "Edge", List["Node"]]):
+        """Implements Self << Node or Edge and Self << [Nodes]."""
+        self.reverse = True
+        return self.connect(other)
+
+    def __rrshift__(self, other: Union[List["Node"], List["Edge"]]) -> List["Edge"]:
+        """Called for [Nodes] or [Edges] >> Self because list of Edges don't have __rshift__ operators."""
+        return self.append(other, forward=True)
+
+    def __rlshift__(self, other: Union[List["Node"], List["Edge"]]) -> List["Edge"]:
+        """Called for [Nodes] or [Edges] << Self because list of Edges don't have __lshift__ operators."""
+        return self.append(other, reverse=True)
+
+    def append(self, other: Union[List["Node"], List["Edge"]], forward=None, reverse=None) -> List["Edge"]:
+        result = []
+        for o in other:
+            if isinstance(o, Edge):
+                o.forward = forward if forward is not None else o.forward
+                o.reverse = forward if forward is not None else o.reverse
+                self._attrs = o._attrs.copy()
+                result.append(o)
+            else:
+                result.append(Edge(o, forward=forward, reverse=reverse, **self._attrs))
+        return result
+
+    def connect(self, other: Union["Node", "Edge", List["Node"]]):
+        if isinstance(other, list):
+            for node in other:
+                self.node.connect(node, self)
+            return other
+        elif isinstance(other, Edge):
+            self._attrs = other._attrs.copy()
+            return self
+        else:
+            if self.node is not None:
+                return self.node.connect(other, self)
+            else:
+                self.node = other
+                return self
+
+    @property
+    def attrs(self) -> Dict:
+        if self.forward and self.reverse:
+            direction = 'both'
+        elif self.forward:
+            direction = 'forward'
+        elif self.reverse:
+            direction = 'back'
+        else:
+            direction = 'none'
+
+        return {**self._attrs, 'dir': direction}
 
 
 Group = Cluster
