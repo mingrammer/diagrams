@@ -17,6 +17,9 @@
       "guides/diagram": {
         "title": "Diagrams"
       },
+      "guides/edge": {
+        "title": "Edges"
+      },
       "guides/node": {
         "title": "Nodes"
       },
