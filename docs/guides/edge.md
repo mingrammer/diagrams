@@ -3,11 +3,11 @@ id: edge
 title: Edges
 ---
 
-Edge is an object representing an edge between two Nodes.
+Edge is representing an edge between Nodes.
 
 ## Basic
 
-Node is an abstract concept that represents a single system component object. 
+Edge is an object representing a connection between Nodes with some additional properties.
 
 An edge object contains three attributes: **label**, **color** and **style** which mirror corresponding graphviz edge attributes.
 
