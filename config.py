@@ -131,6 +131,9 @@ ALIASES = {
             "CommandLineInterface": "CLI",
             "DeveloperTools": "DevTools",
         },
+        "engagement": {
+            "SimpleEmailServiceSes": "SES",
+        },
         "integration": {
             "SimpleNotificationServiceSns": "SNS",
             "SimpleQueueServiceSqs": "SQS",

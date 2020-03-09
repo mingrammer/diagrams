@@ -127,6 +127,12 @@ Node classes list of aws provider.
 - **diagrams.aws.iot.IotSitewise**
 - **diagrams.aws.iot.IotThingsGraph**
 
+## aws.engagement
+
+- **diagrams.aws.engagement.Connect**
+- **diagrams.aws.engagement.Pinpoint**
+- **diagrams.aws.engagement.SimpleEmailServiceSes**, **SES** (alias)
+
 ## aws.compute
 
 - **diagrams.aws.compute.ApplicationAutoScaling**, **AutoScaling** (alias)
