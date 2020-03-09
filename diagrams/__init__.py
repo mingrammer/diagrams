@@ -75,15 +75,15 @@ class Diagram:
     # TODO: Label position option
     # TODO: Save directory option (filename + directory?)
     def __init__(
-            self,
-            name: str = "",
-            filename: str = "",
-            direction: str = "LR",
-            outformat: str = "png",
-            show: bool = True,
-            graph_attr: dict = {},
-            node_attr: dict = {},
-            edge_attr: dict = {},
+        self,
+        name: str = "",
+        filename: str = "",
+        direction: str = "LR",
+        outformat: str = "png",
+        show: bool = True,
+        graph_attr: dict = {},
+        node_attr: dict = {},
+        edge_attr: dict = {},
     ):
         """Diagram represents a global diagrams context.
 
@@ -143,7 +143,7 @@ class Diagram:
         setdiagram(None)
 
     def _repr_png_(self):
-        return self.dot.pipe(format='png')
+        return self.dot.pipe(format="png")
 
     def _validate_direction(self, direction: str) -> bool:
         direction = direction.upper()
@@ -403,18 +403,19 @@ class Edge:
         "fontsize": "13",
     }
 
-    def __init__(self,
-                 node: "Node" = None,
-                 forward: bool = False,
-                 reverse: bool = False,
-                 xlabel: str = "",
-                 label: str = "",
-                 color: str = "",
-                 style: str = "",
-                 fontcolor: str = "",
-                 fontname: str = "",
-                 fontsize: str = "",
-                 ):
+    def __init__(
+        self,
+        node: "Node" = None,
+        forward: bool = False,
+        reverse: bool = False,
+        xlabel: str = "",
+        label: str = "",
+        color: str = "",
+        style: str = "",
+        fontcolor: str = "",
+        fontname: str = "",
+        fontsize: str = "",
+    ):
         """Edge represents an edge between two nodes.
 
         :param node: Parent node.
@@ -504,15 +505,14 @@ class Edge:
     @property
     def attrs(self) -> Dict:
         if self.forward and self.reverse:
-            direction = 'both'
+            direction = "both"
         elif self.forward:
-            direction = 'forward'
+            direction = "forward"
         elif self.reverse:
-            direction = 'back'
+            direction = "back"
         else:
-            direction = 'none'
-
-        return {**self._attrs, 'dir': direction}
+            direction = "none"
+        return {**self._attrs, "dir": direction}
 
 
 Group = Cluster
