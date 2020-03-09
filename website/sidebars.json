@@ -7,7 +7,8 @@
     "Guides": [
       "guides/diagram",
       "guides/node",
-      "guides/cluster"
+      "guides/cluster",
+      "guides/edge"
     ],
     "Nodes": [
       "nodes/onprem",
