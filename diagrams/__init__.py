@@ -408,7 +408,6 @@ class Edge:
         node: "Node" = None,
         forward: bool = False,
         reverse: bool = False,
-        xlabel: str = "",
         label: str = "",
         color: str = "",
         style: str = "",
@@ -442,7 +441,7 @@ class Edge:
             self._attrs[k] = v
 
         # Graphviz complaining about using label for edges, so replace it with xlabel.
-        self._attrs["xlabel"] = label if label else xlabel
+        self._attrs["xlabel"] = label
         self._attrs["color"] = color
         self._attrs["style"] = style
         if fontcolor:
