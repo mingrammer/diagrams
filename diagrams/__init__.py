@@ -445,9 +445,12 @@ class Edge:
         self._attrs["xlabel"] = label if label else xlabel
         self._attrs["color"] = color
         self._attrs["style"] = style
-        self._attrs["fontcolor"] = fontcolor
-        self._attrs["fontname"] = fontname
-        self._attrs["fontsize"] = fontsize
+        if fontcolor:
+            self._attrs["fontcolor"] = fontcolor
+        if fontname:
+            self._attrs["fontname"] = fontname
+        if fontsize:
+            self._attrs["fontsize"] = fontsize
 
     def __sub__(self, other: Union["Node", "Edge", List["Node"]]):
         """Implement Self - Node or Edge and Self - [Nodes]"""
