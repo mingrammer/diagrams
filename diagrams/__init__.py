@@ -411,9 +411,7 @@ class Edge:
         label: str = "",
         color: str = "",
         style: str = "",
-        fontcolor: str = "",
-        fontname: str = "",
-        fontsize: str = "",
+        **attrs: Dict,
     ):
         """Edge represents an edge between two nodes.
 
@@ -444,12 +442,7 @@ class Edge:
         self._attrs["xlabel"] = label
         self._attrs["color"] = color
         self._attrs["style"] = style
-        if fontcolor:
-            self._attrs["fontcolor"] = fontcolor
-        if fontname:
-            self._attrs["fontname"] = fontname
-        if fontsize:
-            self._attrs["fontsize"] = fontsize
+        self._attrs.update(attrs)
 
     def __sub__(self, other: Union["Node", "Edge", List["Node"]]):
         """Implement Self - Node or Edge and Self - [Nodes]"""
@@ -481,9 +474,9 @@ class Edge:
         result = []
         for o in other:
             if isinstance(o, Edge):
-                o.forward = forward if forward is not None else o.forward
-                o.reverse = forward if forward is not None else o.reverse
-                self._attrs = o._attrs.copy()
+                o.forward = forward if forward else o.forward
+                o.reverse = forward if forward else o.reverse
+                self._attrs = o.attrs.copy()
                 result.append(o)
             else:
                 result.append(Edge(o, forward=forward, reverse=reverse, **self._attrs))
