@@ -22,6 +22,7 @@ Node classes list of onprem provider.
 
 ## onprem.security
 
+- **diagrams.onprem.security.Trivy**
 - **diagrams.onprem.security.Vault**
 
 ## onprem.ci
