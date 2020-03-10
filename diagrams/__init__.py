@@ -421,9 +421,7 @@ class Edge:
         :param label: Edge label.
         :param color: Edge color.
         :param style: Edge style.
-        :param fontcolor: Edge font color.
-        :param fontname: Edge font name.
-        :param fontsize: Edge font size.
+        :param attrs: Other edge attributes
         """
         if node is not None:
             assert isinstance(node, Node)
