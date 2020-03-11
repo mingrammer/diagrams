@@ -17,6 +17,7 @@ Node classes list of gcp provider.
 ## gcp.security
 
 - **diagrams.gcp.security.Iam**
+- **diagrams.gcp.security.IAP**
 - **diagrams.gcp.security.KeyManagementService**, **KMS** (alias)
 - **diagrams.gcp.security.ResourceManager**
 - **diagrams.gcp.security.SecurityCommandCenter**, **SCC** (alias)
