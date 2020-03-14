@@ -8,6 +8,10 @@ class _Analytics(_OnPrem):
     _icon_dir = "resources/onprem/analytics"
 
 
+class Beam(_Analytics):
+    _icon = "beam.png"
+
+
 class Flink(_Analytics):
     _icon = "flink.png"
 
