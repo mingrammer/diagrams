@@ -1,4 +1,4 @@
-# Contributiton Guide
+# Contribution Guide
 
 You shouldn't edit the node class files (all files under `diagram` directory) by yourself.
 
