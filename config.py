@@ -96,6 +96,8 @@ ALIASES = {
         "network": {
             "Etcd": "ETCD",
             "Haproxy": "HAProxy",
+            "Pfsense": "PFSense",
+            "Vyos": "VyOS"
         },
         "queue": {
             "Activemq": "ActiveMQ",
