@@ -52,12 +52,20 @@ class Nginx(_Network):
     _icon = "nginx.png"
 
 
+class Pfsense(_Network):
+    _icon = "pfsense.png"
+
+
 class Tomcat(_Network):
     _icon = "tomcat.png"
 
 
 class Traefik(_Network):
     _icon = "traefik.png"
+
+
+class Vyos(_Network):
+    _icon = "vyos.png"
 
 
 class Zookeeper(_Network):
@@ -68,3 +76,5 @@ class Zookeeper(_Network):
 
 ETCD = Etcd
 HAProxy = Haproxy
+PFSense = Pfsense
+VyOS = Vyos
