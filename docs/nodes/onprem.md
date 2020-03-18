@@ -108,6 +108,7 @@ Node classes list of onprem provider.
 
 ## onprem.analytics
 
+- **diagrams.onprem.analytics.Beam**
 - **diagrams.onprem.analytics.Flink**
 - **diagrams.onprem.analytics.Hadoop**
 - **diagrams.onprem.analytics.Hive**
