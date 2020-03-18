@@ -83,7 +83,7 @@ from diagrams import Diagram
 from diagrams.aws.compute import EC2
 
 graph_attr = {
-	"fontsize": 45,
+	"fontsize": "45",
 	"bgcolor": "transparent"
 }
 
