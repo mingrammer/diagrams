@@ -92,6 +92,7 @@ Node classes list of onprem provider.
 ## onprem.gitops
 
 - **diagrams.onprem.gitops.Argocd**, **ArgoCD** (alias)
+- **diagrams.onprem.gitops.Spinnaker**
 
 ## onprem.monitoring
 
