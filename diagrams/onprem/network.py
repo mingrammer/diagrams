@@ -12,6 +12,10 @@ class Apache(_Network):
     _icon = "apache.png"
 
 
+class Bind9(_Network):
+    _icon = "bind9.png"
+
+
 class Caddy(_Network):
     _icon = "caddy.png"
 
