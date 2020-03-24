@@ -120,3 +120,9 @@ Node classes list of onprem provider.
 - **diagrams.onprem.analytics.Hive**
 - **diagrams.onprem.analytics.Spark**
 - **diagrams.onprem.analytics.Storm**
+
+## onprem.vcs
+
+- **diagrams.onprem.vcs.Git**
+- **diagrams.onprem.vcs.Github**
+- **diagrams.onprem.vcs.Gitlab**
