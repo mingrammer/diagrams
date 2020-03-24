@@ -31,6 +31,10 @@ Node classes list of onprem provider.
 - **diagrams.onprem.ci.Jenkins**
 - **diagrams.onprem.ci.Travisci**, **TravisCI** (alias)
 
+## onprem.mlops
+
+- **diagrams.onprem.mlops.Polyaxon**
+
 ## onprem.network
 
 - **diagrams.onprem.network.Apache**
