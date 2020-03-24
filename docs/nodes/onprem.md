@@ -71,6 +71,10 @@ Node classes list of onprem provider.
 - **diagrams.onprem.container.Docker**
 - **diagrams.onprem.container.Rkt**, **RKT** (alias)
 
+## onprem.iac
+
+- **diagrams.onprem.iac.Terraform**
+
 ## onprem.compute
 
 - **diagrams.onprem.compute.Nomad**
