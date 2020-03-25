@@ -89,10 +89,13 @@ Node classes list of onprem provider.
 - **diagrams.onprem.queue.Rabbitmq**, **RabbitMQ** (alias)
 - **diagrams.onprem.queue.Zeromq**, **ZeroMQ** (alias)
 
+## onprem.cd
+
+- **diagrams.onprem.cd.Spinnaker**
+
 ## onprem.gitops
 
 - **diagrams.onprem.gitops.Argocd**, **ArgoCD** (alias)
-- **diagrams.onprem.gitops.Spinnaker**
 
 ## onprem.monitoring
 

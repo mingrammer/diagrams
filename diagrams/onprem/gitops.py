@@ -12,10 +12,6 @@ class Argocd(_Gitops):
     _icon = "argocd.png"
 
 
-class Spinnaker(_Gitops):
-    _icon = "spinnaker.png"
-
-
 # Aliases
 
 ArgoCD = Argocd
