@@ -10,5 +10,8 @@
   },
   "devDependencies": {
     "docusaurus": "^1.14.4"
+  },
+  "dependencies": {
+    "minimist": "^1.2.5"
   }
 }
