@@ -20,12 +20,20 @@ class Couchdb(_Database):
     _icon = "couchdb.png"
 
 
+class Dgraph(_Database):
+    _icon = "dgraph.png"
+
+
 class Hbase(_Database):
     _icon = "hbase.png"
 
 
 class Influxdb(_Database):
     _icon = "influxdb.png"
+
+
+class Janusgraph(_Database):
+    _icon = "janusgraph.png"
 
 
 class Mariadb(_Database):
@@ -56,12 +64,17 @@ class Postgresql(_Database):
     _icon = "postgresql.png"
 
 
+class Scylla(_Database):
+    _icon = "scylla.png"
+
+
 # Aliases
 
 CockroachDB = Cockroachdb
 CouchDB = Couchdb
 HBase = Hbase
 InfluxDB = Influxdb
+JanusGraph = Janusgraph
 MariaDB = Mariadb
 MongoDB = Mongodb
 MSSQL = Mssql
