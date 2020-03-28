@@ -10,8 +10,10 @@ Node classes list of onprem provider.
 - **diagrams.onprem.database.Cassandra**
 - **diagrams.onprem.database.Cockroachdb**, **CockroachDB** (alias)
 - **diagrams.onprem.database.Couchdb**, **CouchDB** (alias)
+- **diagrams.onprem.database.Dgraph**
 - **diagrams.onprem.database.Hbase**, **HBase** (alias)
 - **diagrams.onprem.database.Influxdb**, **InfluxDB** (alias)
+- **diagrams.onprem.database.Janusgraph**, **JanusGraph** (alias)
 - **diagrams.onprem.database.Mariadb**, **MariaDB** (alias)
 - **diagrams.onprem.database.Mongodb**, **MongoDB** (alias)
 - **diagrams.onprem.database.Mssql**, **MSSQL** (alias)
@@ -19,6 +21,7 @@ Node classes list of onprem provider.
 - **diagrams.onprem.database.Neo4J**
 - **diagrams.onprem.database.Oracle**
 - **diagrams.onprem.database.Postgresql**, **PostgreSQL** (alias)
+- **diagrams.onprem.database.Scylla**
 
 ## onprem.security
 
@@ -76,6 +79,12 @@ Node classes list of onprem provider.
 - **diagrams.onprem.compute.Nomad**
 - **diagrams.onprem.compute.Server**
 
+## onprem.vcs
+
+- **diagrams.onprem.vcs.Git**
+- **diagrams.onprem.vcs.Github**
+- **diagrams.onprem.vcs.Gitlab**
+
 ## onprem.workflow
 
 - **diagrams.onprem.workflow.Airflow**
@@ -124,9 +133,3 @@ Node classes list of onprem provider.
 - **diagrams.onprem.analytics.Hive**
 - **diagrams.onprem.analytics.Spark**
 - **diagrams.onprem.analytics.Storm**
-
-## onprem.vcs
-
-- **diagrams.onprem.vcs.Git**
-- **diagrams.onprem.vcs.Github**
-- **diagrams.onprem.vcs.Gitlab**

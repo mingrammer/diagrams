@@ -81,6 +81,7 @@ ALIASES = {
             "Couchdb": "CouchDB",
             "Hbase": "HBase",
             "Influxdb": "InfluxDB",
+            "Janusgraph": "JanusGraph",
             "Mariadb": "MariaDB",
             "Mongodb": "MongoDB",
             "Mssql": "MSSQL",
