@@ -88,6 +88,7 @@ Node classes list of onprem provider.
 - **diagrams.onprem.queue.Kafka**
 - **diagrams.onprem.queue.Rabbitmq**, **RabbitMQ** (alias)
 - **diagrams.onprem.queue.Zeromq**, **ZeroMQ** (alias)
+- **diagrams.onprem.queue.Celery**
 
 ## onprem.gitops
 
