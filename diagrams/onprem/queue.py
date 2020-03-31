@@ -12,6 +12,10 @@ class Activemq(_Queue):
     _icon = "activemq.png"
 
 
+class Celery(_Queue):
+    _icon = "celery.png"
+
+
 class Kafka(_Queue):
     _icon = "kafka.png"
 
