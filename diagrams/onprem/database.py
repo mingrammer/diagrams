@@ -84,3 +84,4 @@ MongoDB = Mongodb
 MSSQL = Mssql
 MySQL = Mysql
 PostgreSQL = Postgresql
+ClickHouse = Clickhouse
