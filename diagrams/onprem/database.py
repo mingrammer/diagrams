@@ -12,6 +12,10 @@ class Cassandra(_Database):
     _icon = "cassandra.png"
 
 
+class Clickhouse(_Database):
+    _icon = "clickhouse.png"
+
+
 class Cockroachdb(_Database):
     _icon = "cockroachdb.png"
 
@@ -80,3 +84,4 @@ MongoDB = Mongodb
 MSSQL = Mssql
 MySQL = Mysql
 PostgreSQL = Postgresql
+ClickHouse = Clickhouse
