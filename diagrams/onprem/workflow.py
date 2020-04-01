@@ -12,6 +12,10 @@ class Airflow(_Workflow):
     _icon = "airflow.png"
 
 
+class Digdag(_Workflow):
+    _icon = "digdag.png"
+
+
 class Kubeflow(_Workflow):
     _icon = "kubeflow.png"
 
