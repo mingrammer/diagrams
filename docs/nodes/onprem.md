@@ -116,6 +116,11 @@ Node classes list of onprem provider.
 - **diagrams.onprem.monitoring.Prometheus**
 - **diagrams.onprem.monitoring.Splunk**
 
+## onprem.data
+
+- **diagrams.onprem.data.Embulk**
+- **diagrams.onprem.data.Fluentd**
+
 ## onprem.client
 
 - **diagrams.onprem.client.Client**
