@@ -120,6 +120,7 @@ Node classes list of onprem provider.
 
 - **diagrams.onprem.data.Embulk**
 - **diagrams.onprem.data.Fluentd**
+- **diagrams.onprem.data.Norikra**
 
 ## onprem.client
 
