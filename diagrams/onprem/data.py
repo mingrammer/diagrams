@@ -12,12 +12,4 @@ class Embulk(_Data):
     _icon = "embulk.png"
 
 
-class Fluentd(_Data):
-    _icon = "fluentd.png"
-
-
-class Norikra(_Data):
-    _icon = "norikra.png"
-
-
 # Aliases

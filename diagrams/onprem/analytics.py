@@ -24,6 +24,10 @@ class Hive(_Analytics):
     _icon = "hive.png"
 
 
+class Norikra(_Analytics):
+    _icon = "norikra.png"
+
+
 class Spark(_Analytics):
     _icon = "spark.png"
 

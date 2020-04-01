@@ -119,8 +119,6 @@ Node classes list of onprem provider.
 ## onprem.data
 
 - **diagrams.onprem.data.Embulk**
-- **diagrams.onprem.data.Fluentd**
-- **diagrams.onprem.data.Norikra**
 
 ## onprem.client
 
@@ -139,5 +137,6 @@ Node classes list of onprem provider.
 - **diagrams.onprem.analytics.Flink**
 - **diagrams.onprem.analytics.Hadoop**
 - **diagrams.onprem.analytics.Hive**
+- **diagrams.onprem.analytics.Norikra**
 - **diagrams.onprem.analytics.Spark**
 - **diagrams.onprem.analytics.Storm**
