@@ -35,6 +35,10 @@ Node classes list of onprem provider.
 - **diagrams.onprem.ci.Jenkins**
 - **diagrams.onprem.ci.Travisci**, **TravisCI** (alias)
 
+## onprem.etl
+
+- **diagrams.onprem.etl.Embulk**
+
 ## onprem.mlops
 
 - **diagrams.onprem.mlops.Polyaxon**
@@ -118,7 +122,7 @@ Node classes list of onprem provider.
 
 ## onprem.data
 
-- **diagrams.onprem.data.Embulk**
+- **diagrams.onprem.data.Norikra**
 
 ## onprem.client
 

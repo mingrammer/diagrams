@@ -8,8 +8,8 @@ class _Data(_OnPrem):
     _icon_dir = "resources/onprem/data"
 
 
-class Embulk(_Data):
-    _icon = "embulk.png"
+class Norikra(_Data):
+    _icon = "norikra.png"
 
 
 # Aliases
