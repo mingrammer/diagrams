@@ -8,8 +8,4 @@ class _Data(_OnPrem):
     _icon_dir = "resources/onprem/data"
 
 
-class Norikra(_Data):
-    _icon = "norikra.png"
-
-
 # Aliases

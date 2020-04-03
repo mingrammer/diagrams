@@ -122,7 +122,6 @@ Node classes list of onprem provider.
 
 ## onprem.data
 
-- **diagrams.onprem.data.Norikra**
 
 ## onprem.client
 
