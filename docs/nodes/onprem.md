@@ -93,16 +93,17 @@ Node classes list of onprem provider.
 ## onprem.workflow
 
 - **diagrams.onprem.workflow.Airflow**
+- **diagrams.onprem.workflow.Digdag**
 - **diagrams.onprem.workflow.Kubeflow**, **KubeFlow** (alias)
 - **diagrams.onprem.workflow.Nifi**, **NiFi** (alias)
 
 ## onprem.queue
 
 - **diagrams.onprem.queue.Activemq**, **ActiveMQ** (alias)
+- **diagrams.onprem.queue.Celery**
 - **diagrams.onprem.queue.Kafka**
 - **diagrams.onprem.queue.Rabbitmq**, **RabbitMQ** (alias)
 - **diagrams.onprem.queue.Zeromq**, **ZeroMQ** (alias)
-- **diagrams.onprem.queue.Celery**
 
 ## onprem.cd
 
