@@ -37,6 +37,10 @@ def getcluster():
 def setcluster(cluster):
     __cluster.set(cluster)
 
+def new_init(cls, init):
+    def reset_init(*args, **kwargs):
+        cls.__init__ = init
+    return reset_init
 
 class Diagram:
     __directions = ("TB", "BT", "LR", "RL")
@@ -194,7 +198,13 @@ class Cluster:
     # FIXME:
     #  Cluster direction does not work now. Graphviz couldn't render
     #  correctly for a subgraph that has a different rank direction.
-    def __init__(self, label: str = "cluster", direction: str = "LR"):
+    def __init__(
+        self,
+        label: str = "cluster", 
+        direction: str = "LR",
+        icon: object = None,
+        icon_size: int = 30
+        ):
         """Cluster represents a cluster context.
 
         :param label: Cluster label.
@@ -202,14 +212,25 @@ class Cluster:
         """
         self.label = label
         self.name = "cluster_" + self.label
+        self.icon = icon
+        self.icon_size = icon_size
 
         self.dot = Digraph(self.name)
 
         # Set attributes.
         for k, v in self._default_graph_attrs.items():
             self.dot.graph_attr[k] = v
-        self.dot.graph_attr["label"] = self.label
 
+        # if an icon is set, try to find and instantiate a Node without calling __init__()
+        # then find it's icon by calling _load_icon()
+        if self.icon:
+            _node = self.icon(_no_init=True)
+            if isinstance(_node,Node):
+                self.icon_label = '<<TABLE border="0"><TR><TD fixedsize="true" width="' + str(self.icon_size) +'" height="' + str(self.icon_size) +'"><IMG SRC="' + _node._load_icon() + '"></IMG></TD><TD>' + self.label + '</TD></TR></TABLE>>'
+                self.dot.graph_attr["label"] = self.icon_label
+        else:
+            self.dot.graph_attr["label"] = self.label
+ 
         if not self._validate_direction(direction):
             raise ValueError(f'"{direction}" is not a valid direction')
         self.dot.graph_attr["rankdir"] = direction
@@ -261,6 +282,14 @@ class Node:
     _icon = None
 
     _height = 1.9
+
+    def __new__(cls, *args, **kwargs):
+        instance = object.__new__(cls)
+        lazy = kwargs.pop('_no_init', False)
+        if not lazy:
+            return instance
+        cls.__init__ = new_init(cls, cls.__init__)
+        return instance
 
     def __init__(self, label: str = ""):
         """Node represents a system component.
