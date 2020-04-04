@@ -53,7 +53,7 @@ class _Cluster:
         except LookupError:
             self._parent = None
 
-    
+
     def __enter__(self):
         setcluster(self)
         return self
@@ -77,14 +77,14 @@ class _Cluster:
     def node(self, node: "Node") -> None:
         """Create a new node."""
         self.nodes[node.nodeid] = node
-    
+
     def remove_node(self, nodeid: str) -> None:
         del self.nodes[nodeid]
 
     def subgraph(self, subgraph: "_Cluster") -> None:
         """Create a subgraph for clustering"""
         self.subgraphs.append(subgraph)
-    
+
     @property
     def nodes_iter(self):
         if self.nodes:
@@ -212,7 +212,7 @@ class Diagram(_Cluster):
         setdiagram(self)
         super().__enter__()
         return self
-    
+
     def __exit__(self, *args):
         super().__exit__(*args)
         setdiagram(None)
@@ -456,7 +456,7 @@ class Node(_Cluster):
     @property
     def nodeid(self):
         return self._id
-    
+
     # TODO: option for adding flow description to the connection edge
     def connect(self, node: "Node", edge: "Edge"):
         """Connect to other node.
