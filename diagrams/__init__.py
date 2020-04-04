@@ -41,6 +41,10 @@ def new_init(cls, init):
     def reset_init(*args, **kwargs):
         cls.__init__ = init
     return reset_init
+def new_init(cls, init):
+    def reset_init(*args, **kwargs):
+        cls.__init__ = init
+    return reset_init
 
 class _Cluster:
     __directions = ("TB", "BT", "LR", "RL")
