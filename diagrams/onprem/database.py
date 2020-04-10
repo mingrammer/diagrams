@@ -74,6 +74,7 @@ class Scylla(_Database):
 
 # Aliases
 
+ClickHouse = Clickhouse
 CockroachDB = Cockroachdb
 CouchDB = Couchdb
 HBase = Hbase
@@ -84,4 +85,3 @@ MongoDB = Mongodb
 MSSQL = Mssql
 MySQL = Mysql
 PostgreSQL = Postgresql
-ClickHouse = Clickhouse

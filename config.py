@@ -77,6 +77,7 @@ ALIASES = {
             "Rkt": "RKT",
         },
         "database": {
+            "Clickhouse": "ClickHouse",
             "Cockroachdb": "CockroachDB",
             "Couchdb": "CouchDB",
             "Hbase": "HBase",
