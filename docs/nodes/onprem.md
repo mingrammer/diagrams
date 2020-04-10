@@ -35,6 +35,10 @@ Node classes list of onprem provider.
 - **diagrams.onprem.ci.Jenkins**
 - **diagrams.onprem.ci.Travisci**, **TravisCI** (alias)
 
+## onprem.etl
+
+- **diagrams.onprem.etl.Embulk**
+
 ## onprem.mlops
 
 - **diagrams.onprem.mlops.Polyaxon**
@@ -121,6 +125,9 @@ Node classes list of onprem provider.
 - **diagrams.onprem.monitoring.Prometheus**
 - **diagrams.onprem.monitoring.Splunk**
 
+## onprem.data
+
+
 ## onprem.client
 
 - **diagrams.onprem.client.Client**
@@ -138,5 +145,6 @@ Node classes list of onprem provider.
 - **diagrams.onprem.analytics.Flink**
 - **diagrams.onprem.analytics.Hadoop**
 - **diagrams.onprem.analytics.Hive**
+- **diagrams.onprem.analytics.Norikra**
 - **diagrams.onprem.analytics.Spark**
 - **diagrams.onprem.analytics.Storm**
