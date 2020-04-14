@@ -436,10 +436,13 @@ class Edge:
         for k, v in self._default_edge_attrs.items():
             self._attrs[k] = v
 
-        # Graphviz complaining about using label for edges, so replace it with xlabel.
-        self._attrs["xlabel"] = label
-        self._attrs["color"] = color
-        self._attrs["style"] = style
+        if label:
+            # Graphviz complaining about using label for edges, so replace it with xlabel.
+            self._attrs["xlabel"] = label
+        if color:
+            self._attrs["color"] = color
+        if style:
+            self._attrs["style"] = style
         self._attrs.update(attrs)
 
     def __sub__(self, other: Union["Node", "Edge", List["Node"]]):
