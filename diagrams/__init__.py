@@ -1,6 +1,6 @@
 import contextvars
 import os
-from hashlib import md5
+import uuid
 from pathlib import Path
 from random import getrandbits
 from typing import List, Union, Dict
@@ -387,7 +387,7 @@ class Node:
 
     @staticmethod
     def _rand_hash():
-        return md5(getrandbits(64).to_bytes(64, "big")).hexdigest()
+        return uuid.uuid4().hex
 
     def _load_icon(self):
         basedir = Path(os.path.abspath(os.path.dirname(__file__)))
