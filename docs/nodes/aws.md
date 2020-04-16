@@ -70,6 +70,7 @@ Node classes list of aws provider.
 - **diagrams.aws.network.Route53**
 - **diagrams.aws.network.SiteToSiteVpn**
 - **diagrams.aws.network.TransitGateway**
+- **diagrams.aws.network.VPCRouter**
 - **diagrams.aws.network.VPC**
 
 ## aws.management
