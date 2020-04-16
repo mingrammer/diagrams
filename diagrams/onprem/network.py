@@ -56,6 +56,10 @@ class Pfsense(_Network):
     _icon = "pfsense.png"
 
 
+class Pomerium(_Network):
+    _icon = "pomerium.png"
+
+
 class Tomcat(_Network):
     _icon = "tomcat.png"
 
