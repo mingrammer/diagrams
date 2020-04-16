@@ -28,4 +28,8 @@ class Splunk(_Monitoring):
     _icon = "splunk.png"
 
 
+class Thanos(_Monitoring):
+    _icon = "thanos.png"
+
+
 # Aliases
