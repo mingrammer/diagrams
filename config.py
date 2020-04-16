@@ -72,6 +72,7 @@ ALIASES = {
         "ci": {
             "Circleci": "CircleCI",
             "Travisci": "TravisCI",
+            "Teamcity": "TC",
         },
         "container": {
             "Rkt": "RKT",
