@@ -16,6 +16,10 @@ class Jenkins(_Ci):
     _icon = "jenkins.png"
 
 
+class Teamcity(_Ci):
+    _icon = "teamcity.png"
+
+
 class Travisci(_Ci):
     _icon = "travisci.png"
 
@@ -24,3 +28,4 @@ class Travisci(_Ci):
 
 CircleCI = Circleci
 TravisCI = Travisci
+TC = Teamcity
