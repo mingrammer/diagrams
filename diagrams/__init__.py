@@ -267,7 +267,7 @@ class Node:
 
         :param label: Node label.
         """
-        # Generates a hash for identifying a node.
+        # Generates an ID for identifying a node.
         self._id = self._rand_id()
         self.label = label
 
