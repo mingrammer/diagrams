@@ -72,6 +72,10 @@ class TransitGateway(_Network):
     _icon = "transit-gateway.png"
 
 
+class VPCRouter(_Network):
+    _icon = "vpc-router.png"
+
+
 class VPC(_Network):
     _icon = "vpc.png"
 
