@@ -36,6 +36,10 @@ class ElasticLoadBalancing(_Network):
     _icon = "elastic-load-balancing.png"
 
 
+class Endpoint(_Network):
+    _icon = "endpoint.png"
+
+
 class GlobalAccelerator(_Network):
     _icon = "global-accelerator.png"
 
