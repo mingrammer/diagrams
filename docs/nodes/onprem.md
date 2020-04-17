@@ -99,6 +99,7 @@ Node classes list of onprem provider.
 - **diagrams.onprem.network.Linkerd**
 - **diagrams.onprem.network.Nginx**
 - **diagrams.onprem.network.Pfsense**, **PFSense** (alias)
+- **diagrams.onprem.network.Pomerium**
 - **diagrams.onprem.network.Tomcat**
 - **diagrams.onprem.network.Traefik**
 - **diagrams.onprem.network.Vyos**, **VyOS** (alias)
