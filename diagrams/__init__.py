@@ -1,6 +1,6 @@
 import contextvars
 import os
-from hashlib import md5
+import uuid
 from pathlib import Path
 from random import getrandbits
 from typing import List, Union, Dict
@@ -159,13 +159,13 @@ class Diagram:
                 return True
         return False
 
-    def node(self, hashid: str, label: str, **attrs) -> None:
+    def node(self, nodeid: str, label: str, **attrs) -> None:
         """Create a new node."""
-        self.dot.node(hashid, label=label, **attrs)
+        self.dot.node(nodeid, label=label, **attrs)
 
     def connect(self, node: "Node", node2: "Node", edge: "Edge") -> None:
         """Connect the two Nodes."""
-        self.dot.edge(node.hashid, node2.hashid, **edge.attrs)
+        self.dot.edge(node.nodeid, node2.nodeid, **edge.attrs)
 
     def subgraph(self, dot: Digraph) -> None:
         """Create a subgraph for clustering"""
@@ -243,9 +243,9 @@ class Cluster:
                 return True
         return False
 
-    def node(self, hashid: str, label: str, **attrs) -> None:
+    def node(self, nodeid: str, label: str, **attrs) -> None:
         """Create a new node in the cluster."""
-        self.dot.node(hashid, label=label, **attrs)
+        self.dot.node(nodeid, label=label, **attrs)
 
     def subgraph(self, dot: Digraph) -> None:
         self.dot.subgraph(dot)
@@ -267,8 +267,8 @@ class Node:
 
         :param label: Node label.
         """
-        # Generates a hash for identifying a node.
-        self._hash = self._rand_hash()
+        # Generates an ID for identifying a node.
+        self._id = self._rand_id()
         self.label = label
 
         # fmt: off
@@ -291,9 +291,9 @@ class Node:
 
         # If a node is in the cluster context, add it to cluster.
         if self._cluster:
-            self._cluster.node(self._hash, self.label, **self.attrs)
+            self._cluster.node(self._id, self.label, **self.attrs)
         else:
-            self._diagram.node(self._hash, self.label, **self.attrs)
+            self._diagram.node(self._id, self.label, **self.attrs)
 
     def __repr__(self):
         _name = self.__class__.__name__
@@ -366,8 +366,8 @@ class Node:
         return self
 
     @property
-    def hashid(self):
-        return self._hash
+    def nodeid(self):
+        return self._id
 
     # TODO: option for adding flow description to the connection edge
     def connect(self, node: "Node", edge: "Edge"):
@@ -386,8 +386,8 @@ class Node:
         return node
 
     @staticmethod
-    def _rand_hash():
-        return md5(getrandbits(64).to_bytes(64, "big")).hexdigest()
+    def _rand_id():
+        return uuid.uuid4().hex
 
     def _load_icon(self):
         basedir = Path(os.path.abspath(os.path.dirname(__file__)))
