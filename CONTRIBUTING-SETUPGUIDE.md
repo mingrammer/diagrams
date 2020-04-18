@@ -17,7 +17,7 @@ Easiest and cleanest way is to boot a new Linux VM on your cloud provide of choi
 
 To contribute to Diagrams you will need the required software (all installed from command prompt):
 
-* Python 2.7.x (comes pre-installed)
+* Python 2.7.x (comes pre-installed) - The same issue occurs (see later in this document) with Python 3.7.5
 
 * pip (to make your life easier)
  ```shell
@@ -95,3 +95,5 @@ But its failing as per error message above - which is beyond by Google-foo... (O
 
 # TO DO
 * Add how to run modified code locally 
+
+sudo apt-get install python 3.7.5
