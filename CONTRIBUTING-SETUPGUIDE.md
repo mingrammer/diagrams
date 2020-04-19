@@ -1,12 +1,16 @@
 # Contribution Guide - How to Setup Environment
 
-# WARNING - 18 Apr 2020 - THIS DOES NOT WORK YET!
+# WARNING - 19 Apr 2020 - The below creates an environment where you can successfully run the tests 
+
+# However it still needs testing again; and also needs worked example on actually contributing 'value' and not putting noise back into the repository!
 
 Whilst using Diagrams is easy and some folks will find setting up and extending Diagrams easy - for others with Python, Bash and Go dependancies it is harder...
 
 So a worked guide to setting up a VM with linux so you can contribute to Diagrams.
 
-Disclosure: This was written using ubuntu 18.04 on Azure. 
+Thanks: Thanks to ViktorOrda for assist on getting this to work.
+
+This guide was written using ubuntu 18.04 on Azure. 
 
 ## VM
 Easiest and cleanest way is to boot a new Linux VM on your cloud provide of choice. 
@@ -17,12 +21,40 @@ Easiest and cleanest way is to boot a new Linux VM on your cloud provide of choi
 
 To contribute to Diagrams you will need the required software (all installed from command prompt):
 
-* Python 2.7.x (comes pre-installed) - The same issue occurs (see later in this document) with Python 3.7.5
+* Update apt (so you can find stuff)
+```shell
+    sudo apt update   
+```
 
-* pip (to make your life easier)
+* Python - You want version 3 (Diagrams needs this)
+```shell
+	python --version
+```
+If this returns a 2.7.x type number you are going to have to check python 3 is installed; You need Python 3.6.x
+
+```shell
+	python3 --version
+```
+If Python3 does not return a suitable version you will need to install Python3.
+```shell
+    sudo apt-get install python3
+```
+
+Then to make sure the Diagrams autogen.sh script will work correctly we need to make the alias for 'python' to map to python3.
+To make python3 the default run this:
+```shell
+ sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 10
+
+
+    NOT: sudo update-alternatives  --set python /usr/bin/python3.6
+```
+Or Google 'how to alias python3 to python' and similar to get into the whole aliasing topic. 
+
+
+
+* pip (to make your life easier) - will probably report already installed. 
  ```shell
-    sudo apt update
-    sudo apt install python-pip
+    sudo apt install python3-pip
 ```
 * Git
  ```shell
@@ -34,6 +66,12 @@ To contribute to Diagrams you will need the required software (all installed fro
     sudo snap install go --classic
 ```
 
+* Black (used by autogen.sh)
+ ```shell   
+    pip3 install black
+```
+
+*NOW DISCONNECT from SSH and reconnect* (to reset your environment path otherwise Black won't work)
 
 ## Requirements as per Contributing page
 * Round
@@ -55,45 +93,33 @@ To contribute to Diagrams you will need the required software (all installed fro
  ```shell
    git clone https://github.com/mingrammer/diagrams.git
 ``` 
-## To Run the Build
+## To Run the Autogen
  ```shell
    cd diagrams
     ./autogen.sh
 ``` 
 
-# Known Issues
-When trying to run the build - which is needed to be able to be done before being able to contribute - autogen.sh causes:
+# Actually Building the solution and installing diagrams; getting tests to pass
+
+Whilst ./autogen.sh works the tests don't (because Diagrams isn't actually installed yet) and also as Diagrams isn't installed you can generate any pictures i.e. test your contribution
+So some more things to install before you can run Diagrams. 
+
+*Be careful here as you will create folders in the diagrams folder that you don't want to contribute back into the repository!*
+
+
 
 ```shell
-....../diagrams$ ./autogen.sh
-converting the svg to png using inkscape for provider 'onprem'
-Traceback (most recent call last):
-  File "/usr/lib/python2.7/runpy.py", line 163, in _run_module_as_main
-    mod_name, _Error)
-  File "/usr/lib/python2.7/runpy.py", line 102, in _get_module_details
-    loader = get_loader(mod_name)
-  File "/usr/lib/python2.7/pkgutil.py", line 462, in get_loader
-    return find_loader(fullname)
-  File "/usr/lib/python2.7/pkgutil.py", line 472, in find_loader
-    for importer in iter_importers(fullname):
-  File "/usr/lib/python2.7/pkgutil.py", line 428, in iter_importers
-    __import__(pkg)
-  File "scripts/__init__.py", line 7
-    def app_root_dir(pvd: str) -> str:
-                        ^
-SyntaxError: invalid syntax
+    sudo apt-get install graphviz
+    sudo pip install poetry
+    sudo apt-get install python3-venv
+    poetry build
+    poetry install
 ```
-Hence we need to understand the dependancy which is missing to be able to contribute
 
-## Comment
-autogen.sh 
-* is using bash which is installed
-* The 'app_root_dir="diagrams"' does run 
-* The checks for round, inkscape and convert all pass
+Now from the diagrams folder run:
+ ```shell
+   python -m unittest tests/*.py -v
+``` 
+and all the tests should pass. 
 
-But its failing as per error message above - which is beyond by Google-foo... (Or my Python knowledge which is not the greatest :-) 
-
-# TO DO
-* Add how to run modified code locally 
-
-sudo apt-get install python 3.7.5
+ 
