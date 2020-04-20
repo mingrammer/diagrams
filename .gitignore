@@ -18,5 +18,8 @@ website/build
 # node modules
 node_modules
 
+# testing
+main.py
+
 # trash
 .DS_Store

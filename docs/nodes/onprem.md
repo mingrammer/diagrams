@@ -14,6 +14,7 @@ Node classes list of onprem provider.
 
 - **diagrams.onprem.ci.Circleci**, **CircleCI** (alias)
 - **diagrams.onprem.ci.Jenkins**
+- **diagrams.onprem.ci.Teamcity**, **TC** (alias)
 - **diagrams.onprem.ci.Travisci**, **TravisCI** (alias)
 
 ## onprem.queue
@@ -77,6 +78,7 @@ Node classes list of onprem provider.
 - **diagrams.onprem.network.Linkerd**
 - **diagrams.onprem.network.Nginx**
 - **diagrams.onprem.network.Pfsense**, **PFSense** (alias)
+- **diagrams.onprem.network.Pomerium**
 - **diagrams.onprem.network.Tomcat**
 - **diagrams.onprem.network.Traefik**
 - **diagrams.onprem.network.Vyos**, **VyOS** (alias)
@@ -90,6 +92,8 @@ Node classes list of onprem provider.
 
 ## onprem.iac
 
+- **diagrams.onprem.iac.Ansible**
+- **diagrams.onprem.iac.Awx**
 - **diagrams.onprem.iac.Terraform**
 
 ## onprem.analytics
