@@ -262,7 +262,7 @@ class Node:
 
     _height = 1.9
 
-    def __init__(self, label: str = "", URL: str = ""):
+    def __init__(self, label: str = "", URL: str = "", tooltip: str = ""):
         """Node represents a system component.
 
         :param label: Node label.
@@ -271,6 +271,7 @@ class Node:
         # Generates a hash for identifying a node.
         self._hash = self._rand_hash()
         self.label = label
+        self.attrs.update({"URL": URL, "tooltip": tooltip})        
 
         # fmt: off
         # If a node has an icon, increase the height slightly to avoid
@@ -283,9 +284,6 @@ class Node:
             "image": self._load_icon(),
         } if self._icon else {}
         # fmt: on
-
-        if URL:
-            self.attrs.update({"URL": URL})
 
         # Node must be belong to a diagrams.
         self._diagram = getdiagram()
