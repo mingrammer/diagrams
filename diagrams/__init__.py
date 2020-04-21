@@ -271,7 +271,6 @@ class Node:
         # Generates a hash for identifying a node.
         self._hash = self._rand_hash()
         self.label = label
-        self.attrs.update({"URL": URL, "tooltip": tooltip})        
 
         # fmt: off
         # If a node has an icon, increase the height slightly to avoid
@@ -284,6 +283,8 @@ class Node:
             "image": self._load_icon(),
         } if self._icon else {}
         # fmt: on
+
+        self.attrs.update({"URL": URL, "tooltip": tooltip})        
 
         # Node must be belong to a diagrams.
         self._diagram = getdiagram()
