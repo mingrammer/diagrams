@@ -61,7 +61,7 @@ To contribute to diagram, check out [contribution guidelines](CONTRIBUTING.md).
 
 [![GitPitch](https://gitpitch.com/gpimg/logo-dark.png)](https://gitpitch.com/)
 
-[GitPitch](https://gitpitch.com/) is a markdown presentation service for developers. Diagrams is integrated as [Cloud Diagram Widget](https://gitpitch.com/docs/diagram-features/cloud-diagrams/), so you can now use the Diagrams when to create slide decks for Tech Conferences, Meetups, and Training with GitPitch.
+[GitPitch](https://gitpitch.com/) is a markdown presentation service for developers. Diagrams is now integrated as [Cloud Diagram Widget](https://gitpitch.com/docs/diagram-features/cloud-diagrams/) of GitPitch, so you can use the Diagrams when to create slide decks for Tech Conferences, Meetups, and Training with GitPitch.
 
 ## License
 
