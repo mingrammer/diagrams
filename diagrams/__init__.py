@@ -2,7 +2,6 @@ import contextvars
 import os
 import uuid
 from pathlib import Path
-from random import getrandbits
 from typing import List, Union, Dict
 
 from graphviz import Digraph
