@@ -286,8 +286,8 @@
 <pre><code class="hljs css language-python"><span class="hljs-keyword">from</span> urllib.request <span class="hljs-keyword">import</span> urlretrieve
 
 <span class="hljs-keyword">from</span> diagrams <span class="hljs-keyword">import</span> Cluster, Diagram
-<span class="hljs-keyword">from</span> diagrams.custom <span class="hljs-keyword">import</span> Custom
 <span class="hljs-keyword">from</span> diagrams.aws.database <span class="hljs-keyword">import</span> Aurora
+<span class="hljs-keyword">from</span> diagrams.custom <span class="hljs-keyword">import</span> Custom
 <span class="hljs-keyword">from</span> diagrams.k8s.compute <span class="hljs-keyword">import</span> Pod
 
 <span class="hljs-comment"># Download an image to be used into a Custom Node class</span>
@@ -295,18 +295,16 @@ rabbitmq_url = <span class="hljs-string">"https://jpadilla.github.io/rabbitmqapp
 rabbitmq_icon = <span class="hljs-string">"rabbitmq.png"</span>
 urlretrieve(rabbitmq_url, rabbitmq_icon)
 
-
 <span class="hljs-keyword">with</span> Diagram(<span class="hljs-string">"Broker Consumers"</span>, show=<span class="hljs-literal">False</span>):
     <span class="hljs-keyword">with</span> Cluster(<span class="hljs-string">"Consumers"</span>):
         consumers = [
             Pod(<span class="hljs-string">"worker"</span>),
             Pod(<span class="hljs-string">"worker"</span>),
-            Pod(<span class="hljs-string">"worker"</span>)
-        ]
+            Pod(<span class="hljs-string">"worker"</span>)]
 
     queue = Custom(<span class="hljs-string">"Message queue"</span>, rabbitmq_icon)
 
     queue &gt;&gt; consumers &gt;&gt; Aurora(<span class="hljs-string">"Database"</span>)
 </code></pre>
 <p><img src="/img/rabbitmq_consumers_diagram.png" alt="rabbitmq consumers diagram"></p>
-</span></div></article></div><div class="docLastUpdate"><em>Last updated on 3/9/2020</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/getting-started/installation"><span class="arrow-prev">← </span><span>Installation</span></a><a class="docs-next button" href="/docs/guides/diagram"><span>Diagrams</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#grouped-workers-on-aws">Grouped Workers on AWS</a></li><li><a href="#clustered-web-services">Clustered Web Services</a></li><li><a href="#event-processing-on-aws">Event Processing on AWS</a></li><li><a href="#message-collecting-system-on-gcp">Message Collecting System on GCP</a></li><li><a href="#exposed-pod-with-3-replicas-on-kubernetes">Exposed Pod with 3 Replicas on Kubernetes</a></li><li><a href="#stateful-architecture-on-kubernetes">Stateful Architecture on Kubernetes</a></li><li><a href="#advanced-web-service-with-on-premise">Advanced Web Service with On-Premise</a></li><li><a href="#advanced-web-service-with-on-premise-with-colors-and-labels">Advanced Web Service with On-Premise (with colors and labels)</a></li><li><a href="#rabbitmq-consumers-with-custom-nodes">RabbitMQ Consumers with Custom Nodes</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/diagrams.ico" alt="Diagrams" width="66" height="58"/></a><div><h5>Docs</h5><a href="/docs/getting-started/installation">Getting Started</a><a href="/docs/guides/diagram">Guides</a><a href="/docs/nodes/aws">Nodes</a></div><div><h5>More</h5><a href="https://github.com/mingrammer/diagrams">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/mingrammer/diagrams/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright">Copyright © 2020 mingrammer</section></footer></div></body></html>
+</span></div></article></div><div class="docLastUpdate"><em>Last updated on 2020-5-4</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/getting-started/installation"><span class="arrow-prev">← </span><span>Installation</span></a><a class="docs-next button" href="/docs/guides/diagram"><span>Diagrams</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#grouped-workers-on-aws">Grouped Workers on AWS</a></li><li><a href="#clustered-web-services">Clustered Web Services</a></li><li><a href="#event-processing-on-aws">Event Processing on AWS</a></li><li><a href="#message-collecting-system-on-gcp">Message Collecting System on GCP</a></li><li><a href="#exposed-pod-with-3-replicas-on-kubernetes">Exposed Pod with 3 Replicas on Kubernetes</a></li><li><a href="#stateful-architecture-on-kubernetes">Stateful Architecture on Kubernetes</a></li><li><a href="#advanced-web-service-with-on-premise">Advanced Web Service with On-Premise</a></li><li><a href="#advanced-web-service-with-on-premise-with-colors-and-labels">Advanced Web Service with On-Premise (with colors and labels)</a></li><li><a href="#rabbitmq-consumers-with-custom-nodes">RabbitMQ Consumers with Custom Nodes</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/diagrams.ico" alt="Diagrams" width="66" height="58"/></a><div><h5>Docs</h5><a href="/docs/getting-started/installation">Getting Started</a><a href="/docs/guides/diagram">Guides</a><a href="/docs/nodes/aws">Nodes</a></div><div><h5>More</h5><a href="https://github.com/mingrammer/diagrams">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/mingrammer/diagrams/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright">Copyright © 2020 mingrammer</section></footer></div></body></html>
