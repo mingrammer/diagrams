@@ -5,46 +5,6 @@ title: OnPrem
 
 Node classes list of onprem provider.
 
-## onprem.compute
-
-- **diagrams.onprem.compute.Nomad**
-- **diagrams.onprem.compute.Server**
-
-## onprem.ci
-
-- **diagrams.onprem.ci.Circleci**, **CircleCI** (alias)
-- **diagrams.onprem.ci.Jenkins**
-- **diagrams.onprem.ci.Teamcity**, **TC** (alias)
-- **diagrams.onprem.ci.Travisci**, **TravisCI** (alias)
-
-## onprem.queue
-
-- **diagrams.onprem.queue.Activemq**, **ActiveMQ** (alias)
-- **diagrams.onprem.queue.Celery**
-- **diagrams.onprem.queue.Kafka**
-- **diagrams.onprem.queue.Rabbitmq**, **RabbitMQ** (alias)
-- **diagrams.onprem.queue.Zeromq**, **ZeroMQ** (alias)
-
-## onprem.inmemory
-
-- **diagrams.onprem.inmemory.Aerospike**
-- **diagrams.onprem.inmemory.Hazelcast**
-- **diagrams.onprem.inmemory.Memcached**
-- **diagrams.onprem.inmemory.Redis**
-
-## onprem.etl
-
-- **diagrams.onprem.etl.Embulk**
-
-## onprem.cd
-
-- **diagrams.onprem.cd.Spinnaker**
-
-## onprem.search
-
-- **diagrams.onprem.search.Elasticsearch**
-- **diagrams.onprem.search.Solr**
-
 ## onprem.database
 
 - **diagrams.onprem.database.Cassandra**
@@ -63,6 +23,26 @@ Node classes list of onprem provider.
 - **diagrams.onprem.database.Oracle**
 - **diagrams.onprem.database.Postgresql**, **PostgreSQL** (alias)
 - **diagrams.onprem.database.Scylla**
+
+## onprem.security
+
+- **diagrams.onprem.security.Trivy**
+- **diagrams.onprem.security.Vault**
+
+## onprem.ci
+
+- **diagrams.onprem.ci.Circleci**, **CircleCI** (alias)
+- **diagrams.onprem.ci.Jenkins**
+- **diagrams.onprem.ci.Teamcity**, **TC** (alias)
+- **diagrams.onprem.ci.Travisci**, **TravisCI** (alias)
+
+## onprem.etl
+
+- **diagrams.onprem.etl.Embulk**
+
+## onprem.mlops
+
+- **diagrams.onprem.mlops.Polyaxon**
 
 ## onprem.network
 
@@ -84,11 +64,22 @@ Node classes list of onprem provider.
 - **diagrams.onprem.network.Vyos**, **VyOS** (alias)
 - **diagrams.onprem.network.Zookeeper**
 
-## onprem.client
+## onprem.inmemory
 
-- **diagrams.onprem.client.Client**
-- **diagrams.onprem.client.User**
-- **diagrams.onprem.client.Users**
+- **diagrams.onprem.inmemory.Aerospike**
+- **diagrams.onprem.inmemory.Hazelcast**
+- **diagrams.onprem.inmemory.Memcached**
+- **diagrams.onprem.inmemory.Redis**
+
+## onprem.search
+
+- **diagrams.onprem.search.Elasticsearch**
+- **diagrams.onprem.search.Solr**
+
+## onprem.container
+
+- **diagrams.onprem.container.Docker**
+- **diagrams.onprem.container.Rkt**, **RKT** (alias)
 
 ## onprem.iac
 
@@ -96,15 +87,16 @@ Node classes list of onprem provider.
 - **diagrams.onprem.iac.Awx**
 - **diagrams.onprem.iac.Terraform**
 
-## onprem.analytics
+## onprem.compute
 
-- **diagrams.onprem.analytics.Beam**
-- **diagrams.onprem.analytics.Flink**
-- **diagrams.onprem.analytics.Hadoop**
-- **diagrams.onprem.analytics.Hive**
-- **diagrams.onprem.analytics.Norikra**
-- **diagrams.onprem.analytics.Spark**
-- **diagrams.onprem.analytics.Storm**
+- **diagrams.onprem.compute.Nomad**
+- **diagrams.onprem.compute.Server**
+
+## onprem.vcs
+
+- **diagrams.onprem.vcs.Git**
+- **diagrams.onprem.vcs.Github**
+- **diagrams.onprem.vcs.Gitlab**
 
 ## onprem.workflow
 
@@ -113,30 +105,21 @@ Node classes list of onprem provider.
 - **diagrams.onprem.workflow.Kubeflow**, **KubeFlow** (alias)
 - **diagrams.onprem.workflow.Nifi**, **NiFi** (alias)
 
-## onprem.security
+## onprem.queue
 
-- **diagrams.onprem.security.Trivy**
-- **diagrams.onprem.security.Vault**
+- **diagrams.onprem.queue.Activemq**, **ActiveMQ** (alias)
+- **diagrams.onprem.queue.Celery**
+- **diagrams.onprem.queue.Kafka**
+- **diagrams.onprem.queue.Rabbitmq**, **RabbitMQ** (alias)
+- **diagrams.onprem.queue.Zeromq**, **ZeroMQ** (alias)
 
-## onprem.container
+## onprem.cd
 
-- **diagrams.onprem.container.Docker**
-- **diagrams.onprem.container.Rkt**, **RKT** (alias)
+- **diagrams.onprem.cd.Spinnaker**
 
-## onprem.logging
+## onprem.gitops
 
-- **diagrams.onprem.logging.Fluentd**
-- **diagrams.onprem.logging.Logstash**, **LogStash** (alias)
-
-## onprem.mlops
-
-- **diagrams.onprem.mlops.Polyaxon**
-
-## onprem.vcs
-
-- **diagrams.onprem.vcs.Git**
-- **diagrams.onprem.vcs.Github**
-- **diagrams.onprem.vcs.Gitlab**
+- **diagrams.onprem.gitops.Argocd**, **ArgoCD** (alias)
 
 ## onprem.monitoring
 
@@ -147,6 +130,23 @@ Node classes list of onprem provider.
 - **diagrams.onprem.monitoring.Splunk**
 - **diagrams.onprem.monitoring.Thanos**
 
-## onprem.gitops
+## onprem.client
 
-- **diagrams.onprem.gitops.Argocd**, **ArgoCD** (alias)
+- **diagrams.onprem.client.Client**
+- **diagrams.onprem.client.User**
+- **diagrams.onprem.client.Users**
+
+## onprem.logging
+
+- **diagrams.onprem.logging.Fluentd**
+- **diagrams.onprem.logging.Logstash**, **LogStash** (alias)
+
+## onprem.analytics
+
+- **diagrams.onprem.analytics.Beam**
+- **diagrams.onprem.analytics.Flink**
+- **diagrams.onprem.analytics.Hadoop**
+- **diagrams.onprem.analytics.Hive**
+- **diagrams.onprem.analytics.Norikra**
+- **diagrams.onprem.analytics.Spark**
+- **diagrams.onprem.analytics.Storm**

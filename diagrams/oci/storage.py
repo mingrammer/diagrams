@@ -8,28 +8,56 @@ class _Storage(_OCI):
     _icon_dir = "resources/oci/storage"
 
 
+class BackuprestoreGrey(_Storage):
+    _icon = "backuprestore-grey.png"
+
+
 class Backuprestore(_Storage):
     _icon = "backuprestore.png"
+
+
+class BlockstorageGrey(_Storage):
+    _icon = "blockstorage-grey.png"
 
 
 class Blockstorage(_Storage):
     _icon = "blockstorage.png"
 
 
+class BucketsGrey(_Storage):
+    _icon = "buckets-grey.png"
+
+
 class Buckets(_Storage):
     _icon = "buckets.png"
+
+
+class DatatransferGrey(_Storage):
+    _icon = "datatransfer-grey.png"
 
 
 class Datatransfer(_Storage):
     _icon = "datatransfer.png"
 
 
+class FilestorageGrey(_Storage):
+    _icon = "filestorage-grey.png"
+
+
 class Filestorage(_Storage):
     _icon = "filestorage.png"
 
 
+class ObjectstorageGrey(_Storage):
+    _icon = "objectstorage-grey.png"
+
+
 class Objectstorage(_Storage):
     _icon = "objectstorage.png"
+
+
+class StoragegatewayGrey(_Storage):
+    _icon = "storagegateway-grey.png"
 
 
 class Storagegateway(_Storage):

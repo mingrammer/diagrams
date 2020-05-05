@@ -8,32 +8,64 @@ class _Network(_OCI):
     _icon_dir = "resources/oci/network"
 
 
+class DrgGrey(_Network):
+    _icon = "drg-grey.png"
+
+
 class Drg(_Network):
     _icon = "drg.png"
+
+
+class FirewallGrey(_Network):
+    _icon = "firewall-grey.png"
 
 
 class Firewall(_Network):
     _icon = "firewall.png"
 
 
+class InternetgatewayGrey(_Network):
+    _icon = "internetgateway-grey.png"
+
+
 class Internetgateway(_Network):
     _icon = "internetgateway.png"
+
+
+class LoadbalanceGrey(_Network):
+    _icon = "loadbalance-grey.png"
 
 
 class Loadbalance(_Network):
     _icon = "loadbalance.png"
 
 
+class RoutetableGrey(_Network):
+    _icon = "routetable-grey.png"
+
+
 class Routetable(_Network):
     _icon = "routetable.png"
+
+
+class SecuritylistsGrey(_Network):
+    _icon = "securitylists-grey.png"
 
 
 class Securitylists(_Network):
     _icon = "securitylists.png"
 
 
+class ServiceGatewayGrey(_Network):
+    _icon = "service-gateway-grey.png"
+
+
 class ServiceGateway(_Network):
     _icon = "service-gateway.png"
+
+
+class VcloudnetworkGrey(_Network):
+    _icon = "vcloudnetwork-grey.png"
 
 
 class Vcloudnetwork(_Network):

@@ -8,12 +8,24 @@ class _Compute(_OCI):
     _icon_dir = "resources/oci/compute"
 
 
+class BmGrey(_Compute):
+    _icon = "bm-grey.png"
+
+
 class Bm(_Compute):
     _icon = "bm.png"
 
 
+class ContainerGrey(_Compute):
+    _icon = "container-grey.png"
+
+
 class Container(_Compute):
     _icon = "container.png"
+
+
+class VmGrey(_Compute):
+    _icon = "vm-grey.png"
 
 
 class Vm(_Compute):
@@ -23,4 +35,6 @@ class Vm(_Compute):
 # Aliases
 
 VirtualMachine = Vm
+VirtualMachineGrey = VmGrey
 BareMetal = Bm
+BareMetalGrey = BmGrey
