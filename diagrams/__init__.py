@@ -193,11 +193,14 @@ class Cluster:
     # FIXME:
     #  Cluster direction does not work now. Graphviz couldn't render
     #  correctly for a subgraph that has a different rank direction.
-    def __init__(self, label: str = "cluster", direction: str = "LR"):
+    def __init__(
+        self, label: str = "cluster", direction: str = "LR", graph_attr: dict = {},
+    ):
         """Cluster represents a cluster context.
 
         :param label: Cluster label.
         :param direction: Data flow direction. Default is 'left to right'.
+        :param graph_attr: Provide graph_attr dot config attributes.
         """
         self.label = label
         self.name = "cluster_" + self.label
@@ -223,6 +226,9 @@ class Cluster:
         self.depth = self._parent.depth + 1 if self._parent else 0
         coloridx = self.depth % len(self.__bgcolors)
         self.dot.graph_attr["bgcolor"] = self.__bgcolors[coloridx]
+
+        # Merge passed in attributes
+        self.dot.graph_attr.update(graph_attr)
 
     def __enter__(self):
         setcluster(self)
