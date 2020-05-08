@@ -82,6 +82,6 @@ class VPC(_Network):
 
 # Aliases
 
-CF = Cloudfront
+CF = CloudFront
 ELB = ElasticLoadBalancing
 GAX = GlobalAccelerator
