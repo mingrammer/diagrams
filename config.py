@@ -63,6 +63,9 @@ TITLE_WORDS = {
     },
     "alibabacloud": {
         "alibabacloud": "AlibabaCloud"
+    },
+    "aws": {
+        "cloudfront": "CloudFront"
     }
 }
 

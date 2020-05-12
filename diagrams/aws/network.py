@@ -24,7 +24,7 @@ class CloudMap(_Network):
     _icon = "cloud-map.png"
 
 
-class Cloudfront(_Network):
+class CloudFront(_Network):
     _icon = "cloudfront.png"
 
 
