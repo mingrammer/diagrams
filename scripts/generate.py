@@ -94,9 +94,11 @@ def generate(pvd: str) -> None:
     apidoc = gen_apidoc(pvd, typ_paths)
     make_apidoc(pvd, apidoc)
 
-
-if __name__ == "__main__":
+def main():
     pvd = sys.argv[1]
     if pvd not in cfg.PROVIDERS:
         sys.exit()
     generate(pvd)
+
+if __name__ == "__main__":
+    main()

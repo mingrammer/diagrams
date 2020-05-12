@@ -24,3 +24,6 @@ isort = "^4.3"
 
 [tool.black]
 line-length = 120
+
+[tool.poetry.scripts]
+diagrams = 'scripts.generate:main'
