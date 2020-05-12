@@ -59,7 +59,7 @@ Node classes list of aws provider.
 - **diagrams.aws.network.AppMesh**
 - **diagrams.aws.network.ClientVpn**
 - **diagrams.aws.network.CloudMap**
-- **diagrams.aws.network.Cloudfront**, **CF** (alias)
+- **diagrams.aws.network.CloudFront**, **CF** (alias)
 - **diagrams.aws.network.DirectConnect**
 - **diagrams.aws.network.ElasticLoadBalancing**, **ELB** (alias)
 - **diagrams.aws.network.Endpoint**

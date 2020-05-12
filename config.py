@@ -63,6 +63,9 @@ TITLE_WORDS = {
     },
     "alibabacloud": {
         "alibabacloud": "AlibabaCloud"
+    },
+    "aws": {
+        "cloudfront": "CloudFront"
     }
 }
 
@@ -162,7 +165,7 @@ ALIASES = {
             "DeepLearningContainers": "DLC",
         },
         "network": {
-            "Cloudfront": "CF",
+            "CloudFront": "CF",
             "ElasticLoadBalancing": "ELB",
             "GlobalAccelerator": "GAX",
         },
