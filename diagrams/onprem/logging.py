@@ -15,6 +15,9 @@ class Fluentd(_Logging):
 class Logstash(_Logging):
     _icon = "logstash.png"
 
+class Loki(_Logging):
+    _icon = "loki.png"
+
 
 # Aliases
 
