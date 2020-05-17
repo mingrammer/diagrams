@@ -23,3 +23,9 @@ main.py
 
 # trash
 .DS_Store
+
+# Website uses yarn; ignore npm package-lock.json
+website/package-lock.json
+
+# Ignore .swp files
+.swp

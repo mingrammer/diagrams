@@ -43,6 +43,9 @@
       },
       "nodes/onprem": {
         "title": "OnPrem"
+      },
+      "nodes/programming": {
+        "title": "Programming"
       }
     },
     "links": {

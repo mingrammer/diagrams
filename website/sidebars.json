@@ -17,7 +17,8 @@
       "nodes/gcp",
       "nodes/k8s",
       "nodes/alibabacloud",
-      "nodes/oci"
+      "nodes/oci",
+      "nodes/programming"
     ]
   }
 }
