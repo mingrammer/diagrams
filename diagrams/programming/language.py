@@ -16,12 +16,12 @@ class C(_Language):
     _icon = "c.png"
 
 
-class Csharp(_Language):
-    _icon = "csharp.png"
-
-
 class Cpp(_Language):
     _icon = "cpp.png"
+
+
+class Csharp(_Language):
+    _icon = "csharp.png"
 
 
 class Dart(_Language):
@@ -52,7 +52,7 @@ class Nodejs(_Language):
     _icon = "nodejs.png"
 
 
-class PHP(_Language):
+class Php(_Language):
     _icon = "php.png"
 
 
