@@ -332,5 +332,12 @@ ALIASES = {
             "DatabaseserviceGrey": "DBServiceGrey",
         }
     },
-    "programming": {},
+    "programming": {
+        "language": {
+            "Javascript": "JavaScript",
+            "Nodejs": "NodeJS",
+            "Php": "PHP",
+            "Typescript": "TypeScript"
+        },
+    },
 }

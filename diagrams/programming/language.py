@@ -77,3 +77,8 @@ class Typescript(_Language):
 
 
 # Aliases
+
+JavaScript = Javascript
+NodeJS = Nodejs
+PHP = Php
+TypeScript = Typescript

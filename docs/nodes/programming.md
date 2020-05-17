@@ -28,13 +28,13 @@ Node classes list of programming provider.
 - **diagrams.programming.language.Dart**
 - **diagrams.programming.language.Go**
 - **diagrams.programming.language.Java**
-- **diagrams.programming.language.Javascript**
+- **diagrams.programming.language.Javascript**, **JavaScript** (alias)
 - **diagrams.programming.language.Kotlin**
 - **diagrams.programming.language.Matlab**
-- **diagrams.programming.language.Nodejs**
-- **diagrams.programming.language.Php**
+- **diagrams.programming.language.Nodejs**, **NodeJS** (alias)
+- **diagrams.programming.language.Php**, **PHP** (alias)
 - **diagrams.programming.language.Python**
 - **diagrams.programming.language.R**
 - **diagrams.programming.language.Ruby**
 - **diagrams.programming.language.Swift**
-- **diagrams.programming.language.Typescript**
+- **diagrams.programming.language.Typescript**, **TypeScript** (alias)
