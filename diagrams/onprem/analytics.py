@@ -24,6 +24,10 @@ class Hive(_Analytics):
     _icon = "hive.png"
 
 
+class Metabase(_Analytics):
+    _icon = "metabase.png"
+
+
 class Norikra(_Analytics):
     _icon = "norikra.png"
 
@@ -34,6 +38,10 @@ class Spark(_Analytics):
 
 class Storm(_Analytics):
     _icon = "storm.png"
+
+
+class Tableau(_Analytics):
+    _icon = "tableau.png"
 
 
 # Aliases
