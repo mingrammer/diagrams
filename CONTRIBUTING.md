@@ -27,7 +27,7 @@ ffmpeg -i my_big_image.jpg -vf scale=w=256:h=256:force_original_aspect_ratio=dec
 Then just run the `./autogen.sh` to generate the added or updated node classes.
 
 > IMPORTANT NOTE: To run `autogen.sh`, you need [round][round] and
-> [inkscape][inkscape] command lines that are used for clearning the image
+> [inkscape][inkscape] command lines that are used for cleaning the image
 > resource filenames.
 >
 > macOS users can download the inkscape via Homebrew.
