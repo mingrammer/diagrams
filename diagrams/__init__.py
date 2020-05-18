@@ -39,7 +39,7 @@ def setcluster(cluster):
 
 class Diagram:
     __directions = ("TB", "BT", "LR", "RL")
-    __outformats = ("png", "jpg", "svg", "pdf")
+    __outformats = ("png", "jpg", "svg", "pdf", "cmapx")
 
     # fmt: off
     _default_graph_attrs = {
@@ -267,10 +267,11 @@ class Node:
 
     _height = 1.9
 
-    def __init__(self, label: str = ""):
+    def __init__(self, label: str = "", URL: str = "", tooltip: str = ""):
         """Node represents a system component.
 
         :param label: Node label.
+        :param URL: Node URL link. (svg, cmapx only)
         """
         # Generates an ID for identifying a node.
         self._id = self._rand_id()
@@ -287,6 +288,8 @@ class Node:
             "image": self._load_icon(),
         } if self._icon else {}
         # fmt: on
+
+        self.attrs.update({"URL": URL, "tooltip": tooltip})        
 
         # Node must be belong to a diagrams.
         self._diagram = getdiagram()
