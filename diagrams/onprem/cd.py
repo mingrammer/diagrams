@@ -12,4 +12,8 @@ class Spinnaker(_Cd):
     _icon = "spinnaker.png"
 
 
+class Tekton(_Cd):
+    _icon = "tekton.png"
+
+
 # Aliases
