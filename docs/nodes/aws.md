@@ -239,3 +239,17 @@ Node classes list of aws provider.
 - **diagrams.aws.analytics.RedshiftDenseComputeNode**
 - **diagrams.aws.analytics.RedshiftDenseStorageNode**
 - **diagrams.aws.analytics.Redshift**
+
+## aws.media
+
+- **diagrams.aws.media.ElasticTranscoder**
+- **diagrams.aws.media.ElementalConductor**
+- **diagrams.aws.media.ElementalDelta**
+- **diagrams.aws.media.ElementalLive**
+- **diagrams.aws.media.ElementalMediaconnect**
+- **diagrams.aws.media.ElementalMediaconvert**
+- **diagrams.aws.media.ElementalMedialive**
+- **diagrams.aws.media.ElementalMediapackage**
+- **diagrams.aws.media.ElementalMediastore**
+- **diagrams.aws.media.ElementalMediatailor**
+- **diagrams.aws.media.ElementalServer**
