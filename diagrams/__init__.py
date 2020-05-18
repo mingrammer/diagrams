@@ -267,7 +267,7 @@ class Node:
 
     _height = 1.9
 
-    def __init__(self, label: str = ""):
+    def __init__(self, label: str = "", **attrs: Dict):
         """Node represents a system component.
 
         :param label: Node label.
@@ -281,12 +281,14 @@ class Node:
         # that label being spanned between icon image and white space.
         # Increase the height by the number of new lines included in the label.
         padding = 0.4 * (label.count('\n'))
-        self.attrs = {
+        self._attrs = {
             "shape": "none",
             "height": str(self._height + padding),
             "image": self._load_icon(),
         } if self._icon else {}
+
         # fmt: on
+        self._attrs.update(attrs)
 
         # Node must be belong to a diagrams.
         self._diagram = getdiagram()
@@ -296,9 +298,9 @@ class Node:
 
         # If a node is in the cluster context, add it to cluster.
         if self._cluster:
-            self._cluster.node(self._id, self.label, **self.attrs)
+            self._cluster.node(self._id, self.label, **self._attrs)
         else:
-            self._diagram.node(self._id, self.label, **self.attrs)
+            self._diagram.node(self._id, self.label, **self._attrs)
 
     def __repr__(self):
         _name = self.__class__.__name__
