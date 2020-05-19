@@ -8,6 +8,10 @@ class _Logging(_OnPrem):
     _icon_dir = "resources/onprem/logging"
 
 
+class Beats(_Logging):
+    _icon = "beats.png"
+
+
 class Fluentd(_Logging):
     _icon = "fluentd.png"
 
