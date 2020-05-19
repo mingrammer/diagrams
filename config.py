@@ -150,6 +150,7 @@ ALIASES = {
         },
         "iot": {
             "Freertos": "FreeRTOS",
+            "IotHardwareBoard": "IotBoard",
         },
         "management": {
             "SystemsManager": "SSM",
