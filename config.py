@@ -98,6 +98,7 @@ ALIASES = {
             "Argocd": "ArgoCD",
         },
         "logging": {
+            "Fluentbit": "FluentBit",
             "Logstash": "LogStash",
         },
         "network": {
