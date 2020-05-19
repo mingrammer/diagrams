@@ -48,6 +48,10 @@ class InternetGateway(_Network):
     _icon = "internet-gateway.png"
 
 
+class Nacl(_Network):
+    _icon = "nacl.png"
+
+
 class NATGateway(_Network):
     _icon = "nat-gateway.png"
 
@@ -56,12 +60,24 @@ class NetworkingAndContentDelivery(_Network):
     _icon = "networking-and-content-delivery.png"
 
 
+class PrivateSubnet(_Network):
+    _icon = "private-subnet.png"
+
+
 class Privatelink(_Network):
     _icon = "privatelink.png"
 
 
+class PublicSubnet(_Network):
+    _icon = "public-subnet.png"
+
+
 class Route53(_Network):
     _icon = "route-53.png"
+
+
+class RouteTable(_Network):
+    _icon = "route-table.png"
 
 
 class SiteToSiteVpn(_Network):
@@ -70,6 +86,10 @@ class SiteToSiteVpn(_Network):
 
 class TransitGateway(_Network):
     _icon = "transit-gateway.png"
+
+
+class VPCPeering(_Network):
+    _icon = "vpc-peering.png"
 
 
 class VPCRouter(_Network):

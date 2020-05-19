@@ -1,6 +1,6 @@
 # Contribution Guide
 
-You shouldn't edit the node class files (all files under `diagram` directory) by
+You shouldn't edit the node class files (all files under `diagrams/` directory) by
 yourself.
 
 ## Resources
@@ -27,7 +27,7 @@ ffmpeg -i my_big_image.jpg -vf scale=w=256:h=256:force_original_aspect_ratio=dec
 Then just run the `./autogen.sh` to generate the added or updated node classes.
 
 > IMPORTANT NOTE: To run `autogen.sh`, you need [round][round] and
-> [inkscape][inkscape] command lines that are used for clearning the image
+> [inkscape][inkscape] command lines that are used for cleaning the image
 > resource filenames.
 >
 > macOS users can download the inkscape via Homebrew.
@@ -55,3 +55,17 @@ Then just run the `./autogen.sh` to generate the added or updated aliases.
 ```shell
 python -m unittest tests/*.py -v
 ```
+
+## Testing changes to the website
+
+The [Docusaurus](https://docusaurus.io/)-based documentation website can be run by installing dependencies, then simply running `npm run start`.
+
+```bash
+cd website/
+npm i
+npm run start
+```
+
+The website will be available on [http://localhost:3000](http://localhost:3000).
+
+Edit files in `website/` and `docs/` respectively to edit documentation.

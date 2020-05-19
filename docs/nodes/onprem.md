@@ -140,6 +140,7 @@ Node classes list of onprem provider.
 
 - **diagrams.onprem.logging.Fluentd**
 - **diagrams.onprem.logging.Logstash**, **LogStash** (alias)
+- **diagrams.onprem.logging.Loki**
 
 ## onprem.analytics
 
@@ -147,6 +148,8 @@ Node classes list of onprem provider.
 - **diagrams.onprem.analytics.Flink**
 - **diagrams.onprem.analytics.Hadoop**
 - **diagrams.onprem.analytics.Hive**
+- **diagrams.onprem.analytics.Metabase**
 - **diagrams.onprem.analytics.Norikra**
 - **diagrams.onprem.analytics.Spark**
 - **diagrams.onprem.analytics.Storm**
+- **diagrams.onprem.analytics.Tableau**

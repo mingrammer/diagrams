@@ -65,12 +65,17 @@ Node classes list of aws provider.
 - **diagrams.aws.network.Endpoint**
 - **diagrams.aws.network.GlobalAccelerator**, **GAX** (alias)
 - **diagrams.aws.network.InternetGateway**
+- **diagrams.aws.network.Nacl**
 - **diagrams.aws.network.NATGateway**
 - **diagrams.aws.network.NetworkingAndContentDelivery**
+- **diagrams.aws.network.PrivateSubnet**
 - **diagrams.aws.network.Privatelink**
+- **diagrams.aws.network.PublicSubnet**
 - **diagrams.aws.network.Route53**
+- **diagrams.aws.network.RouteTable**
 - **diagrams.aws.network.SiteToSiteVpn**
 - **diagrams.aws.network.TransitGateway**
+- **diagrams.aws.network.VPCPeering**
 - **diagrams.aws.network.VPCRouter**
 - **diagrams.aws.network.VPC**
 
@@ -234,3 +239,17 @@ Node classes list of aws provider.
 - **diagrams.aws.analytics.RedshiftDenseComputeNode**
 - **diagrams.aws.analytics.RedshiftDenseStorageNode**
 - **diagrams.aws.analytics.Redshift**
+
+## aws.media
+
+- **diagrams.aws.media.ElasticTranscoder**
+- **diagrams.aws.media.ElementalConductor**
+- **diagrams.aws.media.ElementalDelta**
+- **diagrams.aws.media.ElementalLive**
+- **diagrams.aws.media.ElementalMediaconnect**
+- **diagrams.aws.media.ElementalMediaconvert**
+- **diagrams.aws.media.ElementalMedialive**
+- **diagrams.aws.media.ElementalMediapackage**
+- **diagrams.aws.media.ElementalMediastore**
+- **diagrams.aws.media.ElementalMediatailor**
+- **diagrams.aws.media.ElementalServer**
