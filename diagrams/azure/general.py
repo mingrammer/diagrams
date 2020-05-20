@@ -8,36 +8,36 @@ class _General(_Azure):
     _icon_dir = "resources/azure/general"
 
 
-class AllResources(_General):
-    _icon = "all-resources.png"
+class Allresources(_General):
+    _icon = "allresources.png"
+
+
+class Azurehome(_General):
+    _icon = "azurehome.png"
 
 
 class Developertools(_General):
     _icon = "developertools.png"
 
 
-class HelpSupport(_General):
-    _icon = "help-support.png"
-
-
-class Home(_General):
-    _icon = "home.png"
+class Helpsupport(_General):
+    _icon = "helpsupport.png"
 
 
 class Information(_General):
     _icon = "information.png"
 
 
-class ManagementGroups(_General):
-    _icon = "management-groups.png"
+class Managementgroups(_General):
+    _icon = "managementgroups.png"
 
 
 class Marketplace(_General):
     _icon = "marketplace.png"
 
 
-class QuickStartCenter(_General):
-    _icon = "quick-start-center.png"
+class Quickstartcenter(_General):
+    _icon = "quickstartcenter.png"
 
 
 class Recent(_General):
@@ -48,32 +48,32 @@ class Reservations(_General):
     _icon = "reservations.png"
 
 
-class ResourceGroups(_General):
-    _icon = "resource-groups.png"
-
-
 class Resource(_General):
     _icon = "resource.png"
 
 
-class ServiceHealth(_General):
-    _icon = "service-health.png"
+class Resourcegroups(_General):
+    _icon = "resourcegroups.png"
 
 
-class SharedDashboard(_General):
-    _icon = "shared-dashboard.png"
+class Servicehealth(_General):
+    _icon = "servicehealth.png"
+
+
+class Shareddashboard(_General):
+    _icon = "shareddashboard.png"
 
 
 class Subscriptions(_General):
     _icon = "subscriptions.png"
 
 
-class SupportRequests(_General):
-    _icon = "support-requests.png"
-
-
 class Support(_General):
     _icon = "support.png"
+
+
+class Supportrequests(_General):
+    _icon = "supportrequests.png"
 
 
 class Tag(_General):
@@ -88,24 +88,28 @@ class Templates(_General):
     _icon = "templates.png"
 
 
-class TwoUserIcon(_General):
-    _icon = "two-user-icon.png"
+class Twousericon(_General):
+    _icon = "twousericon.png"
 
 
-class UserHealthIcon(_General):
-    _icon = "user-health-icon.png"
+class Userhealthicon(_General):
+    _icon = "userhealthicon.png"
 
 
-class UserIcon(_General):
-    _icon = "user-icon.png"
+class Usericon(_General):
+    _icon = "usericon.png"
 
 
-class UserPrivacy(_General):
-    _icon = "user-privacy.png"
+class Userprivacy(_General):
+    _icon = "userprivacy.png"
 
 
-class UserResource(_General):
-    _icon = "user-resource.png"
+class Userresource(_General):
+    _icon = "userresource.png"
+
+
+class Whatsnew(_General):
+    _icon = "whatsnew.png"
 
 
 # Aliases
