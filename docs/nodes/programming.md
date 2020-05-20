@@ -5,6 +5,20 @@ title: Programming
 
 Node classes list of programming provider.
 
+## programming.framework
+
+- **diagrams.programming.framework.Angular**
+- **diagrams.programming.framework.Backbone**
+- **diagrams.programming.framework.Django**
+- **diagrams.programming.framework.Ember**
+- **diagrams.programming.framework.Flask**
+- **diagrams.programming.framework.Flutter**
+- **diagrams.programming.framework.Laravel**
+- **diagrams.programming.framework.Rails**
+- **diagrams.programming.framework.React**
+- **diagrams.programming.framework.Spring**
+- **diagrams.programming.framework.Vue**
+
 ## programming.language
 
 - **diagrams.programming.language.Bash**
@@ -24,17 +38,3 @@ Node classes list of programming provider.
 - **diagrams.programming.language.Ruby**
 - **diagrams.programming.language.Swift**
 - **diagrams.programming.language.Typescript**, **TypeScript** (alias)
-
-## programming.framework
-
-- **diagrams.programming.framework.Angular**
-- **diagrams.programming.framework.Backbone**
-- **diagrams.programming.framework.Django**
-- **diagrams.programming.framework.Ember**
-- **diagrams.programming.framework.Flask**
-- **diagrams.programming.framework.Flutter**
-- **diagrams.programming.framework.Laravel**
-- **diagrams.programming.framework.Rails**
-- **diagrams.programming.framework.React**
-- **diagrams.programming.framework.Spring**
-- **diagrams.programming.framework.Vue**
