@@ -5,17 +5,14 @@ title: OCI
 
 Node classes list of oci provider.
 
-## oci.database
+## oci.compute
 
-- **diagrams.oci.database.DatabaseserviceGrey**, **DBServiceGrey** (alias)
-- **diagrams.oci.database.Databaseservice**, **DBService** (alias)
-
-## oci.devops
-
-- **diagrams.oci.devops.ApiserviceGrey**
-- **diagrams.oci.devops.Apiservice**
-- **diagrams.oci.devops.ResourcemgmtGrey**
-- **diagrams.oci.devops.Resourcemgmt**
+- **diagrams.oci.compute.BmGrey**, **BareMetalGrey** (alias)
+- **diagrams.oci.compute.Bm**, **BareMetal** (alias)
+- **diagrams.oci.compute.ContainerGrey**
+- **diagrams.oci.compute.Container**
+- **diagrams.oci.compute.VmGrey**, **VirtualMachineGrey** (alias)
+- **diagrams.oci.compute.Vm**, **VirtualMachine** (alias)
 
 ## oci.connectivity
 
@@ -29,6 +26,71 @@ Node classes list of oci provider.
 - **diagrams.oci.connectivity.Fastconnect**
 - **diagrams.oci.connectivity.VpnGrey**
 - **diagrams.oci.connectivity.Vpn**
+
+## oci.database
+
+- **diagrams.oci.database.DatabaseserviceGrey**, **DBServiceGrey** (alias)
+- **diagrams.oci.database.Databaseservice**, **DBService** (alias)
+
+## oci.devops
+
+- **diagrams.oci.devops.ApiserviceGrey**
+- **diagrams.oci.devops.Apiservice**
+- **diagrams.oci.devops.ResourcemgmtGrey**
+- **diagrams.oci.devops.Resourcemgmt**
+
+## oci.edge
+
+- **diagrams.oci.edge.CdnGrey**
+- **diagrams.oci.edge.Cdn**
+- **diagrams.oci.edge.DnsGrey**
+- **diagrams.oci.edge.Dns**
+- **diagrams.oci.edge.EmaildeliveryGrey**
+- **diagrams.oci.edge.Emaildelivery**
+- **diagrams.oci.edge.WafGrey**
+- **diagrams.oci.edge.Waf**
+
+## oci.monitoring
+
+- **diagrams.oci.monitoring.AlarmGrey**
+- **diagrams.oci.monitoring.Alarm**
+- **diagrams.oci.monitoring.EventGrey**
+- **diagrams.oci.monitoring.Event**
+- **diagrams.oci.monitoring.HealthcheckGrey**
+- **diagrams.oci.monitoring.Healthcheck**
+- **diagrams.oci.monitoring.LoggingGrey**
+- **diagrams.oci.monitoring.Logging**
+- **diagrams.oci.monitoring.NotificationsGrey**
+- **diagrams.oci.monitoring.Notifications**
+- **diagrams.oci.monitoring.QueuingGrey**
+- **diagrams.oci.monitoring.Queuing**
+- **diagrams.oci.monitoring.SearchGrey**
+- **diagrams.oci.monitoring.Search**
+- **diagrams.oci.monitoring.StreamingGrey**
+- **diagrams.oci.monitoring.Streaming**
+- **diagrams.oci.monitoring.TelemetryGrey**
+- **diagrams.oci.monitoring.Telemetry**
+- **diagrams.oci.monitoring.WorkflowGrey**
+- **diagrams.oci.monitoring.Workflow**
+
+## oci.network
+
+- **diagrams.oci.network.DrgGrey**
+- **diagrams.oci.network.Drg**
+- **diagrams.oci.network.FirewallGrey**
+- **diagrams.oci.network.Firewall**
+- **diagrams.oci.network.InternetgatewayGrey**
+- **diagrams.oci.network.Internetgateway**
+- **diagrams.oci.network.LoadbalanceGrey**
+- **diagrams.oci.network.Loadbalance**
+- **diagrams.oci.network.RoutetableGrey**
+- **diagrams.oci.network.Routetable**
+- **diagrams.oci.network.SecuritylistsGrey**
+- **diagrams.oci.network.Securitylists**
+- **diagrams.oci.network.ServiceGatewayGrey**
+- **diagrams.oci.network.ServiceGateway**
+- **diagrams.oci.network.VcloudnetworkGrey**
+- **diagrams.oci.network.Vcloudnetwork**
 
 ## oci.security
 
@@ -53,36 +115,6 @@ Node classes list of oci provider.
 - **diagrams.oci.security.TaggingGrey**
 - **diagrams.oci.security.Tagging**
 
-## oci.network
-
-- **diagrams.oci.network.DrgGrey**
-- **diagrams.oci.network.Drg**
-- **diagrams.oci.network.FirewallGrey**
-- **diagrams.oci.network.Firewall**
-- **diagrams.oci.network.InternetgatewayGrey**
-- **diagrams.oci.network.Internetgateway**
-- **diagrams.oci.network.LoadbalanceGrey**
-- **diagrams.oci.network.Loadbalance**
-- **diagrams.oci.network.RoutetableGrey**
-- **diagrams.oci.network.Routetable**
-- **diagrams.oci.network.SecuritylistsGrey**
-- **diagrams.oci.network.Securitylists**
-- **diagrams.oci.network.ServiceGatewayGrey**
-- **diagrams.oci.network.ServiceGateway**
-- **diagrams.oci.network.VcloudnetworkGrey**
-- **diagrams.oci.network.Vcloudnetwork**
-
-## oci.edge
-
-- **diagrams.oci.edge.CdnGrey**
-- **diagrams.oci.edge.Cdn**
-- **diagrams.oci.edge.DnsGrey**
-- **diagrams.oci.edge.Dns**
-- **diagrams.oci.edge.EmaildeliveryGrey**
-- **diagrams.oci.edge.Emaildelivery**
-- **diagrams.oci.edge.WafGrey**
-- **diagrams.oci.edge.Waf**
-
 ## oci.storage
 
 - **diagrams.oci.storage.BackuprestoreGrey**
@@ -99,35 +131,3 @@ Node classes list of oci provider.
 - **diagrams.oci.storage.Objectstorage**
 - **diagrams.oci.storage.StoragegatewayGrey**
 - **diagrams.oci.storage.Storagegateway**
-
-## oci.compute
-
-- **diagrams.oci.compute.BmGrey**, **BareMetalGrey** (alias)
-- **diagrams.oci.compute.Bm**, **BareMetal** (alias)
-- **diagrams.oci.compute.ContainerGrey**
-- **diagrams.oci.compute.Container**
-- **diagrams.oci.compute.VmGrey**, **VirtualMachineGrey** (alias)
-- **diagrams.oci.compute.Vm**, **VirtualMachine** (alias)
-
-## oci.monitoring
-
-- **diagrams.oci.monitoring.AlarmGrey**
-- **diagrams.oci.monitoring.Alarm**
-- **diagrams.oci.monitoring.EventGrey**
-- **diagrams.oci.monitoring.Event**
-- **diagrams.oci.monitoring.HealthcheckGrey**
-- **diagrams.oci.monitoring.Healthcheck**
-- **diagrams.oci.monitoring.LoggingGrey**
-- **diagrams.oci.monitoring.Logging**
-- **diagrams.oci.monitoring.NotificationsGrey**
-- **diagrams.oci.monitoring.Notifications**
-- **diagrams.oci.monitoring.QueuingGrey**
-- **diagrams.oci.monitoring.Queuing**
-- **diagrams.oci.monitoring.SearchGrey**
-- **diagrams.oci.monitoring.Search**
-- **diagrams.oci.monitoring.StreamingGrey**
-- **diagrams.oci.monitoring.Streaming**
-- **diagrams.oci.monitoring.TelemetryGrey**
-- **diagrams.oci.monitoring.Telemetry**
-- **diagrams.oci.monitoring.WorkflowGrey**
-- **diagrams.oci.monitoring.Workflow**
