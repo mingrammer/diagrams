@@ -191,3 +191,23 @@ Node classes list of azure provider.
 - **diagrams.azure.analytics.Hdinsightclusters**
 - **diagrams.azure.analytics.LogAnalyticsWorkspaces**
 - **diagrams.azure.analytics.StreamAnalyticsJobs**
+
+## azure.integration
+
+- **diagrams.azure.integration.APIForFhir**
+- **diagrams.azure.integration.APIManagement**
+- **diagrams.azure.integration.AppConfiguration**
+- **diagrams.azure.integration.DataCatalog**
+- **diagrams.azure.integration.EventGridDomains**
+- **diagrams.azure.integration.EventGridSubscriptions**
+- **diagrams.azure.integration.EventGridTopics**
+- **diagrams.azure.integration.IntegrationAccounts**
+- **diagrams.azure.integration.IntegrationServiceEnvironments**
+- **diagrams.azure.integration.LogicAppsCustomConnector**
+- **diagrams.azure.integration.LogicApps**
+- **diagrams.azure.integration.SendgridAccounts**
+- **diagrams.azure.integration.ServiceBusRelays**
+- **diagrams.azure.integration.ServiceBus**
+- **diagrams.azure.integration.ServiceCatalogManagedApplicationDefinitions**
+- **diagrams.azure.integration.SoftwareAsAService**
+- **diagrams.azure.integration.StorsimpleDeviceManagers**
