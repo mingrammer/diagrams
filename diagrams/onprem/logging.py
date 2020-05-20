@@ -8,6 +8,10 @@ class _Logging(_OnPrem):
     _icon_dir = "resources/onprem/logging"
 
 
+class Fluentbit(_Logging):
+    _icon = "fluentbit.png"
+
+
 class Fluentd(_Logging):
     _icon = "fluentd.png"
 
@@ -22,4 +26,5 @@ class Loki(_Logging):
 
 # Aliases
 
+FluentBit = Fluentbit
 LogStash = Logstash
