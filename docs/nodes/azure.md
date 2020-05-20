@@ -142,31 +142,32 @@ Node classes list of azure provider.
 
 ## azure.general
 
-- **diagrams.azure.general.AllResources**
+- **diagrams.azure.general.Allresources**
+- **diagrams.azure.general.Azurehome**
 - **diagrams.azure.general.Developertools**
-- **diagrams.azure.general.HelpSupport**
-- **diagrams.azure.general.Home**
+- **diagrams.azure.general.Helpsupport**
 - **diagrams.azure.general.Information**
-- **diagrams.azure.general.ManagementGroups**
+- **diagrams.azure.general.Managementgroups**
 - **diagrams.azure.general.Marketplace**
-- **diagrams.azure.general.QuickStartCenter**
+- **diagrams.azure.general.Quickstartcenter**
 - **diagrams.azure.general.Recent**
 - **diagrams.azure.general.Reservations**
-- **diagrams.azure.general.ResourceGroups**
 - **diagrams.azure.general.Resource**
-- **diagrams.azure.general.ServiceHealth**
-- **diagrams.azure.general.SharedDashboard**
+- **diagrams.azure.general.Resourcegroups**
+- **diagrams.azure.general.Servicehealth**
+- **diagrams.azure.general.Shareddashboard**
 - **diagrams.azure.general.Subscriptions**
-- **diagrams.azure.general.SupportRequests**
 - **diagrams.azure.general.Support**
+- **diagrams.azure.general.Supportrequests**
 - **diagrams.azure.general.Tag**
 - **diagrams.azure.general.Tags**
 - **diagrams.azure.general.Templates**
-- **diagrams.azure.general.TwoUserIcon**
-- **diagrams.azure.general.UserHealthIcon**
-- **diagrams.azure.general.UserIcon**
-- **diagrams.azure.general.UserPrivacy**
-- **diagrams.azure.general.UserResource**
+- **diagrams.azure.general.Twousericon**
+- **diagrams.azure.general.Userhealthicon**
+- **diagrams.azure.general.Usericon**
+- **diagrams.azure.general.Userprivacy**
+- **diagrams.azure.general.Userresource**
+- **diagrams.azure.general.Whatsnew**
 
 ## azure.compute
 
