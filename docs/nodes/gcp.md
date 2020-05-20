@@ -5,65 +5,6 @@ title: GCP
 
 Node classes list of gcp provider.
 
-## gcp.analytics
-
-- **diagrams.gcp.analytics.Bigquery**, **BigQuery** (alias)
-- **diagrams.gcp.analytics.Composer**
-- **diagrams.gcp.analytics.DataCatalog**
-- **diagrams.gcp.analytics.DataFusion**
-- **diagrams.gcp.analytics.Dataflow**
-- **diagrams.gcp.analytics.Datalab**
-- **diagrams.gcp.analytics.Dataprep**
-- **diagrams.gcp.analytics.Dataproc**
-- **diagrams.gcp.analytics.Genomics**
-- **diagrams.gcp.analytics.Pubsub**, **PubSub** (alias)
-
-## gcp.compute
-
-- **diagrams.gcp.compute.AppEngine**, **GAE** (alias)
-- **diagrams.gcp.compute.ComputeEngine**, **GCE** (alias)
-- **diagrams.gcp.compute.ContainerOptimizedOS**
-- **diagrams.gcp.compute.Functions**, **GCF** (alias)
-- **diagrams.gcp.compute.GKEOnPrem**
-- **diagrams.gcp.compute.GPU**
-- **diagrams.gcp.compute.KubernetesEngine**, **GKE** (alias)
-- **diagrams.gcp.compute.Run**
-
-## gcp.database
-
-- **diagrams.gcp.database.Bigtable**, **BigTable** (alias)
-- **diagrams.gcp.database.Datastore**
-- **diagrams.gcp.database.Firestore**
-- **diagrams.gcp.database.Memorystore**
-- **diagrams.gcp.database.Spanner**
-- **diagrams.gcp.database.SQL**
-
-## gcp.devtools
-
-- **diagrams.gcp.devtools.Build**
-- **diagrams.gcp.devtools.CodeForIntellij**
-- **diagrams.gcp.devtools.Code**
-- **diagrams.gcp.devtools.ContainerRegistry**, **GCR** (alias)
-- **diagrams.gcp.devtools.GradleAppEnginePlugin**
-- **diagrams.gcp.devtools.IdePlugins**
-- **diagrams.gcp.devtools.MavenAppEnginePlugin**
-- **diagrams.gcp.devtools.Scheduler**
-- **diagrams.gcp.devtools.SDK**
-- **diagrams.gcp.devtools.SourceRepositories**
-- **diagrams.gcp.devtools.Tasks**
-- **diagrams.gcp.devtools.TestLab**
-- **diagrams.gcp.devtools.ToolsForEclipse**
-- **diagrams.gcp.devtools.ToolsForPowershell**
-- **diagrams.gcp.devtools.ToolsForVisualStudio**
-
-## gcp.iot
-
-- **diagrams.gcp.iot.IotCore**
-
-## gcp.migration
-
-- **diagrams.gcp.migration.TransferAppliance**
-
 ## gcp.ml
 
 - **diagrams.gcp.ml.AdvancedSolutionsLab**
@@ -88,6 +29,23 @@ Node classes list of gcp provider.
 - **diagrams.gcp.ml.VideoIntelligenceAPI**
 - **diagrams.gcp.ml.VisionAPI**
 
+## gcp.security
+
+- **diagrams.gcp.security.Iam**
+- **diagrams.gcp.security.IAP**
+- **diagrams.gcp.security.KeyManagementService**, **KMS** (alias)
+- **diagrams.gcp.security.ResourceManager**
+- **diagrams.gcp.security.SecurityCommandCenter**, **SCC** (alias)
+- **diagrams.gcp.security.SecurityScanner**
+
+## gcp.iot
+
+- **diagrams.gcp.iot.IotCore**
+
+## gcp.migration
+
+- **diagrams.gcp.migration.TransferAppliance**
+
 ## gcp.network
 
 - **diagrams.gcp.network.Armor**
@@ -108,17 +66,59 @@ Node classes list of gcp provider.
 - **diagrams.gcp.network.VirtualPrivateCloud**, **VPC** (alias)
 - **diagrams.gcp.network.VPN**
 
-## gcp.security
-
-- **diagrams.gcp.security.Iam**
-- **diagrams.gcp.security.IAP**
-- **diagrams.gcp.security.KeyManagementService**, **KMS** (alias)
-- **diagrams.gcp.security.ResourceManager**
-- **diagrams.gcp.security.SecurityCommandCenter**, **SCC** (alias)
-- **diagrams.gcp.security.SecurityScanner**
-
 ## gcp.storage
 
 - **diagrams.gcp.storage.Filestore**
 - **diagrams.gcp.storage.PersistentDisk**
 - **diagrams.gcp.storage.Storage**, **GCS** (alias)
+
+## gcp.analytics
+
+- **diagrams.gcp.analytics.Bigquery**, **BigQuery** (alias)
+- **diagrams.gcp.analytics.Composer**
+- **diagrams.gcp.analytics.DataCatalog**
+- **diagrams.gcp.analytics.DataFusion**
+- **diagrams.gcp.analytics.Dataflow**
+- **diagrams.gcp.analytics.Datalab**
+- **diagrams.gcp.analytics.Dataprep**
+- **diagrams.gcp.analytics.Dataproc**
+- **diagrams.gcp.analytics.Genomics**
+- **diagrams.gcp.analytics.Pubsub**, **PubSub** (alias)
+
+## gcp.database
+
+- **diagrams.gcp.database.Bigtable**, **BigTable** (alias)
+- **diagrams.gcp.database.Datastore**
+- **diagrams.gcp.database.Firestore**
+- **diagrams.gcp.database.Memorystore**
+- **diagrams.gcp.database.Spanner**
+- **diagrams.gcp.database.SQL**
+
+## gcp.compute
+
+- **diagrams.gcp.compute.AppEngine**, **GAE** (alias)
+- **diagrams.gcp.compute.ComputeEngine**, **GCE** (alias)
+- **diagrams.gcp.compute.ContainerOptimizedOS**
+- **diagrams.gcp.compute.Functions**, **GCF** (alias)
+- **diagrams.gcp.compute.GKEOnPrem**
+- **diagrams.gcp.compute.GPU**
+- **diagrams.gcp.compute.KubernetesEngine**, **GKE** (alias)
+- **diagrams.gcp.compute.Run**
+
+## gcp.devtools
+
+- **diagrams.gcp.devtools.Build**
+- **diagrams.gcp.devtools.CodeForIntellij**
+- **diagrams.gcp.devtools.Code**
+- **diagrams.gcp.devtools.ContainerRegistry**, **GCR** (alias)
+- **diagrams.gcp.devtools.GradleAppEnginePlugin**
+- **diagrams.gcp.devtools.IdePlugins**
+- **diagrams.gcp.devtools.MavenAppEnginePlugin**
+- **diagrams.gcp.devtools.Scheduler**
+- **diagrams.gcp.devtools.SDK**
+- **diagrams.gcp.devtools.SourceRepositories**
+- **diagrams.gcp.devtools.Tasks**
+- **diagrams.gcp.devtools.TestLab**
+- **diagrams.gcp.devtools.ToolsForEclipse**
+- **diagrams.gcp.devtools.ToolsForPowershell**
+- **diagrams.gcp.devtools.ToolsForVisualStudio**
