@@ -144,6 +144,9 @@ ALIASES = {
         "engagement": {
             "SimpleEmailServiceSes": "SES",
         },
+        "general": {
+            "GenericOfficeBuilding": "OfficeBuilding",
+        },
         "integration": {
             "SimpleNotificationServiceSns": "SNS",
             "SimpleQueueServiceSqs": "SQS",
@@ -151,6 +154,7 @@ ALIASES = {
         },
         "iot": {
             "Freertos": "FreeRTOS",
+            "IotHardwareBoard": "IotBoard",
         },
         "management": {
             "SystemsManager": "SSM",
