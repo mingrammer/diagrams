@@ -5,18 +5,6 @@ title: OCI
 
 Node classes list of oci provider.
 
-## oci.database
-
-- **diagrams.oci.database.DatabaseserviceGrey**, **DBServiceGrey** (alias)
-- **diagrams.oci.database.Databaseservice**, **DBService** (alias)
-
-## oci.devops
-
-- **diagrams.oci.devops.ApiserviceGrey**
-- **diagrams.oci.devops.Apiservice**
-- **diagrams.oci.devops.ResourcemgmtGrey**
-- **diagrams.oci.devops.Resourcemgmt**
-
 ## oci.connectivity
 
 - **diagrams.oci.connectivity.BackboneGrey**
@@ -53,6 +41,17 @@ Node classes list of oci provider.
 - **diagrams.oci.security.TaggingGrey**
 - **diagrams.oci.security.Tagging**
 
+## oci.edge
+
+- **diagrams.oci.edge.CdnGrey**
+- **diagrams.oci.edge.Cdn**
+- **diagrams.oci.edge.DnsGrey**
+- **diagrams.oci.edge.Dns**
+- **diagrams.oci.edge.EmaildeliveryGrey**
+- **diagrams.oci.edge.Emaildelivery**
+- **diagrams.oci.edge.WafGrey**
+- **diagrams.oci.edge.Waf**
+
 ## oci.network
 
 - **diagrams.oci.network.DrgGrey**
@@ -72,17 +71,6 @@ Node classes list of oci provider.
 - **diagrams.oci.network.VcloudnetworkGrey**
 - **diagrams.oci.network.Vcloudnetwork**
 
-## oci.edge
-
-- **diagrams.oci.edge.CdnGrey**
-- **diagrams.oci.edge.Cdn**
-- **diagrams.oci.edge.DnsGrey**
-- **diagrams.oci.edge.Dns**
-- **diagrams.oci.edge.EmaildeliveryGrey**
-- **diagrams.oci.edge.Emaildelivery**
-- **diagrams.oci.edge.WafGrey**
-- **diagrams.oci.edge.Waf**
-
 ## oci.storage
 
 - **diagrams.oci.storage.BackuprestoreGrey**
@@ -99,6 +87,11 @@ Node classes list of oci provider.
 - **diagrams.oci.storage.Objectstorage**
 - **diagrams.oci.storage.StoragegatewayGrey**
 - **diagrams.oci.storage.Storagegateway**
+
+## oci.database
+
+- **diagrams.oci.database.DatabaseserviceGrey**, **DBServiceGrey** (alias)
+- **diagrams.oci.database.Databaseservice**, **DBService** (alias)
 
 ## oci.compute
 
@@ -131,3 +124,10 @@ Node classes list of oci provider.
 - **diagrams.oci.monitoring.Telemetry**
 - **diagrams.oci.monitoring.WorkflowGrey**
 - **diagrams.oci.monitoring.Workflow**
+
+## oci.devops
+
+- **diagrams.oci.devops.ApiserviceGrey**
+- **diagrams.oci.devops.Apiservice**
+- **diagrams.oci.devops.ResourcemgmtGrey**
+- **diagrams.oci.devops.Resourcemgmt**

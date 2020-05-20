@@ -5,26 +5,6 @@ title: AlibabaCloud
 
 Node classes list of alibabacloud provider.
 
-## alibabacloud.database
-
-- **diagrams.alibabacloud.database.ApsaradbCassandra**
-- **diagrams.alibabacloud.database.ApsaradbHbase**
-- **diagrams.alibabacloud.database.ApsaradbMemcache**
-- **diagrams.alibabacloud.database.ApsaradbMongodb**
-- **diagrams.alibabacloud.database.ApsaradbOceanbase**
-- **diagrams.alibabacloud.database.ApsaradbPolardb**
-- **diagrams.alibabacloud.database.ApsaradbPostgresql**
-- **diagrams.alibabacloud.database.ApsaradbPpas**
-- **diagrams.alibabacloud.database.ApsaradbRedis**
-- **diagrams.alibabacloud.database.ApsaradbSqlserver**
-- **diagrams.alibabacloud.database.DataManagementService**, **DMS** (alias)
-- **diagrams.alibabacloud.database.DataTransmissionService**, **DTS** (alias)
-- **diagrams.alibabacloud.database.DatabaseBackupService**, **DBS** (alias)
-- **diagrams.alibabacloud.database.DisributeRelationalDatabaseService**, **DRDS** (alias)
-- **diagrams.alibabacloud.database.GraphDatabaseService**, **GDS** (alias)
-- **diagrams.alibabacloud.database.HybriddbForMysql**
-- **diagrams.alibabacloud.database.RelationalDatabaseService**, **RDS** (alias)
-
 ## alibabacloud.security
 
 - **diagrams.alibabacloud.security.AntiBotService**, **ABS** (alias)
@@ -46,10 +26,29 @@ Node classes list of alibabacloud provider.
 - **diagrams.alibabacloud.security.SslCertificates**
 - **diagrams.alibabacloud.security.WebApplicationFirewall**, **WAF** (alias)
 
-## alibabacloud.web
+## alibabacloud.iot
 
-- **diagrams.alibabacloud.web.Dns**
-- **diagrams.alibabacloud.web.Domain**
+- **diagrams.alibabacloud.iot.IotInternetDeviceId**
+- **diagrams.alibabacloud.iot.IotLinkWan**
+- **diagrams.alibabacloud.iot.IotMobileConnectionPackage**
+- **diagrams.alibabacloud.iot.IotPlatform**
+
+## alibabacloud.application
+
+- **diagrams.alibabacloud.application.ApiGateway**
+- **diagrams.alibabacloud.application.BeeBot**
+- **diagrams.alibabacloud.application.BlockchainAsAService**
+- **diagrams.alibabacloud.application.CloudCallCenter**
+- **diagrams.alibabacloud.application.CodePipeline**
+- **diagrams.alibabacloud.application.DirectMail**
+- **diagrams.alibabacloud.application.LogService**, **SLS** (alias)
+- **diagrams.alibabacloud.application.MessageNotificationService**, **MNS** (alias)
+- **diagrams.alibabacloud.application.NodeJsPerformancePlatform**
+- **diagrams.alibabacloud.application.OpenSearch**
+- **diagrams.alibabacloud.application.PerformanceTestingService**, **PTS** (alias)
+- **diagrams.alibabacloud.application.RdCloud**
+- **diagrams.alibabacloud.application.SmartConversationAnalysis**, **SCA** (alias)
+- **diagrams.alibabacloud.application.Yida**
 
 ## alibabacloud.network
 
@@ -74,12 +73,33 @@ Node classes list of alibabacloud provider.
 - **diagrams.alibabacloud.storage.ObjectStorageService**, **OSS** (alias)
 - **diagrams.alibabacloud.storage.ObjectTableStore**, **OTS** (alias)
 
-## alibabacloud.iot
+## alibabacloud.analytics
 
-- **diagrams.alibabacloud.iot.IotInternetDeviceId**
-- **diagrams.alibabacloud.iot.IotLinkWan**
-- **diagrams.alibabacloud.iot.IotMobileConnectionPackage**
-- **diagrams.alibabacloud.iot.IotPlatform**
+- **diagrams.alibabacloud.analytics.AnalyticDb**
+- **diagrams.alibabacloud.analytics.ClickHouse**
+- **diagrams.alibabacloud.analytics.DataLakeAnalytics**
+- **diagrams.alibabacloud.analytics.ElaticMapReduce**
+- **diagrams.alibabacloud.analytics.OpenSearch**
+
+## alibabacloud.database
+
+- **diagrams.alibabacloud.database.ApsaradbCassandra**
+- **diagrams.alibabacloud.database.ApsaradbHbase**
+- **diagrams.alibabacloud.database.ApsaradbMemcache**
+- **diagrams.alibabacloud.database.ApsaradbMongodb**
+- **diagrams.alibabacloud.database.ApsaradbOceanbase**
+- **diagrams.alibabacloud.database.ApsaradbPolardb**
+- **diagrams.alibabacloud.database.ApsaradbPostgresql**
+- **diagrams.alibabacloud.database.ApsaradbPpas**
+- **diagrams.alibabacloud.database.ApsaradbRedis**
+- **diagrams.alibabacloud.database.ApsaradbSqlserver**
+- **diagrams.alibabacloud.database.DataManagementService**, **DMS** (alias)
+- **diagrams.alibabacloud.database.DataTransmissionService**, **DTS** (alias)
+- **diagrams.alibabacloud.database.DatabaseBackupService**, **DBS** (alias)
+- **diagrams.alibabacloud.database.DisributeRelationalDatabaseService**, **DRDS** (alias)
+- **diagrams.alibabacloud.database.GraphDatabaseService**, **GDS** (alias)
+- **diagrams.alibabacloud.database.HybriddbForMysql**
+- **diagrams.alibabacloud.database.RelationalDatabaseService**, **RDS** (alias)
 
 ## alibabacloud.compute
 
@@ -99,32 +119,12 @@ Node classes list of alibabacloud provider.
 - **diagrams.alibabacloud.compute.SimpleApplicationServer**, **SAS** (alias)
 - **diagrams.alibabacloud.compute.WebAppService**, **WAS** (alias)
 
-## alibabacloud.application
-
-- **diagrams.alibabacloud.application.ApiGateway**
-- **diagrams.alibabacloud.application.BeeBot**
-- **diagrams.alibabacloud.application.BlockchainAsAService**
-- **diagrams.alibabacloud.application.CloudCallCenter**
-- **diagrams.alibabacloud.application.CodePipeline**
-- **diagrams.alibabacloud.application.DirectMail**
-- **diagrams.alibabacloud.application.LogService**, **SLS** (alias)
-- **diagrams.alibabacloud.application.MessageNotificationService**, **MNS** (alias)
-- **diagrams.alibabacloud.application.NodeJsPerformancePlatform**
-- **diagrams.alibabacloud.application.OpenSearch**
-- **diagrams.alibabacloud.application.PerformanceTestingService**, **PTS** (alias)
-- **diagrams.alibabacloud.application.RdCloud**
-- **diagrams.alibabacloud.application.SmartConversationAnalysis**, **SCA** (alias)
-- **diagrams.alibabacloud.application.Yida**
-
 ## alibabacloud.communication
 
 - **diagrams.alibabacloud.communication.DirectMail**
 - **diagrams.alibabacloud.communication.MobilePush**
 
-## alibabacloud.analytics
+## alibabacloud.web
 
-- **diagrams.alibabacloud.analytics.AnalyticDb**
-- **diagrams.alibabacloud.analytics.ClickHouse**
-- **diagrams.alibabacloud.analytics.DataLakeAnalytics**
-- **diagrams.alibabacloud.analytics.ElaticMapReduce**
-- **diagrams.alibabacloud.analytics.OpenSearch**
+- **diagrams.alibabacloud.web.Dns**
+- **diagrams.alibabacloud.web.Domain**

@@ -5,14 +5,29 @@ title: GCP
 
 Node classes list of gcp provider.
 
-## gcp.database
+## gcp.ml
 
-- **diagrams.gcp.database.Bigtable**, **BigTable** (alias)
-- **diagrams.gcp.database.Datastore**
-- **diagrams.gcp.database.Firestore**
-- **diagrams.gcp.database.Memorystore**
-- **diagrams.gcp.database.Spanner**
-- **diagrams.gcp.database.SQL**
+- **diagrams.gcp.ml.AdvancedSolutionsLab**
+- **diagrams.gcp.ml.AIHub**
+- **diagrams.gcp.ml.AIPlatformDataLabelingService**
+- **diagrams.gcp.ml.AIPlatform**
+- **diagrams.gcp.ml.AutomlNaturalLanguage**
+- **diagrams.gcp.ml.AutomlTables**
+- **diagrams.gcp.ml.AutomlTranslation**
+- **diagrams.gcp.ml.AutomlVideoIntelligence**
+- **diagrams.gcp.ml.AutomlVision**
+- **diagrams.gcp.ml.Automl**, **AutoML** (alias)
+- **diagrams.gcp.ml.DialogFlowEnterpriseEdition**
+- **diagrams.gcp.ml.InferenceAPI**
+- **diagrams.gcp.ml.JobsAPI**
+- **diagrams.gcp.ml.NaturalLanguageAPI**, **NLAPI** (alias)
+- **diagrams.gcp.ml.RecommendationsAI**
+- **diagrams.gcp.ml.SpeechToText**, **STT** (alias)
+- **diagrams.gcp.ml.TextToSpeech**, **TTS** (alias)
+- **diagrams.gcp.ml.TPU**
+- **diagrams.gcp.ml.TranslationAPI**
+- **diagrams.gcp.ml.VideoIntelligenceAPI**
+- **diagrams.gcp.ml.VisionAPI**
 
 ## gcp.security
 
@@ -22,6 +37,14 @@ Node classes list of gcp provider.
 - **diagrams.gcp.security.ResourceManager**
 - **diagrams.gcp.security.SecurityCommandCenter**, **SCC** (alias)
 - **diagrams.gcp.security.SecurityScanner**
+
+## gcp.iot
+
+- **diagrams.gcp.iot.IotCore**
+
+## gcp.migration
+
+- **diagrams.gcp.migration.TransferAppliance**
 
 ## gcp.network
 
@@ -49,9 +72,27 @@ Node classes list of gcp provider.
 - **diagrams.gcp.storage.PersistentDisk**
 - **diagrams.gcp.storage.Storage**, **GCS** (alias)
 
-## gcp.iot
+## gcp.analytics
 
-- **diagrams.gcp.iot.IotCore**
+- **diagrams.gcp.analytics.Bigquery**, **BigQuery** (alias)
+- **diagrams.gcp.analytics.Composer**
+- **diagrams.gcp.analytics.DataCatalog**
+- **diagrams.gcp.analytics.DataFusion**
+- **diagrams.gcp.analytics.Dataflow**
+- **diagrams.gcp.analytics.Datalab**
+- **diagrams.gcp.analytics.Dataprep**
+- **diagrams.gcp.analytics.Dataproc**
+- **diagrams.gcp.analytics.Genomics**
+- **diagrams.gcp.analytics.Pubsub**, **PubSub** (alias)
+
+## gcp.database
+
+- **diagrams.gcp.database.Bigtable**, **BigTable** (alias)
+- **diagrams.gcp.database.Datastore**
+- **diagrams.gcp.database.Firestore**
+- **diagrams.gcp.database.Memorystore**
+- **diagrams.gcp.database.Spanner**
+- **diagrams.gcp.database.SQL**
 
 ## gcp.compute
 
@@ -81,44 +122,3 @@ Node classes list of gcp provider.
 - **diagrams.gcp.devtools.ToolsForEclipse**
 - **diagrams.gcp.devtools.ToolsForPowershell**
 - **diagrams.gcp.devtools.ToolsForVisualStudio**
-
-## gcp.ml
-
-- **diagrams.gcp.ml.AdvancedSolutionsLab**
-- **diagrams.gcp.ml.AIHub**
-- **diagrams.gcp.ml.AIPlatformDataLabelingService**
-- **diagrams.gcp.ml.AIPlatform**
-- **diagrams.gcp.ml.AutomlNaturalLanguage**
-- **diagrams.gcp.ml.AutomlTables**
-- **diagrams.gcp.ml.AutomlTranslation**
-- **diagrams.gcp.ml.AutomlVideoIntelligence**
-- **diagrams.gcp.ml.AutomlVision**
-- **diagrams.gcp.ml.Automl**, **AutoML** (alias)
-- **diagrams.gcp.ml.DialogFlowEnterpriseEdition**
-- **diagrams.gcp.ml.InferenceAPI**
-- **diagrams.gcp.ml.JobsAPI**
-- **diagrams.gcp.ml.NaturalLanguageAPI**, **NLAPI** (alias)
-- **diagrams.gcp.ml.RecommendationsAI**
-- **diagrams.gcp.ml.SpeechToText**, **STT** (alias)
-- **diagrams.gcp.ml.TextToSpeech**, **TTS** (alias)
-- **diagrams.gcp.ml.TPU**
-- **diagrams.gcp.ml.TranslationAPI**
-- **diagrams.gcp.ml.VideoIntelligenceAPI**
-- **diagrams.gcp.ml.VisionAPI**
-
-## gcp.migration
-
-- **diagrams.gcp.migration.TransferAppliance**
-
-## gcp.analytics
-
-- **diagrams.gcp.analytics.Bigquery**, **BigQuery** (alias)
-- **diagrams.gcp.analytics.Composer**
-- **diagrams.gcp.analytics.DataCatalog**
-- **diagrams.gcp.analytics.DataFusion**
-- **diagrams.gcp.analytics.Dataflow**
-- **diagrams.gcp.analytics.Datalab**
-- **diagrams.gcp.analytics.Dataprep**
-- **diagrams.gcp.analytics.Dataproc**
-- **diagrams.gcp.analytics.Genomics**
-- **diagrams.gcp.analytics.Pubsub**, **PubSub** (alias)
