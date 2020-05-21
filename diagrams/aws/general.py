@@ -32,7 +32,7 @@ class GenericSamlToken(_General):
     _icon = "generic-saml-token.png"
 
 
-class GenericSdk(_General):
+class GenericSDK(_General):
     _icon = "generic-sdk.png"
 
 

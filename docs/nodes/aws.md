@@ -102,7 +102,7 @@ Node classes list of aws provider.
 - **diagrams.aws.general.GenericFirewall**
 - **diagrams.aws.general.GenericOfficeBuilding**, **OfficeBuilding** (alias)
 - **diagrams.aws.general.GenericSamlToken**
-- **diagrams.aws.general.GenericSdk**
+- **diagrams.aws.general.GenericSDK**
 - **diagrams.aws.general.Marketplace**
 - **diagrams.aws.general.TradicionalServer**
 - **diagrams.aws.general.User**
