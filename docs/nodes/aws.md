@@ -90,6 +90,24 @@ Node classes list of aws provider.
 - **diagrams.aws.engagement.Pinpoint**
 - **diagrams.aws.engagement.SimpleEmailServiceSes**, **SES** (alias)
 
+## aws.game
+
+- **diagrams.aws.game.Gamelift**
+
+## aws.general
+
+- **diagrams.aws.general.Disk**
+- **diagrams.aws.general.General**
+- **diagrams.aws.general.GenericDatabase**
+- **diagrams.aws.general.GenericFirewall**
+- **diagrams.aws.general.GenericOfficeBuilding**, **OfficeBuilding** (alias)
+- **diagrams.aws.general.GenericSamlToken**
+- **diagrams.aws.general.GenericSDK**
+- **diagrams.aws.general.Marketplace**
+- **diagrams.aws.general.TradicionalServer**
+- **diagrams.aws.general.User**
+- **diagrams.aws.general.Users**
+
 ## aws.integration
 
 - **diagrams.aws.integration.ApplicationIntegration**
@@ -106,15 +124,25 @@ Node classes list of aws provider.
 - **diagrams.aws.iot.Freertos**, **FreeRTOS** (alias)
 - **diagrams.aws.iot.InternetOfThings**
 - **diagrams.aws.iot.Iot1Click**
+- **diagrams.aws.iot.IotAlexaEcho**
+- **diagrams.aws.iot.IotAlexaSkill**
 - **diagrams.aws.iot.IotAnalytics**
 - **diagrams.aws.iot.IotButton**
+- **diagrams.aws.iot.IotCamera**
+- **diagrams.aws.iot.IotCertificate**
 - **diagrams.aws.iot.IotCore**
 - **diagrams.aws.iot.IotDeviceDefender**
 - **diagrams.aws.iot.IotDeviceManagement**
 - **diagrams.aws.iot.IotEvents**
 - **diagrams.aws.iot.IotGreengrass**
+- **diagrams.aws.iot.IotHardwareBoard**, **IotBoard** (alias)
+- **diagrams.aws.iot.IotJobs**
+- **diagrams.aws.iot.IotMqtt**
+- **diagrams.aws.iot.IotRule**
+- **diagrams.aws.iot.IotShadow**
 - **diagrams.aws.iot.IotSitewise**
 - **diagrams.aws.iot.IotThingsGraph**
+- **diagrams.aws.iot.IotTopic**
 
 ## aws.management
 
@@ -212,6 +240,12 @@ Node classes list of aws provider.
 - **diagrams.aws.network.VPCPeering**
 - **diagrams.aws.network.VPCRouter**
 - **diagrams.aws.network.VPC**
+
+## aws.robotics
+
+- **diagrams.aws.robotics.RobomakerSimulator**
+- **diagrams.aws.robotics.Robomaker**
+- **diagrams.aws.robotics.Robotics**
 
 ## aws.security
 

@@ -48,7 +48,7 @@ TMPL_APIDOC = "apidoc.tmpl"
 TMPL_MODULE = "module.tmpl"
 
 UPPER_WORDS = {
-    "aws": ("aws", "api", "ebs", "ec2", "efs", "emr", "rds", "ml", "mq", "nat", "vpc", "waf"),
+    "aws": ("aws", "api", "ebs", "ec2", "efs", "emr", "rds", "ml", "mq", "nat", "vpc", "waf", "sdk"),
     "azure": ("ad", "b2c", "ai", "api", "cdn", "ddos", "dns", "fxt", "hana", "hd", "id", "sap", "sql", "vm"),
     "gcp": ("gcp", "ai", "api", "cdn", "dns", "gke", "gpu", "iap", "ml", "nat", "os", "sdk", "sql", "tpu", "vpn"),
     "k8s": (
@@ -144,6 +144,9 @@ ALIASES = {
         "engagement": {
             "SimpleEmailServiceSes": "SES",
         },
+        "general": {
+            "GenericOfficeBuilding": "OfficeBuilding",
+        },
         "integration": {
             "SimpleNotificationServiceSns": "SNS",
             "SimpleQueueServiceSqs": "SQS",
@@ -151,6 +154,7 @@ ALIASES = {
         },
         "iot": {
             "Freertos": "FreeRTOS",
+            "IotHardwareBoard": "IotBoard",
         },
         "management": {
             "SystemsManager": "SSM",
