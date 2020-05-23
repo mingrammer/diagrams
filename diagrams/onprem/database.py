@@ -20,6 +20,10 @@ class Cockroachdb(_Database):
     _icon = "cockroachdb.png"
 
 
+class Couchbase(_Database):
+    _icon = "couchbase.png"
+
+
 class Couchdb(_Database):
     _icon = "couchdb.png"
 

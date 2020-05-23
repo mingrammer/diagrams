@@ -49,6 +49,7 @@ Node classes list of onprem provider.
 - **diagrams.onprem.database.Cassandra**
 - **diagrams.onprem.database.Clickhouse**, **ClickHouse** (alias)
 - **diagrams.onprem.database.Cockroachdb**, **CockroachDB** (alias)
+- **diagrams.onprem.database.Couchbase**
 - **diagrams.onprem.database.Couchdb**, **CouchDB** (alias)
 - **diagrams.onprem.database.Dgraph**
 - **diagrams.onprem.database.Hbase**, **HBase** (alias)
