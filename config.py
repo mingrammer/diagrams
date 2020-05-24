@@ -71,9 +71,6 @@ TITLE_WORDS = {
     "aws": {
         "cloudfront": "CloudFront"
     },
-    "saas": {
-        "elasticcloud": "ElasticCloud",
-    },
 }
 
 # TODO: check if the classname exists
