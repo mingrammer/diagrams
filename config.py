@@ -201,11 +201,6 @@ ALIASES = {
             "KubernetesServices": "AKS",
         },
     },
-    "firebase": {
-        "grow": {
-            "Messaging": "FCM"
-        }
-    },
     "gcp": {
         "analytics": {
             "Bigquery": "BigQuery",
@@ -239,6 +234,11 @@ ALIASES = {
         "storage": {
             "Storage": "GCS",
         },
+    },
+    "firebase": {
+        "grow": {
+            "Messaging": "FCM"
+        }
     },
     "k8s": {
         "clusterconfig": {
