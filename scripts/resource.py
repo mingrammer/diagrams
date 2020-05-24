@@ -93,6 +93,7 @@ cleaners = {
     "alibabacloud": cleaner_alibabacloud,
     "oci": cleaner_oci,
     "programming": cleaner_programming,
+    "saas": cleaner_onprem,
 }
 
 
