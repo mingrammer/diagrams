@@ -24,9 +24,11 @@ Node classes list of onprem provider.
 ## onprem.ci
 
 - **diagrams.onprem.ci.Circleci**, **CircleCI** (alias)
+- **diagrams.onprem.ci.Gitlabci**, **GitlabCI** (alias)
 - **diagrams.onprem.ci.Jenkins**
 - **diagrams.onprem.ci.Teamcity**, **TC** (alias)
 - **diagrams.onprem.ci.Travisci**, **TravisCI** (alias)
+- **diagrams.onprem.ci.Zuulci**, **ZuulCI** (alias)
 
 ## onprem.client
 
@@ -49,6 +51,7 @@ Node classes list of onprem provider.
 - **diagrams.onprem.database.Cassandra**
 - **diagrams.onprem.database.Clickhouse**, **ClickHouse** (alias)
 - **diagrams.onprem.database.Cockroachdb**, **CockroachDB** (alias)
+- **diagrams.onprem.database.Couchbase**
 - **diagrams.onprem.database.Couchdb**, **CouchDB** (alias)
 - **diagrams.onprem.database.Dgraph**
 - **diagrams.onprem.database.Hbase**, **HBase** (alias)
@@ -101,6 +104,7 @@ Node classes list of onprem provider.
 - **diagrams.onprem.monitoring.Grafana**
 - **diagrams.onprem.monitoring.Kibana**
 - **diagrams.onprem.monitoring.Prometheus**
+- **diagrams.onprem.monitoring.Sentry**
 - **diagrams.onprem.monitoring.Splunk**
 - **diagrams.onprem.monitoring.Thanos**
 

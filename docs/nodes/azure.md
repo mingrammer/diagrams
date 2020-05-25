@@ -73,6 +73,35 @@ Node classes list of azure provider.
 - **diagrams.azure.devops.Repos**
 - **diagrams.azure.devops.TestPlans**
 
+## azure.general
+
+- **diagrams.azure.general.Allresources**
+- **diagrams.azure.general.Azurehome**
+- **diagrams.azure.general.Developertools**
+- **diagrams.azure.general.Helpsupport**
+- **diagrams.azure.general.Information**
+- **diagrams.azure.general.Managementgroups**
+- **diagrams.azure.general.Marketplace**
+- **diagrams.azure.general.Quickstartcenter**
+- **diagrams.azure.general.Recent**
+- **diagrams.azure.general.Reservations**
+- **diagrams.azure.general.Resource**
+- **diagrams.azure.general.Resourcegroups**
+- **diagrams.azure.general.Servicehealth**
+- **diagrams.azure.general.Shareddashboard**
+- **diagrams.azure.general.Subscriptions**
+- **diagrams.azure.general.Support**
+- **diagrams.azure.general.Supportrequests**
+- **diagrams.azure.general.Tag**
+- **diagrams.azure.general.Tags**
+- **diagrams.azure.general.Templates**
+- **diagrams.azure.general.Twousericon**
+- **diagrams.azure.general.Userhealthicon**
+- **diagrams.azure.general.Usericon**
+- **diagrams.azure.general.Userprivacy**
+- **diagrams.azure.general.Userresource**
+- **diagrams.azure.general.Whatsnew**
+
 ## azure.identity
 
 - **diagrams.azure.identity.AccessReview**
@@ -88,6 +117,26 @@ Node classes list of azure provider.
 - **diagrams.azure.identity.IdentityGovernance**
 - **diagrams.azure.identity.InformationProtection**
 - **diagrams.azure.identity.ManagedIdentities**
+
+## azure.integration
+
+- **diagrams.azure.integration.APIForFhir**
+- **diagrams.azure.integration.APIManagement**
+- **diagrams.azure.integration.AppConfiguration**
+- **diagrams.azure.integration.DataCatalog**
+- **diagrams.azure.integration.EventGridDomains**
+- **diagrams.azure.integration.EventGridSubscriptions**
+- **diagrams.azure.integration.EventGridTopics**
+- **diagrams.azure.integration.IntegrationAccounts**
+- **diagrams.azure.integration.IntegrationServiceEnvironments**
+- **diagrams.azure.integration.LogicAppsCustomConnector**
+- **diagrams.azure.integration.LogicApps**
+- **diagrams.azure.integration.SendgridAccounts**
+- **diagrams.azure.integration.ServiceBusRelays**
+- **diagrams.azure.integration.ServiceBus**
+- **diagrams.azure.integration.ServiceCatalogManagedApplicationDefinitions**
+- **diagrams.azure.integration.SoftwareAsAService**
+- **diagrams.azure.integration.StorsimpleDeviceManagers**
 
 ## azure.iot
 
@@ -191,23 +240,3 @@ Node classes list of azure provider.
 - **diagrams.azure.web.NotificationHubNamespaces**
 - **diagrams.azure.web.Search**
 - **diagrams.azure.web.Signalr**
-
-## azure.integration
-
-- **diagrams.azure.integration.APIForFhir**
-- **diagrams.azure.integration.APIManagement**
-- **diagrams.azure.integration.AppConfiguration**
-- **diagrams.azure.integration.DataCatalog**
-- **diagrams.azure.integration.EventGridDomains**
-- **diagrams.azure.integration.EventGridSubscriptions**
-- **diagrams.azure.integration.EventGridTopics**
-- **diagrams.azure.integration.IntegrationAccounts**
-- **diagrams.azure.integration.IntegrationServiceEnvironments**
-- **diagrams.azure.integration.LogicAppsCustomConnector**
-- **diagrams.azure.integration.LogicApps**
-- **diagrams.azure.integration.SendgridAccounts**
-- **diagrams.azure.integration.ServiceBusRelays**
-- **diagrams.azure.integration.ServiceBus**
-- **diagrams.azure.integration.ServiceCatalogManagedApplicationDefinitions**
-- **diagrams.azure.integration.SoftwareAsAService**
-- **diagrams.azure.integration.StorsimpleDeviceManagers**
