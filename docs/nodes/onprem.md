@@ -28,6 +28,7 @@ Node classes list of onprem provider.
 - **diagrams.onprem.ci.Jenkins**
 - **diagrams.onprem.ci.Teamcity**, **TC** (alias)
 - **diagrams.onprem.ci.Travisci**, **TravisCI** (alias)
+- **diagrams.onprem.ci.Zuulci**, **ZuulCI** (alias)
 
 ## onprem.client
 
