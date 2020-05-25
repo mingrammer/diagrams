@@ -50,7 +50,7 @@ def gen_apidoc(pvd: str, typ_paths: dict) -> str:
         return name
 
     typ_classes = {}
-    for typ, paths in typ_paths.items():
+    for typ, paths in sorted(typ_paths.items()):
         typ_classes[typ] = []
         for name in map(_gen_class_name, paths):
             alias = cfg.ALIASES[pvd].get(typ, {}).get(name)
