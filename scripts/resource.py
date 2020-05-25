@@ -93,6 +93,8 @@ def cleaner_oci(f):
 def cleaner_programming(f):
     return f.lower()
 
+def cleaner_generic(f):
+    return f.lower()
 
 cleaners = {
     "onprem": cleaner_onprem,
@@ -104,6 +106,7 @@ cleaners = {
     "alibabacloud": cleaner_alibabacloud,
     "oci": cleaner_oci,
     "programming": cleaner_programming,
+    "generic": cleaner_generic,
 }
 
 

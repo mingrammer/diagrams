@@ -11,7 +11,7 @@ DIR_APP_ROOT = "diagrams"
 DIR_RESOURCE = "resources"
 DIR_TEMPLATE = "templates"
 
-PROVIDERS = ("base", "onprem", "aws", "azure", "gcp", "firebase", "k8s", "alibabacloud", "oci", "programming")
+PROVIDERS = ("base", "onprem", "aws", "azure", "gcp", "firebase", "k8s", "alibabacloud", "oci", "programming", "generic")
 
 #########################
 #  Resource Processing  #
@@ -34,6 +34,7 @@ FILE_PREFIXES = {
     "alibabacloud": (),
     "oci": ("OCI-",),
     "programming": (),
+    "generic": (),
 }
 
 #########################
@@ -58,6 +59,7 @@ UPPER_WORDS = {
         "sa", "sc", "sts", "svc",
     ),
     "oci": ("oci",),
+    "generic": ("vpn",),
 }
 
 TITLE_WORDS = {
@@ -354,4 +356,5 @@ ALIASES = {
             "Typescript": "TypeScript"
         },
     },
+    "generic": {}
 }
