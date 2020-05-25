@@ -15,7 +15,7 @@ Node classes list of firebase provider.
 - **diagrams.firebase.develop.Firestore**
 - **diagrams.firebase.develop.Functions**
 - **diagrams.firebase.develop.Hosting**
-- **diagrams.firebase.develop.MlKit**
+- **diagrams.firebase.develop.MLKit**
 - **diagrams.firebase.develop.RealtimeDatabase**
 - **diagrams.firebase.develop.Storage**
 
@@ -25,7 +25,7 @@ Node classes list of firebase provider.
 
 ## firebase.grow
 
-- **diagrams.firebase.grow.AbTesting**
+- **diagrams.firebase.grow.ABTesting**
 - **diagrams.firebase.grow.AppIndexing**
 - **diagrams.firebase.grow.DynamicLinks**
 - **diagrams.firebase.grow.InAppMessaging**

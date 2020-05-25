@@ -8,7 +8,7 @@ class _Grow(_Firebase):
     _icon_dir = "resources/firebase/grow"
 
 
-class AbTesting(_Grow):
+class ABTesting(_Grow):
     _icon = "ab-testing.png"
 
 

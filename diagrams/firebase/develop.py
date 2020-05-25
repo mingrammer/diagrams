@@ -24,7 +24,7 @@ class Hosting(_Develop):
     _icon = "hosting.png"
 
 
-class MlKit(_Develop):
+class MLKit(_Develop):
     _icon = "ml-kit.png"
 
 
