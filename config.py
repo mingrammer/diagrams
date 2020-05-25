@@ -355,9 +355,5 @@ ALIASES = {
             "Typescript": "TypeScript"
         },
     },
-    "saas": {
-        "elasticsearch": {
-            "Logstash": "LogStash",
-        }
-    },
+    "saas": {},
 }
