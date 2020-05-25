@@ -78,6 +78,7 @@ ALIASES = {
             "Gitlabci": "GitlabCI",
             "Travisci": "TravisCI",
             "Teamcity": "TC",
+            "Zuulci": "ZuulCI",
         },
         "container": {
             "Rkt": "RKT",

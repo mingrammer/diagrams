@@ -28,9 +28,14 @@ class Travisci(_Ci):
     _icon = "travisci.png"
 
 
+class Zuulci(_Ci):
+    _icon = "zuulci.png"
+
+
 # Aliases
 
 CircleCI = Circleci
 GitlabCI = Gitlabci
 TravisCI = Travisci
 TC = Teamcity
+ZuulCI = Zuulci
