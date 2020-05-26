@@ -94,6 +94,10 @@ def cleaner_programming(f):
     return f.lower()
 
 
+def cleaner_saas(f):
+    return f.lower()
+
+
 cleaners = {
     "onprem": cleaner_onprem,
     "aws": cleaner_aws,
@@ -104,6 +108,7 @@ cleaners = {
     "alibabacloud": cleaner_alibabacloud,
     "oci": cleaner_oci,
     "programming": cleaner_programming,
+    "saas": cleaner_saas,
 }
 
 
