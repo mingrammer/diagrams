@@ -5,6 +5,47 @@ title: OnPrem
 
 Node classes list of onprem provider.
 
+## onprem.analytics
+
+- **diagrams.onprem.analytics.Beam**
+- **diagrams.onprem.analytics.Flink**
+- **diagrams.onprem.analytics.Hadoop**
+- **diagrams.onprem.analytics.Hive**
+- **diagrams.onprem.analytics.Metabase**
+- **diagrams.onprem.analytics.Norikra**
+- **diagrams.onprem.analytics.Spark**
+- **diagrams.onprem.analytics.Storm**
+- **diagrams.onprem.analytics.Tableau**
+
+## onprem.cd
+
+- **diagrams.onprem.cd.Spinnaker**
+
+## onprem.ci
+
+- **diagrams.onprem.ci.Circleci**, **CircleCI** (alias)
+- **diagrams.onprem.ci.Gitlabci**, **GitlabCI** (alias)
+- **diagrams.onprem.ci.Jenkins**
+- **diagrams.onprem.ci.Teamcity**, **TC** (alias)
+- **diagrams.onprem.ci.Travisci**, **TravisCI** (alias)
+- **diagrams.onprem.ci.Zuulci**, **ZuulCI** (alias)
+
+## onprem.client
+
+- **diagrams.onprem.client.Client**
+- **diagrams.onprem.client.User**
+- **diagrams.onprem.client.Users**
+
+## onprem.compute
+
+- **diagrams.onprem.compute.Nomad**
+- **diagrams.onprem.compute.Server**
+
+## onprem.container
+
+- **diagrams.onprem.container.Docker**
+- **diagrams.onprem.container.Rkt**, **RKT** (alias)
+
 ## onprem.database
 
 - **diagrams.onprem.database.Cassandra**

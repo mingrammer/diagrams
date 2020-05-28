@@ -53,6 +53,16 @@ def cleaner_gcp(f):
     return f.lower()
 
 
+def cleaner_firebase(f):
+    f = f.replace("_", "-")
+    f = "-".join(f.split())
+    for p in cfg.FILE_PREFIXES["firebase"]:
+        if f.startswith(p):
+            f = f[len(p) :]
+            break
+    return f.lower()
+
+
 def cleaner_k8s(f):
     f = f.replace("-256", "")
     for p in cfg.FILE_PREFIXES["k8s"]:
@@ -84,15 +94,21 @@ def cleaner_programming(f):
     return f.lower()
 
 
+def cleaner_saas(f):
+    return f.lower()
+
+
 cleaners = {
     "onprem": cleaner_onprem,
     "aws": cleaner_aws,
     "azure": cleaner_azure,
     "gcp": cleaner_gcp,
+    "firebase": cleaner_firebase,
     "k8s": cleaner_k8s,
     "alibabacloud": cleaner_alibabacloud,
     "oci": cleaner_oci,
     "programming": cleaner_programming,
+    "saas": cleaner_saas,
 }
 
 

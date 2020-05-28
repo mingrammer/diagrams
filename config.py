@@ -11,7 +11,7 @@ DIR_APP_ROOT = "diagrams"
 DIR_RESOURCE = "resources"
 DIR_TEMPLATE = "templates"
 
-PROVIDERS = ("base", "onprem", "aws", "azure", "gcp", "k8s", "alibabacloud", "oci", "programming")
+PROVIDERS = ("base", "onprem", "aws", "azure", "gcp", "firebase", "k8s", "alibabacloud", "oci", "programming", "saas")
 
 #########################
 #  Resource Processing  #
@@ -29,10 +29,12 @@ FILE_PREFIXES = {
     "aws": ("Amazon-", "AWS-"),
     "azure": ("Azure-",),
     "gcp": ("Cloud-",),
+    "firebase": ("Cloud-",),
     "k8s": (),
     "alibabacloud": (),
     "oci": ("OCI-",),
     "programming": (),
+    "saas": (),
 }
 
 #########################
@@ -51,6 +53,7 @@ UPPER_WORDS = {
     "aws": ("aws", "api", "ebs", "ec2", "efs", "emr", "rds", "ml", "mq", "nat", "vpc", "waf", "sdk"),
     "azure": ("ad", "b2c", "ai", "api", "cdn", "ddos", "dns", "fxt", "hana", "hd", "id", "sap", "sql", "vm"),
     "gcp": ("gcp", "ai", "api", "cdn", "dns", "gke", "gpu", "iap", "ml", "nat", "os", "sdk", "sql", "tpu", "vpn"),
+    "firebase": ("ab", "fcm", "ml"),
     "k8s": (
         "api", "cm", "ccm", "crb", "crd", "ds", "etcd", "hpa", "k8s", "ns", "psp", "pv", "pvc", "rb", "rs",
         "sa", "sc", "sts", "svc",
@@ -78,6 +81,7 @@ ALIASES = {
             "Gitlabci": "GitlabCI",
             "Travisci": "TravisCI",
             "Teamcity": "TC",
+            "Zuulci": "ZuulCI",
         },
         "container": {
             "Rkt": "RKT",
@@ -233,6 +237,11 @@ ALIASES = {
             "Storage": "GCS",
         },
     },
+    "firebase": {
+        "grow": {
+            "Messaging": "FCM"
+        }
+    },
     "k8s": {
         "clusterconfig": {
             "Limits": "LimitRange",
@@ -346,4 +355,5 @@ ALIASES = {
             "Typescript": "TypeScript"
         },
     },
+    "saas": {},
 }
