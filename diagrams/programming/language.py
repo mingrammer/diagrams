@@ -68,6 +68,10 @@ class Ruby(_Language):
     _icon = "ruby.png"
 
 
+class Rust(_Language):
+    _icon = "rust.png"
+
+
 class Swift(_Language):
     _icon = "swift.png"
 
