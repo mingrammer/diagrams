@@ -12,6 +12,14 @@ class Argocd(_Gitops):
     _icon = "argocd.png"
 
 
+class Flagger(_Gitops):
+    _icon = "flagger.png"
+
+
+class Flux(_Gitops):
+    _icon = "flux.png"
+
+
 # Aliases
 
 ArgoCD = Argocd
