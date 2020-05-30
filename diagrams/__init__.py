@@ -83,7 +83,7 @@ class Diagram:
         graph_attr: dict = {},
         node_attr: dict = {},
         edge_attr: dict = {},
-        preserve_graphviz_file=False
+        preserve_graphviz_file: bool = False
     ):
         """Diagram represents a global diagrams context.
 
@@ -128,6 +128,7 @@ class Diagram:
         self.dot.edge_attr.update(edge_attr)
 
         self.show = show
+        self.preserve_graphviz_file = preserve_graphviz_file
 
     def __str__(self) -> str:
         return str(self.dot)
