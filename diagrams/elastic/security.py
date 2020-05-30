@@ -16,7 +16,7 @@ class Security(_Security):
     _icon = "security.png"
 
 
-class Siem(_Security):
+class SIEM(_Security):
     _icon = "siem.png"
 
 

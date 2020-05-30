@@ -26,7 +26,7 @@ Node classes list of elastic provider.
 
 ## elastic.observability
 
-- **diagrams.elastic.observability.Apm**
+- **diagrams.elastic.observability.APM**
 - **diagrams.elastic.observability.Logs**
 - **diagrams.elastic.observability.Metrics**
 - **diagrams.elastic.observability.Observability**
@@ -34,11 +34,11 @@ Node classes list of elastic provider.
 
 ## elastic.orchestration
 
-- **diagrams.elastic.orchestration.Ece**
-- **diagrams.elastic.orchestration.Eck**
+- **diagrams.elastic.orchestration.ECE**
+- **diagrams.elastic.orchestration.ECK**
 
 ## elastic.security
 
 - **diagrams.elastic.security.Endpoint**
 - **diagrams.elastic.security.Security**
-- **diagrams.elastic.security.Siem**
+- **diagrams.elastic.security.SIEM**

@@ -8,11 +8,11 @@ class _Orchestration(_Elastic):
     _icon_dir = "resources/elastic/orchestration"
 
 
-class Ece(_Orchestration):
+class ECE(_Orchestration):
     _icon = "ece.png"
 
 
-class Eck(_Orchestration):
+class ECK(_Orchestration):
     _icon = "eck.png"
 
 

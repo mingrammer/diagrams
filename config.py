@@ -60,6 +60,7 @@ UPPER_WORDS = {
         "sa", "sc", "sts", "svc",
     ),
     "oci": ("oci",),
+    "elastic": ("apm", "siem", "ece", "eck"),
 }
 
 TITLE_WORDS = {

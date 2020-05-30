@@ -8,7 +8,7 @@ class _Observability(_Elastic):
     _icon_dir = "resources/elastic/observability"
 
 
-class Apm(_Observability):
+class APM(_Observability):
     _icon = "apm.png"
 
 
