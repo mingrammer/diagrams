@@ -83,7 +83,7 @@ class Diagram:
         graph_attr: dict = {},
         node_attr: dict = {},
         edge_attr: dict = {},
-        preserve_graphviz_file=false
+        preserve_graphviz_file=False
     ):
         """Diagram represents a global diagrams context.
 
