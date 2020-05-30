@@ -24,6 +24,18 @@ class DocumentdbMongodbCompatibility(_Database):
     _icon = "documentdb-mongodb-compatibility.png"
 
 
+class DynamodbDax(_Database):
+    _icon = "dynamodb-dax.png"
+
+
+class DynamodbGlobalSecondaryIndex(_Database):
+    _icon = "dynamodb-global-secondary-index.png"
+
+
+class DynamodbTable(_Database):
+    _icon = "dynamodb-table.png"
+
+
 class Dynamodb(_Database):
     _icon = "dynamodb.png"
 
