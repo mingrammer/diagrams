@@ -32,6 +32,9 @@
       "nodes/azure": {
         "title": "Azure"
       },
+      "nodes/elastic": {
+        "title": "Elastic"
+      },
       "nodes/firebase": {
         "title": "Firebase"
       },
