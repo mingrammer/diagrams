@@ -72,6 +72,8 @@ class Timestream(_Database):
 
 DMS = DatabaseMigrationService
 DocumentDB = DocumentdbMongodbCompatibility
+DAX = DynamodbDax
+DynamodbGSI = DynamodbGlobalSecondaryIndex
 DB = Database
 DDB = Dynamodb
 ElastiCache = Elasticache

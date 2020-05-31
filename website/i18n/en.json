@@ -32,6 +32,9 @@
       "nodes/azure": {
         "title": "Azure"
       },
+      "nodes/firebase": {
+        "title": "Firebase"
+      },
       "nodes/gcp": {
         "title": "GCP"
       },
@@ -46,6 +49,9 @@
       },
       "nodes/programming": {
         "title": "Programming"
+      },
+      "nodes/saas": {
+        "title": "Saas"
       }
     },
     "links": {

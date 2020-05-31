@@ -61,8 +61,8 @@ Node classes list of aws provider.
 - **diagrams.aws.database.DatabaseMigrationService**, **DMS** (alias)
 - **diagrams.aws.database.Database**, **DB** (alias)
 - **diagrams.aws.database.DocumentdbMongodbCompatibility**, **DocumentDB** (alias)
-- **diagrams.aws.database.DynamodbDax**
-- **diagrams.aws.database.DynamodbGlobalSecondaryIndex**
+- **diagrams.aws.database.DynamodbDax**, **DAX** (alias)
+- **diagrams.aws.database.DynamodbGlobalSecondaryIndex**, **DynamodbGSI** (alias)
 - **diagrams.aws.database.DynamodbTable**
 - **diagrams.aws.database.Dynamodb**, **DDB** (alias)
 - **diagrams.aws.database.Elasticache**, **ElastiCache** (alias)
@@ -261,10 +261,10 @@ Node classes list of aws provider.
 - **diagrams.aws.security.DirectoryService**, **DS** (alias)
 - **diagrams.aws.security.FirewallManager**, **FMS** (alias)
 - **diagrams.aws.security.Guardduty**
-- **diagrams.aws.security.IdentityAndAccessManagementIamAccessAnalyzer**
-- **diagrams.aws.security.IdentityAndAccessManagementIamAWSSts**
-- **diagrams.aws.security.IdentityAndAccessManagementIamPermissions**
-- **diagrams.aws.security.IdentityAndAccessManagementIamRole**
+- **diagrams.aws.security.IdentityAndAccessManagementIamAccessAnalyzer**, **IAMAccessAnalyzer** (alias)
+- **diagrams.aws.security.IdentityAndAccessManagementIamAWSSts**, **IAMAWSSts** (alias)
+- **diagrams.aws.security.IdentityAndAccessManagementIamPermissions**, **IAMPermissions** (alias)
+- **diagrams.aws.security.IdentityAndAccessManagementIamRole**, **IAMRole** (alias)
 - **diagrams.aws.security.IdentityAndAccessManagementIam**, **IAM** (alias)
 - **diagrams.aws.security.Inspector**
 - **diagrams.aws.security.KeyManagementService**, **KMS** (alias)
