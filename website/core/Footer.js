@@ -51,7 +51,7 @@ class Footer extends React.Component {
             <h5>More</h5>
             <iframe src="https://ghbtns.com/github-btn.html?user=mingrammer&repo=diagrams&type=star&count=true&size=large" frameBorder="0" scrolling="0" width="170" height="30" title="Star mingrammer/diagrams on GitHub"></iframe>
           </div>
-        </section>
+          </section>
         <section className="copyright">{this.props.config.copyright}</section>
       </footer>
     );
