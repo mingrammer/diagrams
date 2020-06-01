@@ -24,6 +24,7 @@ def cleaner_onprem(f):
 def cleaner_aws(f):
     f = f.replace("_", "-")
     f = f.replace("@4x", "")
+    f = f.replace("-light-bg4x", "")
     f = f.replace("-light-bg", "")
     for p in cfg.FILE_PREFIXES["aws"]:
         if f.startswith(p):
@@ -100,6 +101,10 @@ def cleaner_saas(f):
     return f.lower()
 
 
+def cleaner_elastic(f):
+    return f.lower()
+
+
 cleaners = {
     "onprem": cleaner_onprem,
     "aws": cleaner_aws,
@@ -111,6 +116,7 @@ cleaners = {
     "oci": cleaner_oci,
     "programming": cleaner_programming,
     "saas": cleaner_saas,
+    "elastic": cleaner_elastic,
     "generic": cleaner_generic,
 }
 

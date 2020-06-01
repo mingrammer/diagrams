@@ -28,6 +28,10 @@ class Cognito(_Security):
     _icon = "cognito.png"
 
 
+class Detective(_Security):
+    _icon = "detective.png"
+
+
 class DirectoryService(_Security):
     _icon = "directory-service.png"
 
@@ -38,6 +42,22 @@ class FirewallManager(_Security):
 
 class Guardduty(_Security):
     _icon = "guardduty.png"
+
+
+class IdentityAndAccessManagementIamAccessAnalyzer(_Security):
+    _icon = "identity-and-access-management-iam-access-analyzer.png"
+
+
+class IdentityAndAccessManagementIamAWSSts(_Security):
+    _icon = "identity-and-access-management-iam-aws-sts.png"
+
+
+class IdentityAndAccessManagementIamPermissions(_Security):
+    _icon = "identity-and-access-management-iam-permissions.png"
+
+
+class IdentityAndAccessManagementIamRole(_Security):
+    _icon = "identity-and-access-management-iam-role.png"
 
 
 class IdentityAndAccessManagementIam(_Security):
@@ -90,6 +110,10 @@ ACM = CertificateManager
 CloudHSM = Cloudhsm
 DS = DirectoryService
 FMS = FirewallManager
+IAMAccessAnalyzer = IdentityAndAccessManagementIamAccessAnalyzer
+IAMAWSSts = IdentityAndAccessManagementIamAWSSts
+IAMPermissions = IdentityAndAccessManagementIamPermissions
+IAMRole = IdentityAndAccessManagementIamRole
 IAM = IdentityAndAccessManagementIam
 KMS = KeyManagementService
 RAM = ResourceAccessManager

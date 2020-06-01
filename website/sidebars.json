@@ -18,7 +18,10 @@
       "nodes/k8s",
       "nodes/alibabacloud",
       "nodes/oci",
-      "nodes/programming"
+      "nodes/programming",
+      "nodes/firebase",
+      "nodes/saas",
+      "nodes/elastic"
     ]
   }
 }

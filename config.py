@@ -11,7 +11,7 @@ DIR_APP_ROOT = "diagrams"
 DIR_RESOURCE = "resources"
 DIR_TEMPLATE = "templates"
 
-PROVIDERS = ("base", "onprem", "aws", "azure", "gcp", "firebase", "k8s", "alibabacloud", "oci", "programming", "saas", "generic")
+PROVIDERS = ("base", "onprem", "aws", "azure", "gcp", "firebase", "k8s", "alibabacloud", "oci", "programming", "saas", "elastic", "generic")
 
 #########################
 #  Resource Processing  #
@@ -35,6 +35,7 @@ FILE_PREFIXES = {
     "oci": ("OCI-",),
     "programming": (),
     "saas": (),
+    "elastic": (),
     "generic": (),
 }
 
@@ -60,6 +61,7 @@ UPPER_WORDS = {
         "sa", "sc", "sts", "svc",
     ),
     "oci": ("oci",),
+    "elastic": ("apm", "siem", "ece", "eck"),
     "generic": ("vpn",),
 }
 
@@ -139,6 +141,8 @@ ALIASES = {
         "database": {
             "DatabaseMigrationService": "DMS",
             "DocumentdbMongodbCompatibility": "DocumentDB",
+            "DynamodbDax": "DAX",
+            "DynamodbGlobalSecondaryIndex": "DynamodbGSI",
             "Database": "DB",
             "Dynamodb": "DDB",
             "Elasticache": "ElastiCache",
@@ -187,6 +191,10 @@ ALIASES = {
             "Cloudhsm": "CloudHSM",
             "DirectoryService": "DS",
             "FirewallManager": "FMS",
+            "IdentityAndAccessManagementIamAccessAnalyzer": "IAMAccessAnalyzer",
+            "IdentityAndAccessManagementIamAWSSts": "IAMAWSSts",
+            "IdentityAndAccessManagementIamPermissions": "IAMPermissions",
+            "IdentityAndAccessManagementIamRole": "IAMRole",
             "IdentityAndAccessManagementIam": "IAM",
             "KeyManagementService": "KMS",
             "ResourceAccessManager": "RAM",
@@ -358,5 +366,10 @@ ALIASES = {
         },
     },
     "saas": {},
+    "elastic": {
+        "elasticsearch": {
+            "Logstash": "LogStash",
+        }
+    },
     "generic": {},
 }

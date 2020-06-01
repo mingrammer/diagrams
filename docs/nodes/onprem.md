@@ -73,6 +73,8 @@ Node classes list of onprem provider.
 ## onprem.gitops
 
 - **diagrams.onprem.gitops.Argocd**, **ArgoCD** (alias)
+- **diagrams.onprem.gitops.Flagger**
+- **diagrams.onprem.gitops.Flux**
 
 ## onprem.iac
 
