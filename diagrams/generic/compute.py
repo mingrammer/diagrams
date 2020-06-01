@@ -12,8 +12,4 @@ class Rack(_Compute):
     _icon = "rack.png"
 
 
-class Storage(_Compute):
-    _icon = "storage.png"
-
-
 # Aliases

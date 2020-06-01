@@ -12,7 +12,6 @@ Node classes list of generic provider.
 ## generic.compute
 
 - **diagrams.generic.compute.Rack**
-- **diagrams.generic.compute.Storage**
 
 ## generic.network
 
@@ -24,3 +23,7 @@ Node classes list of generic provider.
 ## generic.place
 
 - **diagrams.generic.place.Datacenter**
+
+## generic.storage
+
+- **diagrams.generic.storage.Storage**
