@@ -1,5 +1,5 @@
 """
-Azure provides a set of services for Microsoft Azure provider.
+Firebase provides a set of services for Firebase Google.
 """
 
 from diagrams import Node
