@@ -1,5 +1,5 @@
 """
-Firebase provides a set of services for Firebase Google.
+Firebase provides a set of services for Firebase provider.
 """
 
 from diagrams import Node
