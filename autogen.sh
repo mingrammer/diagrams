@@ -4,7 +4,7 @@ set -e
 app_root_dir="diagrams"
 
 # NOTE: azure icon set is not latest version
-providers=("onprem" "aws" "azure" "gcp" "firebase" "k8s" "alibabacloud" "oci" "programming" "saas" "elastic")
+providers=("onprem" "aws" "azure" "gcp" "firebase" "k8s" "alibabacloud" "oci" "programming" "saas" "elastic" "generic")
 
 if ! [ -x "$(command -v round)" ]; then
   echo 'round is not installed'

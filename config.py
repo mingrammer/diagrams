@@ -11,7 +11,7 @@ DIR_APP_ROOT = "diagrams"
 DIR_RESOURCE = "resources"
 DIR_TEMPLATE = "templates"
 
-PROVIDERS = ("base", "onprem", "aws", "azure", "gcp", "firebase", "k8s", "alibabacloud", "oci", "programming", "saas", "elastic")
+PROVIDERS = ("base", "onprem", "aws", "azure", "gcp", "firebase", "k8s", "alibabacloud", "oci", "programming", "saas", "elastic", "generic")
 
 #########################
 #  Resource Processing  #
@@ -36,6 +36,7 @@ FILE_PREFIXES = {
     "programming": (),
     "saas": (),
     "elastic": (),
+    "generic": (),
 }
 
 #########################
@@ -61,6 +62,7 @@ UPPER_WORDS = {
     ),
     "oci": ("oci",),
     "elastic": ("apm", "siem", "ece", "eck"),
+    "generic": ("vpn",),
 }
 
 TITLE_WORDS = {
@@ -369,4 +371,5 @@ ALIASES = {
             "Logstash": "LogStash",
         }
     },
+    "generic": {},
 }

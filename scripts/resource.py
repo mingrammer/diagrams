@@ -94,6 +94,8 @@ def cleaner_oci(f):
 def cleaner_programming(f):
     return f.lower()
 
+def cleaner_generic(f):
+    return f.lower()
 
 def cleaner_saas(f):
     return f.lower()
@@ -115,6 +117,7 @@ cleaners = {
     "programming": cleaner_programming,
     "saas": cleaner_saas,
     "elastic": cleaner_elastic,
+    "generic": cleaner_generic,
 }
 
 
