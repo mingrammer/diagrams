@@ -127,6 +127,7 @@ Node classes list of aws provider.
 - **diagrams.aws.iot.Freertos**, **FreeRTOS** (alias)
 - **diagrams.aws.iot.InternetOfThings**
 - **diagrams.aws.iot.Iot1Click**
+- **diagrams.aws.iot.IotAction**
 - **diagrams.aws.iot.IotAlexaEcho**
 - **diagrams.aws.iot.IotAlexaSkill**
 - **diagrams.aws.iot.IotAnalytics**
@@ -137,10 +138,16 @@ Node classes list of aws provider.
 - **diagrams.aws.iot.IotDeviceDefender**
 - **diagrams.aws.iot.IotDeviceManagement**
 - **diagrams.aws.iot.IotEvents**
+- **diagrams.aws.iot.IotGreengrassConnector**
 - **diagrams.aws.iot.IotGreengrass**
 - **diagrams.aws.iot.IotHardwareBoard**, **IotBoard** (alias)
+- **diagrams.aws.iot.IotHttp**
+- **diagrams.aws.iot.IotHttp2**
 - **diagrams.aws.iot.IotJobs**
+- **diagrams.aws.iot.IotLambda**
 - **diagrams.aws.iot.IotMqtt**
+- **diagrams.aws.iot.IotPolicyEmergency**
+- **diagrams.aws.iot.IotPolicy**
 - **diagrams.aws.iot.IotRule**
 - **diagrams.aws.iot.IotShadow**
 - **diagrams.aws.iot.IotSitewise**
