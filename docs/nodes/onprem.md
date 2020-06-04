@@ -20,6 +20,7 @@ Node classes list of onprem provider.
 ## onprem.cd
 
 - **diagrams.onprem.cd.Spinnaker**
+- **diagrams.onprem.cd.Tekton**
 
 ## onprem.ci
 

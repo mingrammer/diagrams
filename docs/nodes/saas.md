@@ -5,6 +5,10 @@ title: Saas
 
 Node classes list of saas provider.
 
+## saas.alerting
+
+- **diagrams.saas.alerting.Opsgenie**
+
 ## saas.chat
 
 - **diagrams.saas.chat.Slack**
