@@ -89,25 +89,9 @@ Node classes list of aws provider.
 
 ## aws.engagement
 
-- **diagrams.aws.ml.ApacheMxnetOnAWS**
-- **diagrams.aws.ml.Comprehend**
-- **diagrams.aws.ml.DeepLearningAmis**
-- **diagrams.aws.ml.DeepLearningContainers**, **DLC** (alias)
-- **diagrams.aws.ml.Deeplens**
-- **diagrams.aws.ml.Deepracer**
-- **diagrams.aws.ml.ElasticInference**
-- **diagrams.aws.ml.Forecast**
-- **diagrams.aws.ml.Lex**
-- **diagrams.aws.ml.MachineLearning**
-- **diagrams.aws.ml.Personalize**
-- **diagrams.aws.ml.Polly**
-- **diagrams.aws.ml.Rekognition**
-- **diagrams.aws.ml.SagemakerGroundTruth**
-- **diagrams.aws.ml.Sagemaker**
-- **diagrams.aws.ml.TensorflowOnAWS**
-- **diagrams.aws.ml.Textract**
-- **diagrams.aws.ml.Transcribe**
-- **diagrams.aws.ml.Translate**
+- **diagrams.aws.engagement.Connect**
+- **diagrams.aws.engagement.Pinpoint**
+- **diagrams.aws.engagement.SimpleEmailServiceSes**, **SES** (alias)
 
 ## aws.game
 
@@ -138,7 +122,7 @@ Node classes list of aws provider.
 - **diagrams.aws.integration.SimpleQueueServiceSqs**, **SQS** (alias)
 - **diagrams.aws.integration.StepFunctions**, **SF** (alias)
 
-## aws.media
+## aws.iot
 
 - **diagrams.aws.iot.Freertos**, **FreeRTOS** (alias)
 - **diagrams.aws.iot.InternetOfThings**
@@ -191,20 +175,19 @@ Node classes list of aws provider.
 - **diagrams.aws.management.TrustedAdvisor**
 - **diagrams.aws.management.WellArchitectedTool**
 
-## aws.iot
+## aws.media
 
-- **diagrams.aws.iot.Freertos**, **FreeRTOS** (alias)
-- **diagrams.aws.iot.InternetOfThings**
-- **diagrams.aws.iot.Iot1Click**
-- **diagrams.aws.iot.IotAnalytics**
-- **diagrams.aws.iot.IotButton**
-- **diagrams.aws.iot.IotCore**
-- **diagrams.aws.iot.IotDeviceDefender**
-- **diagrams.aws.iot.IotDeviceManagement**
-- **diagrams.aws.iot.IotEvents**
-- **diagrams.aws.iot.IotGreengrass**
-- **diagrams.aws.iot.IotSitewise**
-- **diagrams.aws.iot.IotThingsGraph**
+- **diagrams.aws.media.ElasticTranscoder**
+- **diagrams.aws.media.ElementalConductor**
+- **diagrams.aws.media.ElementalDelta**
+- **diagrams.aws.media.ElementalLive**
+- **diagrams.aws.media.ElementalMediaconnect**
+- **diagrams.aws.media.ElementalMediaconvert**
+- **diagrams.aws.media.ElementalMedialive**
+- **diagrams.aws.media.ElementalMediapackage**
+- **diagrams.aws.media.ElementalMediastore**
+- **diagrams.aws.media.ElementalMediatailor**
+- **diagrams.aws.media.ElementalServer**
 
 ## aws.migration
 
@@ -219,6 +202,28 @@ Node classes list of aws provider.
 - **diagrams.aws.migration.Snowball**
 - **diagrams.aws.migration.Snowmobile**
 - **diagrams.aws.migration.TransferForSftp**
+
+## aws.ml
+
+- **diagrams.aws.ml.ApacheMxnetOnAWS**
+- **diagrams.aws.ml.Comprehend**
+- **diagrams.aws.ml.DeepLearningAmis**
+- **diagrams.aws.ml.DeepLearningContainers**, **DLC** (alias)
+- **diagrams.aws.ml.Deeplens**
+- **diagrams.aws.ml.Deepracer**
+- **diagrams.aws.ml.ElasticInference**
+- **diagrams.aws.ml.Forecast**
+- **diagrams.aws.ml.Lex**
+- **diagrams.aws.ml.MachineLearning**
+- **diagrams.aws.ml.Personalize**
+- **diagrams.aws.ml.Polly**
+- **diagrams.aws.ml.Rekognition**
+- **diagrams.aws.ml.SagemakerGroundTruth**
+- **diagrams.aws.ml.Sagemaker**
+- **diagrams.aws.ml.TensorflowOnAWS**
+- **diagrams.aws.ml.Textract**
+- **diagrams.aws.ml.Transcribe**
+- **diagrams.aws.ml.Translate**
 
 ## aws.network
 
@@ -297,88 +302,3 @@ Node classes list of aws provider.
 - **diagrams.aws.storage.Snowmobile**
 - **diagrams.aws.storage.StorageGateway**
 - **diagrams.aws.storage.Storage**
-
-## aws.analytics
-
-- **diagrams.aws.analytics.Analytics**
-- **diagrams.aws.analytics.Athena**
-- **diagrams.aws.analytics.CloudsearchSearchDocuments**
-- **diagrams.aws.analytics.Cloudsearch**
-- **diagrams.aws.analytics.DataPipeline**
-- **diagrams.aws.analytics.ElasticsearchService**, **ES** (alias)
-- **diagrams.aws.analytics.EMRCluster**
-- **diagrams.aws.analytics.EMRHdfsCluster**
-- **diagrams.aws.analytics.EMR**
-- **diagrams.aws.analytics.GlueCrawlers**
-- **diagrams.aws.analytics.GlueDataCatalog**
-- **diagrams.aws.analytics.Glue**
-- **diagrams.aws.analytics.KinesisDataAnalytics**
-- **diagrams.aws.analytics.KinesisDataFirehose**
-- **diagrams.aws.analytics.KinesisDataStreams**
-- **diagrams.aws.analytics.KinesisVideoStreams**
-- **diagrams.aws.analytics.Kinesis**
-- **diagrams.aws.analytics.LakeFormation**
-- **diagrams.aws.analytics.ManagedStreamingForKafka**
-- **diagrams.aws.analytics.Quicksight**
-- **diagrams.aws.analytics.RedshiftDenseComputeNode**
-- **diagrams.aws.analytics.RedshiftDenseStorageNode**
-- **diagrams.aws.analytics.Redshift**
-
-## aws.database
-
-- **diagrams.aws.database.Aurora**
-- **diagrams.aws.database.DatabaseMigrationService**, **DMS** (alias)
-- **diagrams.aws.database.Database**, **DB** (alias)
-- **diagrams.aws.database.DocumentdbMongodbCompatibility**, **DocumentDB** (alias)
-- **diagrams.aws.database.Dynamodb**, **DDB** (alias)
-- **diagrams.aws.database.Elasticache**, **ElastiCache** (alias)
-- **diagrams.aws.database.Neptune**
-- **diagrams.aws.database.QuantumLedgerDatabaseQldb**, **QLDB** (alias)
-- **diagrams.aws.database.RDSOnVmware**
-- **diagrams.aws.database.RDS**
-- **diagrams.aws.database.Redshift**
-- **diagrams.aws.database.Timestream**
-
-## aws.compute
-
-- **diagrams.aws.compute.ApplicationAutoScaling**, **AutoScaling** (alias)
-- **diagrams.aws.compute.Batch**
-- **diagrams.aws.compute.Compute**
-- **diagrams.aws.compute.EC2ContainerRegistry**, **ECR** (alias)
-- **diagrams.aws.compute.EC2**
-- **diagrams.aws.compute.ElasticBeanstalk**, **EB** (alias)
-- **diagrams.aws.compute.ElasticContainerService**, **ECS** (alias)
-- **diagrams.aws.compute.ElasticKubernetesService**, **EKS** (alias)
-- **diagrams.aws.compute.Fargate**
-- **diagrams.aws.compute.Lambda**
-- **diagrams.aws.compute.Lightsail**
-- **diagrams.aws.compute.Outposts**
-- **diagrams.aws.compute.ServerlessApplicationRepository**, **SAR** (alias)
-- **diagrams.aws.compute.ThinkboxDeadline**
-- **diagrams.aws.compute.ThinkboxDraft**
-- **diagrams.aws.compute.ThinkboxFrost**
-- **diagrams.aws.compute.ThinkboxKrakatoa**
-- **diagrams.aws.compute.ThinkboxSequoia**
-- **diagrams.aws.compute.ThinkboxStoke**
-- **diagrams.aws.compute.ThinkboxXmesh**
-- **diagrams.aws.compute.VmwareCloudOnAWS**
-
-## aws.engagement
-
-- **diagrams.aws.engagement.Connect**
-- **diagrams.aws.engagement.Pinpoint**
-- **diagrams.aws.engagement.SimpleEmailServiceSes**, **SES** (alias)
-
-## aws.devtools
-
-- **diagrams.aws.devtools.CloudDevelopmentKit**
-- **diagrams.aws.devtools.Cloud9**
-- **diagrams.aws.devtools.Codebuild**
-- **diagrams.aws.devtools.Codecommit**
-- **diagrams.aws.devtools.Codedeploy**
-- **diagrams.aws.devtools.Codepipeline**
-- **diagrams.aws.devtools.Codestar**
-- **diagrams.aws.devtools.CommandLineInterface**, **CLI** (alias)
-- **diagrams.aws.devtools.DeveloperTools**, **DevTools** (alias)
-- **diagrams.aws.devtools.ToolsAndSdks**
-- **diagrams.aws.devtools.XRay**
