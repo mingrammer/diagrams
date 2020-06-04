@@ -7,7 +7,7 @@ from jinja2 import Environment, FileSystemLoader, Template
 import config as cfg
 from . import app_root_dir, doc_root_dir, resource_dir, template_dir
 
-_usage = "Usage: generate.py <onprem|aws|gcp|azure|k8s|alibabacloud|oci|programming>"
+_usage = "Usage: generate.py <onprem|aws|gcp|azure|k8s|alibabacloud|oci|programming|saas|elastic>"
 
 
 def load_tmpl(tmpl: str) -> Template:
@@ -50,7 +50,7 @@ def gen_apidoc(pvd: str, typ_paths: dict) -> str:
         return name
 
     typ_classes = {}
-    for typ, paths in typ_paths.items():
+    for typ, paths in sorted(typ_paths.items()):
         typ_classes[typ] = []
         for name in map(_gen_class_name, paths):
             alias = cfg.ALIASES[pvd].get(typ, {}).get(name)
