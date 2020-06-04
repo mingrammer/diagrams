@@ -5,42 +5,73 @@ title: Azure
 
 Node classes list of azure provider.
 
-## azure.ml
+## azure.analytics
 
-- **diagrams.azure.ml.BatchAI**
-- **diagrams.azure.ml.BotServices**
-- **diagrams.azure.ml.CognitiveServices**
-- **diagrams.azure.ml.GenomicsAccounts**
-- **diagrams.azure.ml.MachineLearningServiceWorkspaces**
-- **diagrams.azure.ml.MachineLearningStudioWebServicePlans**
-- **diagrams.azure.ml.MachineLearningStudioWebServices**
-- **diagrams.azure.ml.MachineLearningStudioWorkspaces**
+- **diagrams.azure.analytics.AnalysisServices**
+- **diagrams.azure.analytics.DataExplorerClusters**
+- **diagrams.azure.analytics.DataFactories**
+- **diagrams.azure.analytics.DataLakeAnalytics**
+- **diagrams.azure.analytics.DataLakeStoreGen1**
+- **diagrams.azure.analytics.Databricks**
+- **diagrams.azure.analytics.EventHubClusters**
+- **diagrams.azure.analytics.EventHubs**
+- **diagrams.azure.analytics.Hdinsightclusters**
+- **diagrams.azure.analytics.LogAnalyticsWorkspaces**
+- **diagrams.azure.analytics.StreamAnalyticsJobs**
 
-## azure.integration
+## azure.compute
 
-- **diagrams.azure.integration.APIForFhir**
-- **diagrams.azure.integration.APIManagement**
-- **diagrams.azure.integration.AppConfiguration**
-- **diagrams.azure.integration.DataCatalog**
-- **diagrams.azure.integration.EventGridDomains**
-- **diagrams.azure.integration.EventGridSubscriptions**
-- **diagrams.azure.integration.EventGridTopics**
-- **diagrams.azure.integration.IntegrationAccounts**
-- **diagrams.azure.integration.IntegrationServiceEnvironments**
-- **diagrams.azure.integration.LogicAppsCustomConnector**
-- **diagrams.azure.integration.LogicApps**
-- **diagrams.azure.integration.SendgridAccounts**
-- **diagrams.azure.integration.ServiceBusRelays**
-- **diagrams.azure.integration.ServiceBus**
-- **diagrams.azure.integration.ServiceCatalogManagedApplicationDefinitions**
-- **diagrams.azure.integration.SoftwareAsAService**
-- **diagrams.azure.integration.StorsimpleDeviceManagers**
+- **diagrams.azure.compute.AvailabilitySets**
+- **diagrams.azure.compute.BatchAccounts**
+- **diagrams.azure.compute.CitrixVirtualDesktopsEssentials**
+- **diagrams.azure.compute.CloudServicesClassic**
+- **diagrams.azure.compute.CloudServices**
+- **diagrams.azure.compute.CloudsimpleVirtualMachines**
+- **diagrams.azure.compute.ContainerInstances**
+- **diagrams.azure.compute.ContainerRegistries**, **ACR** (alias)
+- **diagrams.azure.compute.DiskSnapshots**
+- **diagrams.azure.compute.Disks**
+- **diagrams.azure.compute.FunctionApps**
+- **diagrams.azure.compute.KubernetesServices**, **AKS** (alias)
+- **diagrams.azure.compute.MeshApplications**
+- **diagrams.azure.compute.SAPHANAOnAzure**
+- **diagrams.azure.compute.ServiceFabricClusters**
+- **diagrams.azure.compute.VMClassic**
+- **diagrams.azure.compute.VMImages**
+- **diagrams.azure.compute.VMLinux**
+- **diagrams.azure.compute.VMWindows**
+- **diagrams.azure.compute.VM**
 
-## azure.security
+## azure.database
 
-- **diagrams.azure.security.KeyVaults**
-- **diagrams.azure.security.SecurityCenter**
-- **diagrams.azure.security.Sentinel**
+- **diagrams.azure.database.BlobStorage**
+- **diagrams.azure.database.CacheForRedis**
+- **diagrams.azure.database.CosmosDb**
+- **diagrams.azure.database.DataLake**
+- **diagrams.azure.database.DatabaseForMariadbServers**
+- **diagrams.azure.database.DatabaseForMysqlServers**
+- **diagrams.azure.database.DatabaseForPostgresqlServers**
+- **diagrams.azure.database.ElasticDatabasePools**
+- **diagrams.azure.database.ElasticJobAgents**
+- **diagrams.azure.database.ManagedDatabases**
+- **diagrams.azure.database.SQLDatabases**
+- **diagrams.azure.database.SQLDatawarehouse**
+- **diagrams.azure.database.SQLManagedInstances**
+- **diagrams.azure.database.SQLServerStretchDatabases**
+- **diagrams.azure.database.SQLServers**
+- **diagrams.azure.database.VirtualClusters**
+- **diagrams.azure.database.VirtualDatacenter**
+
+## azure.devops
+
+- **diagrams.azure.devops.ApplicationInsights**
+- **diagrams.azure.devops.Artifacts**
+- **diagrams.azure.devops.Boards**
+- **diagrams.azure.devops.Devops**
+- **diagrams.azure.devops.DevtestLabs**
+- **diagrams.azure.devops.Pipelines**
+- **diagrams.azure.devops.Repos**
+- **diagrams.azure.devops.TestPlans**
 
 ## azure.general
 
@@ -73,9 +104,19 @@ Node classes list of azure provider.
 
 ## azure.identity
 
-- **diagrams.azure.mobile.AppServiceMobile**
-- **diagrams.azure.mobile.MobileEngagement**
-- **diagrams.azure.mobile.NotificationHubs**
+- **diagrams.azure.identity.AccessReview**
+- **diagrams.azure.identity.ActiveDirectoryConnectHealth**
+- **diagrams.azure.identity.ActiveDirectory**
+- **diagrams.azure.identity.ADB2C**
+- **diagrams.azure.identity.ADDomainServices**
+- **diagrams.azure.identity.ADIdentityProtection**
+- **diagrams.azure.identity.ADPrivilegedIdentityManagement**
+- **diagrams.azure.identity.AppRegistrations**
+- **diagrams.azure.identity.ConditionalAccess**
+- **diagrams.azure.identity.EnterpriseApplications**
+- **diagrams.azure.identity.IdentityGovernance**
+- **diagrams.azure.identity.InformationProtection**
+- **diagrams.azure.identity.ManagedIdentities**
 
 ## azure.integration
 
@@ -116,6 +157,23 @@ Node classes list of azure provider.
 - **diagrams.azure.migration.MigrationProjects**
 - **diagrams.azure.migration.RecoveryServicesVaults**
 
+## azure.ml
+
+- **diagrams.azure.ml.BatchAI**
+- **diagrams.azure.ml.BotServices**
+- **diagrams.azure.ml.CognitiveServices**
+- **diagrams.azure.ml.GenomicsAccounts**
+- **diagrams.azure.ml.MachineLearningServiceWorkspaces**
+- **diagrams.azure.ml.MachineLearningStudioWebServicePlans**
+- **diagrams.azure.ml.MachineLearningStudioWebServices**
+- **diagrams.azure.ml.MachineLearningStudioWorkspaces**
+
+## azure.mobile
+
+- **diagrams.azure.mobile.AppServiceMobile**
+- **diagrams.azure.mobile.MobileEngagement**
+- **diagrams.azure.mobile.NotificationHubs**
+
 ## azure.network
 
 - **diagrams.azure.network.ApplicationGateway**
@@ -145,21 +203,11 @@ Node classes list of azure provider.
 - **diagrams.azure.network.VirtualNetworks**
 - **diagrams.azure.network.VirtualWans**
 
-## azure.identity
+## azure.security
 
-- **diagrams.azure.identity.AccessReview**
-- **diagrams.azure.identity.ActiveDirectoryConnectHealth**
-- **diagrams.azure.identity.ActiveDirectory**
-- **diagrams.azure.identity.ADB2C**
-- **diagrams.azure.identity.ADDomainServices**
-- **diagrams.azure.identity.ADIdentityProtection**
-- **diagrams.azure.identity.ADPrivilegedIdentityManagement**
-- **diagrams.azure.identity.AppRegistrations**
-- **diagrams.azure.identity.ConditionalAccess**
-- **diagrams.azure.identity.EnterpriseApplications**
-- **diagrams.azure.identity.IdentityGovernance**
-- **diagrams.azure.identity.InformationProtection**
-- **diagrams.azure.identity.ManagedIdentities**
+- **diagrams.azure.security.KeyVaults**
+- **diagrams.azure.security.SecurityCenter**
+- **diagrams.azure.security.Sentinel**
 
 ## azure.storage
 
@@ -179,63 +227,6 @@ Node classes list of azure provider.
 - **diagrams.azure.storage.StorsimpleDataManagers**
 - **diagrams.azure.storage.StorsimpleDeviceManagers**
 - **diagrams.azure.storage.TableStorage**
-
-## azure.analytics
-
-- **diagrams.azure.analytics.AnalysisServices**
-- **diagrams.azure.analytics.DataExplorerClusters**
-- **diagrams.azure.analytics.DataFactories**
-- **diagrams.azure.analytics.DataLakeAnalytics**
-- **diagrams.azure.analytics.DataLakeStoreGen1**
-- **diagrams.azure.analytics.Databricks**
-- **diagrams.azure.analytics.EventHubClusters**
-- **diagrams.azure.analytics.EventHubs**
-- **diagrams.azure.analytics.Hdinsightclusters**
-- **diagrams.azure.analytics.LogAnalyticsWorkspaces**
-- **diagrams.azure.analytics.StreamAnalyticsJobs**
-
-## azure.database
-
-- **diagrams.azure.database.BlobStorage**
-- **diagrams.azure.database.CacheForRedis**
-- **diagrams.azure.database.CosmosDb**
-- **diagrams.azure.database.DataLake**
-- **diagrams.azure.database.DatabaseForMariadbServers**
-- **diagrams.azure.database.DatabaseForMysqlServers**
-- **diagrams.azure.database.DatabaseForPostgresqlServers**
-- **diagrams.azure.database.ElasticDatabasePools**
-- **diagrams.azure.database.ElasticJobAgents**
-- **diagrams.azure.database.ManagedDatabases**
-- **diagrams.azure.database.SQLDatabases**
-- **diagrams.azure.database.SQLDatawarehouse**
-- **diagrams.azure.database.SQLManagedInstances**
-- **diagrams.azure.database.SQLServerStretchDatabases**
-- **diagrams.azure.database.SQLServers**
-- **diagrams.azure.database.VirtualClusters**
-- **diagrams.azure.database.VirtualDatacenter**
-
-## azure.compute
-
-- **diagrams.azure.compute.AvailabilitySets**
-- **diagrams.azure.compute.BatchAccounts**
-- **diagrams.azure.compute.CitrixVirtualDesktopsEssentials**
-- **diagrams.azure.compute.CloudServicesClassic**
-- **diagrams.azure.compute.CloudServices**
-- **diagrams.azure.compute.CloudsimpleVirtualMachines**
-- **diagrams.azure.compute.ContainerInstances**
-- **diagrams.azure.compute.ContainerRegistries**, **ACR** (alias)
-- **diagrams.azure.compute.DiskSnapshots**
-- **diagrams.azure.compute.Disks**
-- **diagrams.azure.compute.FunctionApps**
-- **diagrams.azure.compute.KubernetesServices**, **AKS** (alias)
-- **diagrams.azure.compute.MeshApplications**
-- **diagrams.azure.compute.SAPHANAOnAzure**
-- **diagrams.azure.compute.ServiceFabricClusters**
-- **diagrams.azure.compute.VMClassic**
-- **diagrams.azure.compute.VMImages**
-- **diagrams.azure.compute.VMLinux**
-- **diagrams.azure.compute.VMWindows**
-- **diagrams.azure.compute.VM**
 
 ## azure.web
 
