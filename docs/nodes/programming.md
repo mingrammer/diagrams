@@ -5,12 +5,6 @@ title: Programming
 
 Node classes list of programming provider.
 
-## programming.containers
-
-- **diagrams.programming.containers.Helm**
-- **diagrams.programming.containers.Krew**
-- **diagrams.programming.containers.Kustomize**
-
 ## programming.framework
 
 - **diagrams.programming.framework.Angular**
