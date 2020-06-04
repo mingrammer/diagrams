@@ -32,6 +32,12 @@
       "nodes/azure": {
         "title": "Azure"
       },
+      "nodes/elastic": {
+        "title": "Elastic"
+      },
+      "nodes/firebase": {
+        "title": "Firebase"
+      },
       "nodes/gcp": {
         "title": "GCP"
       },
@@ -46,13 +52,17 @@
       },
       "nodes/programming": {
         "title": "Programming"
+      },
+      "nodes/saas": {
+        "title": "Saas"
       }
     },
     "links": {
       "Docs": "Docs",
       "Guides": "Guides",
       "Nodes": "Nodes",
-      "GitHub": "GitHub"
+      "GitHub": "GitHub",
+      "Sponsoring": "Sponsoring"
     },
     "categories": {
       "Getting Started": "Getting Started",

@@ -12,6 +12,10 @@ class Circleci(_Ci):
     _icon = "circleci.png"
 
 
+class Gitlabci(_Ci):
+    _icon = "gitlabci.png"
+
+
 class Jenkins(_Ci):
     _icon = "jenkins.png"
 
@@ -24,8 +28,14 @@ class Travisci(_Ci):
     _icon = "travisci.png"
 
 
+class Zuulci(_Ci):
+    _icon = "zuulci.png"
+
+
 # Aliases
 
 CircleCI = Circleci
+GitlabCI = Gitlabci
 TravisCI = Travisci
 TC = Teamcity
+ZuulCI = Zuulci

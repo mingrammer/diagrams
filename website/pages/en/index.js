@@ -111,6 +111,20 @@ class Index extends React.Component {
       </div>
     );
 
+    const Sponsorship = () => (
+      <div
+        className="productShowcaseSection paddingBottom"
+        style={{textAlign: 'center'}}>
+        <h2>Sponsorship</h2>
+        <MarkdownBlock>
+          Sponsoring always helps a lot to maintain Diagrams. Thank you :)
+        </MarkdownBlock>
+        <a href="https://www.buymeacoffee.com/mingrammer" target="_blank">
+          <img id="buymeacoffee" src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee"/>
+        </a>
+      </div>
+    );
+
     const Example = () => (
       <Block>
         {[
@@ -148,6 +162,7 @@ class Index extends React.Component {
           <About />
           <Example />
           <Example2 />
+          <Sponsorship />
         </div>
       </div>
     );

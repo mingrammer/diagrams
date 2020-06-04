@@ -22,6 +22,7 @@ const siteConfig = {
     {doc: 'guides/diagram', label: 'Guides'},
     {doc: 'nodes/aws', label: 'Nodes'},
     {href: 'https://github.com/mingrammer/diagrams', label: 'GitHub'},
+    {href: 'https://www.buymeacoffee.com/mingrammer', label: 'Sponsoring'},
   ],
 
   headerIcon: 'img/diagrams.ico',

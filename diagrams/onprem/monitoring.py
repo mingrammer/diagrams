@@ -24,6 +24,10 @@ class Prometheus(_Monitoring):
     _icon = "prometheus.png"
 
 
+class Sentry(_Monitoring):
+    _icon = "sentry.png"
+
+
 class Splunk(_Monitoring):
     _icon = "splunk.png"
 

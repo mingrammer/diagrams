@@ -5,7 +5,89 @@ title: AWS
 
 Node classes list of aws provider.
 
-## aws.ml
+## aws.analytics
+
+- **diagrams.aws.analytics.Analytics**
+- **diagrams.aws.analytics.Athena**
+- **diagrams.aws.analytics.CloudsearchSearchDocuments**
+- **diagrams.aws.analytics.Cloudsearch**
+- **diagrams.aws.analytics.DataPipeline**
+- **diagrams.aws.analytics.ElasticsearchService**, **ES** (alias)
+- **diagrams.aws.analytics.EMRCluster**
+- **diagrams.aws.analytics.EMRHdfsCluster**
+- **diagrams.aws.analytics.EMR**
+- **diagrams.aws.analytics.GlueCrawlers**
+- **diagrams.aws.analytics.GlueDataCatalog**
+- **diagrams.aws.analytics.Glue**
+- **diagrams.aws.analytics.KinesisDataAnalytics**
+- **diagrams.aws.analytics.KinesisDataFirehose**
+- **diagrams.aws.analytics.KinesisDataStreams**
+- **diagrams.aws.analytics.KinesisVideoStreams**
+- **diagrams.aws.analytics.Kinesis**
+- **diagrams.aws.analytics.LakeFormation**
+- **diagrams.aws.analytics.ManagedStreamingForKafka**
+- **diagrams.aws.analytics.Quicksight**
+- **diagrams.aws.analytics.RedshiftDenseComputeNode**
+- **diagrams.aws.analytics.RedshiftDenseStorageNode**
+- **diagrams.aws.analytics.Redshift**
+
+## aws.compute
+
+- **diagrams.aws.compute.ApplicationAutoScaling**, **AutoScaling** (alias)
+- **diagrams.aws.compute.Batch**
+- **diagrams.aws.compute.Compute**
+- **diagrams.aws.compute.EC2ContainerRegistry**, **ECR** (alias)
+- **diagrams.aws.compute.EC2**
+- **diagrams.aws.compute.ElasticBeanstalk**, **EB** (alias)
+- **diagrams.aws.compute.ElasticContainerService**, **ECS** (alias)
+- **diagrams.aws.compute.ElasticKubernetesService**, **EKS** (alias)
+- **diagrams.aws.compute.Fargate**
+- **diagrams.aws.compute.Lambda**
+- **diagrams.aws.compute.Lightsail**
+- **diagrams.aws.compute.Outposts**
+- **diagrams.aws.compute.ServerlessApplicationRepository**, **SAR** (alias)
+- **diagrams.aws.compute.ThinkboxDeadline**
+- **diagrams.aws.compute.ThinkboxDraft**
+- **diagrams.aws.compute.ThinkboxFrost**
+- **diagrams.aws.compute.ThinkboxKrakatoa**
+- **diagrams.aws.compute.ThinkboxSequoia**
+- **diagrams.aws.compute.ThinkboxStoke**
+- **diagrams.aws.compute.ThinkboxXmesh**
+- **diagrams.aws.compute.VmwareCloudOnAWS**
+
+## aws.database
+
+- **diagrams.aws.database.Aurora**
+- **diagrams.aws.database.DatabaseMigrationService**, **DMS** (alias)
+- **diagrams.aws.database.Database**, **DB** (alias)
+- **diagrams.aws.database.DocumentdbMongodbCompatibility**, **DocumentDB** (alias)
+- **diagrams.aws.database.DynamodbDax**, **DAX** (alias)
+- **diagrams.aws.database.DynamodbGlobalSecondaryIndex**, **DynamodbGSI** (alias)
+- **diagrams.aws.database.DynamodbTable**
+- **diagrams.aws.database.Dynamodb**, **DDB** (alias)
+- **diagrams.aws.database.Elasticache**, **ElastiCache** (alias)
+- **diagrams.aws.database.Neptune**
+- **diagrams.aws.database.QuantumLedgerDatabaseQldb**, **QLDB** (alias)
+- **diagrams.aws.database.RDSOnVmware**
+- **diagrams.aws.database.RDS**
+- **diagrams.aws.database.Redshift**
+- **diagrams.aws.database.Timestream**
+
+## aws.devtools
+
+- **diagrams.aws.devtools.CloudDevelopmentKit**
+- **diagrams.aws.devtools.Cloud9**
+- **diagrams.aws.devtools.Codebuild**
+- **diagrams.aws.devtools.Codecommit**
+- **diagrams.aws.devtools.Codedeploy**
+- **diagrams.aws.devtools.Codepipeline**
+- **diagrams.aws.devtools.Codestar**
+- **diagrams.aws.devtools.CommandLineInterface**, **CLI** (alias)
+- **diagrams.aws.devtools.DeveloperTools**, **DevTools** (alias)
+- **diagrams.aws.devtools.ToolsAndSdks**
+- **diagrams.aws.devtools.XRay**
+
+## aws.engagement
 
 - **diagrams.aws.ml.ApacheMxnetOnAWS**
 - **diagrams.aws.ml.Comprehend**
@@ -27,6 +109,24 @@ Node classes list of aws provider.
 - **diagrams.aws.ml.Transcribe**
 - **diagrams.aws.ml.Translate**
 
+## aws.game
+
+- **diagrams.aws.game.Gamelift**
+
+## aws.general
+
+- **diagrams.aws.general.Disk**
+- **diagrams.aws.general.General**
+- **diagrams.aws.general.GenericDatabase**
+- **diagrams.aws.general.GenericFirewall**
+- **diagrams.aws.general.GenericOfficeBuilding**, **OfficeBuilding** (alias)
+- **diagrams.aws.general.GenericSamlToken**
+- **diagrams.aws.general.GenericSDK**
+- **diagrams.aws.general.Marketplace**
+- **diagrams.aws.general.TradicionalServer**
+- **diagrams.aws.general.User**
+- **diagrams.aws.general.Users**
+
 ## aws.integration
 
 - **diagrams.aws.integration.ApplicationIntegration**
@@ -40,39 +140,28 @@ Node classes list of aws provider.
 
 ## aws.media
 
-- **diagrams.aws.media.ElasticTranscoder**
-- **diagrams.aws.media.ElementalConductor**
-- **diagrams.aws.media.ElementalDelta**
-- **diagrams.aws.media.ElementalLive**
-- **diagrams.aws.media.ElementalMediaconnect**
-- **diagrams.aws.media.ElementalMediaconvert**
-- **diagrams.aws.media.ElementalMedialive**
-- **diagrams.aws.media.ElementalMediapackage**
-- **diagrams.aws.media.ElementalMediastore**
-- **diagrams.aws.media.ElementalMediatailor**
-- **diagrams.aws.media.ElementalServer**
-
-## aws.security
-
-- **diagrams.aws.security.Artifact**
-- **diagrams.aws.security.CertificateManager**, **ACM** (alias)
-- **diagrams.aws.security.CloudDirectory**
-- **diagrams.aws.security.Cloudhsm**, **CloudHSM** (alias)
-- **diagrams.aws.security.Cognito**
-- **diagrams.aws.security.DirectoryService**, **DS** (alias)
-- **diagrams.aws.security.FirewallManager**, **FMS** (alias)
-- **diagrams.aws.security.Guardduty**
-- **diagrams.aws.security.IdentityAndAccessManagementIam**, **IAM** (alias)
-- **diagrams.aws.security.Inspector**
-- **diagrams.aws.security.KeyManagementService**, **KMS** (alias)
-- **diagrams.aws.security.Macie**
-- **diagrams.aws.security.ResourceAccessManager**, **RAM** (alias)
-- **diagrams.aws.security.SecretsManager**
-- **diagrams.aws.security.SecurityHub**
-- **diagrams.aws.security.SecurityIdentityAndCompliance**
-- **diagrams.aws.security.Shield**
-- **diagrams.aws.security.SingleSignOn**
-- **diagrams.aws.security.WAF**
+- **diagrams.aws.iot.Freertos**, **FreeRTOS** (alias)
+- **diagrams.aws.iot.InternetOfThings**
+- **diagrams.aws.iot.Iot1Click**
+- **diagrams.aws.iot.IotAlexaEcho**
+- **diagrams.aws.iot.IotAlexaSkill**
+- **diagrams.aws.iot.IotAnalytics**
+- **diagrams.aws.iot.IotButton**
+- **diagrams.aws.iot.IotCamera**
+- **diagrams.aws.iot.IotCertificate**
+- **diagrams.aws.iot.IotCore**
+- **diagrams.aws.iot.IotDeviceDefender**
+- **diagrams.aws.iot.IotDeviceManagement**
+- **diagrams.aws.iot.IotEvents**
+- **diagrams.aws.iot.IotGreengrass**
+- **diagrams.aws.iot.IotHardwareBoard**, **IotBoard** (alias)
+- **diagrams.aws.iot.IotJobs**
+- **diagrams.aws.iot.IotMqtt**
+- **diagrams.aws.iot.IotRule**
+- **diagrams.aws.iot.IotShadow**
+- **diagrams.aws.iot.IotSitewise**
+- **diagrams.aws.iot.IotThingsGraph**
+- **diagrams.aws.iot.IotTopic**
 
 ## aws.management
 
@@ -149,6 +238,39 @@ Node classes list of aws provider.
 - **diagrams.aws.network.VPCPeering**
 - **diagrams.aws.network.VPCRouter**
 - **diagrams.aws.network.VPC**
+
+## aws.robotics
+
+- **diagrams.aws.robotics.RobomakerSimulator**
+- **diagrams.aws.robotics.Robomaker**
+- **diagrams.aws.robotics.Robotics**
+
+## aws.security
+
+- **diagrams.aws.security.Artifact**
+- **diagrams.aws.security.CertificateManager**, **ACM** (alias)
+- **diagrams.aws.security.CloudDirectory**
+- **diagrams.aws.security.Cloudhsm**, **CloudHSM** (alias)
+- **diagrams.aws.security.Cognito**
+- **diagrams.aws.security.Detective**
+- **diagrams.aws.security.DirectoryService**, **DS** (alias)
+- **diagrams.aws.security.FirewallManager**, **FMS** (alias)
+- **diagrams.aws.security.Guardduty**
+- **diagrams.aws.security.IdentityAndAccessManagementIamAccessAnalyzer**, **IAMAccessAnalyzer** (alias)
+- **diagrams.aws.security.IdentityAndAccessManagementIamAWSSts**, **IAMAWSSts** (alias)
+- **diagrams.aws.security.IdentityAndAccessManagementIamPermissions**, **IAMPermissions** (alias)
+- **diagrams.aws.security.IdentityAndAccessManagementIamRole**, **IAMRole** (alias)
+- **diagrams.aws.security.IdentityAndAccessManagementIam**, **IAM** (alias)
+- **diagrams.aws.security.Inspector**
+- **diagrams.aws.security.KeyManagementService**, **KMS** (alias)
+- **diagrams.aws.security.Macie**
+- **diagrams.aws.security.ResourceAccessManager**, **RAM** (alias)
+- **diagrams.aws.security.SecretsManager**
+- **diagrams.aws.security.SecurityHub**
+- **diagrams.aws.security.SecurityIdentityAndCompliance**
+- **diagrams.aws.security.Shield**
+- **diagrams.aws.security.SingleSignOn**
+- **diagrams.aws.security.WAF**
 
 ## aws.storage
 

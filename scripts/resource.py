@@ -24,6 +24,7 @@ def cleaner_onprem(f):
 def cleaner_aws(f):
     f = f.replace("_", "-")
     f = f.replace("@4x", "")
+    f = f.replace("-light-bg4x", "")
     f = f.replace("-light-bg", "")
     for p in cfg.FILE_PREFIXES["aws"]:
         if f.startswith(p):
@@ -47,6 +48,16 @@ def cleaner_gcp(f):
     f = f.replace("_", "-")
     f = "-".join(f.split())
     for p in cfg.FILE_PREFIXES["gcp"]:
+        if f.startswith(p):
+            f = f[len(p) :]
+            break
+    return f.lower()
+
+
+def cleaner_firebase(f):
+    f = f.replace("_", "-")
+    f = "-".join(f.split())
+    for p in cfg.FILE_PREFIXES["firebase"]:
         if f.startswith(p):
             f = f[len(p) :]
             break
@@ -83,16 +94,30 @@ def cleaner_oci(f):
 def cleaner_programming(f):
     return f.lower()
 
+def cleaner_generic(f):
+    return f.lower()
+
+def cleaner_saas(f):
+    return f.lower()
+
+
+def cleaner_elastic(f):
+    return f.lower()
+
 
 cleaners = {
     "onprem": cleaner_onprem,
     "aws": cleaner_aws,
     "azure": cleaner_azure,
     "gcp": cleaner_gcp,
+    "firebase": cleaner_firebase,
     "k8s": cleaner_k8s,
     "alibabacloud": cleaner_alibabacloud,
     "oci": cleaner_oci,
     "programming": cleaner_programming,
+    "saas": cleaner_saas,
+    "elastic": cleaner_elastic,
+    "generic": cleaner_generic,
 }
 
 
