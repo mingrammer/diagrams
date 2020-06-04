@@ -12,6 +12,10 @@ class Alerting(_Elasticsearch):
     _icon = "alerting.png"
 
 
+class Beats(_Elasticsearch):
+    _icon = "beats.png"
+
+
 class Elasticsearch(_Elasticsearch):
     _icon = "elasticsearch.png"
 

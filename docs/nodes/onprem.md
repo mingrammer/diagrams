@@ -92,7 +92,6 @@ Node classes list of onprem provider.
 
 ## onprem.logging
 
-- **diagrams.onprem.logging.Beats**
 - **diagrams.onprem.logging.Fluentbit**, **FluentBit** (alias)
 - **diagrams.onprem.logging.Fluentd**
 - **diagrams.onprem.logging.Logstash**, **LogStash** (alias)
