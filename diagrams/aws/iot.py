@@ -20,6 +20,10 @@ class Iot1Click(_Iot):
     _icon = "iot-1-click.png"
 
 
+class IotAction(_Iot):
+    _icon = "iot-action.png"
+
+
 class IotAlexaEcho(_Iot):
     _icon = "iot-alexa-echo.png"
 
@@ -60,6 +64,10 @@ class IotEvents(_Iot):
     _icon = "iot-events.png"
 
 
+class IotGreengrassConnector(_Iot):
+    _icon = "iot-greengrass-connector.png"
+
+
 class IotGreengrass(_Iot):
     _icon = "iot-greengrass.png"
 
@@ -68,12 +76,32 @@ class IotHardwareBoard(_Iot):
     _icon = "iot-hardware-board.png"
 
 
+class IotHttp(_Iot):
+    _icon = "iot-http.png"
+
+
+class IotHttp2(_Iot):
+    _icon = "iot-http2.png"
+
+
 class IotJobs(_Iot):
     _icon = "iot-jobs.png"
 
 
+class IotLambda(_Iot):
+    _icon = "iot-lambda.png"
+
+
 class IotMqtt(_Iot):
     _icon = "iot-mqtt.png"
+
+
+class IotPolicyEmergency(_Iot):
+    _icon = "iot-policy-emergency.png"
+
+
+class IotPolicy(_Iot):
+    _icon = "iot-policy.png"
 
 
 class IotRule(_Iot):

@@ -94,8 +94,10 @@ def cleaner_oci(f):
 def cleaner_programming(f):
     return f.lower()
 
+
 def cleaner_generic(f):
     return f.lower()
+
 
 def cleaner_saas(f):
     return f.lower()

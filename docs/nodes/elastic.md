@@ -8,6 +8,7 @@ Node classes list of elastic provider.
 ## elastic.elasticsearch
 
 - **diagrams.elastic.elasticsearch.Alerting**
+- **diagrams.elastic.elasticsearch.Beats**
 - **diagrams.elastic.elasticsearch.Elasticsearch**
 - **diagrams.elastic.elasticsearch.Kibana**
 - **diagrams.elastic.elasticsearch.Logstash**, **LogStash** (alias)
