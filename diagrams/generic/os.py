@@ -24,7 +24,7 @@ class LinuxGeneral(_Os):
     _icon = "linux-general.png"
 
 
-class Suse(_Os):
+class SUSE(_Os):
     _icon = "suse.png"
 
 

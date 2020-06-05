@@ -62,7 +62,7 @@ UPPER_WORDS = {
     ),
     "oci": ("oci",),
     "elastic": ("apm", "siem", "ece", "eck"),
-    "generic": ("vpn","ios","xen"),
+    "generic": ("vpn","ios","xen","suse","rack"),
 }
 
 TITLE_WORDS = {

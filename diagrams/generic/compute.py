@@ -8,7 +8,7 @@ class _Compute(_Generic):
     _icon_dir = "resources/generic/compute"
 
 
-class Rack(_Compute):
+class RACK(_Compute):
     _icon = "rack.png"
 
 

@@ -11,7 +11,7 @@ Node classes list of generic provider.
 
 ## generic.compute
 
-- **diagrams.generic.compute.Rack**
+- **diagrams.generic.compute.RACK**
 
 ## generic.device
 
@@ -31,7 +31,7 @@ Node classes list of generic provider.
 - **diagrams.generic.os.Centos**
 - **diagrams.generic.os.IOS**
 - **diagrams.generic.os.LinuxGeneral**
-- **diagrams.generic.os.Suse**
+- **diagrams.generic.os.SUSE**
 - **diagrams.generic.os.Ubuntu**
 - **diagrams.generic.os.Windows**
 

@@ -50,6 +50,29 @@ Then just run the `./autogen.sh` to generate the added or updated aliases.
 > [inkscape][inkscape] command lines that are used for clearning the image
 > resource filenames.
 
+### Uppercase Words
+
+Resources with 2 to 4 characters words must be configured to use Uppercase. For example `sdk`, `ios`, `xen`, `ec2`, and others.
+
+So, update the `UPPER_WORDS` in [config.py](config.py).
+
+Example:
+```shell
+UPPER_WORDS = {
+    "aws": ("aws", "api", "ebs", "ec2", "efs", "emr", "rds", "ml", "mq", "nat", "vpc", "waf", "sdk"),
+    "azure": ("ad", "b2c", "ai", "api", "cdn", "ddos", "dns", "fxt", "hana", "hd", "id", "sap", "sql", "vm"),
+    "gcp": ("gcp", "ai", "api", "cdn", "dns", "gke", "gpu", "iap", "ml", "nat", "os", "sdk", "sql", "tpu", "vpn"),
+    "firebase": ("ab", "fcm", "ml"),
+    "k8s": (
+        "api", "cm", "ccm", "crb", "crd", "ds", "etcd", "hpa", "k8s", "ns", "psp", "pv", "pvc", "rb", "rs",
+        "sa", "sc", "sts", "svc",
+    ),
+    "oci": ("oci",),
+    "elastic": ("apm", "siem", "ece", "eck"),
+    "generic": ("vpn","ios","xen","suse","rack"),
+}
+```
+
 ## Run Tests
 
 ```shell
