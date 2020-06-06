@@ -28,4 +28,6 @@ jobs:
       - name: Install poetry
         run: pip install poetry
       - name: Run all tests
-        run: poetry run python -m unittest -v tests/*.py
+        run: |
+          poetry install
+          poetry run python -m unittest -v tests/*.py
