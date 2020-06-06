@@ -26,12 +26,6 @@ jobs:
         with:
           python-version: ${{ matrix.python }}
       - name: Install poetry
-        run: curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
-      - name: Install libraries
-        env:
-          poetrybin: $HOME/.poetry/bin/poetry
-        run: |
-          $poetrybin shell
-          $poetrybin install
+        run: pip install poetry
       - name: Run all tests
-        run: python -m unittest -v tests/*.py
+        run: poetry run python -m unittest -v tests/*.py
