@@ -5,13 +5,13 @@ on:
     branches:
       - master
     paths:
-      - '.github/test.yml'
+      - '.github/workflows/test.yml'
       - '**.py'
   pull_request:
     branches:
       - master
     paths:
-      - '.github/test.yml'
+      - '.github/workflows/test.yml'
       - '**.py'
 
 jobs:
