@@ -25,6 +25,8 @@ jobs:
       - uses: actions/setup-python@v1
         with:
           python-version: ${{ matrix.python }}
+      - name: Setup Graphviz
+        uses: ts-graphviz/setup-graphviz@v1
       - name: Install poetry
         run: pip install poetry
       - name: Run all tests
