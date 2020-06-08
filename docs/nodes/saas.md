@@ -9,6 +9,10 @@ Node classes list of saas provider.
 
 - **diagrams.saas.alerting.Opsgenie**
 
+## saas.analytics
+
+- **diagrams.saas.analytics.Stitch**
+
 ## saas.chat
 
 - **diagrams.saas.chat.Slack**
