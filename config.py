@@ -132,6 +132,12 @@ ALIASES = {
         "analytics": {
             "ElasticsearchService": "ES",
         },
+        "business": {
+            "AlexaForBusiness": "A4B"
+        },
+        "blockchain": {
+            "QuantumLedgerDatabaseQldb": "QLDB"
+        },
         "compute": {
             "ApplicationAutoScaling": "AutoScaling",
             "EC2ContainerRegistry": "ECR",
