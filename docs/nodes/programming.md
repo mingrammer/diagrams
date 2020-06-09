@@ -13,6 +13,7 @@ Node classes list of programming provider.
 - **diagrams.programming.framework.Ember**
 - **diagrams.programming.framework.Flask**
 - **diagrams.programming.framework.Flutter**
+- **diagrams.programming.framework.Graphql**
 - **diagrams.programming.framework.Laravel**
 - **diagrams.programming.framework.Rails**
 - **diagrams.programming.framework.React**
