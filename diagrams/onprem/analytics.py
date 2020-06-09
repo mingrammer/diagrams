@@ -12,6 +12,10 @@ class Beam(_Analytics):
     _icon = "beam.png"
 
 
+class Dbt(_Analytics):
+    _icon = "dbt.png"
+
+
 class Flink(_Analytics):
     _icon = "flink.png"
 
@@ -30,6 +34,10 @@ class Metabase(_Analytics):
 
 class Norikra(_Analytics):
     _icon = "norikra.png"
+
+
+class Singer(_Analytics):
+    _icon = "singer.png"
 
 
 class Spark(_Analytics):
