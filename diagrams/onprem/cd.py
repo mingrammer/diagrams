@@ -12,6 +12,10 @@ class Spinnaker(_Cd):
     _icon = "spinnaker.png"
 
 
+class TektonCli(_Cd):
+    _icon = "tekton-cli.png"
+
+
 class Tekton(_Cd):
     _icon = "tekton.png"
 
