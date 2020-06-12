@@ -7,7 +7,7 @@ from jinja2 import Environment, FileSystemLoader, Template
 import config as cfg
 from . import app_root_dir, doc_root_dir, resource_dir, template_dir
 
-_usage = "Usage: generate.py <onprem|aws|gcp|azure|k8s|alibabacloud|oci|programming|saas|elastic>"
+_usage = "Usage: generate.py <provider>"
 
 
 def load_tmpl(tmpl: str) -> Template:

@@ -11,7 +11,9 @@ DIR_APP_ROOT = "diagrams"
 DIR_RESOURCE = "resources"
 DIR_TEMPLATE = "templates"
 
-PROVIDERS = ("base", "onprem", "aws", "azure", "gcp", "firebase", "k8s", "alibabacloud", "oci", "programming", "saas", "elastic", "generic")
+PROVIDERS = (
+    "base", "onprem", "aws", "azure", "gcp", "firebase", "k8s", "alibabacloud", "oci", "programming", "saas", "elastic",
+    "generic")
 
 #########################
 #  Resource Processing  #
@@ -62,7 +64,7 @@ UPPER_WORDS = {
     ),
     "oci": ("oci",),
     "elastic": ("apm", "siem", "ece", "eck"),
-    "generic": ("vpn",),
+    "generic": ("vpn", "ios", "xen"),
 }
 
 TITLE_WORDS = {
@@ -129,6 +131,12 @@ ALIASES = {
     "aws": {
         "analytics": {
             "ElasticsearchService": "ES",
+        },
+        "business": {
+            "AlexaForBusiness": "A4B"
+        },
+        "blockchain": {
+            "QuantumLedgerDatabaseQldb": "QLDB"
         },
         "compute": {
             "ApplicationAutoScaling": "AutoScaling",

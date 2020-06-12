@@ -41,6 +41,9 @@
       "nodes/gcp": {
         "title": "GCP"
       },
+      "nodes/generic": {
+        "title": "Generic"
+      },
       "nodes/k8s": {
         "title": "K8S"
       },
