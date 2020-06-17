@@ -28,6 +28,7 @@ Node classes list of onprem provider.
 ## onprem.ci
 
 - **diagrams.onprem.ci.Circleci**, **CircleCI** (alias)
+- **diagrams.onprem.ci.Concourseci**, **ConcourseCI** (alias)
 - **diagrams.onprem.ci.Gitlabci**, **GitlabCI** (alias)
 - **diagrams.onprem.ci.Jenkins**
 - **diagrams.onprem.ci.Teamcity**, **TC** (alias)

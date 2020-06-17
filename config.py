@@ -84,6 +84,7 @@ ALIASES = {
     "onprem": {
         "ci": {
             "Circleci": "CircleCI",
+            "Concourseci": "ConcourseCI",
             "Gitlabci": "GitlabCI",
             "Travisci": "TravisCI",
             "Teamcity": "TC",
