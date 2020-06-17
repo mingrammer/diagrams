@@ -64,6 +64,18 @@ class SagemakerGroundTruth(_ML):
     _icon = "sagemaker-ground-truth.png"
 
 
+class SagemakerModel(_ML):
+    _icon = "sagemaker-model.png"
+
+
+class SagemakerNotebook(_ML):
+    _icon = "sagemaker-notebook.png"
+
+
+class SagemakerTrainingJob(_ML):
+    _icon = "sagemaker-training-job.png"
+
+
 class Sagemaker(_ML):
     _icon = "sagemaker.png"
 
