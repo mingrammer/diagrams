@@ -71,6 +71,8 @@ To contribute to diagram, check out [contribution guidelines](CONTRIBUTING.md).
 
 [GitPitch](https://gitpitch.com/) is a markdown presentation service for developers. Diagrams is now integrated as [Cloud Diagram Widget](https://gitpitch.com/docs/diagram-features/cloud-diagrams/) of GitPitch, so you can use the Diagrams when to create slide decks for Tech Conferences, Meetups, and Training with GitPitch.
 
+[Cloudiscovery](https://github.com/Cloud-Architects/cloudiscovery) helps you to analyze resources in your cloud (AWS/GCP/Azure/Alibaba/IBM) account. It also allows you to create a diagram image output of analyzed cloud resource map based on this Diagrams library.
+
 ## License
 
 [MIT](LICENSE)
