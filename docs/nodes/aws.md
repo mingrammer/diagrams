@@ -256,6 +256,9 @@ Node classes list of aws provider.
 - **diagrams.aws.ml.Polly**
 - **diagrams.aws.ml.Rekognition**
 - **diagrams.aws.ml.SagemakerGroundTruth**
+- **diagrams.aws.ml.SagemakerModel**
+- **diagrams.aws.ml.SagemakerNotebook**
+- **diagrams.aws.ml.SagemakerTrainingJob**
 - **diagrams.aws.ml.Sagemaker**
 - **diagrams.aws.ml.TensorflowOnAWS**
 - **diagrams.aws.ml.Textract**
