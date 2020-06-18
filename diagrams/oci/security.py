@@ -16,6 +16,14 @@ class Audit(_Security):
     _icon = "audit.png"
 
 
+class CloudGuardWhite(_Security):
+    _icon = "cloudguard-white.png"
+
+
+class CloudGuard(_Security):
+    _icon = "cloudguard.png"
+
+
 class CompartmentsWhite(_Security):
     _icon = "compartments-white.png"
 
@@ -86,6 +94,14 @@ class TaggingWhite(_Security):
 
 class Tagging(_Security):
     _icon = "tagging.png"
+
+
+class VaultWhite(_Security):
+    _icon = "vault-white.png"
+
+
+class Vault(_Security):
+    _icon = "vault.png"
 
 
 # Aliases

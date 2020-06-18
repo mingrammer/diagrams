@@ -8,6 +8,14 @@ class _Compute(_OCI):
     _icon_dir = "resources/oci/compute"
 
 
+class AutoScaleWhite(_Compute):
+    _icon = "autoscale-white.png"
+
+
+class AutoScale(_Compute):
+    _icon = "autoscale.png"
+
+
 class BmWhite(_Compute):
     _icon = "bm-white.png"
 
@@ -22,6 +30,38 @@ class ContainerWhite(_Compute):
 
 class Container(_Compute):
     _icon = "container.png"
+
+
+class FunctionsWhite(_Compute):
+    _icon = "functions-white.png"
+
+
+class Functions(_Compute):
+    _icon = "functions.png"
+
+
+class InstancePoolsWhite(_Compute):
+    _icon = "instancepools.png"
+
+
+class InstancePools(_Compute):
+    _icon = "instancepools.png"
+
+
+class OCIRWhite(_Compute):
+    _icon = "ociregistry-white.png"
+
+
+class OCIR(_Compute):
+    _icon = "ociregistry.png"
+
+
+class OKEWhite(_Compute):
+    _icon = "containerengine-white.png"
+
+
+class OKE(_Compute):
+    _icon = "containerengine.png"
 
 
 class VmWhite(_Compute):

@@ -7,10 +7,20 @@ Node classes list of oci provider.
 
 ## oci.compute
 
+- **diagrams.oci.compute.AutoScaleWhite**
+- **diagrams.oci.compute.AutoScale**
 - **diagrams.oci.compute.BmWhite**, **BareMetalWhite** (alias)
 - **diagrams.oci.compute.Bm**, **BareMetal** (alias)
 - **diagrams.oci.compute.ContainerWhite**
 - **diagrams.oci.compute.Container**
+- **diagrams.oci.compute.FunctionsWhite**
+- **diagrams.oci.compute.Functions**
+- **diagrams.oci.compute.InstancePoolsWhite**
+- **diagrams.oci.compute.InstancePools**
+- **diagrams.oci.compute.OCIRWhite**, **OCIRegistryWhite** (alias)
+- **diagrams.oci.compute.OCIR**, **OCIRegistry** (alias)
+- **diagrams.oci.compute.OKEWhite**, **ContainerEngineWhite** (aliass)
+- **diagrams.oci.compute.OKE**, **ContainerEngine** (alias)
 - **diagrams.oci.compute.VmWhite**, **VirtualMachineWhite** (alias)
 - **diagrams.oci.compute.Vm**, **VirtualMachine** (alias)
 
@@ -29,11 +39,15 @@ Node classes list of oci provider.
 
 ## oci.database
 
+- **diagrams.oci.database.AutonomousDatabaseWhite**, **ADBWhite** (alias)
+- **diagrams.oci.database.AutonomousDatabase**, **ADB** (alias)
 - **diagrams.oci.database.DatabaseserviceWhite**, **DBServiceWhite** (alias)
 - **diagrams.oci.database.Databaseservice**, **DBService** (alias)
 
 ## oci.devops
 
+- **diagrams.oci.devops.ApigatewayWhite**
+- **diagrams.oci.devops.Apigateway**
 - **diagrams.oci.devops.ApiserviceWhite**
 - **diagrams.oci.devops.Apiservice**
 - **diagrams.oci.devops.ResourcemgmtWhite**
@@ -83,6 +97,8 @@ Node classes list of oci provider.
 - **diagrams.oci.network.Internetgateway**
 - **diagrams.oci.network.LoadbalanceWhite**
 - **diagrams.oci.network.Loadbalance**
+- **diagrams.oci.network.NATgatewayWhite**
+- **diagrams.oci.network.NATgateway**
 - **diagrams.oci.network.RoutetableWhite**
 - **diagrams.oci.network.Routetable**
 - **diagrams.oci.network.SecuritylistsWhite**
@@ -98,6 +114,8 @@ Node classes list of oci provider.
 - **diagrams.oci.security.Audit**
 - **diagrams.oci.security.CompartmentsWhite**
 - **diagrams.oci.security.Compartments**
+- **diagrams.oci.security.CloudGuardWhite**
+- **diagrams.oci.security.CloudGuard**
 - **diagrams.oci.security.DdosWhite**
 - **diagrams.oci.security.Ddos**
 - **diagrams.oci.security.EncryptionWhite**
@@ -114,6 +132,8 @@ Node classes list of oci provider.
 - **diagrams.oci.security.Policies**
 - **diagrams.oci.security.TaggingWhite**
 - **diagrams.oci.security.Tagging**
+- **diagrams.oci.security.VaultWhite**
+- **diagrams.oci.security.Vault**
 
 ## oci.storage
 
