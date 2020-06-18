@@ -357,13 +357,13 @@ ALIASES = {
     "oci": {
         "compute": {
             "Vm": "VirtualMachine",
-            "VmGrey": "VirtualMachineGrey",
+            "VmWhite": "VirtualMachineWhite",
             "Bm": "BareMetal",
-            "BmGrey": "BareMetalGrey",
+            "BmWhite": "BareMetalWhite",
         },
         "database": {
             "Databaseservice": "DBService",
-            "DatabaseserviceGrey": "DBServiceGrey",
+            "DatabaseserviceWhite": "DBServiceWhite",
         }
     },
     "programming": {

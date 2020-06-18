@@ -8,80 +8,80 @@ class _Monitoring(_OCI):
     _icon_dir = "resources/oci/monitoring"
 
 
-class AlarmGrey(_Monitoring):
-    _icon = "alarm-grey.png"
+class AlarmWhite(_Monitoring):
+    _icon = "alarm-white.png"
 
 
 class Alarm(_Monitoring):
     _icon = "alarm.png"
 
 
-class EventGrey(_Monitoring):
-    _icon = "event-grey.png"
+class EventWhite(_Monitoring):
+    _icon = "event-white.png"
 
 
 class Event(_Monitoring):
     _icon = "event.png"
 
 
-class HealthcheckGrey(_Monitoring):
-    _icon = "healthcheck-grey.png"
+class HealthcheckWhite(_Monitoring):
+    _icon = "healthcheck-white.png"
 
 
 class Healthcheck(_Monitoring):
     _icon = "healthcheck.png"
 
 
-class LoggingGrey(_Monitoring):
-    _icon = "logging-grey.png"
+class LoggingWhite(_Monitoring):
+    _icon = "logging-white.png"
 
 
 class Logging(_Monitoring):
     _icon = "logging.png"
 
 
-class NotificationsGrey(_Monitoring):
-    _icon = "notifications-grey.png"
+class NotificationsWhite(_Monitoring):
+    _icon = "notifications-white.png"
 
 
 class Notifications(_Monitoring):
     _icon = "notifications.png"
 
 
-class QueuingGrey(_Monitoring):
-    _icon = "queuing-grey.png"
+class QueuingWhite(_Monitoring):
+    _icon = "queuing-white.png"
 
 
 class Queuing(_Monitoring):
     _icon = "queuing.png"
 
 
-class SearchGrey(_Monitoring):
-    _icon = "search-grey.png"
+class SearchWhite(_Monitoring):
+    _icon = "search-white.png"
 
 
 class Search(_Monitoring):
     _icon = "search.png"
 
 
-class StreamingGrey(_Monitoring):
-    _icon = "streaming-grey.png"
+class StreamingWhite(_Monitoring):
+    _icon = "streaming-white.png"
 
 
 class Streaming(_Monitoring):
     _icon = "streaming.png"
 
 
-class TelemetryGrey(_Monitoring):
-    _icon = "telemetry-grey.png"
+class TelemetryWhite(_Monitoring):
+    _icon = "telemetry-white.png"
 
 
 class Telemetry(_Monitoring):
     _icon = "telemetry.png"
 
 
-class WorkflowGrey(_Monitoring):
-    _icon = "workflow-grey.png"
+class WorkflowWhite(_Monitoring):
+    _icon = "workflow-white.png"
 
 
 class Workflow(_Monitoring):

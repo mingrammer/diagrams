@@ -8,40 +8,40 @@ class _Connectivity(_OCI):
     _icon_dir = "resources/oci/connectivity"
 
 
-class BackboneGrey(_Connectivity):
-    _icon = "backbone-grey.png"
+class BackboneWhite(_Connectivity):
+    _icon = "backbone-white.png"
 
 
 class Backbone(_Connectivity):
     _icon = "backbone.png"
 
 
-class CustomerdatacenterGrey(_Connectivity):
-    _icon = "customerdatacenter-grey.png"
+class CustomerdatacenterWhite(_Connectivity):
+    _icon = "customerdatacenter-white.png"
 
 
 class Customerdatacenter(_Connectivity):
     _icon = "customerdatacenter.png"
 
 
-class CustomerpremisesequipGrey(_Connectivity):
-    _icon = "customerpremisesequip-grey.png"
+class CustomerpremisesequipWhite(_Connectivity):
+    _icon = "customerpremisesequip-white.png"
 
 
 class Customerpremisesequip(_Connectivity):
     _icon = "customerpremisesequip.png"
 
 
-class FastconnectGrey(_Connectivity):
-    _icon = "fastconnect-grey.png"
+class FastconnectWhite(_Connectivity):
+    _icon = "fastconnect-white.png"
 
 
 class Fastconnect(_Connectivity):
     _icon = "fastconnect.png"
 
 
-class VpnGrey(_Connectivity):
-    _icon = "vpn-grey.png"
+class VpnWhite(_Connectivity):
+    _icon = "vpn-white.png"
 
 
 class Vpn(_Connectivity):
