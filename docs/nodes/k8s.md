@@ -75,7 +75,7 @@ Node classes list of k8s provider.
 
 ## k8s.storage
 
-- **diagrams.k8s.storage.PV**, **PersistnetVolume** (alias)
+- **diagrams.k8s.storage.PV**, **PersistentVolume** (alias)
 - **diagrams.k8s.storage.PVC**, **PersistentVolumeClaim** (alias)
 - **diagrams.k8s.storage.SC**, **StorageClass** (alias)
 - **diagrams.k8s.storage.Vol**, **Volume** (alias)
