@@ -21,6 +21,11 @@ if ! [ -x "$(command -v convert)" ]; then
   exit 1
 fi
 
+if ! [ -x "$(command -v black)" ]; then
+  echo 'black is not installed'
+  exit 1
+fi
+
 # preprocess the resources
 for pvd in "${providers[@]}"; do
   # convert the svg to png for azure provider
