@@ -13,10 +13,22 @@ Node classes list of saas provider.
 
 - **diagrams.saas.analytics.Stitch**
 
+## saas.cdn
+
+- **diagrams.saas.cdn.Cloudflare**
+
 ## saas.chat
 
 - **diagrams.saas.chat.Slack**
 - **diagrams.saas.chat.Telegram**
+
+## saas.identity
+
+- **diagrams.saas.identity.Auth0**
+
+## saas.recommendation
+
+- **diagrams.saas.recommendation.Recombee**
 
 ## saas.social
 
