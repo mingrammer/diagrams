@@ -297,7 +297,7 @@ ALIASES = {
             "SA": "ServiceAccount",
         },
         "storage": {
-            "PV": "PersistnetVolume",
+            "PV": "PersistentVolume",
             "PVC": "PersistentVolumeClaim",
             "SC": "StorageClass",
             "Vol": "Volume",

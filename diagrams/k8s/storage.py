@@ -26,7 +26,7 @@ class Vol(_Storage):
 
 # Aliases
 
-PersistnetVolume = PV
+PersistentVolume = PV
 PersistentVolumeClaim = PVC
 StorageClass = SC
 Volume = Vol
