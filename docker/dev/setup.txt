@@ -1,0 +1,19 @@
+Docker local development setup.
+
+1. Go to diagrams project directory.
+
+2. Build the docker image: 
+docker build --tag diagrams:1.0 -f ./docker/dev/Dockerfile .
+
+3. Run the container in background and mount the project source: 
+docker run -d \
+-it \
+--name diagrams \
+--mount type=bind,source="$(pwd)",target=/usr/src/diagrams \
+diagrams:1.0
+
+4. Run unit tests in the host using the container: 
+docker exec diagrams python -m unittest tests/*.py -v
+
+5. Run autogen.sh: 
+docker exec diagrams ./autogen.sh
