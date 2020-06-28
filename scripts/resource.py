@@ -109,6 +109,10 @@ def cleaner_elastic(f):
     return f.lower()
 
 
+def cleaner_openstack(f):
+    return f.lower()
+
+
 cleaners = {
     "onprem": cleaner_onprem,
     "aws": cleaner_aws,
@@ -122,6 +126,7 @@ cleaners = {
     "saas": cleaner_saas,
     "elastic": cleaner_elastic,
     "generic": cleaner_generic,
+    "openstack": cleaner_openstack,
 }
 
 

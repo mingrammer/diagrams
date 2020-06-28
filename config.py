@@ -66,7 +66,7 @@ UPPER_WORDS = {
     "oci": ("oci",),
     "elastic": ("apm", "siem", "ece", "eck"),
     "generic": ("vpn", "ios", "xen"),
-    "openstack": (),
+    "openstack": ("rpm", "loci", "nfv"),
 }
 
 TITLE_WORDS = {
@@ -386,5 +386,12 @@ ALIASES = {
         }
     },
     "generic": {},
-    "openstack": {},
+    "openstack": {
+        "apiproxies": {
+            "Ec2api": "EC2API",
+        },
+        "user": {
+            "Openstackclient": "OpenStackClient",
+        },
+    },
 }
