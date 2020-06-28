@@ -459,7 +459,7 @@ class Edge:
 
         if label:
             # Graphviz complaining about using label for edges, so replace it with xlabel.
-            # Update: xlabel option causes the misaliend label position: https://github.com/mingrammer/diagrams/issues/83
+            # Update: xlabel option causes the misaligned label position: https://github.com/mingrammer/diagrams/issues/83
             self._attrs["label"] = label
         if color:
             self._attrs["color"] = color
