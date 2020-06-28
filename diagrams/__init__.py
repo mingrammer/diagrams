@@ -39,6 +39,7 @@ def setcluster(cluster):
 
 class Diagram:
     __directions = ("TB", "BT", "LR", "RL")
+    __curvestyles = ("ortho", "curved")
     __outformats = ("png", "jpg", "svg", "pdf")
 
     # fmt: off
@@ -78,6 +79,7 @@ class Diagram:
         name: str = "",
         filename: str = "",
         direction: str = "LR",
+        curvestyle: str = "ortho",
         outformat: str = "png",
         show: bool = True,
         graph_attr: dict = {},
@@ -91,6 +93,7 @@ class Diagram:
         :param filename: The output filename, without the extension (.png).
             If not given, it will be generated from the name.
         :param direction: Data flow direction. Default is 'left to right'.
+        :param curvestyle: Curve bending style. One of "ortho" or "curved".
         :param outformat: Output file format. Default is 'png'.
         :param show: Open generated image after save if true, just only save otherwise.
         :param graph_attr: Provide graph_attr dot config attributes.
@@ -116,6 +119,10 @@ class Diagram:
         if not self._validate_direction(direction):
             raise ValueError(f'"{direction}" is not a valid direction')
         self.dot.graph_attr["rankdir"] = direction
+
+        if not self._validate_curvestyle(curvestyle):
+            raise ValueError(f'"{curvestyle}" is not a valid curvestyle')
+        self.dot.graph_attr["splines"] = curvestyle
 
         if not self._validate_outformat(outformat):
             raise ValueError(f'"{outformat}" is not a valid output format')
@@ -148,6 +155,13 @@ class Diagram:
         direction = direction.upper()
         for v in self.__directions:
             if v == direction:
+                return True
+        return False
+
+    def _validate_curvestyle(self, curvestyle: str) -> bool:
+        curvestyle = curvestyle.lower()
+        for v in self.__curvestyles:
+            if v == curvestyle:
                 return True
         return False
 

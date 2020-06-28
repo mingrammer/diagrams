@@ -33,6 +33,16 @@ class DiagramTest(unittest.TestCase):
             with self.assertRaises(ValueError):
                 Diagram(direction=dir)
 
+    def test_validate_curvestyle(self):
+        # Normal directions.
+        for cvs in ("ortho", "curved"):
+            Diagram(curvestyle=cvs)
+
+        # Invalid directions.
+        for cvs in ("tangent", "unknown"):
+            with self.assertRaises(ValueError):
+                Diagram(curvestyle=cvs)
+
     def test_validate_outformat(self):
         # Normal output formats.
         for fmt in ("png", "jpg", "svg", "pdf"):
