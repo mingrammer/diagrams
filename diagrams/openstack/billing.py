@@ -13,3 +13,5 @@ class Cloudkitty(_Billing):
 
 
 # Aliases
+
+CloudKitty = Cloudkitty

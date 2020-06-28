@@ -33,3 +33,6 @@ class Tripleo(_Deployment):
 
 
 # Aliases
+
+KollaAnsible = Kolla
+TripleO = Tripleo

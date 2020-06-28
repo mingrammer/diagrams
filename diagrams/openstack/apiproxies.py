@@ -8,10 +8,8 @@ class _Apiproxies(_OpenStack):
     _icon_dir = "resources/openstack/apiproxies"
 
 
-class Ec2Api(_Apiproxies):
+class EC2API(_Apiproxies):
     _icon = "ec2api.png"
 
 
 # Aliases
-
-EC2API = Ec2api

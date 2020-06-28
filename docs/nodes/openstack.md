@@ -10,7 +10,7 @@ Node classes list of openstack provider.
 
 ## openstack.apiproxies
 
-- **diagrams.openstack.apiproxies.Ec2Api**
+- **diagrams.openstack.apiproxies.EC2API**
 
 ## openstack.applicationlifecycle
 
@@ -26,7 +26,7 @@ Node classes list of openstack provider.
 
 ## openstack.billing
 
-- **diagrams.openstack.billing.Cloudkitty**
+- **diagrams.openstack.billing.Cloudkitty**, **CloudKitty** (alias)
 
 ## openstack.compute
 
@@ -44,8 +44,8 @@ Node classes list of openstack provider.
 - **diagrams.openstack.deployment.Charms**
 - **diagrams.openstack.deployment.Chef**
 - **diagrams.openstack.deployment.Helm**
-- **diagrams.openstack.deployment.Kolla**
-- **diagrams.openstack.deployment.Tripleo**
+- **diagrams.openstack.deployment.Kolla**, **KollaAnsible** (alias)
+- **diagrams.openstack.deployment.Tripleo**, **TripleO** (alias)
 
 ## openstack.frontend
 

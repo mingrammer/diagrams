@@ -66,7 +66,7 @@ UPPER_WORDS = {
     "oci": ("oci",),
     "elastic": ("apm", "siem", "ece", "eck"),
     "generic": ("vpn", "ios", "xen"),
-    "openstack": ("rpm", "loci", "nfv"),
+    "openstack": ("rpm", "loci", "nfv", "ec2api"),
 }
 
 TITLE_WORDS = {
@@ -387,11 +387,15 @@ ALIASES = {
     },
     "generic": {},
     "openstack": {
-        "apiproxies": {
-            "Ec2api": "EC2API",
-        },
         "user": {
             "Openstackclient": "OpenStackClient",
         },
+        "billing": {
+            "Cloudkitty": "CloudKitty",
+        },
+        "deployment": {
+            "Kolla": "KollaAnsible",
+            "Tripleo": "TripleO",
+        }
     },
 }
