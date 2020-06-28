@@ -171,7 +171,7 @@ class Diagram:
         self.dot.subgraph(dot)
 
     def render(self) -> None:
-        self.dot.render(format=self.outformat, view=self.show)
+        self.dot.render(format=self.outformat, view=self.show, quiet=True)
 
 
 class Cluster:
@@ -445,7 +445,8 @@ class Edge:
 
         if label:
             # Graphviz complaining about using label for edges, so replace it with xlabel.
-            self._attrs["xlabel"] = label
+            # Update: xlabel option causes the misaliend label position: https://github.com/mingrammer/diagrams/issues/83
+            self._attrs["label"] = label
         if color:
             self._attrs["color"] = color
         if style:
