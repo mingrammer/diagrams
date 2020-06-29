@@ -12,6 +12,10 @@ class Docker(_Container):
     _icon = "docker.png"
 
 
+class Lxc(_Container):
+    _icon = "lxc.png"
+
+
 class Rkt(_Container):
     _icon = "rkt.png"
 
