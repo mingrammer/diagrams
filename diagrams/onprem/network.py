@@ -12,6 +12,10 @@ class Apache(_Network):
     _icon = "apache.png"
 
 
+class Bind9(_Network):
+    _icon = "bind-9.png"
+
+
 class Caddy(_Network):
     _icon = "caddy.png"
 
@@ -74,6 +78,10 @@ class Pfsense(_Network):
 
 class Pomerium(_Network):
     _icon = "pomerium.png"
+
+
+class Powerdns(_Network):
+    _icon = "powerdns.png"
 
 
 class Tomcat(_Network):
