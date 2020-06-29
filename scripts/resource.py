@@ -13,7 +13,7 @@ import sys
 import config as cfg
 from . import resource_dir
 
-_usage = "Usage: resources.py <cmd> <pvd>"
+_usage = "Usage: resource.py <cmd> <pvd>"
 
 
 def cleaner_onprem(f):
