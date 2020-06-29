@@ -53,6 +53,9 @@
       "nodes/onprem": {
         "title": "OnPrem"
       },
+      "nodes/openstack": {
+        "title": "OpenStack"
+      },
       "nodes/programming": {
         "title": "Programming"
       },

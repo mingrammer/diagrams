@@ -135,6 +135,10 @@ Node classes list of onprem provider.
 - **diagrams.onprem.network.Vyos**, **VyOS** (alias)
 - **diagrams.onprem.network.Zookeeper**
 
+## onprem.proxmox
+
+- **diagrams.onprem.proxmox.Pve**
+
 ## onprem.queue
 
 - **diagrams.onprem.queue.Activemq**, **ActiveMQ** (alias)
@@ -152,6 +156,11 @@ Node classes list of onprem provider.
 
 - **diagrams.onprem.security.Trivy**
 - **diagrams.onprem.security.Vault**
+
+## onprem.storage
+
+- **diagrams.onprem.storage.Ceph**
+- **diagrams.onprem.storage.Glusterfs**
 
 ## onprem.vcs
 

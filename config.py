@@ -124,6 +124,9 @@ ALIASES = {
             "Pfsense": "PFSense",
             "Vyos": "VyOS"
         },
+        "proxmox": {
+            "ProxmoxVE": "PVE",
+        },
         "queue": {
             "Activemq": "ActiveMQ",
             "Rabbitmq": "RabbitMQ",
