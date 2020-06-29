@@ -13,7 +13,7 @@ DIR_TEMPLATE = "templates"
 
 PROVIDERS = (
     "base", "onprem", "aws", "azure", "gcp", "firebase", "k8s", "alibabacloud", "oci", "programming", "saas", "elastic",
-    "generic")
+    "generic", "openstack")
 
 #########################
 #  Resource Processing  #
@@ -39,6 +39,7 @@ FILE_PREFIXES = {
     "saas": (),
     "elastic": (),
     "generic": (),
+    "openstack": (),
 }
 
 #########################
@@ -65,6 +66,7 @@ UPPER_WORDS = {
     "oci": ("oci",),
     "elastic": ("apm", "siem", "ece", "eck"),
     "generic": ("vpn", "ios", "xen"),
+    "openstack": ("rpm", "loci", "nfv", "ec2api"),
 }
 
 TITLE_WORDS = {
@@ -76,7 +78,10 @@ TITLE_WORDS = {
     },
     "aws": {
         "cloudfront": "CloudFront"
-    }
+    },
+    "openstack": {
+        "openstack": "OpenStack"
+    },
 }
 
 # TODO: check if the classname exists
@@ -381,4 +386,16 @@ ALIASES = {
         }
     },
     "generic": {},
+    "openstack": {
+        "user": {
+            "Openstackclient": "OpenStackClient",
+        },
+        "billing": {
+            "Cloudkitty": "CloudKitty",
+        },
+        "deployment": {
+            "Kolla": "KollaAnsible",
+            "Tripleo": "TripleO",
+        }
+    },
 }
