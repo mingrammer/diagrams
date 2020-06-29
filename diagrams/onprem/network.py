@@ -28,6 +28,14 @@ class Etcd(_Network):
     _icon = "etcd.png"
 
 
+class Glassfish(_Network):
+    _icon = "glassfish.png"
+
+
+class Gunicorn(_Network):
+    _icon = "gunicorn.png"
+
+
 class Haproxy(_Network):
     _icon = "haproxy.png"
 
@@ -38,6 +46,14 @@ class Internet(_Network):
 
 class Istio(_Network):
     _icon = "istio.png"
+
+
+class Jbossas(_Network):
+    _icon = "jbossas.png"
+
+
+class Jetty(_Network):
+    _icon = "jetty.png"
 
 
 class Kong(_Network):

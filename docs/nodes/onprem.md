@@ -124,9 +124,13 @@ Node classes list of onprem provider.
 - **diagrams.onprem.network.Consul**
 - **diagrams.onprem.network.Envoy**
 - **diagrams.onprem.network.Etcd**, **ETCD** (alias)
+- **diagrams.onprem.network.Glassfish**
+- **diagrams.onprem.network.Gunicorn**
 - **diagrams.onprem.network.Haproxy**, **HAProxy** (alias)
 - **diagrams.onprem.network.Internet**
 - **diagrams.onprem.network.Istio**
+- **diagrams.onprem.network.Jbossas**
+- **diagrams.onprem.network.Jetty**
 - **diagrams.onprem.network.Kong**
 - **diagrams.onprem.network.Linkerd**
 - **diagrams.onprem.network.Nginx**
