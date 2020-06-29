@@ -114,6 +114,7 @@ Node classes list of onprem provider.
 - **diagrams.onprem.monitoring.Sentry**
 - **diagrams.onprem.monitoring.Splunk**
 - **diagrams.onprem.monitoring.Thanos**
+- **diagrams.onprem.monitoring.Zabbix**
 
 ## onprem.network
 
