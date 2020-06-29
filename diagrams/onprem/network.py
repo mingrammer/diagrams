@@ -88,6 +88,10 @@ class Vyos(_Network):
     _icon = "vyos.png"
 
 
+class Wildfly(_Network):
+    _icon = "wildfly.png"
+
+
 class Zookeeper(_Network):
     _icon = "zookeeper.png"
 

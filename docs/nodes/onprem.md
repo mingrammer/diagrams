@@ -139,6 +139,7 @@ Node classes list of onprem provider.
 - **diagrams.onprem.network.Tomcat**
 - **diagrams.onprem.network.Traefik**
 - **diagrams.onprem.network.Vyos**, **VyOS** (alias)
+- **diagrams.onprem.network.Wildfly**
 - **diagrams.onprem.network.Zookeeper**
 
 ## onprem.proxmox
