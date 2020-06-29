@@ -18,4 +18,4 @@ WORKDIR /usr/src/diagrams
 COPY . .
 
 # install python requirements.
-RUN pip install -r ./docker/dev/requirements.txt
+RUN pip install black
