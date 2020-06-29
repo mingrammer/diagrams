@@ -1,5 +1,5 @@
 """
-Elastic provides a set of general OpenStack services.
+Openstack provides a set of general OpenStack services.
 """
 
 from diagrams import Node
