@@ -6,13 +6,13 @@ You should have docker installed in your system, if not click [here](https://doc
 
 1. Go to diagrams root directory.
 
-1. Build the docker image.
+2. Build the docker image.
     
     ```shell
     docker build --tag diagrams:1.0 -f ./docker/dev/Dockerfile .
     ```
     
-1. Create the container, run in background and mount the project source code.
+3. Create the container, run in background and mount the project source code.
 
     ```shell
     docker run -d \
@@ -22,16 +22,16 @@ You should have docker installed in your system, if not click [here](https://doc
     diagrams:1.0
     ```
 
-1. Run unit tests in the host using the container to confirm that it's working.
+4. Run unit tests in the host using the container to confirm that it's working.
 
     ```shell
     docker exec diagrams python -m unittest tests/*.py -v
     ```
 
-1. Run the bash script `autogen.sh` to test.
+5. Run the bash script `autogen.sh` to test.
 
     ```shell
     docker exec diagrams ./autogen.sh
     ```
 
-1. If the unit tests and the bash script `autogen.sh` is working correctly, then your system is now ready for development.
+6. If the unit tests and the bash script `autogen.sh` is working correctly, then your system is now ready for development.
