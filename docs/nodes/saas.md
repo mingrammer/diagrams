@@ -26,6 +26,10 @@ Node classes list of saas provider.
 
 - **diagrams.saas.identity.Auth0**
 
+## saas.media
+
+- **diagrams.saas.media.Cloudinary**
+
 ## saas.recommendation
 
 - **diagrams.saas.recommendation.Recombee**
