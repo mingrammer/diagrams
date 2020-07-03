@@ -8,84 +8,100 @@ class _Security(_OCI):
     _icon_dir = "resources/oci/security"
 
 
-class AuditGrey(_Security):
-    _icon = "audit-grey.png"
+class AuditWhite(_Security):
+    _icon = "audit-white.png"
 
 
 class Audit(_Security):
     _icon = "audit.png"
 
 
-class CompartmentsGrey(_Security):
-    _icon = "compartments-grey.png"
+class CloudGuardWhite(_Security):
+    _icon = "cloudguard-white.png"
+
+
+class CloudGuard(_Security):
+    _icon = "cloudguard.png"
+
+
+class CompartmentsWhite(_Security):
+    _icon = "compartments-white.png"
 
 
 class Compartments(_Security):
     _icon = "compartments.png"
 
 
-class DdosGrey(_Security):
-    _icon = "ddos-grey.png"
+class DdosWhite(_Security):
+    _icon = "ddos-white.png"
 
 
 class Ddos(_Security):
     _icon = "ddos.png"
 
 
-class EncryptionGrey(_Security):
-    _icon = "encryption-grey.png"
+class EncryptionWhite(_Security):
+    _icon = "encryption-white.png"
 
 
 class Encryption(_Security):
     _icon = "encryption.png"
 
 
-class GroupsGrey(_Security):
-    _icon = "groups-grey.png"
+class GroupsWhite(_Security):
+    _icon = "groups-white.png"
 
 
 class Groups(_Security):
     _icon = "groups.png"
 
 
-class IdAccessGrey(_Security):
-    _icon = "id-access-grey.png"
+class IdAccessWhite(_Security):
+    _icon = "id-access-white.png"
 
 
 class IdAccess(_Security):
     _icon = "id-access.png"
 
 
-class KeymgmtGrey(_Security):
-    _icon = "keymgmt-grey.png"
+class KeymgmtWhite(_Security):
+    _icon = "keymgmt-white.png"
 
 
 class Keymgmt(_Security):
     _icon = "keymgmt.png"
 
 
-class OcidGrey(_Security):
-    _icon = "ocid-grey.png"
+class OcidWhite(_Security):
+    _icon = "ocid-white.png"
 
 
 class Ocid(_Security):
     _icon = "ocid.png"
 
 
-class PoliciesGrey(_Security):
-    _icon = "policies-grey.png"
+class PoliciesWhite(_Security):
+    _icon = "policies-white.png"
 
 
 class Policies(_Security):
     _icon = "policies.png"
 
 
-class TaggingGrey(_Security):
-    _icon = "tagging-grey.png"
+class TaggingWhite(_Security):
+    _icon = "tagging-white.png"
 
 
 class Tagging(_Security):
     _icon = "tagging.png"
+
+
+class VaultWhite(_Security):
+    _icon = "vault-white.png"
+
+
+class Vault(_Security):
+    _icon = "vault.png"
 
 
 # Aliases

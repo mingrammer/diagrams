@@ -8,64 +8,72 @@ class _Network(_OCI):
     _icon_dir = "resources/oci/network"
 
 
-class DrgGrey(_Network):
-    _icon = "drg-grey.png"
+class DrgWhite(_Network):
+    _icon = "drg-white.png"
 
 
 class Drg(_Network):
     _icon = "drg.png"
 
 
-class FirewallGrey(_Network):
-    _icon = "firewall-grey.png"
+class FirewallWhite(_Network):
+    _icon = "firewall-white.png"
 
 
 class Firewall(_Network):
     _icon = "firewall.png"
 
 
-class InternetgatewayGrey(_Network):
-    _icon = "internetgateway-grey.png"
+class InternetgatewayWhite(_Network):
+    _icon = "internetgateway-white.png"
 
 
 class Internetgateway(_Network):
     _icon = "internetgateway.png"
 
 
-class LoadbalanceGrey(_Network):
-    _icon = "loadbalance-grey.png"
+class LoadbalanceWhite(_Network):
+    _icon = "loadbalance-white.png"
 
 
 class Loadbalance(_Network):
     _icon = "loadbalance.png"
 
 
-class RoutetableGrey(_Network):
-    _icon = "routetable-grey.png"
+class NATgatewayWhite(_Network):
+    _icon = "natgateway-white.png"
+
+
+class NATgateway(_Network):
+    _icon = "natgateway.png"
+
+
+class RoutetableWhite(_Network):
+    _icon = "routetable-white.png"
 
 
 class Routetable(_Network):
     _icon = "routetable.png"
 
 
-class SecuritylistsGrey(_Network):
-    _icon = "securitylists-grey.png"
+class SecuritylistsWhite(_Network):
+    _icon = "securitylists-white.png"
 
 
 class Securitylists(_Network):
     _icon = "securitylists.png"
 
 
-class ServiceGatewayGrey(_Network):
-    _icon = "service-gateway-grey.png"
+class ServiceGatewayWhite(_Network):
+    _icon = "service-gateway-white.png"
 
 
 class ServiceGateway(_Network):
     _icon = "service-gateway.png"
 
 
-class VcloudnetworkGrey(_Network):
-    _icon = "vcloudnetwork-grey.png"
+class VcloudnetworkWhite(_Network):
+    _icon = "vcloudnetwork-white.png"
 
 
 class Vcloudnetwork(_Network):

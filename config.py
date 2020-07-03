@@ -63,7 +63,7 @@ UPPER_WORDS = {
         "api", "cm", "ccm", "crb", "crd", "ds", "etcd", "hpa", "k8s", "ns", "psp", "pv", "pvc", "rb", "rs",
         "sa", "sc", "sts", "svc",
     ),
-    "oci": ("oci",),
+    "oci": ("oci", "oke", "ocir"),
     "elastic": ("apm", "siem", "ece", "eck"),
     "generic": ("vpn", "ios", "xen"),
     "openstack": ("rpm", "loci", "nfv", "ec2api"),
@@ -362,13 +362,19 @@ ALIASES = {
     "oci": {
         "compute": {
             "Vm": "VirtualMachine",
-            "VmGrey": "VirtualMachineGrey",
+            "VmWhite": "VirtualMachineWhite",
             "Bm": "BareMetal",
-            "BmGrey": "BareMetalGrey",
+            "BmWhite": "BareMetalWhite",
+            "OCIR": "OCIRegistry",
+            "OCIRWhite": "OCIRegistryWhite",
+            "OKE": "ContainerEngine",
+            "OKEWhite": "ContainerEngineWhite",
         },
         "database": {
+            "AutonomousDatabase": "ADB",
+            "AutonomousDatabaseWhite": "ADBWhite",
             "Databaseservice": "DBService",
-            "DatabaseserviceGrey": "DBServiceGrey",
+            "DatabaseserviceWhite": "DBServiceWhite",
         }
     },
     "programming": {

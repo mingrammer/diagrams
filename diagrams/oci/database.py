@@ -8,8 +8,16 @@ class _Database(_OCI):
     _icon_dir = "resources/oci/database"
 
 
-class DatabaseserviceGrey(_Database):
-    _icon = "databaseservice-grey.png"
+class AutonomousDatabaseWhite(_Database):
+    _icon = "autonomous-white.png"
+
+
+class AutonomousDatabase(_Database):
+    _icon = "autonomous.png"
+
+
+class DatabaseserviceWhite(_Database):
+    _icon = "databaseservice-white.png"
 
 
 class Databaseservice(_Database):
@@ -18,5 +26,7 @@ class Databaseservice(_Database):
 
 # Aliases
 
+ADB = AutonomousDatabase
+ADBWhite = AutonomousDatabaseWhite
 DBService = Databaseservice
-DBServiceGrey = DatabaseserviceGrey
+DBServiceWhite = DatabaseserviceWhite
