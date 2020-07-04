@@ -26,6 +26,11 @@ Node classes list of saas provider.
 
 - **diagrams.saas.identity.Auth0**
 
+## saas.logging
+
+- **diagrams.saas.logging.Datadog**, **DataDog** (alias)
+- **diagrams.saas.logging.Papertrail**
+
 ## saas.media
 
 - **diagrams.saas.media.Cloudinary**
