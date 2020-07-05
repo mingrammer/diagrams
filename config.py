@@ -116,7 +116,6 @@ ALIASES = {
         },
         "logging": {
             "Fluentbit": "FluentBit",
-            "Logstash": "LogStash",
         },
         "network": {
             "Etcd": "ETCD",

@@ -16,10 +16,6 @@ class Fluentd(_Logging):
     _icon = "fluentd.png"
 
 
-class Logstash(_Logging):
-    _icon = "logstash.png"
-
-
 class Loki(_Logging):
     _icon = "loki.png"
 
@@ -27,4 +23,3 @@ class Loki(_Logging):
 # Aliases
 
 FluentBit = Fluentbit
-LogStash = Logstash
