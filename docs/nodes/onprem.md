@@ -98,7 +98,10 @@ Node classes list of onprem provider.
 
 - **diagrams.onprem.logging.Fluentbit**, **FluentBit** (alias)
 - **diagrams.onprem.logging.Fluentd**
+- **diagrams.onprem.logging.Graylog**
 - **diagrams.onprem.logging.Loki**
+- **diagrams.onprem.logging.Rsyslog**, **RSyslog** (alias)
+- **diagrams.onprem.logging.SyslogNg**
 
 ## onprem.mlops
 

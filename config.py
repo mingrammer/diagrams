@@ -116,6 +116,7 @@ ALIASES = {
         },
         "logging": {
             "Fluentbit": "FluentBit",
+            "Rsyslog": "RSyslog",
         },
         "network": {
             "Etcd": "ETCD",
@@ -384,7 +385,11 @@ ALIASES = {
             "Typescript": "TypeScript"
         },
     },
-    "saas": {},
+    "saas": {
+        "logging": {
+            "Datadog": "DataDog",
+        }
+    },
     "elastic": {
         "elasticsearch": {
             "Logstash": "LogStash",
