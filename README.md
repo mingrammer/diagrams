@@ -74,15 +74,6 @@ To contribute to diagram, check out [contribution guidelines](CONTRIBUTING.md).
 
 [Cloudiscovery](https://github.com/Cloud-Architects/cloudiscovery) helps you to analyze resources in your cloud (AWS/GCP/Azure/Alibaba/IBM) account. It allows you to create a diagram of analyzed cloud resource map based on this Diagrams library, so you can draw the your existing cloud infratructure with Cloudicovery.
 
-## Breaking Changes
-
-- version 0.16.0:
-  - The following import changes:
-    - from diagrams.onprem.logging import Logstash is now from diagrams.elastic.elasticsearch import Logstash
-    - from diagrams.onprem.monitoring import Kibana is now from diagrams.elastic.elasticsearch import Kibana
-    - from diagrams.onprem.search import Elasticsearch(*) is now from diagrams.elastic.elasticsearch import Elasticsearch
-    *The previous icon was the company icon not the elasticsearch product, for the company icon: from diagrams.elastic.saas import Elastic
-
 ## License
 
 [MIT](LICENSE)
