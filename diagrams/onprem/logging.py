@@ -20,10 +20,6 @@ class Graylog(_Logging):
     _icon = "graylog.png"
 
 
-class Logstash(_Logging):
-    _icon = "logstash.png"
-
-
 class Loki(_Logging):
     _icon = "loki.png"
 
@@ -39,5 +35,4 @@ class SyslogNg(_Logging):
 # Aliases
 
 FluentBit = Fluentbit
-LogStash = Logstash
 RSyslog = Rsyslog

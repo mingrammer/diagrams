@@ -99,7 +99,6 @@ Node classes list of onprem provider.
 - **diagrams.onprem.logging.Fluentbit**, **FluentBit** (alias)
 - **diagrams.onprem.logging.Fluentd**
 - **diagrams.onprem.logging.Graylog**
-- **diagrams.onprem.logging.Logstash**, **LogStash** (alias)
 - **diagrams.onprem.logging.Loki**
 - **diagrams.onprem.logging.Rsyslog**, **RSyslog** (alias)
 - **diagrams.onprem.logging.SyslogNg**
@@ -112,7 +111,6 @@ Node classes list of onprem provider.
 
 - **diagrams.onprem.monitoring.Datadog**
 - **diagrams.onprem.monitoring.Grafana**
-- **diagrams.onprem.monitoring.Kibana**
 - **diagrams.onprem.monitoring.Prometheus**
 - **diagrams.onprem.monitoring.Sentry**
 - **diagrams.onprem.monitoring.Splunk**
@@ -148,7 +146,6 @@ Node classes list of onprem provider.
 
 ## onprem.search
 
-- **diagrams.onprem.search.Elasticsearch**
 - **diagrams.onprem.search.Solr**
 
 ## onprem.security

@@ -38,6 +38,11 @@ Node classes list of elastic provider.
 - **diagrams.elastic.orchestration.ECE**
 - **diagrams.elastic.orchestration.ECK**
 
+## elastic.saas
+
+- **diagrams.elastic.saas.Cloud**
+- **diagrams.elastic.saas.Elastic**
+
 ## elastic.security
 
 - **diagrams.elastic.security.Endpoint**
