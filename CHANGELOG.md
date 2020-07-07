@@ -12,28 +12,22 @@
 
 ### Added
 
-- Add more logging
-- Updated OCI icon set (2020)
-- add cloudinary logo in media management category
-- Docker local development setup
-- Add Openstack as cloud provider
+- Docker local development setup [#210] https://github.com/mingrammer/diagrams/pull/210
+- Support OpenStack [#211] https://github.com/mingrammer/diagrams/pull/211
 
 ### Fixed
 
-- fix: typo in comment
+-
 
 ## 0.15.0
 
 ### Added
 
-- feat(option): add curvestyle option (ortho or curved)
-- New Auth0, Cloudflare, Recombee Nodes
-- check for black linter in autogen.sh
-- Update readme
-- docs(readme): update who use it
-- docs(readme): add Cloudiscovery in "who use it" list
+- Support curvestyle option (ortho or curved)
+- Support Auth0, Cloudflare and Recombee: [#209] https://github.com/mingrammer/diagrams/pull/209
+
 
 ### Fixed
 
-- fix(edge): misaligned label text position
-- Fix typo for PersistentVolume
+- Fix typo for PersistentVolume: [#207] https://github.com/mingrammer/diagrams/pull/207
+- Fix misaligned label text position
