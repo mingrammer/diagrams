@@ -18,4 +18,4 @@ WORKDIR /usr/src/diagrams
 COPY . .
 
 # install python requirements.
-RUN pip install black graphviz
+RUN pip install black graphviz jinja2
