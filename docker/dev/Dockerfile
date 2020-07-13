@@ -8,6 +8,11 @@ RUN apk update && apk add --no-cache \
 # install go package.
 RUN go get github.com/mingrammer/round
 
+# install fonts
+RUN apk --no-cache add msttcorefonts-installer fontconfig && \
+    update-ms-fonts && \
+    fc-cache -f
+
 # add go bin to path.
 ENV PATH "$PATH:/root/go/bin"
 
