@@ -13,6 +13,10 @@ Node classes list of generic provider.
 
 - **diagrams.generic.compute.Rack**
 
+## generic.database
+
+- **diagrams.generic.database.SQL**
+
 ## generic.device
 
 - **diagrams.generic.device.Mobile**

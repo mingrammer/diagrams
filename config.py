@@ -65,7 +65,7 @@ UPPER_WORDS = {
     ),
     "oci": ("oci", "ocid", "oke", "ocir", "ddos", "waf", "bm", "vm", "cdn", "vpn", "dns", "nat", "dms", "api", "id"),
     "elastic": ("apm", "siem", "ece", "eck"),
-    "generic": ("vpn", "ios", "xen"),
+    "generic": ("vpn", "ios", "xen", "sql"),
     "openstack": ("rpm", "loci", "nfv", "ec2api"),
 }
 
