@@ -8,35 +8,19 @@ class _Security(_OCI):
     _icon_dir = "resources/oci/security"
 
 
-class AuditWhite(_Security):
-    _icon = "audit-white.png"
-
-
-class Audit(_Security):
-    _icon = "audit.png"
-
-
 class CloudGuardWhite(_Security):
-    _icon = "cloudguard-white.png"
+    _icon = "cloud-guard-white.png"
 
 
 class CloudGuard(_Security):
-    _icon = "cloudguard.png"
+    _icon = "cloud-guard.png"
 
 
-class CompartmentsWhite(_Security):
-    _icon = "compartments-white.png"
-
-
-class Compartments(_Security):
-    _icon = "compartments.png"
-
-
-class DdosWhite(_Security):
+class DDOSWhite(_Security):
     _icon = "ddos-white.png"
 
 
-class Ddos(_Security):
+class DDOS(_Security):
     _icon = "ddos.png"
 
 
@@ -48,52 +32,28 @@ class Encryption(_Security):
     _icon = "encryption.png"
 
 
-class GroupsWhite(_Security):
-    _icon = "groups-white.png"
-
-
-class Groups(_Security):
-    _icon = "groups.png"
-
-
-class IdAccessWhite(_Security):
+class IDAccessWhite(_Security):
     _icon = "id-access-white.png"
 
 
-class IdAccess(_Security):
+class IDAccess(_Security):
     _icon = "id-access.png"
 
 
-class KeymgmtWhite(_Security):
-    _icon = "keymgmt-white.png"
+class KeyManagementWhite(_Security):
+    _icon = "key-management-white.png"
 
 
-class Keymgmt(_Security):
-    _icon = "keymgmt.png"
+class KeyManagement(_Security):
+    _icon = "key-management.png"
 
 
-class OcidWhite(_Security):
-    _icon = "ocid-white.png"
+class MaxSecurityZoneWhite(_Security):
+    _icon = "max-security-zone-white.png"
 
 
-class Ocid(_Security):
-    _icon = "ocid.png"
-
-
-class PoliciesWhite(_Security):
-    _icon = "policies-white.png"
-
-
-class Policies(_Security):
-    _icon = "policies.png"
-
-
-class TaggingWhite(_Security):
-    _icon = "tagging-white.png"
-
-
-class Tagging(_Security):
-    _icon = "tagging.png"
+class MaxSecurityZone(_Security):
+    _icon = "max-security-zone.png"
 
 
 class VaultWhite(_Security):
@@ -102,6 +62,14 @@ class VaultWhite(_Security):
 
 class Vault(_Security):
     _icon = "vault.png"
+
+
+class WAFWhite(_Security):
+    _icon = "waf-white.png"
+
+
+class WAF(_Security):
+    _icon = "waf.png"
 
 
 # Aliases

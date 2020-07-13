@@ -16,35 +16,67 @@ class Backbone(_Connectivity):
     _icon = "backbone.png"
 
 
-class CustomerdatacenterWhite(_Connectivity):
-    _icon = "customerdatacenter-white.png"
+class CDNWhite(_Connectivity):
+    _icon = "cdn-white.png"
 
 
-class Customerdatacenter(_Connectivity):
-    _icon = "customerdatacenter.png"
+class CDN(_Connectivity):
+    _icon = "cdn.png"
 
 
-class CustomerpremisesequipWhite(_Connectivity):
-    _icon = "customerpremisesequip-white.png"
+class CustomerDatacenter(_Connectivity):
+    _icon = "customer-datacenter.png"
 
 
-class Customerpremisesequip(_Connectivity):
-    _icon = "customerpremisesequip.png"
+class CustomerDatacntrWhite(_Connectivity):
+    _icon = "customer-datacntr-white.png"
 
 
-class FastconnectWhite(_Connectivity):
-    _icon = "fastconnect-white.png"
+class CustomerPremiseWhite(_Connectivity):
+    _icon = "customer-premise-white.png"
 
 
-class Fastconnect(_Connectivity):
-    _icon = "fastconnect.png"
+class CustomerPremise(_Connectivity):
+    _icon = "customer-premise.png"
 
 
-class VpnWhite(_Connectivity):
+class DisconnectedRegionsWhite(_Connectivity):
+    _icon = "disconnected-regions-white.png"
+
+
+class DisconnectedRegions(_Connectivity):
+    _icon = "disconnected-regions.png"
+
+
+class DNSWhite(_Connectivity):
+    _icon = "dns-white.png"
+
+
+class DNS(_Connectivity):
+    _icon = "dns.png"
+
+
+class FastConnectWhite(_Connectivity):
+    _icon = "fast-connect-white.png"
+
+
+class FastConnect(_Connectivity):
+    _icon = "fast-connect.png"
+
+
+class NATGatewayWhite(_Connectivity):
+    _icon = "nat-gateway-white.png"
+
+
+class NATGateway(_Connectivity):
+    _icon = "nat-gateway.png"
+
+
+class VPNWhite(_Connectivity):
     _icon = "vpn-white.png"
 
 
-class Vpn(_Connectivity):
+class VPN(_Connectivity):
     _icon = "vpn.png"
 
 

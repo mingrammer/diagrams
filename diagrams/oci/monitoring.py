@@ -16,28 +16,28 @@ class Alarm(_Monitoring):
     _icon = "alarm.png"
 
 
-class EventWhite(_Monitoring):
-    _icon = "event-white.png"
+class EmailWhite(_Monitoring):
+    _icon = "email-white.png"
 
 
-class Event(_Monitoring):
-    _icon = "event.png"
+class Email(_Monitoring):
+    _icon = "email.png"
 
 
-class HealthcheckWhite(_Monitoring):
-    _icon = "healthcheck-white.png"
+class EventsWhite(_Monitoring):
+    _icon = "events-white.png"
 
 
-class Healthcheck(_Monitoring):
-    _icon = "healthcheck.png"
+class Events(_Monitoring):
+    _icon = "events.png"
 
 
-class LoggingWhite(_Monitoring):
-    _icon = "logging-white.png"
+class HealthCheckWhite(_Monitoring):
+    _icon = "health-check-white.png"
 
 
-class Logging(_Monitoring):
-    _icon = "logging.png"
+class HealthCheck(_Monitoring):
+    _icon = "health-check.png"
 
 
 class NotificationsWhite(_Monitoring):
@@ -48,12 +48,12 @@ class Notifications(_Monitoring):
     _icon = "notifications.png"
 
 
-class QueuingWhite(_Monitoring):
-    _icon = "queuing-white.png"
+class QueueWhite(_Monitoring):
+    _icon = "queue-white.png"
 
 
-class Queuing(_Monitoring):
-    _icon = "queuing.png"
+class Queue(_Monitoring):
+    _icon = "queue.png"
 
 
 class SearchWhite(_Monitoring):
@@ -62,14 +62,6 @@ class SearchWhite(_Monitoring):
 
 class Search(_Monitoring):
     _icon = "search.png"
-
-
-class StreamingWhite(_Monitoring):
-    _icon = "streaming-white.png"
-
-
-class Streaming(_Monitoring):
-    _icon = "streaming.png"
 
 
 class TelemetryWhite(_Monitoring):

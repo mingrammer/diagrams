@@ -84,8 +84,8 @@ def cleaner_alibabacloud(f):
 
 
 def cleaner_oci(f):
+    f = f.replace(" ", "-")
     f = f.replace("_", "-")
-    f = f.replace("-red", "")
     for p in cfg.FILE_PREFIXES["oci"]:
         if f.startswith(p):
             f = f[len(p) :]

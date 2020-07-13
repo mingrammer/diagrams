@@ -8,19 +8,19 @@ class _Compute(_OCI):
     _icon_dir = "resources/oci/compute"
 
 
-class AutoScaleWhite(_Compute):
+class AutoscaleWhite(_Compute):
     _icon = "autoscale-white.png"
 
 
-class AutoScale(_Compute):
+class Autoscale(_Compute):
     _icon = "autoscale.png"
 
 
-class BmWhite(_Compute):
+class BMWhite(_Compute):
     _icon = "bm-white.png"
 
 
-class Bm(_Compute):
+class BM(_Compute):
     _icon = "bm.png"
 
 
@@ -41,34 +41,34 @@ class Functions(_Compute):
 
 
 class InstancePoolsWhite(_Compute):
-    _icon = "instancepools.png"
+    _icon = "instance-pools-white.png"
 
 
 class InstancePools(_Compute):
-    _icon = "instancepools.png"
+    _icon = "instance-pools.png"
 
 
 class OCIRWhite(_Compute):
-    _icon = "ociregistry-white.png"
+    _icon = "ocir-white.png"
 
 
 class OCIR(_Compute):
-    _icon = "ociregistry.png"
+    _icon = "ocir.png"
 
 
 class OKEWhite(_Compute):
-    _icon = "containerengine-white.png"
+    _icon = "oke-white.png"
 
 
 class OKE(_Compute):
-    _icon = "containerengine.png"
+    _icon = "oke.png"
 
 
-class VmWhite(_Compute):
+class VMWhite(_Compute):
     _icon = "vm-white.png"
 
 
-class Vm(_Compute):
+class VM(_Compute):
     _icon = "vm.png"
 
 
@@ -78,3 +78,7 @@ VirtualMachine = Vm
 VirtualMachineWhite = VmWhite
 BareMetal = Bm
 BareMetalWhite = BmWhite
+OCIRegistry = OCIR
+OCIRegistryWhite = OCIRWhite
+ContainerEngine = OKE
+ContainerEngineWhite = OKEWhite

@@ -24,44 +24,36 @@ class Firewall(_Network):
     _icon = "firewall.png"
 
 
-class InternetgatewayWhite(_Network):
-    _icon = "internetgateway-white.png"
+class InternetGatewayWhite(_Network):
+    _icon = "internet-gateway-white.png"
 
 
-class Internetgateway(_Network):
-    _icon = "internetgateway.png"
+class InternetGateway(_Network):
+    _icon = "internet-gateway.png"
 
 
-class LoadbalanceWhite(_Network):
-    _icon = "loadbalance-white.png"
+class LoadBalancerWhite(_Network):
+    _icon = "load-balancer-white.png"
 
 
-class Loadbalance(_Network):
-    _icon = "loadbalance.png"
+class LoadBalancer(_Network):
+    _icon = "load-balancer.png"
 
 
-class NATgatewayWhite(_Network):
-    _icon = "natgateway-white.png"
+class RouteTableWhite(_Network):
+    _icon = "route-table-white.png"
 
 
-class NATgateway(_Network):
-    _icon = "natgateway.png"
+class RouteTable(_Network):
+    _icon = "route-table.png"
 
 
-class RoutetableWhite(_Network):
-    _icon = "routetable-white.png"
+class SecurityListsWhite(_Network):
+    _icon = "security-lists-white.png"
 
 
-class Routetable(_Network):
-    _icon = "routetable.png"
-
-
-class SecuritylistsWhite(_Network):
-    _icon = "securitylists-white.png"
-
-
-class Securitylists(_Network):
-    _icon = "securitylists.png"
+class SecurityLists(_Network):
+    _icon = "security-lists.png"
 
 
 class ServiceGatewayWhite(_Network):
@@ -72,12 +64,12 @@ class ServiceGateway(_Network):
     _icon = "service-gateway.png"
 
 
-class VcloudnetworkWhite(_Network):
-    _icon = "vcloudnetwork-white.png"
+class VcnWhite(_Network):
+    _icon = "vcn-white.png"
 
 
-class Vcloudnetwork(_Network):
-    _icon = "vcloudnetwork.png"
+class Vcn(_Network):
+    _icon = "vcn.png"
 
 
 # Aliases
