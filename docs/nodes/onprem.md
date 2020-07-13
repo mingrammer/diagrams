@@ -60,6 +60,7 @@ Node classes list of onprem provider.
 - **diagrams.onprem.database.Couchbase**
 - **diagrams.onprem.database.Couchdb**, **CouchDB** (alias)
 - **diagrams.onprem.database.Dgraph**
+- **diagrams.onprem.database.Druid**
 - **diagrams.onprem.database.Hbase**, **HBase** (alias)
 - **diagrams.onprem.database.Influxdb**, **InfluxDB** (alias)
 - **diagrams.onprem.database.Janusgraph**, **JanusGraph** (alias)
