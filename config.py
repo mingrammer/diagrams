@@ -22,7 +22,7 @@ PROVIDERS = (
 CMD_ROUND = "round"
 CMD_ROUND_OPTS = ("-w",)
 CMD_SVG2PNG = "inkscape"
-CMD_SVG2PNG_OPTS = ("-z", "-w", "256", "-h", "256", "--export-type", "png")
+CMD_SVG2PNG_OPTS = ("-w", "256", "-h", "256", "--export-type", "png")
 CMD_SVG2PNG_IM = "convert"
 CMD_SVG2PNG_IM_OPTS = ("-shave", "25%x25%", "-resize", "256x256!")
 
