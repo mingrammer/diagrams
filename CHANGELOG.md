@@ -4,11 +4,17 @@
 
 ### Breaking Changes
 
-- The following import changes:
-  - `from diagrams.onprem.logging import Logstash` is now `from diagrams.elastic.elasticsearch import Logstash`
-  - `from diagrams.onprem.monitoring import Kibana` is now `from diagrams.elastic.elasticsearch import Kibana`
-  - `from diagrams.onprem.search import Elasticsearch(*)` is now `from diagrams.elastic.elasticsearch import Elasticsearch`
-  - The previous icon was the company icon not the elasticsearch product, for the company icon: `from diagrams.elastic.saas import Elastic`
+The following import changes:
+
+| Old import path                                    | New import path                                            |
+| -------------------------------------------------- | ---------------------------------------------------------- |
+| `from diagrams.onprem.logging import Logstash`     | `from diagrams.elastic.elasticsearch import Logstash`      |
+| `from diagrams.onprem.monitoring import Kibana`    | `from diagrams.elastic.elasticsearch import Kibana`        |
+| `from diagrams.onprem.search import Elasticsearch` | `from diagrams.elastic.elasticsearch import Elasticsearch` |
+
+> The previous icon was the company icon, not the elasticsearch product.
+>
+> For the company icon: `from diagrams.elastic.saas import Elastic`
 
 ### Added
 
@@ -22,6 +28,7 @@
 - Clean GCP resources: [#228](https://github.com/mingrammer/diagrams/pull/228)
 - Support DataDog, PaperTrail, Syslog, Rsyslog and Graylog: [#222](https://github.com/mingrammer/diagrams/pull/222)
 - Update all OCI icon set (bark and white): [#205](https://github.com/mingrammer/diagrams/pull/205)
+
 
 ## 0.15.0
 
