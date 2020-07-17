@@ -40,14 +40,6 @@ class Loadbalance(_Network):
     _icon = "loadbalance.png"
 
 
-class NATgatewayWhite(_Network):
-    _icon = "natgateway-white.png"
-
-
-class NATgateway(_Network):
-    _icon = "natgateway.png"
-
-
 class RoutetableWhite(_Network):
     _icon = "routetable-white.png"
 

@@ -16,11 +16,11 @@ class Audit(_Security):
     _icon = "audit.png"
 
 
-class CloudGuardWhite(_Security):
+class CloudguardWhite(_Security):
     _icon = "cloudguard-white.png"
 
 
-class CloudGuard(_Security):
+class Cloudguard(_Security):
     _icon = "cloudguard.png"
 
 

@@ -112,6 +112,13 @@ Node classes list of onprem provider.
 - **diagrams.onprem.monitoring.Datadog**
 - **diagrams.onprem.monitoring.Grafana**
 - **diagrams.onprem.monitoring.Prometheus**
+- **diagrams.onprem.monitoring.RsaBlack**
+- **diagrams.onprem.monitoring.RsaEndpoint**
+- **diagrams.onprem.monitoring.RsaLogs**
+- **diagrams.onprem.monitoring.RsaNetwitness**
+- **diagrams.onprem.monitoring.RsaPackets**
+- **diagrams.onprem.monitoring.RsaPlatform**
+- **diagrams.onprem.monitoring.RsaRed**
 - **diagrams.onprem.monitoring.Sentry**
 - **diagrams.onprem.monitoring.Splunk**
 - **diagrams.onprem.monitoring.Thanos**
