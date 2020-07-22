@@ -6,15 +6,104 @@
 
 The following import changes:
 
-| Old import path                                    | New import path                                            |
-| -------------------------------------------------- | ---------------------------------------------------------- |
-| `from diagrams.onprem.logging import Logstash`     | `from diagrams.elastic.elasticsearch import Logstash`      |
-| `from diagrams.onprem.monitoring import Kibana`    | `from diagrams.elastic.elasticsearch import Kibana`        |
-| `from diagrams.onprem.search import Elasticsearch` | `from diagrams.elastic.elasticsearch import Elasticsearch` |
+#### Elastic
 
-> The previous icon was the company icon, not the elasticsearch product.
+| Old import path                                                    | New import path                                               |
+| -------------------------------------------------------------------| --------------------------------------------------------------|
+| `from diagrams.onprem.logging import Logstash`                     | `from diagrams.elastic.elasticsearch import Logstash`         |
+| `from diagrams.onprem.monitoring import Kibana`                    | `from diagrams.elastic.elasticsearch import Kibana`           |
+| `from diagrams.onprem.search import Elasticsearch`                 | `from diagrams.elastic.elasticsearch import Elasticsearch`    |
+
+> About `from diagrams.onprem.search import Elasticsearch` the previous icon was the company icon, not the elasticsearch product.
 >
-> For the company icon: `from diagrams.elastic.saas import Elastic`
+> For the company icon use: `from diagrams.elastic.saas import Elastic`
+
+#### OCI
+
+| Old import path                                                    | New import path                                               |
+| -------------------------------------------------------------------| --------------------------------------------------------------|
+| `from diagrams.oci.compute import AutoScale`                       | `from diagrams.oci.compute import Autoscale`                  |
+| `from diagrams.oci.compute import AutoScaleWhite`                  | `from diagrams.oci.compute import AutoscaleWhite`             |
+| `from diagrams.oci.compute import Bm`                              | `from diagrams.oci.compute import BM`                         |
+| `from diagrams.oci.compute import BmWhite`                         | `from diagrams.oci.compute import BMWhite`                    |
+| `from diagrams.oci.compute import Vm`                              | `from diagrams.oci.compute import VM`                         |
+| `from diagrams.oci.compute import VmWhite`                         | `from diagrams.oci.compute import VMWhite`                    |
+| `from diagrams.oci.connectivity import Customerdatacenter`         | `from diagrams.oci.connectivity import CustomerDatacenter`    |
+| `from diagrams.oci.connectivity import CustomerdatacenterWhite`    | `from diagrams.oci.connectivity import CustomerDatacntrWhite` |
+| `from diagrams.oci.connectivity import Customerpremisesequip`      | `from diagrams.oci.connectivity import CustomerPremise`       |
+| `from diagrams.oci.connectivity import CustomerpremisesequipWhite` | `from diagrams.oci.connectivity import CustomerPremiseWhite`  |
+| `from diagrams.oci.connectivity import Fastconnect`                | `from diagrams.oci.connectivity import FastConnect`           |
+| `from diagrams.oci.connectivity import FastconnectWhite`           | `from diagrams.oci.connectivity import FastConnectWhite`      |
+| `from diagrams.oci.connectivity import Vpn`                        | `from diagrams.oci.connectivity import VPN`                   |
+| `from diagrams.oci.connectivity import VpnWhite`                   | `from diagrams.oci.connectivity import VPNWhite`              |
+| `from diagrams.oci.database import AutonomousDatabase`             | `from diagrams.oci.database import Autonomous`                |
+| `from diagrams.oci.database import AutonomousDatabaseWhite`        | `from diagrams.oci.database import AutonomousWhite`           |
+| `from diagrams.oci.database import Databaseservice`                | `from diagrams.oci.database import DatabaseService`           |
+| `from diagrams.oci.database import DatabaseserviceWhite`           | `from diagrams.oci.database import DatabaseServiceWhite`      |
+| `from diagrams.oci.devops import Apigateway`                       | `from diagrams.oci.devops import APIGateway`                  |
+| `from diagrams.oci.devops import ApigatewayWhite`                  | `from diagrams.oci.devops import APIGatewayWhite`             |
+| `from diagrams.oci.devops import Apiservice`                       | `from diagrams.oci.devops import APIService`                  |
+| `from diagrams.oci.devops import ApiserviceWhite`                  | `from diagrams.oci.devops import APIServiceWhite`             |
+| `from diagrams.oci.devops import Resourcemgmt`                     | `from diagrams.oci.devops import ResourceMgmt`                |
+| `from diagrams.oci.devops import ResourcemgmtWhite`                | `from diagrams.oci.devops import ResourceMgmtWhite`           |
+| `from diagrams.oci.edge import Cdn`                                | `from diagrams.oci.connectivity import CDN`                   |
+| `from diagrams.oci.edge import CdnWhite`                           | `from diagrams.oci.connectivity import CDNWhite`              |
+| `from diagrams.oci.edge import Dns`                                | `from diagrams.oci.connectivity import DNS`                   |
+| `from diagrams.oci.edge import DnsWhite`                           | `from diagrams.oci.connectivity import DNSWhite`              |
+| `from diagrams.oci.edge import Emaildelivery`                      | `from diagrams.oci.monitoring import Email`                   |
+| `from diagrams.oci.edge import EmaildeliveryWhite`                 | `from diagrams.oci.monitoring import EmailWhite`              |
+| `from diagrams.oci.edge import Waf`                                | `from diagrams.oci.security import WAF`                       |
+| `from diagrams.oci.edge import WafWhite`                           | `from diagrams.oci.security import WAFWhite`                  |
+| `from diagrams.oci.monitoring import Event`                        | `from diagrams.oci.monitoring import Events`                  |
+| `from diagrams.oci.monitoring import EventWhite`                   | `from diagrams.oci.monitoring import EventsWhite`             |
+| `from diagrams.oci.monitoring import Healthcheck`                  | `from diagrams.oci.monitoring import HealthCheck`             |
+| `from diagrams.oci.monitoring import HealthcheckWhite`             | `from diagrams.oci.monitoring import HealthCheckWhite`        |
+| `from diagrams.oci.monitoring import Logging`                      | `from diagrams.oci.governance import Logging`                 |
+| `from diagrams.oci.monitoring import LoggingWhite`                 | `from diagrams.oci.governance import LoggingWhite`            |
+| `from diagrams.oci.monitoring import Queuing`                      | `from diagrams.oci.monitoring import Queue`                   |
+| `from diagrams.oci.monitoring import QueuingWhite`                 | `from diagrams.oci.monitoring import QueueWhite`              |
+| `from diagrams.oci.network import Internetgateway`                 | `from diagrams.oci.network import InternetGateway`            |
+| `from diagrams.oci.network import InternetgatewayWhite`            | `from diagrams.oci.network import InternetGatewayWhite`       |
+| `from diagrams.oci.network import Loadbalance`                     | `from diagrams.oci.network import LoadBalancer`               |
+| `from diagrams.oci.network import LoadbalanceWhite`                | `from diagrams.oci.network import LoadBalancerWhite`          |
+| `from diagrams.oci.network import NATgateway`                      | `from diagrams.oci.connectivity import NATGateway`            |
+| `from diagrams.oci.network import NATgatewayWhite`                 | `from diagrams.oci.connectivity import NATGatewayWhite`       |
+| `from diagrams.oci.network import Routetable`                      | `from diagrams.oci.network import RouteTable`                 |
+| `from diagrams.oci.network import RoutetableWhite`                 | `from diagrams.oci.network import RouteTableWhite`            |
+| `from diagrams.oci.network import Securitylists`                   | `from diagrams.oci.network import SecurityLists`              |
+| `from diagrams.oci.network import SecuritylistsWhite`              | `from diagrams.oci.network import SecurityListsWhite`         |
+| `from diagrams.oci.network import Vcloudnetwork`                   | `from diagrams.oci.network import Vcn`                        |
+| `from diagrams.oci.network import VcloudnetworkWhite`              | `from diagrams.oci.network import VcnWhite`                   |
+| `from diagrams.oci.security import Audit`                          | `from diagrams.oci.governance import Audit`                   |
+| `from diagrams.oci.security import AuditWhite`                     | `from diagrams.oci.governance import AuditWhite`              |
+| `from diagrams.oci.security import Compartments`                   | `from diagrams.oci.governance import Compartments`            |
+| `from diagrams.oci.security import CompartmentsWhite`              | `from diagrams.oci.governance import CompartmentsWhite`       |
+| `from diagrams.oci.security import Ddos`                           | `from diagrams.oci.security import DDOS`                      |
+| `from diagrams.oci.security import DdosWhite`                      | `from diagrams.oci.security import DDOSWhite`                 |
+| `from diagrams.oci.security import Groups`                         | `from diagrams.oci.governance import Groups`                  |
+| `from diagrams.oci.security import GroupsWhite`                    | `from diagrams.oci.governance import GroupsWhite`             |
+| `from diagrams.oci.security import IdAccess`                       | `from diagrams.oci.security import IDAccess`                  |
+| `from diagrams.oci.security import IdAccessWhite`                  | `from diagrams.oci.security import IDAccessWhite`             |
+| `from diagrams.oci.security import Keymgmt`                        | `from diagrams.oci.security import KeyManagement`             |
+| `from diagrams.oci.security import KeymgmtWhite`                   | `from diagrams.oci.security import KeyManagementWhite`        |
+| `from diagrams.oci.security import Ocid`                           | `from diagrams.oci.governance import OCID`                    |
+| `from diagrams.oci.security import OcidWhite`                      | `from diagrams.oci.governance import OCIDWhite`               |
+| `from diagrams.oci.security import Policies`                       | `from diagrams.oci.governance import Policies`                |
+| `from diagrams.oci.security import PoliciesWhite`                  | `from diagrams.oci.governance import PoliciesWhite`           |
+| `from diagrams.oci.security import Tagging`                        | `from diagrams.oci.governance import Tagging`                 |
+| `from diagrams.oci.security import TaggingWhite`                   | `from diagrams.oci.governance import TaggingWhite`            |
+| `from diagrams.oci.storage import Backuprestore`                   | `from diagrams.oci.storage import BackupRestore`              |
+| `from diagrams.oci.storage import BackuprestoreWhite`              | `from diagrams.oci.storage import BackupRestoreWhite`         |
+| `from diagrams.oci.storage import Blockstorage`                    | `from diagrams.oci.storage import BlockStorage`               |
+| `from diagrams.oci.storage import BlockstorageWhite`               | `from diagrams.oci.storage import BlockStorageWhite`          |
+| `from diagrams.oci.storage import Datatransfer`                    | `from diagrams.oci.storage import DataTransfer`               |
+| `from diagrams.oci.storage import DatatransferWhite`               | `from diagrams.oci.storage import DataTransferWhite`          |
+| `from diagrams.oci.storage import Filestorage`                     | `from diagrams.oci.storage import FileStorage`                |
+| `from diagrams.oci.storage import FilestorageWhite`                | `from diagrams.oci.storage import FileStorageWhite`           |
+| `from diagrams.oci.storage import Objectstorage`                   | `from diagrams.oci.storage import ObjectStorage`              |
+| `from diagrams.oci.storage import ObjectstorageWhite`              | `from diagrams.oci.storage import ObjectStorageWhite`         |
+| `from diagrams.oci.storage import Storagegateway`                  | `from diagrams.oci.storage import StorageGateway`             |
+| `from diagrams.oci.storage import StoragegatewayWhite`             | `from diagrams.oci.storage import StorageGatewayWhite`        |
 
 ### Added
 
