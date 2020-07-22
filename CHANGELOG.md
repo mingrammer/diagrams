@@ -6,11 +6,21 @@
 
 The following import changes:
 
+#### Elastic
+
 | Old import path                                                    | New import path                                               |
 | -------------------------------------------------------------------| --------------------------------------------------------------|
 | `from diagrams.onprem.logging import Logstash`                     | `from diagrams.elastic.elasticsearch import Logstash`         |
 | `from diagrams.onprem.monitoring import Kibana`                    | `from diagrams.elastic.elasticsearch import Kibana`           |
 | `from diagrams.onprem.search import Elasticsearch`                 | `from diagrams.elastic.elasticsearch import Elasticsearch`    |
+
+> About `from diagrams.onprem.search import Elasticsearch` the previous icon was the company icon, not the elasticsearch product.
+>
+> For the company icon use: `from diagrams.elastic.saas import Elastic`
+
+#### OCI
+
+| Old import path                                                    | New import path                                               |
 | -------------------------------------------------------------------| --------------------------------------------------------------|
 | `from diagrams.oci.compute import AutoScale`                       | `from diagrams.oci.compute import Autoscale`                  |
 | `from diagrams.oci.compute import AutoScaleWhite`                  | `from diagrams.oci.compute import AutoscaleWhite`             |
@@ -94,10 +104,6 @@ The following import changes:
 | `from diagrams.oci.storage import ObjectstorageWhite`              | `from diagrams.oci.storage import ObjectStorageWhite`         |
 | `from diagrams.oci.storage import Storagegateway`                  | `from diagrams.oci.storage import StorageGateway`             |
 | `from diagrams.oci.storage import StoragegatewayWhite`             | `from diagrams.oci.storage import StorageGatewayWhite`        |
-
-> About `from diagrams.onprem.search import Elasticsearch` the previous icon was the company icon, not the elasticsearch product.
->
-> For the company icon: `from diagrams.elastic.saas import Elastic`
 
 ### Added
 
