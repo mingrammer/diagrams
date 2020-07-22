@@ -12,4 +12,8 @@ class Opsgenie(_Alerting):
     _icon = "opsgenie.png"
 
 
+class Pushover(_Alerting):
+    _icon = "pushover.png"
+
+
 # Aliases
