@@ -100,6 +100,13 @@ class DiagramTest(unittest.TestCase):
             Node("node1")
         self.assertTrue(os.path.exists(f"{self.name}.png"))
 
+    def test_empty_name(self):
+      """Check that providing an empty name don't crash, but save in a diagrams_image.xxx file."""
+      self.name = 'diagrams_image'
+      with Diagram(show=False):
+          Node("node1")
+      self.assertTrue(os.path.exists(f"{self.name}.png"))
+
 
 class ClusterTest(unittest.TestCase):
     def setUp(self):

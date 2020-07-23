@@ -101,8 +101,9 @@ class Diagram:
         :param edge_attr: Provide edge_attr dot config attributes.
         """
         self.name = name
-
-        if not filename:
+        if not name and not filename:
+          filename = "diagrams_image"
+        elif not filename:
             filename = "_".join(self.name.split()).lower()
         self.filename = filename
         self.dot = Digraph(self.name, filename=self.filename)
