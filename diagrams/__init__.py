@@ -102,7 +102,7 @@ class Diagram:
         """
         self.name = name
         if not name and not filename:
-          filename = "diagrams_file"
+          filename = "diagrams_image"
         elif not filename:
             filename = "_".join(self.name.split()).lower()
         self.filename = filename
