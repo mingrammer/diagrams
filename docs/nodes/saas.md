@@ -8,6 +8,7 @@ Node classes list of saas provider.
 ## saas.alerting
 
 - **diagrams.saas.alerting.Opsgenie**
+- **diagrams.saas.alerting.Pushover**
 
 ## saas.analytics
 
