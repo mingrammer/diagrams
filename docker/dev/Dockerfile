@@ -3,15 +3,17 @@ FROM python:rc-alpine3.12
 
 # install system dependencies.
 RUN apk update && apk add --no-cache \
-  gcc libc-dev g++ graphviz git bash go imagemagick inkscape
+  gcc libc-dev g++ graphviz git bash go imagemagick inkscape ttf-opensans curl fontconfig
 
 # install go package.
 RUN go get github.com/mingrammer/round
 
 # install fonts
-RUN apk --no-cache add msttcorefonts-installer fontconfig && \
-    update-ms-fonts && \
-    fc-cache -f
+RUN curl -O https://noto-website.storage.googleapis.com/pkgs/NotoSansCJKjp-hinted.zip \
+&& mkdir -p /usr/share/fonts/NotoSansCJKjp \
+&& unzip NotoSansCJKjp-hinted.zip -d /usr/share/fonts/NotoSansCJKjp/ \
+&& rm NotoSansCJKjp-hinted.zip \
+&& fc-cache -fv
 
 # add go bin to path.
 ENV PATH "$PATH:/root/go/bin"
