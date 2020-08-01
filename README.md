@@ -66,7 +66,7 @@ To contribute to diagram, check out [contribution guidelines](CONTRIBUTING.md).
 
 > Let me know if you are using diagrams! I'll add you in showcase page. (I'm working on it!) :)
 
-## Who use it?
+## Who uses it?
 
 [![GitPitch](https://gitpitch.com/gpimg/logo.png)](https://gitpitch.com/)
 
