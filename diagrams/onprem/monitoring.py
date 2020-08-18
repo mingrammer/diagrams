@@ -20,6 +20,10 @@ class Kibana(_Monitoring):
     _icon = "kibana.png"
 
 
+class PrometheusOperator(_Monitoring):
+    _icon = "prometheus-operator.png"
+
+
 class Prometheus(_Monitoring):
     _icon = "prometheus.png"
 
