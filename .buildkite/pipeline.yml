@@ -9,3 +9,6 @@ steps:
   - wait
   - label: 'Autogen classes'
     command: docker run --rm diagrams:1.0 ./autogen.sh
+
+  - label: 'List dir'
+    command: ls -lah $BUILDKITE_BUILD_CHECKOUT_PATH
