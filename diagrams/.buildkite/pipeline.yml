@@ -1,0 +1,15 @@
+steps:
+  - label: 'Build image'
+    command: docker build --tag diagrams:1.0 -f ./docker/dev/Dockerfile .
+
+  - label: 'Run container'
+    command: docker run -d -it --name diagrams --mount type=bind,source="$(pwd)",target=/usr/src/diagrams diagrams:1.0
+
+  - label: 'Run tests'
+    command: docker exec diagrams python -m unittest tests/*.py -v
+
+  - label: 'Autogen classes'
+    command: docker exec diagrams ./autogen.sh
+
+  - label: 'Cleanup'
+    command: docker rm --force diagrams
