@@ -113,6 +113,7 @@ Node classes list of onprem provider.
 
 - **diagrams.onprem.monitoring.Datadog**
 - **diagrams.onprem.monitoring.Grafana**
+- **diagrams.onprem.monitoring.PrometheusOperator**
 - **diagrams.onprem.monitoring.Prometheus**
 - **diagrams.onprem.monitoring.Sentry**
 - **diagrams.onprem.monitoring.Splunk**

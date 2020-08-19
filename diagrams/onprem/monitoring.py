@@ -16,6 +16,10 @@ class Grafana(_Monitoring):
     _icon = "grafana.png"
 
 
+class PrometheusOperator(_Monitoring):
+    _icon = "prometheus-operator.png"
+
+
 class Prometheus(_Monitoring):
     _icon = "prometheus.png"
 
