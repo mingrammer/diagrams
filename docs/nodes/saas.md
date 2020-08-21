@@ -27,6 +27,7 @@ Node classes list of saas provider.
 ## saas.identity
 
 - **diagrams.saas.identity.Auth0**
+- **diagrams.saas.identity.Okta**
 
 ## saas.logging
 
