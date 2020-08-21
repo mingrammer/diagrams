@@ -92,6 +92,7 @@ ALIASES = {
         "ci": {
             "Circleci": "CircleCI",
             "Concourseci": "ConcourseCI",
+            "Droneci": "DroneCI",
             "Gitlabci": "GitlabCI",
             "Travisci": "TravisCI",
             "Teamcity": "TC",
