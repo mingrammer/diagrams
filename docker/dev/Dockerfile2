@@ -6,6 +6,10 @@ RUN pip install --user poetry
 
 WORKDIR /usr/src/diagrams
 
+RUN python -m unittest tests/*.py -v
+
+RUN ./autogen.sh
+
 RUN /root/.local/bin/poetry build
 
 RUN curl -v -u deployment:deployment123\

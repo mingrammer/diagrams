@@ -3,12 +3,5 @@ steps:
     command: docker build --tag diagrams:1.0 -f ./docker/dev/Dockerfile .
 
   - wait
-  - label: 'Run tests'
-    command: docker run --rm diagrams:1.0 python -m unittest tests/*.py -v
-
-  - wait
-  - label: 'Autogen classes'
-    command: docker run --rm diagrams:1.0 ./autogen.sh
-
   - label: 'Build dist image and publish'
     command: docker build --tag diagrams-build:1.0 -f ./docker/dev/Dockerfile2 .
