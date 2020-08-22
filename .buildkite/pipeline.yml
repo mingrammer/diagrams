@@ -9,3 +9,7 @@ steps:
   - wait
   - label: 'Autogen classes'
     command: docker run --rm diagrams:1.0 ./autogen.sh
+
+  - wait
+  - label: 'Show'
+    command: ls -lah /tmp/test-results/${BUILDKITE_PIPELINE_SLUG}/${BUILDKITE_BUILD_ID}
