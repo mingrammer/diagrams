@@ -13,3 +13,6 @@ steps:
   - wait
   - label: 'Show'
     command: ls -lah /tmp/test-results/${BUILDKITE_PIPELINE_SLUG}/${BUILDKITE_BUILD_ID}
+
+ - label: 'Build dist image and publish'
+   command: docker build --tag diagrams-build:1.0 -f ./docker/dev/Dockerfile2 .

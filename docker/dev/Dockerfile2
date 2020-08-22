@@ -1,0 +1,12 @@
+FROM diagrams:1.0
+
+RUN apk update && apk add --no-cache libffi-dev libressl-dev curl
+
+RUN pip install --user poetry
+
+WORKDIR /usr/src/diagrams
+
+RUN /root/.local/bin/poetry build
+
+RUN curl -v -u deployment:deployment123 --upload-file dist/diagrams-0.16.0-py3-none-any.whl https://nexus.flocktory.com/nexus/content/repositories/releases/python/diagrams-0.16.0-py3-none-any.whl
+
