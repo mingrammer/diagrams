@@ -49,7 +49,7 @@ Node classes list of onprem provider.
 ## onprem.container
 
 - **diagrams.onprem.container.Docker**
-- **diagrams.onprem.container.Lxc**
+- **diagrams.onprem.container.Lxc**, **LXC** (alias)
 - **diagrams.onprem.container.Rkt**, **RKT** (alias)
 
 ## onprem.database

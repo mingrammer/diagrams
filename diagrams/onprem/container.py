@@ -22,4 +22,5 @@ class Rkt(_Container):
 
 # Aliases
 
+LXC = Lxc
 RKT = Rkt
