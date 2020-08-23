@@ -65,8 +65,9 @@ UPPER_WORDS = {
     ),
     "oci": ("oci",),
     "elastic": ("apm", "siem", "ece", "eck"),
-    "generic": ("vpn", "ios", "xen"),
+    "generic": ("vpn", "ios", "lxc", "xen"),
     "openstack": ("rpm", "loci", "nfv", "ec2api"),
+    "pve": ("pve"),
 }
 
 TITLE_WORDS = {
@@ -96,6 +97,7 @@ ALIASES = {
             "Zuulci": "ZuulCI",
         },
         "container": {
+            "Lxc": "LXC",
             "Rkt": "RKT",
         },
         "database": {
