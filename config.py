@@ -13,7 +13,7 @@ DIR_TEMPLATE = "templates"
 
 PROVIDERS = (
     "base", "onprem", "aws", "azure", "gcp", "firebase", "k8s", "alibabacloud", "oci", "programming", "saas", "elastic",
-    "generic", "openstack")
+    "generic", "openstack", "outscale")
 
 #########################
 #  Resource Processing  #
@@ -22,7 +22,7 @@ PROVIDERS = (
 CMD_ROUND = "round"
 CMD_ROUND_OPTS = ("-w",)
 CMD_SVG2PNG = "inkscape"
-CMD_SVG2PNG_OPTS = ("-z", "-w", "256", "-h", "256", "--export-type", "png")
+CMD_SVG2PNG_OPTS = ("-w", "256", "-h", "256", "--export-type", "png")
 CMD_SVG2PNG_IM = "convert"
 CMD_SVG2PNG_IM_OPTS = ("-shave", "25%x25%", "-resize", "256x256!")
 
@@ -34,10 +34,11 @@ FILE_PREFIXES = {
     "firebase": ("Cloud-",),
     "k8s": (),
     "alibabacloud": (),
-    "oci": ("OCI-",),
+    "oci": ("OCI-icon-",),
     "programming": (),
     "saas": (),
     "elastic": (),
+    "outscale": (),
     "generic": (),
     "openstack": (),
 }
@@ -63,9 +64,10 @@ UPPER_WORDS = {
         "api", "cm", "ccm", "crb", "crd", "ds", "etcd", "hpa", "k8s", "ns", "psp", "pv", "pvc", "rb", "rs",
         "sa", "sc", "sts", "svc",
     ),
-    "oci": ("oci",),
+    "oci": ("oci", "ocid", "oke", "ocir", "ddos", "waf", "bm", "vm", "cdn", "vpn", "dns", "nat", "dms", "api", "id"),
     "elastic": ("apm", "siem", "ece", "eck"),
-    "generic": ("vpn", "ios", "xen"),
+    "generic": ("vpn", "ios", "xen", "sql"),
+    "outscale": ("osc",),
     "openstack": ("rpm", "loci", "nfv", "ec2api"),
 }
 
@@ -90,6 +92,7 @@ ALIASES = {
         "ci": {
             "Circleci": "CircleCI",
             "Concourseci": "ConcourseCI",
+            "Droneci": "DroneCI",
             "Gitlabci": "GitlabCI",
             "Travisci": "TravisCI",
             "Teamcity": "TC",
@@ -116,7 +119,7 @@ ALIASES = {
         },
         "logging": {
             "Fluentbit": "FluentBit",
-            "Logstash": "LogStash",
+            "Rsyslog": "RSyslog",
         },
         "network": {
             "Etcd": "ETCD",
@@ -365,13 +368,19 @@ ALIASES = {
     "oci": {
         "compute": {
             "Vm": "VirtualMachine",
-            "VmGrey": "VirtualMachineGrey",
+            "VmWhite": "VirtualMachineWhite",
             "Bm": "BareMetal",
-            "BmGrey": "BareMetalGrey",
+            "BmWhite": "BareMetalWhite",
+            "OCIR": "OCIRegistry",
+            "OCIRWhite": "OCIRegistryWhite",
+            "OKE": "ContainerEngine",
+            "OKEWhite": "ContainerEngineWhite",
         },
         "database": {
+            "AutonomousDatabase": "ADB",
+            "AutonomousDatabaseWhite": "ADBWhite",
             "Databaseservice": "DBService",
-            "DatabaseserviceGrey": "DBServiceGrey",
+            "DatabaseserviceWhite": "DBServiceWhite",
         }
     },
     "programming": {
@@ -382,11 +391,18 @@ ALIASES = {
             "Typescript": "TypeScript"
         },
     },
-    "saas": {},
+    "saas": {
+        "logging": {
+            "Datadog": "DataDog",
+        }
+    },
     "elastic": {
         "elasticsearch": {
             "Logstash": "LogStash",
         }
+    },
+    "outscale": {
+        "Osc": "OSC",
     },
     "generic": {},
     "openstack": {

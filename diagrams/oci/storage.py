@@ -8,60 +8,76 @@ class _Storage(_OCI):
     _icon_dir = "resources/oci/storage"
 
 
-class BackuprestoreGrey(_Storage):
-    _icon = "backuprestore-grey.png"
+class BackupRestoreWhite(_Storage):
+    _icon = "backup-restore-white.png"
 
 
-class Backuprestore(_Storage):
-    _icon = "backuprestore.png"
+class BackupRestore(_Storage):
+    _icon = "backup-restore.png"
 
 
-class BlockstorageGrey(_Storage):
-    _icon = "blockstorage-grey.png"
+class BlockStorageCloneWhite(_Storage):
+    _icon = "block-storage-clone-white.png"
 
 
-class Blockstorage(_Storage):
-    _icon = "blockstorage.png"
+class BlockStorageClone(_Storage):
+    _icon = "block-storage-clone.png"
 
 
-class BucketsGrey(_Storage):
-    _icon = "buckets-grey.png"
+class BlockStorageWhite(_Storage):
+    _icon = "block-storage-white.png"
+
+
+class BlockStorage(_Storage):
+    _icon = "block-storage.png"
+
+
+class BucketsWhite(_Storage):
+    _icon = "buckets-white.png"
 
 
 class Buckets(_Storage):
     _icon = "buckets.png"
 
 
-class DatatransferGrey(_Storage):
-    _icon = "datatransfer-grey.png"
+class DataTransferWhite(_Storage):
+    _icon = "data-transfer-white.png"
 
 
-class Datatransfer(_Storage):
-    _icon = "datatransfer.png"
+class DataTransfer(_Storage):
+    _icon = "data-transfer.png"
 
 
-class FilestorageGrey(_Storage):
-    _icon = "filestorage-grey.png"
+class ElasticPerformanceWhite(_Storage):
+    _icon = "elastic-performance-white.png"
 
 
-class Filestorage(_Storage):
-    _icon = "filestorage.png"
+class ElasticPerformance(_Storage):
+    _icon = "elastic-performance.png"
 
 
-class ObjectstorageGrey(_Storage):
-    _icon = "objectstorage-grey.png"
+class FileStorageWhite(_Storage):
+    _icon = "file-storage-white.png"
 
 
-class Objectstorage(_Storage):
-    _icon = "objectstorage.png"
+class FileStorage(_Storage):
+    _icon = "file-storage.png"
 
 
-class StoragegatewayGrey(_Storage):
-    _icon = "storagegateway-grey.png"
+class ObjectStorageWhite(_Storage):
+    _icon = "object-storage-white.png"
 
 
-class Storagegateway(_Storage):
-    _icon = "storagegateway.png"
+class ObjectStorage(_Storage):
+    _icon = "object-storage.png"
+
+
+class StorageGatewayWhite(_Storage):
+    _icon = "storage-gateway-white.png"
+
+
+class StorageGateway(_Storage):
+    _icon = "storage-gateway.png"
 
 
 # Aliases

@@ -8,10 +8,6 @@ class _Search(_OnPrem):
     _icon_dir = "resources/onprem/search"
 
 
-class Elasticsearch(_Search):
-    _icon = "elasticsearch.png"
-
-
 class Solr(_Search):
     _icon = "solr.png"
 

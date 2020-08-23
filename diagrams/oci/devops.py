@@ -8,20 +8,28 @@ class _Devops(_OCI):
     _icon_dir = "resources/oci/devops"
 
 
-class ApiserviceGrey(_Devops):
-    _icon = "apiservice-grey.png"
+class APIGatewayWhite(_Devops):
+    _icon = "api-gateway-white.png"
 
 
-class Apiservice(_Devops):
-    _icon = "apiservice.png"
+class APIGateway(_Devops):
+    _icon = "api-gateway.png"
 
 
-class ResourcemgmtGrey(_Devops):
-    _icon = "resourcemgmt-grey.png"
+class APIServiceWhite(_Devops):
+    _icon = "api-service-white.png"
 
 
-class Resourcemgmt(_Devops):
-    _icon = "resourcemgmt.png"
+class APIService(_Devops):
+    _icon = "api-service.png"
+
+
+class ResourceMgmtWhite(_Devops):
+    _icon = "resource-mgmt-white.png"
+
+
+class ResourceMgmt(_Devops):
+    _icon = "resource-mgmt.png"
 
 
 # Aliases

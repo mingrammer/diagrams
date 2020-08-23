@@ -7,127 +7,167 @@ Node classes list of oci provider.
 
 ## oci.compute
 
-- **diagrams.oci.compute.BmGrey**, **BareMetalGrey** (alias)
-- **diagrams.oci.compute.Bm**, **BareMetal** (alias)
-- **diagrams.oci.compute.ContainerGrey**
+- **diagrams.oci.compute.AutoscaleWhite**
+- **diagrams.oci.compute.Autoscale**
+- **diagrams.oci.compute.BMWhite**
+- **diagrams.oci.compute.BM**
+- **diagrams.oci.compute.ContainerWhite**
 - **diagrams.oci.compute.Container**
-- **diagrams.oci.compute.VmGrey**, **VirtualMachineGrey** (alias)
-- **diagrams.oci.compute.Vm**, **VirtualMachine** (alias)
+- **diagrams.oci.compute.FunctionsWhite**
+- **diagrams.oci.compute.Functions**
+- **diagrams.oci.compute.InstancePoolsWhite**
+- **diagrams.oci.compute.InstancePools**
+- **diagrams.oci.compute.OCIRWhite**, **OCIRegistryWhite** (alias)
+- **diagrams.oci.compute.OCIR**, **OCIRegistry** (alias)
+- **diagrams.oci.compute.OKEWhite**, **ContainerEngineWhite** (alias)
+- **diagrams.oci.compute.OKE**, **ContainerEngine** (alias)
+- **diagrams.oci.compute.VMWhite**
+- **diagrams.oci.compute.VM**
 
 ## oci.connectivity
 
-- **diagrams.oci.connectivity.BackboneGrey**
+- **diagrams.oci.connectivity.BackboneWhite**
 - **diagrams.oci.connectivity.Backbone**
-- **diagrams.oci.connectivity.CustomerdatacenterGrey**
-- **diagrams.oci.connectivity.Customerdatacenter**
-- **diagrams.oci.connectivity.CustomerpremisesequipGrey**
-- **diagrams.oci.connectivity.Customerpremisesequip**
-- **diagrams.oci.connectivity.FastconnectGrey**
-- **diagrams.oci.connectivity.Fastconnect**
-- **diagrams.oci.connectivity.VpnGrey**
-- **diagrams.oci.connectivity.Vpn**
+- **diagrams.oci.connectivity.CDNWhite**
+- **diagrams.oci.connectivity.CDN**
+- **diagrams.oci.connectivity.CustomerDatacenter**
+- **diagrams.oci.connectivity.CustomerDatacntrWhite**
+- **diagrams.oci.connectivity.CustomerPremiseWhite**
+- **diagrams.oci.connectivity.CustomerPremise**
+- **diagrams.oci.connectivity.DisconnectedRegionsWhite**
+- **diagrams.oci.connectivity.DisconnectedRegions**
+- **diagrams.oci.connectivity.DNSWhite**
+- **diagrams.oci.connectivity.DNS**
+- **diagrams.oci.connectivity.FastConnectWhite**
+- **diagrams.oci.connectivity.FastConnect**
+- **diagrams.oci.connectivity.NATGatewayWhite**
+- **diagrams.oci.connectivity.NATGateway**
+- **diagrams.oci.connectivity.VPNWhite**
+- **diagrams.oci.connectivity.VPN**
 
 ## oci.database
 
-- **diagrams.oci.database.DatabaseserviceGrey**, **DBServiceGrey** (alias)
-- **diagrams.oci.database.Databaseservice**, **DBService** (alias)
+- **diagrams.oci.database.AutonomousWhite**
+- **diagrams.oci.database.Autonomous**
+- **diagrams.oci.database.BigdataServiceWhite**
+- **diagrams.oci.database.BigdataService**
+- **diagrams.oci.database.DatabaseServiceWhite**
+- **diagrams.oci.database.DatabaseService**
+- **diagrams.oci.database.DataflowApacheWhite**
+- **diagrams.oci.database.DataflowApache**
+- **diagrams.oci.database.DcatWhite**
+- **diagrams.oci.database.Dcat**
+- **diagrams.oci.database.DisWhite**
+- **diagrams.oci.database.Dis**
+- **diagrams.oci.database.DMSWhite**
+- **diagrams.oci.database.DMS**
+- **diagrams.oci.database.ScienceWhite**
+- **diagrams.oci.database.Science**
+- **diagrams.oci.database.StreamWhite**
+- **diagrams.oci.database.Stream**
 
 ## oci.devops
 
-- **diagrams.oci.devops.ApiserviceGrey**
-- **diagrams.oci.devops.Apiservice**
-- **diagrams.oci.devops.ResourcemgmtGrey**
-- **diagrams.oci.devops.Resourcemgmt**
+- **diagrams.oci.devops.APIGatewayWhite**
+- **diagrams.oci.devops.APIGateway**
+- **diagrams.oci.devops.APIServiceWhite**
+- **diagrams.oci.devops.APIService**
+- **diagrams.oci.devops.ResourceMgmtWhite**
+- **diagrams.oci.devops.ResourceMgmt**
 
-## oci.edge
+## oci.governance
 
-- **diagrams.oci.edge.CdnGrey**
-- **diagrams.oci.edge.Cdn**
-- **diagrams.oci.edge.DnsGrey**
-- **diagrams.oci.edge.Dns**
-- **diagrams.oci.edge.EmaildeliveryGrey**
-- **diagrams.oci.edge.Emaildelivery**
-- **diagrams.oci.edge.WafGrey**
-- **diagrams.oci.edge.Waf**
+- **diagrams.oci.governance.AuditWhite**
+- **diagrams.oci.governance.Audit**
+- **diagrams.oci.governance.CompartmentsWhite**
+- **diagrams.oci.governance.Compartments**
+- **diagrams.oci.governance.GroupsWhite**
+- **diagrams.oci.governance.Groups**
+- **diagrams.oci.governance.LoggingWhite**
+- **diagrams.oci.governance.Logging**
+- **diagrams.oci.governance.OCIDWhite**
+- **diagrams.oci.governance.OCID**
+- **diagrams.oci.governance.PoliciesWhite**
+- **diagrams.oci.governance.Policies**
+- **diagrams.oci.governance.TaggingWhite**
+- **diagrams.oci.governance.Tagging**
 
 ## oci.monitoring
 
-- **diagrams.oci.monitoring.AlarmGrey**
+- **diagrams.oci.monitoring.AlarmWhite**
 - **diagrams.oci.monitoring.Alarm**
-- **diagrams.oci.monitoring.EventGrey**
-- **diagrams.oci.monitoring.Event**
-- **diagrams.oci.monitoring.HealthcheckGrey**
-- **diagrams.oci.monitoring.Healthcheck**
-- **diagrams.oci.monitoring.LoggingGrey**
-- **diagrams.oci.monitoring.Logging**
-- **diagrams.oci.monitoring.NotificationsGrey**
+- **diagrams.oci.monitoring.EmailWhite**
+- **diagrams.oci.monitoring.Email**
+- **diagrams.oci.monitoring.EventsWhite**
+- **diagrams.oci.monitoring.Events**
+- **diagrams.oci.monitoring.HealthCheckWhite**
+- **diagrams.oci.monitoring.HealthCheck**
+- **diagrams.oci.monitoring.NotificationsWhite**
 - **diagrams.oci.monitoring.Notifications**
-- **diagrams.oci.monitoring.QueuingGrey**
-- **diagrams.oci.monitoring.Queuing**
-- **diagrams.oci.monitoring.SearchGrey**
+- **diagrams.oci.monitoring.QueueWhite**
+- **diagrams.oci.monitoring.Queue**
+- **diagrams.oci.monitoring.SearchWhite**
 - **diagrams.oci.monitoring.Search**
-- **diagrams.oci.monitoring.StreamingGrey**
-- **diagrams.oci.monitoring.Streaming**
-- **diagrams.oci.monitoring.TelemetryGrey**
+- **diagrams.oci.monitoring.TelemetryWhite**
 - **diagrams.oci.monitoring.Telemetry**
-- **diagrams.oci.monitoring.WorkflowGrey**
+- **diagrams.oci.monitoring.WorkflowWhite**
 - **diagrams.oci.monitoring.Workflow**
 
 ## oci.network
 
-- **diagrams.oci.network.DrgGrey**
+- **diagrams.oci.network.DrgWhite**
 - **diagrams.oci.network.Drg**
-- **diagrams.oci.network.FirewallGrey**
+- **diagrams.oci.network.FirewallWhite**
 - **diagrams.oci.network.Firewall**
-- **diagrams.oci.network.InternetgatewayGrey**
-- **diagrams.oci.network.Internetgateway**
-- **diagrams.oci.network.LoadbalanceGrey**
-- **diagrams.oci.network.Loadbalance**
-- **diagrams.oci.network.RoutetableGrey**
-- **diagrams.oci.network.Routetable**
-- **diagrams.oci.network.SecuritylistsGrey**
-- **diagrams.oci.network.Securitylists**
-- **diagrams.oci.network.ServiceGatewayGrey**
+- **diagrams.oci.network.InternetGatewayWhite**
+- **diagrams.oci.network.InternetGateway**
+- **diagrams.oci.network.LoadBalancerWhite**
+- **diagrams.oci.network.LoadBalancer**
+- **diagrams.oci.network.RouteTableWhite**
+- **diagrams.oci.network.RouteTable**
+- **diagrams.oci.network.SecurityListsWhite**
+- **diagrams.oci.network.SecurityLists**
+- **diagrams.oci.network.ServiceGatewayWhite**
 - **diagrams.oci.network.ServiceGateway**
-- **diagrams.oci.network.VcloudnetworkGrey**
-- **diagrams.oci.network.Vcloudnetwork**
+- **diagrams.oci.network.VcnWhite**
+- **diagrams.oci.network.Vcn**
 
 ## oci.security
 
-- **diagrams.oci.security.AuditGrey**
-- **diagrams.oci.security.Audit**
-- **diagrams.oci.security.CompartmentsGrey**
-- **diagrams.oci.security.Compartments**
-- **diagrams.oci.security.DdosGrey**
-- **diagrams.oci.security.Ddos**
-- **diagrams.oci.security.EncryptionGrey**
+- **diagrams.oci.security.CloudGuardWhite**
+- **diagrams.oci.security.CloudGuard**
+- **diagrams.oci.security.DDOSWhite**
+- **diagrams.oci.security.DDOS**
+- **diagrams.oci.security.EncryptionWhite**
 - **diagrams.oci.security.Encryption**
-- **diagrams.oci.security.GroupsGrey**
-- **diagrams.oci.security.Groups**
-- **diagrams.oci.security.IdAccessGrey**
-- **diagrams.oci.security.IdAccess**
-- **diagrams.oci.security.KeymgmtGrey**
-- **diagrams.oci.security.Keymgmt**
-- **diagrams.oci.security.OcidGrey**
-- **diagrams.oci.security.Ocid**
-- **diagrams.oci.security.PoliciesGrey**
-- **diagrams.oci.security.Policies**
-- **diagrams.oci.security.TaggingGrey**
-- **diagrams.oci.security.Tagging**
+- **diagrams.oci.security.IDAccessWhite**
+- **diagrams.oci.security.IDAccess**
+- **diagrams.oci.security.KeyManagementWhite**
+- **diagrams.oci.security.KeyManagement**
+- **diagrams.oci.security.MaxSecurityZoneWhite**
+- **diagrams.oci.security.MaxSecurityZone**
+- **diagrams.oci.security.VaultWhite**
+- **diagrams.oci.security.Vault**
+- **diagrams.oci.security.WAFWhite**
+- **diagrams.oci.security.WAF**
 
 ## oci.storage
 
-- **diagrams.oci.storage.BackuprestoreGrey**
-- **diagrams.oci.storage.Backuprestore**
-- **diagrams.oci.storage.BlockstorageGrey**
-- **diagrams.oci.storage.Blockstorage**
-- **diagrams.oci.storage.BucketsGrey**
+- **diagrams.oci.storage.BackupRestoreWhite**
+- **diagrams.oci.storage.BackupRestore**
+- **diagrams.oci.storage.BlockStorageCloneWhite**
+- **diagrams.oci.storage.BlockStorageClone**
+- **diagrams.oci.storage.BlockStorageWhite**
+- **diagrams.oci.storage.BlockStorage**
+- **diagrams.oci.storage.BucketsWhite**
 - **diagrams.oci.storage.Buckets**
-- **diagrams.oci.storage.DatatransferGrey**
-- **diagrams.oci.storage.Datatransfer**
-- **diagrams.oci.storage.FilestorageGrey**
-- **diagrams.oci.storage.Filestorage**
-- **diagrams.oci.storage.ObjectstorageGrey**
-- **diagrams.oci.storage.Objectstorage**
-- **diagrams.oci.storage.StoragegatewayGrey**
-- **diagrams.oci.storage.Storagegateway**
+- **diagrams.oci.storage.DataTransferWhite**
+- **diagrams.oci.storage.DataTransfer**
+- **diagrams.oci.storage.ElasticPerformanceWhite**
+- **diagrams.oci.storage.ElasticPerformance**
+- **diagrams.oci.storage.FileStorageWhite**
+- **diagrams.oci.storage.FileStorage**
+- **diagrams.oci.storage.ObjectStorageWhite**
+- **diagrams.oci.storage.ObjectStorage**
+- **diagrams.oci.storage.StorageGatewayWhite**
+- **diagrams.oci.storage.StorageGateway**
