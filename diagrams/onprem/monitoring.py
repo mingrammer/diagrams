@@ -16,8 +16,8 @@ class Grafana(_Monitoring):
     _icon = "grafana.png"
 
 
-class Kibana(_Monitoring):
-    _icon = "kibana.png"
+class PrometheusOperator(_Monitoring):
+    _icon = "prometheus-operator.png"
 
 
 class Prometheus(_Monitoring):

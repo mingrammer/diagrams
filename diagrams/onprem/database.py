@@ -32,6 +32,10 @@ class Dgraph(_Database):
     _icon = "dgraph.png"
 
 
+class Druid(_Database):
+    _icon = "druid.png"
+
+
 class Hbase(_Database):
     _icon = "hbase.png"
 

@@ -12,6 +12,10 @@ class Ansible(_Iac):
     _icon = "ansible.png"
 
 
+class Atlantis(_Iac):
+    _icon = "atlantis.png"
+
+
 class Awx(_Iac):
     _icon = "awx.png"
 

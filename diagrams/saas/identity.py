@@ -12,4 +12,8 @@ class Auth0(_Identity):
     _icon = "auth0.png"
 
 
+class Okta(_Identity):
+    _icon = "okta.png"
+
+
 # Aliases

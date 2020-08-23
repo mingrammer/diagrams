@@ -8,6 +8,7 @@ Node classes list of onprem provider.
 ## onprem.analytics
 
 - **diagrams.onprem.analytics.Beam**
+- **diagrams.onprem.analytics.Databricks**
 - **diagrams.onprem.analytics.Dbt**
 - **diagrams.onprem.analytics.Flink**
 - **diagrams.onprem.analytics.Hadoop**
@@ -29,6 +30,7 @@ Node classes list of onprem provider.
 
 - **diagrams.onprem.ci.Circleci**, **CircleCI** (alias)
 - **diagrams.onprem.ci.Concourseci**, **ConcourseCI** (alias)
+- **diagrams.onprem.ci.Droneci**, **DroneCI** (alias)
 - **diagrams.onprem.ci.Gitlabci**, **GitlabCI** (alias)
 - **diagrams.onprem.ci.Jenkins**
 - **diagrams.onprem.ci.Teamcity**, **TC** (alias)
@@ -60,6 +62,7 @@ Node classes list of onprem provider.
 - **diagrams.onprem.database.Couchbase**
 - **diagrams.onprem.database.Couchdb**, **CouchDB** (alias)
 - **diagrams.onprem.database.Dgraph**
+- **diagrams.onprem.database.Druid**
 - **diagrams.onprem.database.Hbase**, **HBase** (alias)
 - **diagrams.onprem.database.Influxdb**, **InfluxDB** (alias)
 - **diagrams.onprem.database.Janusgraph**, **JanusGraph** (alias)
@@ -85,6 +88,7 @@ Node classes list of onprem provider.
 ## onprem.iac
 
 - **diagrams.onprem.iac.Ansible**
+- **diagrams.onprem.iac.Atlantis**
 - **diagrams.onprem.iac.Awx**
 - **diagrams.onprem.iac.Terraform**
 
@@ -99,8 +103,10 @@ Node classes list of onprem provider.
 
 - **diagrams.onprem.logging.Fluentbit**, **FluentBit** (alias)
 - **diagrams.onprem.logging.Fluentd**
-- **diagrams.onprem.logging.Logstash**, **LogStash** (alias)
+- **diagrams.onprem.logging.Graylog**
 - **diagrams.onprem.logging.Loki**
+- **diagrams.onprem.logging.Rsyslog**, **RSyslog** (alias)
+- **diagrams.onprem.logging.SyslogNg**
 
 ## onprem.mlops
 
@@ -110,7 +116,7 @@ Node classes list of onprem provider.
 
 - **diagrams.onprem.monitoring.Datadog**
 - **diagrams.onprem.monitoring.Grafana**
-- **diagrams.onprem.monitoring.Kibana**
+- **diagrams.onprem.monitoring.PrometheusOperator**
 - **diagrams.onprem.monitoring.Prometheus**
 - **diagrams.onprem.monitoring.Sentry**
 - **diagrams.onprem.monitoring.Splunk**
@@ -158,7 +164,6 @@ Node classes list of onprem provider.
 
 ## onprem.search
 
-- **diagrams.onprem.search.Elasticsearch**
 - **diagrams.onprem.search.Solr**
 
 ## onprem.security

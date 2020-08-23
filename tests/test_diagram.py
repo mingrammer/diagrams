@@ -2,7 +2,7 @@ import os
 import shutil
 import unittest
 
-from diagrams import Cluster, Diagram, Node, Edge
+from diagrams import Cluster, Diagram, Edge, Node
 from diagrams import getcluster, getdiagram, setcluster, setdiagram
 
 
@@ -97,6 +97,13 @@ class DiagramTest(unittest.TestCase):
     def test_custom_filename(self):
         self.name = "my_custom_name"
         with Diagram(name="Example 1", filename=self.name, show=False):
+            Node("node1")
+        self.assertTrue(os.path.exists(f"{self.name}.png"))
+
+    def test_empty_name(self):
+        """Check that providing an empty name don't crash, but save in a diagrams_image.xxx file."""
+        self.name = 'diagrams_image'
+        with Diagram(show=False):
             Node("node1")
         self.assertTrue(os.path.exists(f"{self.name}.png"))
 
@@ -244,9 +251,7 @@ class EdgeTest(unittest.TestCase):
                 self.assertEqual(node << Edge(color="pink", label="3.4") >> node, node)
 
     def test_nodes_to_node_with_attributes_bothdirectional(self):
-        with Diagram(
-            name=os.path.join(self.name, "nodes_to_node_with_attributes_bothdirectional"), show=False
-        ) as diagram:
+        with Diagram(name=os.path.join(self.name, "nodes_to_node_with_attributes_bothdirectional"), show=False):
             with Cluster():
                 node1 = Node("node1")
                 nodes = [Node("node2"), Node("node3")]

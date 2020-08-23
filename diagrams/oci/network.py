@@ -8,68 +8,68 @@ class _Network(_OCI):
     _icon_dir = "resources/oci/network"
 
 
-class DrgGrey(_Network):
-    _icon = "drg-grey.png"
+class DrgWhite(_Network):
+    _icon = "drg-white.png"
 
 
 class Drg(_Network):
     _icon = "drg.png"
 
 
-class FirewallGrey(_Network):
-    _icon = "firewall-grey.png"
+class FirewallWhite(_Network):
+    _icon = "firewall-white.png"
 
 
 class Firewall(_Network):
     _icon = "firewall.png"
 
 
-class InternetgatewayGrey(_Network):
-    _icon = "internetgateway-grey.png"
+class InternetGatewayWhite(_Network):
+    _icon = "internet-gateway-white.png"
 
 
-class Internetgateway(_Network):
-    _icon = "internetgateway.png"
+class InternetGateway(_Network):
+    _icon = "internet-gateway.png"
 
 
-class LoadbalanceGrey(_Network):
-    _icon = "loadbalance-grey.png"
+class LoadBalancerWhite(_Network):
+    _icon = "load-balancer-white.png"
 
 
-class Loadbalance(_Network):
-    _icon = "loadbalance.png"
+class LoadBalancer(_Network):
+    _icon = "load-balancer.png"
 
 
-class RoutetableGrey(_Network):
-    _icon = "routetable-grey.png"
+class RouteTableWhite(_Network):
+    _icon = "route-table-white.png"
 
 
-class Routetable(_Network):
-    _icon = "routetable.png"
+class RouteTable(_Network):
+    _icon = "route-table.png"
 
 
-class SecuritylistsGrey(_Network):
-    _icon = "securitylists-grey.png"
+class SecurityListsWhite(_Network):
+    _icon = "security-lists-white.png"
 
 
-class Securitylists(_Network):
-    _icon = "securitylists.png"
+class SecurityLists(_Network):
+    _icon = "security-lists.png"
 
 
-class ServiceGatewayGrey(_Network):
-    _icon = "service-gateway-grey.png"
+class ServiceGatewayWhite(_Network):
+    _icon = "service-gateway-white.png"
 
 
 class ServiceGateway(_Network):
     _icon = "service-gateway.png"
 
 
-class VcloudnetworkGrey(_Network):
-    _icon = "vcloudnetwork-grey.png"
+class VcnWhite(_Network):
+    _icon = "vcn-white.png"
 
 
-class Vcloudnetwork(_Network):
-    _icon = "vcloudnetwork.png"
+class Vcn(_Network):
+    _icon = "vcn.png"
 
 
 # Aliases

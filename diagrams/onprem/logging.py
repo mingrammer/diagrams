@@ -16,15 +16,23 @@ class Fluentd(_Logging):
     _icon = "fluentd.png"
 
 
-class Logstash(_Logging):
-    _icon = "logstash.png"
+class Graylog(_Logging):
+    _icon = "graylog.png"
 
 
 class Loki(_Logging):
     _icon = "loki.png"
 
 
+class Rsyslog(_Logging):
+    _icon = "rsyslog.png"
+
+
+class SyslogNg(_Logging):
+    _icon = "syslog-ng.png"
+
+
 # Aliases
 
 FluentBit = Fluentbit
-LogStash = Logstash
+RSyslog = Rsyslog

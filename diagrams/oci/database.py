@@ -8,15 +8,81 @@ class _Database(_OCI):
     _icon_dir = "resources/oci/database"
 
 
-class DatabaseserviceGrey(_Database):
-    _icon = "databaseservice-grey.png"
+class AutonomousWhite(_Database):
+    _icon = "autonomous-white.png"
 
 
-class Databaseservice(_Database):
-    _icon = "databaseservice.png"
+class Autonomous(_Database):
+    _icon = "autonomous.png"
+
+
+class BigdataServiceWhite(_Database):
+    _icon = "bigdata-service-white.png"
+
+
+class BigdataService(_Database):
+    _icon = "bigdata-service.png"
+
+
+class DatabaseServiceWhite(_Database):
+    _icon = "database-service-white.png"
+
+
+class DatabaseService(_Database):
+    _icon = "database-service.png"
+
+
+class DataflowApacheWhite(_Database):
+    _icon = "dataflow-apache-white.png"
+
+
+class DataflowApache(_Database):
+    _icon = "dataflow-apache.png"
+
+
+class DcatWhite(_Database):
+    _icon = "dcat-white.png"
+
+
+class Dcat(_Database):
+    _icon = "dcat.png"
+
+
+class DisWhite(_Database):
+    _icon = "dis-white.png"
+
+
+class Dis(_Database):
+    _icon = "dis.png"
+
+
+class DMSWhite(_Database):
+    _icon = "dms-white.png"
+
+
+class DMS(_Database):
+    _icon = "dms.png"
+
+
+class ScienceWhite(_Database):
+    _icon = "science-white.png"
+
+
+class Science(_Database):
+    _icon = "science.png"
+
+
+class StreamWhite(_Database):
+    _icon = "stream-white.png"
+
+
+class Stream(_Database):
+    _icon = "stream.png"
 
 
 # Aliases
 
+ADB = AutonomousDatabase
+ADBWhite = AutonomousDatabaseWhite
 DBService = Databaseservice
-DBServiceGrey = DatabaseserviceGrey
+DBServiceWhite = DatabaseserviceWhite

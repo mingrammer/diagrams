@@ -8,9 +8,11 @@ Node classes list of saas provider.
 ## saas.alerting
 
 - **diagrams.saas.alerting.Opsgenie**
+- **diagrams.saas.alerting.Pushover**
 
 ## saas.analytics
 
+- **diagrams.saas.analytics.Snowflake**
 - **diagrams.saas.analytics.Stitch**
 
 ## saas.cdn
@@ -25,6 +27,16 @@ Node classes list of saas provider.
 ## saas.identity
 
 - **diagrams.saas.identity.Auth0**
+- **diagrams.saas.identity.Okta**
+
+## saas.logging
+
+- **diagrams.saas.logging.Datadog**, **DataDog** (alias)
+- **diagrams.saas.logging.Papertrail**
+
+## saas.media
+
+- **diagrams.saas.media.Cloudinary**
 
 ## saas.recommendation
 

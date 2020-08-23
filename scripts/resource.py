@@ -84,8 +84,8 @@ def cleaner_alibabacloud(f):
 
 
 def cleaner_oci(f):
+    f = f.replace(" ", "-")
     f = f.replace("_", "-")
-    f = f.replace("-red", "")
     for p in cfg.FILE_PREFIXES["oci"]:
         if f.startswith(p):
             f = f[len(p) :]
@@ -109,6 +109,10 @@ def cleaner_elastic(f):
     return f.lower()
 
 
+def cleaner_outscale(f):
+    return f.lower()
+
+
 def cleaner_openstack(f):
     return f.lower()
 
@@ -125,6 +129,7 @@ cleaners = {
     "programming": cleaner_programming,
     "saas": cleaner_saas,
     "elastic": cleaner_elastic,
+    "outscale": cleaner_outscale,
     "generic": cleaner_generic,
     "openstack": cleaner_openstack,
 }
