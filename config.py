@@ -364,10 +364,10 @@ ALIASES = {
     },
     "oci": {
         "compute": {
-            "Vm": "VirtualMachine",
-            "VmWhite": "VirtualMachineWhite",
-            "Bm": "BareMetal",
-            "BmWhite": "BareMetalWhite",
+            "VM": "VirtualMachine",
+            "VMWhite": "VirtualMachineWhite",
+            "BM": "BareMetal",
+            "BMWhite": "BareMetalWhite",
             "OCIR": "OCIRegistry",
             "OCIRWhite": "OCIRegistryWhite",
             "OKE": "ContainerEngine",
