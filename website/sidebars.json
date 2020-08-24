@@ -21,7 +21,8 @@
       "nodes/programming",
       "nodes/firebase",
       "nodes/saas",
-      "nodes/elastic"
+      "nodes/elastic",
+      "nodes/outscale"
     ]
   }
 }

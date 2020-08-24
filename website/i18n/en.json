@@ -53,6 +53,12 @@
       "nodes/onprem": {
         "title": "OnPrem"
       },
+      "nodes/openstack": {
+        "title": "OpenStack"
+      },
+      "nodes/outscale": {
+        "title": "Outscale"
+      },
       "nodes/programming": {
         "title": "Programming"
       },
