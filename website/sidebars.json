@@ -19,12 +19,12 @@
       "nodes/alibabacloud",
       "nodes/oci",
       "nodes/openstack",
-      "nodes/programming",
       "nodes/firebase",
+      "nodes/outscale",
       "nodes/elastic",
-      "nodes/saas",
       "nodes/generic",
-      "nodes/outscale"
+      "nodes/programming",
+      "nodes/saas"
     ]
   }
 }
