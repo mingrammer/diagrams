@@ -9,7 +9,6 @@
 [![todos](https://badgen.net/https/api.tickgit.com/badgen/github.com/mingrammer/diagrams?label=todos)](https://www.tickgit.com/browse?repo=github.com/mingrammer/diagrams)
 
 ![on premise provider](https://img.shields.io/badge/provider-OnPremise-orange?color=5f87bf)
-![generic provider](https://img.shields.io/badge/provider-Generic-orange?color=5f87bf)
 ![aws provider](https://img.shields.io/badge/provider-AWS-orange?logo=amazon-aws&color=ff9900)
 ![azure provider](https://img.shields.io/badge/provider-Azure-orange?logo=microsoft-azure&color=0089d6)
 ![gcp provider](https://img.shields.io/badge/provider-GCP-orange?logo=google-cloud&color=4285f4)
@@ -20,8 +19,9 @@
 ![firebase provider](https://img.shields.io/badge/provider-Firebase-orange?logo=firebase&color=FFCA28)
 ![outscale provider](https://img.shields.io/badge/provider-OutScale-orange?color=5f87bf)
 ![elastic provider](https://img.shields.io/badge/provider-Elastic-orange?logo=elastic&color=005571)
-![saas provider](https://img.shields.io/badge/provider-SaaS-orange?color=5f87bf)
+![generic provider](https://img.shields.io/badge/provider-Generic-orange?color=5f87bf)
 ![programming provider](https://img.shields.io/badge/provider-Programming-orange?color=5f87bf)
+![saas provider](https://img.shields.io/badge/provider-SaaS-orange?color=5f87bf)
 
 <a href="https://www.buymeacoffee.com/mingrammer" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
 
