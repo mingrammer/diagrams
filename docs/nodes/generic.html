@@ -6,7 +6,63 @@
 
               ga('create', 'UA-84081627-3', 'auto');
               ga('send', 'pageview');
-            </script><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/diagrams.ico" alt="Diagrams"/><h2 class="headerTitleWithLogo">Diagrams</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/docs/getting-started/installation" target="_self">Docs</a></li><li class=""><a href="/docs/guides/diagram" target="_self">Guides</a></li><li class=""><a href="/docs/nodes/aws" target="_self">Nodes</a></li><li class=""><a href="https://github.com/mingrammer/diagrams" target="_self">GitHub</a></li><li class=""><a href="https://www.buymeacoffee.com/mingrammer" target="_self">Sponsoring</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Generic</h1></header><article><div><span><p>Node classes list of generic provider.</p>
+            </script><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/diagrams.ico" alt="Diagrams"/><h2 class="headerTitleWithLogo">Diagrams</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docs/getting-started/installation" target="_self">Docs</a></li><li class="siteNavGroupActive"><a href="/docs/guides/diagram" target="_self">Guides</a></li><li class="siteNavGroupActive"><a href="/docs/nodes/aws" target="_self">Nodes</a></li><li class=""><a href="https://github.com/mingrammer/diagrams" target="_self">GitHub</a></li><li class=""><a href="https://www.buymeacoffee.com/mingrammer" target="_self">Sponsoring</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Nodes</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Getting Started</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/getting-started/installation">Installation</a></li><li class="navListItem"><a class="navItem" href="/docs/getting-started/examples">Examples</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Guides</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/guides/diagram">Diagrams</a></li><li class="navListItem"><a class="navItem" href="/docs/guides/node">Nodes</a></li><li class="navListItem"><a class="navItem" href="/docs/guides/cluster">Clusters</a></li><li class="navListItem"><a class="navItem" href="/docs/guides/edge">Edges</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Nodes</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/nodes/onprem">OnPrem</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/aws">AWS</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/azure">Azure</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/gcp">GCP</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/k8s">K8S</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/alibabacloud">AlibabaCloud</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/oci">OCI</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/programming">Programming</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/firebase">Firebase</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/saas">Saas</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/elastic">Elastic</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docs/nodes/generic">Generic</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/outscale">Outscale</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Generic</h1></header><article><div><span><p>Node classes list of generic provider.</p>
 <h2><a class="anchor" aria-hidden="true" id="genericblank"></a><a href="#genericblank" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>generic.blank</h2>
 <ul>
 <li><strong>diagrams.generic.blank.Blank</strong></li>
@@ -14,6 +70,10 @@
 <h2><a class="anchor" aria-hidden="true" id="genericcompute"></a><a href="#genericcompute" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>generic.compute</h2>
 <ul>
 <li><strong>diagrams.generic.compute.Rack</strong></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="genericdatabase"></a><a href="#genericdatabase" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>generic.database</h2>
+<ul>
+<li><strong>diagrams.generic.database.SQL</strong></li>
 </ul>
 <h2><a class="anchor" aria-hidden="true" id="genericdevice"></a><a href="#genericdevice" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>generic.device</h2>
 <ul>
@@ -51,4 +111,4 @@
 <li><strong>diagrams.generic.virtualization.Vmware</strong></li>
 <li><strong>diagrams.generic.virtualization.XEN</strong></li>
 </ul>
-</span></div></article></div><div class="docLastUpdate"><em>Last updated on 6/4/2020</em></div><div class="docs-prevnext"></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#genericblank">generic.blank</a></li><li><a href="#genericcompute">generic.compute</a></li><li><a href="#genericdevice">generic.device</a></li><li><a href="#genericnetwork">generic.network</a></li><li><a href="#genericos">generic.os</a></li><li><a href="#genericplace">generic.place</a></li><li><a href="#genericstorage">generic.storage</a></li><li><a href="#genericvirtualization">generic.virtualization</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/diagrams.ico" alt="Diagrams" width="66" height="58"/></a><div><h5>Docs</h5><a href="/docs/getting-started/installation">Getting Started</a><a href="/docs/guides/diagram">Guides</a><a href="/docs/nodes/aws">Nodes</a></div><div><h5>More</h5><iframe src="https://ghbtns.com/github-btn.html?user=mingrammer&amp;repo=diagrams&amp;type=star&amp;count=true&amp;size=large" frameBorder="0" scrolling="0" width="170" height="30" title="Star mingrammer/diagrams on GitHub"></iframe></div></section><section class="copyright">Copyright © 2020 mingrammer</section></footer></div></body></html>
+</span></div></article></div><div class="docLastUpdate"><em>Last updated on 7/13/2020</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/nodes/elastic"><span class="arrow-prev">← </span><span>Elastic</span></a><a class="docs-next button" href="/docs/nodes/outscale"><span>Outscale</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#genericblank">generic.blank</a></li><li><a href="#genericcompute">generic.compute</a></li><li><a href="#genericdatabase">generic.database</a></li><li><a href="#genericdevice">generic.device</a></li><li><a href="#genericnetwork">generic.network</a></li><li><a href="#genericos">generic.os</a></li><li><a href="#genericplace">generic.place</a></li><li><a href="#genericstorage">generic.storage</a></li><li><a href="#genericvirtualization">generic.virtualization</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/diagrams.ico" alt="Diagrams" width="66" height="58"/></a><div><h5>Docs</h5><a href="/docs/getting-started/installation">Getting Started</a><a href="/docs/guides/diagram">Guides</a><a href="/docs/nodes/aws">Nodes</a></div><div><h5>More</h5><iframe src="https://ghbtns.com/github-btn.html?user=mingrammer&amp;repo=diagrams&amp;type=star&amp;count=true&amp;size=large" frameBorder="0" scrolling="0" width="170" height="30" title="Star mingrammer/diagrams on GitHub"></iframe></div></section><section class="copyright">Copyright © 2020 mingrammer</section></footer></div></body></html>
