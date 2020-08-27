@@ -1,5 +1,23 @@
 # Changelogs
 
+## 0.17.0
+
+### Added
+
+- Support GCP Endpoints: #259
+- Support DroneCI and Atlantis (Terraform): #255 
+- Support Okta: #254 
+- Support OutScale provider: #251 
+- Support Prometheus Operator: #253 
+- Support Snowflake: #245 
+- Support for CJK fonts + Replace ms-fonts with opensans: #242 
+- Support Pushover: #241 
+
+### Fixed
+
+- Update bm, vm cases for OCI
+- Set a dummy filename to prevent raise error when both name and filename are not provided: #240 
+
 ## 0.16.0
 
 ### Breaking Changes
