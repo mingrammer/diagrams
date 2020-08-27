@@ -52,6 +52,10 @@ class Nginx(_Network):
     _icon = "nginx.png"
 
 
+class Osm(_Network):
+    _icon = "osm.png"
+
+
 class Pfsense(_Network):
     _icon = "pfsense.png"
 
