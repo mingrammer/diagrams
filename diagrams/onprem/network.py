@@ -52,8 +52,8 @@ class Nginx(_Network):
     _icon = "nginx.png"
 
 
-class Osm(_Network):
-    _icon = "osm.png"
+class Openservicemesh(_Network):
+    _icon = "openservicemesh.png"
 
 
 class Pfsense(_Network):
