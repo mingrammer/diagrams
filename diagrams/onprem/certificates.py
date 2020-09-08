@@ -12,4 +12,8 @@ class Certmanager(_Certificates):
     _icon = "certmanager.png"
 
 
+class Letsencrypt(_Certificates):
+    _icon = "letsencrypt.png"
+
+
 # Aliases
