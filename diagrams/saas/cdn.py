@@ -8,6 +8,10 @@ class _Cdn(_Saas):
     _icon_dir = "resources/saas/cdn"
 
 
+class Akamai(_Cdn):
+    _icon = "akamai.png"
+
+
 class Cloudflare(_Cdn):
     _icon = "cloudflare.png"
 
