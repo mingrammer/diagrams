@@ -21,7 +21,6 @@ Node classes list of saas provider.
 
 ## saas.chat
 
-- **diagrams.saas.chat.RocketChat**
 - **diagrams.saas.chat.Slack**
 - **diagrams.saas.chat.Telegram**
 
