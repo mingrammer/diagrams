@@ -56,6 +56,10 @@ class Ocelot(_Network):
     _icon = "ocelot.png"
 
 
+class OpenServiceMesh(_Network):
+    _icon = "open-service-mesh.png"
+
+
 class Pfsense(_Network):
     _icon = "pfsense.png"
 
@@ -84,5 +88,6 @@ class Zookeeper(_Network):
 
 ETCD = Etcd
 HAProxy = Haproxy
+OSM = OpenServiceMesh
 PFSense = Pfsense
 VyOS = Vyos

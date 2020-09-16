@@ -124,6 +124,7 @@ ALIASES = {
         "network": {
             "Etcd": "ETCD",
             "Haproxy": "HAProxy",
+            "OpenServiceMesh": "OSM",
             "Pfsense": "PFSense",
             "Vyos": "VyOS"
         },

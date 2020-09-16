@@ -135,6 +135,7 @@ Node classes list of onprem provider.
 - **diagrams.onprem.network.Linkerd**
 - **diagrams.onprem.network.Nginx**
 - **diagrams.onprem.network.Ocelot**
+- **diagrams.onprem.network.OpenServiceMesh**, **OSM** (alias)
 - **diagrams.onprem.network.Pfsense**, **PFSense** (alias)
 - **diagrams.onprem.network.Pomerium**
 - **diagrams.onprem.network.Tomcat**
