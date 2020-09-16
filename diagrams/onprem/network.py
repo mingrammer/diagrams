@@ -52,6 +52,10 @@ class Nginx(_Network):
     _icon = "nginx.png"
 
 
+class Ocelot(_Network):
+    _icon = "ocelot.png"
+    
+    
 class Openservicemesh(_Network):
     _icon = "openservicemesh.png"
 
