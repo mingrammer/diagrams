@@ -28,8 +28,8 @@ Node classes list of onprem provider.
 
 ## onprem.certificates
 
-- **diagrams.onprem.certificates.Certmanager**
-- **diagrams.onprem.certificates.Letsencrypt**
+- **diagrams.onprem.certificates.CertManager**
+- **diagrams.onprem.certificates.LetsEncrypt**
 
 ## onprem.ci
 

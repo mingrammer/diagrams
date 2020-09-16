@@ -8,12 +8,12 @@ class _Certificates(_OnPrem):
     _icon_dir = "resources/onprem/certificates"
 
 
-class Certmanager(_Certificates):
-    _icon = "certmanager.png"
+class CertManager(_Certificates):
+    _icon = "cert-manager.png"
 
 
-class Letsencrypt(_Certificates):
-    _icon = "letsencrypt.png"
+class LetsEncrypt(_Certificates):
+    _icon = "lets-encrypt.png"
 
 
 # Aliases
