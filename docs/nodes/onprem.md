@@ -26,6 +26,11 @@ Node classes list of onprem provider.
 - **diagrams.onprem.cd.TektonCli**
 - **diagrams.onprem.cd.Tekton**
 
+## onprem.certificates
+
+- **diagrams.onprem.certificates.CertManager**
+- **diagrams.onprem.certificates.LetsEncrypt**
+
 ## onprem.ci
 
 - **diagrams.onprem.ci.Circleci**, **CircleCI** (alias)
