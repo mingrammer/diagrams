@@ -12,8 +12,8 @@ class Mattermost(_Chat):
     _icon = "mattermost.png"
 
 
-class Rocketchat(_Chat):
-    _icon = "rocketchat.png"
+class RocketChat(_Chat):
+    _icon = "rocket-chat.png"
 
 
 class Slack(_Chat):

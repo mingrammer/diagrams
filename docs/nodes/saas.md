@@ -22,7 +22,7 @@ Node classes list of saas provider.
 ## saas.chat
 
 - **diagrams.saas.chat.Mattermost**
-- **diagrams.saas.chat.Rocketchat**
+- **diagrams.saas.chat.RocketChat**
 - **diagrams.saas.chat.Slack**
 - **diagrams.saas.chat.Teams**
 - **diagrams.saas.chat.Telegram**
