@@ -54,10 +54,10 @@ class Nginx(_Network):
 
 class Ocelot(_Network):
     _icon = "ocelot.png"
-    
-    
-class Openservicemesh(_Network):
-    _icon = "openservicemesh.png"
+
+
+class OpenServiceMesh(_Network):
+    _icon = "open-service-mesh.png"
 
 
 class Pfsense(_Network):
