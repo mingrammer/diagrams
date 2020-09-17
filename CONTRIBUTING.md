@@ -26,13 +26,15 @@ ffmpeg -i my_big_image.jpg -vf scale=w=256:h=256:force_original_aspect_ratio=dec
 
 Then just run the `./autogen.sh` to generate the added or updated node classes.
 
-> IMPORTANT NOTE: To run `autogen.sh`, you need [round][round] and
+> IMPORTANT NOTE: To run `autogen.sh`, you need [round][round], [black][black], [jinja2][jinja2] and
 > [inkscape][inkscape] command lines that are used for cleaning the image
 > resource filenames.
 >
 > macOS users can download the inkscape via Homebrew.
 
 [round]: https://github.com/mingrammer/round
+[black]: https://github.com/psf/black
+[jinja2]: https://pypi.org/project/Jinja2/
 [inkscape]: https://inkscape.org/ko/release
 
 ### Update Aliases
@@ -46,7 +48,7 @@ or update the `ALIASES` map in [config.py](config.py).
 
 Then just run the `./autogen.sh` to generate the added or updated aliases.
 
-> IMPORTANT NOTE: To run `autogen.sh`, you need [round][round] and
+> IMPORTANT NOTE: To run `autogen.sh`, you need [round][round], [black][black], [jinja2][jinja2] and
 > [inkscape][inkscape] command lines that are used for clearning the image
 > resource filenames.
 
@@ -55,6 +57,10 @@ Then just run the `./autogen.sh` to generate the added or updated aliases.
 ```shell
 python -m unittest tests/*.py -v
 ```
+
+> [graphviz][graphviz] is needed to run the tests
+
+[graphviz]: https://pypi.org/project/graphviz/
 
 ## Testing changes to the website
 
