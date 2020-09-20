@@ -60,6 +60,10 @@ class OpenServiceMesh(_Network):
     _icon = "open-service-mesh.png"
 
 
+class Opnsense(_Network):
+    _icon = "opnsense.png"
+
+
 class Pfsense(_Network):
     _icon = "pfsense.png"
 
@@ -89,5 +93,6 @@ class Zookeeper(_Network):
 ETCD = Etcd
 HAProxy = Haproxy
 OSM = OpenServiceMesh
+OPNSense = Opnsense
 PFSense = Pfsense
 VyOS = Vyos
