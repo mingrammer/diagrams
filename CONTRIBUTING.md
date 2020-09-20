@@ -32,9 +32,11 @@ Then just run the `./autogen.sh` to generate the added or updated node classes. 
 
 > IMPORTANT NOTE: To run `autogen.sh`, you need [round][round] and
 > [inkscape][inkscape] command lines that are used for cleaning the image
-> resource filenames. Or you should the docker image
+> resource filenames.
 >
 > macOS users can download the inkscape via Homebrew.
+>
+> Or you should use the docker image.
 
 [DEVELOPMENT.md]: ./DEVELOPMENT.md
 [round]: https://github.com/mingrammer/round
@@ -53,7 +55,9 @@ Then just run the `./autogen.sh` to generate the added or updated aliases. (cf. 
 
 > IMPORTANT NOTE: To run `autogen.sh`, you need [round][round] and
 > [inkscape][inkscape] command lines that are used for clearning the image
-> resource filenames. Or you should the docker image
+> resource filenames.
+>
+> Or you should use the docker image.
 
 ## Run Tests
 
