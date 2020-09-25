@@ -18,6 +18,10 @@ Node classes list of gcp provider.
 - **diagrams.gcp.analytics.Genomics**
 - **diagrams.gcp.analytics.Pubsub**, **PubSub** (alias)
 
+## gcp.api
+
+- **diagrams.gcp.api.Endpoints**
+
 ## gcp.compute
 
 - **diagrams.gcp.compute.AppEngine**, **GAE** (alias)

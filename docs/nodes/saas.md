@@ -17,11 +17,15 @@ Node classes list of saas provider.
 
 ## saas.cdn
 
+- **diagrams.saas.cdn.Akamai**
 - **diagrams.saas.cdn.Cloudflare**
 
 ## saas.chat
 
+- **diagrams.saas.chat.Mattermost**
+- **diagrams.saas.chat.RocketChat**
 - **diagrams.saas.chat.Slack**
+- **diagrams.saas.chat.Teams**
 - **diagrams.saas.chat.Telegram**
 
 ## saas.identity

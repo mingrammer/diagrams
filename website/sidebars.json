@@ -18,10 +18,13 @@
       "nodes/k8s",
       "nodes/alibabacloud",
       "nodes/oci",
-      "nodes/programming",
+      "nodes/openstack",
       "nodes/firebase",
-      "nodes/saas",
-      "nodes/elastic"
+      "nodes/outscale",
+      "nodes/elastic",
+      "nodes/generic",
+      "nodes/programming",
+      "nodes/saas"
     ]
   }
 }
