@@ -60,6 +60,10 @@ class OpenServiceMesh(_Network):
     _icon = "open-service-mesh.png"
 
 
+class Opnsense(_Network):
+    _icon = "opnsense.png"
+
+
 class Pfsense(_Network):
     _icon = "pfsense.png"
 
