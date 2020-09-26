@@ -125,6 +125,7 @@ ALIASES = {
             "Etcd": "ETCD",
             "Haproxy": "HAProxy",
             "OpenServiceMesh": "OSM",
+            "Opnsense": "OPNSense",
             "Pfsense": "PFSense",
             "Vyos": "VyOS"
         },
