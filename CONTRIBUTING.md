@@ -5,7 +5,7 @@ yourself.
 
 ## Set up your environment
 
-* cf. [DEVELOPMENT.md][DEVELOPMENT.md]
+* See [DEVELOPMENT][DEVELOPMENT.md]
 
 ## Resources
 
@@ -28,7 +28,7 @@ convert -resize 256 my_big_image.jpg my_image.jpg
 ffmpeg -i my_big_image.jpg -vf scale=w=256:h=256:force_original_aspect_ratio=decrease my_image.png
 ```
 
-Then just run the `./autogen.sh` to generate the added or updated node classes. (cf. [DEVELOPMENT.md][DEVELOPMENT.md])
+Then just run the `./autogen.sh` to generate the added or updated node classes. (cf. [DEVELOPMENT][DEVELOPMENT.md])
 
 > IMPORTANT NOTE: To run `autogen.sh`, you need [round][round] and
 > [inkscape][inkscape] command lines that are used for cleaning the image
@@ -51,7 +51,7 @@ from `ALIASES` map in [config.py](config.py).
 So, if you want to add new aliases or update existing aliases, you can just add
 or update the `ALIASES` map in [config.py](config.py).
 
-Then just run the `./autogen.sh` to generate the added or updated aliases. (cf. [DEVELOPMENT.md][DEVELOPMENT.md])
+Then just run the `./autogen.sh` to generate the added or updated aliases. (cf. [DEVELOPMENT][DEVELOPMENT.md])
 
 > IMPORTANT NOTE: To run `autogen.sh`, you need [round][round] and
 > [inkscape][inkscape] command lines that are used for clearning the image
