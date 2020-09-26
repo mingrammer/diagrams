@@ -79,6 +79,10 @@ Node classes list of onprem provider.
 - **diagrams.onprem.database.Postgresql**, **PostgreSQL** (alias)
 - **diagrams.onprem.database.Scylla**
 
+## onprem.dns
+
+- **diagrams.onprem.dns.ExternalDns**
+
 ## onprem.etl
 
 - **diagrams.onprem.etl.Embulk**
@@ -141,7 +145,7 @@ Node classes list of onprem provider.
 - **diagrams.onprem.network.Nginx**
 - **diagrams.onprem.network.Ocelot**
 - **diagrams.onprem.network.OpenServiceMesh**, **OSM** (alias)
-- **diagrams.onprem.network.Opnsense**, **OPNsense** (alias)
+- **diagrams.onprem.network.Opnsense**, **OPNSense** (alias)
 - **diagrams.onprem.network.Pfsense**, **PFSense** (alias)
 - **diagrams.onprem.network.Pomerium**
 - **diagrams.onprem.network.Tomcat**
