@@ -32,6 +32,10 @@ class SyslogNg(_Logging):
     _icon = "syslog-ng.png"
 
 
+class Vector(_Logging):
+    _icon = "vector.png"
+
+
 # Aliases
 
 FluentBit = Fluentbit

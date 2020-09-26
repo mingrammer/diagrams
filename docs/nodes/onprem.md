@@ -111,6 +111,7 @@ Node classes list of onprem provider.
 - **diagrams.onprem.logging.Loki**
 - **diagrams.onprem.logging.Rsyslog**, **RSyslog** (alias)
 - **diagrams.onprem.logging.SyslogNg**
+- **diagrams.onprem.logging.Vector**
 
 ## onprem.mlops
 

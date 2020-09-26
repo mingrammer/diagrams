@@ -93,5 +93,6 @@ class Zookeeper(_Network):
 ETCD = Etcd
 HAProxy = Haproxy
 OSM = OpenServiceMesh
+OPNSense = Opnsense
 PFSense = Pfsense
 VyOS = Vyos
