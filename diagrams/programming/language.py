@@ -16,6 +16,10 @@ class C(_Language):
     _icon = "c.png"
 
 
+class Cobol(_Language):
+    _icon = "cobol.png"
+
+
 class Cpp(_Language):
     _icon = "cpp.png"
 
@@ -34,6 +38,10 @@ class Elixir(_Language):
 
 class Erlang(_Language):
     _icon = "erlang.png"
+
+
+class Fortran(_Language):
+    _icon = "fortran.png"
 
 
 class Go(_Language):
@@ -62,6 +70,10 @@ class Nodejs(_Language):
 
 class Php(_Language):
     _icon = "php.png"
+
+
+class Powershell(_Language):
+    _icon = "powershell.png"
 
 
 class Python(_Language):
