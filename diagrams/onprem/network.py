@@ -12,10 +12,6 @@ class Apache(_Network):
     _icon = "apache.png"
 
 
-class BuzzfeedSso(_Network):
-    _icon = "buzzfeed-sso.png"
-
-
 class Caddy(_Network):
     _icon = "caddy.png"
 
@@ -54,10 +50,6 @@ class Linkerd(_Network):
 
 class Nginx(_Network):
     _icon = "nginx.png"
-
-
-class Oauth2Proxy(_Network):
-    _icon = "oauth2-proxy.png"
 
 
 class Ocelot(_Network):
