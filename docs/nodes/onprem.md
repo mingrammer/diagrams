@@ -31,6 +31,11 @@ Node classes list of onprem provider.
 - **diagrams.onprem.certificates.CertManager**
 - **diagrams.onprem.certificates.LetsEncrypt**
 
+## onprem.chaos
+
+- **diagrams.onprem.chaos.ChaosMesh**
+- **diagrams.onprem.chaos.LitmusChaos**
+
 ## onprem.ci
 
 - **diagrams.onprem.ci.Circleci**, **CircleCI** (alias)
