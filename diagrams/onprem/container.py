@@ -8,6 +8,10 @@ class _Container(_OnPrem):
     _icon_dir = "resources/onprem/container"
 
 
+class Containerd(_Container):
+    _icon = "containerd.png"
+
+
 class Docker(_Container):
     _icon = "docker.png"
 
