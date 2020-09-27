@@ -12,6 +12,10 @@ class Containerd(_Container):
     _icon = "containerd.png"
 
 
+class Crio(_Container):
+    _icon = "crio.png"
+
+
 class Docker(_Container):
     _icon = "docker.png"
 

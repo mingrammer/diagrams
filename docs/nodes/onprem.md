@@ -56,6 +56,7 @@ Node classes list of onprem provider.
 ## onprem.container
 
 - **diagrams.onprem.container.Containerd**
+- **diagrams.onprem.container.Crio**
 - **diagrams.onprem.container.Docker**
 - **diagrams.onprem.container.Rkt**, **RKT** (alias)
 
