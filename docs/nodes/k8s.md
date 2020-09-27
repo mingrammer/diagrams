@@ -32,6 +32,7 @@ Node classes list of k8s provider.
 
 ## k8s.ecosystem
 
+- **diagrams.k8s.ecosystem.ExternalDns**
 - **diagrams.k8s.ecosystem.Helm**
 - **diagrams.k8s.ecosystem.Krew**
 - **diagrams.k8s.ecosystem.Kustomize**
