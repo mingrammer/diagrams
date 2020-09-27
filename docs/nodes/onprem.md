@@ -129,6 +129,7 @@ Node classes list of onprem provider.
 ## onprem.network
 
 - **diagrams.onprem.network.Apache**
+- **diagrams.onprem.network.BuzzfeedSso**
 - **diagrams.onprem.network.Caddy**
 - **diagrams.onprem.network.Consul**
 - **diagrams.onprem.network.Envoy**
@@ -139,6 +140,7 @@ Node classes list of onprem provider.
 - **diagrams.onprem.network.Kong**
 - **diagrams.onprem.network.Linkerd**
 - **diagrams.onprem.network.Nginx**
+- **diagrams.onprem.network.Oauth2Proxy**
 - **diagrams.onprem.network.Ocelot**
 - **diagrams.onprem.network.OpenServiceMesh**, **OSM** (alias)
 - **diagrams.onprem.network.Opnsense**, **OPNsense** (alias)
