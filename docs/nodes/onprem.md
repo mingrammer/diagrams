@@ -166,6 +166,10 @@ Node classes list of onprem provider.
 - **diagrams.onprem.security.Trivy**
 - **diagrams.onprem.security.Vault**
 
+## onprem.tracing
+
+- **diagrams.onprem.tracing.Jaeger**
+
 ## onprem.vcs
 
 - **diagrams.onprem.vcs.Git**
