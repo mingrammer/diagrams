@@ -79,6 +79,11 @@ Node classes list of onprem provider.
 - **diagrams.onprem.database.Postgresql**, **PostgreSQL** (alias)
 - **diagrams.onprem.database.Scylla**
 
+## onprem.dns
+
+- **diagrams.onprem.dns.Coredns**
+- **diagrams.onprem.dns.Powerdns**
+
 ## onprem.etl
 
 - **diagrams.onprem.etl.Embulk**
