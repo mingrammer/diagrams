@@ -12,10 +12,6 @@ class Fluentbit(_Logging):
     _icon = "fluentbit.png"
 
 
-class Fluentd(_Logging):
-    _icon = "fluentd.png"
-
-
 class Graylog(_Logging):
     _icon = "graylog.png"
 
@@ -30,10 +26,6 @@ class Rsyslog(_Logging):
 
 class SyslogNg(_Logging):
     _icon = "syslog-ng.png"
-
-
-class Vector(_Logging):
-    _icon = "vector.png"
 
 
 # Aliases
