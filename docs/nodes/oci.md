@@ -9,8 +9,8 @@ Node classes list of oci provider.
 
 - **diagrams.oci.compute.AutoscaleWhite**
 - **diagrams.oci.compute.Autoscale**
-- **diagrams.oci.compute.BMWhite**
-- **diagrams.oci.compute.BM**
+- **diagrams.oci.compute.BMWhite**, **BareMetalWhite** (alias)
+- **diagrams.oci.compute.BM**, **BareMetal** (alias)
 - **diagrams.oci.compute.ContainerWhite**
 - **diagrams.oci.compute.Container**
 - **diagrams.oci.compute.FunctionsWhite**
@@ -21,8 +21,8 @@ Node classes list of oci provider.
 - **diagrams.oci.compute.OCIR**, **OCIRegistry** (alias)
 - **diagrams.oci.compute.OKEWhite**, **ContainerEngineWhite** (alias)
 - **diagrams.oci.compute.OKE**, **ContainerEngine** (alias)
-- **diagrams.oci.compute.VMWhite**
-- **diagrams.oci.compute.VM**
+- **diagrams.oci.compute.VMWhite**, **VirtualMachineWhite** (alias)
+- **diagrams.oci.compute.VM**, **VirtualMachine** (alias)
 
 ## oci.connectivity
 
