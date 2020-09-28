@@ -130,12 +130,18 @@ ALIASES = {
             "Vyos": "VyOS"
         },
         "proxmox": {
-            "ProxmoxVE": "PVE",
+            "Pve": "ProxmoxVE",
         },
         "queue": {
             "Activemq": "ActiveMQ",
             "Rabbitmq": "RabbitMQ",
             "Zeromq": "ZeroMQ",
+        },
+        "storage": {
+            "ceph": {
+                "CEPH": "ceph",
+                "Ceph-OSD": "CEPH-OSD"
+            }
         },
         "workflow": {
             "Kubeflow": "KubeFlow",

@@ -14,4 +14,4 @@ class Pve(_Proxmox):
 
 # Aliases
 
-PVE = ProxmoxVE
+ProxmoxVE = Pve

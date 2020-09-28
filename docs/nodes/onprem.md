@@ -152,7 +152,7 @@ Node classes list of onprem provider.
 
 ## onprem.proxmox
 
-- **diagrams.onprem.proxmox.Pve**
+- **diagrams.onprem.proxmox.Pve**, **ProxmoxVE** (alias)
 
 ## onprem.queue
 
@@ -173,6 +173,7 @@ Node classes list of onprem provider.
 
 ## onprem.storage
 
+- **diagrams.onprem.storage.CephOsd**
 - **diagrams.onprem.storage.Ceph**
 - **diagrams.onprem.storage.Glusterfs**
 
