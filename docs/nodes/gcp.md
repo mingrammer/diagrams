@@ -8,6 +8,7 @@ Node classes list of gcp provider.
 ## gcp.analytics
 
 - **diagrams.gcp.analytics.Bigquery**, **BigQuery** (alias)
+- **diagrams.gcp.analytics.CloudTask**
 - **diagrams.gcp.analytics.Composer**
 - **diagrams.gcp.analytics.DataCatalog**
 - **diagrams.gcp.analytics.DataFusion**

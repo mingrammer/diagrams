@@ -12,6 +12,10 @@ class Bigquery(_Analytics):
     _icon = "bigquery.png"
 
 
+class CloudTask(_Analytics):
+    _icon = "cloud-task.png"
+
+
 class Composer(_Analytics):
     _icon = "composer.png"
 
