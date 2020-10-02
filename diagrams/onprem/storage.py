@@ -13,6 +13,8 @@ class Ceph(_Storage):
     _icon = "ceph.png"
 class Glusterfs(_Storage):
     _icon = "glusterfs.png"
+class Openebs(_Storage):
+    _icon = "openebs.png"
 class Rook(_Storage):
     _icon = "rook.png"
 
