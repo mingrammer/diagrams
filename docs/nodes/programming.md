@@ -41,3 +41,10 @@ Node classes list of programming provider.
 - **diagrams.programming.language.Rust**
 - **diagrams.programming.language.Swift**
 - **diagrams.programming.language.Typescript**, **TypeScript** (alias)
+
+## programming.telemetry
+
+- **diagrams.programming.telemetry.Opencensus**
+- **diagrams.programming.telemetry.Openmetrics**
+- **diagrams.programming.telemetry.Opentelemetry**
+- **diagrams.programming.telemetry.Opentracing**
