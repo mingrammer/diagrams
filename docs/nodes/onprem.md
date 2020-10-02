@@ -15,9 +15,11 @@ Node classes list of onprem provider.
 - **diagrams.onprem.analytics.Hive**
 - **diagrams.onprem.analytics.Metabase**
 - **diagrams.onprem.analytics.Norikra**
+- **diagrams.onprem.analytics.Presto**
 - **diagrams.onprem.analytics.Singer**
 - **diagrams.onprem.analytics.Spark**
 - **diagrams.onprem.analytics.Storm**
+- **diagrams.onprem.analytics.Superset**
 - **diagrams.onprem.analytics.Tableau**
 
 ## onprem.cd
@@ -148,7 +150,7 @@ Node classes list of onprem provider.
 - **diagrams.onprem.network.Nginx**
 - **diagrams.onprem.network.Ocelot**
 - **diagrams.onprem.network.OpenServiceMesh**, **OSM** (alias)
-- **diagrams.onprem.network.Opnsense**, **OPNsense** (alias)
+- **diagrams.onprem.network.Opnsense**, **OPNSense** (alias)
 - **diagrams.onprem.network.Pfsense**, **PFSense** (alias)
 - **diagrams.onprem.network.Pomerium**
 - **diagrams.onprem.network.Powerdns**
