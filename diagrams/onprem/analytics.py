@@ -53,6 +53,8 @@ class Spark(_Analytics):
 class Storm(_Analytics):
     _icon = "storm.png"
 
+class Superset(_Analytics):
+    _icon = "superset.png"
 
 class Tableau(_Analytics):
     _icon = "tableau.png"
