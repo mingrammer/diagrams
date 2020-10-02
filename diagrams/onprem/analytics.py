@@ -39,6 +39,8 @@ class Metabase(_Analytics):
 class Norikra(_Analytics):
     _icon = "norikra.png"
 
+class Presto(_Analytics):
+    _icon = "presto.png"
 
 class Singer(_Analytics):
     _icon = "singer.png"
