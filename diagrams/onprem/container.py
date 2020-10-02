@@ -20,6 +20,10 @@ class Docker(_Container):
     _icon = "docker.png"
 
 
+class Gvisor(_Container):
+    _icon = "gvisor.png"
+
+
 class Rkt(_Container):
     _icon = "rkt.png"
 
