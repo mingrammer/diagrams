@@ -23,6 +23,10 @@ class Docker(_Container):
 class Gvisor(_Container):
     _icon = "gvisor.png"
 
+    
+class Lxc(_Container):
+    _icon = "lxc.png"
+
 
 class Rkt(_Container):
     _icon = "rkt.png"
@@ -30,4 +34,5 @@ class Rkt(_Container):
 
 # Aliases
 
+LXC = Lxc
 RKT = Rkt

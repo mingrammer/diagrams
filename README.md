@@ -78,6 +78,10 @@ To contribute to diagram, check out [contribution guidelines](CONTRIBUTING.md).
 
 [Airflow Diagrams](https://github.com/feluelle/airflow-diagrams) is an Airflow plugin that aims to easily visualise your Airflow DAGs on service level from providers like AWS, GCP, Azure, etc. via diagrams.
 
+## Other languages
+
+- If you are familiar to Go, you can use [go-diagrams](https://github.com/blushft/go-diagrams) as well.
+
 ## License
 
 [MIT](LICENSE)

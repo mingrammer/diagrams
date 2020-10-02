@@ -12,6 +12,10 @@ class Apache(_Network):
     _icon = "apache.png"
 
 
+class Bind9(_Network):
+    _icon = "bind-9.png"
+
+
 class Caddy(_Network):
     _icon = "caddy.png"
 
@@ -28,6 +32,14 @@ class Etcd(_Network):
     _icon = "etcd.png"
 
 
+class Glassfish(_Network):
+    _icon = "glassfish.png"
+
+
+class Gunicorn(_Network):
+    _icon = "gunicorn.png"
+
+
 class Haproxy(_Network):
     _icon = "haproxy.png"
 
@@ -38,6 +50,14 @@ class Internet(_Network):
 
 class Istio(_Network):
     _icon = "istio.png"
+
+
+class Jbossas(_Network):
+    _icon = "jbossas.png"
+
+
+class Jetty(_Network):
+    _icon = "jetty.png"
 
 
 class Kong(_Network):
@@ -72,6 +92,10 @@ class Pomerium(_Network):
     _icon = "pomerium.png"
 
 
+class Powerdns(_Network):
+    _icon = "powerdns.png"
+
+
 class Tomcat(_Network):
     _icon = "tomcat.png"
 
@@ -82,6 +106,10 @@ class Traefik(_Network):
 
 class Vyos(_Network):
     _icon = "vyos.png"
+
+
+class Wildfly(_Network):
+    _icon = "wildfly.png"
 
 
 class Zookeeper(_Network):
