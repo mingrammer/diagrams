@@ -8,6 +8,11 @@ class _Chat(_Saas):
     _icon_dir = "resources/saas/chat"
 
 
+
+class Discord(_Chat):
+    _icon = "discord.png"
+
+
 class Mattermost(_Chat):
     _icon = "mattermost.png"
 
