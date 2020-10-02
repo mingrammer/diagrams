@@ -67,6 +67,9 @@ class ToolsForPowershell(_Devtools):
 class ToolsForVisualStudio(_Devtools):
     _icon = "tools-for-visual-studio.png"
 
+class Debugger(_Devtools):
+    _icon = "debugger.png"
+
 
 # Aliases
 

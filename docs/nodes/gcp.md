@@ -59,6 +59,7 @@ Node classes list of gcp provider.
 - **diagrams.gcp.devtools.ToolsForEclipse**
 - **diagrams.gcp.devtools.ToolsForPowershell**
 - **diagrams.gcp.devtools.ToolsForVisualStudio**
+- **diagrams.gcp.devtools.Debugger**
 
 ## gcp.iot
 
