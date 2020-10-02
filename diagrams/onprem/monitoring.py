@@ -8,6 +8,10 @@ class _Monitoring(_OnPrem):
     _icon_dir = "resources/onprem/monitoring"
 
 
+class Cortex(_Monitoring):
+    _icon = "cortex.png"
+
+
 class Datadog(_Monitoring):
     _icon = "datadog.png"
 
