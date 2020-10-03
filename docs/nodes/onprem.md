@@ -5,6 +5,11 @@ title: OnPrem
 
 Node classes list of onprem provider.
 
+## onprem.aggregator
+
+- **diagrams.onprem.aggregator.Fluentd**
+- **diagrams.onprem.aggregator.Vector**
+
 ## onprem.analytics
 
 - **diagrams.onprem.analytics.Beam**
@@ -107,7 +112,6 @@ Node classes list of onprem provider.
 ## onprem.logging
 
 - **diagrams.onprem.logging.Fluentbit**, **FluentBit** (alias)
-- **diagrams.onprem.logging.Fluentd**
 - **diagrams.onprem.logging.Graylog**
 - **diagrams.onprem.logging.Loki**
 - **diagrams.onprem.logging.Rsyslog**, **RSyslog** (alias)
