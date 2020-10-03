@@ -25,6 +25,11 @@ Node classes list of onprem provider.
 - **diagrams.onprem.analytics.Storm**
 - **diagrams.onprem.analytics.Tableau**
 
+## onprem.auth
+
+- **diagrams.onprem.auth.BuzzfeedSso**
+- **diagrams.onprem.auth.Oauth2Proxy**
+
 ## onprem.cd
 
 - **diagrams.onprem.cd.Spinnaker**
