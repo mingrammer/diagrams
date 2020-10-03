@@ -14,6 +14,7 @@ Node classes list of programming provider.
 - **diagrams.programming.framework.Flask**
 - **diagrams.programming.framework.Flutter**
 - **diagrams.programming.framework.Laravel**
+- **diagrams.programming.framework.Micronaut**
 - **diagrams.programming.framework.Rails**
 - **diagrams.programming.framework.React**
 - **diagrams.programming.framework.Spring**
