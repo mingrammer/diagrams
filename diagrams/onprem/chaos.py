@@ -8,12 +8,4 @@ class _Chaos(_OnPrem):
     _icon_dir = "resources/onprem/chaos"
 
 
-class ChaosMesh(_Chaos):
-    _icon = "chaos-mesh.png"
-
-
-class LitmusChaos(_Chaos):
-    _icon = "litmus-chaos.png"
-
-
 # Aliases

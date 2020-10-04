@@ -33,8 +33,6 @@ Node classes list of onprem provider.
 
 ## onprem.chaos
 
-- **diagrams.onprem.chaos.ChaosMesh**
-- **diagrams.onprem.chaos.LitmusChaos**
 
 ## onprem.ci
 
