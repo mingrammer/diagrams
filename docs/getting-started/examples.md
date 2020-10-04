@@ -89,6 +89,47 @@ with Diagram("Event Processing", show=False):
 
 ![event processing diagram](/img/event_processing_diagram.png)
 
+
+## Event Processing with Kafka & Confluent
+```
+from diagrams import Cluster, Diagram
+from diagrams.confluent.streaming import Ksql, Confluent
+from diagrams.elastic.elasticsearch import Elasticsearch
+from diagrams.onprem.compute import Server
+from diagrams.onprem.database import Postgresql
+from diagrams.onprem.queue import Kafka
+
+with Diagram("Event Processing with Confluent", show=False):
+    kafka = Kafka("Kafka")
+
+    with Cluster("Source of Data"):
+        [Server(),
+        Server(),
+        Server()] >> kafka
+
+    with Cluster("KSQL Cluster"):
+        ksql = [Ksql(),
+         Ksql(),
+         Ksql()]
+
+    with Cluster("Kafka Connect Cluster"):
+        kafka_connect = [Confluent(),
+                Confluent(),
+                Confluent()]
+
+    with Cluster("Data Sinks"):
+        postgres = Postgresql()
+        elasticsearch = Elasticsearch()
+
+    kafka >> ksql
+    ksql >> kafka
+    kafka >> kafka_connect
+    kafka_connect >> postgres
+    kafka_connect >> elasticsearch
+```
+
+![event processing diagram_confluent](/img/event_processing_diagram_confluent.png)
+
 ## Message Collecting System on GCP
 
 ```python
