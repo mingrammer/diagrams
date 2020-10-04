@@ -428,5 +428,11 @@ ALIASES = {
             "Tripleo": "TripleO",
         }
     },
-    "confluent": {},
+    "confluent": {
+        "streaming": {
+            "ksql": {
+                "Ksql": "KsqlDB"
+            }
+        }
+    },
 }

@@ -2,7 +2,6 @@
 
 from . import _Confluent
 
-
 class _Streaming(_Confluent):
     _type = "streaming"
     _icon_dir = "resources/confluent/streaming"
@@ -10,10 +9,9 @@ class _Streaming(_Confluent):
 
 class Confluent(_Streaming):
     _icon = "confluent.png"
-
-
 class Ksql(_Streaming):
     _icon = "ksql.png"
 
-
 # Aliases
+
+{'Ksql': 'KsqlDB'} = ksql

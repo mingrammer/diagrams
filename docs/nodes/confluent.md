@@ -8,4 +8,4 @@ Node classes list of confluent provider.
 ## confluent.streaming
 
 - **diagrams.confluent.streaming.Confluent**
-- **diagrams.confluent.streaming.Ksql**
+- **diagrams.confluent.streaming.Ksql**, **KsqlDB** (alias)
