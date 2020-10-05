@@ -107,6 +107,10 @@ Node classes list of onprem provider.
 - **diagrams.onprem.iac.Awx**
 - **diagrams.onprem.iac.Terraform**
 
+## onprem.identity
+
+- **diagrams.onprem.identity.Dex**
+
 ## onprem.inmemory
 
 - **diagrams.onprem.inmemory.Aerospike**
