@@ -5,6 +5,11 @@ title: K8S
 
 Node classes list of k8s provider.
 
+## k8s.chaos
+
+- **diagrams.k8s.chaos.ChaosMesh**
+- **diagrams.k8s.chaos.LitmusChaos**
+
 ## k8s.clusterconfig
 
 - **diagrams.k8s.clusterconfig.HPA**, **HorizontalPodAutoscaler** (alias)
