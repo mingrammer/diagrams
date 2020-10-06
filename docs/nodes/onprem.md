@@ -134,6 +134,7 @@ Node classes list of onprem provider.
 
 - **diagrams.onprem.monitoring.Datadog**
 - **diagrams.onprem.monitoring.Grafana**
+- **diagrams.onprem.monitoring.Newrelic**
 - **diagrams.onprem.monitoring.PrometheusOperator**
 - **diagrams.onprem.monitoring.Prometheus**
 - **diagrams.onprem.monitoring.Sentry**
@@ -161,7 +162,7 @@ Node classes list of onprem provider.
 - **diagrams.onprem.network.Nginx**
 - **diagrams.onprem.network.Ocelot**
 - **diagrams.onprem.network.OpenServiceMesh**, **OSM** (alias)
-- **diagrams.onprem.network.Opnsense**, **OPNsense** (alias)
+- **diagrams.onprem.network.Opnsense**, **OPNSense** (alias)
 - **diagrams.onprem.network.Pfsense**, **PFSense** (alias)
 - **diagrams.onprem.network.Pomerium**
 - **diagrams.onprem.network.Powerdns**
