@@ -1,9 +1,0 @@
-[console_scripts]
-isort = isort.main:main
-
-[distutils.commands]
-isort = isort.main:ISortCommand
-
-[pylama.linter]
-isort = isort.pylama_isort:Linter
-
