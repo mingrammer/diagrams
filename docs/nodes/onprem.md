@@ -198,8 +198,6 @@ Node classes list of onprem provider.
 - **diagrams.onprem.storage.Ceph**
 - **diagrams.onprem.storage.Glusterfs**
 - **diagrams.onprem.storage.Minio**
-- **diagrams.onprem.storage.Openebs**
-- **diagrams.onprem.storage.Rook**
 
 ## onprem.vcs
 
