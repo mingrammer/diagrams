@@ -30,9 +30,6 @@ Node classes list of k8s provider.
 - **diagrams.k8s.controlplane.Kubelet**
 - **diagrams.k8s.controlplane.Sched**, **Scheduler** (alias)
 
-## k8s.ecosystem
-
-
 ## k8s.group
 
 - **diagrams.k8s.group.NS**, **Namespace** (alias)
