@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: typed-ast
+Version: 1.4.1
+Summary: a fork of Python 2 and 3 ast modules with type comment support
+Home-page: https://github.com/python/typed_ast
+Author: David Fisher
+Author-email: UNKNOWN
+License: Apache License 2.0
+Platform: POSIX
+Platform: Windows
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development
+
+`typed_ast` is a Python 3 package that provides a Python 2.7 and Python 3
+parser similar to the standard `ast` library.  Unlike `ast`, the parsers in
+`typed_ast` include PEP 484 type comments and are independent of the version of
+Python under which they are run.  The `typed_ast` parsers produce the standard
+Python AST (plus type comments), and are both fast and correct, as they are
+based on the CPython 2.7 and 3.6 parsers.
+
