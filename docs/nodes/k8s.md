@@ -35,12 +35,12 @@ Node classes list of k8s provider.
 - **diagrams.k8s.controlplane.Kubelet**
 - **diagrams.k8s.controlplane.Sched**, **Scheduler** (alias)
 
+## k8s.dns
+
+- **diagrams.k8s.dns.ExternalDns**
+
 ## k8s.ecosystem
 
-- **diagrams.k8s.ecosystem.ExternalDns**
-- **diagrams.k8s.ecosystem.Helm**
-- **diagrams.k8s.ecosystem.Krew**
-- **diagrams.k8s.ecosystem.Kustomize**
 
 ## k8s.group
 
@@ -63,6 +63,12 @@ Node classes list of k8s provider.
 
 - **diagrams.k8s.others.CRD**
 - **diagrams.k8s.others.PSP**
+
+## k8s.packaging
+
+- **diagrams.k8s.packaging.Helm**
+- **diagrams.k8s.packaging.Krew**
+- **diagrams.k8s.packaging.Kustomize**
 
 ## k8s.podconfig
 
