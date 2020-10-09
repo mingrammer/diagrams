@@ -140,10 +140,8 @@ ALIASES = {
             "Zeromq": "ZeroMQ",
         },
         "storage": {
-            "ceph": {
-                "CEPH": "ceph",
-                "Ceph-OSD": "CEPH-OSD"
-            }
+            "Ceph": "CEPH",
+            "CephOsd": "CEPH_OSD",
         },
         "workflow": {
             "Kubeflow": "KubeFlow",
