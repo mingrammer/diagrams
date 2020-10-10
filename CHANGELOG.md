@@ -1,5 +1,23 @@
 # Changelogs
 
+## 0.17.0
+
+### Added
+
+- Support GCP Endpoints: [#259](https://github.com/mingrammer/diagrams/pull/259)
+- Support DroneCI and Atlantis (Terraform): [#255](https://github.com/mingrammer/diagrams/pull/255)
+- Support Okta: [#254](https://github.com/mingrammer/diagrams/pull/254)
+- Support OutScale provider: [#251](https://github.com/mingrammer/diagrams/pull/251)
+- Support Prometheus Operator: [#253](https://github.com/mingrammer/diagrams/pull/253)
+- Support Snowflake: [#245](https://github.com/mingrammer/diagrams/pull/245)
+- Support for CJK fonts + Replace ms-fonts with opensans: [#242](https://github.com/mingrammer/diagrams/pull/242)
+- Support Pushover: [#241](https://github.com/mingrammer/diagrams/pull/241)
+
+### Fixed
+
+- Update bm, vm cases for OCI
+- Set a dummy filename to prevent raise error when both name and filename are not provided: [#240](https://github.com/mingrammer/diagrams/pull/240)
+
 ## 0.16.0
 
 ### Breaking Changes

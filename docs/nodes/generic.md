@@ -26,6 +26,7 @@ Node classes list of generic provider.
 
 - **diagrams.generic.network.Firewall**
 - **diagrams.generic.network.Router**
+- **diagrams.generic.network.Subnet**
 - **diagrams.generic.network.Switch**
 - **diagrams.generic.network.VPN**
 

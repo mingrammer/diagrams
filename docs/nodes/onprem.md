@@ -5,6 +5,11 @@ title: OnPrem
 
 Node classes list of onprem provider.
 
+## onprem.aggregator
+
+- **diagrams.onprem.aggregator.Fluentd**
+- **diagrams.onprem.aggregator.Vector**
+
 ## onprem.analytics
 
 - **diagrams.onprem.analytics.Beam**
@@ -20,11 +25,21 @@ Node classes list of onprem provider.
 - **diagrams.onprem.analytics.Storm**
 - **diagrams.onprem.analytics.Tableau**
 
+## onprem.auth
+
+- **diagrams.onprem.auth.BuzzfeedSso**
+- **diagrams.onprem.auth.Oauth2Proxy**
+
 ## onprem.cd
 
 - **diagrams.onprem.cd.Spinnaker**
 - **diagrams.onprem.cd.TektonCli**
 - **diagrams.onprem.cd.Tekton**
+
+## onprem.certificates
+
+- **diagrams.onprem.certificates.CertManager**
+- **diagrams.onprem.certificates.LetsEncrypt**
 
 ## onprem.ci
 
@@ -51,6 +66,7 @@ Node classes list of onprem provider.
 ## onprem.container
 
 - **diagrams.onprem.container.Docker**
+- **diagrams.onprem.container.Lxc**, **LXC** (alias)
 - **diagrams.onprem.container.Rkt**, **RKT** (alias)
 
 ## onprem.database
@@ -91,6 +107,10 @@ Node classes list of onprem provider.
 - **diagrams.onprem.iac.Awx**
 - **diagrams.onprem.iac.Terraform**
 
+## onprem.identity
+
+- **diagrams.onprem.identity.Dex**
+
 ## onprem.inmemory
 
 - **diagrams.onprem.inmemory.Aerospike**
@@ -101,7 +121,6 @@ Node classes list of onprem provider.
 ## onprem.logging
 
 - **diagrams.onprem.logging.Fluentbit**, **FluentBit** (alias)
-- **diagrams.onprem.logging.Fluentd**
 - **diagrams.onprem.logging.Graylog**
 - **diagrams.onprem.logging.Loki**
 - **diagrams.onprem.logging.Rsyslog**, **RSyslog** (alias)
@@ -120,26 +139,41 @@ Node classes list of onprem provider.
 - **diagrams.onprem.monitoring.Sentry**
 - **diagrams.onprem.monitoring.Splunk**
 - **diagrams.onprem.monitoring.Thanos**
+- **diagrams.onprem.monitoring.Zabbix**
 
 ## onprem.network
 
 - **diagrams.onprem.network.Apache**
+- **diagrams.onprem.network.Bind9**
 - **diagrams.onprem.network.Caddy**
 - **diagrams.onprem.network.Consul**
 - **diagrams.onprem.network.Envoy**
 - **diagrams.onprem.network.Etcd**, **ETCD** (alias)
+- **diagrams.onprem.network.Glassfish**
+- **diagrams.onprem.network.Gunicorn**
 - **diagrams.onprem.network.Haproxy**, **HAProxy** (alias)
 - **diagrams.onprem.network.Internet**
 - **diagrams.onprem.network.Istio**
+- **diagrams.onprem.network.Jbossas**
+- **diagrams.onprem.network.Jetty**
 - **diagrams.onprem.network.Kong**
 - **diagrams.onprem.network.Linkerd**
 - **diagrams.onprem.network.Nginx**
+- **diagrams.onprem.network.Ocelot**
+- **diagrams.onprem.network.OpenServiceMesh**, **OSM** (alias)
+- **diagrams.onprem.network.Opnsense**, **OPNSense** (alias)
 - **diagrams.onprem.network.Pfsense**, **PFSense** (alias)
 - **diagrams.onprem.network.Pomerium**
+- **diagrams.onprem.network.Powerdns**
 - **diagrams.onprem.network.Tomcat**
 - **diagrams.onprem.network.Traefik**
 - **diagrams.onprem.network.Vyos**, **VyOS** (alias)
+- **diagrams.onprem.network.Wildfly**
 - **diagrams.onprem.network.Zookeeper**
+
+## onprem.proxmox
+
+- **diagrams.onprem.proxmox.Pve**, **ProxmoxVE** (alias)
 
 ## onprem.queue
 
@@ -157,6 +191,12 @@ Node classes list of onprem provider.
 
 - **diagrams.onprem.security.Trivy**
 - **diagrams.onprem.security.Vault**
+
+## onprem.storage
+
+- **diagrams.onprem.storage.CephOsd**, **CEPH_OSD** (alias)
+- **diagrams.onprem.storage.Ceph**, **CEPH** (alias)
+- **diagrams.onprem.storage.Glusterfs**
 
 ## onprem.vcs
 

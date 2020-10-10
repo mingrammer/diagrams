@@ -12,6 +12,10 @@ class Apache(_Network):
     _icon = "apache.png"
 
 
+class Bind9(_Network):
+    _icon = "bind-9.png"
+
+
 class Caddy(_Network):
     _icon = "caddy.png"
 
@@ -28,6 +32,14 @@ class Etcd(_Network):
     _icon = "etcd.png"
 
 
+class Glassfish(_Network):
+    _icon = "glassfish.png"
+
+
+class Gunicorn(_Network):
+    _icon = "gunicorn.png"
+
+
 class Haproxy(_Network):
     _icon = "haproxy.png"
 
@@ -38,6 +50,14 @@ class Internet(_Network):
 
 class Istio(_Network):
     _icon = "istio.png"
+
+
+class Jbossas(_Network):
+    _icon = "jbossas.png"
+
+
+class Jetty(_Network):
+    _icon = "jetty.png"
 
 
 class Kong(_Network):
@@ -52,12 +72,28 @@ class Nginx(_Network):
     _icon = "nginx.png"
 
 
+class Ocelot(_Network):
+    _icon = "ocelot.png"
+
+
+class OpenServiceMesh(_Network):
+    _icon = "open-service-mesh.png"
+
+
+class Opnsense(_Network):
+    _icon = "opnsense.png"
+
+
 class Pfsense(_Network):
     _icon = "pfsense.png"
 
 
 class Pomerium(_Network):
     _icon = "pomerium.png"
+
+
+class Powerdns(_Network):
+    _icon = "powerdns.png"
 
 
 class Tomcat(_Network):
@@ -72,6 +108,10 @@ class Vyos(_Network):
     _icon = "vyos.png"
 
 
+class Wildfly(_Network):
+    _icon = "wildfly.png"
+
+
 class Zookeeper(_Network):
     _icon = "zookeeper.png"
 
@@ -80,5 +120,7 @@ class Zookeeper(_Network):
 
 ETCD = Etcd
 HAProxy = Haproxy
+OSM = OpenServiceMesh
+OPNSense = Opnsense
 PFSense = Pfsense
 VyOS = Vyos

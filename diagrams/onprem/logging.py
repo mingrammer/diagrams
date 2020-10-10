@@ -12,10 +12,6 @@ class Fluentbit(_Logging):
     _icon = "fluentbit.png"
 
 
-class Fluentd(_Logging):
-    _icon = "fluentd.png"
-
-
 class Graylog(_Logging):
     _icon = "graylog.png"
 

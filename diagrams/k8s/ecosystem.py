@@ -8,6 +8,10 @@ class _Ecosystem(_K8S):
     _icon_dir = "resources/k8s/ecosystem"
 
 
+class ExternalDns(_Ecosystem):
+    _icon = "external-dns.png"
+
+
 class Helm(_Ecosystem):
     _icon = "helm.png"
 
