@@ -55,6 +55,12 @@ from diagrams.k8s.storage import PV, PVC, StorageClass
 from diagrams.oci.compute import VirtualMachine, Container
 from diagrams.oci.network import Firewall
 from diagrams.oci.storage import FileStorage, StorageGateway
+...
+
+# tencent cloud resources
+from diagrams.tencentcloud.compute import CVM
+from diagrams.tencentcloud.network import VPC
+...
 ```
 
 You can find all available nodes list in [Here](https://diagrams.mingrammer.com/docs/nodes/aws).

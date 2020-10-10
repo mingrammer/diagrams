@@ -13,7 +13,7 @@ DIR_TEMPLATE = "templates"
 
 PROVIDERS = (
     "base", "onprem", "aws", "azure", "digitalocean", "gcp", "ibm", "firebase", "k8s", "alibabacloud", "oci",
-    "programming", "saas", "elastic", "generic", "openstack", "outscale")
+    "programming", "saas", "elastic", "tencentcloud", "generic", "openstack", "outscale")
 
 #########################
 #  Resource Processing  #
@@ -43,6 +43,7 @@ FILE_PREFIXES = {
     "outscale": (),
     "generic": (),
     "openstack": (),
+    "tencentcloud": (),
 }
 
 #########################
@@ -82,6 +83,9 @@ TITLE_WORDS = {
     "alibabacloud": {
         "alibabacloud": "AlibabaCloud"
     },
+    "tencentcloud": {
+        "tencentcloud": "TencentCloud",
+    },
     "aws": {
         "cloudfront": "CloudFront"
     },
@@ -98,6 +102,66 @@ TITLE_WORDS = {
 
 # TODO: check if the classname exists
 ALIASES = {
+    "tencentcloud": {
+        "compute": {
+            "CloudVirtualMachine": "CVM",
+            "GpuCloudComputing": "GPU",
+            "FpgaCloudComputing": "FPGA",
+            "CloudPhysicalMachine": "CPM",
+            "CvmDedicatedHost": "CDH",
+            "AutoScaling": "AS",
+            "BatchCompute": "Batch",
+        },
+        "container": {
+            "TencentKubernetesEngine": "TKE",
+        },
+        "storage": {
+            "CloudBlockStorage": "CBS",
+            "CloudObjectStorage": "COS",
+            "CloudStorageGateway": "CSG",
+            "CloudDataMigration": "CDM",
+            "CloudFileStorage": "CFS",
+            "CloudLogService": "CLS",
+            "CloudArchiveStorage": "CAS",
+        },
+        "network": {
+            "VirtualPrivateCloud": "VPC",
+            "CloudLoadBalancer": "CLB",
+            "ElasticNetworkInterface": "ENI",
+            "DirectConnect": "DC",
+            "VpnConnections": "VPNConnections",
+            "NatGateway": "NATGateway",
+            "FlowLogs": "FL",
+            "PeeringConnection": "PC",
+            "AnycastInternetAcceleration": "AIA",
+            "CloudConnectNetwork": "CCN",
+            "BandwidthPackage": "BWP",
+        },
+        "database": {
+            "TencentDbMysql": "CDB",
+            "TencentDbTdsql": "TDSQL",
+            "TencentDbCtsdb": "CTSDB",
+            "TencentDbCynosdb": "CynosDB",
+            "Tdata": "TData",
+            "TencentDbTcaplusdb": "TcaplusDB",
+            "TencentDbMariadb": "MariaDB",
+            "TencentDbRedis": "Redis",
+            "DataTransmissionService": "DTS",
+            "TencentDbSqlserver": "SQLServer",
+            "TencentDbMongodb": "MongoDB",
+            "TencentDbPostgresql": "PostgreSQL",
+            "TencentDbMemcached": "Memcached",
+            "TencentDbMysql": "CDB",
+            "TencentDbMysql": "CDB",
+            "TencentDbMysql": "CDB",
+        },
+        "serverless": {
+            "ServerlessCloudFunction": "SCF",
+        },
+        "middleware": {
+            "CloudMessageQueue": "CMQ",
+        },
+    },
     "onprem": {
         "analytics": {
             "Powerbi": "PowerBI"
