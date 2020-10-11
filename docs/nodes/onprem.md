@@ -198,6 +198,10 @@ Node classes list of onprem provider.
 - **diagrams.onprem.storage.Ceph**, **CEPH** (alias)
 - **diagrams.onprem.storage.Glusterfs**
 
+## onprem.tracing
+
+- **diagrams.onprem.tracing.Jaeger**
+
 ## onprem.vcs
 
 - **diagrams.onprem.vcs.Git**
