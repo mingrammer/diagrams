@@ -1,5 +1,5 @@
 """
-Saas provides a set of general saas services.
+Saas provides a set of general SaaS services.
 """
 
 from diagrams import Node

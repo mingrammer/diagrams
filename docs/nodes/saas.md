@@ -12,6 +12,8 @@ Node classes list of saas provider.
 
 ## saas.analytics
 
+- **diagrams.saas.analytics.Hotjar**
+- **diagrams.saas.analytics.Mixpanel**
 - **diagrams.saas.analytics.Snowflake**
 - **diagrams.saas.analytics.Stitch**
 
@@ -19,6 +21,14 @@ Node classes list of saas provider.
 
 - **diagrams.saas.cdn.Akamai**
 - **diagrams.saas.cdn.Cloudflare**
+
+## saas.cdm
+
+- **diagrams.saas.cdm.Segment**
+
+## saas.crm
+
+- **diagrams.saas.crm.Pipedrive**
 
 ## saas.chat
 
@@ -33,6 +43,10 @@ Node classes list of saas provider.
 - **diagrams.saas.identity.Auth0**
 - **diagrams.saas.identity.Okta**
 
+## saas.issues
+
+- **diagrams.saas.issues.ZenHub**
+
 ## saas.logging
 
 - **diagrams.saas.logging.Datadog**, **DataDog** (alias)
@@ -41,6 +55,10 @@ Node classes list of saas provider.
 ## saas.media
 
 - **diagrams.saas.media.Cloudinary**
+
+## saas.product
+
+- **diagrams.saas.product.Productboard**
 
 ## saas.recommendation
 
