@@ -22,9 +22,10 @@ Node classes list of saas provider.
 - **diagrams.saas.cdn.Akamai**
 - **diagrams.saas.cdn.Cloudflare**
 
-## saas.cdm
+## saas.cdp
 
-- **diagrams.saas.cdm.Segment**
+- **diagrams.saas.cdp.RudderStack**
+- **diagrams.saas.cdp.Segment**
 
 ## saas.crm
 
