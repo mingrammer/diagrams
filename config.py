@@ -13,7 +13,7 @@ DIR_TEMPLATE = "templates"
 
 PROVIDERS = (
     "base", "onprem", "aws", "azure", "gcp", "firebase", "k8s", "alibabacloud", "oci", "programming", "saas", "elastic",
-    "generic", "openstack", "outscale")
+    "generic", "openstack", "outscale", "scaleway")
 
 #########################
 #  Resource Processing  #
@@ -41,6 +41,7 @@ FILE_PREFIXES = {
     "outscale": (),
     "generic": (),
     "openstack": (),
+    "scaleway": (),
 }
 
 #########################
@@ -423,6 +424,14 @@ ALIASES = {
         "deployment": {
             "Kolla": "KollaAnsible",
             "Tripleo": "TripleO",
+        }
+    },
+    "scaleway": {
+        "devtools": {
+            "CommandLineInterface": "CLI",
+        },
+        "compute": {
+            "KubernetesEngine": "Kapsule",
         }
     },
 }
