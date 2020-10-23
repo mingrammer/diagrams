@@ -197,6 +197,7 @@ Node classes list of azure provider.
 - **diagrams.azure.network.RouteFilters**
 - **diagrams.azure.network.RouteTables**
 - **diagrams.azure.network.ServiceEndpointPolicies**
+- **diagrams.azure.network.Subnets**
 - **diagrams.azure.network.TrafficManagerProfiles**
 - **diagrams.azure.network.VirtualNetworkClassic**
 - **diagrams.azure.network.VirtualNetworkGateways**
