@@ -24,4 +24,8 @@ class Kustomize(_Ecosystem):
     _icon = "kustomize.png"
 
 
+class Tanka(_Ecosystem):
+    _icon = "tanka.png"
+
+
 # Aliases
