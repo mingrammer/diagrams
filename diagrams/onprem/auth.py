@@ -8,6 +8,10 @@ class _Auth(_OnPrem):
     _icon_dir = "resources/onprem/auth"
 
 
+class Boundary(_Auth):
+    _icon = "boundary.png"
+
+
 class BuzzfeedSso(_Auth):
     _icon = "buzzfeed-sso.png"
 
