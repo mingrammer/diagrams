@@ -8,6 +8,10 @@ class _Security(_OnPrem):
     _icon_dir = "resources/onprem/security"
 
 
+class Bitwarden(_Security):
+    _icon = "bitwarden.png"
+
+
 class Trivy(_Security):
     _icon = "trivy.png"
 
