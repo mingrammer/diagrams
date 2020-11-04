@@ -144,7 +144,7 @@ Node classes list of aws provider.
 - **diagrams.aws.general.GenericSamlToken**
 - **diagrams.aws.general.GenericSDK**
 - **diagrams.aws.general.Marketplace**
-- **diagrams.aws.general.TradicionalServer**
+- **diagrams.aws.general.TraditionalServer**
 - **diagrams.aws.general.User**
 - **diagrams.aws.general.Users**
 
