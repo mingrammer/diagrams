@@ -80,6 +80,10 @@ class Rust(_Language):
     _icon = "rust.png"
 
 
+class Scala(_Language):
+    _icon = "scala.png"
+
+
 class Swift(_Language):
     _icon = "swift.png"
 
