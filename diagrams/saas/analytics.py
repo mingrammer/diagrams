@@ -7,10 +7,14 @@ class _Analytics(_Saas):
     _type = "analytics"
     _icon_dir = "resources/saas/analytics"
 
+class Mode(_Analytics):
+    _icon = "mode.png"
 
 class Snowflake(_Analytics):
     _icon = "snowflake.png"
 
+class Sigma(_Analytics):
+    _icon = "sigma.png"
 
 class Stitch(_Analytics):
     _icon = "stitch.png"
