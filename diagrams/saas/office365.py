@@ -12,6 +12,14 @@ class Access(_Office365):
     _icon = "access.png"
 
 
+class Bookings(_Office365):
+    _icon = "bookings.png"
+
+
+class Delve(_Office365):
+    _icon = "delve.png"
+
+
 class Excel(_Office365):
     _icon = "excel.png"
 
@@ -20,12 +28,44 @@ class Exchange(_Office365):
     _icon = "exchange.png"
 
 
+class Flow(_Office365):
+    _icon = "flow.png"
+
+
 class Forms(_Office365):
     _icon = "forms.png"
 
 
+class Groupme(_Office365):
+    _icon = "groupme.png"
+
+
+class Infopath(_Office365):
+    _icon = "infopath.png"
+
+
+class Invoicing(_Office365):
+    _icon = "invoicing.png"
+
+
 class Kaizala(_Office365):
     _icon = "kaizala.png"
+
+
+class Lens(_Office365):
+    _icon = "lens.png"
+
+
+class MicrosoftToDo(_Office365):
+    _icon = "microsoft-to-do.png"
+
+
+class Mileiq(_Office365):
+    _icon = "mileiq.png"
+
+
+class Myanalytics(_Office365):
+    _icon = "myanalytics.png"
 
 
 class Office(_Office365):
@@ -40,12 +80,28 @@ class Onenote(_Office365):
     _icon = "onenote.png"
 
 
+class OutlookCustomerManager(_Office365):
+    _icon = "outlook-customer-manager.png"
+
+
 class Outlook(_Office365):
     _icon = "outlook.png"
 
 
+class Outlookcalendar(_Office365):
+    _icon = "outlookcalendar.png"
+
+
 class Planner(_Office365):
     _icon = "planner.png"
+
+
+class Powerapps(_Office365):
+    _icon = "powerapps.png"
+
+
+class Powerbi(_Office365):
+    _icon = "powerbi.png"
 
 
 class Powerpoint(_Office365):
@@ -60,12 +116,24 @@ class Publisher(_Office365):
     _icon = "publisher.png"
 
 
+class Remote(_Office365):
+    _icon = "remote.png"
+
+
 class Sharepoint(_Office365):
     _icon = "sharepoint.png"
 
 
+class SkypeForBusiness(_Office365):
+    _icon = "skype-for-business.png"
+
+
 class Skype(_Office365):
     _icon = "skype.png"
+
+
+class Staffhub(_Office365):
+    _icon = "staffhub.png"
 
 
 class Stream(_Office365):
@@ -90,6 +158,10 @@ class Visio(_Office365):
 
 class Word(_Office365):
     _icon = "word.png"
+
+
+class WorkplaceAnalytics(_Office365):
+    _icon = "workplace-analytics.png"
 
 
 class Yammer(_Office365):
