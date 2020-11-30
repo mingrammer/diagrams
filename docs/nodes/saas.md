@@ -29,6 +29,10 @@ Node classes list of saas provider.
 - **diagrams.saas.chat.Teams**
 - **diagrams.saas.chat.Telegram**
 
+## saas.crm
+
+- **diagrams.saas.crm.Salesforce**
+
 ## saas.identity
 
 - **diagrams.saas.identity.Auth0**
