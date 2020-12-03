@@ -1,0 +1,20 @@
+version: 2
+updates:
+- package-ecosystem: pip
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "08:00"
+  open-pull-requests-limit: 10
+- package-ecosystem: npm
+  directory: "/website"
+  schedule:
+    interval: daily
+    time: "08:00"
+  open-pull-requests-limit: 10
+- package-ecosystem: docker
+  directory: "/docker/dev"
+  schedule:
+    interval: daily
+    time: "08:00"
+  open-pull-requests-limit: 10
