@@ -213,6 +213,7 @@ Node classes list of onprem provider.
 ## onprem.tracing
 
 - **diagrams.onprem.tracing.Jaeger**
+- **diagrams.onprem.tracing.Tempo**
 
 ## onprem.vcs
 
