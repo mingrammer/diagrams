@@ -27,6 +27,7 @@ Node classes list of onprem provider.
 
 ## onprem.auth
 
+- **diagrams.onprem.auth.Boundary**
 - **diagrams.onprem.auth.BuzzfeedSso**
 - **diagrams.onprem.auth.Oauth2Proxy**
 
@@ -110,6 +111,10 @@ Node classes list of onprem provider.
 - **diagrams.onprem.gitops.Flagger**
 - **diagrams.onprem.gitops.Flux**
 
+## onprem.groupware
+
+- **diagrams.onprem.groupware.Nextcloud**
+
 ## onprem.iac
 
 - **diagrams.onprem.iac.Ansible**
@@ -154,6 +159,7 @@ Node classes list of onprem provider.
 
 ## onprem.network
 
+- **diagrams.onprem.network.Ambassador**
 - **diagrams.onprem.network.Apache**
 - **diagrams.onprem.network.Bind9**
 - **diagrams.onprem.network.Caddy**
@@ -201,6 +207,7 @@ Node classes list of onprem provider.
 
 ## onprem.security
 
+- **diagrams.onprem.security.Bitwarden**
 - **diagrams.onprem.security.Trivy**
 - **diagrams.onprem.security.Vault**
 
