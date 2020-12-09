@@ -39,5 +39,6 @@ Node classes list of programming provider.
 - **diagrams.programming.language.R**
 - **diagrams.programming.language.Ruby**
 - **diagrams.programming.language.Rust**
+- **diagrams.programming.language.Scala**
 - **diagrams.programming.language.Swift**
 - **diagrams.programming.language.Typescript**, **TypeScript** (alias)
