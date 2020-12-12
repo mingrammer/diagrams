@@ -48,6 +48,10 @@ class LogAnalyticsWorkspaces(_Analytics):
     _icon = "log-analytics-workspaces.png"
 
 
+class PowerBi(_Analytics):
+    _icon = "power-bi.png"
+
+
 class StreamAnalyticsJobs(_Analytics):
     _icon = "stream-analytics-jobs.png"
 
