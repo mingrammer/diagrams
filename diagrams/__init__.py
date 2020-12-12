@@ -209,6 +209,9 @@ class Cluster:
         "fontsize": "12",
     }
 
+    _icon = None
+    _icon_size = 0
+
     # fmt: on
 
     # FIXME:
@@ -230,8 +233,10 @@ class Cluster:
         """
         self.label = label
         self.name = "cluster_" + self.label
-        self.icon = icon
-        self.icon_size = icon_size
+        if not self._icon:
+            self.icon = icon
+        if not self._icon_size:
+            self._icon_size = icon_size
 
         self.dot = Digraph(self.name)
 
@@ -241,11 +246,11 @@ class Cluster:
 
         # if an icon is set, try to find and instantiate a Node without calling __init__()
         # then find it's icon by calling _load_icon()
-        if self.icon:
-            _node = self.icon(_no_init=True)
+        if self._icon:
+            _node = self._icon(_no_init=True)
             if isinstance(_node,Node):
-                self.icon_label = '<<TABLE border="0"><TR><TD fixedsize="true" width="' + str(self.icon_size) +'" height="' + str(self.icon_size) +'"><IMG SRC="' + _node._load_icon() + '"></IMG></TD><TD>' + self.label + '</TD></TR></TABLE>>'
-                self.dot.graph_attr["label"] = self.icon_label
+                self._icon_label = '<<TABLE border="0"><TR><TD fixedsize="true" width="' + str(self._icon_size) +'" height="' + str(self._icon_size) +'"><IMG SRC="' + _node._load_icon() + '"></IMG></TD><TD>' + self.label + '</TD></TR></TABLE>>'
+                self.dot.graph_attr["label"] = self._icon_label
         else:
             self.dot.graph_attr["label"] = self.label
 
