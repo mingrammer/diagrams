@@ -66,6 +66,29 @@ with Diagram("Event Processing", show=False):
     handlers >> dw
 ```
 
+## Clusters with icons in the label
+
+You can add a Node icon before the cluster label (and specify its size as well).  You need to import the used Node class first.
+
+```python
+from diagrams import Cluster, Diagram
+from diagrams.aws.compute import ECS
+from diagrams.aws.database import RDS, Aurora
+from diagrams.aws.network import Route53, VPC
+
+with Diagram("Simple Web Service with DB Cluster", show=False):
+    dns = Route53("dns")
+    web = ECS("service")
+
+    with Cluster(label='VPC',icon=VPC):
+        with Cluster("DB Cluster",icon=Aurora,icon_size=30):
+            db_master = RDS("master")
+            db_master - [RDS("slave1"),
+                         RDS("slave2")]
+
+        dns >> web >> db_master
+```
+
 ![event processing diagram](/img/event_processing_diagram.png)
 
 > There is no depth limit of nesting. Feel free to create nested clusters as deep as you want.
