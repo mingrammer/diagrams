@@ -239,6 +239,7 @@ ALIASES = {
         "compute": {
             "ContainerRegistries": "ACR",
             "KubernetesServices": "AKS",
+            "VMScaleSet": "VMSS"
         },
     },
     "gcp": {

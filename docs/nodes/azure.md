@@ -39,6 +39,7 @@ Node classes list of azure provider.
 - **diagrams.azure.compute.VMClassic**
 - **diagrams.azure.compute.VMImages**
 - **diagrams.azure.compute.VMLinux**
+- **diagrams.azure.compute.VMScaleSet**
 - **diagrams.azure.compute.VMWindows**
 - **diagrams.azure.compute.VM**
 
