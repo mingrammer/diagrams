@@ -112,7 +112,9 @@ class Diagram:
         elif not filename:
             filename = "_".join(self.name.split()).lower()
         self.filename = filename
+
         self.dot = Digraph(self.name, filename=self.filename)
+        self._nodes = {}
 
         # Set attributes.
         for k, v in self._default_graph_attrs.items():
@@ -150,6 +152,9 @@ class Diagram:
         return self
 
     def __exit__(self, exc_type, exc_value, traceback):
+        for nodeid, node in self._nodes.items():
+            self.dot.node(nodeid, label=node['label'], **node['attrs'])
+
         self.render()
         # Remove the graphviz file leaving only the image.
         os.remove(self.filename)
@@ -181,7 +186,10 @@ class Diagram:
 
     def node(self, nodeid: str, label: str, **attrs) -> None:
         """Create a new node."""
-        self.dot.node(nodeid, label=label, **attrs)
+        self._nodes[nodeid] = {'label': label, 'attrs': attrs}
+    
+    def remove_node(self, nodeid: str) -> None:
+        del self._nodes[nodeid]
 
     def connect(self, node: "Node", node2: "Node", edge: "Edge") -> None:
         """Connect the two Nodes."""
@@ -239,6 +247,7 @@ class Cluster:
             self._icon_size = icon_size
 
         self.dot = Digraph(self.name)
+        self._nodes = {}
 
         # Set attributes.
         for k, v in self._default_graph_attrs.items():
@@ -277,13 +286,16 @@ class Cluster:
         return self
 
     def __exit__(self, exc_type, exc_value, traceback):
+        for nodeid, node in self._nodes.items():
+            self.dot.node(nodeid, label=node['label'], **node['attrs'])
+
         if self._parent:
             self._parent.subgraph(self.dot)
         else:
             self._diagram.subgraph(self.dot)
         setcluster(self._parent)
 
-    def _validate_direction(self, direction: str):
+    def _validate_direction(self, direction: str) -> bool:
         direction = direction.upper()
         for v in self.__directions:
             if v == direction:
@@ -292,7 +304,10 @@ class Cluster:
 
     def node(self, nodeid: str, label: str, **attrs) -> None:
         """Create a new node in the cluster."""
-        self.dot.node(nodeid, label=label, **attrs)
+        self._nodes[nodeid] = {'label': label, 'attrs': attrs}
+    
+    def remove_node(self, nodeid: str) -> None:
+        del self._nodes[nodeid]
 
     def subgraph(self, dot: Digraph) -> None:
         self.dot.subgraph(dot)
@@ -300,14 +315,29 @@ class Cluster:
 
 class Node:
     """Node represents a node for a specific backend service."""
+    __directions = ("TB", "BT", "LR", "RL")
+    __bgcolors = ("#E5F5FD", "#EBF3E7", "#ECE8F6", "#FDF7E3")
+
+    # fmt: off
+    _default_graph_attrs = {
+        "shape": "box",
+        "style": "rounded",
+        "labeljust": "l",
+        "pencolor": "#AEB6BE",
+        "fontname": "Sans-Serif",
+        "fontsize": "12",
+    }
 
     _provider = None
     _type = None
 
     _icon_dir = None
     _icon = None
-
+    _icon_size = 30
+    _direction = "TB"
     _height = 1.9
+
+    # fmt: on
 
     def __new__(cls, *args, **kwargs):
         instance = object.__new__(cls)
@@ -317,7 +347,11 @@ class Node:
         cls.__init__ = new_init(cls, cls.__init__)
         return instance
 
-    def __init__(self, label: str = "", **attrs: Dict):
+    def __init__(
+        self,
+        label: str = "",
+        **attrs: Dict
+        ):
         """Node represents a system component.
 
         :param label: Node label.
@@ -351,6 +385,65 @@ class Node:
             self._cluster.node(self._id, self.label, **self._attrs)
         else:
             self._diagram.node(self._id, self.label, **self._attrs)
+
+    def __enter__(self):
+        setcluster(self)
+        self.name = "cluster_" + self.label
+        self.dot = Digraph(self.name)
+        self._nodes = {}
+
+        if self._cluster:
+            self._cluster.remove_node(self._id)
+        else:
+            self._diagram.remove_node(self._id)
+
+        # Set attributes.
+        for k, v in self._default_graph_attrs.items():
+            self.dot.graph_attr[k] = v
+
+        if self._icon:
+            self.dot.graph_attr["label"] = '<<TABLE border="0"><TR>'\
+                '<TD fixedsize="true" width="' + str(self._icon_size) + '" height="' + str(self._icon_size) + '">'\
+                '<IMG SRC="' + self._load_icon() + '"></IMG></TD>'\
+                '<TD>' + self.label + '</TD></TR></TABLE>>'
+
+        if not self._validate_direction(self._direction):
+            raise ValueError(f'"{self._direction}" is not a valid direction')
+        self.dot.graph_attr["rankdir"] = self._direction
+
+        # Set cluster depth for distinguishing the background color
+        self.depth = self._cluster.depth + 1 if self._cluster else 0
+        coloridx = self.depth % len(self.__bgcolors)
+        self.dot.graph_attr["bgcolor"] = self.__bgcolors[coloridx]
+
+        return self
+
+    def __exit__(self, exc_type, exc_value, traceback):
+        for nodeid, node in self._nodes.items():
+            self.dot.node(nodeid, label=node['label'], **node['attrs'])
+            
+        if self._cluster:
+            self._cluster.subgraph(self.dot)
+        else:
+            self._diagram.subgraph(self.dot)
+        setcluster(self._cluster)
+
+    def _validate_direction(self, direction: str):
+        direction = direction.upper()
+        for v in self.__directions:
+            if v == direction:
+                return True
+        return False
+
+    def node(self, nodeid: str, label: str, **attrs) -> None:
+        """Create a new node in the cluster."""
+        self._nodes[nodeid] = {'label': label, 'attrs': attrs}
+    
+    def remove_node(self, nodeid: str) -> None:
+        del self._nodes[nodeid]
+
+    def subgraph(self, dot: Digraph) -> None:
+        self.dot.subgraph(dot)
 
     def __repr__(self):
         _name = self.__class__.__name__
