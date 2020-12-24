@@ -234,7 +234,7 @@ class Cluster:
         self.label = label
         self.name = "cluster_" + self.label
         if not self._icon:
-            self.icon = icon
+            self._icon = icon
         if not self._icon_size:
             self._icon_size = icon_size
 
