@@ -16,7 +16,7 @@ jinja2 = "^2.10"
 contextvars = { version = "^2.4", python = "~3.6" }
 
 [tool.poetry.dev-dependencies]
-pytest = "^3.0"
+pytest = "^6.2"
 pylint = "^2.4"
 black = {version = "^19.0", allow-prereleases = true}
 rope = "^0.14.0"
