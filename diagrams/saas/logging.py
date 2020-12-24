@@ -12,6 +12,14 @@ class Datadog(_Logging):
     _icon = "datadog.png"
 
 
+class Logdna(_Logging):
+    _icon = "logdna.png"
+
+
+class Loggly(_Logging):
+    _icon = "loggly.png"
+
+
 class Papertrail(_Logging):
     _icon = "papertrail.png"
 

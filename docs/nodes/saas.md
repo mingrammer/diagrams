@@ -41,6 +41,8 @@ Node classes list of saas provider.
 ## saas.logging
 
 - **diagrams.saas.logging.Datadog**, **DataDog** (alias)
+- **diagrams.saas.logging.Logdna**
+- **diagrams.saas.logging.Loggly**
 - **diagrams.saas.logging.Papertrail**
 
 ## saas.media
