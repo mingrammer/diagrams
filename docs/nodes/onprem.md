@@ -20,9 +20,11 @@ Node classes list of onprem provider.
 - **diagrams.onprem.analytics.Hive**
 - **diagrams.onprem.analytics.Metabase**
 - **diagrams.onprem.analytics.Norikra**
+- **diagrams.onprem.analytics.Presto**
 - **diagrams.onprem.analytics.Singer**
 - **diagrams.onprem.analytics.Spark**
 - **diagrams.onprem.analytics.Storm**
+- **diagrams.onprem.analytics.Superset**
 - **diagrams.onprem.analytics.Tableau**
 
 ## onprem.auth

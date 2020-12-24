@@ -40,6 +40,10 @@ class Norikra(_Analytics):
     _icon = "norikra.png"
 
 
+class Presto(_Analytics):
+    _icon = "presto.png"
+
+
 class Singer(_Analytics):
     _icon = "singer.png"
 
@@ -50,6 +54,10 @@ class Spark(_Analytics):
 
 class Storm(_Analytics):
     _icon = "storm.png"
+
+
+class Superset(_Analytics):
+    _icon = "superset.png"
 
 
 class Tableau(_Analytics):
