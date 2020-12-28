@@ -185,7 +185,9 @@ class Diagram(_Cluster):
 
         self.dot = Digraph(self.name, filename=self.filename)
         self._nodes = {}
+        self._edges = {}
 
+        self.dot.attr(compound="true")
         # Set attributes.
         self.dot.attr(compound="true")
         for k, v in self._default_graph_attrs.items():
@@ -225,6 +227,17 @@ class Diagram(_Cluster):
         for nodeid, node in self._nodes.items():
             self.dot.node(nodeid, label=node['label'], **node['attrs'])
 
+        for nodes, edge in self._edges.items():
+            node1, node2 = nodes
+            nodeid1, nodeid2 = node1.nodeid, node2.nodeid
+            if hasattr(node1, '_nodes') and node1._nodes:
+                edge._attrs['ltail'] = nodeid1
+                nodeid1 = next(iter(node1._nodes.keys()))
+            if hasattr(node2, '_nodes') and node2._nodes:
+                edge._attrs['lhead'] = nodeid2
+                nodeid2 = next(iter(node2._nodes.keys()))
+            self.dot.edge(nodeid1, nodeid2, **edge.attrs)
+
         self.render()
         # Remove the graphviz file leaving only the image.
         os.remove(self.filename)
@@ -255,7 +268,11 @@ class Diagram(_Cluster):
 
     def connect(self, node: "Node", node2: "Node", edge: "Edge") -> None:
         """Connect the two Nodes."""
-        self.edges[(node, node2)] = edge
+        self._edges[(node, node2)] = edge
+
+    def subgraph(self, dot: Digraph) -> None:
+        """Create a subgraph for clustering"""
+        self.dot.subgraph(dot)
 
     def render(self) -> None:
         self.dot.render(format=self.outformat, view=self.show, quiet=True)
@@ -469,15 +486,15 @@ class Node:
             self._diagram.node(self._id, self.label, **self._attrs)
 
     def __enter__(self):
-        setcluster(self)
-        self.name = "cluster_" + self.label
-        self.dot = Digraph(self.name)
-        self._nodes = {}
-
         if self._cluster:
             self._cluster.remove_node(self._id)
         else:
             self._diagram.remove_node(self._id)
+
+        setcluster(self)
+        self._id = "cluster_" + self.label
+        self.dot = Digraph(self._id)
+        self._nodes = {}
 
         # Set attributes.
         for k, v in self._default_graph_attrs.items():
