@@ -1,4 +1,5 @@
 import contextvars
+import html
 import os
 import uuid
 from pathlib import Path
@@ -348,7 +349,7 @@ class Node(_Cluster):
             self.dot.graph_attr["label"] = '<<TABLE border="0"><TR>'\
                 '<TD fixedsize="true" width="' + str(self._icon_size) + '" height="' + str(self._icon_size) + '">'\
                 '<IMG SRC="' + icon + '"></IMG></TD>'\
-                '<TD>' + self.label + '</TD></TR></TABLE>>'
+                '<TD>' + html.escape(self.label) + '</TD></TR></TABLE>>'
 
         if not self._validate_direction(self._direction):
             raise ValueError(f'"{self._direction}" is not a valid direction')
