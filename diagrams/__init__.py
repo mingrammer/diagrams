@@ -284,13 +284,13 @@ class Node:
 
     _height = 1.9
 
-    def __init__(self, label: str = "", **attrs: Dict):
+    def __init__(self, label: str = "", *, nodeid: str = None, **attrs: Dict):
         """Node represents a system component.
 
         :param label: Node label.
         """
-        # Generates an ID for identifying a node.
-        self._id = self._rand_id()
+        # Generates an ID for identifying a node, unless specified
+        self._id = nodeid or self._rand_id()
         self.label = label
 
         # fmt: off
