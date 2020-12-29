@@ -406,7 +406,7 @@ class Node:
             self._diagram.remove_node(self._id)
 
         setcluster(self)
-        self._id = "cluster_" + self.label
+        self._id = "cluster_" + self._id
         self.dot = Digraph(self._id)
         self._nodes = {}
 
