@@ -116,9 +116,10 @@ class Diagram:
         self.dot = Digraph(self.name, filename=self.filename)
         self._nodes = {}
         self._edges = {}
+        self._subgraphs = []
 
-        self.dot.attr(compound="true")
         # Set attributes.
+        self.dot.attr(compound="true")
         for k, v in self._default_graph_attrs.items():
             self.dot.graph_attr[k] = v
         self.dot.graph_attr["label"] = self.name
@@ -156,6 +157,9 @@ class Diagram:
     def __exit__(self, exc_type, exc_value, traceback):
         for nodeid, node in self._nodes.items():
             self.dot.node(nodeid, label=node['label'], **node['attrs'])
+        
+        for dot in self._subgraphs:
+            self.dot.subgraph(dot)
 
         for nodes, edge in self._edges.items():
             node1, node2 = nodes
@@ -210,7 +214,7 @@ class Diagram:
 
     def subgraph(self, dot: Digraph) -> None:
         """Create a subgraph for clustering"""
-        self.dot.subgraph(dot)
+        self._subgraphs.append(dot)
 
     def render(self) -> None:
         self.dot.render(format=self.outformat, view=self.show, quiet=True)
@@ -261,6 +265,7 @@ class Cluster:
 
         self.dot = Digraph(self.name)
         self._nodes = {}
+        self._subgraphs = []
 
         # Set attributes.
         for k, v in self._default_graph_attrs.items():
@@ -301,6 +306,9 @@ class Cluster:
     def __exit__(self, exc_type, exc_value, traceback):
         for nodeid, node in self._nodes.items():
             self.dot.node(nodeid, label=node['label'], **node['attrs'])
+        
+        for dot in self._subgraphs:
+            self.dot.subgraph(dot)
 
         if self._parent:
             self._parent.subgraph(self.dot)
@@ -323,7 +331,7 @@ class Cluster:
         del self._nodes[nodeid]
 
     def subgraph(self, dot: Digraph) -> None:
-        self.dot.subgraph(dot)
+        self._subgraphs.append(dot)
 
 
 class Node:
@@ -400,15 +408,10 @@ class Node:
             self._diagram.node(self._id, self.label, **self._attrs)
 
     def __enter__(self):
-        if self._cluster:
-            self._cluster.remove_node(self._id)
-        else:
-            self._diagram.remove_node(self._id)
-
         setcluster(self)
-        self._id = "cluster_" + self._id
-        self.dot = Digraph(self._id)
+        self.dot = Digraph()
         self._nodes = {}
+        self._subgraphs = []
 
         # Set attributes.
         for k, v in self._default_graph_attrs.items():
@@ -432,8 +435,22 @@ class Node:
         return self
 
     def __exit__(self, exc_type, exc_value, traceback):
+        if not (self._nodes or self._subgraphs):
+            return
+
+        if self._cluster:
+            self._cluster.remove_node(self._id)
+        else:
+            self._diagram.remove_node(self._id)
+        
+        self._id = "cluster_" + self._id
+        self.dot.name = self._id
+
         for nodeid, node in self._nodes.items():
             self.dot.node(nodeid, label=node['label'], **node['attrs'])
+        
+        for dot in self._subgraphs:
+            self.dot.subgraph(dot)
 
         if self._cluster:
             self._cluster.subgraph(self.dot)
@@ -456,7 +473,7 @@ class Node:
         del self._nodes[nodeid]
 
     def subgraph(self, dot: Digraph) -> None:
-        self.dot.subgraph(dot)
+        self._subgraphs.append(dot)
 
     def __repr__(self):
         _name = self.__class__.__name__
