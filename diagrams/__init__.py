@@ -283,17 +283,28 @@ class Node(_Cluster):
     def __init__(
         self,
         label: str = "",
+        icon: object = None,
+        icon_size: int = None,
         **attrs: Dict
         ):
         """Node represents a system component.
 
         :param label: Node label.
+        :param icon: Custom icon for tihs cluster. Must be a node class or reference.
+        :param icon_size: The icon size when used as a Cluster. Default is 30.
         """
         # Generates an ID for identifying a node.
         self._id = self._rand_id()
         self.label = label
 
         super().__init__()
+
+        if icon:
+            _node = icon(_no_init=True)
+            self._icon = _node._icon
+            self._icon_dir = _node._icon_dir
+        if icon_size:
+            self._icon_size = icon_size
 
         # fmt: off
         # If a node has an icon, increase the height slightly to avoid
@@ -458,7 +469,7 @@ class Cluster(Node):
         label: str = "",
         direction: str = "LR",
         icon: object = None,
-        icon_size: int = 30,
+        icon_size: int = None,
         **attrs: Dict
         ):
         """Cluster represents a cluster context.
@@ -469,13 +480,7 @@ class Cluster(Node):
         :param icon_size: The icon size. Default is 30.
         """
         self._direction = direction
-        if icon:
-            _node = icon(_no_init=True)
-            self._icon = _node._icon
-            self._icon_dir = _node._icon_dir
-        if icon_size:
-            self._icon_size = icon_size
-        super().__init__(label, **attrs)
+        super().__init__(label, icon, icon_size, **attrs)
 
 
 class Edge:
