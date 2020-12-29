@@ -15,25 +15,25 @@ __diagram = contextvars.ContextVar("diagrams")
 __cluster = contextvars.ContextVar("cluster")
 
 
-def getdiagram():
+def getdiagram() -> "Diagram":
     try:
         return __diagram.get()
     except LookupError:
         return None
 
 
-def setdiagram(diagram):
+def setdiagram(diagram: "Diagram"):
     __diagram.set(diagram)
 
 
-def getcluster():
+def getcluster() -> "Cluster":
     try:
         return __cluster.get()
     except LookupError:
         return None
 
 
-def setcluster(cluster):
+def setcluster(cluster: "Cluster"):
     __cluster.set(cluster)
 
 
