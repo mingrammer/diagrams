@@ -3,7 +3,7 @@ import html
 import os
 import uuid
 from pathlib import Path
-from typing import List, Union, Dict
+from typing import List, Union, Dict, Sequence
 
 from graphviz import Digraph
 
@@ -310,7 +310,12 @@ class Node(_Cluster):
         """
         # Generates an ID for identifying a node.
         self._id = self._rand_id()
-        self.label = label
+        if isinstance(label, str):
+            self.label = label
+        elif isinstance(label, Sequence):
+            self.label = "\n".join(label)
+        else:
+            self.label = str(label)
 
         super().__init__()
 
@@ -329,7 +334,7 @@ class Node(_Cluster):
         # If a node has an icon, increase the height slightly to avoid
         # that label being spanned between icon image and white space.
         # Increase the height by the number of new lines included in the label.
-        padding = 0.4 * (label.count('\n'))
+        padding = 0.4 * (self.label.count('\n'))
         icon_path = self._load_icon()
         self._attrs = {
             "shape": "none",
