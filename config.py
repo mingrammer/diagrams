@@ -13,7 +13,7 @@ DIR_TEMPLATE = "templates"
 
 PROVIDERS = (
     "base", "onprem", "aws", "azure", "gcp", "firebase", "k8s", "alibabacloud", "oci", "programming", "saas", "elastic",
-    "generic", "openstack", "outscale")
+    "generic", "openstack", "outscale", "terraform")
 
 #########################
 #  Resource Processing  #
@@ -41,6 +41,7 @@ FILE_PREFIXES = {
     "outscale": (),
     "generic": (),
     "openstack": (),
+    "terraform": (),
 }
 
 #########################
@@ -86,6 +87,8 @@ TITLE_WORDS = {
         "openstack": "OpenStack"
     },
 }
+
+KEEP_LOWER = ("terraform")
 
 # TODO: check if the classname exists
 ALIASES = {
@@ -426,4 +429,5 @@ ALIASES = {
             "Tripleo": "TripleO",
         }
     },
+    "terraform": {}
 }

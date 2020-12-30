@@ -117,6 +117,10 @@ def cleaner_openstack(f):
     return f.lower()
 
 
+def cleaner_terraform(f):
+    return f.lower()
+
+
 cleaners = {
     "onprem": cleaner_onprem,
     "aws": cleaner_aws,
@@ -132,6 +136,7 @@ cleaners = {
     "outscale": cleaner_outscale,
     "generic": cleaner_generic,
     "openstack": cleaner_openstack,
+    "terraform": cleaner_terraform,
 }
 
 
