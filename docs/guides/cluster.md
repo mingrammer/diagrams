@@ -70,6 +70,9 @@ with Diagram("Event Processing", show=False):
 
 You can add a Node icon before the cluster label (and specify its size as well).  You need to import the used Node class first.
 
+It's also possible to use the node in the `with` context adding `cluster=True` to
+make it behave like a cluster.
+
 ```python
 from diagrams import Cluster, Diagram
 from diagrams.aws.compute import ECS
@@ -82,6 +85,10 @@ with Diagram("Simple Web Service with DB Cluster", show=False):
 
     with Cluster(label='VPC',icon=VPC):
         with Cluster("DB Cluster",icon=Aurora,icon_size=30):
+            db_master = RDS("master")
+            db_master - [RDS("slave1"),
+                         RDS("slave2")]
+        with Aurora("DB Cluster", cluster=True):
             db_master = RDS("master")
             db_master - [RDS("slave1"),
                          RDS("slave2")]
