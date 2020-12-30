@@ -12,6 +12,10 @@ class Datadog(_Logging):
     _icon = "datadog.png"
 
 
+class Newrelic(_Logging):
+    _icon = "newrelic.png"
+
+
 class Papertrail(_Logging):
     _icon = "papertrail.png"
 
@@ -19,3 +23,4 @@ class Papertrail(_Logging):
 # Aliases
 
 DataDog = Datadog
+NewRelic = Newrelic
