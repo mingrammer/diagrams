@@ -477,25 +477,6 @@ class Node(_Cluster):
         return None
 
 
-class Cluster(Node):
-    def __init__(
-        self,
-        label: str = "",
-        direction: str = None,
-        icon: object = None,
-        icon_size: int = None,
-        **attrs: Dict
-        ):
-        """Cluster represents a cluster context.
-
-        :param label: Cluster label.
-        :param direction: Data flow direction. Default is "LR" (left to right).
-        :param icon: Custom icon for tihs cluster. Must be a node class or reference.
-        :param icon_size: The icon size. Default is 30.
-        """
-        super().__init__(label, direction, icon, icon_size, **attrs)
-
-
 class Edge:
     """Edge represents an edge between two nodes."""
 
@@ -615,4 +596,4 @@ class Edge:
         return {**self._attrs, "dir": direction}
 
 
-Group = Cluster
+Group = Cluster = Node
