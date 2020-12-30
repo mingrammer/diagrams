@@ -51,6 +51,10 @@ Node classes list of saas provider.
 
 - **diagrams.saas.recommendation.Recombee**
 
+## saas.search
+
+- **diagrams.saas.search.Algolia**
+
 ## saas.social
 
 - **diagrams.saas.social.Facebook**
