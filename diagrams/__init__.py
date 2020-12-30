@@ -324,12 +324,14 @@ class Node(_Cluster):
         # that label being spanned between icon image and white space.
         # Increase the height by the number of new lines included in the label.
         padding = 0.4 * (label.count('\n'))
-        icon = self._load_icon()
+        icon_path = self._load_icon()
         self._attrs = {
             "shape": "none",
             "height": str(self._height + padding),
-            "image": icon,
-        } if icon else {}
+            "image": icon_path,
+        } if icon_path else {}
+
+        self._attrs['tooltip'] = (icon if icon else self).__class__.__name__
 
         # fmt: on
         self._attrs.update(attrs)
@@ -343,6 +345,7 @@ class Node(_Cluster):
         # Set attributes.
         for k, v in self._default_graph_attrs.items():
             self.dot.graph_attr[k] = v
+        self.dot.graph_attr['tooltip'] = self._attrs['tooltip']
 
         icon = self._load_icon()
         if icon:
@@ -536,6 +539,7 @@ class Edge:
             # Graphviz complaining about using label for edges, so replace it with xlabel.
             # Update: xlabel option causes the misaligned label position: https://github.com/mingrammer/diagrams/issues/83
             self._attrs["label"] = label
+            self._attrs["tooltip"] = label
         if color:
             self._attrs["color"] = color
         if style:
