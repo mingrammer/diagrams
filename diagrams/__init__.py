@@ -346,10 +346,12 @@ class Node(_Cluster):
 
         icon = self._load_icon()
         if icon:
-            self.dot.graph_attr["label"] = '<<TABLE border="0"><TR>'\
-                '<TD fixedsize="true" width="' + str(self._icon_size) + '" height="' + str(self._icon_size) + '">'\
-                '<IMG SRC="' + icon + '"></IMG></TD>'\
-                '<TD>' + html.escape(self.label) + '</TD></TR></TABLE>>'
+            lines = iter(html.escape(self.label).split("\n"))
+            self.dot.graph_attr["label"] = '<<TABLE border="0"><TR>' +\
+                f'<TD fixedsize="true" width="{self._icon_size}" height="{self._icon_size}"><IMG SRC="{icon}"></IMG></TD>' +\
+                f'<TD align="left">{next(lines)}</TD></TR>' +\
+                ''.join(f'<TR><TD colspan="2" align="left">{line}</TD></TR>' for line in lines) +\
+                '</TABLE>>'
 
         if not self._validate_direction(self._direction):
             raise ValueError(f'"{self._direction}" is not a valid direction')
