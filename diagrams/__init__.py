@@ -351,7 +351,8 @@ class Node(_Cluster):
         # Set attributes.
         for k, v in self._default_graph_attrs.items():
             self.dot.graph_attr[k] = v
-        self.dot.graph_attr['tooltip'] = self._attrs['tooltip']
+        for k, v in self._attrs.items():
+            self.dot.graph_attr[k] = v
 
         icon = self._load_icon()
         if icon:
