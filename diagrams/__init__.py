@@ -280,7 +280,7 @@ class Node(_Cluster):
     _icon_dir = None
     _icon = None
     _icon_size = 30
-    _direction = "TB"
+    _direction = "LR"
     _height = 1.9
 
     # fmt: on
@@ -296,6 +296,7 @@ class Node(_Cluster):
     def __init__(
         self,
         label: str = "",
+        direction: str = None,
         icon: object = None,
         icon_size: int = None,
         **attrs: Dict
@@ -303,6 +304,7 @@ class Node(_Cluster):
         """Node represents a system component.
 
         :param label: Node label.
+        :param direction: Data flow direction. Default is "LR" (left to right).
         :param icon: Custom icon for tihs cluster. Must be a node class or reference.
         :param icon_size: The icon size when used as a Cluster. Default is 30.
         """
@@ -312,6 +314,10 @@ class Node(_Cluster):
 
         super().__init__()
 
+        if direction:
+            if not self._validate_direction(direction):
+                raise ValueError(f'"{direction}" is not a valid direction')
+            self._direction = direction
         if icon:
             _node = icon(_no_init=True)
             self._icon = _node._icon
@@ -356,8 +362,6 @@ class Node(_Cluster):
                 ''.join(f'<TR><TD colspan="2" align="left">{line}</TD></TR>' for line in lines) +\
                 '</TABLE>>'
 
-        if not self._validate_direction(self._direction):
-            raise ValueError(f'"{self._direction}" is not a valid direction')
         self.dot.graph_attr["rankdir"] = self._direction
 
         # Set cluster depth for distinguishing the background color
@@ -477,7 +481,7 @@ class Cluster(Node):
     def __init__(
         self,
         label: str = "",
-        direction: str = "LR",
+        direction: str = None,
         icon: object = None,
         icon_size: int = None,
         **attrs: Dict
@@ -489,8 +493,7 @@ class Cluster(Node):
         :param icon: Custom icon for tihs cluster. Must be a node class or reference.
         :param icon_size: The icon size. Default is 30.
         """
-        self._direction = direction
-        super().__init__(label, icon, icon_size, **attrs)
+        super().__init__(label, direction, icon, icon_size, **attrs)
 
 
 class Edge:
