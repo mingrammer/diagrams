@@ -34,6 +34,10 @@ Node classes list of saas provider.
 
 - **diagrams.saas.filesharing.Nextcloud**
 
+## saas.communication
+
+- **diagrams.saas.communication.Twilio**
+
 ## saas.identity
 
 - **diagrams.saas.identity.Auth0**
