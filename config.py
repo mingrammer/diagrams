@@ -13,7 +13,7 @@ DIR_TEMPLATE = "templates"
 
 PROVIDERS = (
     "base", "onprem", "aws", "azure", "gcp", "firebase", "k8s", "alibabacloud", "oci", "programming", "saas", "elastic",
-    "generic", "openstack", "outscale")
+    "generic", "openstack", "outscale", "confluent")
 
 #########################
 #  Resource Processing  #
@@ -41,6 +41,7 @@ FILE_PREFIXES = {
     "outscale": (),
     "generic": (),
     "openstack": (),
+    "confluent": (),
 }
 
 #########################
@@ -424,6 +425,13 @@ ALIASES = {
         "deployment": {
             "Kolla": "KollaAnsible",
             "Tripleo": "TripleO",
+        }
+    },
+    "confluent": {
+        "streaming": {
+            "ksql": {
+                "Ksql": "KsqlDB"
+            }
         }
     },
 }

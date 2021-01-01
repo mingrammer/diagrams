@@ -100,6 +100,9 @@ def cleaner_programming(f):
 def cleaner_generic(f):
     return f.lower()
 
+def cleaner_confluent(f):
+    return f.lower()
+
 
 def cleaner_saas(f):
     return f.lower()
@@ -132,6 +135,7 @@ cleaners = {
     "outscale": cleaner_outscale,
     "generic": cleaner_generic,
     "openstack": cleaner_openstack,
+    "confluent": cleaner_confluent,
 }
 
 
