@@ -12,7 +12,8 @@ DIR_RESOURCE = "resources"
 DIR_TEMPLATE = "templates"
 
 PROVIDERS = (
-    "base", "onprem", "aws", "azure", "gcp", "firebase", "k8s", "alibabacloud", "oci", "programming", "saas", "elastic",
+    "base", "onprem", "aws", "azure", "gcp", "firebase", "k8s", "kubernetes",
+    "alibabacloud", "oci", "programming", "saas", "elastic",
     "generic", "openstack", "outscale")
 
 #########################
@@ -322,6 +323,7 @@ ALIASES = {
             "Vol": "Volume",
         },
     },
+    "kubernetes": {},
     "alibabacloud": {
         "application": {
             "LogService": "SLS",

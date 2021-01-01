@@ -219,6 +219,7 @@ Node classes list of onprem provider.
 - **diagrams.onprem.storage.CephOsd**, **CEPH_OSD** (alias)
 - **diagrams.onprem.storage.Ceph**, **CEPH** (alias)
 - **diagrams.onprem.storage.Glusterfs**
+- **diagrams.onprem.storage.Minio**
 
 ## onprem.tracing
 

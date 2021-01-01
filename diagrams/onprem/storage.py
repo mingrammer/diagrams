@@ -18,6 +18,8 @@ class Ceph(_Storage):
 
 class Glusterfs(_Storage):
     _icon = "glusterfs.png"
+class Minio(_Storage):
+    _icon = "minio.png"
 
 
 # Aliases
