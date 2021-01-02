@@ -12,6 +12,10 @@ class Bitwarden(_Security):
     _icon = "bitwarden.png"
 
 
+class Boundary(_Security):
+    _icon = "boundary.png"
+
+
 class Trivy(_Security):
     _icon = "trivy.png"
 
