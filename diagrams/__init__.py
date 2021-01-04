@@ -17,10 +17,7 @@ __cluster = contextvars.ContextVar("cluster")
 
 
 def getdiagram():
-    try:
-        return __diagram.get()
-    except LookupError:
-        raise EnvironmentError("Global diagrams context not set up")
+    return __diagram.get()
 
 
 def setdiagram(diagram):
@@ -53,7 +50,7 @@ class _Cluster:
 
         try:
             self._parent = getcluster() or getdiagram()
-        except EnvironmentError:
+        except LookupError:
             self._parent = None
 
     
@@ -348,6 +345,8 @@ class Node(_Cluster):
         self._attrs.update(attrs)
 
         # If a node is in the cluster context, add it to cluster.
+        if not self._parent:
+            raise EnvironmentError("Global diagrams context not set up")
         self._parent.node(self)
 
     def __enter__(self):
