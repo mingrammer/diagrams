@@ -36,6 +36,10 @@ class Laravel(_Framework):
     _icon = "laravel.png"
 
 
+class Micronaut(_Framework):
+    _icon = "micronaut.png"
+
+
 class Rails(_Framework):
     _icon = "rails.png"
 

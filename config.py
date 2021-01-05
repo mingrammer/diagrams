@@ -402,6 +402,7 @@ ALIASES = {
     "saas": {
         "logging": {
             "Datadog": "DataDog",
+            "Newrelic": "NewRelic"
         }
     },
     "elastic": {

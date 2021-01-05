@@ -8,6 +8,10 @@ class _Alerting(_Saas):
     _icon_dir = "resources/saas/alerting"
 
 
+class Newrelic(_Alerting):
+    _icon = "newrelic.png"
+
+
 class Opsgenie(_Alerting):
     _icon = "opsgenie.png"
 

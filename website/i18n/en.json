@@ -32,6 +32,9 @@
       "nodes/azure": {
         "title": "Azure"
       },
+      "nodes/custom": {
+        "title": "Custom"
+      },
       "nodes/elastic": {
         "title": "Elastic"
       },
