@@ -40,7 +40,7 @@ def setcluster(cluster):
 class Diagram:
     __directions = ("TB", "BT", "LR", "RL")
     __curvestyles = ("ortho", "curved")
-    __outformats = ("png", "jpg", "svg", "pdf")
+    __outformats = ("png", "jpg", "svg", "pdf", "dot")
 
     # fmt: off
     _default_graph_attrs = {
@@ -127,8 +127,13 @@ class Diagram:
             raise ValueError(f'"{curvestyle}" is not a valid curvestyle')
         self.dot.graph_attr["splines"] = curvestyle
 
-        if not self._validate_outformat(outformat):
-            raise ValueError(f'"{outformat}" is not a valid output format')
+        if isinstance(outformat, list):
+            for one_format in outformat:
+                if not self._validate_outformat(one_format):
+                    raise ValueError(f'"{one_format}" is not a valid output format')
+        else:
+            if not self._validate_outformat(outformat):
+                raise ValueError(f'"{outformat}" is not a valid output format')
         self.outformat = outformat
 
         # Merge passed in attributes
@@ -156,23 +161,20 @@ class Diagram:
 
     def _validate_direction(self, direction: str) -> bool:
         direction = direction.upper()
-        for v in self.__directions:
-            if v == direction:
-                return True
+        if direction in self.__directions:
+            return True
         return False
 
     def _validate_curvestyle(self, curvestyle: str) -> bool:
         curvestyle = curvestyle.lower()
-        for v in self.__curvestyles:
-            if v == curvestyle:
-                return True
+        if curvestyle in self.__curvestyles:
+            return True
         return False
 
     def _validate_outformat(self, outformat: str) -> bool:
         outformat = outformat.lower()
-        for v in self.__outformats:
-            if v == outformat:
-                return True
+        if outformat in self.__outformats:
+            return True
         return False
 
     def node(self, nodeid: str, label: str, **attrs) -> None:
@@ -188,7 +190,11 @@ class Diagram:
         self.dot.subgraph(dot)
 
     def render(self) -> None:
-        self.dot.render(format=self.outformat, view=self.show, quiet=True)
+        if isinstance(self.outformat, list):
+          for one_format in self.outformat:
+            self.dot.render(format=one_format, view=self.show, quiet=True)
+        else:
+          self.dot.render(format=self.outformat, view=self.show, quiet=True)
 
 
 class Cluster:
@@ -260,9 +266,8 @@ class Cluster:
 
     def _validate_direction(self, direction: str):
         direction = direction.upper()
-        for v in self.__directions:
-            if v == direction:
-                return True
+        if direction in self.__directions:
+            return True
         return False
 
     def node(self, nodeid: str, label: str, **attrs) -> None:
