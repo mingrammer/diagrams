@@ -116,6 +116,9 @@ class DiagramTest(unittest.TestCase):
       self.assertTrue(os.path.exists(f"{self.name}.png"))
       self.assertTrue(os.path.exists(f"{self.name}.dot"))
 
+      # clean the dot file as it only generated here
+      os.remove(self.name + ".dot")
+
 
 class ClusterTest(unittest.TestCase):
     def setUp(self):
