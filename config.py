@@ -90,6 +90,9 @@ TITLE_WORDS = {
 # TODO: check if the classname exists
 ALIASES = {
     "onprem": {
+        "analytics": {
+            "Powerbi": "PowerBI"
+        },
         "ci": {
             "Circleci": "CircleCI",
             "Concourseci": "ConcourseCI",
