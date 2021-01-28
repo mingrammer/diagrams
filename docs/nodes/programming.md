@@ -38,6 +38,7 @@ Node classes list of programming provider.
 - **diagrams.programming.framework.Backbone**
 - **diagrams.programming.framework.Django**
 - **diagrams.programming.framework.Ember**
+- **diagrams.programming.framework.Fastapi**, **FastAPI** (alias)
 - **diagrams.programming.framework.Flask**
 - **diagrams.programming.framework.Flutter**
 - **diagrams.programming.framework.Laravel**

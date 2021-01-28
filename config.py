@@ -395,6 +395,9 @@ ALIASES = {
         }
     },
     "programming": {
+        "framework": {
+            "Fastapi": "FastAPI"
+        },
         "language": {
             "Javascript": "JavaScript",
             "Nodejs": "NodeJS",
