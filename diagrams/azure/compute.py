@@ -80,6 +80,10 @@ class VMLinux(_Compute):
     _icon = "vm-linux.png"
 
 
+class VMScaleSet(_Compute):
+    _icon = "vm-scale-set.png"
+
+
 class VMWindows(_Compute):
     _icon = "vm-windows.png"
 
