@@ -20,6 +20,10 @@ class Dbt(_Analytics):
     _icon = "dbt.png"
 
 
+class Dremio(_Analytics):
+    _icon = "dremio.png"
+
+
 class Flink(_Analytics):
     _icon = "flink.png"
 
@@ -40,12 +44,12 @@ class Norikra(_Analytics):
     _icon = "norikra.png"
 
 
-class Presto(_Analytics):
-    _icon = "presto.png"
-
-
 class Powerbi(_Analytics):
     _icon = "powerbi.png"
+
+
+class Presto(_Analytics):
+    _icon = "presto.png"
 
 
 class Singer(_Analytics):
