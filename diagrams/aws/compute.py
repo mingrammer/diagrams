@@ -167,6 +167,7 @@ class Wavelength(_Compute):
 # Aliases
 
 AutoScaling = ApplicationAutoScaling
+AMI = EC2Ami
 ECR = EC2ContainerRegistry
 EB = ElasticBeanstalk
 ECS = ElasticContainerService

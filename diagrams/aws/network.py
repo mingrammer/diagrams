@@ -164,4 +164,7 @@ class VpnGateway(_Network):
 
 CF = CloudFront
 ELB = ElasticLoadBalancing
+ALB = ElbApplicationLoadBalancer
+CLB = ElbClassicLoadBalancer
+NLB = ElbNetworkLoadBalancer
 GAX = GlobalAccelerator

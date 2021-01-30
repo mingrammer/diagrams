@@ -160,6 +160,7 @@ ALIASES = {
         },
         "compute": {
             "ApplicationAutoScaling": "AutoScaling",
+            "EC2Ami": "AMI",
             "EC2ContainerRegistry": "ECR",
             "ElasticBeanstalk": "EB",
             "ElasticContainerService": "ECS",
@@ -212,6 +213,9 @@ ALIASES = {
         "network": {
             "CloudFront": "CF",
             "ElasticLoadBalancing": "ELB",
+            "ElbApplicationLoadBalancer": "ALB",
+            "ElbClassicLoadBalancer": "CLB",
+            "ElbNetworkLoadBalancer": "NLB",
             "GlobalAccelerator": "GAX",
         },
         "security": {

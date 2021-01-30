@@ -61,7 +61,7 @@ Node classes list of aws provider.
 - **diagrams.aws.compute.Batch**
 - **diagrams.aws.compute.ComputeOptimizer**
 - **diagrams.aws.compute.Compute**
-- **diagrams.aws.compute.EC2Ami**
+- **diagrams.aws.compute.EC2Ami**, **AMI** (alias)
 - **diagrams.aws.compute.EC2AutoScaling**
 - **diagrams.aws.compute.EC2ContainerRegistryImage**
 - **diagrams.aws.compute.EC2ContainerRegistryRegistry**
@@ -436,9 +436,9 @@ Node classes list of aws provider.
 - **diagrams.aws.network.CloudFront**, **CF** (alias)
 - **diagrams.aws.network.DirectConnect**
 - **diagrams.aws.network.ElasticLoadBalancing**, **ELB** (alias)
-- **diagrams.aws.network.ElbApplicationLoadBalancer**
-- **diagrams.aws.network.ElbClassicLoadBalancer**
-- **diagrams.aws.network.ElbNetworkLoadBalancer**
+- **diagrams.aws.network.ElbApplicationLoadBalancer**, **ALB** (alias)
+- **diagrams.aws.network.ElbClassicLoadBalancer**, **CLB** (alias)
+- **diagrams.aws.network.ElbNetworkLoadBalancer**, **NLB** (alias)
 - **diagrams.aws.network.Endpoint**
 - **diagrams.aws.network.GlobalAccelerator**, **GAX** (alias)
 - **diagrams.aws.network.InternetGateway**
