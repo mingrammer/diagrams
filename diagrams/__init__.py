@@ -414,8 +414,12 @@ class Node:
         return uuid.uuid4().hex
 
     def _load_icon(self):
-        basedir = Path(os.path.abspath(os.path.dirname(__file__)))
-        return os.path.join(basedir.parent, self._icon_dir, self._icon)
+        if self._icon_dir is None or not self._icon_dir.startswith(os.path.sep):
+            basedir = Path(os.path.abspath(os.path.dirname(__file__)))
+            return os.path.join(basedir.parent, self._icon_dir, self._icon)
+        else:
+            return os.path.join(self._icon_dir, self._icon)
+
 
 
 class Edge:
