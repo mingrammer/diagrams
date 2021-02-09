@@ -1,5 +1,7 @@
 FROM diagrams:1.0
 
+ENV CRYPTOGRAPHY_DONT_BUILD_RUST=1
+
 RUN apk update && apk add --no-cache libffi-dev libressl-dev curl
 
 RUN pip install --user poetry
