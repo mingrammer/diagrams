@@ -1,5 +1,5 @@
 # use latest python alphine image.
-FROM python:alpine3.12
+FROM python:rc-alpine3.12
 
 # install system dependencies.
 RUN apk update && apk add --no-cache \
