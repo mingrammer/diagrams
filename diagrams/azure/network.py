@@ -92,6 +92,10 @@ class ServiceEndpointPolicies(_Network):
     _icon = "service-endpoint-policies.png"
 
 
+class Subnets(_Network):
+    _icon = "subnets.png"
+
+
 class TrafficManagerProfiles(_Network):
     _icon = "traffic-manager-profiles.png"
 

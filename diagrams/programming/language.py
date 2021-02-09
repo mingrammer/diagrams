@@ -28,6 +28,14 @@ class Dart(_Language):
     _icon = "dart.png"
 
 
+class Elixir(_Language):
+    _icon = "elixir.png"
+
+
+class Erlang(_Language):
+    _icon = "erlang.png"
+
+
 class Go(_Language):
     _icon = "go.png"
 
@@ -70,6 +78,10 @@ class Ruby(_Language):
 
 class Rust(_Language):
     _icon = "rust.png"
+
+
+class Scala(_Language):
+    _icon = "scala.png"
 
 
 class Swift(_Language):

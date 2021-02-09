@@ -7,11 +7,11 @@ You should have docker installed in your system, if not click [here](https://doc
 1. Go to diagrams root directory.
 
 2. Build the docker image.
-    
+
     ```shell
     docker build --tag diagrams:1.0 -f ./docker/dev/Dockerfile .
     ```
-    
+
 3. Create the container, run in background and mount the project source code.
 
     ```shell

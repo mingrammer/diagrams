@@ -13,7 +13,7 @@ DIR_TEMPLATE = "templates"
 
 PROVIDERS = (
     "base", "onprem", "aws", "azure", "gcp", "firebase", "k8s", "alibabacloud", "oci", "programming", "saas", "elastic",
-    "generic", "openstack")
+    "generic", "openstack", "outscale")
 
 #########################
 #  Resource Processing  #
@@ -38,6 +38,7 @@ FILE_PREFIXES = {
     "programming": (),
     "saas": (),
     "elastic": (),
+    "outscale": (),
     "generic": (),
     "openstack": (),
 }
@@ -65,8 +66,10 @@ UPPER_WORDS = {
     ),
     "oci": ("oci", "ocid", "oke", "ocir", "ddos", "waf", "bm", "vm", "cdn", "vpn", "dns", "nat", "dms", "api", "id"),
     "elastic": ("apm", "siem", "ece", "eck"),
-    "generic": ("vpn", "ios", "xen", "sql"),
+    "generic": ("vpn", "ios", "xen", "sql", "lxc"),
+    "outscale": ("osc",),
     "openstack": ("rpm", "loci", "nfv", "ec2api"),
+    "pve": ("pve"),
 }
 
 TITLE_WORDS = {
@@ -87,15 +90,20 @@ TITLE_WORDS = {
 # TODO: check if the classname exists
 ALIASES = {
     "onprem": {
+        "analytics": {
+            "Powerbi": "PowerBI"
+        },
         "ci": {
             "Circleci": "CircleCI",
             "Concourseci": "ConcourseCI",
+            "Droneci": "DroneCI",
             "Gitlabci": "GitlabCI",
             "Travisci": "TravisCI",
             "Teamcity": "TC",
             "Zuulci": "ZuulCI",
         },
         "container": {
+            "Lxc": "LXC",
             "Rkt": "RKT",
         },
         "database": {
@@ -121,13 +129,22 @@ ALIASES = {
         "network": {
             "Etcd": "ETCD",
             "Haproxy": "HAProxy",
+            "OpenServiceMesh": "OSM",
+            "Opnsense": "OPNSense",
             "Pfsense": "PFSense",
             "Vyos": "VyOS"
+        },
+        "proxmox": {
+            "Pve": "ProxmoxVE",
         },
         "queue": {
             "Activemq": "ActiveMQ",
             "Rabbitmq": "RabbitMQ",
             "Zeromq": "ZeroMQ",
+        },
+        "storage": {
+            "Ceph": "CEPH",
+            "CephOsd": "CEPH_OSD",
         },
         "workflow": {
             "Kubeflow": "KubeFlow",
@@ -225,6 +242,7 @@ ALIASES = {
         "compute": {
             "ContainerRegistries": "ACR",
             "KubernetesServices": "AKS",
+            "VMScaleSet": "VMSS"
         },
     },
     "gcp": {
@@ -361,10 +379,10 @@ ALIASES = {
     },
     "oci": {
         "compute": {
-            "Vm": "VirtualMachine",
-            "VmWhite": "VirtualMachineWhite",
-            "Bm": "BareMetal",
-            "BmWhite": "BareMetalWhite",
+            "VM": "VirtualMachine",
+            "VMWhite": "VirtualMachineWhite",
+            "BM": "BareMetal",
+            "BMWhite": "BareMetalWhite",
             "OCIR": "OCIRegistry",
             "OCIRWhite": "OCIRegistryWhite",
             "OKE": "ContainerEngine",
@@ -378,6 +396,9 @@ ALIASES = {
         }
     },
     "programming": {
+        "framework": {
+            "Fastapi": "FastAPI"
+        },
         "language": {
             "Javascript": "JavaScript",
             "Nodejs": "NodeJS",
@@ -388,12 +409,16 @@ ALIASES = {
     "saas": {
         "logging": {
             "Datadog": "DataDog",
+            "Newrelic": "NewRelic"
         }
     },
     "elastic": {
         "elasticsearch": {
             "Logstash": "LogStash",
         }
+    },
+    "outscale": {
+        "Osc": "OSC",
     },
     "generic": {},
     "openstack": {

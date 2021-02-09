@@ -24,6 +24,10 @@ class Ember(_Framework):
     _icon = "ember.png"
 
 
+class Fastapi(_Framework):
+    _icon = "fastapi.png"
+
+
 class Flask(_Framework):
     _icon = "flask.png"
 
@@ -34,6 +38,10 @@ class Flutter(_Framework):
 
 class Laravel(_Framework):
     _icon = "laravel.png"
+
+
+class Micronaut(_Framework):
+    _icon = "micronaut.png"
 
 
 class Rails(_Framework):
@@ -53,3 +61,5 @@ class Vue(_Framework):
 
 
 # Aliases
+
+FastAPI = Fastapi

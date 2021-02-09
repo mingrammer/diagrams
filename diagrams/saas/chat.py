@@ -8,8 +8,24 @@ class _Chat(_Saas):
     _icon_dir = "resources/saas/chat"
 
 
+class Discord(_Chat):
+    _icon = "discord.png"
+
+
+class Mattermost(_Chat):
+    _icon = "mattermost.png"
+
+
+class RocketChat(_Chat):
+    _icon = "rocket-chat.png"
+
+
 class Slack(_Chat):
     _icon = "slack.png"
+
+
+class Teams(_Chat):
+    _icon = "teams.png"
 
 
 class Telegram(_Chat):

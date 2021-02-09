@@ -3,6 +3,10 @@
 You shouldn't edit the node class files (all files under `diagrams/` directory) by
 yourself.
 
+## Set up your environment
+
+* See [DEVELOPMENT][DEVELOPMENT.md]
+
 ## Resources
 
 ### Update nodes
@@ -24,14 +28,17 @@ convert -resize 256 my_big_image.jpg my_image.jpg
 ffmpeg -i my_big_image.jpg -vf scale=w=256:h=256:force_original_aspect_ratio=decrease my_image.png
 ```
 
-Then just run the `./autogen.sh` to generate the added or updated node classes.
+Then just run the `./autogen.sh` to generate the added or updated node classes. (cf. [DEVELOPMENT][DEVELOPMENT.md])
 
 > IMPORTANT NOTE: To run `autogen.sh`, you need [round][round] and
 > [inkscape][inkscape] command lines that are used for cleaning the image
 > resource filenames.
 >
 > macOS users can download the inkscape via Homebrew.
+>
+> Or you should use the docker image.
 
+[DEVELOPMENT.md]: ./DEVELOPMENT.md
 [round]: https://github.com/mingrammer/round
 [inkscape]: https://inkscape.org/ko/release
 
@@ -44,11 +51,13 @@ from `ALIASES` map in [config.py](config.py).
 So, if you want to add new aliases or update existing aliases, you can just add
 or update the `ALIASES` map in [config.py](config.py).
 
-Then just run the `./autogen.sh` to generate the added or updated aliases.
+Then just run the `./autogen.sh` to generate the added or updated aliases. (cf. [DEVELOPMENT][DEVELOPMENT.md])
 
 > IMPORTANT NOTE: To run `autogen.sh`, you need [round][round] and
 > [inkscape][inkscape] command lines that are used for clearning the image
 > resource filenames.
+>
+> Or you should use the docker image.
 
 ## Run Tests
 

@@ -18,6 +18,10 @@ Node classes list of gcp provider.
 - **diagrams.gcp.analytics.Genomics**
 - **diagrams.gcp.analytics.Pubsub**, **PubSub** (alias)
 
+## gcp.api
+
+- **diagrams.gcp.api.Endpoints**
+
 ## gcp.compute
 
 - **diagrams.gcp.compute.AppEngine**, **GAE** (alias)
@@ -107,6 +111,10 @@ Node classes list of gcp provider.
 - **diagrams.gcp.network.TrafficDirector**
 - **diagrams.gcp.network.VirtualPrivateCloud**, **VPC** (alias)
 - **diagrams.gcp.network.VPN**
+
+## gcp.operations
+
+- **diagrams.gcp.operations.Monitoring**
 
 ## gcp.security
 

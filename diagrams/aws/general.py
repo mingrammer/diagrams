@@ -40,8 +40,8 @@ class Marketplace(_General):
     _icon = "marketplace.png"
 
 
-class TradicionalServer(_General):
-    _icon = "tradicional-server.png"
+class TraditionalServer(_General):
+    _icon = "traditional-server.png"
 
 
 class User(_General):

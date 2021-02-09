@@ -8,8 +8,28 @@ class _Container(_OnPrem):
     _icon_dir = "resources/onprem/container"
 
 
+class Containerd(_Container):
+    _icon = "containerd.png"
+
+
+class Crio(_Container):
+    _icon = "crio.png"
+
+
 class Docker(_Container):
     _icon = "docker.png"
+
+
+class Firecracker(_Container):
+    _icon = "firecracker.png"
+
+
+class Gvisor(_Container):
+    _icon = "gvisor.png"
+
+
+class Lxc(_Container):
+    _icon = "lxc.png"
 
 
 class Rkt(_Container):
@@ -18,4 +38,5 @@ class Rkt(_Container):
 
 # Aliases
 
+LXC = Lxc
 RKT = Rkt
