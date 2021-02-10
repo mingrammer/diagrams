@@ -12,8 +12,16 @@ class Connect(_Engagement):
     _icon = "connect.png"
 
 
+class CustomerEngagement(_Engagement):
+    _icon = "customer-engagement.png"
+
+
 class Pinpoint(_Engagement):
     _icon = "pinpoint.png"
+
+
+class SimpleEmailServiceSesEmail(_Engagement):
+    _icon = "simple-email-service-ses-email.png"
 
 
 class SimpleEmailServiceSes(_Engagement):

@@ -12,6 +12,10 @@ class AlexaForBusiness(_Business):
     _icon = "alexa-for-business.png"
 
 
+class BusinessApplications(_Business):
+    _icon = "business-applications.png"
+
+
 class Chime(_Business):
     _icon = "chime.png"
 

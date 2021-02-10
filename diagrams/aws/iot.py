@@ -24,16 +24,56 @@ class IotAction(_Iot):
     _icon = "iot-action.png"
 
 
+class IotActuator(_Iot):
+    _icon = "iot-actuator.png"
+
+
 class IotAlexaEcho(_Iot):
     _icon = "iot-alexa-echo.png"
+
+
+class IotAlexaEnabledDevice(_Iot):
+    _icon = "iot-alexa-enabled-device.png"
 
 
 class IotAlexaSkill(_Iot):
     _icon = "iot-alexa-skill.png"
 
 
+class IotAlexaVoiceService(_Iot):
+    _icon = "iot-alexa-voice-service.png"
+
+
+class IotAnalyticsChannel(_Iot):
+    _icon = "iot-analytics-channel.png"
+
+
+class IotAnalyticsDataSet(_Iot):
+    _icon = "iot-analytics-data-set.png"
+
+
+class IotAnalyticsDataStore(_Iot):
+    _icon = "iot-analytics-data-store.png"
+
+
+class IotAnalyticsNotebook(_Iot):
+    _icon = "iot-analytics-notebook.png"
+
+
+class IotAnalyticsPipeline(_Iot):
+    _icon = "iot-analytics-pipeline.png"
+
+
 class IotAnalytics(_Iot):
     _icon = "iot-analytics.png"
+
+
+class IotBank(_Iot):
+    _icon = "iot-bank.png"
+
+
+class IotBicycle(_Iot):
+    _icon = "iot-bicycle.png"
 
 
 class IotButton(_Iot):
@@ -44,24 +84,64 @@ class IotCamera(_Iot):
     _icon = "iot-camera.png"
 
 
+class IotCar(_Iot):
+    _icon = "iot-car.png"
+
+
+class IotCart(_Iot):
+    _icon = "iot-cart.png"
+
+
 class IotCertificate(_Iot):
     _icon = "iot-certificate.png"
+
+
+class IotCoffeePot(_Iot):
+    _icon = "iot-coffee-pot.png"
 
 
 class IotCore(_Iot):
     _icon = "iot-core.png"
 
 
+class IotDesiredState(_Iot):
+    _icon = "iot-desired-state.png"
+
+
 class IotDeviceDefender(_Iot):
     _icon = "iot-device-defender.png"
+
+
+class IotDeviceGateway(_Iot):
+    _icon = "iot-device-gateway.png"
 
 
 class IotDeviceManagement(_Iot):
     _icon = "iot-device-management.png"
 
 
+class IotDoorLock(_Iot):
+    _icon = "iot-door-lock.png"
+
+
 class IotEvents(_Iot):
     _icon = "iot-events.png"
+
+
+class IotFactory(_Iot):
+    _icon = "iot-factory.png"
+
+
+class IotFireTvStick(_Iot):
+    _icon = "iot-fire-tv-stick.png"
+
+
+class IotFireTv(_Iot):
+    _icon = "iot-fire-tv.png"
+
+
+class IotGeneric(_Iot):
+    _icon = "iot-generic.png"
 
 
 class IotGreengrassConnector(_Iot):
@@ -74,6 +154,10 @@ class IotGreengrass(_Iot):
 
 class IotHardwareBoard(_Iot):
     _icon = "iot-hardware-board.png"
+
+
+class IotHouse(_Iot):
+    _icon = "iot-house.png"
 
 
 class IotHttp(_Iot):
@@ -92,8 +176,20 @@ class IotLambda(_Iot):
     _icon = "iot-lambda.png"
 
 
+class IotLightbulb(_Iot):
+    _icon = "iot-lightbulb.png"
+
+
+class IotMedicalEmergency(_Iot):
+    _icon = "iot-medical-emergency.png"
+
+
 class IotMqtt(_Iot):
     _icon = "iot-mqtt.png"
+
+
+class IotOverTheAirUpdate(_Iot):
+    _icon = "iot-over-the-air-update.png"
 
 
 class IotPolicyEmergency(_Iot):
@@ -104,16 +200,36 @@ class IotPolicy(_Iot):
     _icon = "iot-policy.png"
 
 
+class IotReportedState(_Iot):
+    _icon = "iot-reported-state.png"
+
+
 class IotRule(_Iot):
     _icon = "iot-rule.png"
+
+
+class IotSensor(_Iot):
+    _icon = "iot-sensor.png"
+
+
+class IotServo(_Iot):
+    _icon = "iot-servo.png"
 
 
 class IotShadow(_Iot):
     _icon = "iot-shadow.png"
 
 
+class IotSimulator(_Iot):
+    _icon = "iot-simulator.png"
+
+
 class IotSitewise(_Iot):
     _icon = "iot-sitewise.png"
+
+
+class IotThermostat(_Iot):
+    _icon = "iot-thermostat.png"
 
 
 class IotThingsGraph(_Iot):
@@ -122,6 +238,18 @@ class IotThingsGraph(_Iot):
 
 class IotTopic(_Iot):
     _icon = "iot-topic.png"
+
+
+class IotTravel(_Iot):
+    _icon = "iot-travel.png"
+
+
+class IotUtility(_Iot):
+    _icon = "iot-utility.png"
+
+
+class IotWindfarm(_Iot):
+    _icon = "iot-windfarm.png"
 
 
 # Aliases

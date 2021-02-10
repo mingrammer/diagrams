@@ -24,6 +24,10 @@ class Cloudsearch(_Analytics):
     _icon = "cloudsearch.png"
 
 
+class DataLakeResource(_Analytics):
+    _icon = "data-lake-resource.png"
+
+
 class DataPipeline(_Analytics):
     _icon = "data-pipeline.png"
 
@@ -34,6 +38,22 @@ class ElasticsearchService(_Analytics):
 
 class EMRCluster(_Analytics):
     _icon = "emr-cluster.png"
+
+
+class EMREngineMaprM3(_Analytics):
+    _icon = "emr-engine-mapr-m3.png"
+
+
+class EMREngineMaprM5(_Analytics):
+    _icon = "emr-engine-mapr-m5.png"
+
+
+class EMREngineMaprM7(_Analytics):
+    _icon = "emr-engine-mapr-m7.png"
+
+
+class EMREngine(_Analytics):
+    _icon = "emr-engine.png"
 
 
 class EMRHdfsCluster(_Analytics):

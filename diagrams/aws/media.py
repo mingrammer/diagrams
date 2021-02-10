@@ -52,4 +52,12 @@ class ElementalServer(_Media):
     _icon = "elemental-server.png"
 
 
+class KinesisVideoStreams(_Media):
+    _icon = "kinesis-video-streams.png"
+
+
+class MediaServices(_Media):
+    _icon = "media-services.png"
+
+
 # Aliases

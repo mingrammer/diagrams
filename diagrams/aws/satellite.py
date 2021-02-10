@@ -12,4 +12,8 @@ class GroundStation(_Satellite):
     _icon = "ground-station.png"
 
 
+class Satellite(_Satellite):
+    _icon = "satellite.png"
+
+
 # Aliases

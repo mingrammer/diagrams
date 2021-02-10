@@ -8,6 +8,10 @@ class _Ar(_AWS):
     _icon_dir = "resources/aws/ar"
 
 
+class ArVr(_Ar):
+    _icon = "ar-vr.png"
+
+
 class Sumerian(_Ar):
     _icon = "sumerian.png"
 
