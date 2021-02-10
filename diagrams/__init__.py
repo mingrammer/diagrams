@@ -366,6 +366,8 @@ class Node(_Cluster):
                 f'<TD align="left">{next(lines)}</TD></TR>' +\
                 ''.join(f'<TR><TD colspan="2" align="left">{line}</TD></TR>' for line in lines) +\
                 '</TABLE>>'
+        else:
+            self.dot.graph_attr["label"] = self.label
 
         self.dot.graph_attr["rankdir"] = self._direction
 
