@@ -135,20 +135,20 @@ class ClusterTest(unittest.TestCase):
 
     def test_with_global_context(self):
         with Diagram(name=os.path.join(self.name, "with_global_context"), show=False):
-            self.assertIsNone(getcluster())
+            self.assertEqual(getcluster(), getdiagram())
             with Cluster():
-                self.assertIsNotNone(getcluster())
-            self.assertIsNone(getcluster())
+                self.assertNotEqual(getcluster(), getdiagram())
+            self.assertEqual(getcluster(), getdiagram())
 
     def test_with_nested_cluster(self):
         with Diagram(name=os.path.join(self.name, "with_nested_cluster"), show=False):
-            self.assertIsNone(getcluster())
+            self.assertEqual(getcluster(), getdiagram())
             with Cluster() as c1:
                 self.assertEqual(c1, getcluster())
                 with Cluster() as c2:
                     self.assertEqual(c2, getcluster())
                 self.assertEqual(c1, getcluster())
-            self.assertIsNone(getcluster())
+            self.assertEqual(getcluster(), getdiagram())
 
     def test_node_not_in_diagram(self):
         # Node must be belong to a diagrams.
