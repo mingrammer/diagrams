@@ -96,3 +96,4 @@ class VM(_Compute):
 
 ACR = ContainerRegistries
 AKS = KubernetesServices
+VMSS = VMScaleSet

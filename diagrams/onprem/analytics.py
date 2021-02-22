@@ -40,12 +40,12 @@ class Norikra(_Analytics):
     _icon = "norikra.png"
 
 
-class Presto(_Analytics):
-    _icon = "presto.png"
-
-
 class Powerbi(_Analytics):
     _icon = "powerbi.png"
+
+
+class Presto(_Analytics):
+    _icon = "presto.png"
 
 
 class Singer(_Analytics):

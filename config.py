@@ -393,10 +393,10 @@ ALIASES = {
             "OKEWhite": "ContainerEngineWhite",
         },
         "database": {
-            "AutonomousDatabase": "ADB",
-            "AutonomousDatabaseWhite": "ADBWhite",
-            "Databaseservice": "DBService",
-            "DatabaseserviceWhite": "DBServiceWhite",
+            "Autonomous": "ADB",
+            "AutonomousWhite": "ADBWhite",
+            "DatabaseService": "DBService",
+            "DatabaseServiceWhite": "DBServiceWhite",
         }
     },
     "programming": {
