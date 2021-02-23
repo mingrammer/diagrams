@@ -15,8 +15,10 @@ class Cortex(_Monitoring):
 class Datadog(_Monitoring):
     _icon = "datadog.png"
 
+
 class Dynatrace(_Monitoring):
     _icon = "dynatrace.png"
+
 
 class Grafana(_Monitoring):
     _icon = "grafana.png"
