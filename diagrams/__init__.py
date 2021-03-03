@@ -83,6 +83,7 @@ class Diagram:
         direction: str = "LR",
         curvestyle: str = "ortho",
         outformat: str = "png",
+        autolabel: bool = False,
         show: bool = True,
         graph_attr: dict = {},
         node_attr: dict = {},
@@ -137,6 +138,7 @@ class Diagram:
         self.dot.edge_attr.update(edge_attr)
 
         self.show = show
+        self.autolabel = autolabel
 
     def __str__(self) -> str:
         return str(self.dot)
@@ -296,11 +298,20 @@ class Node:
         self._id = self._rand_id()
         self.label = label
 
+        # Node must be belong to a diagrams.
+        self._diagram = getdiagram()
+        if self._diagram is None:
+            raise EnvironmentError("Global diagrams context not set up")
+        
+        if self._diagram.autolabel:
+            # import pdb; pdb.set_trace()
+            self.label = self.__class__.__name__ + "\n" + self.label
+
         # fmt: off
         # If a node has an icon, increase the height slightly to avoid
         # that label being spanned between icon image and white space.
         # Increase the height by the number of new lines included in the label.
-        padding = 0.4 * (label.count('\n'))
+        padding = 0.4 * (self.label.count('\n'))
         self._attrs = {
             "shape": "none",
             "height": str(self._height + padding),
@@ -310,10 +321,6 @@ class Node:
         # fmt: on
         self._attrs.update(attrs)
 
-        # Node must be belong to a diagrams.
-        self._diagram = getdiagram()
-        if self._diagram is None:
-            raise EnvironmentError("Global diagrams context not set up")
         self._cluster = getcluster()
 
         # If a node is in the cluster context, add it to cluster.

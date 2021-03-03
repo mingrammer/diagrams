@@ -106,6 +106,12 @@ class DiagramTest(unittest.TestCase):
         with Diagram(show=False):
             Node("node1")
         self.assertTrue(os.path.exists(f"{self.name}.png"))
+    
+    def test_autolabel(self):
+        with Diagram(name=os.path.join(self.name, "nodes_to_node"), show=False):
+            node1 = Node("node1")
+            self.assertTrue(node1.label,"Node\nnode1")
+
 
 
 class ClusterTest(unittest.TestCase):
