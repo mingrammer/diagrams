@@ -8,6 +8,22 @@ class _Security(_Azure):
     _icon_dir = "resources/azure/security"
 
 
+class ApplicationSecurityGroups(_Security):
+    _icon = "application-security-groups.png"
+
+
+class ConditionalAccess(_Security):
+    _icon = "conditional-access.png"
+
+
+class Defender(_Security):
+    _icon = "defender.png"
+
+
+class ExtendedSecurityUpdates(_Security):
+    _icon = "extended-security-updates.png"
+
+
 class KeyVaults(_Security):
     _icon = "key-vaults.png"
 

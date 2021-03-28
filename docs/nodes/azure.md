@@ -18,9 +18,12 @@ Node classes list of azure provider.
 - **diagrams.azure.analytics.Hdinsightclusters**
 - **diagrams.azure.analytics.LogAnalyticsWorkspaces**
 - **diagrams.azure.analytics.StreamAnalyticsJobs**
+- **diagrams.azure.analytics.SynapseAnalytics**
 
 ## azure.compute
 
+- **diagrams.azure.compute.AppServices**
+- **diagrams.azure.compute.AutomanagedVM**
 - **diagrams.azure.compute.AvailabilitySets**
 - **diagrams.azure.compute.BatchAccounts**
 - **diagrams.azure.compute.CitrixVirtualDesktopsEssentials**
@@ -29,37 +32,51 @@ Node classes list of azure provider.
 - **diagrams.azure.compute.CloudsimpleVirtualMachines**
 - **diagrams.azure.compute.ContainerInstances**
 - **diagrams.azure.compute.ContainerRegistries**, **ACR** (alias)
+- **diagrams.azure.compute.DiskEncryptionSets**
 - **diagrams.azure.compute.DiskSnapshots**
 - **diagrams.azure.compute.Disks**
 - **diagrams.azure.compute.FunctionApps**
+- **diagrams.azure.compute.ImageDefinitions**
+- **diagrams.azure.compute.ImageVersions**
 - **diagrams.azure.compute.KubernetesServices**, **AKS** (alias)
 - **diagrams.azure.compute.MeshApplications**
+- **diagrams.azure.compute.OsImages**
 - **diagrams.azure.compute.SAPHANAOnAzure**
 - **diagrams.azure.compute.ServiceFabricClusters**
+- **diagrams.azure.compute.SharedImageGalleries**
+- **diagrams.azure.compute.SpringCloud**
 - **diagrams.azure.compute.VMClassic**
 - **diagrams.azure.compute.VMImages**
 - **diagrams.azure.compute.VMLinux**
 - **diagrams.azure.compute.VMScaleSet**, **VMSS** (alias)
 - **diagrams.azure.compute.VMWindows**
 - **diagrams.azure.compute.VM**
+- **diagrams.azure.compute.Workspaces**
 
 ## azure.database
 
 - **diagrams.azure.database.BlobStorage**
 - **diagrams.azure.database.CacheForRedis**
 - **diagrams.azure.database.CosmosDb**
+- **diagrams.azure.database.DataExplorerClusters**
+- **diagrams.azure.database.DataFactory**
 - **diagrams.azure.database.DataLake**
 - **diagrams.azure.database.DatabaseForMariadbServers**
 - **diagrams.azure.database.DatabaseForMysqlServers**
 - **diagrams.azure.database.DatabaseForPostgresqlServers**
 - **diagrams.azure.database.ElasticDatabasePools**
 - **diagrams.azure.database.ElasticJobAgents**
+- **diagrams.azure.database.InstancePools**
 - **diagrams.azure.database.ManagedDatabases**
 - **diagrams.azure.database.SQLDatabases**
 - **diagrams.azure.database.SQLDatawarehouse**
 - **diagrams.azure.database.SQLManagedInstances**
 - **diagrams.azure.database.SQLServerStretchDatabases**
 - **diagrams.azure.database.SQLServers**
+- **diagrams.azure.database.SQLVM**
+- **diagrams.azure.database.SQL**
+- **diagrams.azure.database.SsisLiftAndShiftIr**
+- **diagrams.azure.database.SynapseAnalytics**
 - **diagrams.azure.database.VirtualClusters**
 - **diagrams.azure.database.VirtualDatacenter**
 
@@ -70,6 +87,7 @@ Node classes list of azure provider.
 - **diagrams.azure.devops.Boards**
 - **diagrams.azure.devops.Devops**
 - **diagrams.azure.devops.DevtestLabs**
+- **diagrams.azure.devops.LabServices**
 - **diagrams.azure.devops.Pipelines**
 - **diagrams.azure.devops.Repos**
 - **diagrams.azure.devops.TestPlans**
@@ -115,9 +133,11 @@ Node classes list of azure provider.
 - **diagrams.azure.identity.AppRegistrations**
 - **diagrams.azure.identity.ConditionalAccess**
 - **diagrams.azure.identity.EnterpriseApplications**
+- **diagrams.azure.identity.Groups**
 - **diagrams.azure.identity.IdentityGovernance**
 - **diagrams.azure.identity.InformationProtection**
 - **diagrams.azure.identity.ManagedIdentities**
+- **diagrams.azure.identity.Users**
 
 ## azure.integration
 
@@ -132,12 +152,14 @@ Node classes list of azure provider.
 - **diagrams.azure.integration.IntegrationServiceEnvironments**
 - **diagrams.azure.integration.LogicAppsCustomConnector**
 - **diagrams.azure.integration.LogicApps**
+- **diagrams.azure.integration.PartnerTopic**
 - **diagrams.azure.integration.SendgridAccounts**
 - **diagrams.azure.integration.ServiceBusRelays**
 - **diagrams.azure.integration.ServiceBus**
 - **diagrams.azure.integration.ServiceCatalogManagedApplicationDefinitions**
 - **diagrams.azure.integration.SoftwareAsAService**
 - **diagrams.azure.integration.StorsimpleDeviceManagers**
+- **diagrams.azure.integration.SystemTopic**
 
 ## azure.iot
 
@@ -154,6 +176,8 @@ Node classes list of azure provider.
 
 ## azure.migration
 
+- **diagrams.azure.migration.DataBoxEdge**
+- **diagrams.azure.migration.DataBox**
 - **diagrams.azure.migration.DatabaseMigrationServices**
 - **diagrams.azure.migration.MigrationProjects**
 - **diagrams.azure.migration.RecoveryServicesVaults**
@@ -207,6 +231,10 @@ Node classes list of azure provider.
 
 ## azure.security
 
+- **diagrams.azure.security.ApplicationSecurityGroups**
+- **diagrams.azure.security.ConditionalAccess**
+- **diagrams.azure.security.Defender**
+- **diagrams.azure.security.ExtendedSecurityUpdates**
 - **diagrams.azure.security.KeyVaults**
 - **diagrams.azure.security.SecurityCenter**
 - **diagrams.azure.security.Sentinel**
