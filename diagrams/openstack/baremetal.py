@@ -2,6 +2,7 @@
 
 from . import _OpenStack
 
+
 class _Baremetal(_OpenStack):
     _type = "baremetal"
     _icon_dir = "resources/openstack/baremetal"
@@ -9,7 +10,10 @@ class _Baremetal(_OpenStack):
 
 class Cyborg(_Baremetal):
     _icon = "cyborg.png"
+
+
 class Ironic(_Baremetal):
     _icon = "ironic.png"
+
 
 # Aliases

@@ -2,6 +2,7 @@
 
 from . import _OpenStack
 
+
 class _Frontend(_OpenStack):
     _type = "frontend"
     _icon_dir = "resources/openstack/frontend"
@@ -9,5 +10,6 @@ class _Frontend(_OpenStack):
 
 class Horizon(_Frontend):
     _icon = "horizon.png"
+
 
 # Aliases

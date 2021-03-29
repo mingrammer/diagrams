@@ -2,6 +2,7 @@
 
 from . import _OpenStack
 
+
 class _Compute(_OpenStack):
     _type = "compute"
     _icon_dir = "resources/openstack/compute"
@@ -9,9 +10,14 @@ class _Compute(_OpenStack):
 
 class Nova(_Compute):
     _icon = "nova.png"
+
+
 class Qinling(_Compute):
     _icon = "qinling.png"
+
+
 class Zun(_Compute):
     _icon = "zun.png"
+
 
 # Aliases

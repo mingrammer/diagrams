@@ -512,9 +512,6 @@ Node classes list of aws provider.
 <img width="30" src="/img/resources/aws/general/internet-alt2.png" alt="InternetAlt2" style="float: left; padding-right: 5px;" >
 **diagrams.aws.general.InternetAlt2**
 
-<img width="30" src="/img/resources/aws/general/internet-gateway.png" alt="InternetGateway" style="float: left; padding-right: 5px;" >
-**diagrams.aws.general.InternetGateway**
-
 <img width="30" src="/img/resources/aws/general/marketplace.png" alt="Marketplace" style="float: left; padding-right: 5px;" >
 **diagrams.aws.general.Marketplace**
 

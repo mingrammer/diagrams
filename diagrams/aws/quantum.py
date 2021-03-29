@@ -2,6 +2,7 @@
 
 from . import _AWS
 
+
 class _Quantum(_AWS):
     _type = "quantum"
     _icon_dir = "resources/aws/quantum"
@@ -9,7 +10,10 @@ class _Quantum(_AWS):
 
 class Braket(_Quantum):
     _icon = "braket.png"
+
+
 class QuantumTechnologies(_Quantum):
     _icon = "quantum-technologies.png"
+
 
 # Aliases

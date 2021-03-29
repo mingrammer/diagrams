@@ -2,6 +2,7 @@
 
 from . import _AWS
 
+
 class _Game(_AWS):
     _type = "game"
     _icon_dir = "resources/aws/game"
@@ -9,7 +10,10 @@ class _Game(_AWS):
 
 class GameTech(_Game):
     _icon = "game-tech.png"
+
+
 class Gamelift(_Game):
     _icon = "gamelift.png"
+
 
 # Aliases
