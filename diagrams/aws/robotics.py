@@ -2,7 +2,6 @@
 
 from . import _AWS
 
-
 class _Robotics(_AWS):
     _type = "robotics"
     _icon_dir = "resources/aws/robotics"
@@ -10,26 +9,15 @@ class _Robotics(_AWS):
 
 class RobomakerCloudExtensionRos(_Robotics):
     _icon = "robomaker-cloud-extension-ros.png"
-
-
 class RobomakerDevelopmentEnvironment(_Robotics):
     _icon = "robomaker-development-environment.png"
-
-
 class RobomakerFleetManagement(_Robotics):
     _icon = "robomaker-fleet-management.png"
-
-
 class RobomakerSimulator(_Robotics):
     _icon = "robomaker-simulator.png"
-
-
 class Robomaker(_Robotics):
     _icon = "robomaker.png"
-
-
 class Robotics(_Robotics):
     _icon = "robotics.png"
-
 
 # Aliases

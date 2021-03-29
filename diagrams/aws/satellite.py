@@ -2,7 +2,6 @@
 
 from . import _AWS
 
-
 class _Satellite(_AWS):
     _type = "satellite"
     _icon_dir = "resources/aws/satellite"
@@ -10,10 +9,7 @@ class _Satellite(_AWS):
 
 class GroundStation(_Satellite):
     _icon = "ground-station.png"
-
-
 class Satellite(_Satellite):
     _icon = "satellite.png"
-
 
 # Aliases

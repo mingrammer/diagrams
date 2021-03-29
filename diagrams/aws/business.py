@@ -2,7 +2,6 @@
 
 from . import _AWS
 
-
 class _Business(_AWS):
     _type = "business"
     _icon_dir = "resources/aws/business"
@@ -10,19 +9,12 @@ class _Business(_AWS):
 
 class AlexaForBusiness(_Business):
     _icon = "alexa-for-business.png"
-
-
 class BusinessApplications(_Business):
     _icon = "business-applications.png"
-
-
 class Chime(_Business):
     _icon = "chime.png"
-
-
 class Workmail(_Business):
     _icon = "workmail.png"
-
 
 # Aliases
 

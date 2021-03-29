@@ -2,7 +2,6 @@
 
 from . import _OpenStack
 
-
 class _Apiproxies(_OpenStack):
     _type = "apiproxies"
     _icon_dir = "resources/openstack/apiproxies"
@@ -10,6 +9,5 @@ class _Apiproxies(_OpenStack):
 
 class EC2API(_Apiproxies):
     _icon = "ec2api.png"
-
 
 # Aliases

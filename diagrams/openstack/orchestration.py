@@ -2,7 +2,6 @@
 
 from . import _OpenStack
 
-
 class _Orchestration(_OpenStack):
     _type = "orchestration"
     _icon_dir = "resources/openstack/orchestration"
@@ -10,22 +9,13 @@ class _Orchestration(_OpenStack):
 
 class Blazar(_Orchestration):
     _icon = "blazar.png"
-
-
 class Heat(_Orchestration):
     _icon = "heat.png"
-
-
 class Mistral(_Orchestration):
     _icon = "mistral.png"
-
-
 class Senlin(_Orchestration):
     _icon = "senlin.png"
-
-
 class Zaqar(_Orchestration):
     _icon = "zaqar.png"
-
 
 # Aliases

@@ -56,6 +56,10 @@ done
 echo "generating the docs for custom"
 python -m scripts.generate "custom"
 
+# copy icons across to website
+echo "copying icons to website static folder"
+cp -r resources website/static/img/resources
+
 # run black
 echo "linting the all the diagram modules"
 black "$app_root_dir"/**/*.py

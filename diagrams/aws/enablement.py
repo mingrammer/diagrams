@@ -2,7 +2,6 @@
 
 from . import _AWS
 
-
 class _Enablement(_AWS):
     _type = "enablement"
     _icon_dir = "resources/aws/enablement"
@@ -10,22 +9,13 @@ class _Enablement(_AWS):
 
 class CustomerEnablement(_Enablement):
     _icon = "customer-enablement.png"
-
-
 class Iq(_Enablement):
     _icon = "iq.png"
-
-
 class ManagedServices(_Enablement):
     _icon = "managed-services.png"
-
-
 class ProfessionalServices(_Enablement):
     _icon = "professional-services.png"
-
-
 class Support(_Enablement):
     _icon = "support.png"
-
 
 # Aliases

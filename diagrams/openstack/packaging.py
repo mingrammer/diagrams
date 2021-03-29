@@ -2,7 +2,6 @@
 
 from . import _OpenStack
 
-
 class _Packaging(_OpenStack):
     _type = "packaging"
     _icon_dir = "resources/openstack/packaging"
@@ -10,14 +9,9 @@ class _Packaging(_OpenStack):
 
 class LOCI(_Packaging):
     _icon = "loci.png"
-
-
 class Puppet(_Packaging):
     _icon = "puppet.png"
-
-
 class RPM(_Packaging):
     _icon = "rpm.png"
-
 
 # Aliases
