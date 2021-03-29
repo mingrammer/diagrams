@@ -98,7 +98,6 @@ def generate(pvd: str) -> None:
         classes = gen_classes(pvd, typ, paths)
         make_module(pvd, typ, classes)
 
-
         typ_paths[typ] = (paths, resource_root)
     # Build API documentation
     apidoc = gen_apidoc(pvd, typ_paths)
