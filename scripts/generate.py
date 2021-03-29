@@ -5,7 +5,7 @@ from typing import Iterable
 from jinja2 import Environment, FileSystemLoader, Template, exceptions
 
 import config as cfg
-from scripts import app_root_dir, doc_root_dir, resource_dir, template_dir, base_dir
+from . import app_root_dir, doc_root_dir, resource_dir, template_dir, base_dir
 
 _usage = "Usage: generate.py <provider>"
 
