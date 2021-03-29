@@ -70,14 +70,14 @@ with Diagram(name="Advanced Web Service with On-Premise (colored)", show=False):
 
 ## Less Edges
 
-As you can see on the previous graph the edges can become quickly noisy, here one example to solve this problem.
+As you can see on the previous graph the edges can quickly become noisy. Below are two examples to solve this problem.
 
-One hack is to get creative with Custom to create blank placeholders, together with named nodes within Clusters, and then only pointing to single named elements within those Clusters.
+One approach is to get creative with the Node class to create blank placeholders, together with named nodes within Clusters, and then only pointing to single named elements within those Clusters.
 
-Compare the output below to the example output linked to above .
+Compare the output below to the example output above .
 
 ```python
-from diagrams import Cluster, Diagram
+from diagrams import Cluster, Diagram, Node
 from diagrams.onprem.analytics import Spark
 from diagrams.onprem.compute import Server
 from diagrams.onprem.database import PostgreSQL
@@ -86,18 +86,17 @@ from diagrams.onprem.aggregator import Fluentd
 from diagrams.onprem.monitoring import Grafana, Prometheus
 from diagrams.onprem.network import Nginx
 from diagrams.onprem.queue import Kafka
-from diagrams.custom import Custom
 
 with Diagram("\nAdvanced Web Service with On-Premise Less edges", show=False) as diag:
     ingress = Nginx("ingress")
 
     with Cluster("Service Cluster"):
-            serv1 = Server("grpc1")
-            serv2 = Server("grpc2")
-            serv3 = Server("grpc3")
+        serv1 = Server("grpc1")
+        serv2 = Server("grpc2")
+        serv3 = Server("grpc3")
 
     with Cluster(""):
-        blankHA = Custom("","tranparent.png")
+        blankHA = Node("", shape="plaintext", width="0", height="0")
 
         metrics = Prometheus("metric")
         metrics << Grafana("monitoring")
@@ -106,14 +105,14 @@ with Diagram("\nAdvanced Web Service with On-Premise Less edges", show=False) as
         blankHA >> aggregator >> Kafka("stream") >> Spark("analytics")
 
         with Cluster("Database HA"):
-            master = PostgreSQL("users")
-            master - PostgreSQL("slave") << metrics
-            blankHA >> master
+            db = PostgreSQL("users")
+            db - PostgreSQL("replica") << metrics
+            blankHA >> db
 
         with Cluster("Sessions HA"):
-            master = Redis("session")
-            master - Redis("replica") << metrics
-            blankHA >> master
+            sess = Redis("session")
+            sess - Redis("replica") << metrics
+            blankHA >> sess
 
     ingress >> serv2 >> blankHA
 
@@ -129,9 +128,8 @@ Yet another option is to set the graph_attr dictionary key "concentrate" to "tru
 Note the following restrictions:
 
 1.  the Edge must end at the same headport
-2.  this only works when the minlen of the Edges to be greater than "1".
-3.  I could only get this to work when the "splines" graph_attr key was set to the value "spline". It had no effect when the value was set to "ortho", which is the default for the diagrams library.
-4. this will only work with the "dot" layout engine, which is the default for the diagrams library.
+2.  This only works when the "splines" graph_attr key is set to the value "spline". It has no effect when the value was set to "ortho", which is the default for the diagrams library.
+3. this will only work with the "dot" layout engine, which is the default for the diagrams library.
 
 For more information see:
 
@@ -184,7 +182,7 @@ with Diagram("\n\nAdvanced Web Service with On-Premise Merged edges", show=False
 
     with Cluster("Database HA"):
         db = PostgreSQL("users")
-        db - PostgreSQL("slave") << metrics
+        db - PostgreSQL("replica") << metrics
 
     aggregator = Fluentd("logging")
     aggregator >> Kafka("stream") >> Spark("analytics")
