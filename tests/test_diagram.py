@@ -290,7 +290,7 @@ class ResourcesTest(unittest.TestCase):
     def test_folder_depth(self):
         """
         The code currently only handles resource folders up to a dir depth of 2
-        i.e. resources/provider/module/icon.png, so check that this depth isn't
+        i.e. resources/<provider>/<type>/<image>, so check that this depth isn't
         exceeded.
         """
         resources_dir = pathlib.Path(__file__).parent.parent / 'resources'
