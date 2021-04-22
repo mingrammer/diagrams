@@ -97,6 +97,7 @@ Node classes list of onprem provider.
 - **diagrams.onprem.database.Neo4J**
 - **diagrams.onprem.database.Oracle**
 - **diagrams.onprem.database.Postgresql**, **PostgreSQL** (alias)
+- **diagrams.onprem.database.Ravendb**
 - **diagrams.onprem.database.Scylla**
 
 ## onprem.dns

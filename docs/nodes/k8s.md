@@ -48,7 +48,9 @@ Node classes list of k8s provider.
 
 ## k8s.infra
 
+- **diagrams.k8s.infra.Cluster**
 - **diagrams.k8s.infra.ETCD**
+- **diagrams.k8s.infra.Kubernetes**
 - **diagrams.k8s.infra.Master**
 - **diagrams.k8s.infra.Node**
 
