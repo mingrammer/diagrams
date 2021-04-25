@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg  viewBox="0 0 29 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>watson_picto/Watson_APIs/Watson_Knowledge_Studio</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 33 28.333 33 28.333 0.418 0 0.418"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="04_APIs" transform="translate(-113.000000, -607.000000)">
+            <g id="watson_picto/Watson_APIs/Watson_Knowledge_Studio" transform="translate(113.000000, 606.000000)">
+                <g id="watson_picto-Watson_APIs-Watson_Knowledge_Studio" transform="translate(0.200000, 0.000000)">
+                    <path d="M14.1667,6.7396 L25.2127,6.7396" id="Stroke-1" stroke="#9855D4" stroke-width="0.866" stroke-linecap="round"></path>
+                    <path d="M3.1196,17.2909 L12.2306,17.2909" id="Stroke-2" stroke="#9855D4" stroke-width="0.866" stroke-linecap="round"></path>
+                    <path d="M23.3447,17.2904 L25.2127,17.2904" id="Stroke-3" stroke="#9855D4" stroke-width="0.866" stroke-linecap="round"></path>
+                    <path d="M3.1206,22.5663 L4.9886,22.5663" id="Stroke-4" stroke="#9855D4" stroke-width="0.866" stroke-linecap="round"></path>
+                    <path d="M3.1196,12.0155 L25.2136,12.0155" id="Stroke-5" stroke="#9855D4" stroke-width="0.866" stroke-linecap="round"></path>
+                    <path d="M14.167,22.5663 L25.213,22.5663" id="Stroke-6" stroke="#9855D4" stroke-width="0.866" stroke-linecap="round"></path>
+                    <path d="M3.1196,27.8422 L21.3416,27.8422" id="Stroke-7" stroke="#9855D4" stroke-width="0.866" stroke-linecap="round"></path>
+                    <g id="Group-16" transform="translate(0.000000, 0.581800)">
+                        <path d="M3.1196,6.1578 C3.1196,6.6548 3.5216,7.0568 4.0186,7.0568 L11.3316,7.0568 C11.8276,7.0568 12.2306,6.6548 12.2306,6.1578 C12.2306,5.6618 11.8276,5.2598 11.3316,5.2598 L4.0186,5.2598 C3.5216,5.2598 3.1196,5.6618 3.1196,6.1578 Z" id="Stroke-8" stroke="#9855D4" stroke-width="0.866" stroke-linejoin="round"></path>
+                        <path d="M21.3413,16.7091 L21.3413,16.7091 C21.3413,16.2121 20.9383,15.8101 20.4423,15.8101 L15.0653,15.8101 C14.5693,15.8101 14.1663,16.2121 14.1663,16.7091 C14.1663,17.2061 14.5693,17.6081 15.0653,17.6081 L20.4423,17.6081 C20.9383,17.6081 21.3413,17.2061 21.3413,16.7091 Z" id="Stroke-10" stroke="#9855D4" stroke-width="0.866" stroke-linejoin="round"></path>
+                        <path d="M6.9922,21.9845 L6.9922,21.9845 C6.9922,22.4815 7.3942,22.8835 7.8912,22.8835 L11.2652,22.8835 C11.7612,22.8835 12.1642,22.4815 12.1642,21.9845 C12.1642,21.4885 11.7612,21.0865 11.2652,21.0865 L7.8912,21.0865 C7.3942,21.0865 6.9922,21.4885 6.9922,21.9845 Z" id="Stroke-12" stroke="#9855D4" stroke-width="0.866" stroke-linejoin="round"></path>
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Clip-15"></g>
+                        <polygon id="Stroke-14" stroke="#9855D4" stroke-width="0.866" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-2)" points="0.433 32.567 27.9 32.567 27.9 0.851 0.433 0.851"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

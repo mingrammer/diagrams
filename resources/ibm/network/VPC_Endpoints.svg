@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="vpc_endpoint_icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#vpc_gradient_bottom_1_);}
+	.st1{fill:url(#vpc_gradient_top_1_);}
+	.st2{fill:url(#endpoint_gradient_right_1_);}
+	.st3{fill:url(#endpoint_gradient_left_1_);}
+	.st4{fill:#031981;}
+</style>
+<linearGradient id="vpc_gradient_bottom_1_" gradientUnits="userSpaceOnUse" x1="0.3708" y1="31.5292" x2="31.5106" y2="0.3894">
+	<stop  offset="0.1" style="stop-color:#883FFA"/>
+	<stop  offset="0.9" style="stop-color:#EC5388"/>
+</linearGradient>
+<path id="vpc_gradient_bottom" class="st0" d="M20,27H7c-1.1,0-2-0.9-2-2V11.8h2V25h13V27z"/>
+<linearGradient id="vpc_gradient_top_1_" gradientUnits="userSpaceOnUse" x1="0.6347" y1="31.8653" x2="31.7282" y2="0.7718">
+	<stop  offset="0.1" style="stop-color:#883FFA"/>
+	<stop  offset="0.9" style="stop-color:#EC5388"/>
+</linearGradient>
+<path id="vpc_gradient_top" class="st1" d="M25,21h2V7c0-1.1-0.9-2-2-2H12v2h13V21z"/>
+<linearGradient id="endpoint_gradient_right_1_" gradientUnits="userSpaceOnUse" x1="-467" y1="-307" x2="-461" y2="-307" gradientTransform="matrix(4.489700e-11 -1 -1 -4.489700e-11 -281 -446)">
+	<stop  offset="0.1026" style="stop-color:#FFFFFF"/>
+	<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0"/>
+</linearGradient>
+<polygon id="endpoint_gradient_right" class="st2" points="28,15 28,21 24,21 24,15 "/>
+<linearGradient id="endpoint_gradient_left_1_" gradientUnits="userSpaceOnUse" x1="-339" y1="504" x2="-333" y2="504" gradientTransform="matrix(-4.489700e-11 1 1 4.489700e-11 -498 350)">
+	<stop  offset="0.1026" style="stop-color:#FFFFFF"/>
+	<stop  offset="0.9996" style="stop-color:#FFFFFF;stop-opacity:0"/>
+</linearGradient>
+<polygon id="endpoint_gradient_left" class="st3" points="4,17 4,11 8,11 8,17 "/>
+<path id="endpoints" class="st4" d="M28,22h-4h-0.6l-4-4c0.4-0.6,0.6-1.3,0.6-2c0-2.2-1.8-4-4-4c-0.7,0-1.4,0.2-2,0.6l-4-4V8V4V2H8
+	H4H2v2v4v2h2h4h0.6l4,4c-0.4,0.6-0.6,1.3-0.6,2c0,2.2,1.8,4,4,4c0.7,0,1.4-0.2,2-0.6l4,4V24v4v2h2h4h2v-2v-4v-2H28z M8,8H4V4h4V8z
+	 M16,18c-1.1,0-2-0.9-2-2s0.9-2,2-2s2,0.9,2,2S17.1,18,16,18z M28,28h-4v-4h4V28z"/>
+</svg>

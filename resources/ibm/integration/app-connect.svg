@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="250px" height="250px" viewBox="0 0 250 250" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>App Connect Circle</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="App-Connect-Circle" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="IBM-App-Connect-(With-background)-Copy" fill="#FFFFFF" stroke="#7863EC" stroke-width="6">
+            <circle id="Background" cx="125" cy="125" r="122"></circle>
+        </g>
+        <g id="IBM-App-Connect-Copy" transform="translate(47.000000, 25.000000)">
+            <path d="M78,51 L143,112" id="Line-21" stroke="#7863EC" stroke-width="7" fill="#FFFFFF"></path>
+            <path d="M114,112 C114,128.568571 127.207571,142 143.5,142 C159.792429,142 173,128.568571 173,112 C173,95.4314286 159.792429,82 143.5,82 C127.207571,82 114,95.4314286 114,112" id="Fill-78" fill="#FFFFFF"></path>
+            <path d="M73,44 L37,154" id="Line-20" stroke="#7863EC" stroke-width="7" fill="#FFFFFF"></path>
+            <path d="M30,45 C30,69.8528571 49.9232857,90 74.5,90 C99.0767143,90 119,69.8528571 119,45 C119,20.1471429 99.0767143,0 74.5,0 C49.9232857,0 30,20.1471429 30,45" id="Fill-78" fill="#FFFFFF"></path>
+            <path d="M0,155 C0,175.434571 16.3415714,192 36.5,192 C56.6584286,192 73,175.434571 73,155 C73,134.565429 56.6584286,118 36.5,118 C16.3415714,118 0,134.565429 0,155" id="Fill-78" fill="#FFFFFF"></path>
+            <path d="M43,45.5 C43,62.897 56.8791429,77 74,77 C91.1208571,77 105,62.897 105,45.5 C105,28.103 91.1208571,14 74,14 C56.8791429,14 43,28.103 43,45.5" id="Fill-78" stroke="#7863EC" stroke-width="7" fill="#FFFFFF"></path>
+            <path d="M128,111.5 C128,102.9409 134.9378,96 143.5,96 C152.0591,96 159,102.9409 159,111.5 C159,120.0622 152.0591,127 143.5,127 C134.9378,127 128,120.0622 128,111.5 Z" id="Fill-76" stroke="#7863EC" stroke-width="7" fill="#E9E8FE"></path>
+            <path d="M16,154.5 C16,166.374143 25.6258571,176 37.5,176 C49.3741429,176 59,166.374143 59,154.5 C59,142.625857 49.3741429,133 37.5,133 C25.6258571,133 16,142.625857 16,154.5" id="Fill-78" stroke="#7863EC" stroke-width="7" fill="#FFFFFF"></path>
+            <path d="M57,45 C57,54.3888571 64.6111429,62 74,62 C83.3888571,62 91,54.3888571 91,45 C91,35.6111429 83.3888571,28 74,28 C64.6111429,28 57,35.6111429 57,45" id="Fill-80" stroke="#7863EC" stroke-width="7" fill="#E9E8FE"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Padding" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+</style>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="0.9096" y1="0.8096" x2="31.1806" y2="31.0807" gradientTransform="matrix(1 0 0 -1 0 32)">
+	<stop  offset="0.1004" style="stop-color:#FA4D56"/>
+	<stop  offset="0.8972" style="stop-color:#0043CE"/>
+</linearGradient>
+<path class="st0" d="M4.2,24V7.9h10.6v2.7H7.3v3.9H14v2.7H7.3v4.1h7.5V24H4.2z M17.8,24V12h2.9v2h0.1c0.2-0.6,0.6-1.2,1.2-1.6
+	c0.5-0.4,1.3-0.7,2.2-0.7c1.2,0,2.3,0.5,3,1.3c0.7,0.8,0.9,1.9,0.9,3.4V24h-2.9v-7.3c0-1.3-0.2-1.5-0.5-1.9s-0.8-0.6-1.5-0.6
+	c-0.3,0-0.6,0-0.9,0.1s-0.5,0.2-0.8,0.4c-0.2,0.2-0.4,0.4-0.5,0.6c-0.1,0.2-0.2,0.5-0.2,0.8V24C20.8,24,17.8,24,17.8,24z"/>
+</svg>

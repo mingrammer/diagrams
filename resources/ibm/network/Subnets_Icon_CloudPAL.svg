@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Subnets" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#Gradient_Cross_1_);}
+	.st1{fill:url(#Bottom_Fade_1_);}
+	.st2{fill:url(#Top_Fade_1_);}
+	.st3{fill:#001D6C;}
+</style>
+<linearGradient id="Gradient_Cross_1_" gradientUnits="userSpaceOnUse" x1="3.175" y1="3.175" x2="28.825" y2="28.825">
+	<stop  offset="0" style="stop-color:#0062FD"/>
+	<stop  offset="1" style="stop-color:#00B8B4"/>
+</linearGradient>
+<path id="Gradient_Cross" class="st0" d="M26,22c-0.7,0-1.4,0.2-2,0.6L19.4,18L18,19.4l4.6,4.6c-0.2,0.3-0.3,0.7-0.4,1H11v2h11.1
+	c0.4,1.7,2,3,3.9,3c2.2,0,4-1.8,4-4S28.2,22,26,22z M26,28c-1.1,0-2-0.9-2-2s0.9-2,2-2s2,0.9,2,2S27.1,28,26,28z M14,12.6L9.4,8
+	c0.2-0.3,0.3-0.7,0.4-1H21V5H9.9C9.4,3.3,7.9,2,6,2C3.8,2,2,3.8,2,6s1.8,4,4,4c0.7,0,1.4-0.2,2-0.6l4.6,4.6L14,12.6z M6,8
+	C4.9,8,4,7.1,4,6s0.9-2,2-2s2,0.9,2,2S7.1,8,6,8z"/>
+<linearGradient id="Bottom_Fade_1_" gradientUnits="userSpaceOnUse" x1="-3867.8254" y1="-2597.1746" x2="-3867.8254" y2="-2589.1746" gradientTransform="matrix(0 -1 1 0 2611.1746 -3861.8254)">
+	<stop  offset="0.1" style="stop-color:#FFFFFF;stop-opacity:0"/>
+	<stop  offset="0.82" style="stop-color:#FFFFFF"/>
+</linearGradient>
+<polygon id="Bottom_Fade" class="st1" points="22,4 22,8 14,8 14,4 "/>
+<linearGradient id="Top_Fade_1_" gradientUnits="userSpaceOnUse" x1="-3887.8254" y1="-6327.8257" x2="-3887.8254" y2="-6319.8257" gradientTransform="matrix(4.489700e-11 -1 -1 -4.489700e-11 -6309.8257 -3861.8254)">
+	<stop  offset="0.1" style="stop-color:#FFFFFF;stop-opacity:0"/>
+	<stop  offset="0.82" style="stop-color:#FFFFFF"/>
+</linearGradient>
+<polygon id="Top_Fade" class="st2" points="10,24 10,28 18,28 18,24 "/>
+<path id="Solid_Cross" class="st3" d="M26,2c-2.2,0-4,1.8-4,4c0,0.7,0.2,1.4,0.6,2L8,22.6C7.4,22.2,6.7,22,6,22c-2.2,0-4,1.8-4,4
+	s1.8,4,4,4s4-1.8,4-4c0-0.7-0.2-1.4-0.6-2L24,9.4c0.6,0.4,1.3,0.6,2,0.6c2.2,0,4-1.8,4-4S28.2,2,26,2z M6,28c-1.1,0-2-0.9-2-2
+	s0.9-2,2-2s2,0.9,2,2S7.1,28,6,28z M26,8c-1.1,0-2-0.9-2-2s0.9-2,2-2s2,0.9,2,2S27.1,8,26,8z"/>
+</svg>

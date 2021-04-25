@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Padding" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+</style>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="0.7693" y1="0.7193" x2="31.3456" y2="31.2956" gradientTransform="matrix(1 0 0 -1 0 32)">
+	<stop  offset="0.1004" style="stop-color:#DA1E28"/>
+	<stop  offset="0.8996" style="stop-color:#750E13"/>
+</linearGradient>
+<path class="st0" d="M6.6,24h-3V7.9h7.2c0.7,0,1.4,0.1,2,0.3s1.1,0.6,1.5,1s0.7,1,0.9,1.6s0.3,1.3,0.3,2c0,1.1-0.2,2.1-0.7,2.9
+	s-1.2,1.4-2.2,1.7l3.3,6.5h-3.4l-3-6.2H6.6V24z M10.5,15.3c0.6,0,1-0.2,1.4-0.5c0.3-0.3,0.5-0.8,0.5-1.3v-1.1c0-0.6-0.2-1-0.5-1.3
+	s-0.8-0.5-1.4-0.5H6.6v4.7C6.6,15.3,10.5,15.3,10.5,15.3z M25.7,22h-0.1c-0.2,0.7-0.6,1.2-1.2,1.7c-0.6,0.4-1.3,0.6-2.1,0.6
+	c-1.5,0-2.7-0.5-3.5-1.6S17.6,20,17.6,18s0.4-3.6,1.2-4.6c0.8-1.1,2-1.6,3.5-1.6c0.8,0,1.5,0.2,2.1,0.6c0.6,0.4,1,1,1.2,1.6h0.1V7
+	h2.9v17h-2.9V22z M23.2,21.8c0.7,0,1.3-0.2,1.8-0.5s0.7-0.8,0.7-1.4v-3.8c0-0.6-0.2-1-0.7-1.4s-1.1-0.5-1.8-0.5
+	c-0.8,0-1.4,0.3-1.9,0.8s-0.7,1.2-0.7,2.1V19c0,0.9,0.2,1.5,0.7,2S22.5,21.8,23.2,21.8z"/>
+</svg>
