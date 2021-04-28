@@ -22,6 +22,7 @@
       "nodes/firebase",
       "nodes/outscale",
       "nodes/elastic",
+      "nodes/ibm",
       "nodes/generic",
       "nodes/programming",
       "nodes/saas",

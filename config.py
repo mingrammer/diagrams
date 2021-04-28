@@ -13,7 +13,7 @@ DIR_TEMPLATE = "templates"
 
 PROVIDERS = (
     "base", "onprem", "aws", "azure", "gcp", "firebase", "k8s", "alibabacloud", "oci", "programming", "saas", "elastic",
-    "generic", "openstack", "outscale")
+    "generic", "openstack", "outscale", "ibm")
 
 #########################
 #  Resource Processing  #
@@ -41,6 +41,7 @@ FILE_PREFIXES = {
     "outscale": (),
     "generic": (),
     "openstack": (),
+    "ibm": (),
 }
 
 #########################
@@ -70,6 +71,7 @@ UPPER_WORDS = {
     "outscale": ("osc",),
     "openstack": ("rpm", "loci", "nfv", "ec2api"),
     "pve": ("pve"),
+    "ibm": ("vpn", "vpc", "dns", "cdn", "db2"),
 }
 
 TITLE_WORDS = {
@@ -85,6 +87,9 @@ TITLE_WORDS = {
     "openstack": {
         "openstack": "OpenStack"
     },
+    "ibm": {
+        "vmware": "VMware", "lbaas": "LBaaS"
+    }
 }
 
 # TODO: check if the classname exists
@@ -437,4 +442,5 @@ ALIASES = {
             "Tripleo": "TripleO",
         }
     },
+    "ibm": {},
 }
