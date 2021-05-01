@@ -18,6 +18,9 @@ $ pipenv install diagrams
 
 # using poetry
 $ poetry add diagrams
+
+# using pipx
+$ pipx install diagrams
 ```
 
 ## Quick Start
@@ -42,6 +45,21 @@ $ python diagram.py
 ![web service diagram](/img/web_service_diagram.png)
 
 It will be saved as `web_service.png` on your working directory.
+
+### CLI
+
+If the `diagrams` CLI has been installed system wide (i.e. with [pipx](https://pipxproject.github.io/pipx/)),
+then the preceding command is equivalent to this.
+
+```shell
+$ diagrams diagram.py
+```
+
+Furthermore you can execute multiple files at once
+
+```shell
+$ diagrams diagram1.py diagram2.py
+```
 
 ## Next
 
