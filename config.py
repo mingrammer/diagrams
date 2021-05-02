@@ -12,7 +12,7 @@ DIR_RESOURCE = "resources"
 DIR_TEMPLATE = "templates"
 
 PROVIDERS = (
-    "base", "onprem", "aws", "azure", "gcp", "firebase", "k8s", "alibabacloud", "oci", "programming", "saas", "elastic",
+    "base", "onprem", "aws", "azure", "gcp", "ibm", "firebase", "k8s", "alibabacloud", "oci", "programming", "saas", "elastic",
     "generic", "openstack", "outscale")
 
 #########################
@@ -32,6 +32,7 @@ FILE_PREFIXES = {
     "azure": ("Azure-",),
     "gcp": ("Cloud-",),
     "firebase": ("Cloud-",),
+    "ibm": (),
     "k8s": (),
     "alibabacloud": (),
     "oci": ("OCI-icon-",),
@@ -70,6 +71,7 @@ UPPER_WORDS = {
     "outscale": ("osc",),
     "openstack": ("rpm", "loci", "nfv", "ec2api"),
     "pve": ("pve"),
+    "ibm": ("ibm"),
 }
 
 TITLE_WORDS = {
@@ -84,6 +86,9 @@ TITLE_WORDS = {
     },
     "openstack": {
         "openstack": "OpenStack"
+    },
+    "ibm": {
+        "ibm": "IBMCloud"
     },
 }
 
@@ -424,6 +429,7 @@ ALIASES = {
     "outscale": {
         "Osc": "OSC",
     },
+    "ibm": {},
     "generic": {},
     "openstack": {
         "user": {
