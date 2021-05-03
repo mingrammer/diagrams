@@ -73,7 +73,7 @@ To contribute to diagram, check out [contribution guidelines](CONTRIBUTING.md).
 
 ## Who uses it?
 
-[GitPitch](https://gitpitch.github.io/gitpitch) is the perfect slide deck solution for Tech Conferences, Training, Developer Advocates, and Educators. Diagrams is now available as a dedicated [Cloud Diagram Markdown Widget](https://docs.gitpitch.com/#/diagrams/cloud-architecture) so you can use Diagrams directly on any slide for conferences, meetups, and training.
+[GitPitch](https://gitpitch.github.io/gitpitch) is the perfect slide deck solution for Tech Conferences, Training, Developer Advocates, and Educators. Diagrams is now available as a dedicated [Cloud Diagram Markdown Widget](https://gitpitch.github.io/gitpitch/#/diagrams/cloud-architecture) so you can use Diagrams directly on any slide for conferences, meetups, and training.
 
 [Cloudiscovery](https://github.com/Cloud-Architects/cloudiscovery) helps you to analyze resources in your cloud (AWS/GCP/Azure/Alibaba/IBM) account. It allows you to create a diagram of analyzed cloud resource map based on this Diagrams library, so you can draw your existing cloud infrastructure with Cloudiscovery.
 
