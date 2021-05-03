@@ -21,7 +21,7 @@ class BlobStorage(_Storage):
 
 
 class DataBoxEdgeDataBoxGateway(_Storage):
-    _icon = "data-box-edge---data-box-gateway.png"
+    _icon = "data-box-edge-data-box-gateway.png"
 
 
 class DataBox(_Storage):
