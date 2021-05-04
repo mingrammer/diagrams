@@ -13,7 +13,7 @@ DIR_TEMPLATE = "templates"
 
 PROVIDERS = (
     "base", "onprem", "aws", "azure", "gcp", "firebase", "k8s", "alibabacloud", "oci", "programming", "saas", "elastic",
-    "generic", "openstack", "outscale")
+    "generic", "openstack", "outscale", "tencentcloud")
 
 #########################
 #  Resource Processing  #
@@ -41,6 +41,7 @@ FILE_PREFIXES = {
     "outscale": (),
     "generic": (),
     "openstack": (),
+    "tencentcloud": (),
 }
 
 #########################
@@ -84,6 +85,9 @@ TITLE_WORDS = {
     },
     "openstack": {
         "openstack": "OpenStack"
+    },
+    "tencentcloud": {
+        "tencentcloud": "TencentCloud"
     },
 }
 
@@ -435,6 +439,53 @@ ALIASES = {
         "deployment": {
             "Kolla": "KollaAnsible",
             "Tripleo": "TripleO",
+        }
+    },
+    "tencentcloud": {
+        "application": {
+            "LogService": "CLS",
+            "CloudMessageQueue": "CMQ",
+            "LoadMaster": "LM"
+        },
+        "compute": {
+            "AutoScaling": "AS",
+            "CloudVirtualMachine": "CVM",
+            "TencentKubernetesEngine": "TKE",
+            "ServerlessCloudFunction": "SCF",
+            "TencentIC": "TIC",
+            "TencentServiceFramework": "TSF",
+            "Lighthouse": "Lighthouse"
+        },
+        "database": {
+            "TencentMysql": "MySQL",
+            "TencentSqlserver": "SQLServer",
+            "TencentPostgresql": "PostgreSQL",
+            "TencentRedis": "Redis",
+            "TencentMongodb": "MongoDB",
+            "TencentTDsql": "TDSQL",
+        },
+        "network": {
+            "CloudLoadBalancer": "CLB",
+            "CloudConnectNetwork": "CCN",
+            "ElasticIP": "EIP",
+            "VirtualPrivateCloud": "VPC",
+            "NATGateway": "NAT",
+            "VPNConnections": "VPN",
+            "PeeringConnection": "PC",
+            "ContentDeliveryNetwork": "CDN"
+        },
+        "security": {
+            "DataSecurityGateway": "DSG",
+            "CloudWP": "CWP",
+            "CloudFireWall": "CFW",
+            "DataSecurityAudit": "DSAudit",
+            "WebApplicationFirewall": "WAF"
+        },
+        "storage": {
+            "CloudHDFS": "CHDFS",
+            "CloudFileStorage": "CFS",
+            "CloudStorageGateway": "CSG",
+            "CloudObjectStorage": "COS"
         }
     },
 }
