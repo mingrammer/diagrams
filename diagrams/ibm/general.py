@@ -24,10 +24,6 @@ class Internet(_General):
     _icon = "Internet.png"
 
 
-class Browser(_General):
-    _icon = "browser.png"
-
-
 class CloudMessaging(_General):
     _icon = "cloud-messaging.png"
 
@@ -44,12 +40,12 @@ class DataSecurity(_General):
     _icon = "data-security.png"
 
 
-class Device(_General):
-    _icon = "device.png"
-
-
 class GovernanceRiskCompliance(_General):
     _icon = "governance-risk-compliance.png"
+
+
+class IBMContainers(_General):
+    _icon = "ibm-containers.png"
 
 
 class IBMPublicCloud(_General):
@@ -66,10 +62,6 @@ class IdentityProvider(_General):
 
 class InfrastructureSecurity(_General):
     _icon = "infrastructure-security.png"
-
-
-class IntegratedDigitalExperiences(_General):
-    _icon = "integrated-digital-experiences.png"
 
 
 class IotCloud(_General):
@@ -92,24 +84,40 @@ class Monitoring(_General):
     _icon = "monitoring.png"
 
 
-class PhysicalEntity(_General):
-    _icon = "physical-entity.png"
+class ObjectStorage(_General):
+    _icon = "object-storage.png"
 
 
-class Sensor(_General):
-    _icon = "sensor.png"
+class OfflineCapabilities(_General):
+    _icon = "offline-capabilities.png"
+
+
+class Openwhisk(_General):
+    _icon = "openwhisk.png"
+
+
+class PeerCloud(_General):
+    _icon = "peer-cloud.png"
+
+
+class RetrieveRank(_General):
+    _icon = "retrieve-rank.png"
+
+
+class Scalable(_General):
+    _icon = "scalable.png"
 
 
 class ServiceDiscoveryConfiguration(_General):
     _icon = "service-discovery-configuration.png"
 
 
+class TextToSpeech(_General):
+    _icon = "text-to-speech.png"
+
+
 class TransformationConnectivity(_General):
     _icon = "transformation-connectivity.png"
-
-
-class User(_General):
-    _icon = "user.png"
 
 
 # Aliases

@@ -16,6 +16,10 @@ class Directlink(_Network):
     _icon = "DirectLink.png"
 
 
+class Enterprise(_Network):
+    _icon = "Enterprise.png"
+
+
 class Firewall(_Network):
     _icon = "Firewall.png"
 
