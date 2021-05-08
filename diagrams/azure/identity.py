@@ -48,6 +48,10 @@ class EnterpriseApplications(_Identity):
     _icon = "enterprise-applications.png"
 
 
+class Groups(_Identity):
+    _icon = "groups.png"
+
+
 class IdentityGovernance(_Identity):
     _icon = "identity-governance.png"
 
@@ -58,6 +62,10 @@ class InformationProtection(_Identity):
 
 class ManagedIdentities(_Identity):
     _icon = "managed-identities.png"
+
+
+class Users(_Identity):
+    _icon = "users.png"
 
 
 # Aliases
