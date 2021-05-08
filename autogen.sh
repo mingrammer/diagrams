@@ -33,7 +33,7 @@ for pvd in "${providers[@]}"; do
     echo "converting the svg to png using inkscape for provider '$pvd'"
     python -m scripts.resource svg2png "$pvd"
   fi
-  if [ "$pvd" == "oci" ]; then
+  if [ "$pvd" == "oci" ] || [ "$pvd" = "ibm" ]; then
     echo "converting the svg to png using image magick for provider '$pvd'"
     python -m scripts.resource svg2png2 "$pvd"
   fi
