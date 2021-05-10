@@ -3,6 +3,7 @@ Custom provides the possibility of load an image to be presented as a node.
 """
 
 from diagrams import Node
+from typing import Dict
 
 
 class Custom(Node):
@@ -15,6 +16,6 @@ class Custom(Node):
     def _load_icon(self):
         return self._icon
 
-    def __init__(self, label, icon_path):
+    def __init__(self, label, icon_path, **attrs: Dict):
         self._icon = icon_path
-        super().__init__(label)
+        super().__init__(label, **attrs)
