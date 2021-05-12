@@ -12,7 +12,7 @@ include = ["resources/**/*"]
 [tool.poetry.dependencies]
 python = "^3.6"
 graphviz = ">=0.13.2,<0.17.0"
-jinja2 = "^2.10"
+jinja2 = ">=2.10,<4.0"
 contextvars = { version = "^2.4", python = "~3.6" }
 
 [tool.poetry.dev-dependencies]
