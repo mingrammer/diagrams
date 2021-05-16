@@ -65,3 +65,4 @@ class Vpn(_Security):
 
 
 # Aliases
+VPN = Vpn
