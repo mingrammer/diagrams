@@ -97,20 +97,19 @@ Node classes list of ibm provider.
 
 ## ibm.general
 
-- **diagrams.ibm.general.Cloudservices**
-- **diagrams.ibm.general.Enterprise**
-- **diagrams.ibm.general.Enterprise2**
-- **diagrams.ibm.general.Internet**
 - **diagrams.ibm.general.CloudMessaging**
+- **diagrams.ibm.general.CloudServices**
 - **diagrams.ibm.general.Cloudant**
 - **diagrams.ibm.general.CognitiveServices**
 - **diagrams.ibm.general.DataSecurity**
+- **diagrams.ibm.general.Enterprise**
 - **diagrams.ibm.general.GovernanceRiskCompliance**
 - **diagrams.ibm.general.IBMContainers**
 - **diagrams.ibm.general.IBMPublicCloud**
 - **diagrams.ibm.general.IdentityAccessManagement**
 - **diagrams.ibm.general.IdentityProvider**
 - **diagrams.ibm.general.InfrastructureSecurity**
+- **diagrams.ibm.general.Internet**
 - **diagrams.ibm.general.IotCloud**
 - **diagrams.ibm.general.MicroservicesApplication**
 - **diagrams.ibm.general.MicroservicesMesh**

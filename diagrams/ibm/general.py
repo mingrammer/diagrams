@@ -8,24 +8,12 @@ class _General(_IBM):
     _icon_dir = "resources/ibm/general"
 
 
-class Cloudservices(_General):
-    _icon = "CloudServices.png"
-
-
-class Enterprise(_General):
-    _icon = "Enterprise.png"
-
-
-class Enterprise2(_General):
-    _icon = "Enterprise2.png"
-
-
-class Internet(_General):
-    _icon = "Internet.png"
-
-
 class CloudMessaging(_General):
     _icon = "cloud-messaging.png"
+
+
+class CloudServices(_General):
+    _icon = "cloud-services.png"
 
 
 class Cloudant(_General):
@@ -38,6 +26,10 @@ class CognitiveServices(_General):
 
 class DataSecurity(_General):
     _icon = "data-security.png"
+
+
+class Enterprise(_General):
+    _icon = "enterprise.png"
 
 
 class GovernanceRiskCompliance(_General):
@@ -62,6 +54,10 @@ class IdentityProvider(_General):
 
 class InfrastructureSecurity(_General):
     _icon = "infrastructure-security.png"
+
+
+class Internet(_General):
+    _icon = "internet.png"
 
 
 class IotCloud(_General):
