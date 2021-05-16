@@ -28,6 +28,10 @@ class DevtestLabs(_Devops):
     _icon = "devtest-labs.png"
 
 
+class LabServices(_Devops):
+    _icon = "lab-services.png"
+
+
 class Pipelines(_Devops):
     _icon = "pipelines.png"
 

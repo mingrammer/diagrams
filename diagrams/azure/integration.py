@@ -52,6 +52,10 @@ class LogicApps(_Integration):
     _icon = "logic-apps.png"
 
 
+class PartnerTopic(_Integration):
+    _icon = "partner-topic.png"
+
+
 class SendgridAccounts(_Integration):
     _icon = "sendgrid-accounts.png"
 
@@ -74,6 +78,10 @@ class SoftwareAsAService(_Integration):
 
 class StorsimpleDeviceManagers(_Integration):
     _icon = "storsimple-device-managers.png"
+
+
+class SystemTopic(_Integration):
+    _icon = "system-topic.png"
 
 
 # Aliases
