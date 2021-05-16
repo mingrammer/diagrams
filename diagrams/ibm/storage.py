@@ -8,12 +8,12 @@ class _Storage(_IBM):
     _icon_dir = "resources/ibm/storage"
 
 
-class Blockstorage(_Storage):
-    _icon = "BlockStorage.png"
+class BlockStorage(_Storage):
+    _icon = "block-storage.png"
 
 
-class Objectstorage(_Storage):
-    _icon = "ObjectStorage.png"
+class ObjectStorage(_Storage):
+    _icon = "object-storage.png"
 
 
 # Aliases

@@ -60,11 +60,11 @@ Node classes list of ibm provider.
 
 ## ibm.compute
 
-- **diagrams.ibm.compute.Baremetalserver**
-- **diagrams.ibm.compute.Imageservice**
+- **diagrams.ibm.compute.BareMetalServer**
+- **diagrams.ibm.compute.ImageService**
 - **diagrams.ibm.compute.Instance**
 - **diagrams.ibm.compute.Key**
-- **diagrams.ibm.compute.Powerinstance**
+- **diagrams.ibm.compute.PowerInstance**
 
 ## ibm.data
 
@@ -168,26 +168,26 @@ Node classes list of ibm provider.
 ## ibm.network
 
 - **diagrams.ibm.network.Bridge**
-- **diagrams.ibm.network.Directlink**
+- **diagrams.ibm.network.DirectLink**
 - **diagrams.ibm.network.Enterprise**
 - **diagrams.ibm.network.Firewall**
-- **diagrams.ibm.network.Floatingip**
+- **diagrams.ibm.network.FloatingIp**
 - **diagrams.ibm.network.Gateway**
-- **diagrams.ibm.network.Internetservices2**
-- **diagrams.ibm.network.Loadbalancer**
-- **diagrams.ibm.network.Loadbalancerlistener**
-- **diagrams.ibm.network.Loadbalancerpool**
-- **diagrams.ibm.network.Loadbalancingrouting**
-- **diagrams.ibm.network.Publicgateway**
+- **diagrams.ibm.network.InternetServices**
+- **diagrams.ibm.network.LoadBalancerListener**
+- **diagrams.ibm.network.LoadBalancerPool**
+- **diagrams.ibm.network.LoadBalancer**
+- **diagrams.ibm.network.LoadBalancingRouting**
+- **diagrams.ibm.network.PublicGateway**
 - **diagrams.ibm.network.Region**
 - **diagrams.ibm.network.Router**
 - **diagrams.ibm.network.Rules**
 - **diagrams.ibm.network.Subnet**
-- **diagrams.ibm.network.Transitgateway**
+- **diagrams.ibm.network.TransitGateway**
 - **diagrams.ibm.network.Vpc**
-- **diagrams.ibm.network.Vpnconnection**
-- **diagrams.ibm.network.Vpngateway**
-- **diagrams.ibm.network.Vpnpolicy**
+- **diagrams.ibm.network.VpnConnection**
+- **diagrams.ibm.network.VpnGateway**
+- **diagrams.ibm.network.VpnPolicy**
 
 ## ibm.security
 
@@ -216,8 +216,8 @@ Node classes list of ibm provider.
 
 ## ibm.storage
 
-- **diagrams.ibm.storage.Blockstorage**
-- **diagrams.ibm.storage.Objectstorage**
+- **diagrams.ibm.storage.BlockStorage**
+- **diagrams.ibm.storage.ObjectStorage**
 
 ## ibm.user
 

@@ -8,24 +8,24 @@ class _Compute(_IBM):
     _icon_dir = "resources/ibm/compute"
 
 
-class Baremetalserver(_Compute):
-    _icon = "BareMetalServer.png"
+class BareMetalServer(_Compute):
+    _icon = "bare-metal-server.png"
 
 
-class Imageservice(_Compute):
-    _icon = "ImageService.png"
+class ImageService(_Compute):
+    _icon = "image-service.png"
 
 
 class Instance(_Compute):
-    _icon = "Instance.png"
+    _icon = "instance.png"
 
 
 class Key(_Compute):
-    _icon = "Key.png"
+    _icon = "key.png"
 
 
-class Powerinstance(_Compute):
-    _icon = "PowerInstance.png"
+class PowerInstance(_Compute):
+    _icon = "power-instance.png"
 
 
 # Aliases

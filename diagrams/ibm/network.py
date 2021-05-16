@@ -9,87 +9,103 @@ class _Network(_IBM):
 
 
 class Bridge(_Network):
-    _icon = "Bridge.png"
+    _icon = "bridge.png"
 
 
-class Directlink(_Network):
-    _icon = "DirectLink.png"
+class DirectLink(_Network):
+    _icon = "direct-link.png"
 
 
 class Enterprise(_Network):
-    _icon = "Enterprise.png"
+    _icon = "enterprise.png"
 
 
 class Firewall(_Network):
-    _icon = "Firewall.png"
+    _icon = "firewall.png"
 
 
-class Floatingip(_Network):
-    _icon = "FloatingIP.png"
+class FloatingIp(_Network):
+    _icon = "floating-ip.png"
 
 
 class Gateway(_Network):
-    _icon = "Gateway.png"
+    _icon = "gateway.png"
 
 
-class Internetservices2(_Network):
-    _icon = "InternetServices2.png"
+class InternetServices(_Network):
+    _icon = "internet-services.png"
 
 
-class Loadbalancer(_Network):
-    _icon = "LoadBalancer.png"
+class LoadBalancerListener(_Network):
+    _icon = "load-balancer-listener.png"
 
 
-class Loadbalancerlistener(_Network):
-    _icon = "LoadBalancerListener.png"
+class LoadBalancerPool(_Network):
+    _icon = "load-balancer-pool.png"
 
 
-class Loadbalancerpool(_Network):
-    _icon = "LoadBalancerPool.png"
+class LoadBalancer(_Network):
+    _icon = "load-balancer.png"
 
 
-class Loadbalancingrouting(_Network):
-    _icon = "LoadBalancingRouting.png"
+class LoadBalancingRouting(_Network):
+    _icon = "load-balancing-routing.png"
 
 
-class Publicgateway(_Network):
-    _icon = "PublicGateway.png"
+class PublicGateway(_Network):
+    _icon = "public-gateway.png"
 
 
 class Region(_Network):
-    _icon = "Region.png"
+    _icon = "region.png"
 
 
 class Router(_Network):
-    _icon = "Router.png"
+    _icon = "router.png"
 
 
 class Rules(_Network):
-    _icon = "Rules.png"
+    _icon = "rules.png"
 
 
 class Subnet(_Network):
-    _icon = "Subnet.png"
+    _icon = "subnet.png"
 
 
-class Transitgateway(_Network):
-    _icon = "TransitGateway.png"
+class TransitGateway(_Network):
+    _icon = "transit-gateway.png"
 
 
 class Vpc(_Network):
-    _icon = "VPC.png"
+    _icon = "vpc.png"
 
 
-class Vpnconnection(_Network):
-    _icon = "VPNConnection.png"
+class VpnConnection(_Network):
+    _icon = "vpn-connection.png"
 
 
-class Vpngateway(_Network):
-    _icon = "VPNGateway.png"
+class VpnGateway(_Network):
+    _icon = "vpn-gateway.png"
 
 
-class Vpnpolicy(_Network):
-    _icon = "VPNPolicy.png"
+class VpnPolicy(_Network):
+    _icon = "vpn-policy.png"
 
 
 # Aliases
+
+ACL = Rules
+CIS = InternetServices
+DL = DirectLink
+FIP = FloatingIp
+FloatingIP = FloatingIp
+FW = Firewall
+LB = LoadBalancer
+NLB = LoadBalancer 
+PublicGateway = Gateway
+SecurityGroupRules = Rules
+TG = TransitGateway
+VPC = Vpc
+VPNGateway = VpnGateway
+VPNConnection = VpnConnection
+VPNPolicy = VpnPolicy
