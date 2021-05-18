@@ -37,10 +37,12 @@ def _format_edge_label(description):
     return f'<<font point-size="10">{text}</font>>'
 
 
-def Container(name, type, description, **kwargs):
+def Container(name, type="", description="", **kwargs):
+    type = f"Container: {type}" if type else "Container"
     node_attributes = {
         "label": _format_node_label(name, type, description),
-        "shape": "record",
+        "labelloc": "c",
+        "shape": "rect",
         "width": "2.6",
         "height": "1.6",
         "fixedsize": "true",
@@ -52,7 +54,8 @@ def Container(name, type, description, **kwargs):
     return Node(**node_attributes)
 
 
-def Database(name, type, description, **kwargs):
+def Database(name, type="", description="", **kwargs):
+    type = f"Database: {type}" if type else "Database"
     node_attributes = {
         "label": _format_node_label(name, type, description),
         "shape": "cylinder",
@@ -71,7 +74,8 @@ def System(name, description="", external=False, **kwargs):
     type = "External System" if external else "System"
     node_attributes = {
         "label": _format_node_label(name, type, description),
-        "shape": "record",
+        "labelloc": "c",
+        "shape": "rect",
         "width": "2.6",
         "height": "1.6",
         "fixedsize": "true",
@@ -86,28 +90,40 @@ def System(name, description="", external=False, **kwargs):
     return Node(**node_attributes)
 
 
-def Person(name, description, **kwargs):
+def Person(name, description="", external=False, **kwargs):
+    type = "External Person" if external else "Person"
     node_attributes = {
-        "label": _format_node_label(name, "", description),
-        "shape": "record",
+        "label": _format_node_label(name, type, description),
+        "labelloc": "c",
+        "shape": "rect",
         "width": "2.6",
         "height": "1.6",
         "fixedsize": "true",
         "style": "rounded,filled",
-        "fillcolor": "dodgerblue4",
+        "fillcolor": "gray60" if external else "dodgerblue4",
         "fontcolor": "white",
     }
+    # collapse person boxes to a smaller form if they don't have a description
+    if not description:
+        node_attributes.update({"width": "2", "height": "1"})
     node_attributes.update(kwargs)
     return Node(**node_attributes)
 
 
 def SystemBoundary(name, **kwargs):
-    graph_attributes = {"label": html.escape(name), "bgcolor": "white", "margin": "16", "style": "dashed"}
+    graph_attributes = {
+        "label": html.escape(name),
+        "bgcolor": "white",
+        "margin": "16",
+        "style": "dashed",
+    }
     graph_attributes.update(kwargs)
     return Cluster(name, graph_attr=graph_attributes)
 
 
-def Dependency(label, **kwargs):
-    edge_attribtues = {"label": _format_edge_label(label), "style": "dashed", "color": "gray60"}
+def Dependency(label="", **kwargs):
+    edge_attribtues = {"style": "dashed", "color": "gray60"}
+    if label:
+        edge_attribtues.update({"label": _format_edge_label(label)})
     edge_attribtues.update(kwargs)
     return Edge(**edge_attribtues)

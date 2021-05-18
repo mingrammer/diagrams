@@ -28,11 +28,15 @@ class C4Test(unittest.TestCase):
 
             person >> container >> database
 
+    def test_external_nodes(self):
+        with Diagram(name=self.name, show=False):
+            external_person = Person("person", external=True)
+            external_system = System("external", external=True)
+
     def test_systems(self):
         with Diagram(name=self.name, show=False):
             system = System("system", "The internal system.")
             system_without_description = System("unknown")
-            external_system = System("external", "The external system.", external=True)
 
             system >> system_without_description >> external_system
 
@@ -43,6 +47,13 @@ class C4Test(unittest.TestCase):
 
             c1 >> Dependency("depends on") >> c2
             c1 << Dependency("is dependend on") << c2
+
+    def test_edge_without_constraint(self):
+        with Diagram(name=self.name, show=False):
+            s1 = System("system 1")
+            s2 = System("system 2")
+
+            s1 >> Dependency(constraint="False") >> s2
 
     def test_cluster(self):
         with Diagram(name=self.name, show=False):
