@@ -121,7 +121,7 @@ def SystemBoundary(name, **kwargs):
     return Cluster(name, graph_attr=graph_attributes)
 
 
-def Dependency(label="", **kwargs):
+def Relationship(label="", **kwargs):
     edge_attribtues = {"style": "dashed", "color": "gray60"}
     if label:
         edge_attribtues.update({"label": _format_edge_label(label)})
