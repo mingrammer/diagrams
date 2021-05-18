@@ -6,10 +6,10 @@ import textwrap
 from diagrams import Cluster, Node, Edge
 
 
-def _format_node_label(name, type, description):
+def _format_node_label(name, key, description):
     """Create a graphviz label string for a C4 node"""
     title = f'<font point-size="12"><b>{html.escape(name)}</b></font><br/>'
-    subtitle = f'<font point-size="9">[{html.escape(type)}]<br/></font>' if type else ""
+    subtitle = f'<font point-size="9">[{html.escape(key)}]<br/></font>' if key else ""
     text = f'<br/><font point-size="10">{_format_description(description)}</font>' if description else ""
     return f"<{title}{subtitle}{text}>"
 
@@ -37,10 +37,10 @@ def _format_edge_label(description):
     return f'<<font point-size="10">{text}</font>>'
 
 
-def Container(name, type="", description="", **kwargs):
-    type = f"Container: {type}" if type else "Container"
+def Container(name, technology="", description="", **kwargs):
+    key = f"Container: {technology}" if technology else "Container"
     node_attributes = {
-        "label": _format_node_label(name, type, description),
+        "label": _format_node_label(name, key, description),
         "labelloc": "c",
         "shape": "rect",
         "width": "2.6",
@@ -54,10 +54,10 @@ def Container(name, type="", description="", **kwargs):
     return Node(**node_attributes)
 
 
-def Database(name, type="", description="", **kwargs):
-    type = f"Database: {type}" if type else "Database"
+def Database(name, technology="", description="", **kwargs):
+    key = f"Database: {technology}" if technology else "Database"
     node_attributes = {
-        "label": _format_node_label(name, type, description),
+        "label": _format_node_label(name, key, description),
         "shape": "cylinder",
         "width": "2.6",
         "height": "1.6",
@@ -71,9 +71,9 @@ def Database(name, type="", description="", **kwargs):
 
 
 def System(name, description="", external=False, **kwargs):
-    type = "External System" if external else "System"
+    key = "External System" if external else "System"
     node_attributes = {
-        "label": _format_node_label(name, type, description),
+        "label": _format_node_label(name, key, description),
         "labelloc": "c",
         "shape": "rect",
         "width": "2.6",
@@ -91,9 +91,9 @@ def System(name, description="", external=False, **kwargs):
 
 
 def Person(name, description="", external=False, **kwargs):
-    type = "External Person" if external else "Person"
+    key = "External Person" if external else "Person"
     node_attributes = {
-        "label": _format_node_label(name, type, description),
+        "label": _format_node_label(name, key, description),
         "labelloc": "c",
         "shape": "rect",
         "width": "2.6",
