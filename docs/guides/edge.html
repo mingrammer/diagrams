@@ -89,22 +89,22 @@
             Server(<span class="hljs-string">"grpc3"</span>)]
 
     <span class="hljs-keyword">with</span> Cluster(<span class="hljs-string">"Sessions HA"</span>):
-        master = Redis(<span class="hljs-string">"session"</span>)
-        master \
+        main = Redis(<span class="hljs-string">"session"</span>)
+        main \
             - Edge(color=<span class="hljs-string">"brown"</span>, style=<span class="hljs-string">"dashed"</span>) \
             - Redis(<span class="hljs-string">"replica"</span>) \
             &lt;&lt; Edge(label=<span class="hljs-string">"collect"</span>) \
             &lt;&lt; metrics
-        grpcsvc &gt;&gt; Edge(color=<span class="hljs-string">"brown"</span>) &gt;&gt; master
+        grpcsvc &gt;&gt; Edge(color=<span class="hljs-string">"brown"</span>) &gt;&gt; main
 
     <span class="hljs-keyword">with</span> Cluster(<span class="hljs-string">"Database HA"</span>):
-        master = PostgreSQL(<span class="hljs-string">"users"</span>)
-        master \
+        main = PostgreSQL(<span class="hljs-string">"users"</span>)
+        main \
             - Edge(color=<span class="hljs-string">"brown"</span>, style=<span class="hljs-string">"dotted"</span>) \
-            - PostgreSQL(<span class="hljs-string">"slave"</span>) \
+            - PostgreSQL(<span class="hljs-string">"replica"</span>) \
             &lt;&lt; Edge(label=<span class="hljs-string">"collect"</span>) \
             &lt;&lt; metrics
-        grpcsvc &gt;&gt; Edge(color=<span class="hljs-string">"black"</span>) &gt;&gt; master
+        grpcsvc &gt;&gt; Edge(color=<span class="hljs-string">"black"</span>) &gt;&gt; main
 
     aggregator = Fluentd(<span class="hljs-string">"logging"</span>)
     aggregator \
@@ -120,4 +120,4 @@
         &gt;&gt; aggregator
 </code></pre>
 <p><img src="/img/advanced_web_service_with_on-premise_colored.png" alt="advanced web service with on-premise diagram colored"></p>
-</span></div></article></div><div class="docLastUpdate"><em>Last updated on 2021-2-21</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/guides/cluster"><span class="arrow-prev">← </span><span>Clusters</span></a><a class="docs-next button" href="/docs/nodes/onprem"><span class="function-name-prevnext">OnPrem</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#basic">Basic</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/diagrams.ico" alt="Diagrams" width="66" height="58"/></a><div><h5>Docs</h5><a href="/docs/getting-started/installation">Getting Started</a><a href="/docs/guides/diagram">Guides</a><a href="/docs/nodes/aws">Nodes</a></div><div><h5>More</h5><iframe src="https://ghbtns.com/github-btn.html?user=mingrammer&amp;repo=diagrams&amp;type=star&amp;count=true&amp;size=large" frameBorder="0" scrolling="0" width="170" height="30" title="Star mingrammer/diagrams on GitHub"></iframe></div></section><section class="copyright">Copyright © 2021 mingrammer</section></footer></div></body></html>
+</span></div></article></div><div class="docLastUpdate"><em>Last updated on 5/3/2021</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/guides/cluster"><span class="arrow-prev">← </span><span>Clusters</span></a><a class="docs-next button" href="/docs/nodes/onprem"><span class="function-name-prevnext">OnPrem</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#basic">Basic</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/diagrams.ico" alt="Diagrams" width="66" height="58"/></a><div><h5>Docs</h5><a href="/docs/getting-started/installation">Getting Started</a><a href="/docs/guides/diagram">Guides</a><a href="/docs/nodes/aws">Nodes</a></div><div><h5>More</h5><iframe src="https://ghbtns.com/github-btn.html?user=mingrammer&amp;repo=diagrams&amp;type=star&amp;count=true&amp;size=large" frameBorder="0" scrolling="0" width="170" height="30" title="Star mingrammer/diagrams on GitHub"></iframe></div></section><section class="copyright">Copyright © 2021 mingrammer</section></footer></div></body></html>
