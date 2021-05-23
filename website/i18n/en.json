@@ -47,6 +47,9 @@
       "nodes/generic": {
         "title": "Generic"
       },
+      "nodes/ibm": {
+        "title": "IBM"
+      },
       "nodes/k8s": {
         "title": "K8S"
       },
