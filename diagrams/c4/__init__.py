@@ -37,8 +37,8 @@ def _format_edge_label(description):
     return f'<<font point-size="10">{text}</font>>'
 
 
-def Container(name, technology="", description="", **kwargs):
-    key = f"Container: {technology}" if technology else "Container"
+def C4Node(name, technology="", description="", type="Container", **kwargs):
+    key = f"{type}: {technology}" if technology else type
     node_attributes = {
         "label": _format_node_label(name, key, description),
         "labelloc": "c",
@@ -50,64 +50,32 @@ def Container(name, technology="", description="", **kwargs):
         "fillcolor": "dodgerblue3",
         "fontcolor": "white",
     }
+    # collapse boxes to a smaller form if they don't have a description
+    if not description:
+        node_attributes.update({"width": "2", "height": "1"})
     node_attributes.update(kwargs)
     return Node(**node_attributes)
+
+
+def Container(name, technology="", description="", **kwargs):
+    return C4Node(name, technology=technology, description=description, type="Container")
 
 
 def Database(name, technology="", description="", **kwargs):
-    key = f"Database: {technology}" if technology else "Database"
-    node_attributes = {
-        "label": _format_node_label(name, key, description),
-        "shape": "cylinder",
-        "width": "2.6",
-        "height": "1.6",
-        "fixedsize": "true",
-        "style": "filled",
-        "fillcolor": "dodgerblue3",
-        "fontcolor": "white",
-    }
-    node_attributes.update(kwargs)
-    return Node(**node_attributes)
+    return C4Node(name, technology=technology, description=description, type="Database", shape="cylinder", labelloc="b")
 
 
 def System(name, description="", external=False, **kwargs):
-    key = "External System" if external else "System"
-    node_attributes = {
-        "label": _format_node_label(name, key, description),
-        "labelloc": "c",
-        "shape": "rect",
-        "width": "2.6",
-        "height": "1.6",
-        "fixedsize": "true",
-        "style": "filled",
-        "fillcolor": "gray60" if external else "dodgerblue4",
-        "fontcolor": "white",
-    }
-    # collapse system boxes to a smaller form if they don't have a description
-    if not description:
-        node_attributes.update({"width": "2", "height": "1"})
-    node_attributes.update(kwargs)
-    return Node(**node_attributes)
+    type = "External System" if external else "System"
+    fillcolor = "gray60" if external else "dodgerblue4"
+    return C4Node(name, description=description, type=type, fillcolor=fillcolor)
 
 
 def Person(name, description="", external=False, **kwargs):
-    key = "External Person" if external else "Person"
-    node_attributes = {
-        "label": _format_node_label(name, key, description),
-        "labelloc": "c",
-        "shape": "rect",
-        "width": "2.6",
-        "height": "1.6",
-        "fixedsize": "true",
-        "style": "rounded,filled",
-        "fillcolor": "gray60" if external else "dodgerblue4",
-        "fontcolor": "white",
-    }
-    # collapse person boxes to a smaller form if they don't have a description
-    if not description:
-        node_attributes.update({"width": "2", "height": "1"})
-    node_attributes.update(kwargs)
-    return Node(**node_attributes)
+    type = "External Person" if external else "Person"
+    fillcolor = "gray60" if external else "dodgerblue4"
+    style = "rounded,filled"
+    return C4Node(name, description=description, type=type, fillcolor=fillcolor, style=style)
 
 
 def SystemBoundary(name, **kwargs):
