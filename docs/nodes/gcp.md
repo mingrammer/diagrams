@@ -112,6 +112,10 @@ Node classes list of gcp provider.
 - **diagrams.gcp.network.VirtualPrivateCloud**, **VPC** (alias)
 - **diagrams.gcp.network.VPN**
 
+## gcp.operations
+
+- **diagrams.gcp.operations.Monitoring**
+
 ## gcp.security
 
 - **diagrams.gcp.security.Iam**

@@ -104,7 +104,7 @@ class Diagram:
         """
         self.name = name
         if not name and not filename:
-          filename = "diagrams_image"
+            filename = "diagrams_image"
         elif not filename:
             filename = "_".join(self.name.split()).lower()
         self.filename = filename
@@ -211,7 +211,10 @@ class Cluster:
     #  Cluster direction does not work now. Graphviz couldn't render
     #  correctly for a subgraph that has a different rank direction.
     def __init__(
-        self, label: str = "cluster", direction: str = "LR", graph_attr: dict = {},
+        self,
+        label: str = "cluster",
+        direction: str = "LR",
+        graph_attr: dict = {},
     ):
         """Cluster represents a cluster context.
 
@@ -403,8 +406,8 @@ class Node:
         """
         if not isinstance(node, Node):
             ValueError(f"{node} is not a valid Node")
-        if not isinstance(node, Edge):
-            ValueError(f"{node} is not a valid Edge")
+        if not isinstance(edge, Edge):
+            ValueError(f"{edge} is not a valid Edge")
         # An edge must be added on the global diagrams, not a cluster.
         self._diagram.connect(self, node, edge)
         return node

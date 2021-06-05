@@ -32,6 +32,9 @@
       "nodes/azure": {
         "title": "Azure"
       },
+      "nodes/custom": {
+        "title": "Custom"
+      },
       "nodes/elastic": {
         "title": "Elastic"
       },
@@ -43,6 +46,9 @@
       },
       "nodes/generic": {
         "title": "Generic"
+      },
+      "nodes/ibm": {
+        "title": "IBM"
       },
       "nodes/k8s": {
         "title": "K8S"

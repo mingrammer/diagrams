@@ -47,12 +47,12 @@ Node classes list of oci provider.
 
 ## oci.database
 
-- **diagrams.oci.database.AutonomousWhite**
-- **diagrams.oci.database.Autonomous**
+- **diagrams.oci.database.AutonomousWhite**, **ADBWhite** (alias)
+- **diagrams.oci.database.Autonomous**, **ADB** (alias)
 - **diagrams.oci.database.BigdataServiceWhite**
 - **diagrams.oci.database.BigdataService**
-- **diagrams.oci.database.DatabaseServiceWhite**
-- **diagrams.oci.database.DatabaseService**
+- **diagrams.oci.database.DatabaseServiceWhite**, **DBServiceWhite** (alias)
+- **diagrams.oci.database.DatabaseService**, **DBService** (alias)
 - **diagrams.oci.database.DataflowApacheWhite**
 - **diagrams.oci.database.DataflowApache**
 - **diagrams.oci.database.DcatWhite**

@@ -24,7 +24,8 @@
       "nodes/elastic",
       "nodes/generic",
       "nodes/programming",
-      "nodes/saas"
+      "nodes/saas",
+      "nodes/custom"
     ]
   }
 }

@@ -8,6 +8,10 @@ class _Game(_AWS):
     _icon_dir = "resources/aws/game"
 
 
+class GameTech(_Game):
+    _icon = "game-tech.png"
+
+
 class Gamelift(_Game):
     _icon = "gamelift.png"
 

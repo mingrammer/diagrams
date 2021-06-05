@@ -24,6 +24,10 @@ class Ember(_Framework):
     _icon = "ember.png"
 
 
+class Fastapi(_Framework):
+    _icon = "fastapi.png"
+
+
 class Flask(_Framework):
     _icon = "flask.png"
 
@@ -57,3 +61,5 @@ class Vue(_Framework):
 
 
 # Aliases
+
+FastAPI = Fastapi

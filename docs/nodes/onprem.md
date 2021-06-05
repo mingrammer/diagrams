@@ -20,6 +20,7 @@ Node classes list of onprem provider.
 - **diagrams.onprem.analytics.Hive**
 - **diagrams.onprem.analytics.Metabase**
 - **diagrams.onprem.analytics.Norikra**
+- **diagrams.onprem.analytics.Powerbi**, **PowerBI** (alias)
 - **diagrams.onprem.analytics.Presto**
 - **diagrams.onprem.analytics.Singer**
 - **diagrams.onprem.analytics.Spark**
@@ -152,6 +153,7 @@ Node classes list of onprem provider.
 - **diagrams.onprem.monitoring.Cortex**
 - **diagrams.onprem.monitoring.Datadog**
 - **diagrams.onprem.monitoring.Grafana**
+- **diagrams.onprem.monitoring.Humio**
 - **diagrams.onprem.monitoring.Newrelic**
 - **diagrams.onprem.monitoring.PrometheusOperator**
 - **diagrams.onprem.monitoring.Prometheus**
@@ -227,6 +229,7 @@ Node classes list of onprem provider.
 ## onprem.vcs
 
 - **diagrams.onprem.vcs.Git**
+- **diagrams.onprem.vcs.Gitea**
 - **diagrams.onprem.vcs.Github**
 - **diagrams.onprem.vcs.Gitlab**
 - **diagrams.onprem.vcs.Svn**
