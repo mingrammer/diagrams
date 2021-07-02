@@ -17,7 +17,7 @@ contextvars = { version = "^2.4", python = "~3.6" }
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2"
-pylint = "^2.7"
+pylint = "^2.9"
 black = {version = "^19.0", allow-prereleases = true}
 rope = "^0.14.0"
 isort = "^4.3"
