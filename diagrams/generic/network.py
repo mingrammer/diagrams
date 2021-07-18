@@ -8,8 +8,16 @@ class _Network(_Generic):
     _icon_dir = "resources/generic/network"
 
 
+class Accesspoint(_Network):
+    _icon = "accesspoint.png"
+
+
 class Firewall(_Network):
     _icon = "firewall.png"
+
+
+class Layer3Switch(_Network):
+    _icon = "layer-3-switch.png"
 
 
 class Router(_Network):
@@ -26,6 +34,10 @@ class Switch(_Network):
 
 class VPN(_Network):
     _icon = "vpn.png"
+
+
+class Workstation(_Network):
+    _icon = "workstation.png"
 
 
 # Aliases
