@@ -35,22 +35,22 @@ with Diagram(name="Advanced Web Service with On-Premise (colored)", show=False):
             Server("grpc3")]
 
     with Cluster("Sessions HA"):
-        main = Redis("session")
-        main \
+        primary = Redis("session")
+        primary \
             - Edge(color="brown", style="dashed") \
             - Redis("replica") \
             << Edge(label="collect") \
             << metrics
-        grpcsvc >> Edge(color="brown") >> main
+        grpcsvc >> Edge(color="brown") >> primary
 
     with Cluster("Database HA"):
-        main = PostgreSQL("users")
-        main \
+        primary = PostgreSQL("users")
+        primary \
             - Edge(color="brown", style="dotted") \
             - PostgreSQL("replica") \
             << Edge(label="collect") \
             << metrics
-        grpcsvc >> Edge(color="black") >> main
+        grpcsvc >> Edge(color="black") >> primary
 
     aggregator = Fluentd("logging")
     aggregator \
