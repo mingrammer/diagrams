@@ -93,19 +93,3 @@ class VpnPolicy(_Network):
 
 
 # Aliases
-
-ACL = Rules
-CIS = InternetServices
-DL = DirectLink
-FIP = FloatingIp
-FloatingIP = FloatingIp
-FW = Firewall
-LB = LoadBalancer
-NLB = LoadBalancer 
-PublicGateway = Gateway
-SecurityGroupRules = Rules
-TG = TransitGateway
-VPC = Vpc
-VPNGateway = VpnGateway
-VPNConnection = VpnConnection
-VPNPolicy = VpnPolicy
