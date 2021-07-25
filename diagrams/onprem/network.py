@@ -8,6 +8,10 @@ class _Network(_OnPrem):
     _icon_dir = "resources/onprem/network"
 
 
+class Ambassador(_Network):
+    _icon = "ambassador.png"
+
+
 class Apache(_Network):
     _icon = "apache.png"
 

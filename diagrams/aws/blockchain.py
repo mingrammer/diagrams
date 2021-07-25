@@ -8,6 +8,14 @@ class _Blockchain(_AWS):
     _icon_dir = "resources/aws/blockchain"
 
 
+class BlockchainResource(_Blockchain):
+    _icon = "blockchain-resource.png"
+
+
+class Blockchain(_Blockchain):
+    _icon = "blockchain.png"
+
+
 class ManagedBlockchain(_Blockchain):
     _icon = "managed-blockchain.png"
 

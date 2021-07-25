@@ -20,6 +20,10 @@ class DatabaseMigrationService(_Migration):
     _icon = "database-migration-service.png"
 
 
+class DatasyncAgent(_Migration):
+    _icon = "datasync-agent.png"
+
+
 class Datasync(_Migration):
     _icon = "datasync.png"
 

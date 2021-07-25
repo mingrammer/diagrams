@@ -8,12 +8,24 @@ class _Monitoring(_OnPrem):
     _icon_dir = "resources/onprem/monitoring"
 
 
+class Cortex(_Monitoring):
+    _icon = "cortex.png"
+
+
 class Datadog(_Monitoring):
     _icon = "datadog.png"
 
 
 class Grafana(_Monitoring):
     _icon = "grafana.png"
+
+
+class Humio(_Monitoring):
+    _icon = "humio.png"
+
+
+class Newrelic(_Monitoring):
+    _icon = "newrelic.png"
 
 
 class PrometheusOperator(_Monitoring):

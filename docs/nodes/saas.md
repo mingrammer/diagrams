@@ -7,6 +7,7 @@ Node classes list of saas provider.
 
 ## saas.alerting
 
+- **diagrams.saas.alerting.Newrelic**
 - **diagrams.saas.alerting.Opsgenie**
 - **diagrams.saas.alerting.Pushover**
 
@@ -22,11 +23,16 @@ Node classes list of saas provider.
 
 ## saas.chat
 
+- **diagrams.saas.chat.Discord**
 - **diagrams.saas.chat.Mattermost**
 - **diagrams.saas.chat.RocketChat**
 - **diagrams.saas.chat.Slack**
 - **diagrams.saas.chat.Teams**
 - **diagrams.saas.chat.Telegram**
+
+## saas.filesharing
+
+- **diagrams.saas.filesharing.Nextcloud**
 
 ## saas.identity
 
@@ -36,6 +42,7 @@ Node classes list of saas provider.
 ## saas.logging
 
 - **diagrams.saas.logging.Datadog**, **DataDog** (alias)
+- **diagrams.saas.logging.Newrelic**, **NewRelic** (alias)
 - **diagrams.saas.logging.Papertrail**
 
 ## saas.media

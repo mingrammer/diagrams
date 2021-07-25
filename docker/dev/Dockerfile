@@ -1,9 +1,9 @@
-# use latest python alphine image.
-FROM python:rc-alpine3.12
+# use latest python 3 alpine image.
+FROM python:3-alpine
 
 # install system dependencies.
 RUN apk update && apk add --no-cache \
-  gcc libc-dev g++ graphviz git bash go imagemagick inkscape ttf-opensans curl fontconfig
+  gcc libc-dev g++ graphviz git bash go imagemagick inkscape ttf-opensans curl fontconfig xdg-utils
 
 # install go package.
 RUN go get github.com/mingrammer/round

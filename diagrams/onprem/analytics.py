@@ -40,6 +40,14 @@ class Norikra(_Analytics):
     _icon = "norikra.png"
 
 
+class Powerbi(_Analytics):
+    _icon = "powerbi.png"
+
+
+class Presto(_Analytics):
+    _icon = "presto.png"
+
+
 class Singer(_Analytics):
     _icon = "singer.png"
 
@@ -52,8 +60,14 @@ class Storm(_Analytics):
     _icon = "storm.png"
 
 
+class Superset(_Analytics):
+    _icon = "superset.png"
+
+
 class Tableau(_Analytics):
     _icon = "tableau.png"
 
 
 # Aliases
+
+PowerBI = Powerbi

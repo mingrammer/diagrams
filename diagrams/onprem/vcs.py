@@ -12,6 +12,10 @@ class Git(_Vcs):
     _icon = "git.png"
 
 
+class Gitea(_Vcs):
+    _icon = "gitea.png"
+
+
 class Github(_Vcs):
     _icon = "github.png"
 

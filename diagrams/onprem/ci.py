@@ -20,6 +20,10 @@ class Droneci(_Ci):
     _icon = "droneci.png"
 
 
+class GithubActions(_Ci):
+    _icon = "github-actions.png"
+
+
 class Gitlabci(_Ci):
     _icon = "gitlabci.png"
 

@@ -20,13 +20,17 @@ Node classes list of onprem provider.
 - **diagrams.onprem.analytics.Hive**
 - **diagrams.onprem.analytics.Metabase**
 - **diagrams.onprem.analytics.Norikra**
+- **diagrams.onprem.analytics.Powerbi**, **PowerBI** (alias)
+- **diagrams.onprem.analytics.Presto**
 - **diagrams.onprem.analytics.Singer**
 - **diagrams.onprem.analytics.Spark**
 - **diagrams.onprem.analytics.Storm**
+- **diagrams.onprem.analytics.Superset**
 - **diagrams.onprem.analytics.Tableau**
 
 ## onprem.auth
 
+- **diagrams.onprem.auth.Boundary**
 - **diagrams.onprem.auth.BuzzfeedSso**
 - **diagrams.onprem.auth.Oauth2Proxy**
 
@@ -46,6 +50,7 @@ Node classes list of onprem provider.
 - **diagrams.onprem.ci.Circleci**, **CircleCI** (alias)
 - **diagrams.onprem.ci.Concourseci**, **ConcourseCI** (alias)
 - **diagrams.onprem.ci.Droneci**, **DroneCI** (alias)
+- **diagrams.onprem.ci.GithubActions**
 - **diagrams.onprem.ci.Gitlabci**, **GitlabCI** (alias)
 - **diagrams.onprem.ci.Jenkins**
 - **diagrams.onprem.ci.Teamcity**, **TC** (alias)
@@ -65,7 +70,11 @@ Node classes list of onprem provider.
 
 ## onprem.container
 
+- **diagrams.onprem.container.Containerd**
+- **diagrams.onprem.container.Crio**
 - **diagrams.onprem.container.Docker**
+- **diagrams.onprem.container.Firecracker**
+- **diagrams.onprem.container.Gvisor**
 - **diagrams.onprem.container.Lxc**, **LXC** (alias)
 - **diagrams.onprem.container.Rkt**, **RKT** (alias)
 
@@ -90,6 +99,11 @@ Node classes list of onprem provider.
 - **diagrams.onprem.database.Postgresql**, **PostgreSQL** (alias)
 - **diagrams.onprem.database.Scylla**
 
+## onprem.dns
+
+- **diagrams.onprem.dns.Coredns**
+- **diagrams.onprem.dns.Powerdns**
+
 ## onprem.etl
 
 - **diagrams.onprem.etl.Embulk**
@@ -99,6 +113,10 @@ Node classes list of onprem provider.
 - **diagrams.onprem.gitops.Argocd**, **ArgoCD** (alias)
 - **diagrams.onprem.gitops.Flagger**
 - **diagrams.onprem.gitops.Flux**
+
+## onprem.groupware
+
+- **diagrams.onprem.groupware.Nextcloud**
 
 ## onprem.iac
 
@@ -132,8 +150,11 @@ Node classes list of onprem provider.
 
 ## onprem.monitoring
 
+- **diagrams.onprem.monitoring.Cortex**
 - **diagrams.onprem.monitoring.Datadog**
 - **diagrams.onprem.monitoring.Grafana**
+- **diagrams.onprem.monitoring.Humio**
+- **diagrams.onprem.monitoring.Newrelic**
 - **diagrams.onprem.monitoring.PrometheusOperator**
 - **diagrams.onprem.monitoring.Prometheus**
 - **diagrams.onprem.monitoring.Sentry**
@@ -143,6 +164,7 @@ Node classes list of onprem provider.
 
 ## onprem.network
 
+- **diagrams.onprem.network.Ambassador**
 - **diagrams.onprem.network.Apache**
 - **diagrams.onprem.network.Bind9**
 - **diagrams.onprem.network.Caddy**
@@ -180,6 +202,7 @@ Node classes list of onprem provider.
 - **diagrams.onprem.queue.Activemq**, **ActiveMQ** (alias)
 - **diagrams.onprem.queue.Celery**
 - **diagrams.onprem.queue.Kafka**
+- **diagrams.onprem.queue.Nats**
 - **diagrams.onprem.queue.Rabbitmq**, **RabbitMQ** (alias)
 - **diagrams.onprem.queue.Zeromq**, **ZeroMQ** (alias)
 
@@ -189,6 +212,7 @@ Node classes list of onprem provider.
 
 ## onprem.security
 
+- **diagrams.onprem.security.Bitwarden**
 - **diagrams.onprem.security.Trivy**
 - **diagrams.onprem.security.Vault**
 
@@ -198,9 +222,14 @@ Node classes list of onprem provider.
 - **diagrams.onprem.storage.Ceph**, **CEPH** (alias)
 - **diagrams.onprem.storage.Glusterfs**
 
+## onprem.tracing
+
+- **diagrams.onprem.tracing.Jaeger**
+
 ## onprem.vcs
 
 - **diagrams.onprem.vcs.Git**
+- **diagrams.onprem.vcs.Gitea**
 - **diagrams.onprem.vcs.Github**
 - **diagrams.onprem.vcs.Gitlab**
 

@@ -20,6 +20,10 @@ class Kafka(_Queue):
     _icon = "kafka.png"
 
 
+class Nats(_Queue):
+    _icon = "nats.png"
+
+
 class Rabbitmq(_Queue):
     _icon = "rabbitmq.png"
 

@@ -28,6 +28,10 @@ class DeviceFarm(_Mobile):
     _icon = "device-farm.png"
 
 
+class Mobile(_Mobile):
+    _icon = "mobile.png"
+
+
 class Pinpoint(_Mobile):
     _icon = "pinpoint.png"
 

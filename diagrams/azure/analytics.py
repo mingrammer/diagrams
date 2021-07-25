@@ -52,4 +52,8 @@ class StreamAnalyticsJobs(_Analytics):
     _icon = "stream-analytics-jobs.png"
 
 
+class SynapseAnalytics(_Analytics):
+    _icon = "synapse-analytics.png"
+
+
 # Aliases
