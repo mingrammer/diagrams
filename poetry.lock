@@ -283,11 +283,14 @@ python-versions = "*"
 
 [[package]]
 name = "rope"
-version = "0.14.0"
+version = "0.19.0"
 description = "a python refactoring library..."
 category = "dev"
 optional = false
 python-versions = "*"
+
+[package.extras]
+dev = ["pytest"]
 
 [[package]]
 name = "toml"
@@ -328,7 +331,7 @@ testing = ["jaraco.itertools", "func-timeout"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.6"
-content-hash = "be417f02e076f23abb59ee7b18e6d7c170f6b560c5d6bfbfec47178c298a7c70"
+content-hash = "25d67e6fb9d887a82a46de9cdcb84f3e34140cc981f85b9a19f3fa7cd9d4cbe6"
 
 [metadata.files]
 appdirs = [
@@ -533,9 +536,7 @@ regex = [
     {file = "regex-2020.2.20.tar.gz", hash = "sha256:9e9624440d754733eddbcd4614378c18713d2d9d0dc647cf9c72f64e39671be5"},
 ]
 rope = [
-    {file = "rope-0.14.0-py2-none-any.whl", hash = "sha256:6b728fdc3e98a83446c27a91fc5d56808a004f8beab7a31ab1d7224cecc7d969"},
-    {file = "rope-0.14.0-py3-none-any.whl", hash = "sha256:f0dcf719b63200d492b85535ebe5ea9b29e0d0b8aebeb87fe03fc1a65924fdaf"},
-    {file = "rope-0.14.0.tar.gz", hash = "sha256:c5c5a6a87f7b1a2095fb311135e2a3d1f194f5ecb96900fdd0a9100881f48aaf"},
+    {file = "rope-0.19.0.tar.gz", hash = "sha256:64e6d747532e1f5c8009ec5aae3e5523a5bcedf516f39a750d57d8ed749d90da"},
 ]
 toml = [
     {file = "toml-0.10.0-py2.7.egg", hash = "sha256:f1db651f9657708513243e61e6cc67d101a39bad662eaa9b5546f789338e07a3"},
