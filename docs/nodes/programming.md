@@ -61,6 +61,7 @@ Node classes list of programming provider.
 - **diagrams.programming.language.Java**
 - **diagrams.programming.language.Javascript**, **JavaScript** (alias)
 - **diagrams.programming.language.Kotlin**
+- **diagrams.programming.language.Latex**
 - **diagrams.programming.language.Matlab**
 - **diagrams.programming.language.Nodejs**, **NodeJS** (alias)
 - **diagrams.programming.language.Php**, **PHP** (alias)
