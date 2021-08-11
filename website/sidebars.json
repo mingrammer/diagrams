@@ -15,6 +15,7 @@
       "nodes/aws",
       "nodes/azure",
       "nodes/gcp",
+      "nodes/ibm",
       "nodes/k8s",
       "nodes/alibabacloud",
       "nodes/oci",
