@@ -188,6 +188,7 @@ Node classes list of aws provider.
 
 ## aws.general
 
+- **diagrams.aws.general.InternetGateway**
 - **diagrams.aws.general.Client**
 - **diagrams.aws.general.Disk**
 - **diagrams.aws.general.Forums**
@@ -199,7 +200,6 @@ Node classes list of aws provider.
 - **diagrams.aws.general.GenericSDK**
 - **diagrams.aws.general.InternetAlt1**
 - **diagrams.aws.general.InternetAlt2**
-- **diagrams.aws.general.InternetGateway**
 - **diagrams.aws.general.Marketplace**
 - **diagrams.aws.general.MobileClient**
 - **diagrams.aws.general.Multimedia**
