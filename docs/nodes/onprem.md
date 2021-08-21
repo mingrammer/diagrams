@@ -235,6 +235,7 @@ Node classes list of onprem provider.
 - **diagrams.onprem.vcs.Gitea**
 - **diagrams.onprem.vcs.Github**
 - **diagrams.onprem.vcs.Gitlab**
+- **diagrams.onprem.vcs.Svn**
 
 ## onprem.workflow
 
