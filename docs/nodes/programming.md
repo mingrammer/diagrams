@@ -46,6 +46,7 @@ Node classes list of programming provider.
 - **diagrams.programming.framework.Rails**
 - **diagrams.programming.framework.React**
 - **diagrams.programming.framework.Spring**
+- **diagrams.programming.framework.Starlette**
 - **diagrams.programming.framework.Vue**
 
 ## programming.language
