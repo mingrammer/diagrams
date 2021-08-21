@@ -153,6 +153,7 @@ Node classes list of onprem provider.
 
 - **diagrams.onprem.monitoring.Cortex**
 - **diagrams.onprem.monitoring.Datadog**
+- **diagrams.onprem.monitoring.Dynatrace**
 - **diagrams.onprem.monitoring.Grafana**
 - **diagrams.onprem.monitoring.Humio**
 - **diagrams.onprem.monitoring.Newrelic**
