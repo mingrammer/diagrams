@@ -20,7 +20,7 @@ pytest = "^6.2"
 pylint = "^2.7"
 black = {version = "^19.0", allow-prereleases = true}
 rope = "^0.14.0"
-isort = "^4.3"
+isort = "^5.8"
 
 [tool.black]
 line-length = 120
