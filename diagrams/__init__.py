@@ -304,8 +304,11 @@ class Node:
             raise EnvironmentError("Global diagrams context not set up")
         
         if self._diagram.autolabel:
-            # import pdb; pdb.set_trace()
-            self.label = self.__class__.__name__ + "\n" + self.label
+            prefix = self.__class__.__name__
+            if self.label:
+                self.label = prefix + "\n" + self.label
+            else:
+                self.label = prefix
 
         # fmt: off
         # If a node has an icon, increase the height slightly to avoid
