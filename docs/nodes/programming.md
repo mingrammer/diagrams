@@ -73,3 +73,7 @@ Node classes list of programming provider.
 - **diagrams.programming.language.Scala**
 - **diagrams.programming.language.Swift**
 - **diagrams.programming.language.Typescript**, **TypeScript** (alias)
+
+## programming.runtime
+
+- **diagrams.programming.runtime.Dapr**
