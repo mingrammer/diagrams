@@ -126,6 +126,6 @@ class Spine_Yellow(_Fabricnode):
 
 # Aliases
 
-apic_blue = apic
-leaf_blue = leaf
-spine_blue = spine
+apic = Apic_Blue
+leaf = Leaf_Blue
+spine = Spine_Blue

@@ -7,7 +7,7 @@ Node classes list of aci provider.
 
 ## aci.fabricnode
 
-- **diagrams.aci.fabricnode.Apic_Blue**
+- **diagrams.aci.fabricnode.Apic_Blue**, **apic** (alias)
 - **diagrams.aci.fabricnode.Apic_Brown**
 - **diagrams.aci.fabricnode.Apic_Cyan**
 - **diagrams.aci.fabricnode.Apic_Darkblue**
@@ -17,7 +17,7 @@ Node classes list of aci provider.
 - **diagrams.aci.fabricnode.Apic_Orange**
 - **diagrams.aci.fabricnode.Apic_Red**
 - **diagrams.aci.fabricnode.Apic_Yellow**
-- **diagrams.aci.fabricnode.Leaf_Blue**
+- **diagrams.aci.fabricnode.Leaf_Blue**, **leaf** (alias)
 - **diagrams.aci.fabricnode.Leaf_Brown**
 - **diagrams.aci.fabricnode.Leaf_Cyan**
 - **diagrams.aci.fabricnode.Leaf_Darkblue**
@@ -26,7 +26,7 @@ Node classes list of aci provider.
 - **diagrams.aci.fabricnode.Leaf_Orange**
 - **diagrams.aci.fabricnode.Leaf_Red**
 - **diagrams.aci.fabricnode.Leaf_Yellow**
-- **diagrams.aci.fabricnode.Spine_Blue**
+- **diagrams.aci.fabricnode.Spine_Blue**, **spine** (alias)
 - **diagrams.aci.fabricnode.Spine_Brown**
 - **diagrams.aci.fabricnode.Spine_Cyan**
 - **diagrams.aci.fabricnode.Spine_Darkblue**
@@ -36,3 +36,13 @@ Node classes list of aci provider.
 - **diagrams.aci.fabricnode.Spine_Orange**
 - **diagrams.aci.fabricnode.Spine_Red**
 - **diagrams.aci.fabricnode.Spine_Yellow**
+
+## aci.logical
+
+- **diagrams.aci.logical.Contract**
+- **diagrams.aci.logical.Epg**
+- **diagrams.aci.logical.Epg_Microseg**
+- **diagrams.aci.logical.L2Out**
+- **diagrams.aci.logical.L3Out**
+- **diagrams.aci.logical.Vrf**
+- **diagrams.aci.logical.Vzany**

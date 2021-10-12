@@ -97,9 +97,10 @@ TITLE_WORDS = {
 ALIASES = {
     "aci": {
         "fabricnode": {
-            "apic": "apic_blue",
-            "leaf": "leaf_blue",
-            "spine": "spine_blue"
+            # Default colors
+            "Apic_Blue": "apic",
+            "Leaf_Blue": "leaf",
+            "Spine_Blue": "spine",
         }
     },
     "onprem": {
