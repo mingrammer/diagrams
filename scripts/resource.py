@@ -127,7 +127,12 @@ def cleaner_openstack(f):
     return f.lower()
 
 
+def cleaner_aci(f):
+    return f.lower()
+
+
 cleaners = {
+    "aci": cleaner_aci,
     "onprem": cleaner_onprem,
     "aws": cleaner_aws,
     "azure": cleaner_azure,
