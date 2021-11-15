@@ -23,7 +23,7 @@ Node classes list of azure provider.
 ## azure.compute
 
 - **diagrams.azure.compute.AppServices**
-- **diagrams.azure.compute.AutomanagedVM**
+- **diagrams.azure.compute.AutomanagedVm**
 - **diagrams.azure.compute.AvailabilitySets**
 - **diagrams.azure.compute.BatchAccounts**
 - **diagrams.azure.compute.CitrixVirtualDesktopsEssentials**
@@ -41,16 +41,16 @@ Node classes list of azure provider.
 - **diagrams.azure.compute.KubernetesServices**, **AKS** (alias)
 - **diagrams.azure.compute.MeshApplications**
 - **diagrams.azure.compute.OsImages**
-- **diagrams.azure.compute.SAPHANAOnAzure**
+- **diagrams.azure.compute.SapHanaOnAzure**
 - **diagrams.azure.compute.ServiceFabricClusters**
 - **diagrams.azure.compute.SharedImageGalleries**
 - **diagrams.azure.compute.SpringCloud**
-- **diagrams.azure.compute.VMClassic**
-- **diagrams.azure.compute.VMImages**
-- **diagrams.azure.compute.VMLinux**
-- **diagrams.azure.compute.VMScaleSet**, **VMSS** (alias)
-- **diagrams.azure.compute.VMWindows**
-- **diagrams.azure.compute.VM**
+- **diagrams.azure.compute.VmClassic**
+- **diagrams.azure.compute.VmImages**
+- **diagrams.azure.compute.VmLinux**
+- **diagrams.azure.compute.VmScaleSet**
+- **diagrams.azure.compute.VmWindows**
+- **diagrams.azure.compute.Vm**
 - **diagrams.azure.compute.Workspaces**
 
 ## azure.database
@@ -68,13 +68,13 @@ Node classes list of azure provider.
 - **diagrams.azure.database.ElasticJobAgents**
 - **diagrams.azure.database.InstancePools**
 - **diagrams.azure.database.ManagedDatabases**
-- **diagrams.azure.database.SQLDatabases**
-- **diagrams.azure.database.SQLDatawarehouse**
-- **diagrams.azure.database.SQLManagedInstances**
-- **diagrams.azure.database.SQLServerStretchDatabases**
-- **diagrams.azure.database.SQLServers**
-- **diagrams.azure.database.SQLVM**
-- **diagrams.azure.database.SQL**
+- **diagrams.azure.database.SqlDatabases**
+- **diagrams.azure.database.SqlDatawarehouse**
+- **diagrams.azure.database.SqlManagedInstances**
+- **diagrams.azure.database.SqlServerStretchDatabases**
+- **diagrams.azure.database.SqlServers**
+- **diagrams.azure.database.SqlVm**
+- **diagrams.azure.database.Sql**
 - **diagrams.azure.database.SsisLiftAndShiftIr**
 - **diagrams.azure.database.SynapseAnalytics**
 - **diagrams.azure.database.VirtualClusters**
@@ -126,10 +126,10 @@ Node classes list of azure provider.
 - **diagrams.azure.identity.AccessReview**
 - **diagrams.azure.identity.ActiveDirectoryConnectHealth**
 - **diagrams.azure.identity.ActiveDirectory**
-- **diagrams.azure.identity.ADB2C**
-- **diagrams.azure.identity.ADDomainServices**
-- **diagrams.azure.identity.ADIdentityProtection**
-- **diagrams.azure.identity.ADPrivilegedIdentityManagement**
+- **diagrams.azure.identity.AdB2C**
+- **diagrams.azure.identity.AdDomainServices**
+- **diagrams.azure.identity.AdIdentityProtection**
+- **diagrams.azure.identity.AdPrivilegedIdentityManagement**
 - **diagrams.azure.identity.AppRegistrations**
 - **diagrams.azure.identity.ConditionalAccess**
 - **diagrams.azure.identity.EnterpriseApplications**
@@ -141,8 +141,8 @@ Node classes list of azure provider.
 
 ## azure.integration
 
-- **diagrams.azure.integration.APIForFhir**
-- **diagrams.azure.integration.APIManagement**
+- **diagrams.azure.integration.ApiForFhir**
+- **diagrams.azure.integration.ApiManagement**
 - **diagrams.azure.integration.AppConfiguration**
 - **diagrams.azure.integration.DataCatalog**
 - **diagrams.azure.integration.EventGridDomains**
@@ -184,7 +184,7 @@ Node classes list of azure provider.
 
 ## azure.ml
 
-- **diagrams.azure.ml.BatchAI**
+- **diagrams.azure.ml.BatchAi**
 - **diagrams.azure.ml.BotServices**
 - **diagrams.azure.ml.CognitiveServices**
 - **diagrams.azure.ml.GenomicsAccounts**
@@ -203,11 +203,11 @@ Node classes list of azure provider.
 
 - **diagrams.azure.network.ApplicationGateway**
 - **diagrams.azure.network.ApplicationSecurityGroups**
-- **diagrams.azure.network.CDNProfiles**
+- **diagrams.azure.network.CdnProfiles**
 - **diagrams.azure.network.Connections**
-- **diagrams.azure.network.DDOSProtectionPlans**
-- **diagrams.azure.network.DNSPrivateZones**
-- **diagrams.azure.network.DNSZones**
+- **diagrams.azure.network.DdosProtectionPlans**
+- **diagrams.azure.network.DnsPrivateZones**
+- **diagrams.azure.network.DnsZones**
 - **diagrams.azure.network.ExpressrouteCircuits**
 - **diagrams.azure.network.Firewall**
 - **diagrams.azure.network.FrontDoors**
@@ -260,7 +260,7 @@ Node classes list of azure provider.
 
 ## azure.web
 
-- **diagrams.azure.web.APIConnections**
+- **diagrams.azure.web.ApiConnections**
 - **diagrams.azure.web.AppServiceCertificates**
 - **diagrams.azure.web.AppServiceDomains**
 - **diagrams.azure.web.AppServiceEnvironments**

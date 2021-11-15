@@ -20,19 +20,19 @@ class ActiveDirectory(_Identity):
     _icon = "active-directory.png"
 
 
-class ADB2C(_Identity):
+class AdB2C(_Identity):
     _icon = "ad-b2c.png"
 
 
-class ADDomainServices(_Identity):
+class AdDomainServices(_Identity):
     _icon = "ad-domain-services.png"
 
 
-class ADIdentityProtection(_Identity):
+class AdIdentityProtection(_Identity):
     _icon = "ad-identity-protection.png"
 
 
-class ADPrivilegedIdentityManagement(_Identity):
+class AdPrivilegedIdentityManagement(_Identity):
     _icon = "ad-privileged-identity-management.png"
 
 

@@ -16,7 +16,7 @@ class ApplicationSecurityGroups(_Network):
     _icon = "application-security-groups.png"
 
 
-class CDNProfiles(_Network):
+class CdnProfiles(_Network):
     _icon = "cdn-profiles.png"
 
 
@@ -24,15 +24,15 @@ class Connections(_Network):
     _icon = "connections.png"
 
 
-class DDOSProtectionPlans(_Network):
+class DdosProtectionPlans(_Network):
     _icon = "ddos-protection-plans.png"
 
 
-class DNSPrivateZones(_Network):
+class DnsPrivateZones(_Network):
     _icon = "dns-private-zones.png"
 
 
-class DNSZones(_Network):
+class DnsZones(_Network):
     _icon = "dns-zones.png"
 
 

@@ -84,6 +84,14 @@ def cleaner_k8s(f):
             break
     return f.lower()
 
+def cleaner_digitalocean(f):
+    f = f.replace("-32", "")
+    for p in cfg.FILE_PREFIXES["digitalocean"]:
+        if f.startswith(p):
+            f = f[len(p) :]
+            break
+    return f.lower()
+
 
 def cleaner_alibabacloud(f):
     for p in cfg.FILE_PREFIXES["alibabacloud"]:
@@ -131,6 +139,7 @@ cleaners = {
     "onprem": cleaner_onprem,
     "aws": cleaner_aws,
     "azure": cleaner_azure,
+    "digitalocean": cleaner_digitalocean,
     "gcp": cleaner_gcp,
     "ibm": cleaner_ibm,
     "firebase": cleaner_firebase,

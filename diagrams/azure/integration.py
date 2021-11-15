@@ -8,11 +8,11 @@ class _Integration(_Azure):
     _icon_dir = "resources/azure/integration"
 
 
-class APIForFhir(_Integration):
+class ApiForFhir(_Integration):
     _icon = "api-for-fhir.png"
 
 
-class APIManagement(_Integration):
+class ApiManagement(_Integration):
     _icon = "api-management.png"
 
 
