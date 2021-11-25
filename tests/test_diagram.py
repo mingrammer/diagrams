@@ -46,7 +46,7 @@ class DiagramTest(unittest.TestCase):
 
     def test_validate_outformat(self):
         # Normal output formats.
-        for fmt in ("png", "jpg", "svg", "pdf"):
+        for fmt in ("png", "jpg", "svg", "pdf", "dot"):
             Diagram(outformat=fmt)
 
         # Invalid output formats.
@@ -182,6 +182,27 @@ class ClusterTest(unittest.TestCase):
                 self.assertEqual(nodes - node1, node1)
                 self.assertEqual(nodes >> node1, node1)
                 self.assertEqual(nodes << node1, node1)
+
+
+class SimpleDiagramTest(unittest.TestCase):
+    def test_simple_diagram_1(self):
+        from diagrams.aws.compute import EC2
+        from diagrams.aws.database import RDS
+        from diagrams.aws.network import ELB
+
+        file_name = "some-name"
+
+        with Diagram(name=file_name, outformat="dot", show=False):
+            ELB("lb") >> [EC2("worker1"),
+                          EC2("worker2"),
+                          EC2("worker3"),
+                          EC2("worker4"),
+                          EC2("worker5")] >> RDS("events")
+        try:
+            os.open(f"{file_name}.dot", flags=os.O_RDONLY)
+        except FileNotFoundError:
+            assert False
+        os.remove(f"{file_name}.dot")
 
 
 class EdgeTest(unittest.TestCase):

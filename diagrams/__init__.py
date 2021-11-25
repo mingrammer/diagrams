@@ -40,7 +40,7 @@ def setcluster(cluster):
 class Diagram:
     __directions = ("TB", "BT", "LR", "RL")
     __curvestyles = ("ortho", "curved")
-    __outformats = ("png", "jpg", "svg", "pdf")
+    __outformats = ("png", "jpg", "svg", "pdf", "dot")
 
     # fmt: off
     _default_graph_attrs = {
