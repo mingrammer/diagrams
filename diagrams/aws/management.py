@@ -12,6 +12,10 @@ class AutoScaling(_Management):
     _icon = "auto-scaling.png"
 
 
+class Chatbot(_Management):
+    _icon = "chatbot.png"
+
+
 class CloudformationChangeSet(_Management):
     _icon = "cloudformation-change-set.png"
 
