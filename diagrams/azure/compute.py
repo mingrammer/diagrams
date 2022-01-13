@@ -8,6 +8,14 @@ class _Compute(_Azure):
     _icon_dir = "resources/azure/compute"
 
 
+class AppServices(_Compute):
+    _icon = "app-services.png"
+
+
+class AutomanagedVM(_Compute):
+    _icon = "automanaged-vm.png"
+
+
 class AvailabilitySets(_Compute):
     _icon = "availability-sets.png"
 
@@ -40,6 +48,10 @@ class ContainerRegistries(_Compute):
     _icon = "container-registries.png"
 
 
+class DiskEncryptionSets(_Compute):
+    _icon = "disk-encryption-sets.png"
+
+
 class DiskSnapshots(_Compute):
     _icon = "disk-snapshots.png"
 
@@ -52,6 +64,14 @@ class FunctionApps(_Compute):
     _icon = "function-apps.png"
 
 
+class ImageDefinitions(_Compute):
+    _icon = "image-definitions.png"
+
+
+class ImageVersions(_Compute):
+    _icon = "image-versions.png"
+
+
 class KubernetesServices(_Compute):
     _icon = "kubernetes-services.png"
 
@@ -60,12 +80,24 @@ class MeshApplications(_Compute):
     _icon = "mesh-applications.png"
 
 
+class OsImages(_Compute):
+    _icon = "os-images.png"
+
+
 class SAPHANAOnAzure(_Compute):
     _icon = "sap-hana-on-azure.png"
 
 
 class ServiceFabricClusters(_Compute):
     _icon = "service-fabric-clusters.png"
+
+
+class SharedImageGalleries(_Compute):
+    _icon = "shared-image-galleries.png"
+
+
+class SpringCloud(_Compute):
+    _icon = "spring-cloud.png"
 
 
 class VMClassic(_Compute):
@@ -80,6 +112,10 @@ class VMLinux(_Compute):
     _icon = "vm-linux.png"
 
 
+class VMScaleSet(_Compute):
+    _icon = "vm-scale-set.png"
+
+
 class VMWindows(_Compute):
     _icon = "vm-windows.png"
 
@@ -88,7 +124,12 @@ class VM(_Compute):
     _icon = "vm.png"
 
 
+class Workspaces(_Compute):
+    _icon = "workspaces.png"
+
+
 # Aliases
 
 ACR = ContainerRegistries
 AKS = KubernetesServices
+VMSS = VMScaleSet

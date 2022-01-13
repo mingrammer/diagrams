@@ -16,20 +16,80 @@ class Batch(_Compute):
     _icon = "batch.png"
 
 
+class ComputeOptimizer(_Compute):
+    _icon = "compute-optimizer.png"
+
+
 class Compute(_Compute):
     _icon = "compute.png"
+
+
+class EC2Ami(_Compute):
+    _icon = "ec2-ami.png"
+
+
+class EC2AutoScaling(_Compute):
+    _icon = "ec2-auto-scaling.png"
+
+
+class EC2ContainerRegistryImage(_Compute):
+    _icon = "ec2-container-registry-image.png"
+
+
+class EC2ContainerRegistryRegistry(_Compute):
+    _icon = "ec2-container-registry-registry.png"
 
 
 class EC2ContainerRegistry(_Compute):
     _icon = "ec2-container-registry.png"
 
 
+class EC2ElasticIpAddress(_Compute):
+    _icon = "ec2-elastic-ip-address.png"
+
+
+class EC2ImageBuilder(_Compute):
+    _icon = "ec2-image-builder.png"
+
+
+class EC2Instance(_Compute):
+    _icon = "ec2-instance.png"
+
+
+class EC2Instances(_Compute):
+    _icon = "ec2-instances.png"
+
+
+class EC2Rescue(_Compute):
+    _icon = "ec2-rescue.png"
+
+
+class EC2SpotInstance(_Compute):
+    _icon = "ec2-spot-instance.png"
+
+
 class EC2(_Compute):
     _icon = "ec2.png"
 
 
+class ElasticBeanstalkApplication(_Compute):
+    _icon = "elastic-beanstalk-application.png"
+
+
+class ElasticBeanstalkDeployment(_Compute):
+    _icon = "elastic-beanstalk-deployment.png"
+
+
 class ElasticBeanstalk(_Compute):
     _icon = "elastic-beanstalk.png"
+
+
+class ElasticContainerServiceContainer(_Compute):
+    _icon = "elastic-container-service-container.png"
+
+
+class ElasticContainerServiceService(_Compute):
+    _icon = "elastic-container-service-service.png"
 
 
 class ElasticContainerService(_Compute):
@@ -44,12 +104,20 @@ class Fargate(_Compute):
     _icon = "fargate.png"
 
 
+class LambdaFunction(_Compute):
+    _icon = "lambda-function.png"
+
+
 class Lambda(_Compute):
     _icon = "lambda.png"
 
 
 class Lightsail(_Compute):
     _icon = "lightsail.png"
+
+
+class LocalZones(_Compute):
+    _icon = "local-zones.png"
 
 
 class Outposts(_Compute):
@@ -92,9 +160,14 @@ class VmwareCloudOnAWS(_Compute):
     _icon = "vmware-cloud-on-aws.png"
 
 
+class Wavelength(_Compute):
+    _icon = "wavelength.png"
+
+
 # Aliases
 
 AutoScaling = ApplicationAutoScaling
+AMI = EC2Ami
 ECR = EC2ContainerRegistry
 EB = ElasticBeanstalk
 ECS = ElasticContainerService
