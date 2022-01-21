@@ -20,6 +20,7 @@ Node classes list of gcp provider.
 
 ## gcp.api
 
+- **diagrams.gcp.api.APIGateway**
 - **diagrams.gcp.api.Endpoints**
 
 ## gcp.compute
