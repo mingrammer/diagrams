@@ -12,7 +12,7 @@ DIR_RESOURCE = "resources"
 DIR_TEMPLATE = "templates"
 
 PROVIDERS = (
-    "base", "onprem", "aws", "azure", "gcp", "ibm", "firebase", "k8s", "alibabacloud", "oci", "programming", "saas", "elastic",
+    "aci", "base", "onprem", "aws", "azure", "gcp", "ibm", "firebase", "k8s", "alibabacloud", "oci", "programming", "saas", "elastic",
     "generic", "openstack", "outscale")
 
 #########################
@@ -27,6 +27,7 @@ CMD_SVG2PNG_IM = "convert"
 CMD_SVG2PNG_IM_OPTS = ("-shave", "25%x25%", "-resize", "256x256!")
 
 FILE_PREFIXES = {
+    "aci": ('ACI'),
     "onprem": (),
     "aws": ("Amazon-", "AWS-"),
     "azure": ("Azure-",),
@@ -94,6 +95,14 @@ TITLE_WORDS = {
 
 # TODO: check if the classname exists
 ALIASES = {
+    "aci": {
+        "fabricnode": {
+            # Default colors
+            "Apic_Blue": "apic",
+            "Leaf_Blue": "leaf",
+            "Spine_Blue": "spine",
+        }
+    },
     "onprem": {
         "analytics": {
             "Powerbi": "PowerBI"
