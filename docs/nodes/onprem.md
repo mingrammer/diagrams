@@ -15,6 +15,7 @@ Node classes list of onprem provider.
 - **diagrams.onprem.analytics.Beam**
 - **diagrams.onprem.analytics.Databricks**
 - **diagrams.onprem.analytics.Dbt**
+- **diagrams.onprem.analytics.Dremio**
 - **diagrams.onprem.analytics.Flink**
 - **diagrams.onprem.analytics.Hadoop**
 - **diagrams.onprem.analytics.Hive**
