@@ -8,7 +8,7 @@ class _Ml(_Azure):
     _icon_dir = "resources/azure/ml"
 
 
-class BatchAi(_Ml):
+class BatchAI(_Ml):
     _icon = "batch-ai.png"
 
 

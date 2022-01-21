@@ -60,31 +60,31 @@ class ManagedDatabases(_Database):
     _icon = "managed-databases.png"
 
 
-class SqlDatabases(_Database):
+class SQLDatabases(_Database):
     _icon = "sql-databases.png"
 
 
-class SqlDatawarehouse(_Database):
+class SQLDatawarehouse(_Database):
     _icon = "sql-datawarehouse.png"
 
 
-class SqlManagedInstances(_Database):
+class SQLManagedInstances(_Database):
     _icon = "sql-managed-instances.png"
 
 
-class SqlServerStretchDatabases(_Database):
+class SQLServerStretchDatabases(_Database):
     _icon = "sql-server-stretch-databases.png"
 
 
-class SqlServers(_Database):
+class SQLServers(_Database):
     _icon = "sql-servers.png"
 
 
-class SqlVm(_Database):
+class SQLVM(_Database):
     _icon = "sql-vm.png"
 
 
-class Sql(_Database):
+class SQL(_Database):
     _icon = "sql.png"
 
 

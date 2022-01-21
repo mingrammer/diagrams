@@ -12,7 +12,7 @@ class AppServices(_Compute):
     _icon = "app-services.png"
 
 
-class AutomanagedVm(_Compute):
+class AutomanagedVM(_Compute):
     _icon = "automanaged-vm.png"
 
 
@@ -84,7 +84,7 @@ class OsImages(_Compute):
     _icon = "os-images.png"
 
 
-class SapHanaOnAzure(_Compute):
+class SAPHANAOnAzure(_Compute):
     _icon = "sap-hana-on-azure.png"
 
 
@@ -100,27 +100,27 @@ class SpringCloud(_Compute):
     _icon = "spring-cloud.png"
 
 
-class VmClassic(_Compute):
+class VMClassic(_Compute):
     _icon = "vm-classic.png"
 
 
-class VmImages(_Compute):
+class VMImages(_Compute):
     _icon = "vm-images.png"
 
 
-class VmLinux(_Compute):
+class VMLinux(_Compute):
     _icon = "vm-linux.png"
 
 
-class VmScaleSet(_Compute):
+class VMScaleSet(_Compute):
     _icon = "vm-scale-set.png"
 
 
-class VmWindows(_Compute):
+class VMWindows(_Compute):
     _icon = "vm-windows.png"
 
 
-class Vm(_Compute):
+class VM(_Compute):
     _icon = "vm.png"
 
 

@@ -8,7 +8,7 @@ class _Web(_Azure):
     _icon_dir = "resources/azure/web"
 
 
-class ApiConnections(_Web):
+class APIConnections(_Web):
     _icon = "api-connections.png"
 
 
