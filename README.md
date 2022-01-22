@@ -26,7 +26,7 @@ Diagrams lets you draw the cloud system architecture **in Python code**. It was 
 ![gcp provider](https://img.shields.io/badge/GCP-orange?logo=google-cloud&color=4285f4)
 ![ibm provider](https://img.shields.io/badge/IBM-orange?logo=ibm&color=052FAD)
 ![kubernetes provider](https://img.shields.io/badge/Kubernetes-orange?logo=kubernetes&color=326ce5)
-![alibaba cloud provider](https://img.shields.io/badge/AlibabaCloud-orange)
+![alibaba cloud provider](https://img.shields.io/badge/AlibabaCloud-orange?logo=alibaba-cloud&color=ff6a00)
 ![oracle cloud provider](https://img.shields.io/badge/OracleCloud-orange?logo=oracle&color=f80000)
 ![openstack provider](https://img.shields.io/badge/OpenStack-orange?logo=openstack&color=da1a32)
 ![firebase provider](https://img.shields.io/badge/Firebase-orange?logo=firebase&color=FFCA28)
