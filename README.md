@@ -31,6 +31,7 @@ Diagrams lets you draw the cloud system architecture **in Python code**. It was 
 ![openstack provider](https://img.shields.io/badge/OpenStack-orange?logo=openstack&color=da1a32)
 ![firebase provider](https://img.shields.io/badge/Firebase-orange?logo=firebase&color=FFCA28)
 ![elastic provider](https://img.shields.io/badge/Elastic-orange?logo=elastic&color=005571)
+![digital ocean provider](https://img.shields.io/badge/DigitalOcean-0080ff?logo=digitalocean&color=0080ff)
 ![outscale provider](https://img.shields.io/badge/OutScale-orange?color=5f87bf)
 ![on premise provider](https://img.shields.io/badge/OnPremise-orange?color=5f87bf)
 ![generic provider](https://img.shields.io/badge/Generic-orange?color=5f87bf)
