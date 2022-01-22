@@ -8,10 +8,6 @@ class _General(_AWS):
     _icon_dir = "resources/aws/general"
 
 
-class InternetGateway(_General):
-    _icon = "Internet-gateway.png"
-
-
 class Client(_General):
     _icon = "client.png"
 
@@ -54,6 +50,10 @@ class InternetAlt1(_General):
 
 class InternetAlt2(_General):
     _icon = "internet-alt2.png"
+
+
+class InternetGateway(_General):
+    _icon = "internet-gateway.png"
 
 
 class Marketplace(_General):
