@@ -35,6 +35,9 @@
       "nodes/custom": {
         "title": "Custom"
       },
+      "nodes/digitalocean": {
+        "title": "DigitalOcean"
+      },
       "nodes/elastic": {
         "title": "Elastic"
       },
