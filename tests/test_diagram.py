@@ -45,7 +45,7 @@ class DiagramTest(unittest.TestCase):
 
     def test_validate_outformat(self):
         # Normal output formats.
-        for fmt in ("png", "jpg", "svg", "pdf", "PNG"):
+        for fmt in ("png", "jpg", "svg", "pdf", "PNG", "dot"):
             Diagram(outformat=fmt)
 
         # Invalid output formats.
