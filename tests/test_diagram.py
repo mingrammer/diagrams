@@ -25,7 +25,7 @@ class DiagramTest(unittest.TestCase):
 
     def test_validate_direction(self):
         # Normal directions.
-        for dir in ("TB", "BT", "LR", "RL"):
+        for dir in ("TB", "BT", "LR", "RL", "tb"):
             Diagram(direction=dir)
 
         # Invalid directions.
@@ -35,7 +35,7 @@ class DiagramTest(unittest.TestCase):
 
     def test_validate_curvestyle(self):
         # Normal directions.
-        for cvs in ("ortho", "curved"):
+        for cvs in ("ortho", "curved", "CURVED"):
             Diagram(curvestyle=cvs)
 
         # Invalid directions.
@@ -45,7 +45,7 @@ class DiagramTest(unittest.TestCase):
 
     def test_validate_outformat(self):
         # Normal output formats.
-        for fmt in ("png", "jpg", "svg", "pdf"):
+        for fmt in ("png", "jpg", "svg", "pdf", "PNG"):
             Diagram(outformat=fmt)
 
         # Invalid output formats.
