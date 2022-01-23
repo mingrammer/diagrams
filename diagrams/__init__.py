@@ -41,13 +41,14 @@ class Diagram:
     __directions = ("TB", "BT", "LR", "RL")
     __curvestyles = ("ortho", "curved")
     __outformats = ("png", "jpg", "svg", "pdf")
+    __engines = ("dot", "neato", "twopi", "circo", "fdp", "sfdp", "patchwork")
 
     # fmt: off
     _default_graph_attrs = {
         "pad": "2.0",
         "splines": "ortho",
-        "nodesep": "0.60",
-        "ranksep": "0.75",
+        # "nodesep": "0.60",
+        # "ranksep": "0.75",
         "fontname": "Sans-Serif",
         "fontsize": "15",
         "fontcolor": "#2D3436",
@@ -87,6 +88,9 @@ class Diagram:
         graph_attr: dict = {},
         node_attr: dict = {},
         edge_attr: dict = {},
+        engine: str = "dot",
+        nodesep: str = "0.60",
+        ranksep: str = "0.75",
     ):
         """Diagram represents a global diagrams context.
 
@@ -108,7 +112,12 @@ class Diagram:
         elif not filename:
             filename = "_".join(self.name.split()).lower()
         self.filename = filename
-        self.dot = Digraph(self.name, filename=self.filename)
+
+        if not self._validate_engine(engine):
+            raise ValueError(f'"{engine}" is not a valid engine')
+        self.engine = engine
+
+        self.dot = Digraph(self.name, filename=self.filename, engine=self.engine)
 
         # Set attributes.
         for k, v in self._default_graph_attrs.items():
@@ -130,6 +139,9 @@ class Diagram:
         if not self._validate_outformat(outformat):
             raise ValueError(f'"{outformat}" is not a valid output format')
         self.outformat = outformat
+
+        self.dot.graph_attr["nodesep"] = nodesep
+        self.dot.graph_attr["ranksep"] = ranksep
 
         # Merge passed in attributes
         self.dot.graph_attr.update(graph_attr)
@@ -175,6 +187,13 @@ class Diagram:
                 return True
         return False
 
+    def _validate_engine(self, engine: str) -> bool:
+        engine = engine.lower()
+        for v in self.__engines:
+            if v == engine:
+                return True
+        return False
+
     def node(self, nodeid: str, label: str, **attrs) -> None:
         """Create a new node."""
         self.dot.node(nodeid, label=label, **attrs)
@@ -211,10 +230,7 @@ class Cluster:
     #  Cluster direction does not work now. Graphviz couldn't render
     #  correctly for a subgraph that has a different rank direction.
     def __init__(
-        self,
-        label: str = "cluster",
-        direction: str = "LR",
-        graph_attr: dict = {},
+        self, label: str = "cluster", direction: str = "LR", graph_attr: dict = {},
     ):
         """Cluster represents a cluster context.
 
