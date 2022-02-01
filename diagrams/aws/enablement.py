@@ -8,6 +8,10 @@ class _Enablement(_AWS):
     _icon_dir = "resources/aws/enablement"
 
 
+class CustomerEnablement(_Enablement):
+    _icon = "customer-enablement.png"
+
+
 class Iq(_Enablement):
     _icon = "iq.png"
 

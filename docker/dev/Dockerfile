@@ -3,7 +3,7 @@ FROM python:alpine3.13
 
 # install system dependencies.
 RUN apk update && apk add --no-cache \
-  gcc libc-dev g++ graphviz git bash go imagemagick inkscape ttf-opensans curl fontconfig
+  gcc libc-dev g++ graphviz git bash go imagemagick inkscape ttf-opensans curl fontconfig xdg-utils
 
 # install go package.
 RUN go get github.com/mingrammer/round

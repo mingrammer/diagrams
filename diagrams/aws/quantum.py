@@ -12,4 +12,8 @@ class Braket(_Quantum):
     _icon = "braket.png"
 
 
+class QuantumTechnologies(_Quantum):
+    _icon = "quantum-technologies.png"
+
+
 # Aliases

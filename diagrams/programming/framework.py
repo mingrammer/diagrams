@@ -56,6 +56,10 @@ class Spring(_Framework):
     _icon = "spring.png"
 
 
+class Starlette(_Framework):
+    _icon = "starlette.png"
+
+
 class Vue(_Framework):
     _icon = "vue.png"
 

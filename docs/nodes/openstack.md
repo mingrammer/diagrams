@@ -5,9 +5,6 @@ title: OpenStack
 
 Node classes list of openstack provider.
 
-## openstack.adjacentenablers
-
-
 ## openstack.apiproxies
 
 - **diagrams.openstack.apiproxies.EC2API**
@@ -51,9 +48,6 @@ Node classes list of openstack provider.
 
 - **diagrams.openstack.frontend.Horizon**
 
-## openstack.lifecyclemanagement
-
-
 ## openstack.monitoring
 
 - **diagrams.openstack.monitoring.Monasca**
@@ -72,9 +66,6 @@ Node classes list of openstack provider.
 ## openstack.nfv
 
 - **diagrams.openstack.nfv.Tacker**
-
-## openstack.operations
-
 
 ## openstack.optimization
 

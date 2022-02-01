@@ -9,7 +9,7 @@ class _Mobile(_Azure):
 
 
 class AppServiceMobile(_Mobile):
-    _icon = "app-service---mobile.png"
+    _icon = "app-service-mobile.png"
 
 
 class MobileEngagement(_Mobile):

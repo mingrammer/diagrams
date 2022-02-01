@@ -16,12 +16,20 @@ class Datadog(_Monitoring):
     _icon = "datadog.png"
 
 
+class Dynatrace(_Monitoring):
+    _icon = "dynatrace.png"
+
+
 class Grafana(_Monitoring):
     _icon = "grafana.png"
 
 
 class Humio(_Monitoring):
     _icon = "humio.png"
+
+
+class Nagios(_Monitoring):
+    _icon = "nagios.png"
 
 
 class Newrelic(_Monitoring):
