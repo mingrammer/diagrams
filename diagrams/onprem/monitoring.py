@@ -28,6 +28,10 @@ class Humio(_Monitoring):
     _icon = "humio.png"
 
 
+class Nagios(_Monitoring):
+    _icon = "nagios.png"
+
+
 class Newrelic(_Monitoring):
     _icon = "newrelic.png"
 
