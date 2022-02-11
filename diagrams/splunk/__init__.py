@@ -1,5 +1,5 @@
 """
-splunk provides a set of splunk languages and frameworks.
+splunk provides a set of splunk General and Cluster.
 """
 
 from diagrams import Node
