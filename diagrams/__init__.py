@@ -281,7 +281,7 @@ class Node:
     _icon_dir = None
     _icon = None
 
-    _height = 1.9
+    _height = 2.3
 
     def __init__(self, label: str = "", **attrs: Dict):
         """Node represents a system component.

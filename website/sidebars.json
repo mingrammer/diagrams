@@ -26,6 +26,7 @@
       "nodes/outscale",
       "nodes/generic",
       "nodes/programming",
+      "nodes/splunk",
       "nodes/saas",
       "nodes/custom"
     ]

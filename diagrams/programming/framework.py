@@ -20,6 +20,10 @@ class Django(_Framework):
     _icon = "django.png"
 
 
+
+class Splunk(_Framework):
+    _icon = "django.png"
+
 class Ember(_Framework):
     _icon = "ember.png"
 

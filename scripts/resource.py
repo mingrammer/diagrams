@@ -115,6 +115,9 @@ def cleaner_programming(f):
     return f.lower()
 
 
+def cleaner_splunk(f):
+    return f.lower()
+    
 def cleaner_generic(f):
     return f.lower()
 
@@ -147,6 +150,7 @@ cleaners = {
     "alibabacloud": cleaner_alibabacloud,
     "oci": cleaner_oci,
     "programming": cleaner_programming,
+    "splunk": cleaner_splunk,
     "saas": cleaner_saas,
     "elastic": cleaner_elastic,
     "outscale": cleaner_outscale,

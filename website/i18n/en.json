@@ -71,6 +71,9 @@
       "nodes/programming": {
         "title": "Programming"
       },
+      "nodes/splunk": {
+        "title": "splunk"
+      },
       "nodes/saas": {
         "title": "Saas"
       }
