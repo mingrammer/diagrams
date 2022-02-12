@@ -57,6 +57,7 @@ Node classes list of aws provider.
 
 ## aws.compute
 
+- **diagrams.aws.compute.AppRunner**
 - **diagrams.aws.compute.ApplicationAutoScaling**, **AutoScaling** (alias)
 - **diagrams.aws.compute.Batch**
 - **diagrams.aws.compute.ComputeOptimizer**
