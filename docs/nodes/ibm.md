@@ -164,7 +164,7 @@ Node classes list of ibm provider.
 <img width="30" src="/img/resources/ibm/compute/power-instance.png" alt="PowerInstance" style="float: left; padding-right: 5px;" >
 **diagrams.ibm.compute.PowerInstance**
 
-## ibm.data
+## ibm.iot
 
 
 <img width="30" src="/img/resources/ibm/data/caches.png" alt="Caches" style="float: left; padding-right: 5px;" >
@@ -206,7 +206,7 @@ Node classes list of ibm provider.
 <img width="30" src="/img/resources/ibm/data/tms-data-interface.png" alt="TmsDataInterface" style="float: left; padding-right: 5px;" >
 **diagrams.ibm.data.TmsDataInterface**
 
-## ibm.devops
+## ibm.logging
 
 
 <img width="30" src="/img/resources/ibm/devops/artifact-management.png" alt="ArtifactManagement" style="float: left; padding-right: 5px;" >
@@ -239,7 +239,7 @@ Node classes list of ibm provider.
 <img width="30" src="/img/resources/ibm/devops/release-management.png" alt="ReleaseManagement" style="float: left; padding-right: 5px;" >
 **diagrams.ibm.devops.ReleaseManagement**
 
-## ibm.general
+## ibm.migration
 
 
 <img width="30" src="/img/resources/ibm/general/cloud-messaging.png" alt="CloudMessaging" style="float: left; padding-right: 5px;" >
@@ -323,7 +323,7 @@ Node classes list of ibm provider.
 <img width="30" src="/img/resources/ibm/general/transformation-connectivity.png" alt="TransformationConnectivity" style="float: left; padding-right: 5px;" >
 **diagrams.ibm.general.TransformationConnectivity**
 
-## ibm.infrastructure
+## ibm.ml
 
 
 <img width="30" src="/img/resources/ibm/infrastructure/channels.png" alt="Channels" style="float: left; padding-right: 5px;" >
@@ -380,7 +380,7 @@ Node classes list of ibm provider.
 <img width="30" src="/img/resources/ibm/infrastructure/transformation-connectivity.png" alt="TransformationConnectivity" style="float: left; padding-right: 5px;" >
 **diagrams.ibm.infrastructure.TransformationConnectivity**
 
-## ibm.management
+## ibm.mobile
 
 
 <img width="30" src="/img/resources/ibm/management/alert-notification.png" alt="AlertNotification" style="float: left; padding-right: 5px;" >

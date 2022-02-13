@@ -8,60 +8,60 @@ class _Security(_IBM):
     _icon_dir = "resources/ibm/security"
 
 
-class ApiSecurity(_Security):
-    _icon = "api-security.png"
+class AppId(_Security):
+    _icon = "app-id.png"
 
 
-class BlockchainSecurityService(_Security):
-    _icon = "blockchain-security-service.png"
+class CertificateManager(_Security):
+    _icon = "certificate-manager.png"
 
 
-class DataSecurity(_Security):
-    _icon = "data-security.png"
+class Contrast(_Security):
+    _icon = "contrast.png"
 
 
-class Firewall(_Security):
-    _icon = "firewall.png"
+class Crypto(_Security):
+    _icon = "crypto.png"
 
 
-class Gateway(_Security):
-    _icon = "gateway.png"
+class DataShield(_Security):
+    _icon = "data-shield.png"
 
 
-class GovernanceRiskCompliance(_Security):
-    _icon = "governance-risk-compliance.png"
+class Fusionauth(_Security):
+    _icon = "fusionauth.png"
 
 
-class IdentityAccessManagement(_Security):
-    _icon = "identity-access-management.png"
+class Hsm(_Security):
+    _icon = "hsm.png"
 
 
-class IdentityProvider(_Security):
-    _icon = "identity-provider.png"
+class KeyProtect(_Security):
+    _icon = "key-protect.png"
 
 
-class InfrastructureSecurity(_Security):
-    _icon = "infrastructure-security.png"
+class Neuvector(_Security):
+    _icon = "neuvector.png"
 
 
-class PhysicalSecurity(_Security):
-    _icon = "physical-security.png"
+class OpenBsd(_Security):
+    _icon = "open-bsd.png"
 
 
-class SecurityMonitoringIntelligence(_Security):
-    _icon = "security-monitoring-intelligence.png"
+class Raxak(_Security):
+    _icon = "raxak.png"
 
 
-class SecurityServices(_Security):
-    _icon = "security-services.png"
+class SecretsManager(_Security):
+    _icon = "secrets-manager.png"
 
 
-class TrustendComputing(_Security):
-    _icon = "trustend-computing.png"
+class SslCertificates(_Security):
+    _icon = "ssl-certificates.png"
 
 
-class Vpn(_Security):
-    _icon = "vpn.png"
+class Twilio(_Security):
+    _icon = "twilio.png"
 
 
 # Aliases
