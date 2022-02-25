@@ -36,6 +36,10 @@ class Flutter(_Framework):
     _icon = "flutter.png"
 
 
+class Graphql(_Framework):
+    _icon = "graphql.png"
+
+
 class Laravel(_Framework):
     _icon = "laravel.png"
 
