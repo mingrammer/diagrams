@@ -8,12 +8,384 @@ class _Network(_Generic):
     _icon_dir = "resources/generic/network"
 
 
+class C_Cloud(_Network):
+    _icon = "c_cloud.png"
+
+
+class C_Cloud_Blue(_Network):
+    _icon = "c_cloud_blue.png"
+
+
+class C_Cloud_Green(_Network):
+    _icon = "c_cloud_green.png"
+
+
+class C_Firewall(_Network):
+    _icon = "c_firewall.png"
+
+
+class C_Firewall3(_Network):
+    _icon = "c_firewall3.png"
+
+
+class C_Firewall3_Blue(_Network):
+    _icon = "c_firewall3_blue.png"
+
+
+class C_Firewall3_Green(_Network):
+    _icon = "c_firewall3_green.png"
+
+
+class C_Firewall_Blue(_Network):
+    _icon = "c_firewall_blue.png"
+
+
+class C_Firewall_Green(_Network):
+    _icon = "c_firewall_green.png"
+
+
+class C_Grid(_Network):
+    _icon = "c_grid.png"
+
+
+class C_Grid_Blue(_Network):
+    _icon = "c_grid_blue.png"
+
+
+class C_Inspect(_Network):
+    _icon = "c_inspect.png"
+
+
+class C_Inspect_Blue(_Network):
+    _icon = "c_inspect_blue.png"
+
+
+class C_Inspect_Green(_Network):
+    _icon = "c_inspect_green.png"
+
+
+class C_Interconnect(_Network):
+    _icon = "c_interconnect.png"
+
+
+class C_Interconnect_Blue(_Network):
+    _icon = "c_interconnect_blue.png"
+
+
+class C_Interconnect_Green(_Network):
+    _icon = "c_interconnect_green.png"
+
+
+class C_Loadbalancer(_Network):
+    _icon = "c_loadbalancer.png"
+
+
+class C_Loadbalancer_Blue(_Network):
+    _icon = "c_loadbalancer_blue.png"
+
+
+class C_Loadbalancer_Green(_Network):
+    _icon = "c_loadbalancer_green.png"
+
+
+class C_Router(_Network):
+    _icon = "c_router.png"
+
+
+class C_Router2(_Network):
+    _icon = "c_router2.png"
+
+
+class C_Router2_Blue(_Network):
+    _icon = "c_router2_blue.png"
+
+
+class C_Router2_Green(_Network):
+    _icon = "c_router2_green.png"
+
+
+class C_Router_Blue(_Network):
+    _icon = "c_router_blue.png"
+
+
+class C_Router_Cloud(_Network):
+    _icon = "c_router_cloud.png"
+
+
+class C_Router_Cloud_Blue(_Network):
+    _icon = "c_router_cloud_blue.png"
+
+
+class C_Router_Cloud_Green(_Network):
+    _icon = "c_router_cloud_green.png"
+
+
+class C_Router_Green(_Network):
+    _icon = "c_router_green.png"
+
+
+class C_Satellite_Blue(_Network):
+    _icon = "c_satellite_blue.png"
+
+
+class C_Satellite_Green(_Network):
+    _icon = "c_satellite_green.png"
+
+
+class C_Switch(_Network):
+    _icon = "c_switch.png"
+
+
+class C_Switch_Blue(_Network):
+    _icon = "c_switch_blue.png"
+
+
+class C_Switch_Green(_Network):
+    _icon = "c_switch_green.png"
+
+
+class C_Switch_Multilayer(_Network):
+    _icon = "c_switch_multilayer.png"
+
+
+class C_Switch_Multilayer_Blue(_Network):
+    _icon = "c_switch_multilayer_blue.png"
+
+
+class C_Switch_Multilayer_Green(_Network):
+    _icon = "c_switch_multilayer_green.png"
+
+
+class C_Vrf(_Network):
+    _icon = "c_vrf.png"
+
+
+class C_Vrf_Blue(_Network):
+    _icon = "c_vrf_blue.png"
+
+
+class C_Vrf_Green(_Network):
+    _icon = "c_vrf_green.png"
+
+
+class C_Wireless(_Network):
+    _icon = "c_wireless.png"
+
+
+class C_Wireless_Blue(_Network):
+    _icon = "c_wireless_blue.png"
+
+
+class C_Wireless_Green(_Network):
+    _icon = "c_wireless_green.png"
+
+
+class C_Wlc(_Network):
+    _icon = "c_wlc.png"
+
+
+class C_Wlc_Blue(_Network):
+    _icon = "c_wlc_blue.png"
+
+
+class C_Wlc_Green(_Network):
+    _icon = "c_wlc_green.png"
+
+
 class Firewall(_Network):
     _icon = "firewall.png"
 
 
 class Router(_Network):
     _icon = "router.png"
+
+
+class Sq_Cloud(_Network):
+    _icon = "sq_cloud.png"
+
+
+class Sq_Cloud_Blue(_Network):
+    _icon = "sq_cloud_blue.png"
+
+
+class Sq_Cloud_Green(_Network):
+    _icon = "sq_cloud_green.png"
+
+
+class Sq_Communications_Blue(_Network):
+    _icon = "sq_communications_blue.png"
+
+
+class Sq_Communications_Green(_Network):
+    _icon = "sq_communications_green.png"
+
+
+class Sq_Firewall(_Network):
+    _icon = "sq_firewall.png"
+
+
+class Sq_Firewall3(_Network):
+    _icon = "sq_firewall3.png"
+
+
+class Sq_Firewall3_Blue(_Network):
+    _icon = "sq_firewall3_blue.png"
+
+
+class Sq_Firewall3_Green(_Network):
+    _icon = "sq_firewall3_green.png"
+
+
+class Sq_Firewall_Blue(_Network):
+    _icon = "sq_firewall_blue.png"
+
+
+class Sq_Firewall_Green(_Network):
+    _icon = "sq_firewall_green.png"
+
+
+class Sq_Grid(_Network):
+    _icon = "sq_grid.png"
+
+
+class Sq_Grid_Blue(_Network):
+    _icon = "sq_grid_blue.png"
+
+
+class Sq_Inspect(_Network):
+    _icon = "sq_inspect.png"
+
+
+class Sq_Inspect_Blue(_Network):
+    _icon = "sq_inspect_blue.png"
+
+
+class Sq_Inspect_Green(_Network):
+    _icon = "sq_inspect_green.png"
+
+
+class Sq_Interconnect(_Network):
+    _icon = "sq_interconnect.png"
+
+
+class Sq_Interconnect_Blue(_Network):
+    _icon = "sq_interconnect_blue.png"
+
+
+class Sq_Interconnect_Green(_Network):
+    _icon = "sq_interconnect_green.png"
+
+
+class Sq_Loadbalancer(_Network):
+    _icon = "sq_loadbalancer.png"
+
+
+class Sq_Loadbalancer_Blue(_Network):
+    _icon = "sq_loadbalancer_blue.png"
+
+
+class Sq_Rj45_Blue(_Network):
+    _icon = "sq_rj45_blue.png"
+
+
+class Sq_Router(_Network):
+    _icon = "sq_router.png"
+
+
+class Sq_Router2(_Network):
+    _icon = "sq_router2.png"
+
+
+class Sq_Router2_Green(_Network):
+    _icon = "sq_router2_green.png"
+
+
+class Sq_Router_Blue(_Network):
+    _icon = "sq_router_blue.png"
+
+
+class Sq_Router_Cloud(_Network):
+    _icon = "sq_router_cloud.png"
+
+
+class Sq_Router_Cloud_Blue(_Network):
+    _icon = "sq_router_cloud_blue.png"
+
+
+class Sq_Router_Cloud_Green(_Network):
+    _icon = "sq_router_cloud_green.png"
+
+
+class Sq_Router_Green(_Network):
+    _icon = "sq_router_green.png"
+
+
+class Sq_Satellite_Blue(_Network):
+    _icon = "sq_satellite_blue.png"
+
+
+class Sq_Switch(_Network):
+    _icon = "sq_switch.png"
+
+
+class Sq_Switch_Blue(_Network):
+    _icon = "sq_switch_blue.png"
+
+
+class Sq_Switch_Green(_Network):
+    _icon = "sq_switch_green.png"
+
+
+class Sq_Switch_Multilayer(_Network):
+    _icon = "sq_switch_multilayer.png"
+
+
+class Sq_Switch_Multilayer_Blue(_Network):
+    _icon = "sq_switch_multilayer_blue.png"
+
+
+class Sq_Switch_Multilayer_Green(_Network):
+    _icon = "sq_switch_multilayer_green.png"
+
+
+class Sq_Tree_Blue(_Network):
+    _icon = "sq_tree_blue.png"
+
+
+class Sq_Vrf(_Network):
+    _icon = "sq_vrf.png"
+
+
+class Sq_Vrf_Blue(_Network):
+    _icon = "sq_vrf_blue.png"
+
+
+class Sq_Vrf_Green(_Network):
+    _icon = "sq_vrf_green.png"
+
+
+class Sq_Wireless(_Network):
+    _icon = "sq_wireless.png"
+
+
+class Sq_Wireless_Blue(_Network):
+    _icon = "sq_wireless_blue.png"
+
+
+class Sq_Wireless_Green(_Network):
+    _icon = "sq_wireless_green.png"
+
+
+class Sq_Wlc(_Network):
+    _icon = "sq_wlc.png"
+
+
+class Sq_Wlc_Blue(_Network):
+    _icon = "sq_wlc_blue.png"
+
+
+class Sq_Wlc_Green(_Network):
+    _icon = "sq_wlc_green.png"
 
 
 class Subnet(_Network):
