@@ -44,13 +44,23 @@ diag
 
 You can specify the output file format with `outformat` parameter. Default is **png**.
 
-> (png, jpg, svg, and pdf) are allowed.
+> (png, jpg, svg, pdf and dot) are allowed.
 
 ```python
 from diagrams import Diagram
 from diagrams.aws.compute import EC2
 
 with Diagram("Simple Diagram", outformat="jpg"):
+    EC2("web")
+```
+
+The `outformat` parameter also support list to output all the defined output in one call.
+
+```python
+from diagrams import Diagram
+from diagrams.aws.compute import EC2
+
+with Diagram("Simple Diagram Multi Output", outformat=["jpg", "png", "dot"]):
     EC2("web")
 ```
 
