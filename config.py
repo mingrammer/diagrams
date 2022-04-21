@@ -151,6 +151,9 @@ ALIASES = {
             "Rabbitmq": "RabbitMQ",
             "Zeromq": "ZeroMQ",
         },
+        "security": {
+            "Fail2Ban": "fail2ban",
+        },
         "storage": {
             "Ceph": "CEPH",
             "CephOsd": "CEPH_OSD",
