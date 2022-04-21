@@ -28,6 +28,10 @@ class Humio(_Monitoring):
     _icon = "humio.png"
 
 
+class Monit(_Monitoring):
+    _icon = "monit.png"
+
+
 class Nagios(_Monitoring):
     _icon = "nagios.png"
 
