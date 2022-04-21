@@ -171,6 +171,7 @@ Node classes list of onprem provider.
 
 - **diagrams.onprem.network.Ambassador**
 - **diagrams.onprem.network.Apache**
+- **diagrams.onprem.network.Backupninja**
 - **diagrams.onprem.network.Bind9**
 - **diagrams.onprem.network.Caddy**
 - **diagrams.onprem.network.Consul**
