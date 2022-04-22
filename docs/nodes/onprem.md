@@ -191,6 +191,7 @@ Node classes list of onprem provider.
 - **diagrams.onprem.network.Opnsense**, **OPNSense** (alias)
 - **diagrams.onprem.network.Pfsense**, **PFSense** (alias)
 - **diagrams.onprem.network.Pomerium**
+- **diagrams.onprem.network.Postfix**
 - **diagrams.onprem.network.Powerdns**
 - **diagrams.onprem.network.Tomcat**
 - **diagrams.onprem.network.Traefik**
