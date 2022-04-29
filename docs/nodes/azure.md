@@ -174,6 +174,10 @@ Node classes list of azure provider.
 - **diagrams.azure.iot.TimeSeriesInsightsEventsSources**
 - **diagrams.azure.iot.Windows10IotCoreServices**
 
+## azure.management
+
+- **diagrams.azure.management.Policy**
+
 ## azure.migration
 
 - **diagrams.azure.migration.DataBoxEdge**
