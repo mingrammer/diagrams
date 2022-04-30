@@ -36,6 +36,10 @@ def cleaner_aws(f):
 
 
 def cleaner_azure(f):
+    t = f.split('-')
+    del t[:3]
+    sep = '-'
+    f = sep.join(t)
     f = f.replace("_", "-")
     f = f.replace("(", "").replace(")", "")
     f = "-".join(f.split())

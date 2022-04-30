@@ -24,36 +24,28 @@ class BatchAccounts(_Compute):
     _icon = "batch-accounts.png"
 
 
-class CitrixVirtualDesktopsEssentials(_Compute):
-    _icon = "citrix-virtual-desktops-essentials.png"
-
-
 class CloudServicesClassic(_Compute):
     _icon = "cloud-services-classic.png"
-
-
-class CloudServices(_Compute):
-    _icon = "cloud-services.png"
-
-
-class CloudsimpleVirtualMachines(_Compute):
-    _icon = "cloudsimple-virtual-machines.png"
 
 
 class ContainerInstances(_Compute):
     _icon = "container-instances.png"
 
 
-class ContainerRegistries(_Compute):
-    _icon = "container-registries.png"
+class ContainerServicesDeprecated(_Compute):
+    _icon = "container-services-deprecated.png"
 
 
 class DiskEncryptionSets(_Compute):
     _icon = "disk-encryption-sets.png"
 
 
-class DiskSnapshots(_Compute):
-    _icon = "disk-snapshots.png"
+class DisksClassic(_Compute):
+    _icon = "disks-classic.png"
+
+
+class DisksSnapshots(_Compute):
+    _icon = "disks-snapshots.png"
 
 
 class Disks(_Compute):
@@ -72,6 +64,10 @@ class ImageVersions(_Compute):
     _icon = "image-versions.png"
 
 
+class Images(_Compute):
+    _icon = "images.png"
+
+
 class KubernetesServices(_Compute):
     _icon = "kubernetes-services.png"
 
@@ -80,12 +76,8 @@ class MeshApplications(_Compute):
     _icon = "mesh-applications.png"
 
 
-class OsImages(_Compute):
-    _icon = "os-images.png"
-
-
-class SAPHANAOnAzure(_Compute):
-    _icon = "sap-hana-on-azure.png"
+class OsImagesClassic(_Compute):
+    _icon = "os-images-classic.png"
 
 
 class ServiceFabricClusters(_Compute):
@@ -100,28 +92,20 @@ class SpringCloud(_Compute):
     _icon = "spring-cloud.png"
 
 
-class VMClassic(_Compute):
-    _icon = "vm-classic.png"
+class VirtualMachine(_Compute):
+    _icon = "virtual-machine.png"
 
 
-class VMImages(_Compute):
-    _icon = "vm-images.png"
+class VirtualMachinesClassic(_Compute):
+    _icon = "virtual-machines-classic.png"
 
 
-class VMLinux(_Compute):
-    _icon = "vm-linux.png"
+class VMImagesClassic(_Compute):
+    _icon = "vm-images-classic.png"
 
 
-class VMScaleSet(_Compute):
-    _icon = "vm-scale-set.png"
-
-
-class VMWindows(_Compute):
-    _icon = "vm-windows.png"
-
-
-class VM(_Compute):
-    _icon = "vm.png"
+class VMScaleSets(_Compute):
+    _icon = "vm-scale-sets.png"
 
 
 class Workspaces(_Compute):

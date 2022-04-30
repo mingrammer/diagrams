@@ -8,40 +8,44 @@ class _Storage(_Azure):
     _icon_dir = "resources/azure/storage"
 
 
-class ArchiveStorage(_Storage):
-    _icon = "archive-storage.png"
-
-
-class Azurefxtedgefiler(_Storage):
-    _icon = "azurefxtedgefiler.png"
-
-
-class BlobStorage(_Storage):
-    _icon = "blob-storage.png"
-
-
-class DataBoxEdgeDataBoxGateway(_Storage):
-    _icon = "data-box-edge-data-box-gateway.png"
+class DataBoxEdge(_Storage):
+    _icon = "data-box-edge.png"
 
 
 class DataBox(_Storage):
     _icon = "data-box.png"
 
 
-class DataLakeStorage(_Storage):
-    _icon = "data-lake-storage.png"
+class DataLakeStorageGen1(_Storage):
+    _icon = "data-lake-storage-gen1.png"
 
 
-class GeneralStorage(_Storage):
-    _icon = "general-storage.png"
+class DataShareInvitations(_Storage):
+    _icon = "data-share-invitations.png"
+
+
+class DataShares(_Storage):
+    _icon = "data-shares.png"
+
+
+class HcpCache(_Storage):
+    _icon = "hcp-cache.png"
+
+
+class ImportExportJobs(_Storage):
+    _icon = "import-export-jobs.png"
 
 
 class NetappFiles(_Storage):
     _icon = "netapp-files.png"
 
 
-class QueuesStorage(_Storage):
-    _icon = "queues-storage.png"
+class RecoveryServicesVaults(_Storage):
+    _icon = "recovery-services-vaults.png"
+
+
+class StackEdge(_Storage):
+    _icon = "stack-edge.png"
 
 
 class StorageAccountsClassic(_Storage):
@@ -50,10 +54,6 @@ class StorageAccountsClassic(_Storage):
 
 class StorageAccounts(_Storage):
     _icon = "storage-accounts.png"
-
-
-class StorageExplorer(_Storage):
-    _icon = "storage-explorer.png"
 
 
 class StorageSyncServices(_Storage):
@@ -66,10 +66,6 @@ class StorsimpleDataManagers(_Storage):
 
 class StorsimpleDeviceManagers(_Storage):
     _icon = "storsimple-device-managers.png"
-
-
-class TableStorage(_Storage):
-    _icon = "table-storage.png"
 
 
 # Aliases

@@ -12,14 +12,6 @@ class ApplicationInsights(_Devops):
     _icon = "application-insights.png"
 
 
-class Artifacts(_Devops):
-    _icon = "artifacts.png"
-
-
-class Boards(_Devops):
-    _icon = "boards.png"
-
-
 class Devops(_Devops):
     _icon = "devops.png"
 
@@ -30,18 +22,6 @@ class DevtestLabs(_Devops):
 
 class LabServices(_Devops):
     _icon = "lab-services.png"
-
-
-class Pipelines(_Devops):
-    _icon = "pipelines.png"
-
-
-class Repos(_Devops):
-    _icon = "repos.png"
-
-
-class TestPlans(_Devops):
-    _icon = "test-plans.png"
 
 
 # Aliases
