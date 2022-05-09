@@ -8,6 +8,10 @@ class _Mlops(_OnPrem):
     _icon_dir = "resources/onprem/mlops"
 
 
+class Mlflow(_Mlops):
+    _icon = "mlflow.png"
+
+
 class Polyaxon(_Mlops):
     _icon = "polyaxon.png"
 
