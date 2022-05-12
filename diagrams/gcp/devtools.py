@@ -68,6 +68,10 @@ class ToolsForVisualStudio(_Devtools):
     _icon = "tools-for-visual-studio.png"
 
 
+class WorkFlows(_Devtools):
+    _icon = "workflows.png"
+
+
 # Aliases
 
 GCR = ContainerRegistry
