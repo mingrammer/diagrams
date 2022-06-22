@@ -3,7 +3,7 @@ FROM python:3-alpine
 
 # install system dependencies.
 RUN apk update && apk add --no-cache \
-  gcc libc-dev g++ graphviz git bash go imagemagick inkscape ttf-opensans curl fontconfig xdg-utils
+  gcc libc-dev g++ graphviz git bash go imagemagick inkscape ttf-opensans curl fontconfig xdg-utils links
 
 # install go package.
 RUN go install github.com/mingrammer/round@latest
@@ -17,6 +17,7 @@ RUN curl -O https://noto-website.storage.googleapis.com/pkgs/NotoSansCJKjp-hinte
 
 # add go bin to path.
 ENV PATH "$PATH:/root/go/bin"
+ENV BROWSER "links"
 
 # project directory.
 WORKDIR /usr/src/diagrams
