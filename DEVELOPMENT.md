@@ -35,3 +35,11 @@ You should have podman installed in your system, if not click [here](https://pod
     ```
 
 6. If the unit tests and the bash script `autogen.sh` is working correctly, then your system is now ready for development.
+
+## Podman local development
+
+Say you develop the architecture under `diagram.py` file. To generate picture, run Python interpreter against the code.
+
+   ```shell
+   podman exec diagrams python diagram.py
+   ```
