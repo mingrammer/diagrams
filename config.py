@@ -13,7 +13,7 @@ DIR_TEMPLATE = "templates"
 
 PROVIDERS = (
     "base", "onprem", "aws", "azure", "digitalocean", "gcp", "ibm", "firebase", "k8s", "alibabacloud", "oci",
-    "programming", "saas", "elastic", "generic", "openstack", "outscale")
+    "programming", "saas", "elastic", "generic", "openstack", "outscale", "scaleway")
 
 #########################
 #  Resource Processing  #
@@ -43,6 +43,7 @@ FILE_PREFIXES = {
     "outscale": (),
     "generic": (),
     "openstack": (),
+    "scaleway": (),
 }
 
 #########################
@@ -94,6 +95,9 @@ TITLE_WORDS = {
     "ibm": {
         "ibm": "IBMCloud"
     },
+    "scaleway": {
+        "scaleway": "Scaleway"
+    }
 }
 
 # TODO: check if the classname exists
@@ -391,6 +395,7 @@ ALIASES = {
         }
     },
     "digitalocean": {},
+    "scaleway": {},
     "oci": {
         "compute": {
             "VM": "VirtualMachine",
