@@ -10,6 +10,7 @@ Node classes list of saas provider.
 - **diagrams.saas.alerting.Newrelic**
 - **diagrams.saas.alerting.Opsgenie**
 - **diagrams.saas.alerting.Pushover**
+- **diagrams.saas.alerting.Xmatters**
 
 ## saas.analytics
 
