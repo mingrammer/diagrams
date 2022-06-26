@@ -13,7 +13,7 @@ DIR_TEMPLATE = "templates"
 
 PROVIDERS = (
     "base", "onprem", "aws", "azure", "digitalocean", "gcp", "ibm", "firebase", "k8s", "alibabacloud", "oci",
-    "programming", "saas", "elastic", "generic", "openstack", "outscale")
+    "programming", "saas", "elastic", "generic", "openstack", "outscale", "sap")
 
 #########################
 #  Resource Processing  #
@@ -43,6 +43,7 @@ FILE_PREFIXES = {
     "outscale": (),
     "generic": (),
     "openstack": (),
+    "sap": (),
 }
 
 #########################
@@ -73,6 +74,7 @@ UPPER_WORDS = {
     "openstack": ("rpm", "loci", "nfv", "ec2api"),
     "pve": ("pve"),
     "ibm": ("ibm"),
+    "sap": ("sap", "btp", "hana", "api"),
 }
 
 TITLE_WORDS = {
@@ -93,6 +95,9 @@ TITLE_WORDS = {
     },
     "ibm": {
         "ibm": "IBMCloud"
+    },
+    "sap": {
+        "sap": "SAP"
     },
 }
 
@@ -448,4 +453,5 @@ ALIASES = {
             "Tripleo": "TripleO",
         }
     },
+    "sap": {}
 }
