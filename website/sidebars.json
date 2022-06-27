@@ -22,6 +22,7 @@
       "nodes/openstack",
       "nodes/firebase",
       "nodes/digitalocean",
+      "nodes/sap",
       "nodes/elastic",
       "nodes/outscale",
       "nodes/generic",

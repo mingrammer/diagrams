@@ -73,6 +73,9 @@
       },
       "nodes/saas": {
         "title": "Saas"
+      },
+      "nodes/sap": {
+        "title": "SAP"
       }
     },
     "links": {
