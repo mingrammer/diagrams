@@ -8,32 +8,176 @@ class _Security(_Azure):
     _icon_dir = "resources/azure/security"
 
 
-class ApplicationSecurityGroups(_Security):
-    _icon = "application-security-groups.png"
+class ActivityLog(_Security):
+    _icon = "activity-log.png"
 
 
-class ConditionalAccess(_Security):
-    _icon = "conditional-access.png"
+class Activity(_Security):
+    _icon = "activity.png"
 
 
-class Defender(_Security):
-    _icon = "defender.png"
+class AdaptiveApplicationControl(_Security):
+    _icon = "adaptive-application-control.png"
+
+
+class AdaptiveNetworkHardening(_Security):
+    _icon = "adaptive-network-hardening.png"
+
+
+class AzureDefender(_Security):
+    _icon = "azure-defender.png"
+
+
+class AzureFirewallIdps(_Security):
+    _icon = "azure-firewall-idps.png"
+
+
+class AzureFirewallPolicy(_Security):
+    _icon = "azure-firewall-policy.png"
+
+
+class AzureFirewallSecuredVirtualNetwork(_Security):
+    _icon = "azure-firewall-secured-virtual-network.png"
+
+
+class AzureFirewallSecurityPartnerProvider(_Security):
+    _icon = "azure-firewall-security-partner-provider.png"
+
+
+class AzureFirewallThreatIntelligence(_Security):
+    _icon = "azure-firewall-threat-intelligence.png"
+
+
+class AzureFirewallTlsInspection(_Security):
+    _icon = "azure-firewall-tls-inspection.png"
+
+
+class AzureFirewallVirtualHub(_Security):
+    _icon = "azure-firewall-virtual-hub.png"
+
+
+class AzureFirewallVirtualNetwork(_Security):
+    _icon = "azure-firewall-virtual-network.png"
+
+
+class AzureFirewallWebCategory(_Security):
+    _icon = "azure-firewall-web-category.png"
+
+
+class AzureFirewall(_Security):
+    _icon = "azure-firewall.png"
+
+
+class AzureInformationProtection(_Security):
+    _icon = "azure-information-protection.png"
+
+
+class AzureMultifactorAuthentication(_Security):
+    _icon = "azure-multifactor-authentication.png"
+
+
+class CloudAppSecurity(_Security):
+    _icon = "cloud-app-security.png"
+
+
+class ConfidentialLedger(_Security):
+    _icon = "confidential-ledger.png"
+
+
+class DDOSProtection(_Security):
+    _icon = "ddos-protection.png"
 
 
 class ExtendedSecurityUpdates(_Security):
     _icon = "extended-security-updates.png"
 
 
-class KeyVaults(_Security):
-    _icon = "key-vaults.png"
+class FileIntegrityMonitoring(_Security):
+    _icon = "file-integrity-monitoring.png"
+
+
+class FirewallManager(_Security):
+    _icon = "firewall-manager.png"
+
+
+class Hunting(_Security):
+    _icon = "hunting.png"
+
+
+class Incident(_Security):
+    _icon = "incident.png"
+
+
+class KeyVaultAccessPolicy(_Security):
+    _icon = "key-vault-access-policy.png"
+
+
+class KeyVaultCertificate(_Security):
+    _icon = "key-vault-certificate.png"
+
+
+class KeyVaultHsm(_Security):
+    _icon = "key-vault-hsm.png"
+
+
+class KeyVaultNetworking(_Security):
+    _icon = "key-vault-networking.png"
+
+
+class KeyVaultSecret(_Security):
+    _icon = "key-vault-secret.png"
+
+
+class KeyVault(_Security):
+    _icon = "key-vault.png"
+
+
+class NetworkAccess(_Security):
+    _icon = "network-access.png"
+
+
+class NetworkSecurityGroup(_Security):
+    _icon = "network-security-group.png"
+
+
+class RegulatoryCompliance(_Security):
+    _icon = "regulatory-compliance.png"
+
+
+class SecureScore(_Security):
+    _icon = "secure-score.png"
+
+
+class SecurityAlert(_Security):
+    _icon = "security-alert.png"
+
+
+class SecurityBaseline(_Security):
+    _icon = "security-baseline.png"
+
+
+class SecurityCenterCoverage(_Security):
+    _icon = "security-center-coverage.png"
 
 
 class SecurityCenter(_Security):
     _icon = "security-center.png"
 
 
+class SecurityDetonationChamber(_Security):
+    _icon = "security-detonation-chamber.png"
+
+
 class Sentinel(_Security):
     _icon = "sentinel.png"
+
+
+class SshKey(_Security):
+    _icon = "ssh-key.png"
+
+
+class WafPolicy(_Security):
+    _icon = "waf-policy.png"
 
 
 # Aliases

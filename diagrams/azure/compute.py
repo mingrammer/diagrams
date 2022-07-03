@@ -8,124 +8,432 @@ class _Compute(_Azure):
     _icon_dir = "resources/azure/compute"
 
 
-class AppServices(_Compute):
-    _icon = "app-services.png"
+class AzureBlockchainService(_Compute):
+    _icon = "azure-blockchain-service.png"
 
 
-class AutomanagedVM(_Compute):
-    _icon = "automanaged-vm.png"
+class AzureComputeGallery(_Compute):
+    _icon = "azure-compute-gallery.png"
 
 
-class AvailabilitySets(_Compute):
-    _icon = "availability-sets.png"
+class AzureEdgeHardwareCenter(_Compute):
+    _icon = "azure-edge-hardware-center.png"
 
 
-class BatchAccounts(_Compute):
-    _icon = "batch-accounts.png"
+class AzureQuantum(_Compute):
+    _icon = "azure-quantum.png"
 
 
-class CitrixVirtualDesktopsEssentials(_Compute):
-    _icon = "citrix-virtual-desktops-essentials.png"
+class AzureSpringCloud(_Compute):
+    _icon = "azure-spring-cloud.png"
 
 
-class CloudServicesClassic(_Compute):
-    _icon = "cloud-services-classic.png"
+class AzureStackBackup(_Compute):
+    _icon = "azure-stack-backup.png"
 
 
-class CloudServices(_Compute):
-    _icon = "cloud-services.png"
+class AzureStackCapacity(_Compute):
+    _icon = "azure-stack-capacity.png"
 
 
-class CloudsimpleVirtualMachines(_Compute):
-    _icon = "cloudsimple-virtual-machines.png"
+class AzureStackEdgeManagement(_Compute):
+    _icon = "azure-stack-edge-management.png"
 
 
-class ContainerInstances(_Compute):
-    _icon = "container-instances.png"
+class AzureStackHci(_Compute):
+    _icon = "azure-stack-hci.png"
 
 
-class ContainerRegistries(_Compute):
-    _icon = "container-registries.png"
+class AzureStackHub(_Compute):
+    _icon = "azure-stack-hub.png"
 
 
-class DiskEncryptionSets(_Compute):
-    _icon = "disk-encryption-sets.png"
+class AzureStackMultiTenant(_Compute):
+    _icon = "azure-stack-multi-tenant.png"
 
 
-class DiskSnapshots(_Compute):
-    _icon = "disk-snapshots.png"
+class AzureStackOffer(_Compute):
+    _icon = "azure-stack-offer.png"
 
 
-class Disks(_Compute):
-    _icon = "disks.png"
+class AzureStackPlan(_Compute):
+    _icon = "azure-stack-plan.png"
 
 
-class FunctionApps(_Compute):
-    _icon = "function-apps.png"
+class AzureStackUpdate(_Compute):
+    _icon = "azure-stack-update.png"
 
 
-class ImageDefinitions(_Compute):
-    _icon = "image-definitions.png"
+class AzureStackUserSubscription(_Compute):
+    _icon = "azure-stack-user-subscription.png"
 
 
-class ImageVersions(_Compute):
-    _icon = "image-versions.png"
+class AzureVmwareSolutionVirtualMachine(_Compute):
+    _icon = "azure-vmware-solution-virtual-machine.png"
 
 
-class KubernetesServices(_Compute):
-    _icon = "kubernetes-services.png"
+class AzureVmwareSolution(_Compute):
+    _icon = "azure-vmware-solution.png"
 
 
-class MeshApplications(_Compute):
-    _icon = "mesh-applications.png"
+class BaremetalInstances(_Compute):
+    _icon = "baremetal-instances.png"
 
 
-class OsImages(_Compute):
-    _icon = "os-images.png"
+class BlockchainAbsMember(_Compute):
+    _icon = "blockchain-abs-member.png"
 
 
-class SAPHANAOnAzure(_Compute):
-    _icon = "sap-hana-on-azure.png"
+class BlockchainApplication(_Compute):
+    _icon = "blockchain-application.png"
 
 
-class ServiceFabricClusters(_Compute):
-    _icon = "service-fabric-clusters.png"
+class BlockchainConnection(_Compute):
+    _icon = "blockchain-connection.png"
 
 
-class SharedImageGalleries(_Compute):
-    _icon = "shared-image-galleries.png"
+class BlockchainConsortium(_Compute):
+    _icon = "blockchain-consortium.png"
 
 
-class SpringCloud(_Compute):
-    _icon = "spring-cloud.png"
+class BlockchainDataManager(_Compute):
+    _icon = "blockchain-data-manager.png"
 
 
-class VMClassic(_Compute):
-    _icon = "vm-classic.png"
+class BlockchainDevkit(_Compute):
+    _icon = "blockchain-devkit.png"
 
 
-class VMImages(_Compute):
-    _icon = "vm-images.png"
+class BlockchainStreaming(_Compute):
+    _icon = "blockchain-streaming.png"
 
 
-class VMLinux(_Compute):
-    _icon = "vm-linux.png"
+class BlockchainToken(_Compute):
+    _icon = "blockchain-token.png"
 
 
-class VMScaleSet(_Compute):
-    _icon = "vm-scale-set.png"
+class CapacityReservationGroup(_Compute):
+    _icon = "capacity-reservation-group.png"
 
 
-class VMWindows(_Compute):
-    _icon = "vm-windows.png"
+class CitrixVirtualDesktopEssentials(_Compute):
+    _icon = "citrix-virtual-desktop-essentials.png"
 
 
-class VM(_Compute):
-    _icon = "vm.png"
+class CloudServiceClassic(_Compute):
+    _icon = "cloud-service-classic.png"
 
 
-class Workspaces(_Compute):
-    _icon = "workspaces.png"
+class CloudService(_Compute):
+    _icon = "cloud-service.png"
+
+
+class CloudSimpleNode(_Compute):
+    _icon = "cloud-simple-node.png"
+
+
+class CloudSimpleService(_Compute):
+    _icon = "cloud-simple-service.png"
+
+
+class CloudSimpleVirtualMachine(_Compute):
+    _icon = "cloud-simple-virtual-machine.png"
+
+
+class CloudtestPool(_Compute):
+    _icon = "cloudtest-pool.png"
+
+
+class ComputeAndApp(_Compute):
+    _icon = "compute-and-app.png"
+
+
+class ContainerBatchAccount(_Compute):
+    _icon = "container-batch-account.png"
+
+
+class ContainerInstance(_Compute):
+    _icon = "container-instance.png"
+
+
+class ContainerKubernetesService(_Compute):
+    _icon = "container-kubernetes-service.png"
+
+
+class ContainerRegistry(_Compute):
+    _icon = "container-registry.png"
+
+
+class ContainerServiceFabricCluster(_Compute):
+    _icon = "container-service-fabric-cluster.png"
+
+
+class Container(_Compute):
+    _icon = "container.png"
+
+
+class DevtestLab(_Compute):
+    _icon = "devtest-lab.png"
+
+
+class FusionGroup(_Compute):
+    _icon = "fusion-group.png"
+
+
+class HighAvailability(_Compute):
+    _icon = "high-availability.png"
+
+
+class HostGroup(_Compute):
+    _icon = "host-group.png"
+
+
+class Host(_Compute):
+    _icon = "host.png"
+
+
+class HostedPool(_Compute):
+    _icon = "hosted-pool.png"
+
+
+class ImageTemplate(_Compute):
+    _icon = "image-template.png"
+
+
+class InstancePool(_Compute):
+    _icon = "instance-pool.png"
+
+
+class KubernetesClusterConfiguration(_Compute):
+    _icon = "kubernetes-cluster-configuration.png"
+
+
+class KubernetesConfiguration(_Compute):
+    _icon = "kubernetes-configuration.png"
+
+
+class KubernetesDeploymentCenter(_Compute):
+    _icon = "kubernetes-deployment-center.png"
+
+
+class KubernetesGitops(_Compute):
+    _icon = "kubernetes-gitops.png"
+
+
+class KubernetesNamespace(_Compute):
+    _icon = "kubernetes-namespace.png"
+
+
+class KubernetesNetworking(_Compute):
+    _icon = "kubernetes-networking.png"
+
+
+class KubernetesNodePool(_Compute):
+    _icon = "kubernetes-node-pool.png"
+
+
+class KubernetesPolicy(_Compute):
+    _icon = "kubernetes-policy.png"
+
+
+class KubernetesServiceAndIngres(_Compute):
+    _icon = "kubernetes-service-and-ingres.png"
+
+
+class KubernetesStorage(_Compute):
+    _icon = "kubernetes-storage.png"
+
+
+class KubernetesWorkload(_Compute):
+    _icon = "kubernetes-workload.png"
+
+
+class LabService(_Compute):
+    _icon = "lab-service.png"
+
+
+class ProximityPlacementGroup(_Compute):
+    _icon = "proximity-placement-group.png"
+
+
+class Reservation(_Compute):
+    _icon = "reservation.png"
+
+
+class ServerFarm(_Compute):
+    _icon = "server-farm.png"
+
+
+class SharedImageGallery(_Compute):
+    _icon = "shared-image-gallery.png"
+
+
+class VirtualCluster(_Compute):
+    _icon = "virtual-cluster.png"
+
+
+class VirtualMachineAutoShutdown(_Compute):
+    _icon = "virtual-machine-auto-shutdown.png"
+
+
+class VirtualMachineAvailabilitySet(_Compute):
+    _icon = "virtual-machine-availability-set.png"
+
+
+class VirtualMachineChangeTracking(_Compute):
+    _icon = "virtual-machine-change-tracking.png"
+
+
+class VirtualMachineClassic(_Compute):
+    _icon = "virtual-machine-classic.png"
+
+
+class VirtualMachineConfigurationManagement(_Compute):
+    _icon = "virtual-machine-configuration-management-.png"
+
+
+class VirtualMachineContinuousDelivery(_Compute):
+    _icon = "virtual-machine-continuous-delivery.png"
+
+
+class VirtualMachineImageClassic(_Compute):
+    _icon = "virtual-machine-image-classic.png"
+
+
+class VirtualMachineImageDefinition(_Compute):
+    _icon = "virtual-machine-image-definition.png"
+
+
+class VirtualMachineImageVersion(_Compute):
+    _icon = "virtual-machine-image-version.png"
+
+
+class VirtualMachineImage(_Compute):
+    _icon = "virtual-machine-image.png"
+
+
+class VirtualMachineLinux(_Compute):
+    _icon = "virtual-machine-linux.png"
+
+
+class VirtualMachineNonAzureLinux(_Compute):
+    _icon = "virtual-machine-non-azure-linux.png"
+
+
+class VirtualMachineNonAzureWindows(_Compute):
+    _icon = "virtual-machine-non-azure-windows.png"
+
+
+class VirtualMachineNonAzure(_Compute):
+    _icon = "virtual-machine-non-azure.png"
+
+
+class VirtualMachineRedeploy(_Compute):
+    _icon = "virtual-machine-redeploy.png"
+
+
+class VirtualMachineReservation(_Compute):
+    _icon = "virtual-machine-reservation.png"
+
+
+class VirtualMachineRestart(_Compute):
+    _icon = "virtual-machine-restart.png"
+
+
+class VirtualMachineRunCommand(_Compute):
+    _icon = "virtual-machine-run-command.png"
+
+
+class VirtualMachineScaleSet(_Compute):
+    _icon = "virtual-machine-scale-set.png"
+
+
+class VirtualMachineSerialConsole(_Compute):
+    _icon = "virtual-machine-serial-console.png"
+
+
+class VirtualMachineSQLAssessment(_Compute):
+    _icon = "virtual-machine-sql-assessment.png"
+
+
+class VirtualMachineSQLFeature(_Compute):
+    _icon = "virtual-machine-sql-feature.png"
+
+
+class VirtualMachineSQLHighAvailability(_Compute):
+    _icon = "virtual-machine-sql-high-availability.png"
+
+
+class VirtualMachineSQLPatching(_Compute):
+    _icon = "virtual-machine-sql-patching.png"
+
+
+class VirtualMachineSQL(_Compute):
+    _icon = "virtual-machine-sql.png"
+
+
+class VirtualMachineStart(_Compute):
+    _icon = "virtual-machine-start.png"
+
+
+class VirtualMachineStop(_Compute):
+    _icon = "virtual-machine-stop.png"
+
+
+class VirtualMachineUpdates(_Compute):
+    _icon = "virtual-machine-updates.png"
+
+
+class VirtualMachineWindows(_Compute):
+    _icon = "virtual-machine-windows.png"
+
+
+class VirtualMachine(_Compute):
+    _icon = "virtual-machine.png"
+
+
+class VirtualNetworkGatewayBgpPeer(_Compute):
+    _icon = "virtual-network-gateway-bgp-peer.png"
+
+
+class VMApplicationDefinition(_Compute):
+    _icon = "vm-application-definition.png"
+
+
+class VMApplicationVersion(_Compute):
+    _icon = "vm-application-version.png"
+
+
+class VMImageDefinition(_Compute):
+    _icon = "vm-image-definition.png"
+
+
+class VMImageVersion(_Compute):
+    _icon = "vm-image-version.png"
+
+
+class Windows365(_Compute):
+    _icon = "windows-365.png"
+
+
+class WindowsVirtualDesktop(_Compute):
+    _icon = "windows-virtual-desktop.png"
+
+
+class Workspace(_Compute):
+    _icon = "workspace.png"
+
+
+class WvdHostPool(_Compute):
+    _icon = "wvd-host-pool.png"
+
+
+class WvdRdpProperty(_Compute):
+    _icon = "wvd-rdp-property.png"
+
+
+class WvdTask(_Compute):
+    _icon = "wvd-task.png"
 
 
 # Aliases

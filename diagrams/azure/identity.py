@@ -8,64 +8,144 @@ class _Identity(_Azure):
     _icon_dir = "resources/azure/identity"
 
 
-class AccessReview(_Identity):
-    _icon = "access-review.png"
+class AadconnectStagedRollout(_Identity):
+    _icon = "aadconnect-staged-rollout.png"
 
 
-class ActiveDirectoryConnectHealth(_Identity):
-    _icon = "active-directory-connect-health.png"
+class AdminConsent(_Identity):
+    _icon = "admin-consent.png"
 
 
-class ActiveDirectory(_Identity):
-    _icon = "active-directory.png"
+class AuthenticationContext(_Identity):
+    _icon = "authentication-context.png"
 
 
-class ADB2C(_Identity):
-    _icon = "ad-b2c.png"
+class AzureActiveDirectory(_Identity):
+    _icon = "azure-active-directory.png"
 
 
-class ADDomainServices(_Identity):
-    _icon = "ad-domain-services.png"
+class AzureADAuthenticationMethod(_Identity):
+    _icon = "azure-ad-authentication-method.png"
 
 
-class ADIdentityProtection(_Identity):
-    _icon = "ad-identity-protection.png"
+class AzureADB2B(_Identity):
+    _icon = "azure-ad-b2b.png"
 
 
-class ADPrivilegedIdentityManagement(_Identity):
-    _icon = "ad-privileged-identity-management.png"
+class AzureADB2C(_Identity):
+    _icon = "azure-ad-b2c.png"
 
 
-class AppRegistrations(_Identity):
-    _icon = "app-registrations.png"
+class AzureADConnectHealth(_Identity):
+    _icon = "azure-ad-connect-health.png"
 
 
-class ConditionalAccess(_Identity):
-    _icon = "conditional-access.png"
+class AzureADDomainServices(_Identity):
+    _icon = "azure-ad-domain-services.png"
 
 
-class EnterpriseApplications(_Identity):
-    _icon = "enterprise-applications.png"
+class AzureADGroup(_Identity):
+    _icon = "azure-ad-group.png"
 
 
-class Groups(_Identity):
-    _icon = "groups.png"
+class AzureADIdentityProtection(_Identity):
+    _icon = "azure-ad-identity-protection.png"
+
+
+class AzureADIdentitySecureScore(_Identity):
+    _icon = "azure-ad-identity-secure-score.png"
+
+
+class AzureADPrivilegedIdentityManagement(_Identity):
+    _icon = "azure-ad-privileged-identity-management.png"
+
+
+class AzureADRiskDetection(_Identity):
+    _icon = "azure-ad-risk-detection.png"
+
+
+class AzureADRiskySignIn(_Identity):
+    _icon = "azure-ad-risky-sign-in.png"
+
+
+class AzureADRiskyUser(_Identity):
+    _icon = "azure-ad-risky-user.png"
+
+
+class AzureADSecurity(_Identity):
+    _icon = "azure-ad-security.png"
+
+
+class AzureADUser(_Identity):
+    _icon = "azure-ad-user.png"
+
+
+class AzureADVerifiableCredential(_Identity):
+    _icon = "azure-ad-verifiable-credential.png"
+
+
+class AzureADVerifiableCredentials(_Identity):
+    _icon = "azure-ad-verifiable-credentials.png"
+
+
+class AzureToken(_Identity):
+    _icon = "azure-token.png"
+
+
+class Collection(_Identity):
+    _icon = "collection.png"
+
+
+class ContinuousAccessEvaluation(_Identity):
+    _icon = "continuous-access-evaluation.png"
+
+
+class CustomControl(_Identity):
+    _icon = "custom-control.png"
+
+
+class ExternalIdentitiy(_Identity):
+    _icon = "external-identitiy.png"
+
+
+class GuestAssignment(_Identity):
+    _icon = "guest-assignment.png"
+
+
+class IdentityAndAccess(_Identity):
+    _icon = "identity-and-access.png"
 
 
 class IdentityGovernance(_Identity):
     _icon = "identity-governance.png"
 
 
-class InformationProtection(_Identity):
-    _icon = "information-protection.png"
+class ManagedIdentity(_Identity):
+    _icon = "managed-identity.png"
 
 
-class ManagedIdentities(_Identity):
-    _icon = "managed-identities.png"
+class MicrosoftAccount(_Identity):
+    _icon = "microsoft-account.png"
 
 
-class Users(_Identity):
-    _icon = "users.png"
+class OrganisationalRelationship(_Identity):
+    _icon = "organisational-relationship.png"
+
+
+class TermsOfUse(_Identity):
+    _icon = "terms-of-use.png"
+
+
+class UserSetting(_Identity):
+    _icon = "user-setting.png"
+
+
+class VPNConnectivity(_Identity):
+    _icon = "vpn-connectivity.png"
+
+
+class WorkAccount(_Identity):
+    _icon = "work-account.png"
 
 
 # Aliases

@@ -8,44 +8,128 @@ class _Iot(_Azure):
     _icon_dir = "resources/azure/iot"
 
 
-class DeviceProvisioningServices(_Iot):
-    _icon = "device-provisioning-services.png"
+class BuiltInEndpoint(_Iot):
+    _icon = "built-in-endpoint.png"
 
 
-class DigitalTwins(_Iot):
-    _icon = "digital-twins.png"
+class Certificate(_Iot):
+    _icon = "certificate.png"
 
 
-class IotCentralApplications(_Iot):
-    _icon = "iot-central-applications.png"
+class CustomLocation(_Iot):
+    _icon = "custom-location.png"
+
+
+class DeviceUpdateForIotHub(_Iot):
+    _icon = "device-update-for-iot-hub.png"
+
+
+class Device(_Iot):
+    _icon = "device.png"
+
+
+class FileUpload(_Iot):
+    _icon = "file-upload.png"
+
+
+class Identity(_Iot):
+    _icon = "identity.png"
+
+
+class IotCentral(_Iot):
+    _icon = "iot-central.png"
+
+
+class IotConnector(_Iot):
+    _icon = "iot-connector.png"
+
+
+class IotDefender(_Iot):
+    _icon = "iot-defender.png"
+
+
+class IotDeviceProvisioningService(_Iot):
+    _icon = "iot-device-provisioning-service.png"
+
+
+class IotDigitalTwin(_Iot):
+    _icon = "iot-digital-twin.png"
+
+
+class IotEdgeDevice(_Iot):
+    _icon = "iot-edge-device.png"
+
+
+class IotEdge(_Iot):
+    _icon = "iot-edge.png"
+
+
+class IotHubBuiltInEndpoint(_Iot):
+    _icon = "iot-hub-built-in-endpoint.png"
+
+
+class IotHubCertificate(_Iot):
+    _icon = "iot-hub-certificate.png"
+
+
+class IotHubDevice(_Iot):
+    _icon = "iot-hub-device.png"
+
+
+class IotHubEvent(_Iot):
+    _icon = "iot-hub-event.png"
+
+
+class IotHubFileUpload(_Iot):
+    _icon = "iot-hub-file-upload.png"
+
+
+class IotHubMessageRouting(_Iot):
+    _icon = "iot-hub-message-routing.png"
+
+
+class IotHubQuery(_Iot):
+    _icon = "iot-hub-query.png"
+
+
+class IotHubSecurityAlert(_Iot):
+    _icon = "iot-hub-security-alert.png"
 
 
 class IotHubSecurity(_Iot):
     _icon = "iot-hub-security.png"
 
 
+class IotHubUpdate(_Iot):
+    _icon = "iot-hub-update.png"
+
+
+class IotHubWorkbook(_Iot):
+    _icon = "iot-hub-workbook.png"
+
+
 class IotHub(_Iot):
     _icon = "iot-hub.png"
 
 
-class Maps(_Iot):
-    _icon = "maps.png"
+class IotSolutionAccelerator(_Iot):
+    _icon = "iot-solution-accelerator.png"
 
 
-class Sphere(_Iot):
-    _icon = "sphere.png"
+class IotSphere(_Iot):
+    _icon = "iot-sphere.png"
 
 
-class TimeSeriesInsightsEnvironments(_Iot):
-    _icon = "time-series-insights-environments.png"
+class IotWindows10Core(_Iot):
+    _icon = "iot-windows-10-core.png"
 
 
-class TimeSeriesInsightsEventsSources(_Iot):
-    _icon = "time-series-insights-events-sources.png"
+class MessageRouting(_Iot):
+    _icon = "message-routing.png"
 
 
-class Windows10IotCoreServices(_Iot):
-    _icon = "windows-10-iot-core-services.png"
+class QueryExplorer(_Iot):
+    _icon = "query-explorer.png"
 
 
 # Aliases

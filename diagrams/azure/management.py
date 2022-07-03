@@ -8,8 +8,660 @@ class _Management(_Azure):
     _icon_dir = "resources/azure/management"
 
 
+class AdministrativeUnit(_Management):
+    _icon = "administrative-unit.png"
+
+
+class Alert(_Management):
+    _icon = "alert.png"
+
+
+class APIManagementService(_Management):
+    _icon = "api-management-service.png"
+
+
+class ApplicationChangeAnalysis(_Management):
+    _icon = "application-change-analysis.png"
+
+
+class ApplicationInsightsApplicationMap(_Management):
+    _icon = "application-insights-application-map.png"
+
+
+class ApplicationInsightsCohort(_Management):
+    _icon = "application-insights-cohort.png"
+
+
+class ApplicationInsightsContinuousExport(_Management):
+    _icon = "application-insights-continuous-export.png"
+
+
+class ApplicationInsightsEvent(_Management):
+    _icon = "application-insights-event.png"
+
+
+class ApplicationInsightsFailure(_Management):
+    _icon = "application-insights-failure.png"
+
+
+class ApplicationInsightsFunnel(_Management):
+    _icon = "application-insights-funnel.png"
+
+
+class ApplicationInsightsLiveMetrics(_Management):
+    _icon = "application-insights-live-metrics.png"
+
+
+class ApplicationInsightsPerformance(_Management):
+    _icon = "application-insights-performance.png"
+
+
+class ApplicationInsightsRetention(_Management):
+    _icon = "application-insights-retention.png"
+
+
+class ApplicationInsightsSession(_Management):
+    _icon = "application-insights-session.png"
+
+
+class ApplicationInsightsTransactionSearch(_Management):
+    _icon = "application-insights-transaction-search.png"
+
+
+class ApplicationInsightsUserFlow(_Management):
+    _icon = "application-insights-user-flow.png"
+
+
+class ApplicationInsightsUser(_Management):
+    _icon = "application-insights-user.png"
+
+
+class ApplicationInsightsWorkItem(_Management):
+    _icon = "application-insights-work-item.png"
+
+
+class ApplicationInsights(_Management):
+    _icon = "application-insights.png"
+
+
+class AuditLogs(_Management):
+    _icon = "audit-logs.png"
+
+
+class AutomationAccount(_Management):
+    _icon = "automation-account.png"
+
+
+class AutomationCertificate(_Management):
+    _icon = "automation-certificate.png"
+
+
+class AutomationChangeTracking(_Management):
+    _icon = "automation-change-tracking.png"
+
+
+class AutomationConnection(_Management):
+    _icon = "automation-connection.png"
+
+
+class AutomationEventGrid(_Management):
+    _icon = "automation-event-grid.png"
+
+
+class AutomationHybridWorkerGroup(_Management):
+    _icon = "automation-hybrid-worker-group.png"
+
+
+class AutomationIdentity(_Management):
+    _icon = "automation-identity.png"
+
+
+class AutomationJob(_Management):
+    _icon = "automation-job.png"
+
+
+class AutomationLinkedWorkspace(_Management):
+    _icon = "automation-linked-workspace.png"
+
+
+class AutomationModule(_Management):
+    _icon = "automation-module.png"
+
+
+class AutomationPythonPackage(_Management):
+    _icon = "automation-python-package.png"
+
+
+class AutomationRunAsAccount(_Management):
+    _icon = "automation-run-as-account.png"
+
+
+class AutomationRunbook(_Management):
+    _icon = "automation-runbook.png"
+
+
+class AutomationSchedule(_Management):
+    _icon = "automation-schedule.png"
+
+
+class AutomationSourceControl(_Management):
+    _icon = "automation-source-control.png"
+
+
+class AutomationStartStopVM(_Management):
+    _icon = "automation-start-stop-vm.png"
+
+
+class AutomationStateConfigurationDsc(_Management):
+    _icon = "automation-state-configuration-dsc.png"
+
+
+class AutomationUpdateManagement(_Management):
+    _icon = "automation-update-management.png"
+
+
+class AutomationVariable(_Management):
+    _icon = "automation-variable.png"
+
+
+class AzureAdvisor(_Management):
+    _icon = "azure-advisor.png"
+
+
+class AzureArcAppliance(_Management):
+    _icon = "azure-arc-appliance.png"
+
+
+class AzureArcAzureStackHci(_Management):
+    _icon = "azure-arc-azure-stack-hci.png"
+
+
+class AzureArcDataController(_Management):
+    _icon = "azure-arc-data-controller.png"
+
+
+class AzureArcKubernetes(_Management):
+    _icon = "azure-arc-kubernetes.png"
+
+
+class AzureArcMachine(_Management):
+    _icon = "azure-arc-machine.png"
+
+
+class AzureArcPostgresqlServerGroup(_Management):
+    _icon = "azure-arc-postgresql-server-group.png"
+
+
+class AzureArcPrivateLinkScope(_Management):
+    _icon = "azure-arc-private-link-scope.png"
+
+
+class AzureArcResourceBridge(_Management):
+    _icon = "azure-arc-resource-bridge.png"
+
+
+class AzureArcService(_Management):
+    _icon = "azure-arc-service.png"
+
+
+class AzureArcSQLManagedInstance(_Management):
+    _icon = "azure-arc-sql-managed-instance.png"
+
+
+class AzureArcSQLServer(_Management):
+    _icon = "azure-arc-sql-server.png"
+
+
+class AzureArcVirtualMachine(_Management):
+    _icon = "azure-arc-virtual-machine.png"
+
+
+class AzureArcVmwareVcenter(_Management):
+    _icon = "azure-arc-vmware-vcenter.png"
+
+
+class AzureAutomationRunbookDescription(_Management):
+    _icon = "azure-automation-runbook-description.png"
+
+
+class AzureAutomationRunbookJob(_Management):
+    _icon = "azure-automation-runbook-job.png"
+
+
+class AzureAutomationRunbookSchedule(_Management):
+    _icon = "azure-automation-runbook-schedule.png"
+
+
+class AzureAutomationRunbookWebhook(_Management):
+    _icon = "azure-automation-runbook-webhook.png"
+
+
+class AzureAutomationRunbook(_Management):
+    _icon = "azure-automation-runbook.png"
+
+
+class AzureCli(_Management):
+    _icon = "azure-cli.png"
+
+
+class AzureLighthouseManagement(_Management):
+    _icon = "azure-lighthouse-management.png"
+
+
+class AzureLighthouseMultiTenancy(_Management):
+    _icon = "azure-lighthouse-multi-tenancy.png"
+
+
+class AzureLighthouseMyAuditHistory(_Management):
+    _icon = "azure-lighthouse-my-audit-history.png"
+
+
+class AzureLighthouseMyCustomers(_Management):
+    _icon = "azure-lighthouse-my-customers.png"
+
+
+class AzureLighthouseMyPermission(_Management):
+    _icon = "azure-lighthouse-my-permission.png"
+
+
+class AzureLighthouseMyRequest(_Management):
+    _icon = "azure-lighthouse-my-request.png"
+
+
+class AzureLighthouseMyRole(_Management):
+    _icon = "azure-lighthouse-my-role.png"
+
+
+class AzureLighthouseProjection(_Management):
+    _icon = "azure-lighthouse-projection.png"
+
+
+class AzureLighthouseProtection(_Management):
+    _icon = "azure-lighthouse-protection.png"
+
+
+class AzureLighthouseRbac(_Management):
+    _icon = "azure-lighthouse-rbac.png"
+
+
+class AzureLighthouseServiceProvider(_Management):
+    _icon = "azure-lighthouse-service-provider.png"
+
+
+class AzureLighthouse(_Management):
+    _icon = "azure-lighthouse.png"
+
+
+class AzureLoadTesting(_Management):
+    _icon = "azure-load-testing.png"
+
+
+class AzureMigrate(_Management):
+    _icon = "azure-migrate.png"
+
+
+class AzureMonitorAksHealth(_Management):
+    _icon = "azure-monitor-aks-health.png"
+
+
+class AzureMonitorAzureStackHealth(_Management):
+    _icon = "azure-monitor-azure-stack-health.png"
+
+
+class AzureMonitorDataCollectionRules(_Management):
+    _icon = "azure-monitor-data-collection-rules.png"
+
+
+class AzureMonitorDataSources(_Management):
+    _icon = "azure-monitor-data-sources.png"
+
+
+class AzureMonitorForSAPSolution(_Management):
+    _icon = "azure-monitor-for-sap-solution.png"
+
+
+class AzureMonitorLogAnalyticsHealth(_Management):
+    _icon = "azure-monitor-log-analytics--health.png"
+
+
+class AzureMonitorPrivateLinkScope(_Management):
+    _icon = "azure-monitor-private-link-scope.png"
+
+
+class AzureMonitorServiceBusHealth(_Management):
+    _icon = "azure-monitor-service-bus-health.png"
+
+
+class AzureMonitor(_Management):
+    _icon = "azure-monitor.png"
+
+
+class AzureResourceMover(_Management):
+    _icon = "azure-resource-mover.png"
+
+
+class AzureRoleBasedAccessControl(_Management):
+    _icon = "azure-role-based-access-control.png"
+
+
+class AzureTestPlan(_Management):
+    _icon = "azure-test-plan.png"
+
+
+class AzureWorkbook(_Management):
+    _icon = "azure-workbook.png"
+
+
+class BackupCenter(_Management):
+    _icon = "backup-center.png"
+
+
+class BackupVault(_Management):
+    _icon = "backup-vault.png"
+
+
+class Budget(_Management):
+    _icon = "budget.png"
+
+
+class CertificateAutoRenewSetting(_Management):
+    _icon = "certificate-auto-renew-setting.png"
+
+
+class CertificateConfiguration(_Management):
+    _icon = "certificate-configuration.png"
+
+
+class CertificateTimeline(_Management):
+    _icon = "certificate-timeline.png"
+
+
+class Compliance(_Management):
+    _icon = "compliance.png"
+
+
+class ConditionalAccess(_Management):
+    _icon = "conditional-access.png"
+
+
+class ConfigurationManagement(_Management):
+    _icon = "configuration-management.png"
+
+
+class ConnectionMonitor(_Management):
+    _icon = "connection-monitor.png"
+
+
+class CostAlert(_Management):
+    _icon = "cost-alert.png"
+
+
+class CostAnalysis(_Management):
+    _icon = "cost-analysis.png"
+
+
+class CostExports(_Management):
+    _icon = "cost-exports.png"
+
+
+class CostManagementAndBilling(_Management):
+    _icon = "cost-management-and-billing.png"
+
+
+class CostManagementForAws(_Management):
+    _icon = "cost-management-for-aws.png"
+
+
+class CostManagement(_Management):
+    _icon = "cost-management.png"
+
+
+class Cost(_Management):
+    _icon = "cost.png"
+
+
+class Dashboard(_Management):
+    _icon = "dashboard.png"
+
+
+class DatabaseMigrationProject(_Management):
+    _icon = "database-migration-project.png"
+
+
+class DatabaseMigrationService(_Management):
+    _icon = "database-migration-service.png"
+
+
+class Datadog(_Management):
+    _icon = "datadog.png"
+
+
+class DiagnosticsSetting(_Management):
+    _icon = "diagnostics-setting.png"
+
+
+class Diagnostics(_Management):
+    _icon = "diagnostics.png"
+
+
+class Event(_Management):
+    _icon = "event.png"
+
+
+class Extension(_Management):
+    _icon = "extension.png"
+
+
+class IntelligentRecommendationsAccount(_Management):
+    _icon = "intelligent-recommendations-account.png"
+
+
+class Invoice(_Management):
+    _icon = "invoice.png"
+
+
+class LogAnalyticsQueryPack(_Management):
+    _icon = "log-analytics-query-pack.png"
+
+
+class LogAnalyticsSolution(_Management):
+    _icon = "log-analytics-solution.png"
+
+
+class LogAnalyticsWorkspace(_Management):
+    _icon = "log-analytics-workspace.png"
+
+
+class LogzMetricsDataSource(_Management):
+    _icon = "logz-metrics-data-source.png"
+
+
+class ManagementGroup(_Management):
+    _icon = "management-group.png"
+
+
+class MetricsAdvisor(_Management):
+    _icon = "metrics-advisor.png"
+
+
+class PerformanceDiagnostics(_Management):
+    _icon = "performance-diagnostics.png"
+
+
+class Performance(_Management):
+    _icon = "performance.png"
+
+
+class Playbook(_Management):
+    _icon = "playbook.png"
+
+
+class PolicyAssignment(_Management):
+    _icon = "policy-assignment.png"
+
+
+class PolicyCompliance(_Management):
+    _icon = "policy-compliance.png"
+
+
+class PolicyDefinition(_Management):
+    _icon = "policy-definition.png"
+
+
+class PolicyEvent(_Management):
+    _icon = "policy-event.png"
+
+
+class PolicyExemption(_Management):
+    _icon = "policy-exemption.png"
+
+
+class PolicyInitiative(_Management):
+    _icon = "policy-initiative.png"
+
+
+class PolicyRemediation(_Management):
+    _icon = "policy-remediation.png"
+
+
 class Policy(_Management):
     _icon = "policy.png"
+
+
+class Quota(_Management):
+    _icon = "quota.png"
+
+
+class RecoveryServicesAlert(_Management):
+    _icon = "recovery-services-alert.png"
+
+
+class RecoveryServicesBackupInfrastructure(_Management):
+    _icon = "recovery-services-backup-infrastructure.png"
+
+
+class RecoveryServicesBackupReport(_Management):
+    _icon = "recovery-services-backup-report.png"
+
+
+class RecoveryServicesPlan(_Management):
+    _icon = "recovery-services-plan.png"
+
+
+class RecoveryServicesPolicy(_Management):
+    _icon = "recovery-services-policy.png"
+
+
+class RecoveryServicesRestorePoint(_Management):
+    _icon = "recovery-services-restore-point.png"
+
+
+class RecoveryServicesVault(_Management):
+    _icon = "recovery-services-vault.png"
+
+
+class RecoveryServices(_Management):
+    _icon = "recovery-services.png"
+
+
+class ReservationAutoRenew(_Management):
+    _icon = "reservation-auto-renew.png"
+
+
+class ResourceGroup(_Management):
+    _icon = "resource-group.png"
+
+
+class ResourceGuard(_Management):
+    _icon = "resource-guard.png"
+
+
+class ResourceLock(_Management):
+    _icon = "resource-lock.png"
+
+
+class ResourceManagementPrivateLink(_Management):
+    _icon = "resource-management-private-link.png"
+
+
+class RestorePointCollection(_Management):
+    _icon = "restore-point-collection.png"
+
+
+class ReviewAccess(_Management):
+    _icon = "review-access.png"
+
+
+class RoleAzuread(_Management):
+    _icon = "role-azuread.png"
+
+
+class RoleCustom(_Management):
+    _icon = "role-custom.png"
+
+
+class Role(_Management):
+    _icon = "role.png"
+
+
+class RunCommand(_Management):
+    _icon = "run-command.png"
+
+
+class SchedulerJobCollection(_Management):
+    _icon = "scheduler-job-collection.png"
+
+
+class SharedDashboard(_Management):
+    _icon = "shared-dashboard.png"
+
+
+class SignIn(_Management):
+    _icon = "sign-in.png"
+
+
+class Subscription(_Management):
+    _icon = "subscription.png"
+
+
+class Tag(_Management):
+    _icon = "tag.png"
+
+
+class Tags(_Management):
+    _icon = "tags.png"
+
+
+class TestBaseForMicrosoft365(_Management):
+    _icon = "test-base-for-microsoft-365.png"
+
+
+class UpdateManagementCenter(_Management):
+    _icon = "update-management-center.png"
+
+
+class UpdateManagement(_Management):
+    _icon = "update-management.png"
+
+
+class UsageAndQuota(_Management):
+    _icon = "usage-and-quota.png"
+
+
+class VirtualMachineBestPractices(_Management):
+    _icon = "virtual-machine-best-practices.png"
+
+
+class WindowsAdminCenter(_Management):
+    _icon = "windows-admin-center.png"
+
+
+class Workbook(_Management):
+    _icon = "workbook.png"
+
+
+class WorkflowAutomation(_Management):
+    _icon = "workflow-automation.png"
 
 
 # Aliases
