@@ -77,16 +77,16 @@ class Diagram:
     # TODO: Label position option
     # TODO: Save directory option (filename + directory?)
     def __init__(
-        self,
-        name: str = "",
-        filename: str = "",
-        direction: str = "LR",
-        curvestyle: str = "ortho",
-        outformat: str = "png",
-        show: bool = True,
-        graph_attr: dict = {},
-        node_attr: dict = {},
-        edge_attr: dict = {},
+            self,
+            name: str = "",
+            filename: str = "",
+            direction: str = "LR",
+            curvestyle: str = "ortho",
+            outformat: str = "png",
+            show: bool = True,
+            graph_attr: dict = {},
+            node_attr: dict = {},
+            edge_attr: dict = {},
     ):
         """Diagram represents a global diagrams context.
 
@@ -104,7 +104,7 @@ class Diagram:
         """
         self.name = name
         if not name and not filename:
-            filename = "diagrams_image"
+            filename = os.environ.get('DIAGRAMS_FILENAME', "diagrams_image")
         elif not filename:
             filename = "_".join(self.name.split()).lower()
         self.filename = filename
@@ -134,7 +134,7 @@ class Diagram:
         else:
             if not self._validate_outformat(outformat):
                 raise ValueError(f'"{outformat}" is not a valid output format')
-        self.outformat = outformat
+        self.outformat = os.environ.get('DIAGRAMS_OUTFORMAT', outformat)
 
         # Merge passed in attributes
         self.dot.graph_attr.update(graph_attr)
@@ -208,10 +208,10 @@ class Cluster:
     #  Cluster direction does not work now. Graphviz couldn't render
     #  correctly for a subgraph that has a different rank direction.
     def __init__(
-        self,
-        label: str = "cluster",
-        direction: str = "LR",
-        graph_attr: dict = {},
+            self,
+            label: str = "cluster",
+            direction: str = "LR",
+            graph_attr: dict = {},
     ):
         """Cluster represents a cluster context.
 
@@ -427,14 +427,14 @@ class Edge:
     }
 
     def __init__(
-        self,
-        node: "Node" = None,
-        forward: bool = False,
-        reverse: bool = False,
-        label: str = "",
-        color: str = "",
-        style: str = "",
-        **attrs: Dict,
+            self,
+            node: "Node" = None,
+            forward: bool = False,
+            reverse: bool = False,
+            label: str = "",
+            color: str = "",
+            style: str = "",
+            **attrs: Dict,
     ):
         """Edge represents an edge between two nodes.
 
