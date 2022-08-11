@@ -100,6 +100,12 @@ def cleaner_alibabacloud(f):
             break
     return f.lower()
 
+def cleaner_huaweicloud(f):
+    for p in cfg.FILE_PREFIXES["huaweicloud"]:
+        if f.startswith(p):
+            f = f[len(p) :]
+            break
+    return f.lower()
 
 def cleaner_oci(f):
     f = f.replace(" ", "-")
@@ -145,6 +151,7 @@ cleaners = {
     "firebase": cleaner_firebase,
     "k8s": cleaner_k8s,
     "alibabacloud": cleaner_alibabacloud,
+    "huaweicloud": cleaner_huaweicloud,
     "oci": cleaner_oci,
     "programming": cleaner_programming,
     "saas": cleaner_saas,
