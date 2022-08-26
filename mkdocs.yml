@@ -5,8 +5,8 @@ theme:
   logo: img/diagrams.png 
   favicon: img/diagrams.png
   palette:
-    primary: purple
-    accent: blue
+    primary: blue
+    accent: purple
 
 plugins:
   - search:
