@@ -10,6 +10,11 @@ theme:
 
 repo_url: https://github.com/mingrammer/diagrams
 
+extra:
+  social:
+    - icon: fontawesome/brands/github 
+      link: https://github.com/mingrammer/diagrams
+
 plugins:
   - search:
       separator: '[\s\-\.]+'
