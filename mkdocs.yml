@@ -2,6 +2,8 @@ site_name: Diagrams
 
 theme:
   name: material
+  logo: img/diagrams.png 
+  favicon: img/diagrams.png
   palette:
     primary: purple
     accent: blue
