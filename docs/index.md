@@ -17,3 +17,6 @@ Diagram as Code allows you to **track** the architecture diagram changes in any 
 Diagrams currently supports six major providers: AWS, Azure, GCP, Kubernetes, Alibaba Cloud and Oracle Cloud. It now also supports On-Premise nodes as well as Programming Languages and Frameworks.
 
 ![event-processing-code](img/event_processing_code.png)
+![event-processing-code](img/event_processing_diagram.png)
+![event-processing-code](img/message_collecting_code.png)
+![event-processing-code](img/message_collecting_diagram.png)
