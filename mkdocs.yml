@@ -8,6 +8,8 @@ theme:
     primary: indigo
     accent: blue
 
+repo_url: https://github.com/mingrammer/diagrams
+
 plugins:
   - search:
       separator: '[\s\-\.]+'
