@@ -13,7 +13,7 @@ DIR_TEMPLATE = "templates"
 
 PROVIDERS = (
     "base", "onprem", "aws", "azure", "digitalocean", "gcp", "ibm", "firebase", "k8s", "alibabacloud", "oci",
-    "programming", "saas", "elastic", "generic", "openstack", "outscale")
+    "programming", "saas", "elastic", "generic", "openstack", "outscale", "hashicorp")
 
 #########################
 #  Resource Processing  #
@@ -31,6 +31,7 @@ FILE_PREFIXES = {
     "aws": ("Amazon-", "AWS-"),
     "azure": ("Azure-",),
     "digitalocean": (),
+    "hashicorp": (),
     "gcp": ("Cloud-",),
     "firebase": ("Cloud-",),
     "ibm": (),
@@ -87,6 +88,9 @@ TITLE_WORDS = {
     },
     "digitalocean": {
         "digitalocean": "DigitalOcean"
+    },
+    "hashicorp": {
+        "hashicorp": "HashiCorp"
     },
     "openstack": {
         "openstack": "OpenStack"
@@ -391,6 +395,7 @@ ALIASES = {
         }
     },
     "digitalocean": {},
+    "hashicorp": {},
     "oci": {
         "compute": {
             "VM": "VirtualMachine",

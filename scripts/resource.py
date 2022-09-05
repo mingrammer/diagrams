@@ -84,6 +84,7 @@ def cleaner_k8s(f):
             break
     return f.lower()
 
+
 def cleaner_digitalocean(f):
     f = f.replace("-32", "")
     for p in cfg.FILE_PREFIXES["digitalocean"]:
@@ -135,6 +136,10 @@ def cleaner_openstack(f):
     return f.lower()
 
 
+def cleaner_hashicorp(f):
+    return f.lower()
+
+
 cleaners = {
     "onprem": cleaner_onprem,
     "aws": cleaner_aws,
@@ -152,6 +157,7 @@ cleaners = {
     "outscale": cleaner_outscale,
     "generic": cleaner_generic,
     "openstack": cleaner_openstack,
+    "hashicorp": cleaner_hashicorp,
 }
 
 
