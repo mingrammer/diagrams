@@ -21,7 +21,7 @@ def generate_markdown_table(resource_paths):
             path = Path(img_path)
             import_path = '.'.join(path.parts[1:-1]).replace("-", "_")
             module_name = path.parts[-1].replace("-", " ").title().replace(" ", "").replace(".Png", "")
-            table_entry = f"| ![module_name]({path}) | `from {import_path} import {module_name}` |\n"
+            table_entry = f"| <img src=\"{path}\" alt=\"{module_name}\" style=\"width:64px;\"/> | `from {import_path} import {module_name}` |\n"
             md_file.write(table_entry)
 
 if __name__ == "__main__":
