@@ -29,6 +29,3 @@ website/package-lock.json
 
 # Ignore .swp files
 .swp
-
-# Ignore build docs site
-site/
