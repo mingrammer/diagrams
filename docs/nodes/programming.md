@@ -41,6 +41,7 @@ Node classes list of programming provider.
 - **diagrams.programming.framework.Fastapi**, **FastAPI** (alias)
 - **diagrams.programming.framework.Flask**
 - **diagrams.programming.framework.Flutter**
+- **diagrams.programming.framework.Graphql**, **GraphQL** (alias)
 - **diagrams.programming.framework.Laravel**
 - **diagrams.programming.framework.Micronaut**
 - **diagrams.programming.framework.Rails**
