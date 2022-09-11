@@ -1,5 +1,11 @@
 # Changelogs
 
+## 0.16.0
+
+### Added
+
+- Support Pulumi: [#759](https://github.com/mingrammer/diagrams/pull/759)
+
 ## 0.17.0
 
 ### Added
