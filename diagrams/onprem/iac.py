@@ -20,6 +20,10 @@ class Awx(_Iac):
     _icon = "awx.png"
 
 
+class Pulumi(_Iac):
+    _icon = "pulumi.png"
+
+
 class Puppet(_Iac):
     _icon = "puppet.png"
 
