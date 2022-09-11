@@ -125,6 +125,7 @@ Node classes list of onprem provider.
 - **diagrams.onprem.iac.Ansible**
 - **diagrams.onprem.iac.Atlantis**
 - **diagrams.onprem.iac.Awx**
+- **diagrams.onprem.iac.Pulumi**
 - **diagrams.onprem.iac.Puppet**
 - **diagrams.onprem.iac.Terraform**
 
