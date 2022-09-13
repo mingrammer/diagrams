@@ -1,0 +1,76 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>C4 · Diagrams</title><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="generator" content="Docusaurus"/><meta name="description" content="## C4 Diagrams"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="C4 · Diagrams"/><meta property="og:type" content="website"/><meta property="og:url" content="https://diagrams.mingrammer.com/"/><meta property="og:description" content="## C4 Diagrams"/><meta property="og:image" content="https://diagrams.mingrammer.com/img/diagrams.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://diagrams.mingrammer.com/img/diagrams.png"/><link rel="shortcut icon" href="/img/diagrams.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script>
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+              ga('create', 'UA-84081627-3', 'auto');
+              ga('send', 'pageview');
+            </script><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/diagrams.ico" alt="Diagrams"/><h2 class="headerTitleWithLogo">Diagrams</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/docs/getting-started/installation" target="_self">Docs</a></li><li class=""><a href="/docs/guides/diagram" target="_self">Guides</a></li><li class=""><a href="/docs/nodes/aws" target="_self">Nodes</a></li><li class=""><a href="https://github.com/mingrammer/diagrams" target="_self">GitHub</a></li><li class=""><a href="https://www.buymeacoffee.com/mingrammer" target="_self">Sponsoring</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">C4</h1></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="c4-diagrams"></a><a href="#c4-diagrams" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>C4 Diagrams</h2>
+<p><a href="https://c4model.com/">C4</a> is a standardized model to visualize software architecture.
+You can generate C4 diagrams by using the node and edge classes from the <code>diagrams.c4</code> package:</p>
+<pre><code class="hljs css language-python"><span class="hljs-keyword">from</span> diagrams <span class="hljs-keyword">import</span> Diagram
+<span class="hljs-keyword">from</span> diagrams.c4 <span class="hljs-keyword">import</span> Person, Container, Database, System, SystemBoundary, Relationship
+
+graph_attr = {
+    <span class="hljs-string">"splines"</span>: <span class="hljs-string">"spline"</span>,
+}
+
+<span class="hljs-keyword">with</span> Diagram(<span class="hljs-string">"Container diagram for Internet Banking System"</span>, direction=<span class="hljs-string">"TB"</span>, graph_attr=graph_attr):
+    customer = Person(
+        name=<span class="hljs-string">"Personal Banking Customer"</span>, description=<span class="hljs-string">"A customer of the bank, with personal bank accounts."</span>
+    )
+
+    <span class="hljs-keyword">with</span> SystemBoundary(<span class="hljs-string">"Internet Banking System"</span>):
+        webapp = Container(
+            name=<span class="hljs-string">"Web Application"</span>,
+            technology=<span class="hljs-string">"Java and Spring MVC"</span>,
+            description=<span class="hljs-string">"Delivers the static content and the Internet banking single page application."</span>,
+        )
+
+        spa = Container(
+            name=<span class="hljs-string">"Single-Page Application"</span>,
+            technology=<span class="hljs-string">"Javascript and Angular"</span>,
+            description=<span class="hljs-string">"Provides all of the Internet banking functionality to customers via their web browser."</span>,
+        )
+
+        mobileapp = Container(
+            name=<span class="hljs-string">"Mobile App"</span>,
+            technology=<span class="hljs-string">"Xamarin"</span>,
+            description=<span class="hljs-string">"Provides a limited subset of the Internet banking functionality to customers via their mobile device."</span>,
+        )
+
+        api = Container(
+            name=<span class="hljs-string">"API Application"</span>,
+            technology=<span class="hljs-string">"Java and Spring MVC"</span>,
+            description=<span class="hljs-string">"Provides Internet banking functionality via a JSON/HTTPS API."</span>,
+        )
+
+        database = Database(
+            name=<span class="hljs-string">"Database"</span>,
+            technology=<span class="hljs-string">"Oracle Database Schema"</span>,
+            description=<span class="hljs-string">"Stores user registration information, hashed authentication credentials, access logs, etc."</span>,
+        )
+
+    email = System(name=<span class="hljs-string">"E-mail System"</span>, description=<span class="hljs-string">"The internal Microsoft Exchange e-mail system."</span>, external=<span class="hljs-literal">True</span>)
+
+    mainframe = System(
+        name=<span class="hljs-string">"Mainframe Banking System"</span>,
+        description=<span class="hljs-string">"Stores all of the core banking information about customers, accounts, transactions, etc."</span>,
+        external=<span class="hljs-literal">True</span>,
+    )
+
+    customer &gt;&gt; Relationship(<span class="hljs-string">"Visits bigbank.com/ib using [HTTPS]"</span>) &gt;&gt; webapp
+    customer &gt;&gt; Relationship(<span class="hljs-string">"Views account balances, and makes payments using"</span>) &gt;&gt; [spa, mobileapp]
+    webapp &gt;&gt; Relationship(<span class="hljs-string">"Delivers to the customer's web browser"</span>) &gt;&gt; spa
+    spa &gt;&gt; Relationship(<span class="hljs-string">"Make API calls to [JSON/HTTPS]"</span>) &gt;&gt; api
+    mobileapp &gt;&gt; Relationship(<span class="hljs-string">"Make API calls to [JSON/HTTPS]"</span>) &gt;&gt; api
+
+    api &gt;&gt; Relationship(<span class="hljs-string">"reads from and writes to"</span>) &gt;&gt; database
+    api &gt;&gt; Relationship(<span class="hljs-string">"Sends email using [SMTP]"</span>) &gt;&gt; email
+    api &gt;&gt; Relationship(<span class="hljs-string">"Makes API calls to [XML/HTTPS]"</span>) &gt;&gt; mainframe
+    customer &lt;&lt; Relationship(<span class="hljs-string">"Sends e-mails to"</span>) &lt;&lt; email
+</code></pre>
+<p>It will produce the following diagram:</p>
+<p><img src="/img/c4.png" alt="c4"></p>
+</span></div></article></div><div class="docLastUpdate"><em>Last updated on 9/5/2022</em></div><div class="docs-prevnext"></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#c4-diagrams">C4 Diagrams</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/diagrams.ico" alt="Diagrams" width="66" height="58"/></a><div><h5>Docs</h5><a href="/docs/getting-started/installation">Getting Started</a><a href="/docs/guides/diagram">Guides</a><a href="/docs/nodes/aws">Nodes</a></div><div><h5>More</h5><iframe src="https://ghbtns.com/github-btn.html?user=mingrammer&amp;repo=diagrams&amp;type=star&amp;count=true&amp;size=large" frameBorder="0" scrolling="0" width="170" height="30" title="Star mingrammer/diagrams on GitHub"></iframe></div></section><section class="copyright">Copyright © 2022 mingrammer</section></footer></div></body></html>
