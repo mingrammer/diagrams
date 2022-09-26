@@ -54,11 +54,13 @@ Node classes list of programming provider.
 
 - **diagrams.programming.language.Bash**
 - **diagrams.programming.language.C**
+- **diagrams.programming.language.Cobol**
 - **diagrams.programming.language.Cpp**
 - **diagrams.programming.language.Csharp**
 - **diagrams.programming.language.Dart**
 - **diagrams.programming.language.Elixir**
 - **diagrams.programming.language.Erlang**
+- **diagrams.programming.language.Fortran**
 - **diagrams.programming.language.Go**
 - **diagrams.programming.language.Java**
 - **diagrams.programming.language.Javascript**, **JavaScript** (alias)
@@ -67,6 +69,7 @@ Node classes list of programming provider.
 - **diagrams.programming.language.Matlab**
 - **diagrams.programming.language.Nodejs**, **NodeJS** (alias)
 - **diagrams.programming.language.Php**, **PHP** (alias)
+- **diagrams.programming.language.Powershell**
 - **diagrams.programming.language.Python**
 - **diagrams.programming.language.R**
 - **diagrams.programming.language.Ruby**

@@ -87,6 +87,7 @@ class Diagram:
         graph_attr: dict = {},
         node_attr: dict = {},
         edge_attr: dict = {},
+        preserve_graphviz_file: bool = False
     ):
         """Diagram represents a global diagrams context.
 
@@ -142,6 +143,7 @@ class Diagram:
         self.dot.edge_attr.update(edge_attr)
 
         self.show = show
+        self.preserve_graphviz_file = preserve_graphviz_file
 
     def __str__(self) -> str:
         return str(self.dot)
@@ -153,7 +155,8 @@ class Diagram:
     def __exit__(self, exc_type, exc_value, traceback):
         self.render()
         # Remove the graphviz file leaving only the image.
-        os.remove(self.filename)
+        if (not self.preserve_graphviz_file):
+            os.remove(self.filename)
         setdiagram(None)
 
     def _repr_png_(self):
@@ -504,7 +507,8 @@ class Edge:
                 self._attrs = o.attrs.copy()
                 result.append(o)
             else:
-                result.append(Edge(o, forward=forward, reverse=reverse, **self._attrs))
+                result.append(
+                    Edge(o, forward=forward, reverse=reverse, **self._attrs))
         return result
 
     def connect(self, other: Union["Node", "Edge", List["Node"]]):
