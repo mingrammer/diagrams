@@ -12,10 +12,6 @@ class Beam(_Analytics):
     _icon = "beam.png"
 
 
-class Databricks(_Analytics):
-    _icon = "databricks.png"
-
-
 class Dbt(_Analytics):
     _icon = "dbt.png"
 
