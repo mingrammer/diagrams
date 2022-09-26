@@ -12,4 +12,8 @@ class Jaeger(_Tracing):
     _icon = "jaeger.png"
 
 
+class Tempo(_Tracing):
+    _icon = "tempo.png"
+
+
 # Aliases
