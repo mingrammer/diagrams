@@ -13,6 +13,7 @@ Node classes list of saas provider.
 
 ## saas.analytics
 
+- **diagrams.saas.analytics.Dataform**
 - **diagrams.saas.analytics.Snowflake**
 - **diagrams.saas.analytics.Stitch**
 
