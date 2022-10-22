@@ -212,6 +212,10 @@ Node classes list of onprem provider.
 - **diagrams.onprem.queue.Rabbitmq**, **RabbitMQ** (alias)
 - **diagrams.onprem.queue.Zeromq**, **ZeroMQ** (alias)
 
+## onprem.registry
+
+- **diagrams.onprem.registry.Harbor**
+
 ## onprem.search
 
 - **diagrams.onprem.search.Solr**
