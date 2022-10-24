@@ -1,5 +1,6 @@
 import contextvars
 import os
+import shutil
 import uuid
 from pathlib import Path
 from typing import List, Union, Dict
@@ -87,6 +88,7 @@ class Diagram:
         graph_attr: dict = {},
         node_attr: dict = {},
         edge_attr: dict = {},
+        generate_dot_file: bool = False
     ):
         """Diagram represents a global diagrams context.
 
@@ -109,7 +111,7 @@ class Diagram:
             filename = "_".join(self.name.split()).lower()
         self.filename = filename
         self.dot = Digraph(self.name, filename=self.filename)
-
+        self.generate_dot_file = generate_dot_file
         # Set attributes.
         for k, v in self._default_graph_attrs.items():
             self.dot.graph_attr[k] = v
@@ -140,7 +142,6 @@ class Diagram:
         self.dot.graph_attr.update(graph_attr)
         self.dot.node_attr.update(node_attr)
         self.dot.edge_attr.update(edge_attr)
-
         self.show = show
 
     def __str__(self) -> str:
@@ -186,6 +187,12 @@ class Diagram:
                 self.dot.render(format=one_format, view=self.show, quiet=True)
         else:
             self.dot.render(format=self.outformat, view=self.show, quiet=True)
+
+        if self.generate_dot_file:
+            try:
+                shutil.copy(self.filename, f"{self.filename}.dot")
+            except shutil.Error:
+                print("Dot file not generated")
 
 
 class Cluster:
