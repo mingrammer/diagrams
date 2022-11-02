@@ -207,6 +207,7 @@ Node classes list of onprem provider.
 
 - **diagrams.onprem.queue.Activemq**, **ActiveMQ** (alias)
 - **diagrams.onprem.queue.Celery**
+- **diagrams.onprem.queue.Emqx**, **EMQX** (alias)
 - **diagrams.onprem.queue.Kafka**
 - **diagrams.onprem.queue.Nats**
 - **diagrams.onprem.queue.Rabbitmq**, **RabbitMQ** (alias)
