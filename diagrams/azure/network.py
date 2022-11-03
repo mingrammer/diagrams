@@ -72,6 +72,10 @@ class OnPremisesDataGateways(_Network):
     _icon = "on-premises-data-gateways.png"
 
 
+class PrivateEndpoints(_Network):
+    _icon = "private-endpoints.png"
+
+
 class PublicIpAddresses(_Network):
     _icon = "public-ip-addresses.png"
 

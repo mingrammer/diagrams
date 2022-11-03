@@ -217,6 +217,7 @@ Node classes list of azure provider.
 - **diagrams.azure.network.NetworkSecurityGroupsClassic**
 - **diagrams.azure.network.NetworkWatcher**
 - **diagrams.azure.network.OnPremisesDataGateways**
+- **diagrams.azure.network.PrivateEndpoints**
 - **diagrams.azure.network.PublicIpAddresses**
 - **diagrams.azure.network.ReservedIpAddressesClassic**
 - **diagrams.azure.network.RouteFilters**
