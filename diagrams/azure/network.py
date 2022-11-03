@@ -76,6 +76,10 @@ class PrivateEndpoints(_Network):
     _icon = "private-endpoints.png"
 
 
+class PrivateLinkServices(_Network):
+    _icon = "private-link-services.png"
+
+
 class PublicIpAddresses(_Network):
     _icon = "public-ip-addresses.png"
 
