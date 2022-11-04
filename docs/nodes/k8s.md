@@ -41,6 +41,7 @@ Node classes list of k8s provider.
 - **diagrams.k8s.ecosystem.Helm**
 - **diagrams.k8s.ecosystem.Krew**
 - **diagrams.k8s.ecosystem.Kustomize**
+- **diagrams.k8s.ecosystem.Tanka**
 
 ## k8s.group
 
