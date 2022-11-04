@@ -8,8 +8,16 @@ class _Infra(_K8S):
     _icon_dir = "resources/k8s/infra"
 
 
+class Cluster(_Infra):
+    _icon = "cluster.png"
+
+
 class ETCD(_Infra):
     _icon = "etcd.png"
+
+
+class Kubernetes(_Infra):
+    _icon = "kubernetes.png"
 
 
 class Master(_Infra):

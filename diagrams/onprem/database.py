@@ -76,6 +76,10 @@ class Postgresql(_Database):
     _icon = "postgresql.png"
 
 
+class Ravendb(_Database):
+    _icon = "ravendb.png"
+
+
 class Scylla(_Database):
     _icon = "scylla.png"
 
