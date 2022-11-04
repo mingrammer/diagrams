@@ -21,6 +21,7 @@ Node classes list of saas provider.
 
 - **diagrams.saas.cdn.Akamai**
 - **diagrams.saas.cdn.Cloudflare**
+- **diagrams.saas.cdn.Fastly**
 
 ## saas.chat
 
