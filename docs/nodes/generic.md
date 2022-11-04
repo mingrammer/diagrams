@@ -24,11 +24,14 @@ Node classes list of generic provider.
 
 ## generic.network
 
+- **diagrams.generic.network.Accesspoint**
 - **diagrams.generic.network.Firewall**
+- **diagrams.generic.network.Layer3Switch**
 - **diagrams.generic.network.Router**
 - **diagrams.generic.network.Subnet**
 - **diagrams.generic.network.Switch**
 - **diagrams.generic.network.VPN**
+- **diagrams.generic.network.Workstation**
 
 ## generic.os
 
