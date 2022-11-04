@@ -8,36 +8,240 @@ class _Ml(_Azure):
     _icon_dir = "resources/azure/ml"
 
 
+class AzureOpenai(_Ml):
+    _icon = "azure-openai.png"
+
+
+class AzurePerceptDevice(_Ml):
+    _icon = "azure-percept-device.png"
+
+
+class AzurePerceptSpeech(_Ml):
+    _icon = "azure-percept-speech.png"
+
+
+class AzurePerceptStudio(_Ml):
+    _icon = "azure-percept-studio.png"
+
+
+class AzurePerceptVision(_Ml):
+    _icon = "azure-percept-vision.png"
+
+
 class BatchAI(_Ml):
     _icon = "batch-ai.png"
 
 
-class BotServices(_Ml):
-    _icon = "bot-services.png"
+class Bonsai(_Ml):
+    _icon = "bonsai.png"
+
+
+class BotService(_Ml):
+    _icon = "bot-service.png"
+
+
+class CognitiveServicesAnomalyDetector(_Ml):
+    _icon = "cognitive-services-anomaly-detector.png"
+
+
+class CognitiveServicesBotChannel(_Ml):
+    _icon = "cognitive-services-bot-channel.png"
+
+
+class CognitiveServicesBotProfile(_Ml):
+    _icon = "cognitive-services-bot-profile.png"
+
+
+class CognitiveServicesBotTestInWebChat(_Ml):
+    _icon = "cognitive-services-bot-test-in-web-chat.png"
+
+
+class CognitiveServicesBotWebApp(_Ml):
+    _icon = "cognitive-services-bot-web-app.png"
+
+
+class CognitiveServicesBot(_Ml):
+    _icon = "cognitive-services-bot.png"
+
+
+class CognitiveServicesCommunicationServices(_Ml):
+    _icon = "cognitive-services-communication-services.png"
+
+
+class CognitiveServicesContentExtraction(_Ml):
+    _icon = "cognitive-services-content-extraction.png"
+
+
+class CognitiveServicesContentModerator(_Ml):
+    _icon = "cognitive-services-content-moderator.png"
+
+
+class CognitiveServicesConversation(_Ml):
+    _icon = "cognitive-services-conversation.png"
+
+
+class CognitiveServicesCustomVision(_Ml):
+    _icon = "cognitive-services-custom-vision.png"
+
+
+class CognitiveServicesCustomisedExperience(_Ml):
+    _icon = "cognitive-services-customised-experience.png"
+
+
+class CognitiveServicesDataCollectionRule(_Ml):
+    _icon = "cognitive-services-data-collection-rule.png"
+
+
+class CognitiveServicesDecision(_Ml):
+    _icon = "cognitive-services-decision.png"
+
+
+class CognitiveServicesEnterpriseBot(_Ml):
+    _icon = "cognitive-services-enterprise-bot.png"
+
+
+class CognitiveServicesFaceAPI(_Ml):
+    _icon = "cognitive-services-face-api.png"
+
+
+class CognitiveServicesFormRecogniser(_Ml):
+    _icon = "cognitive-services-form-recogniser.png"
+
+
+class CognitiveServicesHealthAndLifeScience(_Ml):
+    _icon = "cognitive-services-health-and-life-science.png"
+
+
+class CognitiveServicesHealthBot(_Ml):
+    _icon = "cognitive-services-health-bot.png"
+
+
+class CognitiveServicesImmersiveReader(_Ml):
+    _icon = "cognitive-services-immersive-reader.png"
+
+
+class CognitiveServicesInkRecogniser(_Ml):
+    _icon = "cognitive-services-ink-recogniser.png"
+
+
+class CognitiveServicesIntelligence(_Ml):
+    _icon = "cognitive-services-intelligence.png"
+
+
+class CognitiveServicesKnowledge(_Ml):
+    _icon = "cognitive-services-knowledge.png"
+
+
+class CognitiveServicesLanguageUnderstanding(_Ml):
+    _icon = "cognitive-services-language-understanding.png"
+
+
+class CognitiveServicesLanguage(_Ml):
+    _icon = "cognitive-services-language.png"
+
+
+class CognitiveServicesModelOptimisation(_Ml):
+    _icon = "cognitive-services-model-optimisation.png"
+
+
+class CognitiveServicesOcr(_Ml):
+    _icon = "cognitive-services-ocr.png"
+
+
+class CognitiveServicesPersonaliser(_Ml):
+    _icon = "cognitive-services-personaliser.png"
+
+
+class CognitiveServicesQnaBot(_Ml):
+    _icon = "cognitive-services-qna-bot.png"
+
+
+class CognitiveServicesQnaExtracter(_Ml):
+    _icon = "cognitive-services-qna-extracter.png"
+
+
+class CognitiveServicesQnaMaker(_Ml):
+    _icon = "cognitive-services-qna-maker.png"
+
+
+class CognitiveServicesSearch(_Ml):
+    _icon = "cognitive-services-search.png"
+
+
+class CognitiveServicesSpeakerRecognition(_Ml):
+    _icon = "cognitive-services-speaker-recognition.png"
+
+
+class CognitiveServicesSpeech(_Ml):
+    _icon = "cognitive-services-speech.png"
+
+
+class CognitiveServicesTextAnalytics(_Ml):
+    _icon = "cognitive-services-text-analytics.png"
+
+
+class CognitiveServicesTextTranslator(_Ml):
+    _icon = "cognitive-services-text-translator.png"
+
+
+class CognitiveServicesVideoIndexer(_Ml):
+    _icon = "cognitive-services-video-indexer.png"
+
+
+class CognitiveServicesVision(_Ml):
+    _icon = "cognitive-services-vision.png"
 
 
 class CognitiveServices(_Ml):
     _icon = "cognitive-services.png"
 
 
-class GenomicsAccounts(_Ml):
-    _icon = "genomics-accounts.png"
+class GenomicsAccount(_Ml):
+    _icon = "genomics-account.png"
 
 
-class MachineLearningServiceWorkspaces(_Ml):
-    _icon = "machine-learning-service-workspaces.png"
+class MachineLearningStudioWebServiceClassic(_Ml):
+    _icon = "machine-learning-studio-web-service-classic.png"
 
 
-class MachineLearningStudioWebServicePlans(_Ml):
-    _icon = "machine-learning-studio-web-service-plans.png"
+class MachineLearningStudioWebServicePlanClassic(_Ml):
+    _icon = "machine-learning-studio-web-service-plan-classic.png"
 
 
-class MachineLearningStudioWebServices(_Ml):
-    _icon = "machine-learning-studio-web-services.png"
+class MachineLearningStudioWorkspaceClassic(_Ml):
+    _icon = "machine-learning-studio-workspace-classic.png"
 
 
-class MachineLearningStudioWorkspaces(_Ml):
-    _icon = "machine-learning-studio-workspaces.png"
+class MachineLearningStudio(_Ml):
+    _icon = "machine-learning-studio.png"
+
+
+class MachineLearning(_Ml):
+    _icon = "machine-learning.png"
+
+
+class ObjectAnchorsAccount(_Ml):
+    _icon = "object-anchors-account.png"
+
+
+class PowerBiEmbedded(_Ml):
+    _icon = "power-bi-embedded.png"
+
+
+class PowerBi(_Ml):
+    _icon = "power-bi.png"
+
+
+class RemoteRenderingAccount(_Ml):
+    _icon = "remote-rendering-account.png"
+
+
+class SearchService(_Ml):
+    _icon = "search-service.png"
+
+
+class SpatialAnchorsAccount(_Ml):
+    _icon = "spatial-anchors-account.png"
 
 
 # Aliases

@@ -12,64 +12,164 @@ class ArchiveStorage(_Storage):
     _icon = "archive-storage.png"
 
 
-class Azurefxtedgefiler(_Storage):
-    _icon = "azurefxtedgefiler.png"
+class AzureNetappFiles(_Storage):
+    _icon = "azure-netapp-files.png"
 
 
-class BlobStorage(_Storage):
-    _icon = "blob-storage.png"
+class DataBoxEdge(_Storage):
+    _icon = "data-box-edge.png"
 
 
-class DataBoxEdgeDataBoxGateway(_Storage):
-    _icon = "data-box-edge-data-box-gateway.png"
+class DataBoxGateway(_Storage):
+    _icon = "data-box-gateway.png"
 
 
 class DataBox(_Storage):
     _icon = "data-box.png"
 
 
-class DataLakeStorage(_Storage):
-    _icon = "data-lake-storage.png"
+class DataCatalog(_Storage):
+    _icon = "data-catalog.png"
 
 
-class GeneralStorage(_Storage):
-    _icon = "general-storage.png"
+class DataShare(_Storage):
+    _icon = "data-share.png"
 
 
-class NetappFiles(_Storage):
-    _icon = "netapp-files.png"
+class DiskEncryptionSet(_Storage):
+    _icon = "disk-encryption-set.png"
 
 
-class QueuesStorage(_Storage):
-    _icon = "queues-storage.png"
+class DiskPool(_Storage):
+    _icon = "disk-pool.png"
 
 
-class StorageAccountsClassic(_Storage):
-    _icon = "storage-accounts-classic.png"
+class FileShare(_Storage):
+    _icon = "file-share.png"
 
 
-class StorageAccounts(_Storage):
-    _icon = "storage-accounts.png"
+class ManagedDiskPremiumSsd(_Storage):
+    _icon = "managed-disk-premium-ssd.png"
+
+
+class ManagedDiskSnapshot(_Storage):
+    _icon = "managed-disk-snapshot.png"
+
+
+class ManagedDiskStandardHdd(_Storage):
+    _icon = "managed-disk-standard-hdd.png"
+
+
+class ManagedDiskStandardSsd(_Storage):
+    _icon = "managed-disk-standard-ssd.png"
+
+
+class ManagedDiskUltraSsd(_Storage):
+    _icon = "managed-disk-ultra-ssd.png"
+
+
+class StorageAccountBlobCool(_Storage):
+    _icon = "storage-account-blob-cool.png"
+
+
+class StorageAccountBlobHot(_Storage):
+    _icon = "storage-account-blob-hot.png"
+
+
+class StorageAccountBlobInventory(_Storage):
+    _icon = "storage-account-blob-inventory.png"
+
+
+class StorageAccountBlob(_Storage):
+    _icon = "storage-account-blob.png"
+
+
+class StorageAccountBrowser(_Storage):
+    _icon = "storage-account-browser.png"
+
+
+class StorageAccountClassic(_Storage):
+    _icon = "storage-account-classic.png"
+
+
+class StorageAccountConnectivityCheck(_Storage):
+    _icon = "storage-account-connectivity-check.png"
+
+
+class StorageAccountContainer(_Storage):
+    _icon = "storage-account-container.png"
+
+
+class StorageAccountDataMigration(_Storage):
+    _icon = "storage-account-data-migration.png"
+
+
+class StorageAccountEncryption(_Storage):
+    _icon = "storage-account-encryption.png"
+
+
+class StorageAccountFileShare(_Storage):
+    _icon = "storage-account-file-share.png"
+
+
+class StorageAccountLifecycleManagement(_Storage):
+    _icon = "storage-account-lifecycle-management.png"
+
+
+class StorageAccountNetworking(_Storage):
+    _icon = "storage-account-networking.png"
+
+
+class StorageAccountObjectReplication(_Storage):
+    _icon = "storage-account-object-replication.png"
+
+
+class StorageAccountQueue(_Storage):
+    _icon = "storage-account-queue.png"
+
+
+class StorageAccountRecovery(_Storage):
+    _icon = "storage-account-recovery.png"
+
+
+class StorageAccountResourceSharingCors(_Storage):
+    _icon = "storage-account-resource-sharing-cors.png"
+
+
+class StorageAccountSharedAccessSignature(_Storage):
+    _icon = "storage-account-shared-access-signature.png"
+
+
+class StorageAccountTable(_Storage):
+    _icon = "storage-account-table.png"
+
+
+class StorageAccountUpgrade(_Storage):
+    _icon = "storage-account-upgrade.png"
+
+
+class StorageAccount(_Storage):
+    _icon = "storage-account.png"
 
 
 class StorageExplorer(_Storage):
     _icon = "storage-explorer.png"
 
 
-class StorageSyncServices(_Storage):
-    _icon = "storage-sync-services.png"
+class StorageSyncNetwork(_Storage):
+    _icon = "storage-sync-network.png"
 
 
-class StorsimpleDataManagers(_Storage):
-    _icon = "storsimple-data-managers.png"
+class StorageSyncRegisteredServer(_Storage):
+    _icon = "storage-sync-registered-server.png"
 
 
-class StorsimpleDeviceManagers(_Storage):
-    _icon = "storsimple-device-managers.png"
+class StorageSyncService(_Storage):
+    _icon = "storage-sync-service.png"
 
 
-class TableStorage(_Storage):
-    _icon = "table-storage.png"
+class StorsimpleDataManager(_Storage):
+    _icon = "storsimple-data-manager.png"
 
 
 # Aliases
