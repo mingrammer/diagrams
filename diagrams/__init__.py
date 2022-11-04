@@ -260,11 +260,8 @@ class Cluster:
             self._diagram.subgraph(self.dot)
         setcluster(self._parent)
 
-    def _validate_direction(self, direction: str):
-        direction = direction.upper()
-        if direction in self.__directions:
-            return True
-        return False
+    def _validate_direction(self, direction: str) -> bool:
+        return direction.upper() in self.__directions
 
     def node(self, nodeid: str, label: str, **attrs) -> None:
         """Create a new node in the cluster."""
