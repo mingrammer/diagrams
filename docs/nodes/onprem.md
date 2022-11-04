@@ -219,6 +219,7 @@ Node classes list of onprem provider.
 ## onprem.security
 
 - **diagrams.onprem.security.Bitwarden**
+- **diagrams.onprem.security.Fail2Ban**, **fail2ban** (alias)
 - **diagrams.onprem.security.Trivy**
 - **diagrams.onprem.security.Vault**
 

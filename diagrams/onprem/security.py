@@ -12,6 +12,10 @@ class Bitwarden(_Security):
     _icon = "bitwarden.png"
 
 
+class Fail2Ban(_Security):
+    _icon = "fail2ban.png"
+
+
 class Trivy(_Security):
     _icon = "trivy.png"
 
@@ -21,3 +25,5 @@ class Vault(_Security):
 
 
 # Aliases
+
+fail2ban = Fail2Ban
