@@ -29,6 +29,8 @@ Node classes list of saas provider.
 - **diagrams.saas.chat.Slack**
 - **diagrams.saas.chat.Teams**
 - **diagrams.saas.chat.Telegram**
+- **diagrams.saas.chat.Messenger**
+- **diagrams.saas.chat.Line**
 
 ## saas.filesharing
 
