@@ -17,6 +17,7 @@ Node classes list of azure provider.
 - **diagrams.azure.analytics.EventHubs**
 - **diagrams.azure.analytics.Hdinsightclusters**
 - **diagrams.azure.analytics.LogAnalyticsWorkspaces**
+- **diagrams.azure.analytics.PowerBi**
 - **diagrams.azure.analytics.StreamAnalyticsJobs**
 - **diagrams.azure.analytics.SynapseAnalytics**
 
