@@ -24,4 +24,8 @@ class Gitlab(_Vcs):
     _icon = "gitlab.png"
 
 
+class Svn(_Vcs):
+    _icon = "svn.png"
+
+
 # Aliases

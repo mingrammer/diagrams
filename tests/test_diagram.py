@@ -1,6 +1,7 @@
 import os
 import shutil
 import unittest
+import pathlib
 
 from diagrams import Cluster, Diagram, Edge, Node
 from diagrams import getcluster, getdiagram, setcluster, setdiagram
@@ -25,7 +26,7 @@ class DiagramTest(unittest.TestCase):
 
     def test_validate_direction(self):
         # Normal directions.
-        for dir in ("TB", "BT", "LR", "RL"):
+        for dir in ("TB", "BT", "LR", "RL", "tb"):
             Diagram(direction=dir)
 
         # Invalid directions.
@@ -35,7 +36,7 @@ class DiagramTest(unittest.TestCase):
 
     def test_validate_curvestyle(self):
         # Normal directions.
-        for cvs in ("ortho", "curved"):
+        for cvs in ("ortho", "curved", "CURVED"):
             Diagram(curvestyle=cvs)
 
         # Invalid directions.
@@ -45,7 +46,7 @@ class DiagramTest(unittest.TestCase):
 
     def test_validate_outformat(self):
         # Normal output formats.
-        for fmt in ("png", "jpg", "svg", "pdf"):
+        for fmt in ("png", "jpg", "svg", "pdf", "PNG", "dot"):
             Diagram(outformat=fmt)
 
         # Invalid output formats.
@@ -106,6 +107,24 @@ class DiagramTest(unittest.TestCase):
         with Diagram(show=False):
             Node("node1")
         self.assertTrue(os.path.exists(f"{self.name}.png"))
+    
+    def test_autolabel(self):
+        with Diagram(name=os.path.join(self.name, "nodes_to_node"), show=False):
+            node1 = Node("node1")
+            self.assertTrue(node1.label,"Node\nnode1")
+
+
+    def test_outformat_list(self):
+        """Check that outformat render all the files from the list."""
+        self.name = 'diagrams_image'
+        with Diagram(show=False, outformat=["dot", "png"]):
+            Node("node1")
+        # both files must exist
+        self.assertTrue(os.path.exists(f"{self.name}.png"))
+        self.assertTrue(os.path.exists(f"{self.name}.dot"))
+
+        # clean the dot file as it only generated here
+        os.remove(self.name + ".dot")
 
 
 class ClusterTest(unittest.TestCase):
@@ -283,3 +302,16 @@ class EdgeTest(unittest.TestCase):
                 self.assertEqual(
                     nodes << Edge(color="green", label="6.3") << Edge(color="pink", label="6.4") << node1, node1
                 )
+
+
+class ResourcesTest(unittest.TestCase):
+    def test_folder_depth(self):
+        """
+        The code currently only handles resource folders up to a dir depth of 2
+        i.e. resources/<provider>/<type>/<image>, so check that this depth isn't
+        exceeded.
+        """
+        resources_dir = pathlib.Path(__file__).parent.parent / 'resources'
+        max_depth = max(os.path.relpath(d, resources_dir).count(os.sep) + 1
+                        for d, _, _ in os.walk(resources_dir))
+        self.assertLessEqual(max_depth, 2)

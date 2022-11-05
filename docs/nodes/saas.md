@@ -10,6 +10,7 @@ Node classes list of saas provider.
 - **diagrams.saas.alerting.Newrelic**
 - **diagrams.saas.alerting.Opsgenie**
 - **diagrams.saas.alerting.Pushover**
+- **diagrams.saas.alerting.Xmatters**
 
 ## saas.analytics
 
@@ -20,6 +21,7 @@ Node classes list of saas provider.
 
 - **diagrams.saas.cdn.Akamai**
 - **diagrams.saas.cdn.Cloudflare**
+- **diagrams.saas.cdn.Fastly**
 
 ## saas.chat
 
@@ -29,10 +31,16 @@ Node classes list of saas provider.
 - **diagrams.saas.chat.Slack**
 - **diagrams.saas.chat.Teams**
 - **diagrams.saas.chat.Telegram**
+- **diagrams.saas.chat.Messenger**
+- **diagrams.saas.chat.Line**
 
 ## saas.filesharing
 
 - **diagrams.saas.filesharing.Nextcloud**
+
+## saas.communication
+
+- **diagrams.saas.communication.Twilio**
 
 ## saas.identity
 

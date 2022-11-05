@@ -42,13 +42,13 @@ with Diagram("Clustered Web Services", show=False):
                      ECS("web3")]
 
     with Cluster("DB Cluster"):
-        db_main = RDS("userdb")
-        db_main - [RDS("userdb ro")]
+        db_primary = RDS("userdb")
+        db_primary - [RDS("userdb ro")]
 
     memcached = ElastiCache("memcached")
 
     dns >> lb >> svc_group
-    svc_group >> db_main
+    svc_group >> db_primary
     svc_group >> memcached
 ```
 
@@ -196,14 +196,14 @@ with Diagram("Advanced Web Service with On-Premise", show=False):
             Server("grpc3")]
 
     with Cluster("Sessions HA"):
-        main = Redis("session")
-        main - Redis("replica") << metrics
-        grpcsvc >> main
+        primary = Redis("session")
+        primary - Redis("replica") << metrics
+        grpcsvc >> primary
 
     with Cluster("Database HA"):
-        main = PostgreSQL("users")
-        main - PostgreSQL("replica") << metrics
-        grpcsvc >> main
+        primary = PostgreSQL("users")
+        primary - PostgreSQL("replica") << metrics
+        grpcsvc >> primary
 
     aggregator = Fluentd("logging")
     aggregator >> Kafka("stream") >> Spark("analytics")
@@ -239,14 +239,14 @@ with Diagram(name="Advanced Web Service with On-Premise (colored)", show=False):
             Server("grpc3")]
 
     with Cluster("Sessions HA"):
-        main = Redis("session")
-        main - Edge(color="brown", style="dashed") - Redis("replica") << Edge(label="collect") << metrics
-        grpcsvc >> Edge(color="brown") >> main
+        primary = Redis("session")
+        primary - Edge(color="brown", style="dashed") - Redis("replica") << Edge(label="collect") << metrics
+        grpcsvc >> Edge(color="brown") >> primary
 
     with Cluster("Database HA"):
-        main = PostgreSQL("users")
-        main - Edge(color="brown", style="dotted") - PostgreSQL("replica") << Edge(label="collect") << metrics
-        grpcsvc >> Edge(color="black") >> main
+        primary = PostgreSQL("users")
+        primary - Edge(color="brown", style="dotted") - PostgreSQL("replica") << Edge(label="collect") << metrics
+        grpcsvc >> Edge(color="black") >> primary
 
     aggregator = Fluentd("logging")
     aggregator >> Edge(label="parse") >> Kafka("stream") >> Edge(color="black", style="bold") >> Spark("analytics")

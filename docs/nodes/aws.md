@@ -57,6 +57,7 @@ Node classes list of aws provider.
 
 ## aws.compute
 
+- **diagrams.aws.compute.AppRunner**
 - **diagrams.aws.compute.ApplicationAutoScaling**, **AutoScaling** (alias)
 - **diagrams.aws.compute.Batch**
 - **diagrams.aws.compute.ComputeOptimizer**
@@ -301,6 +302,7 @@ Node classes list of aws provider.
 ## aws.management
 
 - **diagrams.aws.management.AutoScaling**
+- **diagrams.aws.management.Chatbot**
 - **diagrams.aws.management.CloudformationChangeSet**
 - **diagrams.aws.management.CloudformationStack**
 - **diagrams.aws.management.CloudformationTemplate**

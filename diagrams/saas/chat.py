@@ -32,4 +32,12 @@ class Telegram(_Chat):
     _icon = "telegram.png"
 
 
+class Messenger(_Chat):
+    _icon = "messenger.png"
+
+
+class Line(_Chat):
+    _icon = "line.png"
+
+
 # Aliases

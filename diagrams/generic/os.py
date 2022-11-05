@@ -28,6 +28,10 @@ class LinuxGeneral(_Os):
     _icon = "linux-general.png"
 
 
+class Raspbian(_Os):
+    _icon = "raspbian.png"
+
+
 class Suse(_Os):
     _icon = "suse.png"
 

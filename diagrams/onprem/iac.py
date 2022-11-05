@@ -20,6 +20,10 @@ class Awx(_Iac):
     _icon = "awx.png"
 
 
+class Puppet(_Iac):
+    _icon = "puppet.png"
+
+
 class Terraform(_Iac):
     _icon = "terraform.png"
 

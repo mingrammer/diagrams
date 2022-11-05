@@ -41,11 +41,13 @@ Node classes list of programming provider.
 - **diagrams.programming.framework.Fastapi**, **FastAPI** (alias)
 - **diagrams.programming.framework.Flask**
 - **diagrams.programming.framework.Flutter**
+- **diagrams.programming.framework.Graphql**, **GraphQL** (alias)
 - **diagrams.programming.framework.Laravel**
 - **diagrams.programming.framework.Micronaut**
 - **diagrams.programming.framework.Rails**
 - **diagrams.programming.framework.React**
 - **diagrams.programming.framework.Spring**
+- **diagrams.programming.framework.Starlette**
 - **diagrams.programming.framework.Vue**
 
 ## programming.language
@@ -61,6 +63,7 @@ Node classes list of programming provider.
 - **diagrams.programming.language.Java**
 - **diagrams.programming.language.Javascript**, **JavaScript** (alias)
 - **diagrams.programming.language.Kotlin**
+- **diagrams.programming.language.Latex**
 - **diagrams.programming.language.Matlab**
 - **diagrams.programming.language.Nodejs**, **NodeJS** (alias)
 - **diagrams.programming.language.Php**, **PHP** (alias)
@@ -71,3 +74,7 @@ Node classes list of programming provider.
 - **diagrams.programming.language.Scala**
 - **diagrams.programming.language.Swift**
 - **diagrams.programming.language.Typescript**, **TypeScript** (alias)
+
+## programming.runtime
+
+- **diagrams.programming.runtime.Dapr**

@@ -20,6 +20,10 @@ class Dbt(_Analytics):
     _icon = "dbt.png"
 
 
+class Dremio(_Analytics):
+    _icon = "dremio.png"
+
+
 class Flink(_Analytics):
     _icon = "flink.png"
 

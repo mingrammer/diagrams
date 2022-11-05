@@ -8,6 +8,10 @@ class _Compute(_AWS):
     _icon_dir = "resources/aws/compute"
 
 
+class AppRunner(_Compute):
+    _icon = "app-runner.png"
+
+
 class ApplicationAutoScaling(_Compute):
     _icon = "application-auto-scaling.png"
 
