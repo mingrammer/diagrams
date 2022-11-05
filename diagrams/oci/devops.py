@@ -8,24 +8,20 @@ class _Devops(_OCI):
     _icon_dir = "resources/oci/devops"
 
 
-class APIGatewayWhite(_Devops):
-    _icon = "api-gateway-white.png"
+class Analytics(_Devops):
+    _icon = "analytics.png"
 
 
 class APIGateway(_Devops):
     _icon = "api-gateway.png"
 
 
-class APIServiceWhite(_Devops):
-    _icon = "api-service-white.png"
-
-
 class APIService(_Devops):
     _icon = "api-service.png"
 
 
-class ResourceMgmtWhite(_Devops):
-    _icon = "resource-mgmt-white.png"
+class MarketPlace(_Devops):
+    _icon = "market-place.png"
 
 
 class ResourceMgmt(_Devops):

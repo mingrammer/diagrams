@@ -8,64 +8,44 @@ class _Network(_OCI):
     _icon_dir = "resources/oci/network"
 
 
-class DrgWhite(_Network):
-    _icon = "drg-white.png"
+class CloudService(_Network):
+    _icon = "cloud-service.png"
 
 
 class Drg(_Network):
     _icon = "drg.png"
 
 
-class FirewallWhite(_Network):
-    _icon = "firewall-white.png"
-
-
 class Firewall(_Network):
     _icon = "firewall.png"
-
-
-class InternetGatewayWhite(_Network):
-    _icon = "internet-gateway-white.png"
 
 
 class InternetGateway(_Network):
     _icon = "internet-gateway.png"
 
 
-class LoadBalancerWhite(_Network):
-    _icon = "load-balancer-white.png"
-
-
 class LoadBalancer(_Network):
     _icon = "load-balancer.png"
-
-
-class RouteTableWhite(_Network):
-    _icon = "route-table-white.png"
 
 
 class RouteTable(_Network):
     _icon = "route-table.png"
 
 
-class SecurityListsWhite(_Network):
-    _icon = "security-lists-white.png"
+class Router(_Network):
+    _icon = "router.png"
 
 
 class SecurityLists(_Network):
     _icon = "security-lists.png"
 
 
-class ServiceGatewayWhite(_Network):
-    _icon = "service-gateway-white.png"
-
-
 class ServiceGateway(_Network):
     _icon = "service-gateway.png"
 
 
-class VcnWhite(_Network):
-    _icon = "vcn-white.png"
+class Switch(_Network):
+    _icon = "switch.png"
 
 
 class Vcn(_Network):
