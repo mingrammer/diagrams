@@ -8,6 +8,14 @@ class _Analytics(_Saas):
     _icon_dir = "resources/saas/analytics"
 
 
+class Hotjar(_Analytics):
+    _icon = "hotjar.png"
+
+
+class Mixpanel(_Analytics):
+    _icon = "mixpanel.png"
+
+
 class Snowflake(_Analytics):
     _icon = "snowflake.png"
 
