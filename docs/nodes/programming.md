@@ -104,6 +104,9 @@ Node classes list of programming provider.
 <img width="30" src="/img/resources/programming/framework/flutter.png" alt="Flutter" style="float: left; padding-right: 5px;" >
 **diagrams.programming.framework.Flutter**
 
+<img width="30" src="/img/resources/programming/framework/graphql.png" alt="Graphql" style="float: left; padding-right: 5px;" >
+**diagrams.programming.framework.Graphql**, **GraphQL** (alias)
+
 <img width="30" src="/img/resources/programming/framework/laravel.png" alt="Laravel" style="float: left; padding-right: 5px;" >
 **diagrams.programming.framework.Laravel**
 
@@ -118,6 +121,9 @@ Node classes list of programming provider.
 
 <img width="30" src="/img/resources/programming/framework/spring.png" alt="Spring" style="float: left; padding-right: 5px;" >
 **diagrams.programming.framework.Spring**
+
+<img width="30" src="/img/resources/programming/framework/starlette.png" alt="Starlette" style="float: left; padding-right: 5px;" >
+**diagrams.programming.framework.Starlette**
 
 <img width="30" src="/img/resources/programming/framework/vue.png" alt="Vue" style="float: left; padding-right: 5px;" >
 **diagrams.programming.framework.Vue**
@@ -158,6 +164,9 @@ Node classes list of programming provider.
 <img width="30" src="/img/resources/programming/language/kotlin.png" alt="Kotlin" style="float: left; padding-right: 5px;" >
 **diagrams.programming.language.Kotlin**
 
+<img width="30" src="/img/resources/programming/language/latex.png" alt="Latex" style="float: left; padding-right: 5px;" >
+**diagrams.programming.language.Latex**
+
 <img width="30" src="/img/resources/programming/language/matlab.png" alt="Matlab" style="float: left; padding-right: 5px;" >
 **diagrams.programming.language.Matlab**
 
@@ -187,3 +196,9 @@ Node classes list of programming provider.
 
 <img width="30" src="/img/resources/programming/language/typescript.png" alt="Typescript" style="float: left; padding-right: 5px;" >
 **diagrams.programming.language.Typescript**, **TypeScript** (alias)
+
+## programming.runtime
+
+
+<img width="30" src="/img/resources/programming/runtime/dapr.png" alt="Dapr" style="float: left; padding-right: 5px;" >
+**diagrams.programming.runtime.Dapr**

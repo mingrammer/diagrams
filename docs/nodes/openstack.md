@@ -5,9 +5,6 @@ title: OpenStack
 
 Node classes list of openstack provider.
 
-## openstack.adjacentenablers
-
-
 ## openstack.apiproxies
 
 
@@ -41,7 +38,7 @@ Node classes list of openstack provider.
 ## openstack.billing
 
 
-<img width="30" src="/img/resources/openstack/operations/billing/cloudkitty.png" alt="Cloudkitty" style="float: left; padding-right: 5px;" >
+<img width="30" src="/img/resources/openstack/billing/cloudkitty.png" alt="Cloudkitty" style="float: left; padding-right: 5px;" >
 **diagrams.openstack.billing.Cloudkitty**, **CloudKitty** (alias)
 
 ## openstack.compute
@@ -59,28 +56,28 @@ Node classes list of openstack provider.
 ## openstack.containerservices
 
 
-<img width="30" src="/img/resources/openstack/adjacentenablers/containerservices/kuryr.png" alt="Kuryr" style="float: left; padding-right: 5px;" >
+<img width="30" src="/img/resources/openstack/containerservices/kuryr.png" alt="Kuryr" style="float: left; padding-right: 5px;" >
 **diagrams.openstack.containerservices.Kuryr**
 
 ## openstack.deployment
 
 
-<img width="30" src="/img/resources/openstack/lifecyclemanagement/deployment/ansible.png" alt="Ansible" style="float: left; padding-right: 5px;" >
+<img width="30" src="/img/resources/openstack/deployment/ansible.png" alt="Ansible" style="float: left; padding-right: 5px;" >
 **diagrams.openstack.deployment.Ansible**
 
-<img width="30" src="/img/resources/openstack/lifecyclemanagement/deployment/charms.png" alt="Charms" style="float: left; padding-right: 5px;" >
+<img width="30" src="/img/resources/openstack/deployment/charms.png" alt="Charms" style="float: left; padding-right: 5px;" >
 **diagrams.openstack.deployment.Charms**
 
-<img width="30" src="/img/resources/openstack/lifecyclemanagement/deployment/chef.png" alt="Chef" style="float: left; padding-right: 5px;" >
+<img width="30" src="/img/resources/openstack/deployment/chef.png" alt="Chef" style="float: left; padding-right: 5px;" >
 **diagrams.openstack.deployment.Chef**
 
-<img width="30" src="/img/resources/openstack/lifecyclemanagement/deployment/helm.png" alt="Helm" style="float: left; padding-right: 5px;" >
+<img width="30" src="/img/resources/openstack/deployment/helm.png" alt="Helm" style="float: left; padding-right: 5px;" >
 **diagrams.openstack.deployment.Helm**
 
-<img width="30" src="/img/resources/openstack/lifecyclemanagement/deployment/kolla.png" alt="Kolla" style="float: left; padding-right: 5px;" >
+<img width="30" src="/img/resources/openstack/deployment/kolla.png" alt="Kolla" style="float: left; padding-right: 5px;" >
 **diagrams.openstack.deployment.Kolla**, **KollaAnsible** (alias)
 
-<img width="30" src="/img/resources/openstack/lifecyclemanagement/deployment/tripleo.png" alt="Tripleo" style="float: left; padding-right: 5px;" >
+<img width="30" src="/img/resources/openstack/deployment/tripleo.png" alt="Tripleo" style="float: left; padding-right: 5px;" >
 **diagrams.openstack.deployment.Tripleo**, **TripleO** (alias)
 
 ## openstack.frontend
@@ -89,22 +86,19 @@ Node classes list of openstack provider.
 <img width="30" src="/img/resources/openstack/frontend/horizon.png" alt="Horizon" style="float: left; padding-right: 5px;" >
 **diagrams.openstack.frontend.Horizon**
 
-## openstack.lifecyclemanagement
-
-
 ## openstack.monitoring
 
 
-<img width="30" src="/img/resources/openstack/operations/monitoring/monasca.png" alt="Monasca" style="float: left; padding-right: 5px;" >
+<img width="30" src="/img/resources/openstack/monitoring/monasca.png" alt="Monasca" style="float: left; padding-right: 5px;" >
 **diagrams.openstack.monitoring.Monasca**
 
-<img width="30" src="/img/resources/openstack/operations/monitoring/telemetry.png" alt="Telemetry" style="float: left; padding-right: 5px;" >
+<img width="30" src="/img/resources/openstack/monitoring/telemetry.png" alt="Telemetry" style="float: left; padding-right: 5px;" >
 **diagrams.openstack.monitoring.Telemetry**
 
 ## openstack.multiregion
 
 
-<img width="30" src="/img/resources/openstack/operations/multiregion/tricircle.png" alt="Tricircle" style="float: left; padding-right: 5px;" >
+<img width="30" src="/img/resources/openstack/multiregion/tricircle.png" alt="Tricircle" style="float: left; padding-right: 5px;" >
 **diagrams.openstack.multiregion.Tricircle**
 
 ## openstack.networking
@@ -122,25 +116,22 @@ Node classes list of openstack provider.
 ## openstack.nfv
 
 
-<img width="30" src="/img/resources/openstack/adjacentenablers/nfv/tacker.png" alt="Tacker" style="float: left; padding-right: 5px;" >
+<img width="30" src="/img/resources/openstack/nfv/tacker.png" alt="Tacker" style="float: left; padding-right: 5px;" >
 **diagrams.openstack.nfv.Tacker**
-
-## openstack.operations
-
 
 ## openstack.optimization
 
 
-<img width="30" src="/img/resources/openstack/operations/optimization/congress.png" alt="Congress" style="float: left; padding-right: 5px;" >
+<img width="30" src="/img/resources/openstack/optimization/congress.png" alt="Congress" style="float: left; padding-right: 5px;" >
 **diagrams.openstack.optimization.Congress**
 
-<img width="30" src="/img/resources/openstack/operations/optimization/rally.png" alt="Rally" style="float: left; padding-right: 5px;" >
+<img width="30" src="/img/resources/openstack/optimization/rally.png" alt="Rally" style="float: left; padding-right: 5px;" >
 **diagrams.openstack.optimization.Rally**
 
-<img width="30" src="/img/resources/openstack/operations/optimization/vitrage.png" alt="Vitrage" style="float: left; padding-right: 5px;" >
+<img width="30" src="/img/resources/openstack/optimization/vitrage.png" alt="Vitrage" style="float: left; padding-right: 5px;" >
 **diagrams.openstack.optimization.Vitrage**
 
-<img width="30" src="/img/resources/openstack/operations/optimization/watcher.png" alt="Watcher" style="float: left; padding-right: 5px;" >
+<img width="30" src="/img/resources/openstack/optimization/watcher.png" alt="Watcher" style="float: left; padding-right: 5px;" >
 **diagrams.openstack.optimization.Watcher**
 
 ## openstack.orchestration
@@ -164,13 +155,13 @@ Node classes list of openstack provider.
 ## openstack.packaging
 
 
-<img width="30" src="/img/resources/openstack/lifecyclemanagement/packaging/loci.png" alt="LOCI" style="float: left; padding-right: 5px;" >
+<img width="30" src="/img/resources/openstack/packaging/loci.png" alt="LOCI" style="float: left; padding-right: 5px;" >
 **diagrams.openstack.packaging.LOCI**
 
-<img width="30" src="/img/resources/openstack/lifecyclemanagement/packaging/puppet.png" alt="Puppet" style="float: left; padding-right: 5px;" >
+<img width="30" src="/img/resources/openstack/packaging/puppet.png" alt="Puppet" style="float: left; padding-right: 5px;" >
 **diagrams.openstack.packaging.Puppet**
 
-<img width="30" src="/img/resources/openstack/lifecyclemanagement/packaging/rpm.png" alt="RPM" style="float: left; padding-right: 5px;" >
+<img width="30" src="/img/resources/openstack/packaging/rpm.png" alt="RPM" style="float: left; padding-right: 5px;" >
 **diagrams.openstack.packaging.RPM**
 
 ## openstack.sharedservices

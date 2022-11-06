@@ -26,6 +26,9 @@ Node classes list of onprem provider.
 <img width="30" src="/img/resources/onprem/analytics/dbt.png" alt="Dbt" style="float: left; padding-right: 5px;" >
 **diagrams.onprem.analytics.Dbt**
 
+<img width="30" src="/img/resources/onprem/analytics/dremio.png" alt="Dremio" style="float: left; padding-right: 5px;" >
+**diagrams.onprem.analytics.Dremio**
+
 <img width="30" src="/img/resources/onprem/analytics/flink.png" alt="Flink" style="float: left; padding-right: 5px;" >
 **diagrams.onprem.analytics.Flink**
 
@@ -164,6 +167,9 @@ Node classes list of onprem provider.
 <img width="30" src="/img/resources/onprem/container/gvisor.png" alt="Gvisor" style="float: left; padding-right: 5px;" >
 **diagrams.onprem.container.Gvisor**
 
+<img width="30" src="/img/resources/onprem/container/k3s.png" alt="K3S" style="float: left; padding-right: 5px;" >
+**diagrams.onprem.container.K3S**
+
 <img width="30" src="/img/resources/onprem/container/lxc.png" alt="Lxc" style="float: left; padding-right: 5px;" >
 **diagrams.onprem.container.Lxc**, **LXC** (alias)
 
@@ -272,6 +278,9 @@ Node classes list of onprem provider.
 <img width="30" src="/img/resources/onprem/iac/awx.png" alt="Awx" style="float: left; padding-right: 5px;" >
 **diagrams.onprem.iac.Awx**
 
+<img width="30" src="/img/resources/onprem/iac/puppet.png" alt="Puppet" style="float: left; padding-right: 5px;" >
+**diagrams.onprem.iac.Puppet**
+
 <img width="30" src="/img/resources/onprem/iac/terraform.png" alt="Terraform" style="float: left; padding-right: 5px;" >
 **diagrams.onprem.iac.Terraform**
 
@@ -329,11 +338,17 @@ Node classes list of onprem provider.
 <img width="30" src="/img/resources/onprem/monitoring/datadog.png" alt="Datadog" style="float: left; padding-right: 5px;" >
 **diagrams.onprem.monitoring.Datadog**
 
+<img width="30" src="/img/resources/onprem/monitoring/dynatrace.png" alt="Dynatrace" style="float: left; padding-right: 5px;" >
+**diagrams.onprem.monitoring.Dynatrace**
+
 <img width="30" src="/img/resources/onprem/monitoring/grafana.png" alt="Grafana" style="float: left; padding-right: 5px;" >
 **diagrams.onprem.monitoring.Grafana**
 
 <img width="30" src="/img/resources/onprem/monitoring/humio.png" alt="Humio" style="float: left; padding-right: 5px;" >
 **diagrams.onprem.monitoring.Humio**
+
+<img width="30" src="/img/resources/onprem/monitoring/nagios.png" alt="Nagios" style="float: left; padding-right: 5px;" >
+**diagrams.onprem.monitoring.Nagios**
 
 <img width="30" src="/img/resources/onprem/monitoring/newrelic.png" alt="Newrelic" style="float: left; padding-right: 5px;" >
 **diagrams.onprem.monitoring.Newrelic**
@@ -434,6 +449,9 @@ Node classes list of onprem provider.
 <img width="30" src="/img/resources/onprem/network/traefik.png" alt="Traefik" style="float: left; padding-right: 5px;" >
 **diagrams.onprem.network.Traefik**
 
+<img width="30" src="/img/resources/onprem/network/tyk.png" alt="Tyk" style="float: left; padding-right: 5px;" >
+**diagrams.onprem.network.Tyk**
+
 <img width="30" src="/img/resources/onprem/network/vyos.png" alt="Vyos" style="float: left; padding-right: 5px;" >
 **diagrams.onprem.network.Vyos**, **VyOS** (alias)
 
@@ -512,11 +530,17 @@ Node classes list of onprem provider.
 <img width="30" src="/img/resources/onprem/vcs/git.png" alt="Git" style="float: left; padding-right: 5px;" >
 **diagrams.onprem.vcs.Git**
 
+<img width="30" src="/img/resources/onprem/vcs/gitea.png" alt="Gitea" style="float: left; padding-right: 5px;" >
+**diagrams.onprem.vcs.Gitea**
+
 <img width="30" src="/img/resources/onprem/vcs/github.png" alt="Github" style="float: left; padding-right: 5px;" >
 **diagrams.onprem.vcs.Github**
 
 <img width="30" src="/img/resources/onprem/vcs/gitlab.png" alt="Gitlab" style="float: left; padding-right: 5px;" >
 **diagrams.onprem.vcs.Gitlab**
+
+<img width="30" src="/img/resources/onprem/vcs/svn.png" alt="Svn" style="float: left; padding-right: 5px;" >
+**diagrams.onprem.vcs.Svn**
 
 ## onprem.workflow
 

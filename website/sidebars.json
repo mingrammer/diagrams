@@ -15,16 +15,19 @@
       "nodes/aws",
       "nodes/azure",
       "nodes/gcp",
+      "nodes/ibm",
       "nodes/k8s",
       "nodes/alibabacloud",
       "nodes/oci",
       "nodes/openstack",
       "nodes/firebase",
-      "nodes/outscale",
+      "nodes/digitalocean",
       "nodes/elastic",
+      "nodes/outscale",
       "nodes/generic",
       "nodes/programming",
       "nodes/saas",
+      "nodes/c4",
       "nodes/custom"
     ]
   }

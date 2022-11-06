@@ -41,8 +41,17 @@ Node classes list of azure provider.
 <img width="30" src="/img/resources/azure/analytics/stream-analytics-jobs.png" alt="StreamAnalyticsJobs" style="float: left; padding-right: 5px;" >
 **diagrams.azure.analytics.StreamAnalyticsJobs**
 
+<img width="30" src="/img/resources/azure/analytics/synapse-analytics.png" alt="SynapseAnalytics" style="float: left; padding-right: 5px;" >
+**diagrams.azure.analytics.SynapseAnalytics**
+
 ## azure.compute
 
+
+<img width="30" src="/img/resources/azure/compute/app-services.png" alt="AppServices" style="float: left; padding-right: 5px;" >
+**diagrams.azure.compute.AppServices**
+
+<img width="30" src="/img/resources/azure/compute/automanaged-vm.png" alt="AutomanagedVM" style="float: left; padding-right: 5px;" >
+**diagrams.azure.compute.AutomanagedVM**
 
 <img width="30" src="/img/resources/azure/compute/availability-sets.png" alt="AvailabilitySets" style="float: left; padding-right: 5px;" >
 **diagrams.azure.compute.AvailabilitySets**
@@ -68,6 +77,9 @@ Node classes list of azure provider.
 <img width="30" src="/img/resources/azure/compute/container-registries.png" alt="ContainerRegistries" style="float: left; padding-right: 5px;" >
 **diagrams.azure.compute.ContainerRegistries**, **ACR** (alias)
 
+<img width="30" src="/img/resources/azure/compute/disk-encryption-sets.png" alt="DiskEncryptionSets" style="float: left; padding-right: 5px;" >
+**diagrams.azure.compute.DiskEncryptionSets**
+
 <img width="30" src="/img/resources/azure/compute/disk-snapshots.png" alt="DiskSnapshots" style="float: left; padding-right: 5px;" >
 **diagrams.azure.compute.DiskSnapshots**
 
@@ -77,17 +89,32 @@ Node classes list of azure provider.
 <img width="30" src="/img/resources/azure/compute/function-apps.png" alt="FunctionApps" style="float: left; padding-right: 5px;" >
 **diagrams.azure.compute.FunctionApps**
 
+<img width="30" src="/img/resources/azure/compute/image-definitions.png" alt="ImageDefinitions" style="float: left; padding-right: 5px;" >
+**diagrams.azure.compute.ImageDefinitions**
+
+<img width="30" src="/img/resources/azure/compute/image-versions.png" alt="ImageVersions" style="float: left; padding-right: 5px;" >
+**diagrams.azure.compute.ImageVersions**
+
 <img width="30" src="/img/resources/azure/compute/kubernetes-services.png" alt="KubernetesServices" style="float: left; padding-right: 5px;" >
 **diagrams.azure.compute.KubernetesServices**, **AKS** (alias)
 
 <img width="30" src="/img/resources/azure/compute/mesh-applications.png" alt="MeshApplications" style="float: left; padding-right: 5px;" >
 **diagrams.azure.compute.MeshApplications**
 
+<img width="30" src="/img/resources/azure/compute/os-images.png" alt="OsImages" style="float: left; padding-right: 5px;" >
+**diagrams.azure.compute.OsImages**
+
 <img width="30" src="/img/resources/azure/compute/sap-hana-on-azure.png" alt="SAPHANAOnAzure" style="float: left; padding-right: 5px;" >
 **diagrams.azure.compute.SAPHANAOnAzure**
 
 <img width="30" src="/img/resources/azure/compute/service-fabric-clusters.png" alt="ServiceFabricClusters" style="float: left; padding-right: 5px;" >
 **diagrams.azure.compute.ServiceFabricClusters**
+
+<img width="30" src="/img/resources/azure/compute/shared-image-galleries.png" alt="SharedImageGalleries" style="float: left; padding-right: 5px;" >
+**diagrams.azure.compute.SharedImageGalleries**
+
+<img width="30" src="/img/resources/azure/compute/spring-cloud.png" alt="SpringCloud" style="float: left; padding-right: 5px;" >
+**diagrams.azure.compute.SpringCloud**
 
 <img width="30" src="/img/resources/azure/compute/vm-classic.png" alt="VMClassic" style="float: left; padding-right: 5px;" >
 **diagrams.azure.compute.VMClassic**
@@ -107,6 +134,9 @@ Node classes list of azure provider.
 <img width="30" src="/img/resources/azure/compute/vm.png" alt="VM" style="float: left; padding-right: 5px;" >
 **diagrams.azure.compute.VM**
 
+<img width="30" src="/img/resources/azure/compute/workspaces.png" alt="Workspaces" style="float: left; padding-right: 5px;" >
+**diagrams.azure.compute.Workspaces**
+
 ## azure.database
 
 
@@ -118,6 +148,12 @@ Node classes list of azure provider.
 
 <img width="30" src="/img/resources/azure/database/cosmos-db.png" alt="CosmosDb" style="float: left; padding-right: 5px;" >
 **diagrams.azure.database.CosmosDb**
+
+<img width="30" src="/img/resources/azure/database/data-explorer-clusters.png" alt="DataExplorerClusters" style="float: left; padding-right: 5px;" >
+**diagrams.azure.database.DataExplorerClusters**
+
+<img width="30" src="/img/resources/azure/database/data-factory.png" alt="DataFactory" style="float: left; padding-right: 5px;" >
+**diagrams.azure.database.DataFactory**
 
 <img width="30" src="/img/resources/azure/database/data-lake.png" alt="DataLake" style="float: left; padding-right: 5px;" >
 **diagrams.azure.database.DataLake**
@@ -137,6 +173,9 @@ Node classes list of azure provider.
 <img width="30" src="/img/resources/azure/database/elastic-job-agents.png" alt="ElasticJobAgents" style="float: left; padding-right: 5px;" >
 **diagrams.azure.database.ElasticJobAgents**
 
+<img width="30" src="/img/resources/azure/database/instance-pools.png" alt="InstancePools" style="float: left; padding-right: 5px;" >
+**diagrams.azure.database.InstancePools**
+
 <img width="30" src="/img/resources/azure/database/managed-databases.png" alt="ManagedDatabases" style="float: left; padding-right: 5px;" >
 **diagrams.azure.database.ManagedDatabases**
 
@@ -154,6 +193,18 @@ Node classes list of azure provider.
 
 <img width="30" src="/img/resources/azure/database/sql-servers.png" alt="SQLServers" style="float: left; padding-right: 5px;" >
 **diagrams.azure.database.SQLServers**
+
+<img width="30" src="/img/resources/azure/database/sql-vm.png" alt="SQLVM" style="float: left; padding-right: 5px;" >
+**diagrams.azure.database.SQLVM**
+
+<img width="30" src="/img/resources/azure/database/sql.png" alt="SQL" style="float: left; padding-right: 5px;" >
+**diagrams.azure.database.SQL**
+
+<img width="30" src="/img/resources/azure/database/ssis-lift-and-shift-ir.png" alt="SsisLiftAndShiftIr" style="float: left; padding-right: 5px;" >
+**diagrams.azure.database.SsisLiftAndShiftIr**
+
+<img width="30" src="/img/resources/azure/database/synapse-analytics.png" alt="SynapseAnalytics" style="float: left; padding-right: 5px;" >
+**diagrams.azure.database.SynapseAnalytics**
 
 <img width="30" src="/img/resources/azure/database/virtual-clusters.png" alt="VirtualClusters" style="float: left; padding-right: 5px;" >
 **diagrams.azure.database.VirtualClusters**
@@ -178,6 +229,9 @@ Node classes list of azure provider.
 
 <img width="30" src="/img/resources/azure/devops/devtest-labs.png" alt="DevtestLabs" style="float: left; padding-right: 5px;" >
 **diagrams.azure.devops.DevtestLabs**
+
+<img width="30" src="/img/resources/azure/devops/lab-services.png" alt="LabServices" style="float: left; padding-right: 5px;" >
+**diagrams.azure.devops.LabServices**
 
 <img width="30" src="/img/resources/azure/devops/pipelines.png" alt="Pipelines" style="float: left; padding-right: 5px;" >
 **diagrams.azure.devops.Pipelines**
@@ -302,6 +356,9 @@ Node classes list of azure provider.
 <img width="30" src="/img/resources/azure/identity/enterprise-applications.png" alt="EnterpriseApplications" style="float: left; padding-right: 5px;" >
 **diagrams.azure.identity.EnterpriseApplications**
 
+<img width="30" src="/img/resources/azure/identity/groups.png" alt="Groups" style="float: left; padding-right: 5px;" >
+**diagrams.azure.identity.Groups**
+
 <img width="30" src="/img/resources/azure/identity/identity-governance.png" alt="IdentityGovernance" style="float: left; padding-right: 5px;" >
 **diagrams.azure.identity.IdentityGovernance**
 
@@ -310,6 +367,9 @@ Node classes list of azure provider.
 
 <img width="30" src="/img/resources/azure/identity/managed-identities.png" alt="ManagedIdentities" style="float: left; padding-right: 5px;" >
 **diagrams.azure.identity.ManagedIdentities**
+
+<img width="30" src="/img/resources/azure/identity/users.png" alt="Users" style="float: left; padding-right: 5px;" >
+**diagrams.azure.identity.Users**
 
 ## azure.integration
 
@@ -347,6 +407,9 @@ Node classes list of azure provider.
 <img width="30" src="/img/resources/azure/integration/logic-apps.png" alt="LogicApps" style="float: left; padding-right: 5px;" >
 **diagrams.azure.integration.LogicApps**
 
+<img width="30" src="/img/resources/azure/integration/partner-topic.png" alt="PartnerTopic" style="float: left; padding-right: 5px;" >
+**diagrams.azure.integration.PartnerTopic**
+
 <img width="30" src="/img/resources/azure/integration/sendgrid-accounts.png" alt="SendgridAccounts" style="float: left; padding-right: 5px;" >
 **diagrams.azure.integration.SendgridAccounts**
 
@@ -364,6 +427,9 @@ Node classes list of azure provider.
 
 <img width="30" src="/img/resources/azure/integration/storsimple-device-managers.png" alt="StorsimpleDeviceManagers" style="float: left; padding-right: 5px;" >
 **diagrams.azure.integration.StorsimpleDeviceManagers**
+
+<img width="30" src="/img/resources/azure/integration/system-topic.png" alt="SystemTopic" style="float: left; padding-right: 5px;" >
+**diagrams.azure.integration.SystemTopic**
 
 ## azure.iot
 
@@ -400,6 +466,12 @@ Node classes list of azure provider.
 
 ## azure.migration
 
+
+<img width="30" src="/img/resources/azure/migration/data-box-edge.png" alt="DataBoxEdge" style="float: left; padding-right: 5px;" >
+**diagrams.azure.migration.DataBoxEdge**
+
+<img width="30" src="/img/resources/azure/migration/data-box.png" alt="DataBox" style="float: left; padding-right: 5px;" >
+**diagrams.azure.migration.DataBox**
 
 <img width="30" src="/img/resources/azure/migration/database-migration-services.png" alt="DatabaseMigrationServices" style="float: left; padding-right: 5px;" >
 **diagrams.azure.migration.DatabaseMigrationServices**
@@ -440,7 +512,7 @@ Node classes list of azure provider.
 ## azure.mobile
 
 
-<img width="30" src="/img/resources/azure/mobile/app-service---mobile.png" alt="AppServiceMobile" style="float: left; padding-right: 5px;" >
+<img width="30" src="/img/resources/azure/mobile/app-service-mobile.png" alt="AppServiceMobile" style="float: left; padding-right: 5px;" >
 **diagrams.azure.mobile.AppServiceMobile**
 
 <img width="30" src="/img/resources/azure/mobile/mobile-engagement.png" alt="MobileEngagement" style="float: left; padding-right: 5px;" >
@@ -536,6 +608,18 @@ Node classes list of azure provider.
 ## azure.security
 
 
+<img width="30" src="/img/resources/azure/security/application-security-groups.png" alt="ApplicationSecurityGroups" style="float: left; padding-right: 5px;" >
+**diagrams.azure.security.ApplicationSecurityGroups**
+
+<img width="30" src="/img/resources/azure/security/conditional-access.png" alt="ConditionalAccess" style="float: left; padding-right: 5px;" >
+**diagrams.azure.security.ConditionalAccess**
+
+<img width="30" src="/img/resources/azure/security/defender.png" alt="Defender" style="float: left; padding-right: 5px;" >
+**diagrams.azure.security.Defender**
+
+<img width="30" src="/img/resources/azure/security/extended-security-updates.png" alt="ExtendedSecurityUpdates" style="float: left; padding-right: 5px;" >
+**diagrams.azure.security.ExtendedSecurityUpdates**
+
 <img width="30" src="/img/resources/azure/security/key-vaults.png" alt="KeyVaults" style="float: left; padding-right: 5px;" >
 **diagrams.azure.security.KeyVaults**
 
@@ -557,7 +641,7 @@ Node classes list of azure provider.
 <img width="30" src="/img/resources/azure/storage/blob-storage.png" alt="BlobStorage" style="float: left; padding-right: 5px;" >
 **diagrams.azure.storage.BlobStorage**
 
-<img width="30" src="/img/resources/azure/storage/data-box-edge---data-box-gateway.png" alt="DataBoxEdgeDataBoxGateway" style="float: left; padding-right: 5px;" >
+<img width="30" src="/img/resources/azure/storage/data-box-edge-data-box-gateway.png" alt="DataBoxEdgeDataBoxGateway" style="float: left; padding-right: 5px;" >
 **diagrams.azure.storage.DataBoxEdgeDataBoxGateway**
 
 <img width="30" src="/img/resources/azure/storage/data-box.png" alt="DataBox" style="float: left; padding-right: 5px;" >

@@ -52,6 +52,10 @@ class InternetAlt2(_General):
     _icon = "internet-alt2.png"
 
 
+class InternetGateway(_General):
+    _icon = "internet-gateway.png"
+
+
 class Marketplace(_General):
     _icon = "marketplace.png"
 

@@ -134,6 +134,9 @@ Node classes list of aws provider.
 ## aws.compute
 
 
+<img width="30" src="/img/resources/aws/compute/app-runner.png" alt="AppRunner" style="float: left; padding-right: 5px;" >
+**diagrams.aws.compute.AppRunner**
+
 <img width="30" src="/img/resources/aws/compute/application-auto-scaling.png" alt="ApplicationAutoScaling" style="float: left; padding-right: 5px;" >
 **diagrams.aws.compute.ApplicationAutoScaling**, **AutoScaling** (alias)
 
@@ -512,6 +515,9 @@ Node classes list of aws provider.
 <img width="30" src="/img/resources/aws/general/internet-alt2.png" alt="InternetAlt2" style="float: left; padding-right: 5px;" >
 **diagrams.aws.general.InternetAlt2**
 
+<img width="30" src="/img/resources/aws/general/internet-gateway.png" alt="InternetGateway" style="float: left; padding-right: 5px;" >
+**diagrams.aws.general.InternetGateway**
+
 <img width="30" src="/img/resources/aws/general/marketplace.png" alt="Marketplace" style="float: left; padding-right: 5px;" >
 **diagrams.aws.general.Marketplace**
 
@@ -796,6 +802,9 @@ Node classes list of aws provider.
 
 <img width="30" src="/img/resources/aws/management/auto-scaling.png" alt="AutoScaling" style="float: left; padding-right: 5px;" >
 **diagrams.aws.management.AutoScaling**
+
+<img width="30" src="/img/resources/aws/management/chatbot.png" alt="Chatbot" style="float: left; padding-right: 5px;" >
+**diagrams.aws.management.Chatbot**
 
 <img width="30" src="/img/resources/aws/management/cloudformation-change-set.png" alt="CloudformationChangeSet" style="float: left; padding-right: 5px;" >
 **diagrams.aws.management.CloudformationChangeSet**

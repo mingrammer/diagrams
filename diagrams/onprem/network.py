@@ -108,6 +108,10 @@ class Traefik(_Network):
     _icon = "traefik.png"
 
 
+class Tyk(_Network):
+    _icon = "tyk.png"
+
+
 class Vyos(_Network):
     _icon = "vyos.png"
 

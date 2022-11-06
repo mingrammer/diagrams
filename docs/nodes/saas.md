@@ -17,6 +17,9 @@ Node classes list of saas provider.
 <img width="30" src="/img/resources/saas/alerting/pushover.png" alt="Pushover" style="float: left; padding-right: 5px;" >
 **diagrams.saas.alerting.Pushover**
 
+<img width="30" src="/img/resources/saas/alerting/xmatters.png" alt="Xmatters" style="float: left; padding-right: 5px;" >
+**diagrams.saas.alerting.Xmatters**
+
 ## saas.analytics
 
 
@@ -35,14 +38,23 @@ Node classes list of saas provider.
 <img width="30" src="/img/resources/saas/cdn/cloudflare.png" alt="Cloudflare" style="float: left; padding-right: 5px;" >
 **diagrams.saas.cdn.Cloudflare**
 
+<img width="30" src="/img/resources/saas/cdn/fastly.png" alt="Fastly" style="float: left; padding-right: 5px;" >
+**diagrams.saas.cdn.Fastly**
+
 ## saas.chat
 
 
 <img width="30" src="/img/resources/saas/chat/discord.png" alt="Discord" style="float: left; padding-right: 5px;" >
 **diagrams.saas.chat.Discord**
 
+<img width="30" src="/img/resources/saas/chat/line.png" alt="Line" style="float: left; padding-right: 5px;" >
+**diagrams.saas.chat.Line**
+
 <img width="30" src="/img/resources/saas/chat/mattermost.png" alt="Mattermost" style="float: left; padding-right: 5px;" >
 **diagrams.saas.chat.Mattermost**
+
+<img width="30" src="/img/resources/saas/chat/messenger.png" alt="Messenger" style="float: left; padding-right: 5px;" >
+**diagrams.saas.chat.Messenger**
 
 <img width="30" src="/img/resources/saas/chat/rocket-chat.png" alt="RocketChat" style="float: left; padding-right: 5px;" >
 **diagrams.saas.chat.RocketChat**
@@ -55,6 +67,12 @@ Node classes list of saas provider.
 
 <img width="30" src="/img/resources/saas/chat/telegram.png" alt="Telegram" style="float: left; padding-right: 5px;" >
 **diagrams.saas.chat.Telegram**
+
+## saas.communication
+
+
+<img width="30" src="/img/resources/saas/communication/twilio.png" alt="Twilio" style="float: left; padding-right: 5px;" >
+**diagrams.saas.communication.Twilio**
 
 ## saas.filesharing
 

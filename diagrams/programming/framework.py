@@ -36,6 +36,10 @@ class Flutter(_Framework):
     _icon = "flutter.png"
 
 
+class Graphql(_Framework):
+    _icon = "graphql.png"
+
+
 class Laravel(_Framework):
     _icon = "laravel.png"
 
@@ -56,6 +60,10 @@ class Spring(_Framework):
     _icon = "spring.png"
 
 
+class Starlette(_Framework):
+    _icon = "starlette.png"
+
+
 class Vue(_Framework):
     _icon = "vue.png"
 
@@ -63,3 +71,4 @@ class Vue(_Framework):
 # Aliases
 
 FastAPI = Fastapi
+GraphQL = Graphql

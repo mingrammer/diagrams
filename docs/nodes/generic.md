@@ -65,6 +65,9 @@ Node classes list of generic provider.
 <img width="30" src="/img/resources/generic/os/linux-general.png" alt="LinuxGeneral" style="float: left; padding-right: 5px;" >
 **diagrams.generic.os.LinuxGeneral**
 
+<img width="30" src="/img/resources/generic/os/raspbian.png" alt="Raspbian" style="float: left; padding-right: 5px;" >
+**diagrams.generic.os.Raspbian**
+
 <img width="30" src="/img/resources/generic/os/suse.png" alt="Suse" style="float: left; padding-right: 5px;" >
 **diagrams.generic.os.Suse**
 
