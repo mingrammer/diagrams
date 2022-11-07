@@ -59,6 +59,9 @@ Node classes list of generic provider.
 <img width="30" src="/img/resources/generic/os/centos.png" alt="Centos" style="float: left; padding-right: 5px;" >
 **diagrams.generic.os.Centos**
 
+<img width="30" src="/img/resources/generic/os/debian.png" alt="Debian" style="float: left; padding-right: 5px;" >
+**diagrams.generic.os.Debian**
+
 <img width="30" src="/img/resources/generic/os/ios.png" alt="IOS" style="float: left; padding-right: 5px;" >
 **diagrams.generic.os.IOS**
 

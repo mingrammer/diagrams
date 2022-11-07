@@ -16,6 +16,10 @@ class Centos(_Os):
     _icon = "centos.png"
 
 
+class Debian(_Os):
+    _icon = "debian.png"
+
+
 class IOS(_Os):
     _icon = "ios.png"
 
