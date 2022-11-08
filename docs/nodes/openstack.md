@@ -7,107 +7,207 @@ Node classes list of openstack provider.
 
 ## openstack.apiproxies
 
-- **diagrams.openstack.apiproxies.EC2API**
+
+<img width="30" src="/img/resources/openstack/apiproxies/ec2api.png" alt="EC2API" style="float: left; padding-right: 5px;" >
+**diagrams.openstack.apiproxies.EC2API**
 
 ## openstack.applicationlifecycle
 
-- **diagrams.openstack.applicationlifecycle.Freezer**
-- **diagrams.openstack.applicationlifecycle.Masakari**
-- **diagrams.openstack.applicationlifecycle.Murano**
-- **diagrams.openstack.applicationlifecycle.Solum**
+
+<img width="30" src="/img/resources/openstack/applicationlifecycle/freezer.png" alt="Freezer" style="float: left; padding-right: 5px;" >
+**diagrams.openstack.applicationlifecycle.Freezer**
+
+<img width="30" src="/img/resources/openstack/applicationlifecycle/masakari.png" alt="Masakari" style="float: left; padding-right: 5px;" >
+**diagrams.openstack.applicationlifecycle.Masakari**
+
+<img width="30" src="/img/resources/openstack/applicationlifecycle/murano.png" alt="Murano" style="float: left; padding-right: 5px;" >
+**diagrams.openstack.applicationlifecycle.Murano**
+
+<img width="30" src="/img/resources/openstack/applicationlifecycle/solum.png" alt="Solum" style="float: left; padding-right: 5px;" >
+**diagrams.openstack.applicationlifecycle.Solum**
 
 ## openstack.baremetal
 
-- **diagrams.openstack.baremetal.Cyborg**
-- **diagrams.openstack.baremetal.Ironic**
+
+<img width="30" src="/img/resources/openstack/baremetal/cyborg.png" alt="Cyborg" style="float: left; padding-right: 5px;" >
+**diagrams.openstack.baremetal.Cyborg**
+
+<img width="30" src="/img/resources/openstack/baremetal/ironic.png" alt="Ironic" style="float: left; padding-right: 5px;" >
+**diagrams.openstack.baremetal.Ironic**
 
 ## openstack.billing
 
-- **diagrams.openstack.billing.Cloudkitty**, **CloudKitty** (alias)
+
+<img width="30" src="/img/resources/openstack/billing/cloudkitty.png" alt="Cloudkitty" style="float: left; padding-right: 5px;" >
+**diagrams.openstack.billing.Cloudkitty**, **CloudKitty** (alias)
 
 ## openstack.compute
 
-- **diagrams.openstack.compute.Nova**
-- **diagrams.openstack.compute.Qinling**
-- **diagrams.openstack.compute.Zun**
+
+<img width="30" src="/img/resources/openstack/compute/nova.png" alt="Nova" style="float: left; padding-right: 5px;" >
+**diagrams.openstack.compute.Nova**
+
+<img width="30" src="/img/resources/openstack/compute/qinling.png" alt="Qinling" style="float: left; padding-right: 5px;" >
+**diagrams.openstack.compute.Qinling**
+
+<img width="30" src="/img/resources/openstack/compute/zun.png" alt="Zun" style="float: left; padding-right: 5px;" >
+**diagrams.openstack.compute.Zun**
 
 ## openstack.containerservices
 
-- **diagrams.openstack.containerservices.Kuryr**
+
+<img width="30" src="/img/resources/openstack/containerservices/kuryr.png" alt="Kuryr" style="float: left; padding-right: 5px;" >
+**diagrams.openstack.containerservices.Kuryr**
 
 ## openstack.deployment
 
-- **diagrams.openstack.deployment.Ansible**
-- **diagrams.openstack.deployment.Charms**
-- **diagrams.openstack.deployment.Chef**
-- **diagrams.openstack.deployment.Helm**
-- **diagrams.openstack.deployment.Kolla**, **KollaAnsible** (alias)
-- **diagrams.openstack.deployment.Tripleo**, **TripleO** (alias)
+
+<img width="30" src="/img/resources/openstack/deployment/ansible.png" alt="Ansible" style="float: left; padding-right: 5px;" >
+**diagrams.openstack.deployment.Ansible**
+
+<img width="30" src="/img/resources/openstack/deployment/charms.png" alt="Charms" style="float: left; padding-right: 5px;" >
+**diagrams.openstack.deployment.Charms**
+
+<img width="30" src="/img/resources/openstack/deployment/chef.png" alt="Chef" style="float: left; padding-right: 5px;" >
+**diagrams.openstack.deployment.Chef**
+
+<img width="30" src="/img/resources/openstack/deployment/helm.png" alt="Helm" style="float: left; padding-right: 5px;" >
+**diagrams.openstack.deployment.Helm**
+
+<img width="30" src="/img/resources/openstack/deployment/kolla.png" alt="Kolla" style="float: left; padding-right: 5px;" >
+**diagrams.openstack.deployment.Kolla**, **KollaAnsible** (alias)
+
+<img width="30" src="/img/resources/openstack/deployment/tripleo.png" alt="Tripleo" style="float: left; padding-right: 5px;" >
+**diagrams.openstack.deployment.Tripleo**, **TripleO** (alias)
 
 ## openstack.frontend
 
-- **diagrams.openstack.frontend.Horizon**
+
+<img width="30" src="/img/resources/openstack/frontend/horizon.png" alt="Horizon" style="float: left; padding-right: 5px;" >
+**diagrams.openstack.frontend.Horizon**
 
 ## openstack.monitoring
 
-- **diagrams.openstack.monitoring.Monasca**
-- **diagrams.openstack.monitoring.Telemetry**
+
+<img width="30" src="/img/resources/openstack/monitoring/monasca.png" alt="Monasca" style="float: left; padding-right: 5px;" >
+**diagrams.openstack.monitoring.Monasca**
+
+<img width="30" src="/img/resources/openstack/monitoring/telemetry.png" alt="Telemetry" style="float: left; padding-right: 5px;" >
+**diagrams.openstack.monitoring.Telemetry**
 
 ## openstack.multiregion
 
-- **diagrams.openstack.multiregion.Tricircle**
+
+<img width="30" src="/img/resources/openstack/multiregion/tricircle.png" alt="Tricircle" style="float: left; padding-right: 5px;" >
+**diagrams.openstack.multiregion.Tricircle**
 
 ## openstack.networking
 
-- **diagrams.openstack.networking.Designate**
-- **diagrams.openstack.networking.Neutron**
-- **diagrams.openstack.networking.Octavia**
+
+<img width="30" src="/img/resources/openstack/networking/designate.png" alt="Designate" style="float: left; padding-right: 5px;" >
+**diagrams.openstack.networking.Designate**
+
+<img width="30" src="/img/resources/openstack/networking/neutron.png" alt="Neutron" style="float: left; padding-right: 5px;" >
+**diagrams.openstack.networking.Neutron**
+
+<img width="30" src="/img/resources/openstack/networking/octavia.png" alt="Octavia" style="float: left; padding-right: 5px;" >
+**diagrams.openstack.networking.Octavia**
 
 ## openstack.nfv
 
-- **diagrams.openstack.nfv.Tacker**
+
+<img width="30" src="/img/resources/openstack/nfv/tacker.png" alt="Tacker" style="float: left; padding-right: 5px;" >
+**diagrams.openstack.nfv.Tacker**
 
 ## openstack.optimization
 
-- **diagrams.openstack.optimization.Congress**
-- **diagrams.openstack.optimization.Rally**
-- **diagrams.openstack.optimization.Vitrage**
-- **diagrams.openstack.optimization.Watcher**
+
+<img width="30" src="/img/resources/openstack/optimization/congress.png" alt="Congress" style="float: left; padding-right: 5px;" >
+**diagrams.openstack.optimization.Congress**
+
+<img width="30" src="/img/resources/openstack/optimization/rally.png" alt="Rally" style="float: left; padding-right: 5px;" >
+**diagrams.openstack.optimization.Rally**
+
+<img width="30" src="/img/resources/openstack/optimization/vitrage.png" alt="Vitrage" style="float: left; padding-right: 5px;" >
+**diagrams.openstack.optimization.Vitrage**
+
+<img width="30" src="/img/resources/openstack/optimization/watcher.png" alt="Watcher" style="float: left; padding-right: 5px;" >
+**diagrams.openstack.optimization.Watcher**
 
 ## openstack.orchestration
 
-- **diagrams.openstack.orchestration.Blazar**
-- **diagrams.openstack.orchestration.Heat**
-- **diagrams.openstack.orchestration.Mistral**
-- **diagrams.openstack.orchestration.Senlin**
-- **diagrams.openstack.orchestration.Zaqar**
+
+<img width="30" src="/img/resources/openstack/orchestration/blazar.png" alt="Blazar" style="float: left; padding-right: 5px;" >
+**diagrams.openstack.orchestration.Blazar**
+
+<img width="30" src="/img/resources/openstack/orchestration/heat.png" alt="Heat" style="float: left; padding-right: 5px;" >
+**diagrams.openstack.orchestration.Heat**
+
+<img width="30" src="/img/resources/openstack/orchestration/mistral.png" alt="Mistral" style="float: left; padding-right: 5px;" >
+**diagrams.openstack.orchestration.Mistral**
+
+<img width="30" src="/img/resources/openstack/orchestration/senlin.png" alt="Senlin" style="float: left; padding-right: 5px;" >
+**diagrams.openstack.orchestration.Senlin**
+
+<img width="30" src="/img/resources/openstack/orchestration/zaqar.png" alt="Zaqar" style="float: left; padding-right: 5px;" >
+**diagrams.openstack.orchestration.Zaqar**
 
 ## openstack.packaging
 
-- **diagrams.openstack.packaging.LOCI**
-- **diagrams.openstack.packaging.Puppet**
-- **diagrams.openstack.packaging.RPM**
+
+<img width="30" src="/img/resources/openstack/packaging/loci.png" alt="LOCI" style="float: left; padding-right: 5px;" >
+**diagrams.openstack.packaging.LOCI**
+
+<img width="30" src="/img/resources/openstack/packaging/puppet.png" alt="Puppet" style="float: left; padding-right: 5px;" >
+**diagrams.openstack.packaging.Puppet**
+
+<img width="30" src="/img/resources/openstack/packaging/rpm.png" alt="RPM" style="float: left; padding-right: 5px;" >
+**diagrams.openstack.packaging.RPM**
 
 ## openstack.sharedservices
 
-- **diagrams.openstack.sharedservices.Barbican**
-- **diagrams.openstack.sharedservices.Glance**
-- **diagrams.openstack.sharedservices.Karbor**
-- **diagrams.openstack.sharedservices.Keystone**
-- **diagrams.openstack.sharedservices.Searchlight**
+
+<img width="30" src="/img/resources/openstack/sharedservices/barbican.png" alt="Barbican" style="float: left; padding-right: 5px;" >
+**diagrams.openstack.sharedservices.Barbican**
+
+<img width="30" src="/img/resources/openstack/sharedservices/glance.png" alt="Glance" style="float: left; padding-right: 5px;" >
+**diagrams.openstack.sharedservices.Glance**
+
+<img width="30" src="/img/resources/openstack/sharedservices/karbor.png" alt="Karbor" style="float: left; padding-right: 5px;" >
+**diagrams.openstack.sharedservices.Karbor**
+
+<img width="30" src="/img/resources/openstack/sharedservices/keystone.png" alt="Keystone" style="float: left; padding-right: 5px;" >
+**diagrams.openstack.sharedservices.Keystone**
+
+<img width="30" src="/img/resources/openstack/sharedservices/searchlight.png" alt="Searchlight" style="float: left; padding-right: 5px;" >
+**diagrams.openstack.sharedservices.Searchlight**
 
 ## openstack.storage
 
-- **diagrams.openstack.storage.Cinder**
-- **diagrams.openstack.storage.Manila**
-- **diagrams.openstack.storage.Swift**
+
+<img width="30" src="/img/resources/openstack/storage/cinder.png" alt="Cinder" style="float: left; padding-right: 5px;" >
+**diagrams.openstack.storage.Cinder**
+
+<img width="30" src="/img/resources/openstack/storage/manila.png" alt="Manila" style="float: left; padding-right: 5px;" >
+**diagrams.openstack.storage.Manila**
+
+<img width="30" src="/img/resources/openstack/storage/swift.png" alt="Swift" style="float: left; padding-right: 5px;" >
+**diagrams.openstack.storage.Swift**
 
 ## openstack.user
 
-- **diagrams.openstack.user.Openstackclient**, **OpenStackClient** (alias)
+
+<img width="30" src="/img/resources/openstack/user/openstackclient.png" alt="Openstackclient" style="float: left; padding-right: 5px;" >
+**diagrams.openstack.user.Openstackclient**, **OpenStackClient** (alias)
 
 ## openstack.workloadprovisioning
 
-- **diagrams.openstack.workloadprovisioning.Magnum**
-- **diagrams.openstack.workloadprovisioning.Sahara**
-- **diagrams.openstack.workloadprovisioning.Trove**
+
+<img width="30" src="/img/resources/openstack/workloadprovisioning/magnum.png" alt="Magnum" style="float: left; padding-right: 5px;" >
+**diagrams.openstack.workloadprovisioning.Magnum**
+
+<img width="30" src="/img/resources/openstack/workloadprovisioning/sahara.png" alt="Sahara" style="float: left; padding-right: 5px;" >
+**diagrams.openstack.workloadprovisioning.Sahara**
+
+<img width="30" src="/img/resources/openstack/workloadprovisioning/trove.png" alt="Trove" style="float: left; padding-right: 5px;" >
+**diagrams.openstack.workloadprovisioning.Trove**

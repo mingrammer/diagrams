@@ -55,7 +55,7 @@ or update the `ALIASES` map in [config.py](config.py).
 Then just run the `./autogen.sh` to generate the added or updated aliases. (cf. [DEVELOPMENT][DEVELOPMENT.md])
 
 > IMPORTANT NOTE: To run `autogen.sh`, you need [round][round] and
-> [inkscape][inkscape] command lines that are used for clearning the image
+> [inkscape][inkscape] command lines that are used for cleaning the image
 > resource filenames.
 >
 > Or you should use the docker image.

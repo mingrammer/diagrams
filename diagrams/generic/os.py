@@ -16,12 +16,20 @@ class Centos(_Os):
     _icon = "centos.png"
 
 
+class Debian(_Os):
+    _icon = "debian.png"
+
+
 class IOS(_Os):
     _icon = "ios.png"
 
 
 class LinuxGeneral(_Os):
     _icon = "linux-general.png"
+
+
+class Raspbian(_Os):
+    _icon = "raspbian.png"
 
 
 class Suse(_Os):
