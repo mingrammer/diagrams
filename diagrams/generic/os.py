@@ -49,5 +49,3 @@ class Windows(_Os):
 
 
 # Aliases
-
-RH = RedHat
