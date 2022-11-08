@@ -12,8 +12,16 @@ class Discord(_Chat):
     _icon = "discord.png"
 
 
+class Line(_Chat):
+    _icon = "line.png"
+
+
 class Mattermost(_Chat):
     _icon = "mattermost.png"
+
+
+class Messenger(_Chat):
+    _icon = "messenger.png"
 
 
 class RocketChat(_Chat):
