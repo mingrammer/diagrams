@@ -12,7 +12,7 @@ DIR_RESOURCE = "resources"
 DIR_TEMPLATE = "templates"
 
 PROVIDERS = (
-    "base", "onprem", "aws", "azure", "digitalocean", "gcp", "ibm", "firebase", "k8s", "alibabacloud", "oci",
+    "base", "onprem", "aws", "azure", "digitalocean", "gcp", "ibm", "firebase", "k8s", "alibabacloud", "huaweicloud", "oci",
     "programming", "saas", "elastic", "generic", "openstack", "outscale")
 
 #########################
@@ -36,6 +36,7 @@ FILE_PREFIXES = {
     "ibm": (),
     "k8s": (),
     "alibabacloud": (),
+    "huaweicloud": (),
     "oci": ("OCI-icon-",),
     "programming": (),
     "saas": (),
@@ -59,6 +60,7 @@ TMPL_MODULE = "module.tmpl"
 
 UPPER_WORDS = {
     "aws": ("aws", "api", "ebs", "ec2", "efs", "emr", "rds", "ml", "mq", "nat", "vpc", "waf", "sdk"),
+    "huaweicloud": ('ais', 'cdm', 'cs', 'dgc', 'dli', 'dws', 'ges', 'mls', 'mrs', 'nlp', 'cae', 'cse', 'dms', 'ecpc', 'smn', 'bcs', 'im', 'msgsms', 'aos', 'cce', 'cci', 'swr', 'ugo', 'cdn', 'iec', 'ief', 'ies', 'wsa', 'gsl', 'cas', 'ccs', 'ces', 'crs', 'cts', 'hcus', 'iam', 'icms', 'rts', 'tms', 'aad', 'aag', 'ars', 'dbss', 'hids', 'hss', 'hvd', 'hwaf', 'kms', 'pts', 'sas', 'sca', 'scs', 'ssa', 'waf', 'wtp', 'cdn', 'csbs', 'des', 'dess', 'dss', 'evs', 'obs', 'sfs', 'vbs', 'live', 'mpc', 'rtc', 'vis', 'vod'),
     "azure": ("ad", "b2c", "ai", "api", "cdn", "ddos", "dns", "fxt", "hana", "hd", "id", "sap", "sql", "vm", "vpn", "vpc"),
     "gcp": ("gcp", "ai", "api", "cdn", "dns", "gke", "gpu", "iap", "ml", "nat", "os", "sdk", "sql", "tpu", "vpn"),
     "firebase": ("ab", "fcm", "ml"),
@@ -81,6 +83,9 @@ TITLE_WORDS = {
     },
     "alibabacloud": {
         "alibabacloud": "AlibabaCloud"
+    },
+    "hauweicloud": {
+        "hauweicloud": "HuaweiCloud"
     },
     "aws": {
         "cloudfront": "CloudFront"
@@ -389,6 +394,71 @@ ALIASES = {
             "ObjectStorageService": "OSS",
             "ObjectTableStore": "OTS",
         }
+    },
+    "huaweicloud": {
+        "compute": {
+            "AutoScaling": "AS",
+            "BareMetalServer": "BMS",
+            "CloudContainerEngine": "CCE",
+            "DedicatedHost": "DeH",
+            "DedicatedCloud": "DeC",
+            "ElasticComputeService": "ECS",
+            "ImageService": "IMS",
+        },
+        "database": {
+            "DataAdminService": "DAS",
+            "RelationalDatabaseService": "RDS",
+            "DataReplicationService": "DRS",
+            "DistributedDatabaseMiddleware": "DDM",
+        },
+        "network": {
+            "ElasticLoadBalance": "ELB",
+            "VirtualPrivateCloud": "VPC",
+            "DomainNameService": "DNS",
+            "DirectConnect": "DC",
+            "NatGateway": "NAT",
+            "ElasticIp": "EIP",
+            "VirtualPrivateNetwork": "VPC",
+        },
+        "security": {
+        },
+        "storage": {
+            "OBS": "ObjectStorageService",
+            "CDN": "ContentDeliveryNetwork",
+            "EVS": "ElasticVolumeService",
+            "SFS": "StorageFileSystem",
+            "CSBS": "CloudServerBackupService",
+            "DES": "DataExpressService",
+            "DESS": "DedicatedEnterpriseStorageService",
+            "VBS": "VolumeBackupService",
+            "DSS": "DedicatedStorageService",
+        },
+        "container": {
+            "AOS": "ApplicationOrchestrationService",
+            "CCE": "CloudContainerEngine",
+            "CCI": "CloudContainerInstance",
+            "SWR": "SoftwareRepository",
+        },
+        "ai_analytics" : {
+            "ModelArts": "MA",
+            "MRS": "MapReduceService",
+            "AIS": "ArificalIntelligenceService",
+            "CS": "CloudStreamingService",
+            "DLI": "DataLakeInsight",
+            "CDM": "CloudDataMigrationService",
+            "NLP": "NaturalLanguageProcessingService",
+            "MLS": "MachineLearningService",
+            "DWS":  "DataWarehouseService",
+        },
+        "blockchain": {
+            "BCS": "BlockChainService"
+        },
+        "edge": {
+            "IEF": "IntelligentEdgeFabric",
+            "IES": "IntelligentEdgeSite",
+            "WSA": "WholeSiteAcceleration",
+            "IEC": "IntelligentEdgeCloud",
+        },
     },
     "digitalocean": {},
     "oci": {
