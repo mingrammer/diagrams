@@ -326,6 +326,9 @@ Node classes list of onprem provider.
 ## onprem.mlops
 
 
+<img width="30" src="/diagrams/img/resources/onprem/mlops/mlflow.png" alt="Mlflow" style="float: left; padding-right: 5px;" >
+**diagrams.onprem.mlops.Mlflow**
+
 <img width="30" src="/diagrams/img/resources/onprem/mlops/polyaxon.png" alt="Polyaxon" style="float: left; padding-right: 5px;" >
 **diagrams.onprem.mlops.Polyaxon**
 
@@ -476,6 +479,9 @@ Node classes list of onprem provider.
 <img width="30" src="/diagrams/img/resources/onprem/queue/celery.png" alt="Celery" style="float: left; padding-right: 5px;" >
 **diagrams.onprem.queue.Celery**
 
+<img width="30" src="/diagrams/img/resources/onprem/queue/emqx.png" alt="Emqx" style="float: left; padding-right: 5px;" >
+**diagrams.onprem.queue.Emqx**, **EMQX** (alias)
+
 <img width="30" src="/diagrams/img/resources/onprem/queue/kafka.png" alt="Kafka" style="float: left; padding-right: 5px;" >
 **diagrams.onprem.queue.Kafka**
 
@@ -487,6 +493,12 @@ Node classes list of onprem provider.
 
 <img width="30" src="/diagrams/img/resources/onprem/queue/zeromq.png" alt="Zeromq" style="float: left; padding-right: 5px;" >
 **diagrams.onprem.queue.Zeromq**, **ZeroMQ** (alias)
+
+## onprem.registry
+
+
+<img width="30" src="/img/resources/onprem/registry/harbor.png" alt="Harbor" style="float: left; padding-right: 5px;" >
+**diagrams.onprem.registry.Harbor**
 
 ## onprem.search
 
