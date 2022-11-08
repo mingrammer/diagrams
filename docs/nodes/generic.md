@@ -7,51 +7,99 @@ Node classes list of generic provider.
 
 ## generic.blank
 
-- **diagrams.generic.blank.Blank**
+
+<img width="30" src="/img/resources/generic/blank/blank.png" alt="Blank" style="float: left; padding-right: 5px;" >
+**diagrams.generic.blank.Blank**
 
 ## generic.compute
 
-- **diagrams.generic.compute.Rack**
+
+<img width="30" src="/img/resources/generic/compute/rack.png" alt="Rack" style="float: left; padding-right: 5px;" >
+**diagrams.generic.compute.Rack**
 
 ## generic.database
 
-- **diagrams.generic.database.SQL**
+
+<img width="30" src="/img/resources/generic/database/sql.png" alt="SQL" style="float: left; padding-right: 5px;" >
+**diagrams.generic.database.SQL**
 
 ## generic.device
 
-- **diagrams.generic.device.Mobile**
-- **diagrams.generic.device.Tablet**
+
+<img width="30" src="/img/resources/generic/device/mobile.png" alt="Mobile" style="float: left; padding-right: 5px;" >
+**diagrams.generic.device.Mobile**
+
+<img width="30" src="/img/resources/generic/device/tablet.png" alt="Tablet" style="float: left; padding-right: 5px;" >
+**diagrams.generic.device.Tablet**
 
 ## generic.network
 
-- **diagrams.generic.network.Firewall**
-- **diagrams.generic.network.Router**
-- **diagrams.generic.network.Subnet**
-- **diagrams.generic.network.Switch**
-- **diagrams.generic.network.VPN**
+
+<img width="30" src="/img/resources/generic/network/firewall.png" alt="Firewall" style="float: left; padding-right: 5px;" >
+**diagrams.generic.network.Firewall**
+
+<img width="30" src="/img/resources/generic/network/router.png" alt="Router" style="float: left; padding-right: 5px;" >
+**diagrams.generic.network.Router**
+
+<img width="30" src="/img/resources/generic/network/subnet.png" alt="Subnet" style="float: left; padding-right: 5px;" >
+**diagrams.generic.network.Subnet**
+
+<img width="30" src="/img/resources/generic/network/switch.png" alt="Switch" style="float: left; padding-right: 5px;" >
+**diagrams.generic.network.Switch**
+
+<img width="30" src="/img/resources/generic/network/vpn.png" alt="VPN" style="float: left; padding-right: 5px;" >
+**diagrams.generic.network.VPN**
 
 ## generic.os
 
-- **diagrams.generic.os.Android**
-- **diagrams.generic.os.Centos**
-- **diagrams.generic.os.Debian**
-- **diagrams.generic.os.IOS**
-- **diagrams.generic.os.LinuxGeneral**
-- **diagrams.generic.os.Raspbian**
-- **diagrams.generic.os.Suse**
-- **diagrams.generic.os.Ubuntu**
-- **diagrams.generic.os.Windows**
+
+<img width="30" src="/img/resources/generic/os/android.png" alt="Android" style="float: left; padding-right: 5px;" >
+**diagrams.generic.os.Android**
+
+<img width="30" src="/img/resources/generic/os/centos.png" alt="Centos" style="float: left; padding-right: 5px;" >
+**diagrams.generic.os.Centos**
+
+<img width="30" src="/img/resources/generic/os/debian.png" alt="Debian" style="float: left; padding-right: 5px;" >
+**diagrams.generic.os.Debian**
+
+<img width="30" src="/img/resources/generic/os/ios.png" alt="IOS" style="float: left; padding-right: 5px;" >
+**diagrams.generic.os.IOS**
+
+<img width="30" src="/img/resources/generic/os/linux-general.png" alt="LinuxGeneral" style="float: left; padding-right: 5px;" >
+**diagrams.generic.os.LinuxGeneral**
+
+<img width="30" src="/img/resources/generic/os/raspbian.png" alt="Raspbian" style="float: left; padding-right: 5px;" >
+**diagrams.generic.os.Raspbian**
+
+<img width="30" src="/img/resources/generic/os/suse.png" alt="Suse" style="float: left; padding-right: 5px;" >
+**diagrams.generic.os.Suse**
+
+<img width="30" src="/img/resources/generic/os/ubuntu.png" alt="Ubuntu" style="float: left; padding-right: 5px;" >
+**diagrams.generic.os.Ubuntu**
+
+<img width="30" src="/img/resources/generic/os/windows.png" alt="Windows" style="float: left; padding-right: 5px;" >
+**diagrams.generic.os.Windows**
 
 ## generic.place
 
-- **diagrams.generic.place.Datacenter**
+
+<img width="30" src="/img/resources/generic/place/datacenter.png" alt="Datacenter" style="float: left; padding-right: 5px;" >
+**diagrams.generic.place.Datacenter**
 
 ## generic.storage
 
-- **diagrams.generic.storage.Storage**
+
+<img width="30" src="/img/resources/generic/storage/storage.png" alt="Storage" style="float: left; padding-right: 5px;" >
+**diagrams.generic.storage.Storage**
 
 ## generic.virtualization
 
-- **diagrams.generic.virtualization.Virtualbox**
-- **diagrams.generic.virtualization.Vmware**
-- **diagrams.generic.virtualization.XEN**
+
+<img width="30" src="/img/resources/generic/virtualization/virtualbox.png" alt="Virtualbox" style="float: left; padding-right: 5px;" >
+**diagrams.generic.virtualization.Virtualbox**
+
+<img width="30" src="/img/resources/generic/virtualization/vmware.png" alt="Vmware" style="float: left; padding-right: 5px;" >
+**diagrams.generic.virtualization.Vmware**
+
+<img width="30" src="/img/resources/generic/virtualization/xen.png" alt="XEN" style="float: left; padding-right: 5px;" >
+**diagrams.generic.virtualization.XEN**
