@@ -490,7 +490,9 @@ Node classes list of onprem provider.
 
 ## onprem.registry
 
-- **diagrams.onprem.registry.Harbor**
+
+<img width="30" src="/img/resources/onprem/registry/harbor.png" alt="Harbor" style="float: left; padding-right: 5px;" >
+**diagrams.onprem.registry.Harbor**
 
 ## onprem.search
 
