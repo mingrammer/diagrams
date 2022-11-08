@@ -32,6 +32,10 @@ class Raspbian(_Os):
     _icon = "raspbian.png"
 
 
+class RedHat(_Os):
+    _icon = "red-hat.png"
+
+
 class Suse(_Os):
     _icon = "suse.png"
 
@@ -45,3 +49,4 @@ class Windows(_Os):
 
 
 # Aliases
+RH = RedHat
