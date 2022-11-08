@@ -57,7 +57,7 @@ python -m scripts.generate "custom"
 
 # copy icons across to website
 echo "copying icons to website static folder"
-cp -r resources website/static/img/resources
+cp -r resources website/static/img/
 
 # run black
 echo "linting the all the diagram modules"
