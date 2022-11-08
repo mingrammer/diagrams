@@ -8,7 +8,7 @@ Node classes list of alibabacloud provider.
 ## alibabacloud.analytics
 
 
-<img width="30" src="/img/resources/alibabacloud/analytics/analytic-db.png" alt="AnalyticDb" style="float: left; padding-right: 5px;" >
+<img width="30" src="img/resources/alibabacloud/analytics/analytic-db.png" alt="AnalyticDb" style="float: left; padding-right: 5px;" >
 **diagrams.alibabacloud.analytics.AnalyticDb**
 
 <img width="30" src="/img/resources/alibabacloud/analytics/click-house.png" alt="ClickHouse" style="float: left; padding-right: 5px;" >
