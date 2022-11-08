@@ -164,6 +164,7 @@ ALIASES = {
         },
         "queue": {
             "Activemq": "ActiveMQ",
+            "Emqx": "EMQX",
             "Rabbitmq": "RabbitMQ",
             "Zeromq": "ZeroMQ",
         },

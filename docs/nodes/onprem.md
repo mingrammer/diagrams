@@ -479,6 +479,9 @@ Node classes list of onprem provider.
 <img width="30" src="/img/resources/onprem/queue/celery.png" alt="Celery" style="float: left; padding-right: 5px;" >
 **diagrams.onprem.queue.Celery**
 
+<img width="30" src="/img/resources/onprem/queue/emqx.png" alt="Emqx" style="float: left; padding-right: 5px;" >
+**diagrams.onprem.queue.Emqx**, **EMQX** (alias)
+
 <img width="30" src="/img/resources/onprem/queue/kafka.png" alt="Kafka" style="float: left; padding-right: 5px;" >
 **diagrams.onprem.queue.Kafka**
 

@@ -16,6 +16,10 @@ class Celery(_Queue):
     _icon = "celery.png"
 
 
+class Emqx(_Queue):
+    _icon = "emqx.png"
+
+
 class Kafka(_Queue):
     _icon = "kafka.png"
 
@@ -35,5 +39,6 @@ class Zeromq(_Queue):
 # Aliases
 
 ActiveMQ = Activemq
+EMQX = Emqx
 RabbitMQ = Rabbitmq
 ZeroMQ = Zeromq
