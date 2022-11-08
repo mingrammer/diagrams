@@ -1,10 +1,10 @@
 #!/bin/bash
-set -e
 
 app_root_dir="diagrams"
 
 # NOTE: azure icon set is not latest version
-providers=("onprem" "aws" "azure" "digitalocean" "gcp" "ibm" "firebase" "k8s" "alibabacloud" "oci" "tencentcloud" "programming" "saas" "elastic" "generic" "openstack" "outscale" )
+
+providers=("onprem" "aws" "azure" "digitalocean" "gcp" "ibm" "firebase" "k8s" "alibabacloud" "oci" "tencentcloud" "programming" "saas" "elastic" "generic" "openstack" "outscale")
 
 if ! [ -x "$(command -v round)" ]; then
   echo 'round is not installed'
@@ -55,6 +55,10 @@ done
 # Generate doc for custom module
 echo "generating the docs for custom"
 python -m scripts.generate "custom"
+
+# copy icons across to website
+echo "copying icons to website static folder"
+cp -r resources website/static/img/resources
 
 # run black
 echo "linting the all the diagram modules"

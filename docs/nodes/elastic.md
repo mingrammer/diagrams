@@ -7,44 +7,96 @@ Node classes list of elastic provider.
 
 ## elastic.elasticsearch
 
-- **diagrams.elastic.elasticsearch.Alerting**
-- **diagrams.elastic.elasticsearch.Beats**
-- **diagrams.elastic.elasticsearch.Elasticsearch**
-- **diagrams.elastic.elasticsearch.Kibana**
-- **diagrams.elastic.elasticsearch.Logstash**, **LogStash** (alias)
-- **diagrams.elastic.elasticsearch.MachineLearning**
-- **diagrams.elastic.elasticsearch.Maps**
-- **diagrams.elastic.elasticsearch.Monitoring**
-- **diagrams.elastic.elasticsearch.SecuritySettings**
-- **diagrams.elastic.elasticsearch.Sql**
+
+<img width="30" src="/img/resources/elastic/elasticsearch/alerting.png" alt="Alerting" style="float: left; padding-right: 5px;" >
+**diagrams.elastic.elasticsearch.Alerting**
+
+<img width="30" src="/img/resources/elastic/elasticsearch/beats.png" alt="Beats" style="float: left; padding-right: 5px;" >
+**diagrams.elastic.elasticsearch.Beats**
+
+<img width="30" src="/img/resources/elastic/elasticsearch/elasticsearch.png" alt="Elasticsearch" style="float: left; padding-right: 5px;" >
+**diagrams.elastic.elasticsearch.Elasticsearch**
+
+<img width="30" src="/img/resources/elastic/elasticsearch/kibana.png" alt="Kibana" style="float: left; padding-right: 5px;" >
+**diagrams.elastic.elasticsearch.Kibana**
+
+<img width="30" src="/img/resources/elastic/elasticsearch/logstash.png" alt="Logstash" style="float: left; padding-right: 5px;" >
+**diagrams.elastic.elasticsearch.Logstash**, **LogStash** (alias)
+
+<img width="30" src="/img/resources/elastic/elasticsearch/machine-learning.png" alt="MachineLearning" style="float: left; padding-right: 5px;" >
+**diagrams.elastic.elasticsearch.MachineLearning**
+
+<img width="30" src="/img/resources/elastic/elasticsearch/maps.png" alt="Maps" style="float: left; padding-right: 5px;" >
+**diagrams.elastic.elasticsearch.Maps**
+
+<img width="30" src="/img/resources/elastic/elasticsearch/monitoring.png" alt="Monitoring" style="float: left; padding-right: 5px;" >
+**diagrams.elastic.elasticsearch.Monitoring**
+
+<img width="30" src="/img/resources/elastic/elasticsearch/security-settings.png" alt="SecuritySettings" style="float: left; padding-right: 5px;" >
+**diagrams.elastic.elasticsearch.SecuritySettings**
+
+<img width="30" src="/img/resources/elastic/elasticsearch/sql.png" alt="Sql" style="float: left; padding-right: 5px;" >
+**diagrams.elastic.elasticsearch.Sql**
 
 ## elastic.enterprisesearch
 
-- **diagrams.elastic.enterprisesearch.AppSearch**
-- **diagrams.elastic.enterprisesearch.EnterpriseSearch**
-- **diagrams.elastic.enterprisesearch.SiteSearch**
-- **diagrams.elastic.enterprisesearch.WorkplaceSearch**
+
+<img width="30" src="/img/resources/elastic/enterprisesearch/app-search.png" alt="AppSearch" style="float: left; padding-right: 5px;" >
+**diagrams.elastic.enterprisesearch.AppSearch**
+
+<img width="30" src="/img/resources/elastic/enterprisesearch/enterprise-search.png" alt="EnterpriseSearch" style="float: left; padding-right: 5px;" >
+**diagrams.elastic.enterprisesearch.EnterpriseSearch**
+
+<img width="30" src="/img/resources/elastic/enterprisesearch/site-search.png" alt="SiteSearch" style="float: left; padding-right: 5px;" >
+**diagrams.elastic.enterprisesearch.SiteSearch**
+
+<img width="30" src="/img/resources/elastic/enterprisesearch/workplace-search.png" alt="WorkplaceSearch" style="float: left; padding-right: 5px;" >
+**diagrams.elastic.enterprisesearch.WorkplaceSearch**
 
 ## elastic.observability
 
-- **diagrams.elastic.observability.APM**
-- **diagrams.elastic.observability.Logs**
-- **diagrams.elastic.observability.Metrics**
-- **diagrams.elastic.observability.Observability**
-- **diagrams.elastic.observability.Uptime**
+
+<img width="30" src="/img/resources/elastic/observability/apm.png" alt="APM" style="float: left; padding-right: 5px;" >
+**diagrams.elastic.observability.APM**
+
+<img width="30" src="/img/resources/elastic/observability/logs.png" alt="Logs" style="float: left; padding-right: 5px;" >
+**diagrams.elastic.observability.Logs**
+
+<img width="30" src="/img/resources/elastic/observability/metrics.png" alt="Metrics" style="float: left; padding-right: 5px;" >
+**diagrams.elastic.observability.Metrics**
+
+<img width="30" src="/img/resources/elastic/observability/observability.png" alt="Observability" style="float: left; padding-right: 5px;" >
+**diagrams.elastic.observability.Observability**
+
+<img width="30" src="/img/resources/elastic/observability/uptime.png" alt="Uptime" style="float: left; padding-right: 5px;" >
+**diagrams.elastic.observability.Uptime**
 
 ## elastic.orchestration
 
-- **diagrams.elastic.orchestration.ECE**
-- **diagrams.elastic.orchestration.ECK**
+
+<img width="30" src="/img/resources/elastic/orchestration/ece.png" alt="ECE" style="float: left; padding-right: 5px;" >
+**diagrams.elastic.orchestration.ECE**
+
+<img width="30" src="/img/resources/elastic/orchestration/eck.png" alt="ECK" style="float: left; padding-right: 5px;" >
+**diagrams.elastic.orchestration.ECK**
 
 ## elastic.saas
 
-- **diagrams.elastic.saas.Cloud**
-- **diagrams.elastic.saas.Elastic**
+
+<img width="30" src="/img/resources/elastic/saas/cloud.png" alt="Cloud" style="float: left; padding-right: 5px;" >
+**diagrams.elastic.saas.Cloud**
+
+<img width="30" src="/img/resources/elastic/saas/elastic.png" alt="Elastic" style="float: left; padding-right: 5px;" >
+**diagrams.elastic.saas.Elastic**
 
 ## elastic.security
 
-- **diagrams.elastic.security.Endpoint**
-- **diagrams.elastic.security.Security**
-- **diagrams.elastic.security.SIEM**
+
+<img width="30" src="/img/resources/elastic/security/endpoint.png" alt="Endpoint" style="float: left; padding-right: 5px;" >
+**diagrams.elastic.security.Endpoint**
+
+<img width="30" src="/img/resources/elastic/security/security.png" alt="Security" style="float: left; padding-right: 5px;" >
+**diagrams.elastic.security.Security**
+
+<img width="30" src="/img/resources/elastic/security/siem.png" alt="SIEM" style="float: left; padding-right: 5px;" >
+**diagrams.elastic.security.SIEM**
