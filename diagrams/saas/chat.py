@@ -12,6 +12,10 @@ class Discord(_Chat):
     _icon = "discord.png"
 
 
+class HipChat(_Chat):
+    _icon = "hip-chat.png"
+
+
 class Mattermost(_Chat):
     _icon = "mattermost.png"
 
