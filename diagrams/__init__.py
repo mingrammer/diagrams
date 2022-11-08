@@ -295,7 +295,7 @@ class Node:
         self._diagram = getdiagram()
         if self._diagram is None:
             raise EnvironmentError("Global diagrams context not set up")
-        
+
         if self._diagram.autolabel:
             prefix = self.__class__.__name__
             if self.label:
@@ -342,7 +342,7 @@ class Node:
             return other
 
     def __rsub__(self, other: Union[List["Node"], List["Edge"]]):
-        """ Called for [Nodes] and [Edges] - Self because list don't have __sub__ operators. """
+        """Called for [Nodes] and [Edges] - Self because list don't have __sub__ operators."""
         for o in other:
             if isinstance(o, Edge):
                 o.connect(self)
