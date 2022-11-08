@@ -38,6 +38,7 @@ Node classes list of generic provider.
 - **diagrams.generic.os.IOS**
 - **diagrams.generic.os.LinuxGeneral**
 - **diagrams.generic.os.Raspbian**
+- **diagrams.generic.os.RedHat**, **RH** (alias)
 - **diagrams.generic.os.Suse**
 - **diagrams.generic.os.Ubuntu**
 - **diagrams.generic.os.Windows**
