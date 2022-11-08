@@ -174,7 +174,7 @@ def round_png(pvd: str) -> None:
 
     def _round(base: str, path: str):
         path = os.path.join(base, path)
-        subprocess.call([cfg.CMD_ROUND, *cfg.CMD_ROUND_OPTS, path])
+        subprocess.run([cfg.CMD_ROUND, *cfg.CMD_ROUND_OPTS, path])
 
     for root, _, files in os.walk(resource_dir(pvd)):
         pngs = filter(lambda f: f.endswith(".png"), files)
@@ -187,8 +187,8 @@ def svg2png(pvd: str) -> None:
 
     def _convert(base: str, path: str):
         path = os.path.join(base, path)
-        subprocess.call([cfg.CMD_SVG2PNG, *cfg.CMD_SVG2PNG_OPTS, path])
-        subprocess.call(["rm", path])
+        subprocess.run([cfg.CMD_SVG2PNG, *cfg.CMD_SVG2PNG_OPTS, path])
+        subprocess.run(["rm", path])
 
     for root, _, files in os.walk(resource_dir(pvd)):
         svgs = filter(lambda f: f.endswith(".svg"), files)
@@ -201,8 +201,8 @@ def svg2png2(pvd: str) -> None:
     def _convert(base: str, path: str):
         path_src = os.path.join(base, path)
         path_dest = path_src.replace(".svg", ".png")
-        subprocess.call([cfg.CMD_SVG2PNG_IM, *cfg.CMD_SVG2PNG_IM_OPTS, path_src, path_dest])
-        subprocess.call(["rm", path_src])
+        subprocess.run([cfg.CMD_SVG2PNG_IM, *cfg.CMD_SVG2PNG_IM_OPTS, path_src, path_dest])
+        subprocess.run(["rm", path_src])
 
     for root, _, files in os.walk(resource_dir(pvd)):
         svgs = filter(lambda f: f.endswith(".svg"), files)

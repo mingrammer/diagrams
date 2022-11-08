@@ -37,6 +37,7 @@ Diagrams lets you draw the cloud system architecture **in Python code**. It was 
 ![generic provider](https://img.shields.io/badge/Generic-orange?color=5f87bf)
 ![programming provider](https://img.shields.io/badge/Programming-orange?color=5f87bf)
 ![saas provider](https://img.shields.io/badge/SaaS-orange?color=5f87bf)
+![c4 provider](https://img.shields.io/badge/C4-orange?color=5f87bf)
 
 ## Getting Started
 
@@ -83,7 +84,7 @@ To contribute to diagram, check out [contribution guidelines](CONTRIBUTING.md).
 
 ## Other languages
 
-- If you are familiar to Go, you can use [go-diagrams](https://github.com/blushft/go-diagrams) as well.
+- If you are familiar with Go, you can use [go-diagrams](https://github.com/blushft/go-diagrams) as well.
 
 ## License
 
