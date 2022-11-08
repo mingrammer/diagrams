@@ -138,6 +138,7 @@ Node classes list of onprem provider.
 - **diagrams.onprem.inmemory.Hazelcast**
 - **diagrams.onprem.inmemory.Memcached**
 - **diagrams.onprem.inmemory.Redis**
+- **diagrams.onprem.inmemory.Varnish**
 
 ## onprem.logging
 

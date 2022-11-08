@@ -24,4 +24,8 @@ class Redis(_Inmemory):
     _icon = "redis.png"
 
 
+class Varnish(_Inmemory):
+    _icon = "varnish.png"
+
+
 # Aliases
