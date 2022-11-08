@@ -343,7 +343,6 @@ Node classes list of onprem provider.
 
 ## onprem.monitoring
 
-<<<<<<< HEAD
 
 <img width="30" src="/img/resources/onprem/monitoring/cortex.png" alt="Cortex" style="float: left; padding-right: 5px;" >
 **diagrams.onprem.monitoring.Cortex**
@@ -386,21 +385,6 @@ Node classes list of onprem provider.
 
 <img width="30" src="/img/resources/onprem/monitoring/zabbix.png" alt="Zabbix" style="float: left; padding-right: 5px;" >
 **diagrams.onprem.monitoring.Zabbix**
-=======
-- **diagrams.onprem.monitoring.Cortex**
-- **diagrams.onprem.monitoring.Datadog**
-- **diagrams.onprem.monitoring.Dynatrace**
-- **diagrams.onprem.monitoring.Grafana**
-- **diagrams.onprem.monitoring.Humio**
-- **diagrams.onprem.monitoring.Nagios**
-- **diagrams.onprem.monitoring.Newrelic**
-- **diagrams.onprem.monitoring.PrometheusOperator**
-- **diagrams.onprem.monitoring.Prometheus**
-- **diagrams.onprem.monitoring.Sentry**
-- **diagrams.onprem.monitoring.Splunk**
-- **diagrams.onprem.monitoring.Thanos**
-- **diagrams.onprem.monitoring.Zabbix**
->>>>>>> fdbd469 (add support for Scaleway products)
 
 ## onprem.network
 
