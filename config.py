@@ -12,8 +12,24 @@ DIR_RESOURCE = "resources"
 DIR_TEMPLATE = "templates"
 
 PROVIDERS = (
-    "base", "onprem", "aws", "azure", "digitalocean", "gcp", "ibm", "firebase", "k8s", "alibabacloud", "oci",
-    "programming", "saas", "elastic", "generic", "openstack", "outscale")
+    "base",
+    "onprem"
+    "aws",
+    "azure",
+    "digitalocean",
+    "gcp",
+    "ibm",
+    "firebase",
+    "k8s",
+    "alibabacloud",
+    "oci",
+    "programming",
+    "saas",
+    "elastic",
+    "generic",
+    "openstack",
+    "outscale",
+)
 
 #########################
 #  Resource Processing  #
