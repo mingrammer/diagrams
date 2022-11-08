@@ -1,5 +1,6 @@
 import contextvars
 import os
+import re
 import uuid
 from pathlib import Path
 from typing import List, Union, Dict
@@ -279,6 +280,7 @@ class Node:
 
     _icon_dir = None
     _icon = None
+    _icon_ext = ".png"
 
     _height = 1.9
 
@@ -394,7 +396,15 @@ class Node:
             else:
                 o.connect(self, Edge(self, reverse=True))
         return self
-
+    
+    def _get_icon(self):
+        if self._icon:
+            return self._icon
+        
+        icon = re.sub(r'(?<!^)(?=[A-Z])', '-', self.__class__.__name__).lower()
+        
+        return f'{icon}.{self._icon_ext}'
+    
     @property
     def nodeid(self):
         return self._id
@@ -421,7 +431,7 @@ class Node:
 
     def _load_icon(self):
         basedir = Path(os.path.abspath(os.path.dirname(__file__)))
-        return os.path.join(basedir.parent, self._icon_dir, self._icon)
+        return os.path.join(basedir.parent, self._icon_dir, self._get_icon())
 
 
 class Edge:
