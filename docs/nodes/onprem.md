@@ -488,6 +488,10 @@ Node classes list of onprem provider.
 <img width="30" src="/img/resources/onprem/queue/zeromq.png" alt="Zeromq" style="float: left; padding-right: 5px;" >
 **diagrams.onprem.queue.Zeromq**, **ZeroMQ** (alias)
 
+## onprem.registry
+
+- **diagrams.onprem.registry.Harbor**
+
 ## onprem.search
 
 
