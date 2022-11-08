@@ -326,6 +326,9 @@ Node classes list of onprem provider.
 ## onprem.mlops
 
 
+<img width="30" src="/img/resources/onprem/mlops/mlflow.png" alt="Mlflow" style="float: left; padding-right: 5px;" >
+**diagrams.onprem.mlops.Mlflow**
+
 <img width="30" src="/img/resources/onprem/mlops/polyaxon.png" alt="Polyaxon" style="float: left; padding-right: 5px;" >
 **diagrams.onprem.mlops.Polyaxon**
 
