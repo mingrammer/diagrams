@@ -7,81 +7,171 @@ Node classes list of k8s provider.
 
 ## k8s.chaos
 
-- **diagrams.k8s.chaos.ChaosMesh**
-- **diagrams.k8s.chaos.LitmusChaos**
+
+<img width="30" src="/img/resources/k8s/chaos/chaos-mesh.png" alt="ChaosMesh" style="float: left; padding-right: 5px;" >
+**diagrams.k8s.chaos.ChaosMesh**
+
+<img width="30" src="/img/resources/k8s/chaos/litmus-chaos.png" alt="LitmusChaos" style="float: left; padding-right: 5px;" >
+**diagrams.k8s.chaos.LitmusChaos**
 
 ## k8s.clusterconfig
 
-- **diagrams.k8s.clusterconfig.HPA**, **HorizontalPodAutoscaler** (alias)
-- **diagrams.k8s.clusterconfig.Limits**, **LimitRange** (alias)
-- **diagrams.k8s.clusterconfig.Quota**
+
+<img width="30" src="/img/resources/k8s/clusterconfig/hpa.png" alt="HPA" style="float: left; padding-right: 5px;" >
+**diagrams.k8s.clusterconfig.HPA**, **HorizontalPodAutoscaler** (alias)
+
+<img width="30" src="/img/resources/k8s/clusterconfig/limits.png" alt="Limits" style="float: left; padding-right: 5px;" >
+**diagrams.k8s.clusterconfig.Limits**, **LimitRange** (alias)
+
+<img width="30" src="/img/resources/k8s/clusterconfig/quota.png" alt="Quota" style="float: left; padding-right: 5px;" >
+**diagrams.k8s.clusterconfig.Quota**
 
 ## k8s.compute
 
-- **diagrams.k8s.compute.Cronjob**
-- **diagrams.k8s.compute.Deploy**, **Deployment** (alias)
-- **diagrams.k8s.compute.DS**, **DaemonSet** (alias)
-- **diagrams.k8s.compute.Job**
-- **diagrams.k8s.compute.Pod**
-- **diagrams.k8s.compute.RS**, **ReplicaSet** (alias)
-- **diagrams.k8s.compute.STS**, **StatefulSet** (alias)
+
+<img width="30" src="/img/resources/k8s/compute/cronjob.png" alt="Cronjob" style="float: left; padding-right: 5px;" >
+**diagrams.k8s.compute.Cronjob**
+
+<img width="30" src="/img/resources/k8s/compute/deploy.png" alt="Deploy" style="float: left; padding-right: 5px;" >
+**diagrams.k8s.compute.Deploy**, **Deployment** (alias)
+
+<img width="30" src="/img/resources/k8s/compute/ds.png" alt="DS" style="float: left; padding-right: 5px;" >
+**diagrams.k8s.compute.DS**, **DaemonSet** (alias)
+
+<img width="30" src="/img/resources/k8s/compute/job.png" alt="Job" style="float: left; padding-right: 5px;" >
+**diagrams.k8s.compute.Job**
+
+<img width="30" src="/img/resources/k8s/compute/pod.png" alt="Pod" style="float: left; padding-right: 5px;" >
+**diagrams.k8s.compute.Pod**
+
+<img width="30" src="/img/resources/k8s/compute/rs.png" alt="RS" style="float: left; padding-right: 5px;" >
+**diagrams.k8s.compute.RS**, **ReplicaSet** (alias)
+
+<img width="30" src="/img/resources/k8s/compute/sts.png" alt="STS" style="float: left; padding-right: 5px;" >
+**diagrams.k8s.compute.STS**, **StatefulSet** (alias)
 
 ## k8s.controlplane
 
-- **diagrams.k8s.controlplane.API**, **APIServer** (alias)
-- **diagrams.k8s.controlplane.CCM**
-- **diagrams.k8s.controlplane.CM**, **ControllerManager** (alias)
-- **diagrams.k8s.controlplane.KProxy**, **KubeProxy** (alias)
-- **diagrams.k8s.controlplane.Kubelet**
-- **diagrams.k8s.controlplane.Sched**, **Scheduler** (alias)
+
+<img width="30" src="/img/resources/k8s/controlplane/api.png" alt="API" style="float: left; padding-right: 5px;" >
+**diagrams.k8s.controlplane.API**, **APIServer** (alias)
+
+<img width="30" src="/img/resources/k8s/controlplane/c-c-m.png" alt="CCM" style="float: left; padding-right: 5px;" >
+**diagrams.k8s.controlplane.CCM**
+
+<img width="30" src="/img/resources/k8s/controlplane/c-m.png" alt="CM" style="float: left; padding-right: 5px;" >
+**diagrams.k8s.controlplane.CM**, **ControllerManager** (alias)
+
+<img width="30" src="/img/resources/k8s/controlplane/k-proxy.png" alt="KProxy" style="float: left; padding-right: 5px;" >
+**diagrams.k8s.controlplane.KProxy**, **KubeProxy** (alias)
+
+<img width="30" src="/img/resources/k8s/controlplane/kubelet.png" alt="Kubelet" style="float: left; padding-right: 5px;" >
+**diagrams.k8s.controlplane.Kubelet**
+
+<img width="30" src="/img/resources/k8s/controlplane/sched.png" alt="Sched" style="float: left; padding-right: 5px;" >
+**diagrams.k8s.controlplane.Sched**, **Scheduler** (alias)
 
 ## k8s.ecosystem
 
-- **diagrams.k8s.ecosystem.ExternalDns**
-- **diagrams.k8s.ecosystem.Helm**
-- **diagrams.k8s.ecosystem.Krew**
-- **diagrams.k8s.ecosystem.Kustomize**
+
+<img width="30" src="/img/resources/k8s/ecosystem/external-dns.png" alt="ExternalDns" style="float: left; padding-right: 5px;" >
+**diagrams.k8s.ecosystem.ExternalDns**
+
+<img width="30" src="/img/resources/k8s/ecosystem/helm.png" alt="Helm" style="float: left; padding-right: 5px;" >
+**diagrams.k8s.ecosystem.Helm**
+
+<img width="30" src="/img/resources/k8s/ecosystem/krew.png" alt="Krew" style="float: left; padding-right: 5px;" >
+**diagrams.k8s.ecosystem.Krew**
+
+<img width="30" src="/img/resources/k8s/ecosystem/kustomize.png" alt="Kustomize" style="float: left; padding-right: 5px;" >
+**diagrams.k8s.ecosystem.Kustomize**
 
 ## k8s.group
 
-- **diagrams.k8s.group.NS**, **Namespace** (alias)
+
+<img width="30" src="/img/resources/k8s/group/ns.png" alt="NS" style="float: left; padding-right: 5px;" >
+**diagrams.k8s.group.NS**, **Namespace** (alias)
 
 ## k8s.infra
 
-- **diagrams.k8s.infra.ETCD**
-- **diagrams.k8s.infra.Master**
-- **diagrams.k8s.infra.Node**
+
+<img width="30" src="/img/resources/k8s/infra/etcd.png" alt="ETCD" style="float: left; padding-right: 5px;" >
+**diagrams.k8s.infra.ETCD**
+
+<img width="30" src="/img/resources/k8s/infra/master.png" alt="Master" style="float: left; padding-right: 5px;" >
+**diagrams.k8s.infra.Master**
+
+<img width="30" src="/img/resources/k8s/infra/node.png" alt="Node" style="float: left; padding-right: 5px;" >
+**diagrams.k8s.infra.Node**
 
 ## k8s.network
 
-- **diagrams.k8s.network.Ep**, **Endpoint** (alias)
-- **diagrams.k8s.network.Ing**, **Ingress** (alias)
-- **diagrams.k8s.network.Netpol**, **NetworkPolicy** (alias)
-- **diagrams.k8s.network.SVC**, **Service** (alias)
+
+<img width="30" src="/img/resources/k8s/network/ep.png" alt="Ep" style="float: left; padding-right: 5px;" >
+**diagrams.k8s.network.Ep**, **Endpoint** (alias)
+
+<img width="30" src="/img/resources/k8s/network/ing.png" alt="Ing" style="float: left; padding-right: 5px;" >
+**diagrams.k8s.network.Ing**, **Ingress** (alias)
+
+<img width="30" src="/img/resources/k8s/network/netpol.png" alt="Netpol" style="float: left; padding-right: 5px;" >
+**diagrams.k8s.network.Netpol**, **NetworkPolicy** (alias)
+
+<img width="30" src="/img/resources/k8s/network/svc.png" alt="SVC" style="float: left; padding-right: 5px;" >
+**diagrams.k8s.network.SVC**, **Service** (alias)
 
 ## k8s.others
 
-- **diagrams.k8s.others.CRD**
-- **diagrams.k8s.others.PSP**
+
+<img width="30" src="/img/resources/k8s/others/crd.png" alt="CRD" style="float: left; padding-right: 5px;" >
+**diagrams.k8s.others.CRD**
+
+<img width="30" src="/img/resources/k8s/others/psp.png" alt="PSP" style="float: left; padding-right: 5px;" >
+**diagrams.k8s.others.PSP**
 
 ## k8s.podconfig
 
-- **diagrams.k8s.podconfig.CM**, **ConfigMap** (alias)
-- **diagrams.k8s.podconfig.Secret**
+
+<img width="30" src="/img/resources/k8s/podconfig/cm.png" alt="CM" style="float: left; padding-right: 5px;" >
+**diagrams.k8s.podconfig.CM**, **ConfigMap** (alias)
+
+<img width="30" src="/img/resources/k8s/podconfig/secret.png" alt="Secret" style="float: left; padding-right: 5px;" >
+**diagrams.k8s.podconfig.Secret**
 
 ## k8s.rbac
 
-- **diagrams.k8s.rbac.CRole**, **ClusterRole** (alias)
-- **diagrams.k8s.rbac.CRB**, **ClusterRoleBinding** (alias)
-- **diagrams.k8s.rbac.Group**
-- **diagrams.k8s.rbac.RB**, **RoleBinding** (alias)
-- **diagrams.k8s.rbac.Role**
-- **diagrams.k8s.rbac.SA**, **ServiceAccount** (alias)
-- **diagrams.k8s.rbac.User**
+
+<img width="30" src="/img/resources/k8s/rbac/c-role.png" alt="CRole" style="float: left; padding-right: 5px;" >
+**diagrams.k8s.rbac.CRole**, **ClusterRole** (alias)
+
+<img width="30" src="/img/resources/k8s/rbac/crb.png" alt="CRB" style="float: left; padding-right: 5px;" >
+**diagrams.k8s.rbac.CRB**, **ClusterRoleBinding** (alias)
+
+<img width="30" src="/img/resources/k8s/rbac/group.png" alt="Group" style="float: left; padding-right: 5px;" >
+**diagrams.k8s.rbac.Group**
+
+<img width="30" src="/img/resources/k8s/rbac/rb.png" alt="RB" style="float: left; padding-right: 5px;" >
+**diagrams.k8s.rbac.RB**, **RoleBinding** (alias)
+
+<img width="30" src="/img/resources/k8s/rbac/role.png" alt="Role" style="float: left; padding-right: 5px;" >
+**diagrams.k8s.rbac.Role**
+
+<img width="30" src="/img/resources/k8s/rbac/sa.png" alt="SA" style="float: left; padding-right: 5px;" >
+**diagrams.k8s.rbac.SA**, **ServiceAccount** (alias)
+
+<img width="30" src="/img/resources/k8s/rbac/user.png" alt="User" style="float: left; padding-right: 5px;" >
+**diagrams.k8s.rbac.User**
 
 ## k8s.storage
 
-- **diagrams.k8s.storage.PV**, **PersistentVolume** (alias)
-- **diagrams.k8s.storage.PVC**, **PersistentVolumeClaim** (alias)
-- **diagrams.k8s.storage.SC**, **StorageClass** (alias)
-- **diagrams.k8s.storage.Vol**, **Volume** (alias)
+
+<img width="30" src="/img/resources/k8s/storage/pv.png" alt="PV" style="float: left; padding-right: 5px;" >
+**diagrams.k8s.storage.PV**, **PersistentVolume** (alias)
+
+<img width="30" src="/img/resources/k8s/storage/pvc.png" alt="PVC" style="float: left; padding-right: 5px;" >
+**diagrams.k8s.storage.PVC**, **PersistentVolumeClaim** (alias)
+
+<img width="30" src="/img/resources/k8s/storage/sc.png" alt="SC" style="float: left; padding-right: 5px;" >
+**diagrams.k8s.storage.SC**, **StorageClass** (alias)
+
+<img width="30" src="/img/resources/k8s/storage/vol.png" alt="Vol" style="float: left; padding-right: 5px;" >
+**diagrams.k8s.storage.Vol**, **Volume** (alias)
