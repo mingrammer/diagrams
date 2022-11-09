@@ -43,7 +43,7 @@ with Diagram("Custom with local icons\n Can be downloaded here: \nhttps://creati
 
 It will generate the following diagram:
 
-![custom local](/img/custom_local.png)
+![custom local](/diagrams/img/custom_local.png)
 
 
 ## Custom with remote icons
