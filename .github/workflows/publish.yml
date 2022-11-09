@@ -33,7 +33,7 @@ jobs:
 
       - name: Build
         run: |
-          cp -r resources docs/img/resources && mkdocs build -c -f mkdocs.yml
+          ./autogen.sh && mkdocs build -c -f mkdocs.yml
       - name: Publish
         uses: peaceiris/actions-gh-pages@v3
         with:
