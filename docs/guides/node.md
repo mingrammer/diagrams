@@ -7,7 +7,7 @@ Node is a second object representing a node or system component.
 
 ## Basic
 
-Node is an abstract concept that represents a single system component object. 
+Node is an abstract concept that represents a single system component object.
 
 A node object consists of three parts: **provider**, **resource type** and **name**. You may already have seen each part in the previous example.
 
@@ -42,7 +42,7 @@ from diagrams.alibabacloud.storage import ObjectTableStore
 
 # gcp resources
 from diagrams.gcp.compute import AppEngine, GKE
-from diagrams.gcp.ml import AutoML 
+from diagrams.gcp.ml import AutoML
 ...
 
 # k8s resources
@@ -63,7 +63,7 @@ You can find all available nodes list in [Here](https://diagrams.mingrammer.com/
 
 You can represent data flow by connecting the nodes with these operators: `>>`, `<<` and `-`.
 
-* **>>**: Connect nodes in left to right direction. 
+* **>>**: Connect nodes in left to right direction.
 * **<<**: Connect nodes in right to left direction.
 * **-**: Connect nodes in no direction. Undirected.
 
@@ -80,9 +80,9 @@ with Diagram("Web Services", show=False):
     (ELB("lb") >> EC2("web")) - EC2("web") >> RDS("userdb")
 ```
 
-> Be careful when using the `-` and any shift operators together, which could cause unexpected results due to operator precedence. 
+> Be careful when using the `-` and any shift operators together, which could cause unexpected results due to operator precedence.
 
-![web services diagram](/img/web_services_diagram.png)
+![web services diagram](/diagrams/img/web_services_diagram.png)
 
 > The order of rendered diagrams is the reverse of the declaration order.
 
@@ -106,7 +106,7 @@ with Diagram("Workers", show=False, direction="TB"):
     lb >> EC2("worker5") >> db
 ```
 
-![workers diagram](/img/workers_diagram.png)
+![workers diagram](/diagrams/img/workers_diagram.png)
 
 ## Group Data Flow
 
@@ -126,6 +126,6 @@ with Diagram("Grouped Workers", show=False, direction="TB"):
                   EC2("worker5")] >> RDS("events")
 ```
 
-![grouped workers diagram](/img/grouped_workers_diagram.png)
+![grouped workers diagram](/diagrams/img/grouped_workers_diagram.png)
 
 > You can't connect two **lists** directly because shift/arithmetic operations between lists are not allowed in Python.

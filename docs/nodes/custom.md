@@ -84,7 +84,7 @@ with Diagram("Custom with remote icons", show=False, filename="custom_remote", d
 
 It will generate the following diagram:
 
-![custom local](/img/custom_remote.png)
+![custom local](/diagrams/img/custom_remote.png)
 
 
 Another example can be found [Here](https://diagrams.mingrammer.com/docs/getting-started/examples#rabbitmq-consumers-with-custom-nodes).
