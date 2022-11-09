@@ -17,6 +17,3 @@ class JFrog(_Registry):
 
 
 # Aliases
-
-Artifactory = JFrog
-Jfrog = JFrog
