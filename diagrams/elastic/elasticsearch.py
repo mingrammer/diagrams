@@ -24,12 +24,20 @@ class Kibana(_Elasticsearch):
     _icon = "kibana.png"
 
 
+class LogstashPipeline(_Elasticsearch):
+    _icon = "logstash-pipeline.png"
+
+
 class Logstash(_Elasticsearch):
     _icon = "logstash.png"
 
 
 class MachineLearning(_Elasticsearch):
     _icon = "machine-learning.png"
+
+
+class MapServices(_Elasticsearch):
+    _icon = "map-services.png"
 
 
 class Maps(_Elasticsearch):
@@ -40,12 +48,20 @@ class Monitoring(_Elasticsearch):
     _icon = "monitoring.png"
 
 
+class SearchableSnapshots(_Elasticsearch):
+    _icon = "searchable-snapshots.png"
+
+
 class SecuritySettings(_Elasticsearch):
     _icon = "security-settings.png"
 
 
 class Sql(_Elasticsearch):
     _icon = "sql.png"
+
+
+class Stack(_Elasticsearch):
+    _icon = "stack.png"
 
 
 # Aliases
