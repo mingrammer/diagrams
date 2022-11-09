@@ -530,6 +530,9 @@ Node classes list of onprem provider.
 <img width="30" src="/img/resources/onprem/storage/glusterfs.png" alt="Glusterfs" style="float: left; padding-right: 5px;" >
 **diagrams.onprem.storage.Glusterfs**
 
+<img width="30" src="/img/resources/onprem/storage/portworx.png" alt="Portworx" style="float: left; padding-right: 5px;" >
+**diagrams.onprem.storage.Portworx**
+
 ## onprem.tracing
 
 
