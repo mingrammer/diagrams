@@ -2,9 +2,21 @@
 
 labelPRBasedOnFilePath:
   area/provider/alibaba:
-  - diagrams/alibabacloud/*
-  - resources/alibabacloud/**/*
-  
+    - diagrams/alibabacloud/*
+    - resources/alibabacloud/**/*
+
+  area/provider/aws:
+    - diagrams/aws/*
+    - resources/aws/**/*
+ 
+  area/provider/azure:
+    - diagrams/azure/*
+    - resources/azure/**/*
+ 
+  area/provider/firebase:
+    - diagrams/firebase/*
+    - resources/firebase/**/*
+    
   # @TODO: extend with other labels
 
 firstPRWelcomeComment: >
