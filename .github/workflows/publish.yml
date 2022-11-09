@@ -13,8 +13,16 @@ jobs:
         with:
           python-version: 3.8
 
+      - name: Setup Golang
+        uses: actions/setup-go@v3
+        with:
+          go-version: '>=1.17.0'
+
       - name: Install dependencies
         run: |
+          # Get dependencies for autogen.sh script
+          go install github.com/mingrammer/round@latest
+          apt-get install inkscape
           python -m pip install --upgrade pip
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: Build
