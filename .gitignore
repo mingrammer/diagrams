@@ -31,4 +31,5 @@ website/package-lock.json
 .swp
 
 # Ignore build docs site
+docs/img/resources
 site/
