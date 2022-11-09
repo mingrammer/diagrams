@@ -1,0 +1,23 @@
+# Details: https://github.com/kaxil/boring-cyborg
+
+labelPRBasedOnFilePath:
+  area/provider/alibaba:
+  - diagrams/alibabacloud/*
+  - resources/alibabacloud/**/*
+  
+  # @TODO: extend with other labels
+
+firstPRWelcomeComment: >
+  Congratulations on your first Pull Request!
+  If you have any issues or are unsure about any anything please check our
+  Contribution Guide (https://github.com/mingrammer/diagrams/blob/master/CONTRIBUTING.rst)
+
+firstPRMergeComment: >
+  Awesome work, congrats on your first merged pull request!
+
+firstIssueWelcomeComment: >
+  Thanks for opening your first issue here! Be sure to follow the issue template!
+
+checkUpToDate:
+  targetBranch: master
+  files: []
