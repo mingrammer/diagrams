@@ -19,7 +19,7 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: Build
         run: |
-          mkdocs build -c -f mkdocs.yml
+          cp -r resources docs/img/resources && mkdocs build -c -f mkdocs.yml
       - name: Publish
         uses: peaceiris/actions-gh-pages@v3
         with:
