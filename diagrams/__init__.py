@@ -85,6 +85,7 @@ class Diagram:
         outformat: str = "png",
         autolabel: bool = False,
         show: bool = True,
+        strict: bool = False,
         graph_attr: dict = {},
         node_attr: dict = {},
         edge_attr: dict = {},
@@ -102,6 +103,7 @@ class Diagram:
         :param graph_attr: Provide graph_attr dot config attributes.
         :param node_attr: Provide node_attr dot config attributes.
         :param edge_attr: Provide edge_attr dot config attributes.
+        :param strict: Rendering should merge multi-edges.
         """
         self.name = name
         if not name and not filename:
@@ -109,7 +111,7 @@ class Diagram:
         elif not filename:
             filename = "_".join(self.name.split()).lower()
         self.filename = filename
-        self.dot = Digraph(self.name, filename=self.filename)
+        self.dot = Digraph(self.name, filename=self.filename, strict=strict)
 
         # Set attributes.
         for k, v in self._default_graph_attrs.items():
