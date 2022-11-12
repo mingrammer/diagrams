@@ -8,7 +8,7 @@ class _Integration(_IBM):
     _icon_dir = "resources/ibm/integration"
 
 
-class ApiConnect(_Integration):
+class APIConnect(_Integration):
     _icon = "api-connect.png"
 
 

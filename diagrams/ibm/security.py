@@ -65,3 +65,5 @@ class Twilio(_Security):
 
 
 # Aliases
+
+OpenBSD = OpenBsd

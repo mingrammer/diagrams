@@ -8,7 +8,7 @@ class _Network(_IBM):
     _icon_dir = "resources/ibm/network"
 
 
-class Cdn(_Network):
+class CDN(_Network):
     _icon = "cdn.png"
 
 
@@ -24,7 +24,7 @@ class DirectLink(_Network):
     _icon = "direct-link.png"
 
 
-class Dns(_Network):
+class DNS(_Network):
     _icon = "dns.png"
 
 
@@ -32,7 +32,7 @@ class Firewall(_Network):
     _icon = "firewall.png"
 
 
-class IpsecVpn(_Network):
+class IpsecVPN(_Network):
     _icon = "ipsec-vpn.png"
 
 
@@ -60,19 +60,19 @@ class Vlan(_Network):
     _icon = "vlan.png"
 
 
-class VpcEndpoints(_Network):
+class VPCEndpoints(_Network):
     _icon = "vpc-endpoints.png"
 
 
-class VpcFlowlogs(_Network):
+class VPCFlowlogs(_Network):
     _icon = "vpc-flowlogs.png"
 
 
-class Vpc(_Network):
+class VPC(_Network):
     _icon = "vpc.png"
 
 
-class Vpn(_Network):
+class VPN(_Network):
     _icon = "vpn.png"
 
 

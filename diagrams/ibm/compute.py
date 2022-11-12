@@ -68,8 +68,11 @@ class Vmware(_Compute):
     _icon = "vmware.png"
 
 
-class VpcVirtualServer(_Compute):
+class VPCVirtualServer(_Compute):
     _icon = "vpc-virtual-server.png"
 
 
 # Aliases
+
+HPVirtualServers = HpVirtualServers
+VMware = Vmware

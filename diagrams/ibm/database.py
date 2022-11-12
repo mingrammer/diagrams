@@ -92,8 +92,20 @@ class Redis(_Database):
     _icon = "redis.png"
 
 
-class SqlQuery(_Database):
+class SQLQuery(_Database):
     _icon = "sql-query.png"
 
 
 # Aliases
+
+ComposeMySQL = ComposeMysql
+ComposeRethinkDB = ComposeRethinkdb
+ComposeScyllaDB = ComposeScylladb
+DB2Warehouse = Db2Warehouse
+DB2 = Db2
+EDB = Edb
+ElasticSearch = Elasticsearch
+HyperProtectDBaaS = HyperProtectDbaas
+MongoDB = Mongodb
+PostgreSQL = Postgresql
+RabbitMQ = Rabbitmq

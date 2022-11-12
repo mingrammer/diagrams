@@ -16,7 +16,7 @@ class Alloy(_Devtools):
     _icon = "alloy.png"
 
 
-class ApiGateway(_Devtools):
+class APIGateway(_Devtools):
     _icon = "api-gateway.png"
 
 
