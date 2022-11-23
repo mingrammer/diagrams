@@ -20,7 +20,7 @@ black = "^22.10.0"
 [tool.poetry.dev-dependencies]
 pytest = "^7.0"
 pylint = "^2.7"
-rope = "^0.14.0"
+rope = "^1.5.0"
 isort = "^4.3"
 
 [tool.black]
