@@ -20,7 +20,7 @@ typed-ast = "^1.5.4"
 pytest = "^7.0"
 pylint = "^2.7"
 rope = "^0.14.0"
-isort = "^4.3"
+isort = "^5.10"
 black = "^22.10.0"
 
 [tool.black]
