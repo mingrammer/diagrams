@@ -15,13 +15,13 @@ graphviz = ">=0.13.2,<0.20.0"
 jinja2 = ">=2.10,<4.0"
 contextvars = { version = "^2.4", python = "~3.6" }
 typed-ast = "^1.5.4"
-black = "^22.10.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^7.0"
 pylint = "^2.7"
 rope = "^0.14.0"
 isort = "^4.3"
+black = "^22.10.0"
 
 [tool.black]
 line-length = 120
