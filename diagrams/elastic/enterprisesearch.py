@@ -12,6 +12,10 @@ class AppSearch(_Enterprisesearch):
     _icon = "app-search.png"
 
 
+class Crawler(_Enterprisesearch):
+    _icon = "crawler.png"
+
+
 class EnterpriseSearch(_Enterprisesearch):
     _icon = "enterprise-search.png"
 

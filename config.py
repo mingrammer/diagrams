@@ -12,8 +12,24 @@ DIR_RESOURCE = "resources"
 DIR_TEMPLATE = "templates"
 
 PROVIDERS = (
-    "base", "onprem", "aws", "azure", "digitalocean", "gcp", "ibm", "firebase", "k8s", "alibabacloud", "oci",
-    "programming", "saas", "elastic", "generic", "openstack", "outscale")
+    "base",
+    "onprem"
+    "aws",
+    "azure",
+    "digitalocean",
+    "gcp",
+    "ibm",
+    "firebase",
+    "k8s",
+    "alibabacloud",
+    "oci",
+    "programming",
+    "saas",
+    "elastic",
+    "generic",
+    "openstack",
+    "outscale",
+)
 
 #########################
 #  Resource Processing  #
@@ -148,6 +164,7 @@ ALIASES = {
         },
         "queue": {
             "Activemq": "ActiveMQ",
+            "Emqx": "EMQX",
             "Rabbitmq": "RabbitMQ",
             "Zeromq": "ZeroMQ",
         },
@@ -411,7 +428,8 @@ ALIASES = {
     },
     "programming": {
         "framework": {
-            "Fastapi": "FastAPI"
+            "Fastapi": "FastAPI",
+            "Graphql": "GraphQL"
         },
         "language": {
             "Javascript": "JavaScript",
