@@ -12,6 +12,10 @@ class ApplicationInsights(_Devops):
     _icon = "application-insights.png"
 
 
+class Cloudtest(_Devops):
+    _icon = "cloudtest.png"
+
+
 class Devops(_Devops):
     _icon = "devops.png"
 

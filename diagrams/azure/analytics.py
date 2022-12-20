@@ -12,12 +12,20 @@ class AnalysisServices(_Analytics):
     _icon = "analysis-services.png"
 
 
+class DataLakeAnalytics(_Analytics):
+    _icon = "data-lake-analytics.png"
+
+
 class DataLakeStoreGen1(_Analytics):
     _icon = "data-lake-store-gen1.png"
 
 
 class Databricks(_Analytics):
     _icon = "databricks.png"
+
+
+class EndpointAnalytics(_Analytics):
+    _icon = "endpoint-analytics.png"
 
 
 class EventHubClusters(_Analytics):
@@ -42,6 +50,10 @@ class StreamAnalyticsJobs(_Analytics):
 
 class SynapseAnalytics(_Analytics):
     _icon = "synapse-analytics.png"
+
+
+class Workbooks(_Analytics):
+    _icon = "workbooks.png"
 
 
 # Aliases

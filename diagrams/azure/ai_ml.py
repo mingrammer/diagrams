@@ -8,12 +8,36 @@ class _Ai_Ml(_Azure):
     _icon_dir = "resources/azure/ai_ml"
 
 
+class AppliedAI(_Ai_Ml):
+    _icon = "applied-ai.png"
+
+
+class BatchAI(_Ai_Ml):
+    _icon = "batch-ai.png"
+
+
 class BotServices(_Ai_Ml):
     _icon = "bot-services.png"
 
 
 class CognitiveServices(_Ai_Ml):
     _icon = "cognitive-services.png"
+
+
+class ExperimentationStudio(_Ai_Ml):
+    _icon = "experimentation-studio.png"
+
+
+class GenomicsAccounts(_Ai_Ml):
+    _icon = "genomics-accounts.png"
+
+
+class Genomics(_Ai_Ml):
+    _icon = "genomics.png"
+
+
+class LanguageServices(_Ai_Ml):
+    _icon = "language-services.png"
 
 
 class MachineLearningStudioClassicWebServices(_Ai_Ml):
@@ -26,6 +50,14 @@ class MachineLearningStudioWebServicePlans(_Ai_Ml):
 
 class MachineLearningStudioWorkspaces(_Ai_Ml):
     _icon = "machine-learning-studio-workspaces.png"
+
+
+class MachineLearning(_Ai_Ml):
+    _icon = "machine-learning.png"
+
+
+class ObjectUnderstanding(_Ai_Ml):
+    _icon = "object-understanding.png"
 
 
 class TranslatorText(_Ai_Ml):

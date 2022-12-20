@@ -28,6 +28,10 @@ class DataShares(_Storage):
     _icon = "data-shares.png"
 
 
+class Fileshare(_Storage):
+    _icon = "fileshare.png"
+
+
 class HcpCache(_Storage):
     _icon = "hcp-cache.png"
 
@@ -54,6 +58,10 @@ class StorageAccountsClassic(_Storage):
 
 class StorageAccounts(_Storage):
     _icon = "storage-accounts.png"
+
+
+class StorageExplorer(_Storage):
+    _icon = "storage-explorer.png"
 
 
 class StorageSyncServices(_Storage):

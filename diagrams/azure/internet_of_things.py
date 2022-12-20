@@ -8,8 +8,8 @@ class _Internet_Of_Things(_Azure):
     _icon_dir = "resources/azure/internet_of_things"
 
 
-class DigitalTwins(_Internet_Of_Things):
-    _icon = "digital-twins.png"
+class LogicApps(_Internet_Of_Things):
+    _icon = "logic-apps.png"
 
 
 class TimeSeriesInsightsAccessPolicies(_Internet_Of_Things):

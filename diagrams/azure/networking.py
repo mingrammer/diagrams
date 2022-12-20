@@ -12,6 +12,10 @@ class ApplicationGateways(_Networking):
     _icon = "application-gateways.png"
 
 
+class Bastions(_Networking):
+    _icon = "bastions.png"
+
+
 class CDNProfiles(_Networking):
     _icon = "cdn-profiles.png"
 
@@ -22,6 +26,10 @@ class Connections(_Networking):
 
 class DDOSProtectionPlans(_Networking):
     _icon = "ddos-protection-plans.png"
+
+
+class DNSPrivateResolver(_Networking):
+    _icon = "dns-private-resolver.png"
 
 
 class DNSZones(_Networking):
@@ -48,6 +56,10 @@ class IpGroups(_Networking):
     _icon = "ip-groups.png"
 
 
+class LoadBalancerHub(_Networking):
+    _icon = "load-balancer-hub.png"
+
+
 class LoadBalancers(_Networking):
     _icon = "load-balancers.png"
 
@@ -70,6 +82,14 @@ class NetworkSecurityGroups(_Networking):
 
 class NetworkWatcher(_Networking):
     _icon = "network-watcher.png"
+
+
+class OnPremisesDataGateways(_Networking):
+    _icon = "on-premises-data-gateways.png"
+
+
+class PrivateLinkHub(_Networking):
+    _icon = "private-link-hub.png"
 
 
 class PrivateLinkService(_Networking):
@@ -100,6 +120,10 @@ class ReservedIpAddressesClassic(_Networking):
     _icon = "reserved-ip-addresses-classic.png"
 
 
+class ResourceManagementPrivateLink(_Networking):
+    _icon = "resource-management-private-link.png"
+
+
 class RouteFilters(_Networking):
     _icon = "route-filters.png"
 
@@ -110,6 +134,14 @@ class RouteTables(_Networking):
 
 class ServiceEndpointPolicies(_Networking):
     _icon = "service-endpoint-policies.png"
+
+
+class SpotVM(_Networking):
+    _icon = "spot-vm.png"
+
+
+class SpotVmss(_Networking):
+    _icon = "spot-vmss.png"
 
 
 class TrafficManagerProfiles(_Networking):
@@ -126,6 +158,10 @@ class VirtualNetworksClassic(_Networking):
 
 class VirtualNetworks(_Networking):
     _icon = "virtual-networks.png"
+
+
+class VirtualRouter(_Networking):
+    _icon = "virtual-router.png"
 
 
 class VirtualWans(_Networking):

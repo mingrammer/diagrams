@@ -16,6 +16,10 @@ class APIManagementServices(_Integration):
     _icon = "api-management-services.png"
 
 
+class AppConfiguration(_Integration):
+    _icon = "app-configuration.png"
+
+
 class DataCatalog(_Integration):
     _icon = "data-catalog.png"
 
@@ -36,8 +40,24 @@ class IntegrationAccounts(_Integration):
     _icon = "integration-accounts.png"
 
 
+class IntegrationServiceEnvironments(_Integration):
+    _icon = "integration-service-environments.png"
+
+
+class LogicAppsCustomConnector(_Integration):
+    _icon = "logic-apps-custom-connector.png"
+
+
 class LogicApps(_Integration):
     _icon = "logic-apps.png"
+
+
+class PartnerNamespace(_Integration):
+    _icon = "partner-namespace.png"
+
+
+class PartnerRegistration(_Integration):
+    _icon = "partner-registration.png"
 
 
 class PartnerTopic(_Integration):
@@ -46,6 +66,14 @@ class PartnerTopic(_Integration):
 
 class Relays(_Integration):
     _icon = "relays.png"
+
+
+class SendgridAccounts(_Integration):
+    _icon = "sendgrid-accounts.png"
+
+
+class ServiceBus(_Integration):
+    _icon = "service-bus.png"
 
 
 class SoftwareAsAService(_Integration):

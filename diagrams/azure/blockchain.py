@@ -12,6 +12,10 @@ class AbsMember(_Blockchain):
     _icon = "abs-member.png"
 
 
+class BlockchainApplications(_Blockchain):
+    _icon = "blockchain-applications.png"
+
+
 class BlockchainService(_Blockchain):
     _icon = "blockchain-service.png"
 

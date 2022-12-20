@@ -44,6 +44,10 @@ class CostManagementAndBilling(_Management_Governance):
     _icon = "cost-management-and-billing.png"
 
 
+class CustomerLockboxForMicrosoftAzure(_Management_Governance):
+    _icon = "customer-lockbox-for-microsoft-azure.png"
+
+
 class DiagnosticsSettings(_Management_Governance):
     _icon = "diagnostics-settings.png"
 
@@ -66,6 +70,10 @@ class Machinesazurearc(_Management_Governance):
 
 class ManagedApplicationsCenter(_Management_Governance):
     _icon = "managed-applications-center.png"
+
+
+class ManagedDesktop(_Management_Governance):
+    _icon = "managed-desktop.png"
 
 
 class Metrics(_Management_Governance):
@@ -96,12 +104,24 @@ class ResourceGraphExplorer(_Management_Governance):
     _icon = "resource-graph-explorer.png"
 
 
+class SchedulerJobCollections(_Management_Governance):
+    _icon = "scheduler-job-collections.png"
+
+
+class ServiceCatalogMad(_Management_Governance):
+    _icon = "service-catalog-mad.png"
+
+
 class ServiceProviders(_Management_Governance):
     _icon = "service-providers.png"
 
 
 class Solutions(_Management_Governance):
     _icon = "solutions.png"
+
+
+class UniversalPrint(_Management_Governance):
+    _icon = "universal-print.png"
 
 
 class UserPrivacy(_Management_Governance):

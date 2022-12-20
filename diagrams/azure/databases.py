@@ -36,6 +36,10 @@ class DatabaseMysqlServer(_Databases):
     _icon = "database-mysql-server.png"
 
 
+class DatabasePostgresqlServerGroup(_Databases):
+    _icon = "database-postgresql-server-group.png"
+
+
 class DatabasePostgresqlServer(_Databases):
     _icon = "database-postgresql-server.png"
 
@@ -52,6 +56,10 @@ class ManagedDatabase(_Databases):
     _icon = "managed-database.png"
 
 
+class PurviewAccounts(_Databases):
+    _icon = "purview-accounts.png"
+
+
 class SQLDataWarehouses(_Databases):
     _icon = "sql-data-warehouses.png"
 
@@ -60,12 +68,20 @@ class SQLDatabase(_Databases):
     _icon = "sql-database.png"
 
 
+class SQLEdge(_Databases):
+    _icon = "sql-edge.png"
+
+
 class SQLElasticPools(_Databases):
     _icon = "sql-elastic-pools.png"
 
 
 class SQLManagedInstance(_Databases):
     _icon = "sql-managed-instance.png"
+
+
+class SQLServerRegistries(_Databases):
+    _icon = "sql-server-registries.png"
 
 
 class SQLServerStretchDatabases(_Databases):

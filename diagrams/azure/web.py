@@ -8,12 +8,24 @@ class _Web(_Azure):
     _icon_dir = "resources/azure/web"
 
 
+class APIConnections(_Web):
+    _icon = "api-connections.png"
+
+
 class MediaService(_Web):
     _icon = "media-service.png"
 
 
 class NotificationHubNamespaces(_Web):
     _icon = "notification-hub-namespaces.png"
+
+
+class Signalr(_Web):
+    _icon = "signalr.png"
+
+
+class StaticApps(_Web):
+    _icon = "static-apps.png"
 
 
 # Aliases
