@@ -8,8 +8,8 @@ class _Identity(_Azure):
     _icon_dir = "resources/azure/identity"
 
 
-class AccessReview(_Identity):
-    _icon = "access-review.png"
+class AadLicenses(_Identity):
+    _icon = "aad-licenses.png"
 
 
 class ActiveDirectoryConnectHealth(_Identity):
@@ -32,16 +32,16 @@ class ADIdentityProtection(_Identity):
     _icon = "ad-identity-protection.png"
 
 
-class ADPrivilegedIdentityManagement(_Identity):
-    _icon = "ad-privileged-identity-management.png"
+class ADPrivilegeIdentityManagement(_Identity):
+    _icon = "ad-privilege-identity-management.png"
 
 
 class AppRegistrations(_Identity):
     _icon = "app-registrations.png"
 
 
-class ConditionalAccess(_Identity):
-    _icon = "conditional-access.png"
+class CustomAzureADRoles(_Identity):
+    _icon = "custom-azure-ad-roles.png"
 
 
 class EnterpriseApplications(_Identity):
@@ -64,8 +64,20 @@ class ManagedIdentities(_Identity):
     _icon = "managed-identities.png"
 
 
+class Pim(_Identity):
+    _icon = "pim.png"
+
+
+class TenantProperties(_Identity):
+    _icon = "tenant-properties.png"
+
+
 class Users(_Identity):
     _icon = "users.png"
+
+
+class VerifiableCredentials(_Identity):
+    _icon = "verifiable-credentials.png"
 
 
 # Aliases

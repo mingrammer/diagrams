@@ -16,36 +16,60 @@ class DigitalTwins(_Iot):
     _icon = "digital-twins.png"
 
 
+class EventHubs(_Iot):
+    _icon = "event-hubs.png"
+
+
+class FunctionApps(_Iot):
+    _icon = "function-apps.png"
+
+
+class IndustrialIot(_Iot):
+    _icon = "industrial-iot.png"
+
+
 class IotCentralApplications(_Iot):
     _icon = "iot-central-applications.png"
 
 
-class IotHubSecurity(_Iot):
-    _icon = "iot-hub-security.png"
+class IotEdge(_Iot):
+    _icon = "iot-edge.png"
 
 
 class IotHub(_Iot):
     _icon = "iot-hub.png"
 
 
-class Maps(_Iot):
-    _icon = "maps.png"
+class LogicApps(_Iot):
+    _icon = "logic-apps.png"
 
 
-class Sphere(_Iot):
-    _icon = "sphere.png"
+class MapsAccounts(_Iot):
+    _icon = "maps-accounts.png"
+
+
+class NotificationHubs(_Iot):
+    _icon = "notification-hubs.png"
+
+
+class StreamAnalyticsJobs(_Iot):
+    _icon = "stream-analytics-jobs.png"
+
+
+class TimeSeriesDataSets(_Iot):
+    _icon = "time-series-data-sets.png"
 
 
 class TimeSeriesInsightsEnvironments(_Iot):
     _icon = "time-series-insights-environments.png"
 
 
-class TimeSeriesInsightsEventsSources(_Iot):
-    _icon = "time-series-insights-events-sources.png"
+class TimeSeriesInsightsEventSources(_Iot):
+    _icon = "time-series-insights-event-sources.png"
 
 
-class Windows10IotCoreServices(_Iot):
-    _icon = "windows-10-iot-core-services.png"
+class Windows10CoreServices(_Iot):
+    _icon = "windows10-core-services.png"
 
 
 # Aliases

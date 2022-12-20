@@ -12,14 +12,6 @@ class AnalysisServices(_Analytics):
     _icon = "analysis-services.png"
 
 
-class DataExplorerClusters(_Analytics):
-    _icon = "data-explorer-clusters.png"
-
-
-class DataFactories(_Analytics):
-    _icon = "data-factories.png"
-
-
 class DataLakeAnalytics(_Analytics):
     _icon = "data-lake-analytics.png"
 
@@ -32,6 +24,10 @@ class Databricks(_Analytics):
     _icon = "databricks.png"
 
 
+class EndpointAnalytics(_Analytics):
+    _icon = "endpoint-analytics.png"
+
+
 class EventHubClusters(_Analytics):
     _icon = "event-hub-clusters.png"
 
@@ -40,8 +36,8 @@ class EventHubs(_Analytics):
     _icon = "event-hubs.png"
 
 
-class Hdinsightclusters(_Analytics):
-    _icon = "hdinsightclusters.png"
+class HDInsightClusters(_Analytics):
+    _icon = "hd-insight-clusters.png"
 
 
 class LogAnalyticsWorkspaces(_Analytics):
@@ -54,6 +50,10 @@ class StreamAnalyticsJobs(_Analytics):
 
 class SynapseAnalytics(_Analytics):
     _icon = "synapse-analytics.png"
+
+
+class Workbooks(_Analytics):
+    _icon = "workbooks.png"
 
 
 # Aliases

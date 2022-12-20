@@ -16,20 +16,24 @@ class ConditionalAccess(_Security):
     _icon = "conditional-access.png"
 
 
-class Defender(_Security):
-    _icon = "defender.png"
+class Detonation(_Security):
+    _icon = "detonation.png"
 
 
-class ExtendedSecurityUpdates(_Security):
-    _icon = "extended-security-updates.png"
+class Extendedsecurityupdates(_Security):
+    _icon = "extendedsecurityupdates.png"
 
 
 class KeyVaults(_Security):
     _icon = "key-vaults.png"
 
 
-class SecurityCenter(_Security):
-    _icon = "security-center.png"
+class MicrosoftDefenderForCloud(_Security):
+    _icon = "microsoft-defender-for-cloud.png"
+
+
+class MicrosoftDefender(_Security):
+    _icon = "microsoft-defender.png"
 
 
 class Sentinel(_Security):
