@@ -1,4 +1,4 @@
-FROM diagrams:1.0
+FROM diagrams:2.0
 
 ENV CRYPTOGRAPHY_DONT_BUILD_RUST=1
 
@@ -18,6 +18,6 @@ RUN ./autogen.sh
 RUN /root/.local/bin/poetry build
 
 RUN curl -v -u deployment:deployment123\
- --upload-file dist/diagrams-0.21.0-py3-none-any.whl\
-  https://nexus.flocktory.com/nexus/content/repositories/snapshots/python/diagrams-0.21.0-py3-none-any.whl
+ --upload-file dist/diagrams-0.23.1-py3-none-any.whl\
+  https://nexus.flocktory.com/nexus/content/repositories/snapshots/python/diagrams-0.23.1-py3-none-any.whl
 

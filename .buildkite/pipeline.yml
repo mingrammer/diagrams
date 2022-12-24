@@ -1,7 +1,7 @@
 steps:
   - label: 'Build image'
-    command: docker build --tag diagrams:1.0 -f ./docker/dev/Dockerfile .
+    command: docker build --tag diagrams:2.0 -f ./docker/dev/Dockerfile .
 
   - wait
   - label: 'Build dist image and publish'
-    command: docker build --tag diagrams-build:1.0 -f ./docker/dev/Dockerfile2 .
+    command: docker build --tag diagrams-build:2.0 -f ./docker/dev/Dockerfile2 .
