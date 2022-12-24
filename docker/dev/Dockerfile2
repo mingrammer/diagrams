@@ -10,7 +10,7 @@ WORKDIR /usr/src/diagrams
 
 RUN python -m unittest tests/*.py -v
 
-echo $PATH
+RUN echo $PATH
 
 RUN ./autogen.sh
 
