@@ -15,32 +15,32 @@ __diagram = contextvars.ContextVar("diagrams")
 __cluster = contextvars.ContextVar("cluster")
 
 
-def getdiagram():
+def getdiagram() -> "Diagram":
     try:
         return __diagram.get()
     except LookupError:
         return None
 
 
-def setdiagram(diagram):
+def setdiagram(diagram: "Diagram"):
     __diagram.set(diagram)
 
 
-def getcluster():
+def getcluster() -> "Cluster":
     try:
         return __cluster.get()
     except LookupError:
         return None
 
 
-def setcluster(cluster):
+def setcluster(cluster: "Cluster"):
     __cluster.set(cluster)
 
 
 class Diagram:
     __directions = ("TB", "BT", "LR", "RL")
     __curvestyles = ("ortho", "curved")
-    __outformats = ("png", "jpg", "svg", "pdf")
+    __outformats = ("png", "jpg", "svg", "pdf", "dot")
 
     # fmt: off
     _default_graph_attrs = {
@@ -83,6 +83,7 @@ class Diagram:
         direction: str = "LR",
         curvestyle: str = "ortho",
         outformat: str = "png",
+        autolabel: bool = False,
         show: bool = True,
         graph_attr: dict = {},
         node_attr: dict = {},
@@ -127,8 +128,13 @@ class Diagram:
             raise ValueError(f'"{curvestyle}" is not a valid curvestyle')
         self.dot.graph_attr["splines"] = curvestyle
 
-        if not self._validate_outformat(outformat):
-            raise ValueError(f'"{outformat}" is not a valid output format')
+        if isinstance(outformat, list):
+            for one_format in outformat:
+                if not self._validate_outformat(one_format):
+                    raise ValueError(f'"{one_format}" is not a valid output format')
+        else:
+            if not self._validate_outformat(outformat):
+                raise ValueError(f'"{outformat}" is not a valid output format')
         self.outformat = outformat
 
         # Merge passed in attributes
@@ -137,6 +143,7 @@ class Diagram:
         self.dot.edge_attr.update(edge_attr)
 
         self.show = show
+        self.autolabel = autolabel
 
     def __str__(self) -> str:
         return str(self.dot)
@@ -155,25 +162,13 @@ class Diagram:
         return self.dot.pipe(format="png")
 
     def _validate_direction(self, direction: str) -> bool:
-        direction = direction.upper()
-        for v in self.__directions:
-            if v == direction:
-                return True
-        return False
+        return direction.upper() in self.__directions
 
     def _validate_curvestyle(self, curvestyle: str) -> bool:
-        curvestyle = curvestyle.lower()
-        for v in self.__curvestyles:
-            if v == curvestyle:
-                return True
-        return False
+        return curvestyle.lower() in self.__curvestyles
 
     def _validate_outformat(self, outformat: str) -> bool:
-        outformat = outformat.lower()
-        for v in self.__outformats:
-            if v == outformat:
-                return True
-        return False
+        return outformat.lower() in self.__outformats
 
     def node(self, nodeid: str, label: str, **attrs) -> None:
         """Create a new node."""
@@ -188,7 +183,11 @@ class Diagram:
         self.dot.subgraph(dot)
 
     def render(self) -> None:
-        self.dot.render(format=self.outformat, view=self.show, quiet=True)
+        if isinstance(self.outformat, list):
+            for one_format in self.outformat:
+                self.dot.render(format=one_format, view=self.show, quiet=True)
+        else:
+            self.dot.render(format=self.outformat, view=self.show, quiet=True)
 
 
 class Cluster:
@@ -261,12 +260,8 @@ class Cluster:
             self._diagram.subgraph(self.dot)
         setcluster(self._parent)
 
-    def _validate_direction(self, direction: str):
-        direction = direction.upper()
-        for v in self.__directions:
-            if v == direction:
-                return True
-        return False
+    def _validate_direction(self, direction: str) -> bool:
+        return direction.upper() in self.__directions
 
     def node(self, nodeid: str, label: str, **attrs) -> None:
         """Create a new node in the cluster."""
@@ -287,20 +282,32 @@ class Node:
 
     _height = 1.9
 
-    def __init__(self, label: str = "", **attrs: Dict):
+    def __init__(self, label: str = "", *, nodeid: str = None, **attrs: Dict):
         """Node represents a system component.
 
         :param label: Node label.
         """
-        # Generates an ID for identifying a node.
-        self._id = self._rand_id()
+        # Generates an ID for identifying a node, unless specified
+        self._id = nodeid or self._rand_id()
         self.label = label
+
+        # Node must be belong to a diagrams.
+        self._diagram = getdiagram()
+        if self._diagram is None:
+            raise EnvironmentError("Global diagrams context not set up")
+
+        if self._diagram.autolabel:
+            prefix = self.__class__.__name__
+            if self.label:
+                self.label = prefix + "\n" + self.label
+            else:
+                self.label = prefix
 
         # fmt: off
         # If a node has an icon, increase the height slightly to avoid
         # that label being spanned between icon image and white space.
         # Increase the height by the number of new lines included in the label.
-        padding = 0.4 * (label.count('\n'))
+        padding = 0.4 * (self.label.count('\n'))
         self._attrs = {
             "shape": "none",
             "height": str(self._height + padding),
@@ -310,10 +317,6 @@ class Node:
         # fmt: on
         self._attrs.update(attrs)
 
-        # Node must be belong to a diagrams.
-        self._diagram = getdiagram()
-        if self._diagram is None:
-            raise EnvironmentError("Global diagrams context not set up")
         self._cluster = getcluster()
 
         # If a node is in the cluster context, add it to cluster.
@@ -339,7 +342,7 @@ class Node:
             return other
 
     def __rsub__(self, other: Union[List["Node"], List["Edge"]]):
-        """ Called for [Nodes] and [Edges] - Self because list don't have __sub__ operators. """
+        """Called for [Nodes] and [Edges] - Self because list don't have __sub__ operators."""
         for o in other:
             if isinstance(o, Edge):
                 o.connect(self)

@@ -6,7 +6,7 @@ RUN apk update && apk add --no-cache \
   gcc libc-dev g++ graphviz git bash go imagemagick inkscape ttf-opensans curl fontconfig xdg-utils
 
 # install go package.
-RUN go get github.com/mingrammer/round
+RUN go install github.com/mingrammer/round@latest
 
 # install fonts
 RUN curl -O https://noto-website.storage.googleapis.com/pkgs/NotoSansCJKjp-hinted.zip \

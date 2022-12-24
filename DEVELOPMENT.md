@@ -43,7 +43,7 @@ To be able to develop and run diagrams locally on you Mac device, you should hav
 
 1. Go to diagrams root directory.
 
-2. Install poetry, the Python project management packge used by diagrams.
+2. Install poetry, the Python project management package used by diagrams.
 
     ```shell
     pip install poetry
