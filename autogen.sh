@@ -22,10 +22,10 @@ providers=(
   "outscale"
 )
 
-if ! [ -x "$(command -v round)" ]; then
-  echo 'round is not installed'
-  exit 1
-fi
+#if ! [ -x "$(command -v round)" ]; then
+#  echo 'round is not installed'
+#  exit 1
+#fi
 
 if ! [ -x "$(command -v inkscape)" ]; then
   echo 'inkscape is not installed'
