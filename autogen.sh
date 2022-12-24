@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -x
+
 app_root_dir="diagrams"
 
 # NOTE: azure icon set is not latest version
