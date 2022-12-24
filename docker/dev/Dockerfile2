@@ -4,6 +4,9 @@ ENV CRYPTOGRAPHY_DONT_BUILD_RUST=1
 
 RUN apk update && apk add --no-cache libffi-dev libressl-dev curl
 
+# install go package.
+RUN go install github.com/mingrammer/round@latest
+
 RUN pip install --user poetry
 
 WORKDIR /usr/src/diagrams
