@@ -10,7 +10,7 @@ WORKDIR /usr/src/diagrams
 
 RUN python -m unittest tests/*.py -v
 
-RUN ls /root/go/bin/
+RUN /root/go/bin/round
 
 RUN ./autogen.sh
 

@@ -22,7 +22,7 @@ providers=(
   "outscale"
 )
 
-if ! [ -x "$(command -v /root/go/bin/round)" ]; then
+if ! [ -x "$(command -v round)" ]; then
   echo 'round is not installed'
   exit 1
 fi
