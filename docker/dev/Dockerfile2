@@ -10,8 +10,6 @@ WORKDIR /usr/src/diagrams
 
 RUN python -m unittest tests/*.py -v
 
-RUN echo $PATH
-
 RUN ./autogen.sh
 
 RUN /root/.local/bin/poetry build
