@@ -29,20 +29,20 @@ providers=(
 #  exit 1
 #fi
 
-if ! [ -x "$(command -v inkscape)" ]; then
-  echo 'inkscape is not installed'
-  exit 1
-fi
-
-if ! [ -x "$(command -v convert)" ]; then
-  echo 'image magick is not installed'
-  exit 1
-fi
-
-if ! [ -x "$(command -v black)" ]; then
-  echo 'black is not installed'
-  exit 1
-fi
+#if ! [ -x "$(command -v inkscape)" ]; then
+#  echo 'inkscape is not installed'
+#  exit 1
+#fi
+#
+#if ! [ -x "$(command -v convert)" ]; then
+#  echo 'image magick is not installed'
+#  exit 1
+#fi
+#
+#if ! [ -x "$(command -v black)" ]; then
+#  echo 'black is not installed'
+#  exit 1
+#fi
 
 # preprocess the resources
 for pvd in "${providers[@]}"; do
