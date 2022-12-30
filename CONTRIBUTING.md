@@ -30,9 +30,9 @@ ffmpeg -i my_big_image.jpg -vf scale=w=256:h=256:force_original_aspect_ratio=dec
 
 Then just run the `./autogen.sh` to generate the added or updated node classes. (cf. [DEVELOPMENT][DEVELOPMENT.md])
 
-> IMPORTANT NOTE: To run `autogen.sh`, you need [round][round] and
+> IMPORTANT NOTE: To run `autogen.sh`, you need [round][round], [black][black] and
 > [inkscape][inkscape] command lines that are used for cleaning the image
-> resource filenames.
+> resource filenames and formatting the generated python code.
 >
 > macOS users can download the inkscape via Homebrew.
 >
@@ -40,6 +40,7 @@ Then just run the `./autogen.sh` to generate the added or updated node classes. 
 
 [DEVELOPMENT.md]: ./DEVELOPMENT.md
 [round]: https://github.com/mingrammer/round
+[black]: https://pypi.org/project/black
 [inkscape]: https://inkscape.org/ko/release
 
 ### Update Aliases
@@ -54,7 +55,7 @@ or update the `ALIASES` map in [config.py](config.py).
 Then just run the `./autogen.sh` to generate the added or updated aliases. (cf. [DEVELOPMENT][DEVELOPMENT.md])
 
 > IMPORTANT NOTE: To run `autogen.sh`, you need [round][round] and
-> [inkscape][inkscape] command lines that are used for clearning the image
+> [inkscape][inkscape] command lines that are used for cleaning the image
 > resource filenames.
 >
 > Or you should use the docker image.

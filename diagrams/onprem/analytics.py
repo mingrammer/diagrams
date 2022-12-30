@@ -20,6 +20,10 @@ class Dbt(_Analytics):
     _icon = "dbt.png"
 
 
+class Dremio(_Analytics):
+    _icon = "dremio.png"
+
+
 class Flink(_Analytics):
     _icon = "flink.png"
 
@@ -38,6 +42,10 @@ class Metabase(_Analytics):
 
 class Norikra(_Analytics):
     _icon = "norikra.png"
+
+
+class Powerbi(_Analytics):
+    _icon = "powerbi.png"
 
 
 class Presto(_Analytics):
@@ -65,3 +73,5 @@ class Tableau(_Analytics):
 
 
 # Aliases
+
+PowerBI = Powerbi

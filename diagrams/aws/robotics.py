@@ -8,6 +8,18 @@ class _Robotics(_AWS):
     _icon_dir = "resources/aws/robotics"
 
 
+class RobomakerCloudExtensionRos(_Robotics):
+    _icon = "robomaker-cloud-extension-ros.png"
+
+
+class RobomakerDevelopmentEnvironment(_Robotics):
+    _icon = "robomaker-development-environment.png"
+
+
+class RobomakerFleetManagement(_Robotics):
+    _icon = "robomaker-fleet-management.png"
+
+
 class RobomakerSimulator(_Robotics):
     _icon = "robomaker-simulator.png"
 

@@ -16,22 +16,25 @@ __diagram = contextvars.ContextVar("diagrams")
 __cluster = contextvars.ContextVar("cluster")
 
 
-def getdiagram():
-    return __diagram.get()
+def getdiagram() -> "Diagram":
+    try:
+        return __diagram.get()
+    except LookupError:
+        return None
 
 
-def setdiagram(diagram):
+def setdiagram(diagram: "Diagram"):
     __diagram.set(diagram)
 
 
-def getcluster():
+def getcluster() -> "Cluster":
     try:
         return __cluster.get()
     except LookupError:
         return None
 
 
-def setcluster(cluster):
+def setcluster(cluster: "Cluster"):
     __cluster.set(cluster)
 
 def new_init(cls, init):
@@ -106,7 +109,7 @@ class _Cluster:
 
 class Diagram(_Cluster):
     __curvestyles = ("ortho", "curved")
-    __outformats = ("png", "jpg", "svg", "pdf")
+    __outformats = ("png", "jpg", "svg", "pdf", "dot")
 
     # fmt: off
     _default_graph_attrs = {
@@ -149,6 +152,7 @@ class Diagram(_Cluster):
         direction: str = "LR",
         curvestyle: str = "ortho",
         outformat: str = "png",
+        autolabel: bool = False,
         show: bool = True,
         graph_attr: dict = {},
         node_attr: dict = {},
@@ -171,7 +175,7 @@ class Diagram(_Cluster):
 
         self.name = name
         if not name and not filename:
-          filename = "diagrams_image"
+            filename = "diagrams_image"
         elif not filename:
             filename = "_".join(self.name.split()).lower()
         self.filename = filename
@@ -197,8 +201,13 @@ class Diagram(_Cluster):
             raise ValueError(f'"{curvestyle}" is not a valid curvestyle')
         self.dot.graph_attr["splines"] = curvestyle
 
-        if not self._validate_outformat(outformat):
-            raise ValueError(f'"{outformat}" is not a valid output format')
+        if isinstance(outformat, list):
+            for one_format in outformat:
+                if not self._validate_outformat(one_format):
+                    raise ValueError(f'"{one_format}" is not a valid output format')
+        else:
+            if not self._validate_outformat(outformat):
+                raise ValueError(f'"{outformat}" is not a valid output format')
         self.outformat = outformat
 
         # Merge passed in attributes
@@ -207,6 +216,7 @@ class Diagram(_Cluster):
         self.dot.edge_attr.update(edge_attr)
 
         self.show = show
+        self.autolabel = autolabel
 
     def __enter__(self):
         setdiagram(self)
@@ -235,26 +245,25 @@ class Diagram(_Cluster):
     def _repr_png_(self):
         return self.dot.pipe(format="png")
 
+    def _validate_direction(self, direction: str) -> bool:
+        return direction.upper() in self.__directions
+
     def _validate_curvestyle(self, curvestyle: str) -> bool:
-        curvestyle = curvestyle.lower()
-        for v in self.__curvestyles:
-            if v == curvestyle:
-                return True
-        return False
+        return curvestyle.lower() in self.__curvestyles
 
     def _validate_outformat(self, outformat: str) -> bool:
-        outformat = outformat.lower()
-        for v in self.__outformats:
-            if v == outformat:
-                return True
-        return False
+        return outformat.lower() in self.__outformats
 
     def connect(self, node: "Node", node2: "Node", edge: "Edge") -> None:
         """Connect the two Nodes."""
         self.edges[(node, node2)] = edge
 
     def render(self) -> None:
-        self.dot.render(format=self.outformat, view=self.show, quiet=True)
+        if isinstance(self.outformat, list):
+            for one_format in self.outformat:
+                self.dot.render(format=one_format, view=self.show, quiet=True)
+        else:
+            self.dot.render(format=self.outformat, view=self.show, quiet=True)
 
 
 class Node(_Cluster):
@@ -270,6 +279,76 @@ class Node(_Cluster):
         "fontname": "Sans-Serif",
         "fontsize": "12",
     }
+
+    # fmt: on
+
+    # FIXME:
+    #  Cluster direction does not work now. Graphviz couldn't render
+    #  correctly for a subgraph that has a different rank direction.
+    def __init__(
+        self,
+        label: str = "cluster",
+        direction: str = "LR",
+        graph_attr: dict = {},
+    ):
+        """Cluster represents a cluster context.
+
+        :param label: Cluster label.
+        :param direction: Data flow direction. Default is 'left to right'.
+        :param graph_attr: Provide graph_attr dot config attributes.
+        """
+        self.label = label
+        self.name = "cluster_" + self.label
+
+        self.dot = Digraph(self.name)
+
+        # Set attributes.
+        for k, v in self._default_graph_attrs.items():
+            self.dot.graph_attr[k] = v
+        self.dot.graph_attr["label"] = self.label
+
+        if not self._validate_direction(direction):
+            raise ValueError(f'"{direction}" is not a valid direction')
+        self.dot.graph_attr["rankdir"] = direction
+
+        # Node must be belong to a diagrams.
+        self._diagram = getdiagram()
+        if self._diagram is None:
+            raise EnvironmentError("Global diagrams context not set up")
+        self._parent = getcluster()
+
+        # Set cluster depth for distinguishing the background color
+        self.depth = self._parent.depth + 1 if self._parent else 0
+        coloridx = self.depth % len(self.__bgcolors)
+        self.dot.graph_attr["bgcolor"] = self.__bgcolors[coloridx]
+
+        # Merge passed in attributes
+        self.dot.graph_attr.update(graph_attr)
+
+    def __enter__(self):
+        setcluster(self)
+        return self
+
+    def __exit__(self, exc_type, exc_value, traceback):
+        if self._parent:
+            self._parent.subgraph(self.dot)
+        else:
+            self._diagram.subgraph(self.dot)
+        setcluster(self._parent)
+
+    def _validate_direction(self, direction: str) -> bool:
+        return direction.upper() in self.__directions
+
+    def node(self, nodeid: str, label: str, **attrs) -> None:
+        """Create a new node in the cluster."""
+        self.dot.node(nodeid, label=label, **attrs)
+
+    def subgraph(self, dot: Digraph) -> None:
+        self.dot.subgraph(dot)
+
+
+class Node:
+    """Node represents a node for a specific backend service."""
 
     _provider = None
     _type = None
@@ -326,6 +405,21 @@ class Node(_Cluster):
             self._icon_dir = _node._icon_dir
         if icon_size:
             self._icon_size = icon_size
+        # Generates an ID for identifying a node, unless specified
+        self._id = nodeid or self._rand_id()
+        self.label = label
+
+        # Node must be belong to a diagrams.
+        self._diagram = getdiagram()
+        if self._diagram is None:
+            raise EnvironmentError("Global diagrams context not set up")
+
+        if self._diagram.autolabel:
+            prefix = self.__class__.__name__
+            if self.label:
+                self.label = prefix + "\n" + self.label
+            else:
+                self.label = prefix
 
         # fmt: off
         # If a node has an icon, increase the height slightly to avoid
@@ -343,6 +437,8 @@ class Node(_Cluster):
 
         # fmt: on
         self._attrs.update(attrs)
+
+        self._cluster = getcluster()
 
         # If a node is in the cluster context, add it to cluster.
         if not self._parent:
@@ -400,7 +496,7 @@ class Node(_Cluster):
             return other
 
     def __rsub__(self, other: Union[List["Node"], List["Edge"]]):
-        """ Called for [Nodes] and [Edges] - Self because list don't have __sub__ operators. """
+        """Called for [Nodes] and [Edges] - Self because list don't have __sub__ operators."""
         for o in other:
             if isinstance(o, Edge):
                 o.connect(self)
@@ -467,8 +563,8 @@ class Node(_Cluster):
         """
         if not isinstance(node, Node):
             ValueError(f"{node} is not a valid Node")
-        if not isinstance(node, Edge):
-            ValueError(f"{node} is not a valid Edge")
+        if not isinstance(edge, Edge):
+            ValueError(f"{edge} is not a valid Edge")
         # An edge must be added on the global diagrams, not a cluster.
         getdiagram().connect(self, node, edge)
         return node

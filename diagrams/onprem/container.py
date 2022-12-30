@@ -28,6 +28,10 @@ class Gvisor(_Container):
     _icon = "gvisor.png"
 
 
+class K3S(_Container):
+    _icon = "k3s.png"
+
+
 class Lxc(_Container):
     _icon = "lxc.png"
 

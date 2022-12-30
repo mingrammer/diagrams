@@ -20,6 +20,14 @@ class CosmosDb(_Database):
     _icon = "cosmos-db.png"
 
 
+class DataExplorerClusters(_Database):
+    _icon = "data-explorer-clusters.png"
+
+
+class DataFactory(_Database):
+    _icon = "data-factory.png"
+
+
 class DataLake(_Database):
     _icon = "data-lake.png"
 
@@ -44,6 +52,10 @@ class ElasticJobAgents(_Database):
     _icon = "elastic-job-agents.png"
 
 
+class InstancePools(_Database):
+    _icon = "instance-pools.png"
+
+
 class ManagedDatabases(_Database):
     _icon = "managed-databases.png"
 
@@ -66,6 +78,22 @@ class SQLServerStretchDatabases(_Database):
 
 class SQLServers(_Database):
     _icon = "sql-servers.png"
+
+
+class SQLVM(_Database):
+    _icon = "sql-vm.png"
+
+
+class SQL(_Database):
+    _icon = "sql.png"
+
+
+class SsisLiftAndShiftIr(_Database):
+    _icon = "ssis-lift-and-shift-ir.png"
+
+
+class SynapseAnalytics(_Database):
+    _icon = "synapse-analytics.png"
 
 
 class VirtualClusters(_Database):

@@ -20,16 +20,56 @@ class ConsoleMobileApplication(_Integration):
     _icon = "console-mobile-application.png"
 
 
+class EventResource(_Integration):
+    _icon = "event-resource.png"
+
+
+class EventbridgeCustomEventBusResource(_Integration):
+    _icon = "eventbridge-custom-event-bus-resource.png"
+
+
+class EventbridgeDefaultEventBusResource(_Integration):
+    _icon = "eventbridge-default-event-bus-resource.png"
+
+
+class EventbridgeSaasPartnerEventBusResource(_Integration):
+    _icon = "eventbridge-saas-partner-event-bus-resource.png"
+
+
 class Eventbridge(_Integration):
     _icon = "eventbridge.png"
+
+
+class ExpressWorkflows(_Integration):
+    _icon = "express-workflows.png"
 
 
 class MQ(_Integration):
     _icon = "mq.png"
 
 
+class SimpleNotificationServiceSnsEmailNotification(_Integration):
+    _icon = "simple-notification-service-sns-email-notification.png"
+
+
+class SimpleNotificationServiceSnsHttpNotification(_Integration):
+    _icon = "simple-notification-service-sns-http-notification.png"
+
+
+class SimpleNotificationServiceSnsTopic(_Integration):
+    _icon = "simple-notification-service-sns-topic.png"
+
+
 class SimpleNotificationServiceSns(_Integration):
     _icon = "simple-notification-service-sns.png"
+
+
+class SimpleQueueServiceSqsMessage(_Integration):
+    _icon = "simple-queue-service-sqs-message.png"
+
+
+class SimpleQueueServiceSqsQueue(_Integration):
+    _icon = "simple-queue-service-sqs-queue.png"
 
 
 class SimpleQueueServiceSqs(_Integration):

@@ -22,11 +22,11 @@ with Diagram("Simple Web Service with DB Cluster", show=False):
     web = ECS("service")
 
     with Cluster("DB Cluster"):
-        db_master = RDS("master")
-        db_master - [RDS("slave1"),
-                     RDS("slave2")]
+        db_primary = RDS("primary")
+        db_primary - [RDS("replica1"),
+                     RDS("replica2")]
 
-    dns >> web >> db_master
+    dns >> web >> db_primary
 ```
 
 ![simple web service with db cluster diagram](/img/simple_web_service_with_db_cluster_diagram.png)

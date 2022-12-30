@@ -12,6 +12,10 @@ class CloudDevelopmentKit(_Devtools):
     _icon = "cloud-development-kit.png"
 
 
+class Cloud9Resource(_Devtools):
+    _icon = "cloud9-resource.png"
+
+
 class Cloud9(_Devtools):
     _icon = "cloud9.png"
 

@@ -12,6 +12,10 @@ class Appstream20(_Enduser):
     _icon = "appstream-2-0.png"
 
 
+class DesktopAndAppStreaming(_Enduser):
+    _icon = "desktop-and-app-streaming.png"
+
+
 class Workdocs(_Enduser):
     _icon = "workdocs.png"
 

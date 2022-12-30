@@ -20,6 +20,10 @@ class CostExplorer(_Cost):
     _icon = "cost-explorer.png"
 
 
+class CostManagement(_Cost):
+    _icon = "cost-management.png"
+
+
 class ReservedInstanceReporting(_Cost):
     _icon = "reserved-instance-reporting.png"
 

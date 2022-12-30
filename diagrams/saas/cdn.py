@@ -16,4 +16,8 @@ class Cloudflare(_Cdn):
     _icon = "cloudflare.png"
 
 
+class Fastly(_Cdn):
+    _icon = "fastly.png"
+
+
 # Aliases

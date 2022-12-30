@@ -20,4 +20,8 @@ class SIEM(_Security):
     _icon = "siem.png"
 
 
+class Xdr(_Security):
+    _icon = "xdr.png"
+
+
 # Aliases

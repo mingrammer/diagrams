@@ -15,6 +15,6 @@ class Custom(Node):
     def _load_icon(self):
         return self._icon
 
-    def __init__(self, label, icon_path):
+    def __init__(self, label, icon_path, *args, **kwargs):
         self._icon = icon_path
-        super().__init__(label)
+        super().__init__(label, *args, **kwargs)

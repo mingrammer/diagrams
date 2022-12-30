@@ -54,7 +54,7 @@ from diagrams.k8s.storage import PV, PVC, StorageClass
 # oracle resources
 from diagrams.oci.compute import VirtualMachine, Container
 from diagrams.oci.network import Firewall
-from diagrams.oci.storage import Filestorage, Storagegateway
+from diagrams.oci.storage import FileStorage, StorageGateway
 ```
 
 You can find all available nodes list in [Here](https://diagrams.mingrammer.com/docs/nodes/aws).

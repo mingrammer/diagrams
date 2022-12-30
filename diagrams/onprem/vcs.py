@@ -12,12 +12,20 @@ class Git(_Vcs):
     _icon = "git.png"
 
 
+class Gitea(_Vcs):
+    _icon = "gitea.png"
+
+
 class Github(_Vcs):
     _icon = "github.png"
 
 
 class Gitlab(_Vcs):
     _icon = "gitlab.png"
+
+
+class Svn(_Vcs):
+    _icon = "svn.png"
 
 
 # Aliases
