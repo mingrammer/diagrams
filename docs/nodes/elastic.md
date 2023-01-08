@@ -57,7 +57,7 @@ Node classes list of elastic provider.
 **diagrams.elastic.elasticsearch.Beats**
 
 <img width="30" src="/img/resources/elastic/elasticsearch/elasticsearch.png" alt="Elasticsearch" style="float: left; padding-right: 5px;" >
-**diagrams.elastic.elasticsearch.Elasticsearch**
+**diagrams.elastic.elasticsearch.Elasticsearch**, **ElasticSearch** (alias)
 
 <img width="30" src="/img/resources/elastic/elasticsearch/kibana.png" alt="Kibana" style="float: left; padding-right: 5px;" >
 **diagrams.elastic.elasticsearch.Kibana**
@@ -69,7 +69,7 @@ Node classes list of elastic provider.
 **diagrams.elastic.elasticsearch.Logstash**, **LogStash** (alias)
 
 <img width="30" src="/img/resources/elastic/elasticsearch/machine-learning.png" alt="MachineLearning" style="float: left; padding-right: 5px;" >
-**diagrams.elastic.elasticsearch.MachineLearning**
+**diagrams.elastic.elasticsearch.MachineLearning**, **ML** (alias)
 
 <img width="30" src="/img/resources/elastic/elasticsearch/map-services.png" alt="MapServices" style="float: left; padding-right: 5px;" >
 **diagrams.elastic.elasticsearch.MapServices**
@@ -86,8 +86,8 @@ Node classes list of elastic provider.
 <img width="30" src="/img/resources/elastic/elasticsearch/security-settings.png" alt="SecuritySettings" style="float: left; padding-right: 5px;" >
 **diagrams.elastic.elasticsearch.SecuritySettings**
 
-<img width="30" src="/img/resources/elastic/elasticsearch/sql.png" alt="Sql" style="float: left; padding-right: 5px;" >
-**diagrams.elastic.elasticsearch.Sql**
+<img width="30" src="/img/resources/elastic/elasticsearch/sql.png" alt="SQL" style="float: left; padding-right: 5px;" >
+**diagrams.elastic.elasticsearch.SQL**
 
 <img width="30" src="/img/resources/elastic/elasticsearch/stack.png" alt="Stack" style="float: left; padding-right: 5px;" >
 **diagrams.elastic.elasticsearch.Stack**
