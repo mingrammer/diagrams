@@ -503,8 +503,8 @@ Node classes list of onprem provider.
 <img width="30" src="/img/resources/onprem/registry/harbor.png" alt="Harbor" style="float: left; padding-right: 5px;" >
 **diagrams.onprem.registry.Harbor**
 
-<img width="30" src="/img/resources/onprem/registry/jfrog.png" alt="Harbor" style="float: left; padding-right: 5px;" >
-**diagrams.onprem.registry.JFrog**
+<img width="30" src="/img/resources/onprem/registry/jfrog.png" alt="Jfrog" style="float: left; padding-right: 5px;" >
+**diagrams.onprem.registry.Jfrog**
 
 ## onprem.search
 
