@@ -120,6 +120,10 @@ class Wildfly(_Network):
     _icon = "wildfly.png"
 
 
+class Yarp(_Network):
+    _icon = "yarp.png"
+
+
 class Zookeeper(_Network):
     _icon = "zookeeper.png"
 
