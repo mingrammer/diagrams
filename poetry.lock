@@ -176,14 +176,11 @@ python-versions = "*"
 
 [[package]]
 name = "packaging"
-version = "20.8"
+version = "22.0"
 description = "Core utilities for Python packages"
 category = "dev"
 optional = false
-python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
-
-[package.dependencies]
-pyparsing = ">=2.0.2"
+python-versions = ">=3.7"
 
 [[package]]
 name = "pathspec"
@@ -245,14 +242,6 @@ toml = ">=0.9.2"
 typing-extensions = {version = ">=3.10.0", markers = "python_version < \"3.10\""}
 
 [[package]]
-name = "pyparsing"
-version = "2.4.7"
-description = "Python parsing module"
-category = "dev"
-optional = false
-python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
-
-[[package]]
 name = "pytest"
 version = "7.0.1"
 description = "pytest: simple powerful testing with Python"
@@ -275,12 +264,39 @@ tomli = ">=1.0.0"
 testing = ["argcomplete", "hypothesis (>=3.56)", "mock", "nose", "pygments (>=2.7.2)", "requests", "xmlschema"]
 
 [[package]]
+name = "pytoolconfig"
+version = "1.2.4"
+description = "Python tool configuration"
+category = "dev"
+optional = false
+python-versions = ">=3.7"
+
+[package.dependencies]
+packaging = ">=22.0"
+platformdirs = {version = ">=1.4.4", optional = true, markers = "extra == \"global\""}
+tomli = {version = ">=2.0.1", markers = "python_version < \"3.11\""}
+typing-extensions = {version = ">=4.4.0", markers = "python_version < \"3.8\""}
+
+[package.extras]
+doc = ["sphinx (>=4.5.0)", "tabulate (>=0.8.9)"]
+gen-docs = ["pytoolconfig[doc]", "sphinx (>=4.5.0)", "sphinx-autodoc-typehints (>=1.18.1)", "sphinx-rtd-theme (>=1.0.0)"]
+global = ["platformdirs (>=1.4.4)"]
+validation = ["pydantic (>=1.7.4)"]
+
+[[package]]
 name = "rope"
-version = "0.14.0"
+version = "1.6.0"
 description = "a python refactoring library..."
 category = "dev"
 optional = false
-python-versions = "*"
+python-versions = ">=3.7"
+
+[package.dependencies]
+pytoolconfig = {version = ">=1.2.2", extras = ["global"]}
+
+[package.extras]
+dev = ["build (>=0.7.0)", "pytest (>=7.0.1)", "pytest-timeout (>=2.1.0)"]
+doc = ["pytoolconfig[doc]", "sphinx (>=4.5.0)", "sphinx-autodoc-typehints (>=1.18.1)", "sphinx-rtd-theme (>=1.0.0)"]
 
 [[package]]
 name = "setuptools"
@@ -304,11 +320,11 @@ python-versions = "*"
 
 [[package]]
 name = "tomli"
-version = "1.2.3"
+version = "2.0.1"
 description = "A lil' TOML parser"
 category = "dev"
 optional = false
-python-versions = ">=3.6"
+python-versions = ">=3.7"
 
 [[package]]
 name = "typed-ast"
@@ -320,11 +336,11 @@ python-versions = ">=3.6"
 
 [[package]]
 name = "typing-extensions"
-version = "4.1.1"
-description = "Backported and Experimental Type Hints for Python 3.6+"
+version = "4.4.0"
+description = "Backported and Experimental Type Hints for Python 3.7+"
 category = "dev"
 optional = false
-python-versions = ">=3.6"
+python-versions = ">=3.7"
 
 [[package]]
 name = "wrapt"
@@ -349,7 +365,7 @@ testing = ["func-timeout", "jaraco.itertools"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.7"
-content-hash = "424f1037b46d65e63b58808fe626a8792180ea4b543bda912865828621ae7892"
+content-hash = "6d6e7de09866d01cb2233f89d8123f55b81ffbbd96ddd01f0d11de582020c705"
 
 [metadata.files]
 astroid = [
@@ -509,8 +525,8 @@ mypy-extensions = [
     {file = "mypy_extensions-0.4.3.tar.gz", hash = "sha256:2d82818f5bb3e369420cb3c4060a7970edba416647068eb4c5343488a6c604a8"},
 ]
 packaging = [
-    {file = "packaging-20.8-py2.py3-none-any.whl", hash = "sha256:24e0da08660a87484d1602c30bb4902d74816b6985b93de36926f5bc95741858"},
-    {file = "packaging-20.8.tar.gz", hash = "sha256:78598185a7008a470d64526a8059de9aaa449238f280fc9eb6b13ba6c4109093"},
+    {file = "packaging-22.0-py3-none-any.whl", hash = "sha256:957e2148ba0e1a3b282772e791ef1d8083648bc131c8ab0c1feba110ce1146c3"},
+    {file = "packaging-22.0.tar.gz", hash = "sha256:2198ec20bd4c017b8f9717e00f0c8714076fc2fd93816750ab48e2c41de2cfd3"},
 ]
 pathspec = [
     {file = "pathspec-0.10.1-py3-none-any.whl", hash = "sha256:46846318467efc4556ccfd27816e004270a9eeeeb4d062ce5e6fc7a87c573f93"},
@@ -532,18 +548,17 @@ pylint = [
     {file = "pylint-2.12.0-py3-none-any.whl", hash = "sha256:ba00afcb1550bc217bbcb0eb76c10cb8335f7417a3323bdd980c29fb5b59f8d2"},
     {file = "pylint-2.12.0.tar.gz", hash = "sha256:245c87e5da54c35b623c21b35debf87d93b18bf9e0229515cc172d0b83d627cd"},
 ]
-pyparsing = [
-    {file = "pyparsing-2.4.7-py2.py3-none-any.whl", hash = "sha256:ef9d7589ef3c200abe66653d3f1ab1033c3c419ae9b9bdb1240a85b024efc88b"},
-    {file = "pyparsing-2.4.7.tar.gz", hash = "sha256:c203ec8783bf771a155b207279b9bccb8dea02d8f0c9e5f8ead507bc3246ecc1"},
-]
 pytest = [
     {file = "pytest-7.0.1-py3-none-any.whl", hash = "sha256:9ce3ff477af913ecf6321fe337b93a2c0dcf2a0a1439c43f5452112c1e4280db"},
     {file = "pytest-7.0.1.tar.gz", hash = "sha256:e30905a0c131d3d94b89624a1cc5afec3e0ba2fbdb151867d8e0ebd49850f171"},
 ]
+pytoolconfig = [
+    {file = "pytoolconfig-1.2.4-py3-none-any.whl", hash = "sha256:7befe396f91b2593345b829a7745c7f459f04fc6c53fc86c0b771945446a7bd1"},
+    {file = "pytoolconfig-1.2.4.tar.gz", hash = "sha256:5e1a246f77970ddb5f3d8d06fbf162424b8a1adfc22c2eb51826b383bf293d1e"},
+]
 rope = [
-    {file = "rope-0.14.0-py2-none-any.whl", hash = "sha256:6b728fdc3e98a83446c27a91fc5d56808a004f8beab7a31ab1d7224cecc7d969"},
-    {file = "rope-0.14.0-py3-none-any.whl", hash = "sha256:f0dcf719b63200d492b85535ebe5ea9b29e0d0b8aebeb87fe03fc1a65924fdaf"},
-    {file = "rope-0.14.0.tar.gz", hash = "sha256:c5c5a6a87f7b1a2095fb311135e2a3d1f194f5ecb96900fdd0a9100881f48aaf"},
+    {file = "rope-1.6.0-py3-none-any.whl", hash = "sha256:2b4c6879422672f13958a6a36f063d1823d3ba9f0af933e7944293a5a33c8afc"},
+    {file = "rope-1.6.0.tar.gz", hash = "sha256:931aea154365556a7daac01cbcece0c9c118755bfff7c65ab242b69585167eca"},
 ]
 setuptools = [
     {file = "setuptools-59.6.0-py3-none-any.whl", hash = "sha256:4ce92f1e1f8f01233ee9952c04f6b81d1e02939d6e1b488428154974a4d0783e"},
@@ -554,8 +569,8 @@ toml = [
     {file = "toml-0.10.0.tar.gz", hash = "sha256:229f81c57791a41d65e399fc06bf0848bab550a9dfd5ed66df18ce5f05e73d5c"},
 ]
 tomli = [
-    {file = "tomli-1.2.3-py3-none-any.whl", hash = "sha256:e3069e4be3ead9668e21cb9b074cd948f7b3113fd9c8bba083f48247aab8b11c"},
-    {file = "tomli-1.2.3.tar.gz", hash = "sha256:05b6166bff487dc068d322585c7ea4ef78deed501cc124060e0f238e89a9231f"},
+    {file = "tomli-2.0.1-py3-none-any.whl", hash = "sha256:939de3e7a6161af0c887ef91b7d41a53e7c5a1ca976325f429cb46ea9bc30ecc"},
+    {file = "tomli-2.0.1.tar.gz", hash = "sha256:de526c12914f0c550d15924c62d72abc48d6fe7364aa87328337a31007fe8a4f"},
 ]
 typed-ast = [
     {file = "typed_ast-1.5.4-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:669dd0c4167f6f2cd9f57041e03c3c2ebf9063d0757dc89f79ba1daa2bfca9d4"},
@@ -584,8 +599,8 @@ typed-ast = [
     {file = "typed_ast-1.5.4.tar.gz", hash = "sha256:39e21ceb7388e4bb37f4c679d72707ed46c2fbf2a5609b8b8ebc4b067d977df2"},
 ]
 typing-extensions = [
-    {file = "typing_extensions-4.1.1-py3-none-any.whl", hash = "sha256:21c85e0fe4b9a155d0799430b0ad741cdce7e359660ccbd8b530613e8df88ce2"},
-    {file = "typing_extensions-4.1.1.tar.gz", hash = "sha256:1a9462dcc3347a79b1f1c0271fbe79e844580bb598bafa1ed208b94da3cdcd42"},
+    {file = "typing_extensions-4.4.0-py3-none-any.whl", hash = "sha256:16fa4864408f655d35ec496218b85f79b3437c829e93320c7c9215ccfd92489e"},
+    {file = "typing_extensions-4.4.0.tar.gz", hash = "sha256:1511434bb92bf8dd198c12b1cc812e800d4181cfcb867674e0f8279cc93087aa"},
 ]
 wrapt = [
     {file = "wrapt-1.11.2.tar.gz", hash = "sha256:565a021fd19419476b9362b05eeaa094178de64f8361e44468f9e9d7843901e1"},
