@@ -13,7 +13,7 @@ DIR_TEMPLATE = "templates"
 
 PROVIDERS = (
     "base",
-    "onprem"
+    "onprem",
     "aws",
     "azure",
     "digitalocean",
