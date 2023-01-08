@@ -18,7 +18,7 @@ typed-ast = "^1.5.4"
 
 [tool.poetry.dev-dependencies]
 pytest = "^7.2"
-pylint = "^2.7"
+pylint = "^2.13"
 rope = "^0.14.0"
 isort = "^4.3"
 black = "^22.12.0"
