@@ -64,6 +64,10 @@ class Starlette(_Framework):
     _icon = "starlette.png"
 
 
+class Svelte(_Framework):
+    _icon = "svelte.png"
+
+
 class Vue(_Framework):
     _icon = "vue.png"
 
