@@ -12,4 +12,8 @@ class Harbor(_Registry):
     _icon = "harbor.png"
 
 
+class Jfrog(_Registry):
+    _icon = "jfrog.png"
+
+
 # Aliases

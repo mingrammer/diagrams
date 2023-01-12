@@ -125,6 +125,9 @@ Node classes list of programming provider.
 <img width="30" src="/img/resources/programming/framework/starlette.png" alt="Starlette" style="float: left; padding-right: 5px;" >
 **diagrams.programming.framework.Starlette**
 
+<img width="30" src="/img/resources/programming/framework/svelte.png" alt="Svelte" style="float: left; padding-right: 5px;" >
+**diagrams.programming.framework.Svelte**
+
 <img width="30" src="/img/resources/programming/framework/vue.png" alt="Vue" style="float: left; padding-right: 5px;" >
 **diagrams.programming.framework.Vue**
 

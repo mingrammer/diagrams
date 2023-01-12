@@ -56,7 +56,7 @@ class SecuritySettings(_Elasticsearch):
     _icon = "security-settings.png"
 
 
-class Sql(_Elasticsearch):
+class SQL(_Elasticsearch):
     _icon = "sql.png"
 
 
@@ -66,4 +66,6 @@ class Stack(_Elasticsearch):
 
 # Aliases
 
+ElasticSearch = Elasticsearch
 LogStash = Logstash
+ML = MachineLearning

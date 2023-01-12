@@ -154,6 +154,7 @@ class Diagram(_Cluster):
         outformat: str = "png",
         autolabel: bool = False,
         show: bool = True,
+        strict: bool = False,
         graph_attr: dict = {},
         node_attr: dict = {},
         edge_attr: dict = {},
@@ -171,6 +172,7 @@ class Diagram(_Cluster):
         :param graph_attr: Provide graph_attr dot config attributes.
         :param node_attr: Provide node_attr dot config attributes.
         :param edge_attr: Provide edge_attr dot config attributes.
+        :param strict: Rendering should merge multi-edges.
         """
 
         self.name = name
@@ -182,6 +184,7 @@ class Diagram(_Cluster):
 
         super().__init__(self.name, filename=self.filename)
         self.edges = {}
+        self.dot = Digraph(self.name, filename=self.filename, strict=strict)
 
         # Set attributes.
         self.dot.attr(compound="true")

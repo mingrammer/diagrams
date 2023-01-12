@@ -461,6 +461,9 @@ Node classes list of onprem provider.
 <img width="30" src="/img/resources/onprem/network/wildfly.png" alt="Wildfly" style="float: left; padding-right: 5px;" >
 **diagrams.onprem.network.Wildfly**
 
+<img width="30" src="/img/resources/onprem/network/yarp.png" alt="Yarp" style="float: left; padding-right: 5px;" >
+**diagrams.onprem.network.Yarp**
+
 <img width="30" src="/img/resources/onprem/network/zookeeper.png" alt="Zookeeper" style="float: left; padding-right: 5px;" >
 **diagrams.onprem.network.Zookeeper**
 
@@ -499,6 +502,9 @@ Node classes list of onprem provider.
 
 <img width="30" src="/img/resources/onprem/registry/harbor.png" alt="Harbor" style="float: left; padding-right: 5px;" >
 **diagrams.onprem.registry.Harbor**
+
+<img width="30" src="/img/resources/onprem/registry/jfrog.png" alt="Jfrog" style="float: left; padding-right: 5px;" >
+**diagrams.onprem.registry.Jfrog**
 
 ## onprem.search
 
