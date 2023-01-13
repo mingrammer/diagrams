@@ -29,7 +29,7 @@ with Diagram("Simple Web Service with DB Cluster", show=False):
     dns >> web >> db_primary
 ```
 
-![simple web service with db cluster diagram](/img/simple_web_service_with_db_cluster_diagram.png)
+![simple web service with db cluster diagram](/diagrams/img/simple_web_service_with_db_cluster_diagram.png)
 
 ## Nested Clusters
 
@@ -66,6 +66,6 @@ with Diagram("Event Processing", show=False):
     handlers >> dw
 ```
 
-![event processing diagram](/img/event_processing_diagram.png)
+![event processing diagram](/diagrams/img/event_processing_diagram.png)
 
 > There is no depth limit of nesting. Feel free to create nested clusters as deep as you want.

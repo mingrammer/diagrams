@@ -66,4 +66,4 @@ with Diagram(name="Advanced Web Service with On-Premise (colored)", show=False):
         >> aggregator
 ```
 
-![advanced web service with on-premise diagram colored](/img/advanced_web_service_with_on-premise_colored.png)
+![advanced web service with on-premise diagram colored](/diagrams/img/advanced_web_service_with_on-premise_colored.png)

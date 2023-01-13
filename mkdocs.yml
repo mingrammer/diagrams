@@ -1,0 +1,47 @@
+site_name: Diagrams
+
+theme:
+  name: material
+  logo: img/diagrams.png 
+  favicon: img/diagrams.png
+  palette:
+    primary: indigo
+    accent: blue
+
+repo_url: https://github.com/mingrammer/diagrams
+
+extra:
+  social:
+    - icon: fontawesome/brands/github 
+      link: https://github.com/mingrammer/diagrams
+
+plugins:
+  - search:
+      separator: '[\s\-\.]+'
+nav:
+  - Getting Started:
+    - Examples: getting-started/examples.md
+    - Installation: getting-started/installation.md
+  - Nodes:
+    - Generic: nodes/generic.md
+    - OCI: nodes/oci.md
+    - Firebase: nodes/firebase.md
+    - Outscale: nodes/outscale.md
+    - Alibaba Cloud: nodes/alibabacloud.md
+    - GCP: nodes/gcp.md
+    - Custom: nodes/custom.md
+    - Azure: nodes/azure.md
+    - Kubernetes: nodes/k8s.md
+    - IBM: nodes/ibm.md
+    - SAAS: nodes/saas.md
+    - Digital Ocean: nodes/digitalocean.md
+    - AWS: nodes/aws.md
+    - Elastic: nodes/elastic.md
+    - Programming: nodes/programming.md
+    - On Prem: nodes/onprem.md
+    - Openstack: nodes/openstack.md
+  - Guides:
+    - Cluster: guides/cluster.md
+    - Edge: guides/edge.md
+    - Node: guides/node.md
+    - Diagram: guides/diagram.md

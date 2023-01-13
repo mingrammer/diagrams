@@ -39,7 +39,7 @@ This code generates below diagram.
 $ python diagram.py
 ```
 
-![web service diagram](/img/web_service_diagram.png)
+![web service diagram](/diagrams/img/web_service_diagram.png)
 
 It will be saved as `web_service.png` on your working directory.
 
