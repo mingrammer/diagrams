@@ -2,7 +2,7 @@
 AWS provides a set of services for Amazon Web Service provider.
 """
 
-from diagrams import Node
+from diagrams import Node, Cluster
 
 
 class _AWS(Node):
