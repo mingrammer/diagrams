@@ -18,13 +18,14 @@ jobs:
   test:
     strategy:
       matrix:
-        python: ["3.6", "3.7", "3.8", "3.9"]
-    runs-on: ubuntu-20.04
+        python: [3.7, 3.8, 3.9, 3.10, 3.11]
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-python@v2
+      - uses: actions/setup-python@v3
         with:
           python-version: ${{ matrix.python }}
+          cache: poetry
       - name: Setup Graphviz
         uses: ts-graphviz/setup-graphviz@v1
       - name: Install poetry
