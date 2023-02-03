@@ -20,6 +20,9 @@ Node classes list of saas provider.
 <img width="30" src="/img/resources/saas/alerting/xmatters.png" alt="Xmatters" style="float: left; padding-right: 5px;" >
 **diagrams.saas.alerting.Xmatters**
 
+<img width="30" src="/img/resources/saas/alerting/pagerduty.png" alt="Pagerduty" style="float: left; padding-right: 5px;" >
+**diagrams.saas.alerting.Pagerduty**
+
 ## saas.analytics
 
 
