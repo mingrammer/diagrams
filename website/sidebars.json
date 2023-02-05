@@ -28,7 +28,8 @@
       "nodes/programming",
       "nodes/saas",
       "nodes/c4",
-      "nodes/custom"
+      "nodes/custom",
+      "nodes/gis"
     ]
   }
 }
