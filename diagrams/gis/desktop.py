@@ -8,7 +8,7 @@ class _Desktop(_GIS):
     _icon_dir = "resources/gis/desktop"
 
 
-class Qgis(_Desktop):
+class QGIS(_Desktop):
     _icon = "qgis.png"
 
 

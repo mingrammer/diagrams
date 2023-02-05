@@ -5,20 +5,143 @@ title: GIS
 
 Node classes list of gis provider.
 
+## gis.cli
+
+
+<img width="30" src="/img/resources/gis/cli/gdal.png" alt="Gdal" style="float: left; padding-right: 5px;" >
+**diagrams.gis.cli.Gdal**
+
+## gis.data
+
+
+<img width="30" src="/img/resources/gis/data/ban.png" alt="BAN" style="float: left; padding-right: 5px;" >
+**diagrams.gis.data.BAN**
+
+<img width="30" src="/img/resources/gis/data/ign.png" alt="IGN" style="float: left; padding-right: 5px;" >
+**diagrams.gis.data.IGN**
+
+<img width="30" src="/img/resources/gis/data/openstreetmap.png" alt="Openstreetmap" style="float: left; padding-right: 5px;" >
+**diagrams.gis.data.Openstreetmap**
+
+## gis.database
+
+
+<img width="30" src="/img/resources/gis/database/postgis.png" alt="Postgis" style="float: left; padding-right: 5px;" >
+**diagrams.gis.database.Postgis**
+
 ## gis.desktop
 
 
-<img width="30" src="/img/resources/gis/desktop/qgis.png" alt="Qgis" style="float: left; padding-right: 5px;" >
-**diagrams.gis.desktop.Qgis**
+<img width="30" src="/img/resources/gis/desktop/qgis.png" alt="QGIS" style="float: left; padding-right: 5px;" >
+**diagrams.gis.desktop.QGIS**
+
+## gis.format
+
+
+<img width="30" src="/img/resources/gis/format/geopackage.png" alt="Geopackage" style="float: left; padding-right: 5px;" >
+**diagrams.gis.format.Geopackage**
+
+## gis.geocoding
+
+
+<img width="30" src="/img/resources/gis/geocoding/addok.png" alt="Addok" style="float: left; padding-right: 5px;" >
+**diagrams.gis.geocoding.Addok**
+
+<img width="30" src="/img/resources/gis/geocoding/nominatim.png" alt="Nominatim" style="float: left; padding-right: 5px;" >
+**diagrams.gis.geocoding.Nominatim**
+
+## gis.java
+
+
+<img width="30" src="/img/resources/gis/java/geotools.png" alt="Geotools" style="float: left; padding-right: 5px;" >
+**diagrams.gis.java.Geotools**
+
+## gis.javascript
+
+
+<img width="30" src="/img/resources/gis/javascript/maplibre.png" alt="Maplibre" style="float: left; padding-right: 5px;" >
+**diagrams.gis.javascript.Maplibre**
+
+<img width="30" src="/img/resources/gis/javascript/ol-ext.png" alt="OlExt" style="float: left; padding-right: 5px;" >
+**diagrams.gis.javascript.OlExt**
+
+<img width="30" src="/img/resources/gis/javascript/openlayers.png" alt="Openlayers" style="float: left; padding-right: 5px;" >
+**diagrams.gis.javascript.Openlayers**
+
+<img width="30" src="/img/resources/gis/javascript/turfjs.png" alt="Turfjs" style="float: left; padding-right: 5px;" >
+**diagrams.gis.javascript.Turfjs**
+
+## gis.mobile
+
+
+<img width="30" src="/img/resources/gis/mobile/mergin.png" alt="Mergin" style="float: left; padding-right: 5px;" >
+**diagrams.gis.mobile.Mergin**
+
+<img width="30" src="/img/resources/gis/mobile/qfield.png" alt="Qfield" style="float: left; padding-right: 5px;" >
+**diagrams.gis.mobile.Qfield**
+
+## gis.ogc
+
+
+<img width="30" src="/img/resources/gis/ogc/ogc.png" alt="OGC" style="float: left; padding-right: 5px;" >
+**diagrams.gis.ogc.OGC**
+
+<img width="30" src="/img/resources/gis/ogc/wfs.png" alt="WFS" style="float: left; padding-right: 5px;" >
+**diagrams.gis.ogc.WFS**
+
+<img width="30" src="/img/resources/gis/ogc/wms.png" alt="WMS" style="float: left; padding-right: 5px;" >
+**diagrams.gis.ogc.WMS**
+
+## gis.organization
+
+
+<img width="30" src="/img/resources/gis/organization/osgeo.png" alt="Osgeo" style="float: left; padding-right: 5px;" >
+**diagrams.gis.organization.Osgeo**
+
+## gis.python
+
+
+<img width="30" src="/img/resources/gis/python/geopandas.png" alt="Geopandas" style="float: left; padding-right: 5px;" >
+**diagrams.gis.python.Geopandas**
+
+## gis.routing
+
+
+<img width="30" src="/img/resources/gis/routing/osmr.png" alt="Osmr" style="float: left; padding-right: 5px;" >
+**diagrams.gis.routing.Osmr**
+
+<img width="30" src="/img/resources/gis/routing/pgrouting.png" alt="Pgrouting" style="float: left; padding-right: 5px;" >
+**diagrams.gis.routing.Pgrouting**
 
 ## gis.server
 
 
+<img width="30" src="/img/resources/gis/server/geohealthcheck.png" alt="Geohealthcheck" style="float: left; padding-right: 5px;" >
+**diagrams.gis.server.Geohealthcheck**
+
+<img width="30" src="/img/resources/gis/server/geomapfish.png" alt="Geomapfish" style="float: left; padding-right: 5px;" >
+**diagrams.gis.server.Geomapfish**
+
+<img width="30" src="/img/resources/gis/server/geonetwork.png" alt="Geonetwork" style="float: left; padding-right: 5px;" >
+**diagrams.gis.server.Geonetwork**
+
+<img width="30" src="/img/resources/gis/server/georchestra.png" alt="Georchestra" style="float: left; padding-right: 5px;" >
+**diagrams.gis.server.Georchestra**
+
 <img width="30" src="/img/resources/gis/server/geoserver.png" alt="Geoserver" style="float: left; padding-right: 5px;" >
 **diagrams.gis.server.Geoserver**
+
+<img width="30" src="/img/resources/gis/server/geowebcache.png" alt="Geowebcache" style="float: left; padding-right: 5px;" >
+**diagrams.gis.server.Geowebcache**
+
+<img width="30" src="/img/resources/gis/server/mapproxy.png" alt="Mapproxy" style="float: left; padding-right: 5px;" >
+**diagrams.gis.server.Mapproxy**
 
 <img width="30" src="/img/resources/gis/server/mapserver.png" alt="Mapserver" style="float: left; padding-right: 5px;" >
 **diagrams.gis.server.Mapserver**
 
-<img width="30" src="/img/resources/gis/server/qgis-server.png" alt="QgisServer" style="float: left; padding-right: 5px;" >
-**diagrams.gis.server.QgisServer**
+<img width="30" src="/img/resources/gis/server/pygeoapi.png" alt="Pygeoapi" style="float: left; padding-right: 5px;" >
+**diagrams.gis.server.Pygeoapi**
+
+<img width="30" src="/img/resources/gis/server/qgis-server.png" alt="QGISServer" style="float: left; padding-right: 5px;" >
+**diagrams.gis.server.QGISServer**

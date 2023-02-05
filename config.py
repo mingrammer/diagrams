@@ -91,7 +91,7 @@ UPPER_WORDS = {
     "openstack": ("rpm", "loci", "nfv", "ec2api"),
     "pve": ("pve"),
     "ibm": ("ibm"),
-    "gis": ("gis"),
+    "gis": ("gis","ban","ign","ogc","qgis","wfs","wms"),
 }
 
 TITLE_WORDS = {
