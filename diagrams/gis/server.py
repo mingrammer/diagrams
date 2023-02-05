@@ -12,4 +12,12 @@ class Geoserver(_Server):
     _icon = "geoserver.png"
 
 
+class Mapserver(_Server):
+    _icon = "mapserver.png"
+
+
+class QgisServer(_Server):
+    _icon = "qgis-server.png"
+
+
 # Aliases
