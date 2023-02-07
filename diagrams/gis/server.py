@@ -8,6 +8,14 @@ class _Server(_GIS):
     _icon_dir = "resources/gis/server"
 
 
+class Baremaps(_Server):
+    _icon = "baremaps.png"
+
+
+class Deegree(_Server):
+    _icon = "deegree.png"
+
+
 class Geohealthcheck(_Server):
     _icon = "geohealthcheck.png"
 
@@ -18,6 +26,10 @@ class Geomapfish(_Server):
 
 class Geonetwork(_Server):
     _icon = "geonetwork.png"
+
+
+class Geonode(_Server):
+    _icon = "geonode.png"
 
 
 class Georchestra(_Server):
@@ -40,12 +52,24 @@ class Mapserver(_Server):
     _icon = "mapserver.png"
 
 
+class Mapstore(_Server):
+    _icon = "mapstore.png"
+
+
+class Pycsw(_Server):
+    _icon = "pycsw.png"
+
+
 class Pygeoapi(_Server):
     _icon = "pygeoapi.png"
 
 
 class QGISServer(_Server):
     _icon = "qgis-server.png"
+
+
+class Zooproject(_Server):
+    _icon = "zooproject.png"
 
 
 # Aliases

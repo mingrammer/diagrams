@@ -11,6 +11,12 @@ Node classes list of gis provider.
 <img width="30" src="/img/resources/gis/cli/gdal.png" alt="Gdal" style="float: left; padding-right: 5px;" >
 **diagrams.gis.cli.Gdal**
 
+## gis.cplusplus
+
+
+<img width="30" src="/img/resources/gis/cplusplus/mapnik.png" alt="Mapnik" style="float: left; padding-right: 5px;" >
+**diagrams.gis.cplusplus.Mapnik**
+
 ## gis.data
 
 
@@ -47,6 +53,9 @@ Node classes list of gis provider.
 <img width="30" src="/img/resources/gis/geocoding/addok.png" alt="Addok" style="float: left; padding-right: 5px;" >
 **diagrams.gis.geocoding.Addok**
 
+<img width="30" src="/img/resources/gis/geocoding/gisgraphy.png" alt="Gisgraphy" style="float: left; padding-right: 5px;" >
+**diagrams.gis.geocoding.Gisgraphy**
+
 <img width="30" src="/img/resources/gis/geocoding/nominatim.png" alt="Nominatim" style="float: left; padding-right: 5px;" >
 **diagrams.gis.geocoding.Nominatim**
 
@@ -58,6 +67,15 @@ Node classes list of gis provider.
 
 ## gis.javascript
 
+
+<img width="30" src="/img/resources/gis/javascript/cesium.png" alt="Cesium" style="float: left; padding-right: 5px;" >
+**diagrams.gis.javascript.Cesium**
+
+<img width="30" src="/img/resources/gis/javascript/geostyler.png" alt="Geostyler" style="float: left; padding-right: 5px;" >
+**diagrams.gis.javascript.Geostyler**
+
+<img width="30" src="/img/resources/gis/javascript/keplerjs.png" alt="Keplerjs" style="float: left; padding-right: 5px;" >
+**diagrams.gis.javascript.Keplerjs**
 
 <img width="30" src="/img/resources/gis/javascript/maplibre.png" alt="Maplibre" style="float: left; padding-right: 5px;" >
 **diagrams.gis.javascript.Maplibre**
@@ -107,14 +125,26 @@ Node classes list of gis provider.
 ## gis.routing
 
 
+<img width="30" src="/img/resources/gis/routing/graphhopper.png" alt="Graphhopper" style="float: left; padding-right: 5px;" >
+**diagrams.gis.routing.Graphhopper**
+
 <img width="30" src="/img/resources/gis/routing/osmr.png" alt="Osmr" style="float: left; padding-right: 5px;" >
 **diagrams.gis.routing.Osmr**
 
 <img width="30" src="/img/resources/gis/routing/pgrouting.png" alt="Pgrouting" style="float: left; padding-right: 5px;" >
 **diagrams.gis.routing.Pgrouting**
 
+<img width="30" src="/img/resources/gis/routing/valhalla.png" alt="Valhalla" style="float: left; padding-right: 5px;" >
+**diagrams.gis.routing.Valhalla**
+
 ## gis.server
 
+
+<img width="30" src="/img/resources/gis/server/baremaps.png" alt="Baremaps" style="float: left; padding-right: 5px;" >
+**diagrams.gis.server.Baremaps**
+
+<img width="30" src="/img/resources/gis/server/deegree.png" alt="Deegree" style="float: left; padding-right: 5px;" >
+**diagrams.gis.server.Deegree**
 
 <img width="30" src="/img/resources/gis/server/geohealthcheck.png" alt="Geohealthcheck" style="float: left; padding-right: 5px;" >
 **diagrams.gis.server.Geohealthcheck**
@@ -124,6 +154,9 @@ Node classes list of gis provider.
 
 <img width="30" src="/img/resources/gis/server/geonetwork.png" alt="Geonetwork" style="float: left; padding-right: 5px;" >
 **diagrams.gis.server.Geonetwork**
+
+<img width="30" src="/img/resources/gis/server/geonode.png" alt="Geonode" style="float: left; padding-right: 5px;" >
+**diagrams.gis.server.Geonode**
 
 <img width="30" src="/img/resources/gis/server/georchestra.png" alt="Georchestra" style="float: left; padding-right: 5px;" >
 **diagrams.gis.server.Georchestra**
@@ -140,8 +173,17 @@ Node classes list of gis provider.
 <img width="30" src="/img/resources/gis/server/mapserver.png" alt="Mapserver" style="float: left; padding-right: 5px;" >
 **diagrams.gis.server.Mapserver**
 
+<img width="30" src="/img/resources/gis/server/mapstore.png" alt="Mapstore" style="float: left; padding-right: 5px;" >
+**diagrams.gis.server.Mapstore**
+
+<img width="30" src="/img/resources/gis/server/pycsw.png" alt="Pycsw" style="float: left; padding-right: 5px;" >
+**diagrams.gis.server.Pycsw**
+
 <img width="30" src="/img/resources/gis/server/pygeoapi.png" alt="Pygeoapi" style="float: left; padding-right: 5px;" >
 **diagrams.gis.server.Pygeoapi**
 
 <img width="30" src="/img/resources/gis/server/qgis-server.png" alt="QGISServer" style="float: left; padding-right: 5px;" >
 **diagrams.gis.server.QGISServer**
+
+<img width="30" src="/img/resources/gis/server/zooproject.png" alt="Zooproject" style="float: left; padding-right: 5px;" >
+**diagrams.gis.server.Zooproject**

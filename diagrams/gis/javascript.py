@@ -8,6 +8,18 @@ class _Javascript(_GIS):
     _icon_dir = "resources/gis/javascript"
 
 
+class Cesium(_Javascript):
+    _icon = "cesium.png"
+
+
+class Geostyler(_Javascript):
+    _icon = "geostyler.png"
+
+
+class Keplerjs(_Javascript):
+    _icon = "keplerjs.png"
+
+
 class Maplibre(_Javascript):
     _icon = "maplibre.png"
 

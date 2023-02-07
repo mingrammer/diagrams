@@ -8,12 +8,20 @@ class _Routing(_GIS):
     _icon_dir = "resources/gis/routing"
 
 
+class Graphhopper(_Routing):
+    _icon = "graphhopper.png"
+
+
 class Osmr(_Routing):
     _icon = "osmr.png"
 
 
 class Pgrouting(_Routing):
     _icon = "pgrouting.png"
+
+
+class Valhalla(_Routing):
+    _icon = "valhalla.png"
 
 
 # Aliases

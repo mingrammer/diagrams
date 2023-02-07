@@ -12,6 +12,10 @@ class Addok(_Geocoding):
     _icon = "addok.png"
 
 
+class Gisgraphy(_Geocoding):
+    _icon = "gisgraphy.png"
+
+
 class Nominatim(_Geocoding):
     _icon = "nominatim.png"
 
