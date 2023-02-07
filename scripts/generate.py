@@ -5,7 +5,7 @@ from typing import Iterable
 from jinja2 import Environment, FileSystemLoader, Template, exceptions
 
 import config as cfg
-from . import app_root_dir, doc_root_dir, resource_dir, template_dir
+from . import app_root_dir, doc_root_dir, resource_dir, template_dir, base_dir
 
 _usage = "Usage: generate.py <provider>"
 
@@ -55,11 +55,13 @@ def gen_apidoc(pvd: str, typ_paths: dict) -> str:
         return name
 
     typ_classes = {}
-    for typ, paths in sorted(typ_paths.items()):
+    for typ, (paths, resource_root) in sorted(typ_paths.items()):
         typ_classes[typ] = []
-        for name in map(_gen_class_name, paths):
+        for path in paths:
+            name = _gen_class_name(path)
+            resource_path = os.path.join(resource_root, path)
             alias = cfg.ALIASES[pvd].get(typ, {}).get(name)
-            typ_classes[typ].append({"name": name, "alias": alias})
+            typ_classes[typ].append({"name": name, "alias": alias, "resource_path": resource_path})
     return tmpl.render(pvd=pvd, typ_classes=typ_classes)
 
 
@@ -80,6 +82,7 @@ def make_apidoc(pvd: str, content: str) -> None:
 def generate(pvd: str) -> None:
     """Generates a service node classes."""
     typ_paths = {}
+    base = base_dir()
     for root, _, files in os.walk(resource_dir(pvd)):
         # Extract the names and paths from resources.
         files.sort()
@@ -91,10 +94,11 @@ def generate(pvd: str) -> None:
         if typ == pvd:
             continue
 
+        resource_root = os.path.relpath(root, base)
         classes = gen_classes(pvd, typ, paths)
         make_module(pvd, typ, classes)
 
-        typ_paths[typ] = paths
+        typ_paths[typ] = (paths, resource_root)
     # Build API documentation
     apidoc = gen_apidoc(pvd, typ_paths)
     make_apidoc(pvd, apidoc)

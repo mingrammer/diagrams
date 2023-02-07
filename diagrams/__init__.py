@@ -15,25 +15,25 @@ __diagram = contextvars.ContextVar("diagrams")
 __cluster = contextvars.ContextVar("cluster")
 
 
-def getdiagram():
+def getdiagram() -> "Diagram":
     try:
         return __diagram.get()
     except LookupError:
         return None
 
 
-def setdiagram(diagram):
+def setdiagram(diagram: "Diagram"):
     __diagram.set(diagram)
 
 
-def getcluster():
+def getcluster() -> "Cluster":
     try:
         return __cluster.get()
     except LookupError:
         return None
 
 
-def setcluster(cluster):
+def setcluster(cluster: "Cluster"):
     __cluster.set(cluster)
 
 
@@ -83,7 +83,9 @@ class Diagram:
         direction: str = "LR",
         curvestyle: str = "ortho",
         outformat: str = "png",
+        autolabel: bool = False,
         show: bool = True,
+        strict: bool = False,
         graph_attr: dict = {},
         node_attr: dict = {},
         edge_attr: dict = {},
@@ -101,6 +103,7 @@ class Diagram:
         :param graph_attr: Provide graph_attr dot config attributes.
         :param node_attr: Provide node_attr dot config attributes.
         :param edge_attr: Provide edge_attr dot config attributes.
+        :param strict: Rendering should merge multi-edges.
         """
         self.name = name
         if not name and not filename:
@@ -108,7 +111,7 @@ class Diagram:
         elif not filename:
             filename = "_".join(self.name.split()).lower()
         self.filename = filename
-        self.dot = Digraph(self.name, filename=self.filename)
+        self.dot = Digraph(self.name, filename=self.filename, strict=strict)
 
         # Set attributes.
         for k, v in self._default_graph_attrs.items():
@@ -142,6 +145,7 @@ class Diagram:
         self.dot.edge_attr.update(edge_attr)
 
         self.show = show
+        self.autolabel = autolabel
 
     def __str__(self) -> str:
         return str(self.dot)
@@ -258,11 +262,8 @@ class Cluster:
             self._diagram.subgraph(self.dot)
         setcluster(self._parent)
 
-    def _validate_direction(self, direction: str):
-        direction = direction.upper()
-        if direction in self.__directions:
-            return True
-        return False
+    def _validate_direction(self, direction: str) -> bool:
+        return direction.upper() in self.__directions
 
     def node(self, nodeid: str, label: str, **attrs) -> None:
         """Create a new node in the cluster."""
@@ -283,20 +284,32 @@ class Node:
 
     _height = 1.9
 
-    def __init__(self, label: str = "", **attrs: Dict):
+    def __init__(self, label: str = "", *, nodeid: str = None, **attrs: Dict):
         """Node represents a system component.
 
         :param label: Node label.
         """
-        # Generates an ID for identifying a node.
-        self._id = self._rand_id()
+        # Generates an ID for identifying a node, unless specified
+        self._id = nodeid or self._rand_id()
         self.label = label
+
+        # Node must be belong to a diagrams.
+        self._diagram = getdiagram()
+        if self._diagram is None:
+            raise EnvironmentError("Global diagrams context not set up")
+
+        if self._diagram.autolabel:
+            prefix = self.__class__.__name__
+            if self.label:
+                self.label = prefix + "\n" + self.label
+            else:
+                self.label = prefix
 
         # fmt: off
         # If a node has an icon, increase the height slightly to avoid
         # that label being spanned between icon image and white space.
         # Increase the height by the number of new lines included in the label.
-        padding = 0.4 * (label.count('\n'))
+        padding = 0.4 * (self.label.count('\n'))
         self._attrs = {
             "shape": "none",
             "height": str(self._height + padding),
@@ -306,10 +319,6 @@ class Node:
         # fmt: on
         self._attrs.update(attrs)
 
-        # Node must be belong to a diagrams.
-        self._diagram = getdiagram()
-        if self._diagram is None:
-            raise EnvironmentError("Global diagrams context not set up")
         self._cluster = getcluster()
 
         # If a node is in the cluster context, add it to cluster.
@@ -335,7 +344,7 @@ class Node:
             return other
 
     def __rsub__(self, other: Union[List["Node"], List["Edge"]]):
-        """ Called for [Nodes] and [Edges] - Self because list don't have __sub__ operators. """
+        """Called for [Nodes] and [Edges] - Self because list don't have __sub__ operators."""
         for o in other:
             if isinstance(o, Edge):
                 o.connect(self)

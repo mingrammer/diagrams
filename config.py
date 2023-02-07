@@ -12,8 +12,24 @@ DIR_RESOURCE = "resources"
 DIR_TEMPLATE = "templates"
 
 PROVIDERS = (
-    "base", "onprem", "aws", "azure", "digitalocean", "gcp", "ibm", "firebase", "k8s", "alibabacloud", "oci",
-    "programming", "saas", "elastic", "generic", "openstack", "outscale")
+    "base",
+    "onprem",
+    "aws",
+    "azure",
+    "digitalocean",
+    "gcp",
+    "ibm",
+    "firebase",
+    "k8s",
+    "alibabacloud",
+    "oci",
+    "programming",
+    "saas",
+    "elastic",
+    "generic",
+    "openstack",
+    "outscale",
+)
 
 #########################
 #  Resource Processing  #
@@ -67,7 +83,7 @@ UPPER_WORDS = {
         "sa", "sc", "sts", "svc",
     ),
     "oci": ("oci", "ocid", "oke", "ocir", "ddos", "waf", "bm", "vm", "cdn", "vpn", "dns", "nat", "dms", "api", "id"),
-    "elastic": ("apm", "siem", "ece", "eck"),
+    "elastic": ("apm", "siem", "ece", "eck", "sql"),
     "generic": ("vpn", "ios", "xen", "sql", "lxc"),
     "outscale": ("osc",),
     "openstack": ("rpm", "loci", "nfv", "ec2api"),
@@ -148,6 +164,7 @@ ALIASES = {
         },
         "queue": {
             "Activemq": "ActiveMQ",
+            "Emqx": "EMQX",
             "Rabbitmq": "RabbitMQ",
             "Zeromq": "ZeroMQ",
         },
@@ -429,7 +446,9 @@ ALIASES = {
     },
     "elastic": {
         "elasticsearch": {
+            "Elasticsearch": "ElasticSearch",
             "Logstash": "LogStash",
+            "MachineLearning": "ML",
         }
     },
     "outscale": {

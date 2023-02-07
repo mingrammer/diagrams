@@ -84,7 +84,7 @@ To contribute to diagram, check out [contribution guidelines](CONTRIBUTING.md).
 
 ## Other languages
 
-- If you are familiar to Go, you can use [go-diagrams](https://github.com/blushft/go-diagrams) as well.
+- If you are familiar with Go, you can use [go-diagrams](https://github.com/blushft/go-diagrams) as well.
 
 ## License
 
