@@ -11,6 +11,9 @@ Node classes list of gis provider.
 <img width="30" src="/img/resources/gis/cli/gdal.png" alt="Gdal" style="float: left; padding-right: 5px;" >
 **diagrams.gis.cli.Gdal**
 
+<img width="30" src="/img/resources/gis/cli/lastools.png" alt="Lastools" style="float: left; padding-right: 5px;" >
+**diagrams.gis.cli.Lastools**
+
 ## gis.cplusplus
 
 
@@ -47,6 +50,9 @@ Node classes list of gis provider.
 <img width="30" src="/img/resources/gis/format/geopackage.png" alt="Geopackage" style="float: left; padding-right: 5px;" >
 **diagrams.gis.format.Geopackage**
 
+<img width="30" src="/img/resources/gis/format/geoparquet.png" alt="Geoparquet" style="float: left; padding-right: 5px;" >
+**diagrams.gis.format.Geoparquet**
+
 ## gis.geocoding
 
 
@@ -76,6 +82,9 @@ Node classes list of gis provider.
 
 <img width="30" src="/img/resources/gis/javascript/keplerjs.png" alt="Keplerjs" style="float: left; padding-right: 5px;" >
 **diagrams.gis.javascript.Keplerjs**
+
+<img width="30" src="/img/resources/gis/javascript/leaflet.png" alt="Leaflet" style="float: left; padding-right: 5px;" >
+**diagrams.gis.javascript.Leaflet**
 
 <img width="30" src="/img/resources/gis/javascript/maplibre.png" alt="Maplibre" style="float: left; padding-right: 5px;" >
 **diagrams.gis.javascript.Maplibre**
@@ -122,6 +131,9 @@ Node classes list of gis provider.
 <img width="30" src="/img/resources/gis/python/geopandas.png" alt="Geopandas" style="float: left; padding-right: 5px;" >
 **diagrams.gis.python.Geopandas**
 
+<img width="30" src="/img/resources/gis/python/pysal.png" alt="Pysal" style="float: left; padding-right: 5px;" >
+**diagrams.gis.python.Pysal**
+
 ## gis.routing
 
 
@@ -140,17 +152,26 @@ Node classes list of gis provider.
 ## gis.server
 
 
+<img width="30" src="/img/resources/gis/server/actinia.png" alt="Actinia" style="float: left; padding-right: 5px;" >
+**diagrams.gis.server.Actinia**
+
 <img width="30" src="/img/resources/gis/server/baremaps.png" alt="Baremaps" style="float: left; padding-right: 5px;" >
 **diagrams.gis.server.Baremaps**
 
 <img width="30" src="/img/resources/gis/server/deegree.png" alt="Deegree" style="float: left; padding-right: 5px;" >
 **diagrams.gis.server.Deegree**
 
+<img width="30" src="/img/resources/gis/server/g3w-suite.png" alt="G3WSuite" style="float: left; padding-right: 5px;" >
+**diagrams.gis.server.G3WSuite**
+
 <img width="30" src="/img/resources/gis/server/geohealthcheck.png" alt="Geohealthcheck" style="float: left; padding-right: 5px;" >
 **diagrams.gis.server.Geohealthcheck**
 
 <img width="30" src="/img/resources/gis/server/geomapfish.png" alt="Geomapfish" style="float: left; padding-right: 5px;" >
 **diagrams.gis.server.Geomapfish**
+
+<img width="30" src="/img/resources/gis/server/geomesa.png" alt="Geomesa" style="float: left; padding-right: 5px;" >
+**diagrams.gis.server.Geomesa**
 
 <img width="30" src="/img/resources/gis/server/geonetwork.png" alt="Geonetwork" style="float: left; padding-right: 5px;" >
 **diagrams.gis.server.Geonetwork**

@@ -8,6 +8,10 @@ class _Server(_GIS):
     _icon_dir = "resources/gis/server"
 
 
+class Actinia(_Server):
+    _icon = "actinia.png"
+
+
 class Baremaps(_Server):
     _icon = "baremaps.png"
 
@@ -16,12 +20,20 @@ class Deegree(_Server):
     _icon = "deegree.png"
 
 
+class G3WSuite(_Server):
+    _icon = "g3w-suite.png"
+
+
 class Geohealthcheck(_Server):
     _icon = "geohealthcheck.png"
 
 
 class Geomapfish(_Server):
     _icon = "geomapfish.png"
+
+
+class Geomesa(_Server):
+    _icon = "geomesa.png"
 
 
 class Geonetwork(_Server):

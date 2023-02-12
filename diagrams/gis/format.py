@@ -12,4 +12,8 @@ class Geopackage(_Format):
     _icon = "geopackage.png"
 
 
+class Geoparquet(_Format):
+    _icon = "geoparquet.png"
+
+
 # Aliases

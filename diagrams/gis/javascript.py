@@ -20,6 +20,10 @@ class Keplerjs(_Javascript):
     _icon = "keplerjs.png"
 
 
+class Leaflet(_Javascript):
+    _icon = "leaflet.png"
+
+
 class Maplibre(_Javascript):
     _icon = "maplibre.png"
 

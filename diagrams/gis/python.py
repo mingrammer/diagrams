@@ -12,4 +12,8 @@ class Geopandas(_Python):
     _icon = "geopandas.png"
 
 
+class Pysal(_Python):
+    _icon = "pysal.png"
+
+
 # Aliases

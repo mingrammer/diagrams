@@ -12,4 +12,8 @@ class Gdal(_Cli):
     _icon = "gdal.png"
 
 
+class Lastools(_Cli):
+    _icon = "lastools.png"
+
+
 # Aliases
