@@ -36,6 +36,10 @@ def getcluster() -> "Cluster":
 def setcluster(cluster: "Cluster"):
     __cluster.set(cluster)
 
+def getIconLabel(iconPath: str = '', iconSize: int = 30, label: str = ''):
+    return '<<table border="0" width="100%"><tr><td fixedsize="true" width="' + str(
+        iconSize) + '" height="' + str(
+        iconSize) + '"><img src="' + iconPath + '" /></td><td>' + label + '</td></tr></table>>'
 
 class Diagram:
     __directions = ("TB", "BT", "LR", "RL")
@@ -191,7 +195,6 @@ class Diagram:
         else:
             self.dot.render(format=self.outformat, view=self.show, quiet=True)
 
-
 class Cluster:
     __directions = ("TB", "BT", "LR", "RL")
     __bgcolors = ("#E5F5FD", "#EBF3E7", "#ECE8F6", "#FDF7E3")
@@ -216,22 +219,33 @@ class Cluster:
         label: str = "cluster",
         direction: str = "LR",
         graph_attr: dict = {},
+        providerIconNode: object = None,
+        icon_size: int = 30,
     ):
         """Cluster represents a cluster context.
 
         :param label: Cluster label.
         :param direction: Data flow direction. Default is 'left to right'.
         :param graph_attr: Provide graph_attr dot config attributes.
+        :param providerIconNode: Provide a node to be included as a link
+        :param icon_size: The icon size
         """
         self.label = label
         self.name = "cluster_" + self.label
+        self.providerIconNode = providerIconNode
+        self.icon_size = icon_size
 
         self.dot = Digraph(self.name)
 
-        # Set attributes.
+        # Set attributes
         for k, v in self._default_graph_attrs.items():
             self.dot.graph_attr[k] = v
-        self.dot.graph_attr["label"] = self.label
+
+        if self.providerIconNode:
+                _iconNode = self.providerIconNode() #load the object
+                self.dot.graph_attr["label"] = getIconLabel(_iconNode._load_icon(), self.icon_size, self.label)
+        else:
+            self.dot.graph_attr["label"] = self.label
 
         if not self._validate_direction(direction):
             raise ValueError(f'"{direction}" is not a valid direction')
@@ -265,6 +279,7 @@ class Cluster:
     def _validate_direction(self, direction: str) -> bool:
         return direction.upper() in self.__directions
 
+
     def node(self, nodeid: str, label: str, **attrs) -> None:
         """Create a new node in the cluster."""
         self.dot.node(nodeid, label=label, **attrs)
@@ -283,6 +298,9 @@ class Node:
     _icon = None
 
     _height = 1.9
+
+    def __new__(cls, *args, **kwargs):
+        return object.__new__(cls)
 
     def __init__(self, label: str = "", *, nodeid: str = None, **attrs: Dict):
         """Node represents a system component.
