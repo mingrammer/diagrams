@@ -323,6 +323,12 @@ Node classes list of onprem provider.
 <img width="30" src="/img/resources/onprem/logging/syslog-ng.png" alt="SyslogNg" style="float: left; padding-right: 5px;" >
 **diagrams.onprem.logging.SyslogNg**
 
+## onprem.messaging
+
+
+<img width="30" src="/img/resources/onprem/messaging/centrifugo.png" alt="Centrifugo" style="float: left; padding-right: 5px;" >
+**diagrams.onprem.messaging.Centrifugo**
+
 ## onprem.mlops
 
 
