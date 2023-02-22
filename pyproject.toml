@@ -26,3 +26,6 @@ pre-commit = "^3.0.4"
 
 [tool.black]
 line-length = 120
+
+[tool.isort]
+profile = "black"

@@ -2,7 +2,7 @@ import contextvars
 import os
 import uuid
 from pathlib import Path
-from typing import List, Union, Dict
+from typing import Dict, List, Union
 
 from graphviz import Digraph
 

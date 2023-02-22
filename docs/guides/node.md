@@ -7,7 +7,7 @@ Node is a second object representing a node or system component.
 
 ## Basic
 
-Node is an abstract concept that represents a single system component object. 
+Node is an abstract concept that represents a single system component object.
 
 A node object consists of three parts: **provider**, **resource type** and **name**. You may already have seen each part in the previous example.
 
@@ -42,7 +42,7 @@ from diagrams.alibabacloud.storage import ObjectTableStore
 
 # gcp resources
 from diagrams.gcp.compute import AppEngine, GKE
-from diagrams.gcp.ml import AutoML 
+from diagrams.gcp.ml import AutoML
 ...
 
 # k8s resources
@@ -63,7 +63,7 @@ You can find all available nodes list in [Here](https://diagrams.mingrammer.com/
 
 You can represent data flow by connecting the nodes with these operators: `>>`, `<<` and `-`.
 
-* **>>**: Connect nodes in left to right direction. 
+* **>>**: Connect nodes in left to right direction.
 * **<<**: Connect nodes in right to left direction.
 * **-**: Connect nodes in no direction. Undirected.
 
@@ -80,7 +80,7 @@ with Diagram("Web Services", show=False):
     (ELB("lb") >> EC2("web")) - EC2("web") >> RDS("userdb")
 ```
 
-> Be careful when using the `-` and any shift operators together, which could cause unexpected results due to operator precedence. 
+> Be careful when using the `-` and any shift operators together, which could cause unexpected results due to operator precedence.
 
 ![web services diagram](/img/web_services_diagram.png)
 

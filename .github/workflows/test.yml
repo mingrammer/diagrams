@@ -33,3 +33,5 @@ jobs:
         run: |
           poetry install
           poetry run python -m unittest -v tests/*.py
+      - name: Run static checks
+        run: pre-commit run --all-files
