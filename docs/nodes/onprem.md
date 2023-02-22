@@ -350,6 +350,9 @@ Node classes list of onprem provider.
 <img width="30" src="/img/resources/onprem/monitoring/humio.png" alt="Humio" style="float: left; padding-right: 5px;" >
 **diagrams.onprem.monitoring.Humio**
 
+<img width="30" src="/img/resources/onprem/monitoring/mimir.png" alt="Mimir" style="float: left; padding-right: 5px;" >
+**diagrams.onprem.monitoring.Mimir**
+
 <img width="30" src="/img/resources/onprem/monitoring/nagios.png" alt="Nagios" style="float: left; padding-right: 5px;" >
 **diagrams.onprem.monitoring.Nagios**
 
