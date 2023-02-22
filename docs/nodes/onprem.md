@@ -548,6 +548,9 @@ Node classes list of onprem provider.
 <img width="30" src="/img/resources/onprem/tracing/jaeger.png" alt="Jaeger" style="float: left; padding-right: 5px;" >
 **diagrams.onprem.tracing.Jaeger**
 
+<img width="30" src="/img/resources/onprem/tracing/tempo.png" alt="Tempo" style="float: left; padding-right: 5px;" >
+**diagrams.onprem.tracing.Tempo**
+
 ## onprem.vcs
 
 
