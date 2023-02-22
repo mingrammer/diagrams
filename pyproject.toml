@@ -13,7 +13,6 @@ include = ["resources/**/*"]
 python = "^3.7"
 graphviz = ">=0.13.2,<0.21.0"
 jinja2 = ">=2.10,<4.0"
-contextvars = { version = "^2.4", python = "~3.6" }
 typed-ast = "^1.5.4"
 
 [tool.poetry.dev-dependencies]

@@ -41,7 +41,7 @@ Diagrams lets you draw the cloud system architecture **in Python code**. It was 
 
 ## Getting Started
 
-It requires **Python 3.6** or higher, check your Python version first.
+It requires **Python 3.7** or higher, check your Python version first.
 
 It uses [Graphviz](https://www.graphviz.org/) to render the diagram, so you need to [install Graphviz](https://graphviz.gitlab.io/download/) to use **diagrams**. After installing graphviz (or already have it), install the **diagrams**.
 
