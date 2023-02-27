@@ -311,7 +311,7 @@ class ResourcesTest(unittest.TestCase):
         i.e. resources/<provider>/<type>/<image>, so check that this depth isn't
         exceeded.
         """
-        resources_dir = pathlib.Path(__file__).parent.parent / 'resources'
+        resources_dir = pathlib.Path(__file__).parent.parent / 'diagrams' / 'resources'
         max_depth = max(os.path.relpath(d, resources_dir).count(os.sep) + 1
                         for d, _, _ in os.walk(resources_dir))
         self.assertLessEqual(max_depth, 2)
