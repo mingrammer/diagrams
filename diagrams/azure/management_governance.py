@@ -24,12 +24,20 @@ class ApplicationInsights(_Management_Governance):
     _icon = "application-insights.png"
 
 
-class Arc(_Management_Governance):
-    _icon = "arc.png"
+class ArcMachines(_Management_Governance):
+    _icon = "arc-machines.png"
 
 
 class AutomationAccounts(_Management_Governance):
     _icon = "automation-accounts.png"
+
+
+class AzureArc(_Management_Governance):
+    _icon = "azure-arc.png"
+
+
+class AzureLighthouse(_Management_Governance):
+    _icon = "azure-lighthouse.png"
 
 
 class Blueprints(_Management_Governance):
@@ -44,16 +52,16 @@ class CostManagementAndBilling(_Management_Governance):
     _icon = "cost-management-and-billing.png"
 
 
+class CustomerLockboxForMicrosoftAzure(_Management_Governance):
+    _icon = "customer-lockbox-for-microsoft-azure.png"
+
+
 class DiagnosticsSettings(_Management_Governance):
     _icon = "diagnostics-settings.png"
 
 
 class Education(_Management_Governance):
     _icon = "education.png"
-
-
-class Lighthouse(_Management_Governance):
-    _icon = "lighthouse.png"
 
 
 class LogAnalyticsWorkspaces(_Management_Governance):
@@ -66,6 +74,10 @@ class Machinesazurearc(_Management_Governance):
 
 class ManagedApplicationsCenter(_Management_Governance):
     _icon = "managed-applications-center.png"
+
+
+class ManagedDesktop(_Management_Governance):
+    _icon = "managed-desktop.png"
 
 
 class Metrics(_Management_Governance):
@@ -96,12 +108,24 @@ class ResourceGraphExplorer(_Management_Governance):
     _icon = "resource-graph-explorer.png"
 
 
+class SchedulerJobCollections(_Management_Governance):
+    _icon = "scheduler-job-collections.png"
+
+
+class ServiceCatalogMad(_Management_Governance):
+    _icon = "service-catalog-mad.png"
+
+
 class ServiceProviders(_Management_Governance):
     _icon = "service-providers.png"
 
 
 class Solutions(_Management_Governance):
     _icon = "solutions.png"
+
+
+class UniversalPrint(_Management_Governance):
+    _icon = "universal-print.png"
 
 
 class UserPrivacy(_Management_Governance):

@@ -8,8 +8,24 @@ class _Intune(_Azure):
     _icon_dir = "resources/azure/intune"
 
 
-class ADRolesAndAdministrators(_Intune):
-    _icon = "ad-roles-and-administrators.png"
+class AzureADRolesAndAdministrators(_Intune):
+    _icon = "azure-ad-roles-and-administrators.png"
+
+
+class ClientApps(_Intune):
+    _icon = "client-apps.png"
+
+
+class DeviceCompliance(_Intune):
+    _icon = "device-compliance.png"
+
+
+class DeviceConfiguration(_Intune):
+    _icon = "device-configuration.png"
+
+
+class DeviceEnrollment(_Intune):
+    _icon = "device-enrollment.png"
 
 
 class DeviceSecurityApple(_Intune):
@@ -24,12 +40,44 @@ class DeviceSecurityWindows(_Intune):
     _icon = "device-security-windows.png"
 
 
+class Devices(_Intune):
+    _icon = "devices.png"
+
+
+class Ebooks(_Intune):
+    _icon = "ebooks.png"
+
+
+class ExchangeAccess(_Intune):
+    _icon = "exchange-access.png"
+
+
+class IntuneAppProtection(_Intune):
+    _icon = "intune-app-protection.png"
+
+
 class IntuneForEducation(_Intune):
     _icon = "intune-for-education.png"
 
 
 class Intune(_Intune):
     _icon = "intune.png"
+
+
+class Mindaro(_Intune):
+    _icon = "mindaro.png"
+
+
+class SecurityBaselines(_Intune):
+    _icon = "security-baselines.png"
+
+
+class SoftwareUpdates(_Intune):
+    _icon = "software-updates.png"
+
+
+class TenantStatus(_Intune):
+    _icon = "tenant-status.png"
 
 
 # Aliases

@@ -8,36 +8,64 @@ class _Databases(_Azure):
     _icon_dir = "resources/azure/databases"
 
 
+class AzureCosmosDb(_Databases):
+    _icon = "azure-cosmos-db.png"
+
+
+class AzureDataExplorerClusters(_Databases):
+    _icon = "azure-data-explorer-clusters.png"
+
+
+class AzureDatabaseMariadbServer(_Databases):
+    _icon = "azure-database-mariadb-server.png"
+
+
+class AzureDatabaseMigrationServices(_Databases):
+    _icon = "azure-database-migration-services.png"
+
+
+class AzureDatabaseMysqlServer(_Databases):
+    _icon = "azure-database-mysql-server.png"
+
+
+class AzureDatabasePostgresqlServerGroup(_Databases):
+    _icon = "azure-database-postgresql-server-group.png"
+
+
+class AzureDatabasePostgresqlServer(_Databases):
+    _icon = "azure-database-postgresql-server.png"
+
+
+class AzurePurviewAccounts(_Databases):
+    _icon = "azure-purview-accounts.png"
+
+
+class AzureSQLEdge(_Databases):
+    _icon = "azure-sql-edge.png"
+
+
+class AzureSQLServerStretchDatabases(_Databases):
+    _icon = "azure-sql-server-stretch-databases.png"
+
+
+class AzureSQLVM(_Databases):
+    _icon = "azure-sql-vm.png"
+
+
+class AzureSQL(_Databases):
+    _icon = "azure-sql.png"
+
+
+class AzureSynapseAnalytics(_Databases):
+    _icon = "azure-synapse-analytics.png"
+
+
 class CacheRedis(_Databases):
     _icon = "cache-redis.png"
 
 
-class CosmosDb(_Databases):
-    _icon = "cosmos-db.png"
-
-
-class DataExplorerClusters(_Databases):
-    _icon = "data-explorer-clusters.png"
-
-
-class DataFactory(_Databases):
-    _icon = "data-factory.png"
-
-
-class DatabaseMariadbServer(_Databases):
-    _icon = "database-mariadb-server.png"
-
-
-class DatabaseMigrationServices(_Databases):
-    _icon = "database-migration-services.png"
-
-
-class DatabaseMysqlServer(_Databases):
-    _icon = "database-mysql-server.png"
-
-
-class DatabasePostgresqlServer(_Databases):
-    _icon = "database-postgresql-server.png"
+class DataFactories(_Databases):
+    _icon = "data-factories.png"
 
 
 class ElasticJobAgents(_Databases):
@@ -68,28 +96,16 @@ class SQLManagedInstance(_Databases):
     _icon = "sql-managed-instance.png"
 
 
-class SQLServerStretchDatabases(_Databases):
-    _icon = "sql-server-stretch-databases.png"
+class SQLServerRegistries(_Databases):
+    _icon = "sql-server-registries.png"
 
 
 class SQLServer(_Databases):
     _icon = "sql-server.png"
 
 
-class SQLVM(_Databases):
-    _icon = "sql-vm.png"
-
-
-class SQL(_Databases):
-    _icon = "sql.png"
-
-
 class SsisLiftAndShiftIr(_Databases):
     _icon = "ssis-lift-and-shift-ir.png"
-
-
-class SynapseAnalytics(_Databases):
-    _icon = "synapse-analytics.png"
 
 
 class VirtualClusters(_Databases):

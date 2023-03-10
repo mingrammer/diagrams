@@ -12,6 +12,18 @@ class ApplicationGateways(_Networking):
     _icon = "application-gateways.png"
 
 
+class AzureFirewallManager(_Networking):
+    _icon = "azure-firewall-manager.png"
+
+
+class AzureFirewallPolicy(_Networking):
+    _icon = "azure-firewall-policy.png"
+
+
+class Bastions(_Networking):
+    _icon = "bastions.png"
+
+
 class CDNProfiles(_Networking):
     _icon = "cdn-profiles.png"
 
@@ -24,6 +36,10 @@ class DDOSProtectionPlans(_Networking):
     _icon = "ddos-protection-plans.png"
 
 
+class DNSPrivateResolver(_Networking):
+    _icon = "dns-private-resolver.png"
+
+
 class DNSZones(_Networking):
     _icon = "dns-zones.png"
 
@@ -32,20 +48,20 @@ class ExpressrouteCircuits(_Networking):
     _icon = "expressroute-circuits.png"
 
 
-class FirewallManager(_Networking):
-    _icon = "firewall-manager.png"
-
-
 class Firewalls(_Networking):
     _icon = "firewalls.png"
 
 
-class FrontDoors(_Networking):
-    _icon = "front-doors.png"
+class FrontDoorAndCDNProfiles(_Networking):
+    _icon = "front-door-and-cdn-profiles.png"
 
 
 class IpGroups(_Networking):
     _icon = "ip-groups.png"
+
+
+class LoadBalancerHub(_Networking):
+    _icon = "load-balancer-hub.png"
 
 
 class LoadBalancers(_Networking):
@@ -72,8 +88,16 @@ class NetworkWatcher(_Networking):
     _icon = "network-watcher.png"
 
 
+class OnPremisesDataGateways(_Networking):
+    _icon = "on-premises-data-gateways.png"
+
+
 class PrivateLinkService(_Networking):
     _icon = "private-link-service.png"
+
+
+class PrivateLinkServices(_Networking):
+    _icon = "private-link-services.png"
 
 
 class PrivateLink(_Networking):
@@ -100,6 +124,10 @@ class ReservedIpAddressesClassic(_Networking):
     _icon = "reserved-ip-addresses-classic.png"
 
 
+class ResourceManagementPrivateLink(_Networking):
+    _icon = "resource-management-private-link.png"
+
+
 class RouteFilters(_Networking):
     _icon = "route-filters.png"
 
@@ -110,6 +138,18 @@ class RouteTables(_Networking):
 
 class ServiceEndpointPolicies(_Networking):
     _icon = "service-endpoint-policies.png"
+
+
+class SpotVM(_Networking):
+    _icon = "spot-vm.png"
+
+
+class SpotVmss(_Networking):
+    _icon = "spot-vmss.png"
+
+
+class Subnet(_Networking):
+    _icon = "subnet.png"
 
 
 class TrafficManagerProfiles(_Networking):
@@ -126,6 +166,14 @@ class VirtualNetworksClassic(_Networking):
 
 class VirtualNetworks(_Networking):
     _icon = "virtual-networks.png"
+
+
+class VirtualRouter(_Networking):
+    _icon = "virtual-router.png"
+
+
+class VirtualWanHub(_Networking):
+    _icon = "virtual-wan-hub.png"
 
 
 class VirtualWans(_Networking):

@@ -12,6 +12,10 @@ class AppServices(_Containers):
     _icon = "app-services.png"
 
 
+class AzureRedHatOpenshift(_Containers):
+    _icon = "azure-red-hat-openshift.png"
+
+
 class BatchAccounts(_Containers):
     _icon = "batch-accounts.png"
 

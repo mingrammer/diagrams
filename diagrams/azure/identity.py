@@ -8,32 +8,68 @@ class _Identity(_Azure):
     _icon_dir = "resources/azure/identity"
 
 
+class AadLicenses(_Identity):
+    _icon = "aad-licenses.png"
+
+
 class ActiveDirectoryConnectHealth(_Identity):
     _icon = "active-directory-connect-health.png"
 
 
-class ActiveDirectory(_Identity):
-    _icon = "active-directory.png"
+class AdministrativeUnits(_Identity):
+    _icon = "administrative-units.png"
 
 
-class ADB2C(_Identity):
-    _icon = "ad-b2c.png"
-
-
-class ADDomainServices(_Identity):
-    _icon = "ad-domain-services.png"
-
-
-class ADIdentityProtection(_Identity):
-    _icon = "ad-identity-protection.png"
+class APIProxy(_Identity):
+    _icon = "api-proxy.png"
 
 
 class AppRegistrations(_Identity):
     _icon = "app-registrations.png"
 
 
+class AzureActiveDirectory(_Identity):
+    _icon = "azure-active-directory.png"
+
+
+class AzureADB2C(_Identity):
+    _icon = "azure-ad-b2c.png"
+
+
+class AzureADDomainServices(_Identity):
+    _icon = "azure-ad-domain-services.png"
+
+
+class AzureADIdentityProtection(_Identity):
+    _icon = "azure-ad-identity-protection.png"
+
+
+class AzureADPrivilegeIdentityManagement(_Identity):
+    _icon = "azure-ad-privilege-identity-management.png"
+
+
+class AzureADPrivlegedIdentityManagement(_Identity):
+    _icon = "azure-ad-privleged-identity-management.png"
+
+
+class AzureADRolesAndAdministrators(_Identity):
+    _icon = "azure-ad-roles-and-administrators.png"
+
+
+class AzureInformationProtection(_Identity):
+    _icon = "azure-information-protection.png"
+
+
+class CustomAzureADRoles(_Identity):
+    _icon = "custom-azure-ad-roles.png"
+
+
 class EnterpriseApplications(_Identity):
     _icon = "enterprise-applications.png"
+
+
+class ExternalIdentities(_Identity):
+    _icon = "external-identities.png"
 
 
 class Groups(_Identity):
@@ -48,8 +84,24 @@ class ManagedIdentities(_Identity):
     _icon = "managed-identities.png"
 
 
+class Security(_Identity):
+    _icon = "security.png"
+
+
+class TenantProperties(_Identity):
+    _icon = "tenant-properties.png"
+
+
+class UserSettings(_Identity):
+    _icon = "user-settings.png"
+
+
 class Users(_Identity):
     _icon = "users.png"
+
+
+class VerifiableCredentials(_Identity):
+    _icon = "verifiable-credentials.png"
 
 
 # Aliases

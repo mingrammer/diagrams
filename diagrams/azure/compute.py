@@ -12,12 +12,24 @@ class AppServices(_Compute):
     _icon = "app-services.png"
 
 
+class ApplicationGroup(_Compute):
+    _icon = "application-group.png"
+
+
 class AutomanagedVM(_Compute):
     _icon = "automanaged-vm.png"
 
 
 class AvailabilitySets(_Compute):
     _icon = "availability-sets.png"
+
+
+class AzureComputeGalleries(_Compute):
+    _icon = "azure-compute-galleries.png"
+
+
+class AzureSpringApps(_Compute):
+    _icon = "azure-spring-apps.png"
 
 
 class BatchAccounts(_Compute):
@@ -56,8 +68,24 @@ class FunctionApps(_Compute):
     _icon = "function-apps.png"
 
 
+class HostGroups(_Compute):
+    _icon = "host-groups.png"
+
+
+class HostPools(_Compute):
+    _icon = "host-pools.png"
+
+
+class Hosts(_Compute):
+    _icon = "hosts.png"
+
+
 class ImageDefinitions(_Compute):
     _icon = "image-definitions.png"
+
+
+class ImageTemplates(_Compute):
+    _icon = "image-templates.png"
 
 
 class ImageVersions(_Compute):
@@ -72,12 +100,32 @@ class KubernetesServices(_Compute):
     _icon = "kubernetes-services.png"
 
 
+class MaintenanceConfiguration(_Compute):
+    _icon = "maintenance-configuration.png"
+
+
+class ManagedServiceFabric(_Compute):
+    _icon = "managed-service-fabric.png"
+
+
 class MeshApplications(_Compute):
     _icon = "mesh-applications.png"
 
 
+class MetricsAdvisor(_Compute):
+    _icon = "metrics-advisor.png"
+
+
 class OsImagesClassic(_Compute):
     _icon = "os-images-classic.png"
+
+
+class RestorePointsCollections(_Compute):
+    _icon = "restore-points-collections.png"
+
+
+class RestorePoints(_Compute):
+    _icon = "restore-points.png"
 
 
 class ServiceFabricClusters(_Compute):
@@ -86,10 +134,6 @@ class ServiceFabricClusters(_Compute):
 
 class SharedImageGalleries(_Compute):
     _icon = "shared-image-galleries.png"
-
-
-class SpringCloud(_Compute):
-    _icon = "spring-cloud.png"
 
 
 class VirtualMachine(_Compute):

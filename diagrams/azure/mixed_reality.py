@@ -12,4 +12,8 @@ class RemoteRendering(_Mixed_Reality):
     _icon = "remote-rendering.png"
 
 
+class SpatialAnchorAccounts(_Mixed_Reality):
+    _icon = "spatial-anchor-accounts.png"
+
+
 # Aliases

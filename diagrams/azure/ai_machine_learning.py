@@ -8,12 +8,92 @@ class _Ai_Machine_Learning(_Azure):
     _icon_dir = "resources/azure/ai_machine_learning"
 
 
+class AnomalyDetector(_Ai_Machine_Learning):
+    _icon = "anomaly-detector.png"
+
+
+class AzureAppliedAIServices(_Ai_Machine_Learning):
+    _icon = "azure-applied-ai-services.png"
+
+
+class AzureExperimentationStudio(_Ai_Machine_Learning):
+    _icon = "azure-experimentation-studio.png"
+
+
+class AzureObjectUnderstanding(_Ai_Machine_Learning):
+    _icon = "azure-object-understanding.png"
+
+
+class BatchAI(_Ai_Machine_Learning):
+    _icon = "batch-ai.png"
+
+
+class Bonsai(_Ai_Machine_Learning):
+    _icon = "bonsai.png"
+
+
 class BotServices(_Ai_Machine_Learning):
     _icon = "bot-services.png"
 
 
+class CognitiveSearch(_Ai_Machine_Learning):
+    _icon = "cognitive-search.png"
+
+
 class CognitiveServices(_Ai_Machine_Learning):
     _icon = "cognitive-services.png"
+
+
+class ComputerVision(_Ai_Machine_Learning):
+    _icon = "computer-vision.png"
+
+
+class ContentModerators(_Ai_Machine_Learning):
+    _icon = "content-moderators.png"
+
+
+class CustomVision(_Ai_Machine_Learning):
+    _icon = "custom-vision.png"
+
+
+class FaceApis(_Ai_Machine_Learning):
+    _icon = "face-apis.png"
+
+
+class FormRecognizersOut(_Ai_Machine_Learning):
+    _icon = "form-recognizers-out.png"
+
+
+class FormRecognizers(_Ai_Machine_Learning):
+    _icon = "form-recognizers.png"
+
+
+class GenomicsAccountsOut(_Ai_Machine_Learning):
+    _icon = "genomics-accounts-out.png"
+
+
+class GenomicsAccounts(_Ai_Machine_Learning):
+    _icon = "genomics-accounts.png"
+
+
+class Genomics(_Ai_Machine_Learning):
+    _icon = "genomics.png"
+
+
+class ImmersiveReaders(_Ai_Machine_Learning):
+    _icon = "immersive-readers.png"
+
+
+class LanguageUnderstanding(_Ai_Machine_Learning):
+    _icon = "language-understanding.png"
+
+
+class Language(_Ai_Machine_Learning):
+    _icon = "language.png"
+
+
+class MachineLearningOut(_Ai_Machine_Learning):
+    _icon = "machine-learning-out.png"
 
 
 class MachineLearningStudioClassicWebServices(_Ai_Machine_Learning):
@@ -26,6 +106,30 @@ class MachineLearningStudioWebServicePlans(_Ai_Machine_Learning):
 
 class MachineLearningStudioWorkspaces(_Ai_Machine_Learning):
     _icon = "machine-learning-studio-workspaces.png"
+
+
+class MachineLearning(_Ai_Machine_Learning):
+    _icon = "machine-learning.png"
+
+
+class MetricsAdvisor(_Ai_Machine_Learning):
+    _icon = "metrics-advisor.png"
+
+
+class Personalizers(_Ai_Machine_Learning):
+    _icon = "personalizers.png"
+
+
+class QnaMakers(_Ai_Machine_Learning):
+    _icon = "qna-makers.png"
+
+
+class SpeechServicesOut(_Ai_Machine_Learning):
+    _icon = "speech-services-out.png"
+
+
+class SpeechServices(_Ai_Machine_Learning):
+    _icon = "speech-services.png"
 
 
 class TranslatorText(_Ai_Machine_Learning):

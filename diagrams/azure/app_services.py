@@ -8,10 +8,6 @@ class _App_Services(_Azure):
     _icon_dir = "resources/azure/app_services"
 
 
-class APIManagementServices(_App_Services):
-    _icon = "api-management-services.png"
-
-
 class AppServiceCertificates(_App_Services):
     _icon = "app-service-certificates.png"
 
@@ -36,12 +32,12 @@ class CDNProfiles(_App_Services):
     _icon = "cdn-profiles.png"
 
 
+class CognitiveSearch(_App_Services):
+    _icon = "cognitive-search.png"
+
+
 class NotificationHubs(_App_Services):
     _icon = "notification-hubs.png"
-
-
-class SearchServices(_App_Services):
-    _icon = "search-services.png"
 
 
 # Aliases

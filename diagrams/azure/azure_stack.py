@@ -28,10 +28,6 @@ class Plans(_Azure_Stack):
     _icon = "plans.png"
 
 
-class Stack(_Azure_Stack):
-    _icon = "stack.png"
-
-
 class Updates(_Azure_Stack):
     _icon = "updates.png"
 

@@ -8,16 +8,184 @@ class _Other(_Azure):
     _icon_dir = "resources/azure/other"
 
 
-class BackupCenter(_Other):
-    _icon = "backup-center.png"
+class AadLicenses(_Other):
+    _icon = "aad-licenses.png"
 
 
-class Detonation(_Other):
-    _icon = "detonation.png"
+class AppComplianceAutomation(_Other):
+    _icon = "app-compliance-automation.png"
+
+
+class AppRegistrations(_Other):
+    _icon = "app-registrations.png"
+
+
+class ArcDataServices(_Other):
+    _icon = "arc-data-services.png"
+
+
+class ArcKubernetes(_Other):
+    _icon = "arc-kubernetes.png"
+
+
+class ArcPostgresql(_Other):
+    _icon = "arc-postgresql-.png"
+
+
+class ArcSQLManagedInstance(_Other):
+    _icon = "arc-sql-managed-instance.png"
+
+
+class ArcSQLServer(_Other):
+    _icon = "arc-sql-server.png"
+
+
+class AzureBackupCenter(_Other):
+    _icon = "azure-backup-center.png"
+
+
+class AzureCenterForSAP(_Other):
+    _icon = "azure-center-for-sap.png"
+
+
+class AzureChaosStudio(_Other):
+    _icon = "azure-chaos-studio.png"
+
+
+class AzureCloudShell(_Other):
+    _icon = "azure-cloud-shell.png"
+
+
+class AzureCommunicationServices(_Other):
+    _icon = "azure-communication-services.png"
+
+
+class AzureComputeGalleries(_Other):
+    _icon = "azure-compute-galleries.png"
+
+
+class AzureDeploymentEnvironments(_Other):
+    _icon = "azure-deployment-environments.png"
+
+
+class AzureEdgeHardwareCenter(_Other):
+    _icon = "azure-edge-hardware-center.png"
+
+
+class AzureHpcWorkbenches(_Other):
+    _icon = "azure-hpc-workbenches.png"
+
+
+class AzureLoadTesting(_Other):
+    _icon = "azure-load-testing.png"
+
+
+class AzureManagedGrafana(_Other):
+    _icon = "azure-managed-grafana.png"
+
+
+class AzureMonitorDashboard(_Other):
+    _icon = "azure-monitor-dashboard.png"
+
+
+class AzureNetworkFunctionManagerFunctions(_Other):
+    _icon = "azure-network-function-manager-functions.png"
+
+
+class AzureNetworkFunctionManager(_Other):
+    _icon = "azure-network-function-manager.png"
+
+
+class AzureOrbital(_Other):
+    _icon = "azure-orbital.png"
+
+
+class AzureQuotas(_Other):
+    _icon = "azure-quotas.png"
+
+
+class AzureStorageMover(_Other):
+    _icon = "azure-storage-mover.png"
+
+
+class AzureVideoIndexer(_Other):
+    _icon = "azure-video-indexer.png"
+
+
+class AzureVirtualDesktop(_Other):
+    _icon = "azure-virtual-desktop.png"
+
+
+class AzureVmwareSolution(_Other):
+    _icon = "azure-vmware-solution.png"
+
+
+class BackupVault(_Other):
+    _icon = "backup-vault.png"
+
+
+class BareMetalInfrastructure(_Other):
+    _icon = "bare-metal-infrastructure.png"
+
+
+class CapacityReservationGroups(_Other):
+    _icon = "capacity-reservation-groups.png"
+
+
+class CentralServiceInstanceForSAP(_Other):
+    _icon = "central-service-instance-for-sap.png"
+
+
+class CloudServicesExtendedSupport(_Other):
+    _icon = "cloud-services-extended-support.png"
+
+
+class CommunityImages(_Other):
+    _icon = "community-images.png"
+
+
+class ConfidentialLedgers(_Other):
+    _icon = "confidential-ledgers.png"
+
+
+class ContainerAppsEnvironments(_Other):
+    _icon = "container-apps-environments.png"
+
+
+class CostExport(_Other):
+    _icon = "cost-export.png"
+
+
+class CustomIpPrefix(_Other):
+    _icon = "custom-ip-prefix.png"
+
+
+class DatabaseInstanceForSAP(_Other):
+    _icon = "database-instance-for-sap.png"
+
+
+class DeviceUpdateIotHub(_Other):
+    _icon = "device-update-iot-hub.png"
+
+
+class DiskPool(_Other):
+    _icon = "disk-pool.png"
+
+
+class ElasticSan(_Other):
+    _icon = "elastic-san.png"
+
+
+class ExpressRouteTrafficCollector(_Other):
+    _icon = "express-route-traffic-collector.png"
 
 
 class ExpressrouteDirect(_Other):
     _icon = "expressroute-direct.png"
+
+
+class FhirService(_Other):
+    _icon = "fhir-service.png"
 
 
 class InstancePools(_Other):
@@ -28,32 +196,124 @@ class InternetAnalyzerProfiles(_Other):
     _icon = "internet-analyzer-profiles.png"
 
 
+class KubernetesFleetManager(_Other):
+    _icon = "kubernetes-fleet-manager.png"
+
+
 class LocalNetworkGateways(_Other):
     _icon = "local-network-gateways.png"
+
+
+class LogAnalyticsQueryPack(_Other):
+    _icon = "log-analytics-query-pack.png"
+
+
+class ManagedInstanceApacheCassandra(_Other):
+    _icon = "managed-instance-apache-cassandra.png"
+
+
+class MedtechService(_Other):
+    _icon = "medtech-service.png"
+
+
+class MicrosoftDevBox(_Other):
+    _icon = "microsoft-dev-box.png"
+
+
+class MobileNetworks(_Other):
+    _icon = "mobile-networks.png"
+
+
+class NetworkManagers(_Other):
+    _icon = "network-managers.png"
+
+
+class NetworkSecurityPerimeters(_Other):
+    _icon = "network-security-perimeters.png"
+
+
+class OpenSupplyChainPlatform(_Other):
+    _icon = "open-supply-chain-platform.png"
 
 
 class PeeringService(_Other):
     _icon = "peering-service.png"
 
 
+class Peerings(_Other):
+    _icon = "peerings.png"
+
+
+class PrivateEndpoints(_Other):
+    _icon = "private-endpoints.png"
+
+
+class ResourceGuard(_Other):
+    _icon = "resource-guard.png"
+
+
 class ResourceMover(_Other):
     _icon = "resource-mover.png"
+
+
+class Rtos(_Other):
+    _icon = "rtos.png"
+
+
+class SavingsPlans(_Other):
+    _icon = "savings-plans.png"
+
+
+class ScvmmManagementServers(_Other):
+    _icon = "scvmm-management-servers.png"
 
 
 class SshKeys(_Other):
     _icon = "ssh-keys.png"
 
 
+class TargetsManagement(_Other):
+    _icon = "targets-management.png"
+
+
 class TemplateSpecs(_Other):
     _icon = "template-specs.png"
 
 
-class UniversalPrint(_Other):
-    _icon = "universal-print.png"
+class TestBase(_Other):
+    _icon = "test-base.png"
 
 
-class WindowsVirtualDesktop(_Other):
-    _icon = "windows-virtual-desktop.png"
+class UpdateManagementCenter(_Other):
+    _icon = "update-management-center.png"
+
+
+class VideoAnalyzers(_Other):
+    _icon = "video-analyzers.png"
+
+
+class VirtualInstanceForSAP(_Other):
+    _icon = "virtual-instance-for-sap.png"
+
+
+class VirtualVisitsBuilder(_Other):
+    _icon = "virtual-visits-builder.png"
+
+
+class VMAppDefinitions(_Other):
+    _icon = "vm-app-definitions.png"
+
+
+class VMAppVersions(_Other):
+    _icon = "vm-app-versions.png"
+
+
+class VMImageVersion(_Other):
+    _icon = "vm-image-version.png"
+
+
+class Wac(_Other):
+    _icon = "wac.png"
 
 
 # Aliases

@@ -12,8 +12,16 @@ class AbsMember(_Blockchain):
     _icon = "abs-member.png"
 
 
-class BlockchainService(_Blockchain):
-    _icon = "blockchain-service.png"
+class AzureBlockchainService(_Blockchain):
+    _icon = "azure-blockchain-service.png"
+
+
+class AzureTokenService(_Blockchain):
+    _icon = "azure-token-service.png"
+
+
+class BlockchainApplications(_Blockchain):
+    _icon = "blockchain-applications.png"
 
 
 class Consortium(_Blockchain):
@@ -22,10 +30,6 @@ class Consortium(_Blockchain):
 
 class OutboundConnection(_Blockchain):
     _icon = "outbound-connection.png"
-
-
-class TokenService(_Blockchain):
-    _icon = "token-service.png"
 
 
 # Aliases

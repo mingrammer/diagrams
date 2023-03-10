@@ -8,16 +8,44 @@ class _Integration(_Azure):
     _icon_dir = "resources/azure/integration"
 
 
-class APIForFhir(_Integration):
-    _icon = "api-for-fhir.png"
+class APIConnections(_Integration):
+    _icon = "api-connections.png"
 
 
 class APIManagementServices(_Integration):
     _icon = "api-management-services.png"
 
 
-class DataCatalog(_Integration):
-    _icon = "data-catalog.png"
+class AppConfiguration(_Integration):
+    _icon = "app-configuration.png"
+
+
+class AzureAPIForFhir(_Integration):
+    _icon = "azure-api-for-fhir.png"
+
+
+class AzureDataCatalog(_Integration):
+    _icon = "azure-data-catalog.png"
+
+
+class AzureDataboxGateway(_Integration):
+    _icon = "azure-databox-gateway.png"
+
+
+class AzureServiceBus(_Integration):
+    _icon = "azure-service-bus.png"
+
+
+class AzureSQLServerStretchDatabases(_Integration):
+    _icon = "azure-sql-server-stretch-databases.png"
+
+
+class AzureStackEdge(_Integration):
+    _icon = "azure-stack-edge.png"
+
+
+class DataFactories(_Integration):
+    _icon = "data-factories.png"
 
 
 class EventGridDomains(_Integration):
@@ -36,16 +64,40 @@ class IntegrationAccounts(_Integration):
     _icon = "integration-accounts.png"
 
 
+class IntegrationServiceEnvironments(_Integration):
+    _icon = "integration-service-environments.png"
+
+
+class LogicAppsCustomConnector(_Integration):
+    _icon = "logic-apps-custom-connector.png"
+
+
 class LogicApps(_Integration):
     _icon = "logic-apps.png"
+
+
+class PartnerNamespace(_Integration):
+    _icon = "partner-namespace.png"
+
+
+class PartnerRegistration(_Integration):
+    _icon = "partner-registration.png"
 
 
 class PartnerTopic(_Integration):
     _icon = "partner-topic.png"
 
 
+class PowerPlatform(_Integration):
+    _icon = "power-platform.png"
+
+
 class Relays(_Integration):
     _icon = "relays.png"
+
+
+class SendgridAccounts(_Integration):
+    _icon = "sendgrid-accounts.png"
 
 
 class SoftwareAsAService(_Integration):

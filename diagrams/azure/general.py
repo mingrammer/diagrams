@@ -112,6 +112,10 @@ class Extensions(_General):
     _icon = "extensions.png"
 
 
+class FeaturePreviews(_General):
+    _icon = "feature-previews.png"
+
+
 class File(_General):
     _icon = "file.png"
 
@@ -150,10 +154,6 @@ class GlobeSuccess(_General):
 
 class GlobeWarning(_General):
     _icon = "globe-warning.png"
-
-
-class Globe(_General):
-    _icon = "globe.png"
 
 
 class Guide(_General):
@@ -248,8 +248,8 @@ class Powershell(_General):
     _icon = "powershell.png"
 
 
-class Preview(_General):
-    _icon = "preview.png"
+class PreviewFeatures(_General):
+    _icon = "preview-features.png"
 
 
 class ProcessExplorer(_General):
@@ -266,6 +266,10 @@ class QuickstartCenter(_General):
 
 class Recent(_General):
     _icon = "recent.png"
+
+
+class RegionManagement(_General):
+    _icon = "region-management.png"
 
 
 class Reservations(_General):
@@ -288,10 +292,6 @@ class ResourceLinked(_General):
     _icon = "resource-linked.png"
 
 
-class Scale(_General):
-    _icon = "scale.png"
-
-
 class Scheduler(_General):
     _icon = "scheduler.png"
 
@@ -306,10 +306,6 @@ class Search(_General):
 
 class ServerFarm(_General):
     _icon = "server-farm.png"
-
-
-class ServiceBus(_General):
-    _icon = "service-bus.png"
 
 
 class ServiceHealth(_General):
@@ -348,12 +344,20 @@ class Tags(_General):
     _icon = "tags.png"
 
 
+class Templates(_General):
+    _icon = "templates.png"
+
+
 class TfsVcRepository(_General):
     _icon = "tfs-vc-repository.png"
 
 
 class Toolbox(_General):
     _icon = "toolbox.png"
+
+
+class Troubleshoot(_General):
+    _icon = "troubleshoot.png"
 
 
 class Versions(_General):

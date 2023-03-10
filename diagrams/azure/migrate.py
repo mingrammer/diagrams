@@ -8,20 +8,24 @@ class _Migrate(_Azure):
     _icon_dir = "resources/azure/migrate"
 
 
+class AzureDataboxGateway(_Migrate):
+    _icon = "azure-databox-gateway.png"
+
+
+class AzureMigrate(_Migrate):
+    _icon = "azure-migrate.png"
+
+
+class AzureStackEdge(_Migrate):
+    _icon = "azure-stack-edge.png"
+
+
 class CostManagementAndBilling(_Migrate):
     _icon = "cost-management-and-billing.png"
 
 
-class DataBoxEdge(_Migrate):
-    _icon = "data-box-edge.png"
-
-
 class DataBox(_Migrate):
     _icon = "data-box.png"
-
-
-class Migrate(_Migrate):
-    _icon = "migrate.png"
 
 
 class RecoveryServicesVaults(_Migrate):
