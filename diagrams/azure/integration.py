@@ -12,12 +12,8 @@ class APIForFhir(_Integration):
     _icon = "api-for-fhir.png"
 
 
-class APIManagement(_Integration):
-    _icon = "api-management.png"
-
-
-class AppConfiguration(_Integration):
-    _icon = "app-configuration.png"
+class APIManagementServices(_Integration):
+    _icon = "api-management-services.png"
 
 
 class DataCatalog(_Integration):
@@ -40,14 +36,6 @@ class IntegrationAccounts(_Integration):
     _icon = "integration-accounts.png"
 
 
-class IntegrationServiceEnvironments(_Integration):
-    _icon = "integration-service-environments.png"
-
-
-class LogicAppsCustomConnector(_Integration):
-    _icon = "logic-apps-custom-connector.png"
-
-
 class LogicApps(_Integration):
     _icon = "logic-apps.png"
 
@@ -56,28 +44,16 @@ class PartnerTopic(_Integration):
     _icon = "partner-topic.png"
 
 
-class SendgridAccounts(_Integration):
-    _icon = "sendgrid-accounts.png"
-
-
-class ServiceBusRelays(_Integration):
-    _icon = "service-bus-relays.png"
-
-
-class ServiceBus(_Integration):
-    _icon = "service-bus.png"
-
-
-class ServiceCatalogManagedApplicationDefinitions(_Integration):
-    _icon = "service-catalog-managed-application-definitions.png"
+class Relays(_Integration):
+    _icon = "relays.png"
 
 
 class SoftwareAsAService(_Integration):
     _icon = "software-as-a-service.png"
 
 
-class StorsimpleDeviceManagers(_Integration):
-    _icon = "storsimple-device-managers.png"
+class SQLDataWarehouses(_Integration):
+    _icon = "sql-data-warehouses.png"
 
 
 class SystemTopic(_Integration):

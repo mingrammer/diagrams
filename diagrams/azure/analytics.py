@@ -12,18 +12,6 @@ class AnalysisServices(_Analytics):
     _icon = "analysis-services.png"
 
 
-class DataExplorerClusters(_Analytics):
-    _icon = "data-explorer-clusters.png"
-
-
-class DataFactories(_Analytics):
-    _icon = "data-factories.png"
-
-
-class DataLakeAnalytics(_Analytics):
-    _icon = "data-lake-analytics.png"
-
-
 class DataLakeStoreGen1(_Analytics):
     _icon = "data-lake-store-gen1.png"
 
@@ -40,8 +28,8 @@ class EventHubs(_Analytics):
     _icon = "event-hubs.png"
 
 
-class Hdinsightclusters(_Analytics):
-    _icon = "hdinsightclusters.png"
+class HDInsightClusters(_Analytics):
+    _icon = "hd-insight-clusters.png"
 
 
 class LogAnalyticsWorkspaces(_Analytics):
