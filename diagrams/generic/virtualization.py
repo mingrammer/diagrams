@@ -8,6 +8,10 @@ class _Virtualization(_Generic):
     _icon_dir = "resources/generic/virtualization"
 
 
+class Qemu(_Virtualization):
+    _icon = "qemu.png"
+
+
 class Virtualbox(_Virtualization):
     _icon = "virtualbox.png"
 
