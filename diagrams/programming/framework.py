@@ -71,7 +71,7 @@ class Svelte(_Framework):
 class Vue(_Framework):
     _icon = "vue.png"
 
-class Vue(_Framework):
+class Quarkus(_Framework):
     _icon = "quarkus.png"
 
 # Aliases
