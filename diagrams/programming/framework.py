@@ -48,6 +48,10 @@ class Micronaut(_Framework):
     _icon = "micronaut.png"
 
 
+class Quarkus(_Framework):
+    _icon = "quarkus.png"
+
+
 class Rails(_Framework):
     _icon = "rails.png"
 
@@ -71,8 +75,6 @@ class Svelte(_Framework):
 class Vue(_Framework):
     _icon = "vue.png"
 
-class Quarkus(_Framework):
-    _icon = "quarkus.png"
 
 # Aliases
 
