@@ -25,6 +25,8 @@ Node classes list of saas provider.
 
 ## saas.analytics
 
+<img width="30" src="/img/resources/saas/analytics/dataform.png" alt="Dataform" style="float: left; padding-right: 5px;" >
+**diagrams.saas.analytics.Dataform**
 
 <img width="30" src="/img/resources/saas/analytics/snowflake.png" alt="Snowflake" style="float: left; padding-right: 5px;" >
 **diagrams.saas.analytics.Snowflake**
