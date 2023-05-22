@@ -22,18 +22,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Install poetry
-        run: |
-          curl -O -sSL https://install.python-poetry.org/install-poetry.py
-          python install-poetry.py -y --version 1.1.12
-          echo "PATH=${HOME}/.poetry/bin:${PATH}" >> $GITHUB_ENV
-          rm install-poetry.py
       - uses: actions/setup-python@v3
         with:
           python-version: ${{ matrix.python }}
-          cache: poetry
       - name: Setup Graphviz
         uses: ts-graphviz/setup-graphviz@v1
+      - name: Install poetry
+        run: pip install poetry
       - name: Run all tests
         run: |
           poetry install
