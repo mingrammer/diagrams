@@ -12,8 +12,20 @@ class AnalysisServices(_Analytics):
     _icon = "analysis-services.png"
 
 
-class DataExplorerClusters(_Analytics):
-    _icon = "data-explorer-clusters.png"
+class AzureDataExplorerClusters(_Analytics):
+    _icon = "azure-data-explorer-clusters.png"
+
+
+class AzureDatabricks(_Analytics):
+    _icon = "azure-databricks.png"
+
+
+class AzureSynapseAnalytics(_Analytics):
+    _icon = "azure-synapse-analytics.png"
+
+
+class AzureWorkbooks(_Analytics):
+    _icon = "azure-workbooks.png"
 
 
 class DataFactories(_Analytics):
@@ -28,32 +40,36 @@ class DataLakeStoreGen1(_Analytics):
     _icon = "data-lake-store-gen1.png"
 
 
-class Databricks(_Analytics):
-    _icon = "databricks.png"
+class EndpointAnalytics(_Analytics):
+    _icon = "endpoint-analytics.png"
 
 
 class EventHubClusters(_Analytics):
     _icon = "event-hub-clusters.png"
 
 
-class EventHubs(_Analytics):
-    _icon = "event-hubs.png"
-
-
-class Hdinsightclusters(_Analytics):
-    _icon = "hdinsightclusters.png"
+class HDInsightClusters(_Analytics):
+    _icon = "hd-insight-clusters.png"
 
 
 class LogAnalyticsWorkspaces(_Analytics):
     _icon = "log-analytics-workspaces.png"
 
 
+class PowerBiEmbedded(_Analytics):
+    _icon = "power-bi-embedded.png"
+
+
+class PowerPlatform(_Analytics):
+    _icon = "power-platform.png"
+
+
+class PrivateLinkServices(_Analytics):
+    _icon = "private-link-services.png"
+
+
 class StreamAnalyticsJobs(_Analytics):
     _icon = "stream-analytics-jobs.png"
-
-
-class SynapseAnalytics(_Analytics):
-    _icon = "synapse-analytics.png"
 
 
 # Aliases

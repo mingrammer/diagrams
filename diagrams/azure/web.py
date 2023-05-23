@@ -12,6 +12,10 @@ class APIConnections(_Web):
     _icon = "api-connections.png"
 
 
+class APIManagementServices(_Web):
+    _icon = "api-management-services.png"
+
+
 class AppServiceCertificates(_Web):
     _icon = "app-service-certificates.png"
 
@@ -32,20 +36,36 @@ class AppServices(_Web):
     _icon = "app-services.png"
 
 
-class MediaServices(_Web):
-    _icon = "media-services.png"
+class AzureMediaService(_Web):
+    _icon = "azure-media-service.png"
 
 
-class NotificationHubNamespaces(_Web):
-    _icon = "notification-hub-namespaces.png"
+class AzureSpringApps(_Web):
+    _icon = "azure-spring-apps.png"
 
 
-class Search(_Web):
-    _icon = "search.png"
+class CognitiveSearch(_Web):
+    _icon = "cognitive-search.png"
+
+
+class CognitiveServices(_Web):
+    _icon = "cognitive-services.png"
+
+
+class FrontDoorAndCDNProfiles(_Web):
+    _icon = "front-door-and-cdn-profiles.png"
+
+
+class PowerPlatform(_Web):
+    _icon = "power-platform.png"
 
 
 class Signalr(_Web):
     _icon = "signalr.png"
+
+
+class StaticApps(_Web):
+    _icon = "static-apps.png"
 
 
 # Aliases

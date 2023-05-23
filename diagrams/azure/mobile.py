@@ -8,16 +8,16 @@ class _Mobile(_Azure):
     _icon_dir = "resources/azure/mobile"
 
 
-class AppServiceMobile(_Mobile):
-    _icon = "app-service-mobile.png"
-
-
-class MobileEngagement(_Mobile):
-    _icon = "mobile-engagement.png"
+class AppServices(_Mobile):
+    _icon = "app-services.png"
 
 
 class NotificationHubs(_Mobile):
     _icon = "notification-hubs.png"
+
+
+class PowerPlatform(_Mobile):
+    _icon = "power-platform.png"
 
 
 # Aliases
