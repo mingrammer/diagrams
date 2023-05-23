@@ -20,8 +20,8 @@ class Defender(_Security):
     _icon = "defender.png"
 
 
-class ExtendedSecurityUpdates(_Security):
-    _icon = "extended-security-updates.png"
+class Extendedsecurityupdates(_Security):
+    _icon = "extendedsecurityupdates.png"
 
 
 class KeyVaults(_Security):

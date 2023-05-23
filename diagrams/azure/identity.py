@@ -8,10 +8,6 @@ class _Identity(_Azure):
     _icon_dir = "resources/azure/identity"
 
 
-class AccessReview(_Identity):
-    _icon = "access-review.png"
-
-
 class ActiveDirectoryConnectHealth(_Identity):
     _icon = "active-directory-connect-health.png"
 
@@ -32,16 +28,8 @@ class ADIdentityProtection(_Identity):
     _icon = "ad-identity-protection.png"
 
 
-class ADPrivilegedIdentityManagement(_Identity):
-    _icon = "ad-privileged-identity-management.png"
-
-
 class AppRegistrations(_Identity):
     _icon = "app-registrations.png"
-
-
-class ConditionalAccess(_Identity):
-    _icon = "conditional-access.png"
 
 
 class EnterpriseApplications(_Identity):
@@ -54,10 +42,6 @@ class Groups(_Identity):
 
 class IdentityGovernance(_Identity):
     _icon = "identity-governance.png"
-
-
-class InformationProtection(_Identity):
-    _icon = "information-protection.png"
 
 
 class ManagedIdentities(_Identity):
