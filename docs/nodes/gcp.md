@@ -44,6 +44,9 @@ Node classes list of gcp provider.
 <img width="30" src="/img/resources/gcp/api/api-gateway.png" alt="APIGateway" style="float: left; padding-right: 5px;" >
 **diagrams.gcp.api.APIGateway**
 
+<img width="30" src="/img/resources/gcp/api/apigee.png" alt="Apigee" style="float: left; padding-right: 5px;" >
+**diagrams.gcp.api.Apigee**
+
 <img width="30" src="/img/resources/gcp/api/endpoints.png" alt="Endpoints" style="float: left; padding-right: 5px;" >
 **diagrams.gcp.api.Endpoints**
 
