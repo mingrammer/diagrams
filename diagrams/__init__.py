@@ -2,7 +2,7 @@ import contextvars
 import os
 import uuid
 from pathlib import Path
-from typing import List, Union, Dict
+from typing import Dict, List, Optional, Union
 
 from graphviz import Digraph
 
@@ -90,9 +90,9 @@ class Diagram:
         autolabel: bool = False,
         show: bool = True,
         strict: bool = False,
-        graph_attr: dict = {},
-        node_attr: dict = {},
-        edge_attr: dict = {},
+        graph_attr: Optional[dict] = None,
+        node_attr: Optional[dict] = None,
+        edge_attr: Optional[dict] = None,
     ):
         """Diagram represents a global diagrams context.
 
@@ -109,6 +109,12 @@ class Diagram:
         :param edge_attr: Provide edge_attr dot config attributes.
         :param strict: Rendering should merge multi-edges.
         """
+        if graph_attr is None:
+            graph_attr = {}
+        if node_attr is None:
+            node_attr = {}
+        if edge_attr is None:
+            edge_attr = {}
         self.name = name
         if not name and not filename:
             filename = "diagrams_image"
@@ -218,9 +224,7 @@ class Cluster:
         self,
         label: str = "cluster",
         direction: str = "LR",
-        graph_attr: dict = {},
-        providerIconNode: object = None,
-        icon_size: int = 30,
+        graph_attr: Optional[dict] = None,
     ):
         """Cluster represents a cluster context.
 
@@ -230,6 +234,8 @@ class Cluster:
         :param providerIconNode: Provide a node to be included as a link
         :param icon_size: The icon size
         """
+        if graph_attr is None:
+            graph_attr = {}
         self.label = label
         self.name = "cluster_" + self.label
         self.providerIconNode = providerIconNode

@@ -8,6 +8,10 @@ class _Analytics(_Saas):
     _icon_dir = "resources/saas/analytics"
 
 
+class Dataform(_Analytics):
+    _icon = "dataform.png"
+
+
 class Snowflake(_Analytics):
     _icon = "snowflake.png"
 
