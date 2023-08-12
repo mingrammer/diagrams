@@ -65,6 +65,9 @@ Node classes list of onprem provider.
 <img width="30" src="/img/resources/onprem/analytics/tableau.png" alt="Tableau" style="float: left; padding-right: 5px;" >
 **diagrams.onprem.analytics.Tableau**
 
+<img width="30" src="/img/resources/onprem/analytics/trino.png" alt="Trino" style="float: left; padding-right: 5px;" >
+**diagrams.onprem.analytics.Trino**
+
 ## onprem.auth
 
 

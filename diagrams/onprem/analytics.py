@@ -72,6 +72,10 @@ class Tableau(_Analytics):
     _icon = "tableau.png"
 
 
+class Trino(_Analytics):
+    _icon = "trino.png"
+
+
 # Aliases
 
 PowerBI = Powerbi
