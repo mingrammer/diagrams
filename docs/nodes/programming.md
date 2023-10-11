@@ -113,6 +113,9 @@ Node classes list of programming provider.
 <img width="30" src="/img/resources/programming/framework/micronaut.png" alt="Micronaut" style="float: left; padding-right: 5px;" >
 **diagrams.programming.framework.Micronaut**
 
+<img width="30" src="/img/resources/programming/framework/quarkus.png" alt="Quarkus" style="float: left; padding-right: 5px;" >
+**diagrams.programming.framework.Quarkus**
+
 <img width="30" src="/img/resources/programming/framework/rails.png" alt="Rails" style="float: left; padding-right: 5px;" >
 **diagrams.programming.framework.Rails**
 
