@@ -572,6 +572,9 @@ Node classes list of azure provider.
 <img width="30" src="/img/resources/azure/network/on-premises-data-gateways.png" alt="OnPremisesDataGateways" style="float: left; padding-right: 5px;" >
 **diagrams.azure.network.OnPremisesDataGateways**
 
+<img width="30" src="/img/resources/azure/network/private-endpoint.png" alt="PrivateEndpoint" style="float: left; padding-right: 5px;" >
+**diagrams.azure.network.PrivateEndpoint**
+
 <img width="30" src="/img/resources/azure/network/public-ip-addresses.png" alt="PublicIpAddresses" style="float: left; padding-right: 5px;" >
 **diagrams.azure.network.PublicIpAddresses**
 
