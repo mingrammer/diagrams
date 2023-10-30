@@ -28,7 +28,7 @@ jobs:
       - name: Setup Graphviz
         uses: ts-graphviz/setup-graphviz@v1
       - name: Install poetry
-        run: pip install poetry
+        run: curl -sSL https://install.python-poetry.org | python3 -
       - name: Run all tests
         run: |
           poetry install
