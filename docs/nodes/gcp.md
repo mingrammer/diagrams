@@ -278,6 +278,9 @@ Node classes list of gcp provider.
 ## gcp.operations
 
 
+<img width="30" src="/img/resources/gcp/operations/logging.png" alt="Logging" style="float: left; padding-right: 5px;" >
+**diagrams.gcp.operations.Logging**
+
 <img width="30" src="/img/resources/gcp/operations/monitoring.png" alt="Monitoring" style="float: left; padding-right: 5px;" >
 **diagrams.gcp.operations.Monitoring**
 
