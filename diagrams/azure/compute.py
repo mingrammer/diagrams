@@ -40,6 +40,10 @@ class CloudsimpleVirtualMachines(_Compute):
     _icon = "cloudsimple-virtual-machines.png"
 
 
+class ContainerApps(_Compute):
+    _icon = "container-apps.png"
+
+
 class ContainerInstances(_Compute):
     _icon = "container-instances.png"
 
