@@ -21,7 +21,7 @@ pylint = "^2.7"
 rope = "^0.14.0"
 isort = "^4.3"
 black = "^22.12.0"
-pre-commit = "^3.0.4"
+pre-commit = "^3.5.0"
 
 [tool.black]
 line-length = 120
