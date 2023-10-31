@@ -65,6 +65,9 @@ Node classes list of onprem provider.
 <img width="30" src="/img/resources/onprem/analytics/tableau.png" alt="Tableau" style="float: left; padding-right: 5px;" >
 **diagrams.onprem.analytics.Tableau**
 
+<img width="30" src="/img/resources/onprem/analytics/trino.png" alt="Trino" style="float: left; padding-right: 5px;" >
+**diagrams.onprem.analytics.Trino**
+
 ## onprem.auth
 
 
@@ -323,6 +326,12 @@ Node classes list of onprem provider.
 <img width="30" src="/img/resources/onprem/logging/syslog-ng.png" alt="SyslogNg" style="float: left; padding-right: 5px;" >
 **diagrams.onprem.logging.SyslogNg**
 
+## onprem.messaging
+
+
+<img width="30" src="/img/resources/onprem/messaging/centrifugo.png" alt="Centrifugo" style="float: left; padding-right: 5px;" >
+**diagrams.onprem.messaging.Centrifugo**
+
 ## onprem.mlops
 
 
@@ -349,6 +358,9 @@ Node classes list of onprem provider.
 
 <img width="30" src="/img/resources/onprem/monitoring/humio.png" alt="Humio" style="float: left; padding-right: 5px;" >
 **diagrams.onprem.monitoring.Humio**
+
+<img width="30" src="/img/resources/onprem/monitoring/mimir.png" alt="Mimir" style="float: left; padding-right: 5px;" >
+**diagrams.onprem.monitoring.Mimir**
 
 <img width="30" src="/img/resources/onprem/monitoring/nagios.png" alt="Nagios" style="float: left; padding-right: 5px;" >
 **diagrams.onprem.monitoring.Nagios**
@@ -544,6 +556,9 @@ Node classes list of onprem provider.
 
 <img width="30" src="/img/resources/onprem/tracing/jaeger.png" alt="Jaeger" style="float: left; padding-right: 5px;" >
 **diagrams.onprem.tracing.Jaeger**
+
+<img width="30" src="/img/resources/onprem/tracing/tempo.png" alt="Tempo" style="float: left; padding-right: 5px;" >
+**diagrams.onprem.tracing.Tempo**
 
 ## onprem.vcs
 

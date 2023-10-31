@@ -8,6 +8,10 @@ class _Operations(_GCP):
     _icon_dir = "resources/gcp/operations"
 
 
+class Logging(_Operations):
+    _icon = "logging.png"
+
+
 class Monitoring(_Operations):
     _icon = "monitoring.png"
 

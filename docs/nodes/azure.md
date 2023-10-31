@@ -71,6 +71,9 @@ Node classes list of azure provider.
 <img width="30" src="/img/resources/azure/compute/cloudsimple-virtual-machines.png" alt="CloudsimpleVirtualMachines" style="float: left; padding-right: 5px;" >
 **diagrams.azure.compute.CloudsimpleVirtualMachines**
 
+<img width="30" src="/img/resources/azure/compute/container-apps.png" alt="ContainerApps" style="float: left; padding-right: 5px;" >
+**diagrams.azure.compute.ContainerApps**
+
 <img width="30" src="/img/resources/azure/compute/container-instances.png" alt="ContainerInstances" style="float: left; padding-right: 5px;" >
 **diagrams.azure.compute.ContainerInstances**
 
@@ -571,6 +574,9 @@ Node classes list of azure provider.
 
 <img width="30" src="/img/resources/azure/network/on-premises-data-gateways.png" alt="OnPremisesDataGateways" style="float: left; padding-right: 5px;" >
 **diagrams.azure.network.OnPremisesDataGateways**
+
+<img width="30" src="/img/resources/azure/network/private-endpoint.png" alt="PrivateEndpoint" style="float: left; padding-right: 5px;" >
+**diagrams.azure.network.PrivateEndpoint**
 
 <img width="30" src="/img/resources/azure/network/public-ip-addresses.png" alt="PublicIpAddresses" style="float: left; padding-right: 5px;" >
 **diagrams.azure.network.PublicIpAddresses**

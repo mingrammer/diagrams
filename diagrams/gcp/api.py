@@ -12,6 +12,10 @@ class APIGateway(_API):
     _icon = "api-gateway.png"
 
 
+class Apigee(_API):
+    _icon = "apigee.png"
+
+
 class Endpoints(_API):
     _icon = "endpoints.png"
 

@@ -98,6 +98,9 @@ Node classes list of generic provider.
 ## generic.virtualization
 
 
+<img width="30" src="/img/resources/generic/virtualization/qemu.png" alt="Qemu" style="float: left; padding-right: 5px;" >
+**diagrams.generic.virtualization.Qemu**
+
 <img width="30" src="/img/resources/generic/virtualization/virtualbox.png" alt="Virtualbox" style="float: left; padding-right: 5px;" >
 **diagrams.generic.virtualization.Virtualbox**
 
