@@ -119,6 +119,10 @@ Node classes list of saas provider.
 <img width="30" src="/img/resources/saas/recommendation/recombee.png" alt="Recombee" style="float: left; padding-right: 5px;" >
 **diagrams.saas.recommendation.Recombee**
 
+## saas.search
+
+- **diagrams.saas.search.Algolia**
+
 ## saas.social
 
 
