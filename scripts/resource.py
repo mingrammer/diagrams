@@ -11,6 +11,7 @@ import subprocess
 import sys
 
 import config as cfg
+
 from . import resource_dir
 
 _usage = "Usage: resource.py <cmd> <pvd>"
@@ -83,6 +84,7 @@ def cleaner_k8s(f):
             f = f[len(p) :]
             break
     return f.lower()
+
 
 def cleaner_digitalocean(f):
     f = f.replace("-32", "")
