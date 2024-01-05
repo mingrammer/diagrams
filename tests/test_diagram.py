@@ -47,12 +47,12 @@ class DiagramTest(unittest.TestCase):
     def test_validate_outformat(self):
         # Normal output formats.
         for fmt in ("png", "jpg", "svg", "pdf", "PNG", "dot"):
-            Diagram(outformat=fmt)
+            Diagram(outformats=[fmt])
 
         # Invalid output formats.
         for fmt in ("pnp", "jpe", "unknown"):
             with self.assertRaises(ValueError):
-                Diagram(outformat=fmt)
+                Diagram(outformats=[fmt])
 
     def test_with_global_context(self):
         self.assertIsNone(getdiagram())
@@ -115,12 +115,14 @@ class DiagramTest(unittest.TestCase):
 
 
     def test_outformat_list(self):
-        """Check that outformat render all the files from the list."""
+        """Check that outformats render all the files from the list."""
         self.name = 'diagrams_image'
-        with Diagram(show=False, outformat=["dot", "png"]):
+        with Diagram(show=False, outformats=["dot", "png", "svg", "pdf"]):
             Node("node1")
         # both files must exist
         self.assertTrue(os.path.exists(f"{self.name}.png"))
+        self.assertTrue(os.path.exists(f"{self.name}.svg"))
+        self.assertTrue(os.path.exists(f"{self.name}.pdf"))
         self.assertTrue(os.path.exists(f"{self.name}.dot"))
 
         # clean the dot file as it only generated here
