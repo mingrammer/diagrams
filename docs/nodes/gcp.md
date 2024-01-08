@@ -173,6 +173,10 @@ Node classes list of gcp provider.
 <img width="30" src="/img/resources/gcp/ml/ai-platform.png" alt="AIPlatform" style="float: left; padding-right: 5px;" >
 **diagrams.gcp.ml.AIPlatform**
 
+<img width="30" src="/img/resources/gcp/ml/artifacts-registry.png" alt="Artifacts Registry" style="float: left; padding-right: 5px;" >
+**diagrams.gcp.ml.artifacts-registry**, **ArtifactsRegistry** (alias)
+
+
 <img width="30" src="/img/resources/gcp/ml/automl-natural-language.png" alt="AutomlNaturalLanguage" style="float: left; padding-right: 5px;" >
 **diagrams.gcp.ml.AutomlNaturalLanguage**
 
@@ -206,6 +210,9 @@ Node classes list of gcp provider.
 <img width="30" src="/img/resources/gcp/ml/recommendations-ai.png" alt="RecommendationsAI" style="float: left; padding-right: 5px;" >
 **diagrams.gcp.ml.RecommendationsAI**
 
+<img width="30" src="/img/resources/gcp/ml/retail-api.png" alt="RetailAPI" style="float: left; padding-right: 5px;" >
+**diagrams.gcp.ml.RetailAPI**
+
 <img width="30" src="/img/resources/gcp/ml/speech-to-text.png" alt="SpeechToText" style="float: left; padding-right: 5px;" >
 **diagrams.gcp.ml.SpeechToText**, **STT** (alias)
 
@@ -220,6 +227,9 @@ Node classes list of gcp provider.
 
 <img width="30" src="/img/resources/gcp/ml/video-intelligence-api.png" alt="VideoIntelligenceAPI" style="float: left; padding-right: 5px;" >
 **diagrams.gcp.ml.VideoIntelligenceAPI**
+
+<img width="30" src="/img/resources/gcp/ml/vertex-ai.png" alt="VertexAI" style="float: left; padding-right: 5px;" >
+**diagrams.gcp.ml.VertexAI**
 
 <img width="30" src="/img/resources/gcp/ml/vision-api.png" alt="VisionAPI" style="float: left; padding-right: 5px;" >
 **diagrams.gcp.ml.VisionAPI**

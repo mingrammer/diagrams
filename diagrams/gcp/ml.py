@@ -23,6 +23,9 @@ class AIPlatformDataLabelingService(_ML):
 class AIPlatform(_ML):
     _icon = "ai-platform.png"
 
+class ArtifactsRegistry(_ML):
+    _icon = "artifacts-registry.png"
+
 
 class AutomlNaturalLanguage(_ML):
     _icon = "automl-natural-language.png"
@@ -67,6 +70,9 @@ class NaturalLanguageAPI(_ML):
 class RecommendationsAI(_ML):
     _icon = "recommendations-ai.png"
 
+class RetailAPI(_ML):
+    _icon = "retail-api.png"
+
 
 class SpeechToText(_ML):
     _icon = "speech-to-text.png"
@@ -83,6 +89,8 @@ class TPU(_ML):
 class TranslationAPI(_ML):
     _icon = "translation-api.png"
 
+class VertexAI(_ML):
+    _icon = "vertex-ai.png"
 
 class VideoIntelligenceAPI(_ML):
     _icon = "video-intelligence-api.png"
