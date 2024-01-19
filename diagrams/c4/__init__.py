@@ -3,10 +3,12 @@ A set of nodes and edges to visualize software architecture using the C4 model.
 """
 import html
 import textwrap
+from typing import Any, Dict
+
 from diagrams import Cluster, Node, Edge
 
 
-def _format_node_label(name, key, description):
+def _format_node_label(name: str, key: str, description: str) -> str:
     """Create a graphviz label string for a C4 node"""
     title = f'<font point-size="12"><b>{html.escape(name)}</b></font><br/>'
     subtitle = f'<font point-size="9">[{html.escape(key)}]<br/></font>' if key else ""
@@ -14,7 +16,7 @@ def _format_node_label(name, key, description):
     return f"<{title}{subtitle}{text}>"
 
 
-def _format_description(description):
+def _format_description(description: str) -> str:
     """
     Formats the description string so it fits into the C4 nodes.
 
@@ -29,7 +31,7 @@ def _format_description(description):
     return "<br/>".join(lines)
 
 
-def _format_edge_label(description):
+def _format_edge_label(description: str) -> str:
     """Create a graphviz label string for a C4 edge"""
     wrapper = textwrap.TextWrapper(width=24, max_lines=3)
     lines = [html.escape(line) for line in wrapper.wrap(description)]
@@ -37,9 +39,9 @@ def _format_edge_label(description):
     return f'<<font point-size="10">{text}</font>>'
 
 
-def C4Node(name, technology="", description="", type="Container", **kwargs):
+def C4Node(name: str, technology: str = "", description: str = "", type: str = "Container", **kwargs: Dict[str, Any]) -> Node:
     key = f"{type}: {technology}" if technology else type
-    node_attributes = {
+    node_attributes: Dict[str, Any] = {
         "label": _format_node_label(name, key, description),
         "labelloc": "c",
         "shape": "rect",
@@ -57,8 +59,8 @@ def C4Node(name, technology="", description="", type="Container", **kwargs):
     return Node(**node_attributes)
 
 
-def Container(name, technology="", description="", **kwargs):
-    container_attributes = {
+def Container(name: str, technology: str = "", description: str = "", **kwargs: Dict[str, Any]) -> Node:
+    container_attributes: Dict[str, Any] = {
         "name": name,
         "technology": technology,
         "description": description,
@@ -68,8 +70,8 @@ def Container(name, technology="", description="", **kwargs):
     return C4Node(**container_attributes)
 
 
-def Database(name, technology="", description="", **kwargs):
-    database_attributes = {
+def Database(name: str, technology: str = "", description: str = "", **kwargs: Dict[str, Any]) -> Node:
+    database_attributes: Dict[str, Any] = {
         "name": name,
         "technology": technology,
         "description": description,
@@ -81,8 +83,8 @@ def Database(name, technology="", description="", **kwargs):
     return C4Node(**database_attributes)
 
 
-def System(name, description="", external=False, **kwargs):
-    system_attributes = {
+def System(name: str, description: str = "", external: bool = False, **kwargs: Dict[str, Any]) -> Node:
+    system_attributes: Dict[str, Any] = {
         "name": name,
         "description": description,
         "type": "External System" if external else "System",
@@ -92,8 +94,8 @@ def System(name, description="", external=False, **kwargs):
     return C4Node(**system_attributes)
 
 
-def Person(name, description="", external=False, **kwargs):
-    person_attributes = {
+def Person(name: str, description: str = "", external: bool = False, **kwargs: Dict[str, Any]) -> Node:
+    person_attributes: Dict[str, Any] = {
         "name": name,
         "description": description,
         "type": "External Person" if external else "Person",
@@ -104,8 +106,8 @@ def Person(name, description="", external=False, **kwargs):
     return C4Node(**person_attributes)
 
 
-def SystemBoundary(name, **kwargs):
-    graph_attributes = {
+def SystemBoundary(name: str, **kwargs: Dict[str, Any]) -> Cluster:
+    graph_attributes: Dict[str, Any] = {
         "label": html.escape(name),
         "bgcolor": "white",
         "margin": "16",
@@ -115,8 +117,8 @@ def SystemBoundary(name, **kwargs):
     return Cluster(name, graph_attr=graph_attributes)
 
 
-def Relationship(label="", **kwargs):
-    edge_attributes = {
+def Relationship(label: str = "", **kwargs: Dict[str, Any]) -> Edge:
+    edge_attributes: Dict[str, Any] = {
         "style": "dashed",
         "color": "gray60",
         "label": _format_edge_label(label) if label else "",

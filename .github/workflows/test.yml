@@ -33,3 +33,5 @@ jobs:
         run: |
           poetry install
           poetry run python -m unittest -v tests/*.py
+      - name: Run mypy
+        run: poetry run mypy
