@@ -21,6 +21,15 @@ pylint = "^2.7"
 rope = "^0.14.0"
 isort = "^4.3"
 black = "^22.12.0"
+mypy = ">=1.4,<1.8"
 
 [tool.black]
 line-length = 120
+
+[tool.mypy]
+files = "diagrams, tests"
+mypy_path = "src"
+namespace_packages = true
+explicit_package_bases = true
+show_error_codes = true
+strict = true
