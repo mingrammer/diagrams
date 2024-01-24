@@ -76,7 +76,17 @@ class Vue(_Framework):
     _icon = "vue.png"
 
 
+class Dotnet(_Framework):
+    _icon = "dotnet.png"
+
+
+class Nextjs(_Framework):
+    _icon = "nextjs.png"
+
+
 # Aliases
 
 FastAPI = Fastapi
 GraphQL = Graphql
+DotNet = Dotnet
+NextJs = Nextjs
