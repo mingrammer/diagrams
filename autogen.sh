@@ -45,11 +45,11 @@ fi
 # preprocess the resources
 for pvd in "${providers[@]}"; do
   # convert the svg to png for azure provider
-  if [ "$pvd" = "onprem" ] || [ "$pvd" = "azure" ]; then
+  if [ "$pvd" = "onprem" ] || [ "$pvd" = "azure" ] || [ "$pvd" = "ibm" ]; then
     echo "converting the svg to png using inkscape for provider '$pvd'"
     python -m scripts.resource svg2png "$pvd"
   fi
-  if [ "$pvd" == "oci" ] || [ "$pvd" = "ibm" ]; then
+  if [ "$pvd" == "oci" ]; then
     echo "converting the svg to png using image magick for provider '$pvd'"
     python -m scripts.resource svg2png2 "$pvd"
   fi
