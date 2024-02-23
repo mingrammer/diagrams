@@ -80,6 +80,10 @@ class ManagedServices(_Management):
     _icon = "managed-services.png"
 
 
+class ManagedWorkflowsApacheAirflow(_Management):
+    _icon = "managed-workflows-apache-airflow.png"
+
+
 class ManagementAndGovernance(_Management):
     _icon = "management-and-governance.png"
 
@@ -216,3 +220,4 @@ class WellArchitectedTool(_Management):
 
 SSM = SystemsManager
 ParameterStore = SystemsManagerParameterStore
+MWAA = ManagedWorkflowsApacheAirflow

@@ -854,6 +854,9 @@ Node classes list of aws provider.
 <img width="30" src="/img/resources/aws/management/managed-services.png" alt="ManagedServices" style="float: left; padding-right: 5px;" >
 **diagrams.aws.management.ManagedServices**
 
+<img width="30" src="/img/resources/aws/management/managed-workflows-apache-airflow.png" alt="ManagedWorkflowsApacheAirflow" style="float: left; padding-right: 5px;" >
+**diagrams.aws.management.ManagedWorkflowsApacheAirflow**, **MWAA** (alias)
+
 <img width="30" src="/img/resources/aws/management/management-and-governance.png" alt="ManagementAndGovernance" style="float: left; padding-right: 5px;" >
 **diagrams.aws.management.ManagementAndGovernance**
 
