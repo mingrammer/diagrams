@@ -43,6 +43,30 @@ Then just run the `./autogen.sh` to generate the added or updated node classes. 
 [black]: https://pypi.org/project/black
 [inkscape]: https://inkscape.org/ko/release
 
+#### Update Specific Instructions for Azure Icons
+
+Download and unzip [Azure Icons](https://learn.microsoft.com/en-us/azure/architecture/icons/)
+
+Execute inside Azure_Public_Service_Icons/Icons/
+```bash
+# Rename some diretories
+mv ai\ +\ machine\ learning/ aimachinelearning/
+mv app\ services/ appservices
+mv azure\ stack/ azurestack
+mv azure\ ecosystem/ azureecosystem
+mv management\ +\ governance/ managementgovernance
+mv  mixed\ reality mixedreality
+mv new\ icons/ newicons
+#  Convert Name to name
+rename -f 'y/A-Z/a-z/' ./*/*
+# Create png files and eliminate ?????-icon-service from namefile
+find . -type f -name "*.svg" -exec bash -c 'inkscape -h 256  --export-filename="${0%.svg}.png" "$0";mv "${0%.svg}.png" "$(echo "${0%.svg}.png" | sed -r 's/[0-9]{5}-icon-service-//')"' {} \;
+# Delete svg files
+find . -type f -name "*.svg" -exec bash -c 'rm "$0"' {} \;
+```
+
+If you get any errors with autogen, it will probably be a '+' in  filename 
+
 ### Update Aliases
 
 Some node classes have alias. For example, `aws.compute.ECS` class is an alias
