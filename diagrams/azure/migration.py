@@ -8,6 +8,10 @@ class _Migration(_Azure):
     _icon_dir = "resources/azure/migration"
 
 
+class AzureDatabaseMigrationServices(_Migration):
+    _icon = "azure-database-migration-services.png"
+
+
 class DataBoxEdge(_Migration):
     _icon = "data-box-edge.png"
 

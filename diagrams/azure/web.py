@@ -8,8 +8,16 @@ class _Web(_Azure):
     _icon_dir = "resources/azure/web"
 
 
+class APICenter(_Web):
+    _icon = "api-center.png"
+
+
 class APIConnections(_Web):
     _icon = "api-connections.png"
+
+
+class APIManagementServices(_Web):
+    _icon = "api-management-services.png"
 
 
 class AppServiceCertificates(_Web):
@@ -32,6 +40,30 @@ class AppServices(_Web):
     _icon = "app-services.png"
 
 
+class AppSpace(_Web):
+    _icon = "app-space.png"
+
+
+class AzureMediaService(_Web):
+    _icon = "azure-media-service.png"
+
+
+class AzureSpringApps(_Web):
+    _icon = "azure-spring-apps.png"
+
+
+class CognitiveSearch(_Web):
+    _icon = "cognitive-search.png"
+
+
+class CognitiveServices(_Web):
+    _icon = "cognitive-services.png"
+
+
+class FrontDoorAndCDNProfiles(_Web):
+    _icon = "front-door-and-cdn-profiles.png"
+
+
 class MediaServices(_Web):
     _icon = "media-services.png"
 
@@ -40,12 +72,20 @@ class NotificationHubNamespaces(_Web):
     _icon = "notification-hub-namespaces.png"
 
 
+class PowerPlatform(_Web):
+    _icon = "power-platform.png"
+
+
 class Search(_Web):
     _icon = "search.png"
 
 
 class Signalr(_Web):
     _icon = "signalr.png"
+
+
+class StaticApps(_Web):
+    _icon = "static-apps.png"
 
 
 # Aliases

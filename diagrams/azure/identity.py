@@ -8,6 +8,10 @@ class _Identity(_Azure):
     _icon_dir = "resources/azure/identity"
 
 
+class AadLicenses(_Identity):
+    _icon = "aad-licenses.png"
+
+
 class AccessReview(_Identity):
     _icon = "access-review.png"
 
@@ -36,16 +40,92 @@ class ADPrivilegedIdentityManagement(_Identity):
     _icon = "ad-privileged-identity-management.png"
 
 
+class AdministrativeUnits(_Identity):
+    _icon = "administrative-units.png"
+
+
+class APIProxy(_Identity):
+    _icon = "api-proxy.png"
+
+
 class AppRegistrations(_Identity):
     _icon = "app-registrations.png"
+
+
+class AzureActiveDirectory(_Identity):
+    _icon = "azure-active-directory.png"
+
+
+class AzureADB2C(_Identity):
+    _icon = "azure-ad-b2c.png"
+
+
+class AzureADDomainServices(_Identity):
+    _icon = "azure-ad-domain-services.png"
+
+
+class AzureADIdentityProtection(_Identity):
+    _icon = "azure-ad-identity-protection.png"
+
+
+class AzureADPrivilegeIdentityManagement(_Identity):
+    _icon = "azure-ad-privilege-identity-management.png"
+
+
+class AzureADPrivlegedIdentityManagement(_Identity):
+    _icon = "azure-ad-privleged-identity-management.png"
+
+
+class AzureADRolesAndAdministrators(_Identity):
+    _icon = "azure-ad-roles-and-administrators.png"
+
+
+class AzureInformationProtection(_Identity):
+    _icon = "azure-information-protection.png"
 
 
 class ConditionalAccess(_Identity):
     _icon = "conditional-access.png"
 
 
+class CustomAzureADRoles(_Identity):
+    _icon = "custom-azure-ad-roles.png"
+
+
 class EnterpriseApplications(_Identity):
     _icon = "enterprise-applications.png"
+
+
+class EntraConnect(_Identity):
+    _icon = "entra-connect.png"
+
+
+class EntraDomainServices(_Identity):
+    _icon = "entra-domain-services.png"
+
+
+class EntraIDProtection(_Identity):
+    _icon = "entra-id-protection.png"
+
+
+class EntraManagedIdentities(_Identity):
+    _icon = "entra-managed-identities.png"
+
+
+class EntraPrivlegedIdentityManagement(_Identity):
+    _icon = "entra-privleged-identity-management.png"
+
+
+class EntraVerifiedID(_Identity):
+    _icon = "entra-verified-id.png"
+
+
+class ExternalIdentities(_Identity):
+    _icon = "external-identities.png"
+
+
+class GlobalSecureAccess(_Identity):
+    _icon = "global-secure-access.png"
 
 
 class Groups(_Identity):
@@ -60,12 +140,36 @@ class InformationProtection(_Identity):
     _icon = "information-protection.png"
 
 
+class InternetAccess(_Identity):
+    _icon = "internet-access.png"
+
+
 class ManagedIdentities(_Identity):
     _icon = "managed-identities.png"
 
 
+class PrivateAccess(_Identity):
+    _icon = "private-access.png"
+
+
+class Security(_Identity):
+    _icon = "security.png"
+
+
+class TenantProperties(_Identity):
+    _icon = "tenant-properties.png"
+
+
+class UserSettings(_Identity):
+    _icon = "user-settings.png"
+
+
 class Users(_Identity):
     _icon = "users.png"
+
+
+class VerifiableCredentials(_Identity):
+    _icon = "verifiable-credentials.png"
 
 
 # Aliases

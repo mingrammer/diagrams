@@ -1,5 +1,5 @@
 #!/bin/bash
-
+echo "starting"
 app_root_dir="diagrams"
 
 # NOTE: azure icon set is not latest version
