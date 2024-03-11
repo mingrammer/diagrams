@@ -8,6 +8,10 @@ class _Vcs(_OnPrem):
     _icon_dir = "resources/onprem/vcs"
 
 
+class Bitbucket(_Vcs):
+    _icon = "bitbucket.png"
+
+
 class Git(_Vcs):
     _icon = "git.png"
 

@@ -566,6 +566,9 @@ Node classes list of the onprem provider.
 ## onprem.vcs
 
 
+<img width="30" src="/img/resources/onprem/vcs/bitbucket.png" alt="Bitbucket" style="float: left; padding-right: 5px;" >
+**diagrams.onprem.vcs.Bitbucket**
+
 <img width="30" src="/img/resources/onprem/vcs/git.png" alt="Git" style="float: left; padding-right: 5px;" >
 **diagrams.onprem.vcs.Git**
 
