@@ -41,7 +41,7 @@ Diagrams lets you draw the cloud system architecture **in Python code**. It was 
 
 ## Getting Started
 
-It requires **Python 3.6** or higher, check your Python version first.
+It requires **Python 3.7** or higher, check your Python version first.
 
 It uses [Graphviz](https://www.graphviz.org/) to render the diagram, so you need to [install Graphviz](https://graphviz.gitlab.io/download/) to use **diagrams**. After installing graphviz (or already have it), install the **diagrams**.
 
@@ -76,7 +76,7 @@ To contribute to diagram, check out [contribution guidelines](CONTRIBUTING.md).
 
 ## Who uses it?
 
-[GitPitch](https://gitpitch.github.io/gitpitch) is the perfect slide deck solution for Tech Conferences, Training, Developer Advocates, and Educators. Diagrams is now available as a dedicated [Cloud Diagram Markdown Widget](https://gitpitch.github.io/gitpitch/#/diagrams/cloud-architecture) so you can use Diagrams directly on any slide for conferences, meetups, and training.
+[Apache Airflow](https://github.com/apache/airflow) is the most popular data workflow Orchestrator. Airflow uses Diagrams to generate architecture diagrams in their documentation.
 
 [Cloudiscovery](https://github.com/Cloud-Architects/cloudiscovery) helps you to analyze resources in your cloud (AWS/GCP/Azure/Alibaba/IBM) account. It allows you to create a diagram of analyzed cloud resource map based on this Diagrams library, so you can draw your existing cloud infrastructure with Cloudiscovery.
 
