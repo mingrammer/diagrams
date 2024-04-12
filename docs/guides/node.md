@@ -3,11 +3,11 @@ id: node
 title: Nodes
 ---
 
-Node is a second object representing a node or system component.
+`Node` is an object representing a node or system component.
 
 ## Basic
 
-Node is an abstract concept that represents a single system component object. 
+`Node` is an abstract concept that represents a single system component object.
 
 A node object consists of three parts: **provider**, **resource type** and **name**. You may already have seen each part in the previous example.
 
@@ -19,9 +19,9 @@ with Diagram("Simple Diagram"):
     EC2("web")
 ```
 
-In above example, the `EC2` is a node of `compute` resource type which provided by `aws` provider.
+In the example above, the `EC2` is a node of resource type `compute` which is provided by the `aws` provider.
 
-You can use other node objects in a similar manner like:
+You can use other node objects in a similar manner:
 
 ```python
 # aws resources
@@ -42,7 +42,7 @@ from diagrams.alibabacloud.storage import ObjectTableStore
 
 # gcp resources
 from diagrams.gcp.compute import AppEngine, GKE
-from diagrams.gcp.ml import AutoML 
+from diagrams.gcp.ml import AutoML
 ...
 
 # k8s resources
@@ -57,15 +57,17 @@ from diagrams.oci.network import Firewall
 from diagrams.oci.storage import FileStorage, StorageGateway
 ```
 
-You can find all available nodes list in [Here](https://diagrams.mingrammer.com/docs/nodes/aws).
+You can find lists of all available nodes for each provider in the sidebar on the left.
+
+For example, [here](https://diagrams.mingrammer.com/docs/nodes/aws) is the list of all available AWS nodes.
 
 ## Data Flow
 
-You can represent data flow by connecting the nodes with these operators: `>>`, `<<` and `-`.
+You can represent data flow by connecting the nodes with the operators `>>`, `<<`, and `-`.
 
-* **>>**: Connect nodes in left to right direction. 
-* **<<**: Connect nodes in right to left direction.
-* **-**: Connect nodes in no direction. Undirected.
+- **>>** connects nodes in left to right direction.
+- **<<** connects nodes in right to left direction.
+- **-** connects nodes in no direction. Undirected.
 
 ```python
 from diagrams import Diagram
@@ -80,15 +82,15 @@ with Diagram("Web Services", show=False):
     (ELB("lb") >> EC2("web")) - EC2("web") >> RDS("userdb")
 ```
 
-> Be careful when using the `-` and any shift operators together, which could cause unexpected results due to operator precedence. 
+> Be careful when using `-` and any shift operators together. It can cause unexpected results due to Python's operator precedence, so you might have to use parentheses.
 
 ![web services diagram](/img/web_services_diagram.png)
 
 > The order of rendered diagrams is the reverse of the declaration order.
 
-You can change the data flow direction with `direction` parameter. Default is **LR**.
+You can change the data flow direction with the `direction` parameter. The default is **LR**.
 
-> (TB, BT, LR and RL) are allowed.
+> Allowed values are: TB, BT, LR, and RL
 
 ```python
 from diagrams import Diagram
@@ -110,7 +112,7 @@ with Diagram("Workers", show=False, direction="TB"):
 
 ## Group Data Flow
 
-Above worker example has too many redundant flows. In this case, you can group nodes into a list so that all nodes are connected to other nodes at once.
+The above worker example has too many redundant flows. To avoid this, you can group nodes into a list so that all nodes are connected to other nodes at once:
 
 ```python
 from diagrams import Diagram
