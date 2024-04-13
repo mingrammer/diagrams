@@ -3,13 +3,13 @@ id: edge
 title: Edges
 ---
 
-Edge is representing an edge between Nodes.
+`Edge` represents an edge between nodes.
 
 ## Basic
 
-Edge is an object representing a connection between Nodes with some additional properties.
+`Edge` is an object representing a connection between nodes with some additional properties.
 
-An edge object contains three attributes: **label**, **color** and **style** which mirror corresponding graphviz edge attributes.
+An edge object contains three attributes: **label**, **color**, and **style**. They mirror the corresponding Graphviz edge attributes.
 
 ```python
 from diagrams import Cluster, Diagram, Edge
