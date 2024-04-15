@@ -48,6 +48,10 @@ class Micronaut(_Framework):
     _icon = "micronaut.png"
 
 
+class Phoenix(_Framework):
+    _icon = "phoenix.png"
+
+
 class Quarkus(_Framework):
     _icon = "quarkus.png"
 
