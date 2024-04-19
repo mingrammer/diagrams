@@ -1,6 +1,7 @@
 """
 A set of nodes and edges to visualize software architecture using the C4 model.
 """
+
 import html
 import textwrap
 from diagrams import Cluster, Node, Edge

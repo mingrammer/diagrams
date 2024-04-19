@@ -8,6 +8,10 @@ class _General(_Azure):
     _icon_dir = "resources/azure/general"
 
 
+class AllResources(_General):
+    _icon = "all-resources.png"
+
+
 class Allresources(_General):
     _icon = "allresources.png"
 
@@ -16,24 +20,272 @@ class Azurehome(_General):
     _icon = "azurehome.png"
 
 
+class Backlog(_General):
+    _icon = "backlog.png"
+
+
+class BizTalk(_General):
+    _icon = "biz-talk.png"
+
+
+class BlobBlock(_General):
+    _icon = "blob-block.png"
+
+
+class BlobPage(_General):
+    _icon = "blob-page.png"
+
+
+class Branch(_General):
+    _icon = "branch.png"
+
+
+class Browser(_General):
+    _icon = "browser.png"
+
+
+class Bug(_General):
+    _icon = "bug.png"
+
+
+class Builds(_General):
+    _icon = "builds.png"
+
+
+class Cache(_General):
+    _icon = "cache.png"
+
+
+class Code(_General):
+    _icon = "code.png"
+
+
+class Commit(_General):
+    _icon = "commit.png"
+
+
+class ControlsHorizontal(_General):
+    _icon = "controls-horizontal.png"
+
+
+class Controls(_General):
+    _icon = "controls.png"
+
+
+class CostAlerts(_General):
+    _icon = "cost-alerts.png"
+
+
+class CostAnalysis(_General):
+    _icon = "cost-analysis.png"
+
+
+class CostBudgets(_General):
+    _icon = "cost-budgets.png"
+
+
+class CostManagementAndBilling(_General):
+    _icon = "cost-management-and-billing.png"
+
+
+class CostManagement(_General):
+    _icon = "cost-management.png"
+
+
+class Counter(_General):
+    _icon = "counter.png"
+
+
+class Cubes(_General):
+    _icon = "cubes.png"
+
+
+class Dashboard(_General):
+    _icon = "dashboard.png"
+
+
+class DevConsole(_General):
+    _icon = "dev-console.png"
+
+
 class Developertools(_General):
     _icon = "developertools.png"
+
+
+class Download(_General):
+    _icon = "download.png"
+
+
+class Error(_General):
+    _icon = "error.png"
+
+
+class Extensions(_General):
+    _icon = "extensions.png"
+
+
+class FeaturePreviews(_General):
+    _icon = "feature-previews.png"
+
+
+class File(_General):
+    _icon = "file.png"
+
+
+class Files(_General):
+    _icon = "files.png"
+
+
+class FolderBlank(_General):
+    _icon = "folder-blank.png"
+
+
+class FolderWebsite(_General):
+    _icon = "folder-website.png"
+
+
+class FreeServices(_General):
+    _icon = "free-services.png"
+
+
+class Ftp(_General):
+    _icon = "ftp.png"
+
+
+class Gear(_General):
+    _icon = "gear.png"
+
+
+class GlobeError(_General):
+    _icon = "globe-error.png"
+
+
+class GlobeSuccess(_General):
+    _icon = "globe-success.png"
+
+
+class GlobeWarning(_General):
+    _icon = "globe-warning.png"
+
+
+class Guide(_General):
+    _icon = "guide.png"
+
+
+class Heart(_General):
+    _icon = "heart.png"
+
+
+class HelpAndSupport(_General):
+    _icon = "help-and-support.png"
 
 
 class Helpsupport(_General):
     _icon = "helpsupport.png"
 
 
+class Image(_General):
+    _icon = "image.png"
+
+
 class Information(_General):
     _icon = "information.png"
+
+
+class InputOutput(_General):
+    _icon = "input-output.png"
+
+
+class JourneyHub(_General):
+    _icon = "journey-hub.png"
+
+
+class LaunchPortal(_General):
+    _icon = "launch-portal.png"
+
+
+class Learn(_General):
+    _icon = "learn.png"
+
+
+class LoadTest(_General):
+    _icon = "load-test.png"
+
+
+class Location(_General):
+    _icon = "location.png"
+
+
+class LogStreaming(_General):
+    _icon = "log-streaming.png"
+
+
+class ManagementGroups(_General):
+    _icon = "management-groups.png"
+
+
+class ManagementPortal(_General):
+    _icon = "management-portal.png"
 
 
 class Managementgroups(_General):
     _icon = "managementgroups.png"
 
 
+class MarketplaceManagement(_General):
+    _icon = "marketplace-management.png"
+
+
 class Marketplace(_General):
     _icon = "marketplace.png"
+
+
+class MediaFile(_General):
+    _icon = "media-file.png"
+
+
+class Media(_General):
+    _icon = "media.png"
+
+
+class MobileEngagement(_General):
+    _icon = "mobile-engagement.png"
+
+
+class Mobile(_General):
+    _icon = "mobile.png"
+
+
+class Module(_General):
+    _icon = "module.png"
+
+
+class PowerUp(_General):
+    _icon = "power-up.png"
+
+
+class Power(_General):
+    _icon = "power.png"
+
+
+class Powershell(_General):
+    _icon = "powershell.png"
+
+
+class PreviewFeatures(_General):
+    _icon = "preview-features.png"
+
+
+class ProcessExplorer(_General):
+    _icon = "process-explorer.png"
+
+
+class ProductionReadyDatabase(_General):
+    _icon = "production-ready-database.png"
+
+
+class QuickstartCenter(_General):
+    _icon = "quickstart-center.png"
 
 
 class Quickstartcenter(_General):
@@ -44,8 +296,28 @@ class Recent(_General):
     _icon = "recent.png"
 
 
+class RegionManagement(_General):
+    _icon = "region-management.png"
+
+
 class Reservations(_General):
     _icon = "reservations.png"
+
+
+class ResourceExplorer(_General):
+    _icon = "resource-explorer.png"
+
+
+class ResourceGroupList(_General):
+    _icon = "resource-group-list.png"
+
+
+class ResourceGroups(_General):
+    _icon = "resource-groups.png"
+
+
+class ResourceLinked(_General):
+    _icon = "resource-linked.png"
 
 
 class Resource(_General):
@@ -56,12 +328,48 @@ class Resourcegroups(_General):
     _icon = "resourcegroups.png"
 
 
+class Scheduler(_General):
+    _icon = "scheduler.png"
+
+
+class SearchGrid(_General):
+    _icon = "search-grid.png"
+
+
+class Search(_General):
+    _icon = "search.png"
+
+
+class ServerFarm(_General):
+    _icon = "server-farm.png"
+
+
+class ServiceHealth(_General):
+    _icon = "service-health.png"
+
+
 class Servicehealth(_General):
     _icon = "servicehealth.png"
 
 
 class Shareddashboard(_General):
     _icon = "shareddashboard.png"
+
+
+class Ssd(_General):
+    _icon = "ssd.png"
+
+
+class StorageAzureFiles(_General):
+    _icon = "storage-azure-files.png"
+
+
+class StorageContainer(_General):
+    _icon = "storage-container.png"
+
+
+class StorageQueue(_General):
+    _icon = "storage-queue.png"
 
 
 class Subscriptions(_General):
@@ -76,6 +384,10 @@ class Supportrequests(_General):
     _icon = "supportrequests.png"
 
 
+class Table(_General):
+    _icon = "table.png"
+
+
 class Tag(_General):
     _icon = "tag.png"
 
@@ -86,6 +398,18 @@ class Tags(_General):
 
 class Templates(_General):
     _icon = "templates.png"
+
+
+class TfsVcRepository(_General):
+    _icon = "tfs-vc-repository.png"
+
+
+class Toolbox(_General):
+    _icon = "toolbox.png"
+
+
+class Troubleshoot(_General):
+    _icon = "troubleshoot.png"
 
 
 class Twousericon(_General):
@@ -108,8 +432,36 @@ class Userresource(_General):
     _icon = "userresource.png"
 
 
+class Versions(_General):
+    _icon = "versions.png"
+
+
+class WebSlots(_General):
+    _icon = "web-slots.png"
+
+
+class WebTest(_General):
+    _icon = "web-test.png"
+
+
+class WebsitePower(_General):
+    _icon = "website-power.png"
+
+
+class WebsiteStaging(_General):
+    _icon = "website-staging.png"
+
+
 class Whatsnew(_General):
     _icon = "whatsnew.png"
+
+
+class Workbooks(_General):
+    _icon = "workbooks.png"
+
+
+class Workflow(_General):
+    _icon = "workflow.png"
 
 
 # Aliases
