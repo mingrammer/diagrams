@@ -2,6 +2,8 @@
 Custom provides the possibility of load an image to be presented as a node.
 """
 
+from typing import Any, Dict, Optional, override
+
 from diagrams import Node
 
 
@@ -12,9 +14,11 @@ class Custom(Node):
 
     fontcolor = "#ffffff"
 
-    def _load_icon(self):
+    @override
+    def _load_icon(self) -> Optional[str]:
         return self._icon
 
-    def __init__(self, label, icon_path, *args, **kwargs):
-        self._icon = icon_path
-        super().__init__(label, *args, **kwargs)
+    @override
+    def __init__(self, label: str, icon_path: Optional[str], *, nodeid: Optional[str] = None, **attrs: Dict[Any, Any]):
+        self._icon: Optional[str] = icon_path
+        super().__init__(label, nodeid=nodeid, **attrs)
