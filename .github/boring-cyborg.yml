@@ -1,0 +1,81 @@
+# Details: https://github.com/kaxil/boring-cyborg
+
+labelPRBasedOnFilePath:
+  area/provider/alibaba:
+    - diagrams/alibabacloud/*
+    - resources/alibabacloud/**/*
+
+  area/provider/aws:
+    - diagrams/aws/*
+    - resources/aws/**/*
+ 
+  area/provider/azure:
+    - diagrams/azure/*
+    - resources/azure/**/*
+  
+  area/provider/digitalocean:
+    - diagrams/digitalocean/*
+    - resources/digitalocean/**/*
+
+  area/provider/elastic:
+    - diagrams/elastic/*
+    - resources/elastic/**/*
+ 
+  area/provider/firebase:
+    - diagrams/firebase/*
+    - resources/firebase/**/*
+
+  area/provider/gcp:
+    - diagrams/gcp/*
+    - resources/gcp/**/*
+
+  area/provider/generic:
+    - diagrams/generic/*
+    - resources/generic/**/*
+
+  area/provider/ibm:
+    - diagrams/ibm/*
+    - resources/ibm/**/*    
+
+  area/provider/k8s:
+    - diagrams/k8s/*
+    - resources/k8s/**/*
+    
+  area/provider/oci:
+    - diagrams/oci/*
+    - resources/oci/**/*
+
+  area/provider/onprem:
+    - diagrams/onprem/*
+    - resources/onprem/**/*
+
+  area/provider/openstack:
+    - diagrams/openstack/*
+    - resources/openstack/**/*
+
+  area/provider/outscale:
+    - diagrams/outscale/*
+    - resources/outscale/**/*
+
+  area/provider/programming:
+    - diagrams/programming/*
+    - resources/programming/**/*
+
+  area/provider/saas:
+    - diagrams/saas/*
+    - resources/saas/**/*
+
+firstPRWelcomeComment: >
+  Congratulations on your first Pull Request!
+  If you have any issues or are unsure about any anything please check our
+  Contribution Guide (https://github.com/mingrammer/diagrams/blob/master/CONTRIBUTING.md)
+
+firstPRMergeComment: >
+  Awesome work, congrats on your first merged pull request!
+
+firstIssueWelcomeComment: >
+  Thanks for opening your first issue here! Be sure to follow the issue template!
+
+checkUpToDate:
+  targetBranch: master
+  files: []
