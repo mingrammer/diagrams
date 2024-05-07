@@ -29,6 +29,7 @@ PROVIDERS = (
     "generic",
     "openstack",
     "outscale",
+    "scaleway"
 )
 
 #########################
@@ -59,6 +60,7 @@ FILE_PREFIXES = {
     "outscale": (),
     "generic": (),
     "openstack": (),
+    "scaleway": (),
 }
 
 #########################
@@ -110,6 +112,9 @@ TITLE_WORDS = {
     "ibm": {
         "ibm": "IBMCloud"
     },
+    "scaleway": {
+        "scaleway": "Scaleway"
+    }
 }
 
 # TODO: check if the classname exists
@@ -408,6 +413,7 @@ ALIASES = {
         }
     },
     "digitalocean": {},
+    "scaleway": {},
     "oci": {
         "compute": {
             "VM": "VirtualMachine",
