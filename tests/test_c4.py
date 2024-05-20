@@ -5,7 +5,7 @@ import unittest
 
 from diagrams import Diagram
 from diagrams import setcluster, setdiagram
-from diagrams.c4 import Person, Container, Database, System, SystemBoundary, Relationship
+from diagrams.c4 import Person, Container, Database, Component, System, SystemBoundary, Relationship
 
 
 class C4Test(unittest.TestCase):
@@ -25,6 +25,7 @@ class C4Test(unittest.TestCase):
             person = Person("person", "A person.")
             container = Container("container", "Java application", "The application.")
             database = Database("database", "Oracle database", "Stores information.")
+            component = Component("component", "Sign In Controller", "A component.")
 
     def test_external_nodes(self):
         with Diagram(name=self.name, show=False):
