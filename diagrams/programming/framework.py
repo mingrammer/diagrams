@@ -16,6 +16,10 @@ class Backbone(_Framework):
     _icon = "backbone.png"
 
 
+class Camel(_Framework):
+    _icon = "camel.png"
+
+
 class Django(_Framework):
     _icon = "django.png"
 
