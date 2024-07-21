@@ -16,7 +16,7 @@ RUN curl -O https://noto-website.storage.googleapis.com/pkgs/NotoSansCJKjp-hinte
 && fc-cache -fv
 
 # add go bin to path.
-ENV PATH "$PATH:/root/go/bin"
+ENV PATH="$PATH:/root/go/bin"
 
 # project directory.
 WORKDIR /usr/src/diagrams
