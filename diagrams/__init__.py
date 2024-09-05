@@ -198,12 +198,11 @@ class Diagram:
         self.dot.subgraph(dot)
 
     def render(self) -> None:
-        if self.save_to_disk:  # Only save if save_to_disk is True
-            if isinstance(self.outformat, list):
-                for one_format in self.outformat:
-                    self.dot.render(format=one_format, view=self.show, quiet=True)
-            else:
-                self.dot.render(format=self.outformat, view=self.show, quiet=True)
+        if isinstance(self.outformat, list):
+            for one_format in self.outformat:
+                self.dot.render(format=one_format, view=self.show, quiet=True)
+        else:
+            self.dot.render(format=self.outformat, view=self.show, quiet=True)
 
 
 class Cluster:
