@@ -8,6 +8,26 @@ class _Iot(_Azure):
     _icon_dir = "resources/azure/iot"
 
 
+class AzureCosmosDb(_Iot):
+    _icon = "azure-cosmos-db.png"
+
+
+class AzureDataboxGateway(_Iot):
+    _icon = "azure-databox-gateway.png"
+
+
+class AzureIotOperations(_Iot):
+    _icon = "azure-iot-operations.png"
+
+
+class AzureMapsAccounts(_Iot):
+    _icon = "azure-maps-accounts.png"
+
+
+class AzureStack(_Iot):
+    _icon = "azure-stack.png"
+
+
 class DeviceProvisioningServices(_Iot):
     _icon = "device-provisioning-services.png"
 
@@ -16,8 +36,32 @@ class DigitalTwins(_Iot):
     _icon = "digital-twins.png"
 
 
+class EventGridSubscriptions(_Iot):
+    _icon = "event-grid-subscriptions.png"
+
+
+class EventHubClusters(_Iot):
+    _icon = "event-hub-clusters.png"
+
+
+class EventHubs(_Iot):
+    _icon = "event-hubs.png"
+
+
+class FunctionApps(_Iot):
+    _icon = "function-apps.png"
+
+
+class IndustrialIot(_Iot):
+    _icon = "industrial-iot.png"
+
+
 class IotCentralApplications(_Iot):
     _icon = "iot-central-applications.png"
+
+
+class IotEdge(_Iot):
+    _icon = "iot-edge.png"
 
 
 class IotHubSecurity(_Iot):
@@ -28,16 +72,60 @@ class IotHub(_Iot):
     _icon = "iot-hub.png"
 
 
+class LogicApps(_Iot):
+    _icon = "logic-apps.png"
+
+
+class MachineLearningStudioClassicWebServices(_Iot):
+    _icon = "machine-learning-studio-classic-web-services.png"
+
+
+class MachineLearningStudioWebServicePlans(_Iot):
+    _icon = "machine-learning-studio-web-service-plans.png"
+
+
+class MachineLearningStudioWorkspaces(_Iot):
+    _icon = "machine-learning-studio-workspaces.png"
+
+
 class Maps(_Iot):
     _icon = "maps.png"
+
+
+class NotificationHubNamespaces(_Iot):
+    _icon = "notification-hub-namespaces.png"
+
+
+class NotificationHubs(_Iot):
+    _icon = "notification-hubs.png"
 
 
 class Sphere(_Iot):
     _icon = "sphere.png"
 
 
+class StackHciPremium(_Iot):
+    _icon = "stack-hci-premium.png"
+
+
+class StreamAnalyticsJobs(_Iot):
+    _icon = "stream-analytics-jobs.png"
+
+
+class TimeSeriesDataSets(_Iot):
+    _icon = "time-series-data-sets.png"
+
+
+class TimeSeriesInsightsAccessPolicies(_Iot):
+    _icon = "time-series-insights-access-policies.png"
+
+
 class TimeSeriesInsightsEnvironments(_Iot):
     _icon = "time-series-insights-environments.png"
+
+
+class TimeSeriesInsightsEventSources(_Iot):
+    _icon = "time-series-insights-event-sources.png"
 
 
 class TimeSeriesInsightsEventsSources(_Iot):
@@ -46,6 +134,10 @@ class TimeSeriesInsightsEventsSources(_Iot):
 
 class Windows10IotCoreServices(_Iot):
     _icon = "windows-10-iot-core-services.png"
+
+
+class Windows10CoreServices(_Iot):
+    _icon = "windows10-core-services.png"
 
 
 # Aliases
