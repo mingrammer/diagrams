@@ -3,15 +3,14 @@ import shutil
 import unittest
 import pathlib
 
-from diagrams import Cluster, Diagram, Edge, Node
-from diagrams import getcluster, getdiagram, setcluster, setdiagram
+from diagrams import Cluster, Diagram, Edge, Node, getcluster, getdiagram, setcluster, setdiagram
 
 
 class DiagramTest(unittest.TestCase):
-    def setUp(self):
-        self.name = "diagram_test"
+    def setUp(self) -> None:
+        self.name: str = "diagram_test"
 
-    def tearDown(self):
+    def tearDown(self) -> None:
         setdiagram(None)
         setcluster(None)
         # Only some tests generate the image file.
@@ -20,11 +19,11 @@ class DiagramTest(unittest.TestCase):
         except OSError:
             # Consider it file
             try:
-                os.remove(self.name + ".png")
+                os.remove(f"{self.name}.png")
             except FileNotFoundError:
                 pass
 
-    def test_validate_direction(self):
+    def test_validate_direction(self) -> None:
         # Normal directions.
         for dir in ("TB", "BT", "LR", "RL", "tb"):
             Diagram(direction=dir)
@@ -34,7 +33,7 @@ class DiagramTest(unittest.TestCase):
             with self.assertRaises(ValueError):
                 Diagram(direction=dir)
 
-    def test_validate_curvestyle(self):
+    def test_validate_curvestyle(self) -> None:
         # Normal directions.
         for cvs in ("ortho", "curved", "CURVED"):
             Diagram(curvestyle=cvs)
@@ -44,7 +43,7 @@ class DiagramTest(unittest.TestCase):
             with self.assertRaises(ValueError):
                 Diagram(curvestyle=cvs)
 
-    def test_validate_outformat(self):
+    def test_validate_outformat(self) -> None:
         # Normal output formats.
         for fmt in ("png", "jpg", "svg", "pdf", "PNG", "dot"):
             Diagram(outformat=fmt)
@@ -54,18 +53,18 @@ class DiagramTest(unittest.TestCase):
             with self.assertRaises(ValueError):
                 Diagram(outformat=fmt)
 
-    def test_with_global_context(self):
+    def test_with_global_context(self) -> None:
         self.assertIsNone(getdiagram())
         with Diagram(name=os.path.join(self.name, "with_global_context"), show=False):
             self.assertIsNotNone(getdiagram())
         self.assertIsNone(getdiagram())
 
-    def test_node_not_in_diagram(self):
+    def test_node_not_in_diagram(self) -> None:
         # Node must be belong to a diagrams.
         with self.assertRaises(EnvironmentError):
             Node("node")
 
-    def test_node_to_node(self):
+    def test_node_to_node(self) -> None:
         with Diagram(name=os.path.join(self.name, "node_to_node"), show=False):
             node1 = Node("node1")
             node2 = Node("node2")
@@ -73,7 +72,7 @@ class DiagramTest(unittest.TestCase):
             self.assertEqual(node1 >> node2, node2)
             self.assertEqual(node1 << node2, node2)
 
-    def test_node_to_nodes(self):
+    def test_node_to_nodes(self) -> None:
         with Diagram(name=os.path.join(self.name, "node_to_nodes"), show=False):
             node1 = Node("node1")
             nodes = [Node("node2"), Node("node3")]
@@ -81,7 +80,7 @@ class DiagramTest(unittest.TestCase):
             self.assertEqual(node1 >> nodes, nodes)
             self.assertEqual(node1 << nodes, nodes)
 
-    def test_nodes_to_node(self):
+    def test_nodes_to_node(self) -> None:
         with Diagram(name=os.path.join(self.name, "nodes_to_node"), show=False):
             node1 = Node("node1")
             nodes = [Node("node2"), Node("node3")]
@@ -89,32 +88,31 @@ class DiagramTest(unittest.TestCase):
             self.assertEqual(nodes >> node1, node1)
             self.assertEqual(nodes << node1, node1)
 
-    def test_default_filename(self):
+    def test_default_filename(self) -> None:
         self.name = "example_1"
         with Diagram(name="Example 1", show=False):
             Node("node1")
         self.assertTrue(os.path.exists(f"{self.name}.png"))
 
-    def test_custom_filename(self):
+    def test_custom_filename(self) -> None:
         self.name = "my_custom_name"
         with Diagram(name="Example 1", filename=self.name, show=False):
             Node("node1")
         self.assertTrue(os.path.exists(f"{self.name}.png"))
 
-    def test_empty_name(self):
+    def test_empty_name(self) -> None:
         """Check that providing an empty name don't crash, but save in a diagrams_image.xxx file."""
         self.name = 'diagrams_image'
         with Diagram(show=False):
             Node("node1")
         self.assertTrue(os.path.exists(f"{self.name}.png"))
     
-    def test_autolabel(self):
+    def test_autolabel(self) -> None:
         with Diagram(name=os.path.join(self.name, "nodes_to_node"), show=False):
             node1 = Node("node1")
             self.assertTrue(node1.label,"Node\nnode1")
 
-
-    def test_outformat_list(self):
+    def test_outformat_list(self) -> None:
         """Check that outformat render all the files from the list."""
         self.name = 'diagrams_image'
         with Diagram(show=False, outformat=["dot", "png"]):
@@ -128,10 +126,10 @@ class DiagramTest(unittest.TestCase):
 
 
 class ClusterTest(unittest.TestCase):
-    def setUp(self):
-        self.name = "cluster_test"
+    def setUp(self) -> None:
+        self.name: str = "cluster_test"
 
-    def tearDown(self):
+    def tearDown(self) -> None:
         setdiagram(None)
         setcluster(None)
         # Only some tests generate the image file.
@@ -140,7 +138,7 @@ class ClusterTest(unittest.TestCase):
         except OSError:
             pass
 
-    def test_validate_direction(self):
+    def test_validate_direction(self) -> None:
         # Normal directions.
         for dir in ("TB", "BT", "LR", "RL"):
             with Diagram(name=os.path.join(self.name, "validate_direction"), show=False):
@@ -152,14 +150,14 @@ class ClusterTest(unittest.TestCase):
                 with Diagram(name=os.path.join(self.name, "validate_direction"), show=False):
                     Cluster(direction=dir)
 
-    def test_with_global_context(self):
+    def test_with_global_context(self) -> None:
         with Diagram(name=os.path.join(self.name, "with_global_context"), show=False):
             self.assertIsNone(getcluster())
             with Cluster():
                 self.assertIsNotNone(getcluster())
             self.assertIsNone(getcluster())
 
-    def test_with_nested_cluster(self):
+    def test_with_nested_cluster(self) -> None:
         with Diagram(name=os.path.join(self.name, "with_nested_cluster"), show=False):
             self.assertIsNone(getcluster())
             with Cluster() as c1:
@@ -169,12 +167,12 @@ class ClusterTest(unittest.TestCase):
                 self.assertEqual(c1, getcluster())
             self.assertIsNone(getcluster())
 
-    def test_node_not_in_diagram(self):
+    def test_node_not_in_diagram(self) -> None:
         # Node must be belong to a diagrams.
         with self.assertRaises(EnvironmentError):
             Node("node")
 
-    def test_node_to_node(self):
+    def test_node_to_node(self) -> None:
         with Diagram(name=os.path.join(self.name, "node_to_node"), show=False):
             with Cluster():
                 node1 = Node("node1")
@@ -183,7 +181,7 @@ class ClusterTest(unittest.TestCase):
                 self.assertEqual(node1 >> node2, node2)
                 self.assertEqual(node1 << node2, node2)
 
-    def test_node_to_nodes(self):
+    def test_node_to_nodes(self) -> None:
         with Diagram(name=os.path.join(self.name, "node_to_nodes"), show=False):
             with Cluster():
                 node1 = Node("node1")
@@ -192,7 +190,7 @@ class ClusterTest(unittest.TestCase):
                 self.assertEqual(node1 >> nodes, nodes)
                 self.assertEqual(node1 << nodes, nodes)
 
-    def test_nodes_to_node(self):
+    def test_nodes_to_node(self) -> None:
         with Diagram(name=os.path.join(self.name, "nodes_to_node"), show=False):
             with Cluster():
                 node1 = Node("node1")
@@ -203,10 +201,10 @@ class ClusterTest(unittest.TestCase):
 
 
 class EdgeTest(unittest.TestCase):
-    def setUp(self):
-        self.name = "edge_test"
+    def setUp(self) -> None:
+        self.name: str = "edge_test"
 
-    def tearDown(self):
+    def tearDown(self) -> None:
         setdiagram(None)
         setcluster(None)
         # Only some tests generate the image file.
@@ -215,34 +213,34 @@ class EdgeTest(unittest.TestCase):
         except OSError:
             pass
 
-    def test_node_to_node(self):
+    def test_node_to_node(self) -> None:
         with Diagram(name=os.path.join(self.name, "node_to_node"), show=False):
             node1 = Node("node1")
             node2 = Node("node2")
             self.assertEqual(node1 - Edge(color="red") - node2, node2)
 
-    def test_node_to_nodes(self):
+    def test_node_to_nodes(self) -> None:
         with Diagram(name=os.path.join(self.name, "node_to_nodes"), show=False):
             with Cluster():
                 node1 = Node("node1")
                 nodes = [Node("node2"), Node("node3")]
-                self.assertEqual(node1 - Edge(color="red") - nodes, nodes)
+                self.assertEqual(node1 - Edge(color="red") - nodes, nodes) # type: ignore[operator]
 
-    def test_nodes_to_node(self):
+    def test_nodes_to_node(self) -> None:
         with Diagram(name=os.path.join(self.name, "nodes_to_node"), show=False):
             with Cluster():
                 node1 = Node("node1")
                 nodes = [Node("node2"), Node("node3")]
                 self.assertEqual(nodes - Edge(color="red") - node1, node1)
 
-    def test_nodes_to_node_with_additional_attributes(self):
+    def test_nodes_to_node_with_additional_attributes(self) -> None:
         with Diagram(name=os.path.join(self.name, "nodes_to_node_with_additional_attributes"), show=False):
             with Cluster():
                 node1 = Node("node1")
                 nodes = [Node("node2"), Node("node3")]
                 self.assertEqual(nodes - Edge(color="red") - Edge(color="green") - node1, node1)
 
-    def test_node_to_node_with_attributes(self):
+    def test_node_to_node_with_attributes(self) -> None:
         with Diagram(name=os.path.join(self.name, "node_to_node_with_attributes"), show=False):
             with Cluster():
                 node1 = Node("node1")
@@ -251,7 +249,7 @@ class EdgeTest(unittest.TestCase):
                 self.assertEqual(node1 >> Edge(color="green", label="1.2") >> node2, node2)
                 self.assertEqual(node1 << Edge(color="blue", label="1.3") >> node2, node2)
 
-    def test_node_to_node_with_additional_attributes(self):
+    def test_node_to_node_with_additional_attributes(self) -> None:
         with Diagram(name=os.path.join(self.name, "node_to_node_with_additional_attributes"), show=False):
             with Cluster():
                 node1 = Node("node1")
@@ -260,7 +258,7 @@ class EdgeTest(unittest.TestCase):
                 self.assertEqual(node1 >> Edge(color="green", label="2.2") >> Edge(color="red") >> node2, node2)
                 self.assertEqual(node1 << Edge(color="blue", label="2.3") >> Edge(color="black") >> node2, node2)
 
-    def test_nodes_to_node_with_attributes_loop(self):
+    def test_nodes_to_node_with_attributes_loop(self) -> None:
         with Diagram(name=os.path.join(self.name, "nodes_to_node_with_attributes_loop"), show=False):
             with Cluster():
                 node = Node("node")
@@ -269,21 +267,21 @@ class EdgeTest(unittest.TestCase):
                 self.assertEqual(node >> Edge(color="blue", label="3.3") << node, node)
                 self.assertEqual(node << Edge(color="pink", label="3.4") >> node, node)
 
-    def test_nodes_to_node_with_attributes_bothdirectional(self):
+    def test_nodes_to_node_with_attributes_bothdirectional(self) -> None:
         with Diagram(name=os.path.join(self.name, "nodes_to_node_with_attributes_bothdirectional"), show=False):
             with Cluster():
                 node1 = Node("node1")
                 nodes = [Node("node2"), Node("node3")]
                 self.assertEqual(nodes << Edge(color="green", label="4") >> node1, node1)
 
-    def test_nodes_to_node_with_attributes_bidirectional(self):
+    def test_nodes_to_node_with_attributes_bidirectional(self) -> None:
         with Diagram(name=os.path.join(self.name, "nodes_to_node_with_attributes_bidirectional"), show=False):
             with Cluster():
                 node1 = Node("node1")
                 nodes = [Node("node2"), Node("node3")]
                 self.assertEqual(nodes << Edge(color="blue", label="5") >> node1, node1)
 
-    def test_nodes_to_node_with_attributes_onedirectional(self):
+    def test_nodes_to_node_with_attributes_onedirectional(self) -> None:
         with Diagram(name=os.path.join(self.name, "nodes_to_node_with_attributes_onedirectional"), show=False):
             with Cluster():
                 node1 = Node("node1")
@@ -291,7 +289,7 @@ class EdgeTest(unittest.TestCase):
                 self.assertEqual(nodes >> Edge(color="red", label="6.1") >> node1, node1)
                 self.assertEqual(nodes << Edge(color="green", label="6.2") << node1, node1)
 
-    def test_nodes_to_node_with_additional_attributes_directional(self):
+    def test_nodes_to_node_with_additional_attributes_directional(self) -> None:
         with Diagram(name=os.path.join(self.name, "nodes_to_node_with_additional_attributes_directional"), show=False):
             with Cluster():
                 node1 = Node("node1")
@@ -305,7 +303,7 @@ class EdgeTest(unittest.TestCase):
 
 
 class ResourcesTest(unittest.TestCase):
-    def test_folder_depth(self):
+    def test_folder_depth(self) -> None:
         """
         The code currently only handles resource folders up to a dir depth of 2
         i.e. resources/<provider>/<type>/<image>, so check that this depth isn't

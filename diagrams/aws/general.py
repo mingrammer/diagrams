@@ -102,8 +102,3 @@ class User(_General):
 
 class Users(_General):
     _icon = "users.png"
-
-
-# Aliases
-
-OfficeBuilding = GenericOfficeBuilding
