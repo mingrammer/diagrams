@@ -3,7 +3,7 @@ id: digitalocean
 title: DigitalOcean
 ---
 
-Node classes list of digitalocean provider.
+Node classes list of the digitalocean provider.
 
 ## digitalocean.compute
 

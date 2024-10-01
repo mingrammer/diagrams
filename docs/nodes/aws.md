@@ -3,7 +3,7 @@ id: aws
 title: AWS
 ---
 
-Node classes list of aws provider.
+Node classes list of the aws provider.
 
 ## aws.analytics
 

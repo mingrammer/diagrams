@@ -3,7 +3,7 @@ id: oci
 title: OCI
 ---
 
-Node classes list of oci provider.
+Node classes list of the oci provider.
 
 ## oci.compute
 
