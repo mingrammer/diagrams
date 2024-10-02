@@ -96,20 +96,20 @@ To be able to develop and run diagrams locally on you Mac device, you should hav
     docker build --tag diagrams:1.0 -f ./docker/dev/Dockerfile .
     ```
 
-3. Run the docker-compose file to create the container, run in background and mount the project source code.
+3. Create the container, run in background and mount the project source code.
 
     ```shell
-    docker-compose up -d
+    docker run -d \
+    -it \
+    --name diagrams \
+    --mount type=bind,source="$(pwd)",target=/usr/src/diagrams \
+    diagrams:1.0
     ```
 
 4. Run unit tests in the host using the container to confirm that it's working.
 
     ```shell
-    docker exec -it diagrams bash
-    ```
-
-    ```shell
-    python -m unittest tests/*.py -v
+    docker exec diagrams python -m unittest tests/*.py -v
     ```
 
 5. Run the bash script `autogen.sh` to test.
