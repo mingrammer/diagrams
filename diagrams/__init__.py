@@ -431,7 +431,7 @@ class Node:
 
     def _load_icon(self):
         basedir = Path(os.path.abspath(os.path.dirname(__file__)))
-        return os.path.join(basedir.parent, self._icon_dir, self._icon)
+        return os.path.join(basedir, self._icon_dir, self._icon)
 
 
 class Edge:

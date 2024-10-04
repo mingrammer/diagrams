@@ -3,6 +3,8 @@ from pathlib import Path
 
 import config as cfg
 
+def project_dir() -> str:
+    return Path(os.path.abspath(os.path.dirname(__file__)))
 
 def base_dir() -> Path:
     return Path(os.path.abspath(os.path.dirname(__file__))).parent
@@ -17,7 +19,7 @@ def doc_root_dir() -> str:
 
 
 def resource_dir(pvd: str) -> str:
-    return os.path.join(base_dir(), cfg.DIR_RESOURCE, pvd)
+    return os.path.join(project_dir(), cfg.DIR_RESOURCE, pvd)
 
 
 def template_dir() -> str:
