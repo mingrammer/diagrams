@@ -122,6 +122,8 @@ The following import changes:
 | `from diagrams.oci.storage import ObjectstorageWhite`              | `from diagrams.oci.storage import ObjectStorageWhite`         |
 | `from diagrams.oci.storage import Storagegateway`                  | `from diagrams.oci.storage import StorageGateway`             |
 | `from diagrams.oci.storage import StoragegatewayWhite`             | `from diagrams.oci.storage import StorageGatewayWhite`        |
+| `from diagrams.oci.connectivity import CustomerPremiseWhite`       | `from diagrams.oci.connectivity import CustomerPremisesWhite` |
+| `from diagrams.oci.connectivity import CustomerPremises`           | `from diagrams.oci.connectivity import CustomerPremises`      |
 
 ### Added
 
