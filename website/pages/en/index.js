@@ -106,7 +106,7 @@ class Index extends React.Component {
             `Diagram as Code` allows you to **track** the architecture diagram changes in any **version control** system.
         </MarkdownBlock>
         <MarkdownBlock>
-            Diagrams currently supports main major providers including: `AWS`, `Azure`, `GCP`, `Kubernetes`, `Alibaba Cloud`, `Oracle Cloud` etc... It also supports `On-Premise` nodes, `SaaS` and major `Programming` frameworks and languages.
+            Diagrams currently supports main major providers including: `AWS`, `Azure`, `GCP`, `Kubernetes`, `Alibaba Cloud`, `Oracle Cloud` etc... It also supports `On-Premises` nodes, `SaaS` and major `Programming` frameworks and languages.
         </MarkdownBlock>
         <MarkdownBlock>
             `NOTE: It does not control any actual cloud resources nor does it generate cloud formation or terraform code. It is just for drawing the cloud system architecture diagrams.`

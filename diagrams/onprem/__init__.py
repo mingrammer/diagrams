@@ -1,5 +1,5 @@
 """
-OnPrem provides a set of general on-premise services.
+OnPrem provides a set of general on-premises services.
 """
 
 from diagrams import Node
