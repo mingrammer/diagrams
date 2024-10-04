@@ -3,7 +3,7 @@ id: generic
 title: Generic
 ---
 
-Node classes list of generic provider.
+Node classes list of the generic provider.
 
 ## generic.blank
 

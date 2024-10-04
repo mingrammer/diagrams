@@ -3,7 +3,7 @@ id: onprem
 title: OnPrem
 ---
 
-Node classes list of onprem provider.
+Node classes list of the onprem provider.
 
 ## onprem.aggregator
 

@@ -3,7 +3,7 @@ id: openstack
 title: OpenStack
 ---
 
-Node classes list of openstack provider.
+Node classes list of the openstack provider.
 
 ## openstack.apiproxies
 

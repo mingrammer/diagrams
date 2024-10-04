@@ -3,7 +3,7 @@ id: programming
 title: Programming
 ---
 
-Node classes list of programming provider.
+Node classes list of the programming provider.
 
 ## programming.flowchart
 
