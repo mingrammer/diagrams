@@ -57,6 +57,19 @@ def C4Node(name, technology="", description="", type="Container", **kwargs):
     return Node(**node_attributes)
 
 
+def Component(name, technology="", description="", **kwargs):
+    container_attributes = {
+        "name": name,
+        "technology": technology,
+        "description": description,
+        "type": "Component",
+        "fillcolor": "lightskyblue",
+        "fontcolor": "black",
+    }
+    container_attributes.update(kwargs)
+    return C4Node(**container_attributes)
+
+
 def Container(name, technology="", description="", **kwargs):
     container_attributes = {
         "name": name,
