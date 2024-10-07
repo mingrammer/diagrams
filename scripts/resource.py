@@ -135,10 +135,15 @@ def cleaner_openstack(f):
     return f.lower()
 
 
+def cleaner_camunda(f):
+    return f.lower()
+
+
 cleaners = {
     "onprem": cleaner_onprem,
     "aws": cleaner_aws,
     "azure": cleaner_azure,
+    "camunda": cleaner_camunda,
     "digitalocean": cleaner_digitalocean,
     "gcp": cleaner_gcp,
     "ibm": cleaner_ibm,
