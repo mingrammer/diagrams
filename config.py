@@ -29,6 +29,7 @@ PROVIDERS = (
     "generic",
     "openstack",
     "outscale",
+    "sap",
 )
 
 #########################
@@ -59,6 +60,7 @@ FILE_PREFIXES = {
     "outscale": (),
     "generic": (),
     "openstack": (),
+    "sap": (),
 }
 
 #########################
@@ -89,6 +91,7 @@ UPPER_WORDS = {
     "openstack": ("rpm", "loci", "nfv", "ec2api"),
     "pve": ("pve"),
     "ibm": ("ibm"),
+    "sap": ("sap", "btp", "hana", "api", "s4hana"),
 }
 
 TITLE_WORDS = {
@@ -109,6 +112,9 @@ TITLE_WORDS = {
     },
     "ibm": {
         "ibm": "IBMCloud"
+    },
+    "sap": {
+        "sap": "SAP"
     },
 }
 
@@ -468,4 +474,5 @@ ALIASES = {
             "Tripleo": "TripleO",
         }
     },
+    "sap": { }
 }
