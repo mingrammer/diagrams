@@ -228,6 +228,7 @@ ALIASES = {
         "management": {
             "SystemsManager": "SSM",
             "SystemsManagerParameterStore": "ParameterStore",
+            "ManagedWorkflowsApacheAirflow": "MWAA"
         },
         "migration": {
             "ApplicationDiscoveryService": "ADS",
