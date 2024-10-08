@@ -800,6 +800,12 @@ Node classes list of the aws provider.
 ## aws.management
 
 
+<img width="30" src="/img/resources/aws/management/amazon-managed-grafana.png" alt="AmazonManagedGrafana" style="float: left; padding-right: 5px;" >
+**diagrams.aws.management.AmazonManagedGrafana**
+
+<img width="30" src="/img/resources/aws/management/amazon-managed-prometheus.png" alt="AmazonManagedPrometheus" style="float: left; padding-right: 5px;" >
+**diagrams.aws.management.AmazonManagedPrometheus**
+
 <img width="30" src="/img/resources/aws/management/auto-scaling.png" alt="AutoScaling" style="float: left; padding-right: 5px;" >
 **diagrams.aws.management.AutoScaling**
 
@@ -901,6 +907,9 @@ Node classes list of the aws provider.
 
 <img width="30" src="/img/resources/aws/management/service-catalog.png" alt="ServiceCatalog" style="float: left; padding-right: 5px;" >
 **diagrams.aws.management.ServiceCatalog**
+
+<img width="30" src="/img/resources/aws/management/systems-manager-app-config.png" alt="SystemsManagerAppConfig" style="float: left; padding-right: 5px;" >
+**diagrams.aws.management.SystemsManagerAppConfig**
 
 <img width="30" src="/img/resources/aws/management/systems-manager-automation.png" alt="SystemsManagerAutomation" style="float: left; padding-right: 5px;" >
 **diagrams.aws.management.SystemsManagerAutomation**
