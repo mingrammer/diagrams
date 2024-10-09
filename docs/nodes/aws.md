@@ -80,6 +80,9 @@ Node classes list of the aws provider.
 <img width="30" src="/img/resources/aws/analytics/managed-streaming-for-kafka.png" alt="ManagedStreamingForKafka" style="float: left; padding-right: 5px;" >
 **diagrams.aws.analytics.ManagedStreamingForKafka**
 
+<img width="30" src="/img/resources/aws/analytics/opensearch.png" alt="Opensearch" style="float: left; padding-right: 5px;" >
+**diagrams.aws.analytics.Opensearch**
+
 <img width="30" src="/img/resources/aws/analytics/quicksight.png" alt="Quicksight" style="float: left; padding-right: 5px;" >
 **diagrams.aws.analytics.Quicksight**
 
@@ -388,6 +391,9 @@ Node classes list of the aws provider.
 
 <img width="30" src="/img/resources/aws/devtools/cloud9.png" alt="Cloud9" style="float: left; padding-right: 5px;" >
 **diagrams.aws.devtools.Cloud9**
+
+<img width="30" src="/img/resources/aws/devtools/codeartifact.png" alt="Codeartifact" style="float: left; padding-right: 5px;" >
+**diagrams.aws.devtools.Codeartifact**
 
 <img width="30" src="/img/resources/aws/devtools/codebuild.png" alt="Codebuild" style="float: left; padding-right: 5px;" >
 **diagrams.aws.devtools.Codebuild**
@@ -857,6 +863,9 @@ Node classes list of the aws provider.
 <img width="30" src="/img/resources/aws/management/control-tower.png" alt="ControlTower" style="float: left; padding-right: 5px;" >
 **diagrams.aws.management.ControlTower**
 
+<img width="30" src="/img/resources/aws/management/devops-guru.png" alt="DevopsGuru" style="float: left; padding-right: 5px;" >
+**diagrams.aws.management.DevopsGuru**
+
 <img width="30" src="/img/resources/aws/management/license-manager.png" alt="LicenseManager" style="float: left; padding-right: 5px;" >
 **diagrams.aws.management.LicenseManager**
 
@@ -907,6 +916,9 @@ Node classes list of the aws provider.
 
 <img width="30" src="/img/resources/aws/management/personal-health-dashboard.png" alt="PersonalHealthDashboard" style="float: left; padding-right: 5px;" >
 **diagrams.aws.management.PersonalHealthDashboard**
+
+<img width="30" src="/img/resources/aws/management/proton.png" alt="Proton" style="float: left; padding-right: 5px;" >
+**diagrams.aws.management.Proton**
 
 <img width="30" src="/img/resources/aws/management/service-catalog.png" alt="ServiceCatalog" style="float: left; padding-right: 5px;" >
 **diagrams.aws.management.ServiceCatalog**
@@ -1216,6 +1228,9 @@ Node classes list of the aws provider.
 
 <img width="30" src="/img/resources/aws/network/nat-gateway.png" alt="NATGateway" style="float: left; padding-right: 5px;" >
 **diagrams.aws.network.NATGateway**
+
+<img width="30" src="/img/resources/aws/network/network-firewall.png" alt="NetworkFirewall" style="float: left; padding-right: 5px;" >
+**diagrams.aws.network.NetworkFirewall**
 
 <img width="30" src="/img/resources/aws/network/networking-and-content-delivery.png" alt="NetworkingAndContentDelivery" style="float: left; padding-right: 5px;" >
 **diagrams.aws.network.NetworkingAndContentDelivery**

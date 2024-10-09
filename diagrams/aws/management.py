@@ -84,6 +84,10 @@ class ControlTower(_Management):
     _icon = "control-tower.png"
 
 
+class DevopsGuru(_Management):
+    _icon = "devops-guru.png"
+
+
 class LicenseManager(_Management):
     _icon = "license-manager.png"
 
@@ -150,6 +154,10 @@ class Organizations(_Management):
 
 class PersonalHealthDashboard(_Management):
     _icon = "personal-health-dashboard.png"
+
+
+class Proton(_Management):
+    _icon = "proton.png"
 
 
 class ServiceCatalog(_Management):
