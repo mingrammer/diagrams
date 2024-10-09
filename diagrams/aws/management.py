@@ -16,6 +16,10 @@ class AmazonManagedPrometheus(_Management):
     _icon = "amazon-managed-prometheus.png"
 
 
+class AmazonManagedWorkflowsApacheAirflow(_Management):
+    _icon = "amazon-managed-workflows-apache-airflow.png"
+
+
 class AutoScaling(_Management):
     _icon = "auto-scaling.png"
 

@@ -806,6 +806,9 @@ Node classes list of the aws provider.
 <img width="30" src="/img/resources/aws/management/amazon-managed-prometheus.png" alt="AmazonManagedPrometheus" style="float: left; padding-right: 5px;" >
 **diagrams.aws.management.AmazonManagedPrometheus**
 
+<img width="30" src="/img/resources/aws/management/amazon-managed-workflows-apache-airflow.png" alt="AmazonManagedWorkflowsApacheAirflow" style="float: left; padding-right: 5px;" >
+**diagrams.aws.management.AmazonManagedWorkflowsApacheAirflow**
+
 <img width="30" src="/img/resources/aws/management/auto-scaling.png" alt="AutoScaling" style="float: left; padding-right: 5px;" >
 **diagrams.aws.management.AutoScaling**
 
