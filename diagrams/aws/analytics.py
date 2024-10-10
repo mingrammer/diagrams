@@ -104,6 +104,10 @@ class ManagedStreamingForKafka(_Analytics):
     _icon = "managed-streaming-for-kafka.png"
 
 
+class Opensearch(_Analytics):
+    _icon = "opensearch.png"
+
+
 class Quicksight(_Analytics):
     _icon = "quicksight.png"
 

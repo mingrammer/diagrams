@@ -20,6 +20,10 @@ class Cloud9(_Devtools):
     _icon = "cloud9.png"
 
 
+class Codeartifact(_Devtools):
+    _icon = "codeartifact.png"
+
+
 class Codebuild(_Devtools):
     _icon = "codebuild.png"
 

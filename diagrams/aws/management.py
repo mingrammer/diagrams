@@ -8,6 +8,18 @@ class _Management(_AWS):
     _icon_dir = "resources/aws/management"
 
 
+class AmazonManagedGrafana(_Management):
+    _icon = "amazon-managed-grafana.png"
+
+
+class AmazonManagedPrometheus(_Management):
+    _icon = "amazon-managed-prometheus.png"
+
+
+class AmazonManagedWorkflowsApacheAirflow(_Management):
+    _icon = "amazon-managed-workflows-apache-airflow.png"
+
+
 class AutoScaling(_Management):
     _icon = "auto-scaling.png"
 
@@ -70,6 +82,10 @@ class Config(_Management):
 
 class ControlTower(_Management):
     _icon = "control-tower.png"
+
+
+class DevopsGuru(_Management):
+    _icon = "devops-guru.png"
 
 
 class LicenseManager(_Management):
@@ -140,8 +156,16 @@ class PersonalHealthDashboard(_Management):
     _icon = "personal-health-dashboard.png"
 
 
+class Proton(_Management):
+    _icon = "proton.png"
+
+
 class ServiceCatalog(_Management):
     _icon = "service-catalog.png"
+
+
+class SystemsManagerAppConfig(_Management):
+    _icon = "systems-manager-app-config.png"
 
 
 class SystemsManagerAutomation(_Management):

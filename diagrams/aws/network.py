@@ -84,6 +84,10 @@ class NATGateway(_Network):
     _icon = "nat-gateway.png"
 
 
+class NetworkFirewall(_Network):
+    _icon = "network-firewall.png"
+
+
 class NetworkingAndContentDelivery(_Network):
     _icon = "networking-and-content-delivery.png"
 
