@@ -8,6 +8,10 @@ class _Management(_AWS):
     _icon_dir = "resources/aws/management"
 
 
+class AmazonDevopsGuru(_Management):
+    _icon = "amazon-devops-guru.png"
+
+
 class AmazonManagedGrafana(_Management):
     _icon = "amazon-managed-grafana.png"
 
@@ -82,10 +86,6 @@ class Config(_Management):
 
 class ControlTower(_Management):
     _icon = "control-tower.png"
-
-
-class DevopsGuru(_Management):
-    _icon = "devops-guru.png"
 
 
 class LicenseManager(_Management):

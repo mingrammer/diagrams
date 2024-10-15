@@ -8,6 +8,9 @@ Node classes list of the aws provider.
 ## aws.analytics
 
 
+<img width="30" src="/img/resources/aws/analytics/amazon-opensearch-service.png" alt="AmazonOpensearchService" style="float: left; padding-right: 5px;" >
+**diagrams.aws.analytics.AmazonOpensearchService**
+
 <img width="30" src="/img/resources/aws/analytics/analytics.png" alt="Analytics" style="float: left; padding-right: 5px;" >
 **diagrams.aws.analytics.Analytics**
 
@@ -79,9 +82,6 @@ Node classes list of the aws provider.
 
 <img width="30" src="/img/resources/aws/analytics/managed-streaming-for-kafka.png" alt="ManagedStreamingForKafka" style="float: left; padding-right: 5px;" >
 **diagrams.aws.analytics.ManagedStreamingForKafka**
-
-<img width="30" src="/img/resources/aws/analytics/opensearch.png" alt="Opensearch" style="float: left; padding-right: 5px;" >
-**diagrams.aws.analytics.Opensearch**
 
 <img width="30" src="/img/resources/aws/analytics/quicksight.png" alt="Quicksight" style="float: left; padding-right: 5px;" >
 **diagrams.aws.analytics.Quicksight**
@@ -806,6 +806,9 @@ Node classes list of the aws provider.
 ## aws.management
 
 
+<img width="30" src="/img/resources/aws/management/amazon-devops-guru.png" alt="AmazonDevopsGuru" style="float: left; padding-right: 5px;" >
+**diagrams.aws.management.AmazonDevopsGuru**
+
 <img width="30" src="/img/resources/aws/management/amazon-managed-grafana.png" alt="AmazonManagedGrafana" style="float: left; padding-right: 5px;" >
 **diagrams.aws.management.AmazonManagedGrafana**
 
@@ -862,9 +865,6 @@ Node classes list of the aws provider.
 
 <img width="30" src="/img/resources/aws/management/control-tower.png" alt="ControlTower" style="float: left; padding-right: 5px;" >
 **diagrams.aws.management.ControlTower**
-
-<img width="30" src="/img/resources/aws/management/devops-guru.png" alt="DevopsGuru" style="float: left; padding-right: 5px;" >
-**diagrams.aws.management.DevopsGuru**
 
 <img width="30" src="/img/resources/aws/management/license-manager.png" alt="LicenseManager" style="float: left; padding-right: 5px;" >
 **diagrams.aws.management.LicenseManager**

@@ -8,6 +8,10 @@ class _Analytics(_AWS):
     _icon_dir = "resources/aws/analytics"
 
 
+class AmazonOpensearchService(_Analytics):
+    _icon = "amazon-opensearch-service.png"
+
+
 class Analytics(_Analytics):
     _icon = "analytics.png"
 
@@ -102,10 +106,6 @@ class LakeFormation(_Analytics):
 
 class ManagedStreamingForKafka(_Analytics):
     _icon = "managed-streaming-for-kafka.png"
-
-
-class Opensearch(_Analytics):
-    _icon = "opensearch.png"
 
 
 class Quicksight(_Analytics):
