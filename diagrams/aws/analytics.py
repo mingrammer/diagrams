@@ -8,6 +8,10 @@ class _Analytics(_AWS):
     _icon_dir = "resources/aws/analytics"
 
 
+class AmazonOpensearchService(_Analytics):
+    _icon = "amazon-opensearch-service.png"
+
+
 class Analytics(_Analytics):
     _icon = "analytics.png"
 
