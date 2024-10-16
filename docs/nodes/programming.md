@@ -89,6 +89,9 @@ Node classes list of the programming provider.
 <img width="30" src="/img/resources/programming/framework/backbone.png" alt="Backbone" style="float: left; padding-right: 5px;" >
 **diagrams.programming.framework.Backbone**
 
+<img width="30" src="/img/resources/programming/framework/camel.png" alt="Camel" style="float: left; padding-right: 5px;" >
+**diagrams.programming.framework.Camel**
+
 <img width="30" src="/img/resources/programming/framework/django.png" alt="Django" style="float: left; padding-right: 5px;" >
 **diagrams.programming.framework.Django**
 
