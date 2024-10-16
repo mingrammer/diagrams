@@ -44,6 +44,10 @@ class Graphql(_Framework):
     _icon = "graphql.png"
 
 
+class Jhipster(_Framework):
+    _icon = "jhipster.png"
+
+
 class Laravel(_Framework):
     _icon = "laravel.png"
 
@@ -84,3 +88,4 @@ class Vue(_Framework):
 
 FastAPI = Fastapi
 GraphQL = Graphql
+JHipster = Jhipster
