@@ -40,6 +40,10 @@ class Travisci(_Ci):
     _icon = "travisci.png"
 
 
+class Waypoint(_Ci):
+    _icon = "waypoint.png"
+
+
 class Zuulci(_Ci):
     _icon = "zuulci.png"
 
