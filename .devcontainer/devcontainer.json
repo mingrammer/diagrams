@@ -1,0 +1,20 @@
+{
+	"name": "diagrams",
+    "build": {
+        // Path is relative to the devcontainer.json file.
+        "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-python.python",
+				"ms-python.debugpy",
+				"mhutchie.git-graph",			
+				"mutantdino.resourcemonitor",
+				"tehpeng.diagramspreviewer"
+			]
+		}
+	},
+	"workspaceMount": "source=${localWorkspaceFolder},target=/usr/src/diagrams,type=bind",
+	"workspaceFolder": "/usr/src/diagrams"
+}
