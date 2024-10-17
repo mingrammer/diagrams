@@ -86,6 +86,18 @@ Node classes list of the saas provider.
 <img width="30" src="/img/resources/saas/filesharing/nextcloud.png" alt="Nextcloud" style="float: left; padding-right: 5px;" >
 **diagrams.saas.filesharing.Nextcloud**
 
+## saas.git
+
+
+<img width="30" src="/img/resources/saas/git/bitbucket.png" alt="Bitbucket" style="float: left; padding-right: 5px;" >
+**diagrams.saas.git.Bitbucket**
+
+<img width="30" src="/img/resources/saas/git/github.png" alt="Github" style="float: left; padding-right: 5px;" >
+**diagrams.saas.git.Github**
+
+<img width="30" src="/img/resources/saas/git/gitlab.png" alt="Gitlab" style="float: left; padding-right: 5px;" >
+**diagrams.saas.git.Gitlab**
+
 ## saas.identity
 
 
