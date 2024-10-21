@@ -28,4 +28,8 @@ class Xmatters(_Alerting):
     _icon = "xmatters.png"
 
 
+class Sonarqube(_Alerting):
+    _icon = "sonarqube.png"
+
+
 # Aliases
