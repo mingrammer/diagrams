@@ -13,7 +13,7 @@
 
 **Diagram as Code**.
 
-Diagrams lets you draw the cloud system architecture **in Python code**. It was born for **prototyping** a new system architecture design without any design tools. You can also describe or visualize the existing system architecture as well. Diagrams currently supports main major providers including: `AWS`, `Azure`, `GCP`, `Kubernetes`, `Alibaba Cloud`, `Oracle Cloud` etc... It also supports `On-Premise` nodes, `SaaS` and major `Programming` frameworks and languages.
+Diagrams lets you draw the cloud system architecture **in Python code**. It was born for **prototyping** a new system architecture design without any design tools. You can also describe or visualize the existing system architecture as well. Diagrams currently supports main major providers including: `AWS`, `Azure`, `GCP`, `Kubernetes`, `Alibaba Cloud`, `Oracle Cloud` etc... It also supports `On-Premises` nodes, `SaaS` and major `Programming` frameworks and languages.
 
 **Diagram as Code** also allows you to **track** the architecture diagram changes in any **version control** system.
 
@@ -33,7 +33,7 @@ Diagrams lets you draw the cloud system architecture **in Python code**. It was 
 ![digital ocean provider](https://img.shields.io/badge/DigitalOcean-0080ff?logo=digitalocean&color=0080ff)
 ![elastic provider](https://img.shields.io/badge/Elastic-orange?logo=elastic&color=005571)
 ![outscale provider](https://img.shields.io/badge/OutScale-orange?color=5f87bf)
-![on premise provider](https://img.shields.io/badge/OnPremise-orange?color=5f87bf)
+![on premises provider](https://img.shields.io/badge/OnPremises-orange?color=5f87bf)
 ![generic provider](https://img.shields.io/badge/Generic-orange?color=5f87bf)
 ![programming provider](https://img.shields.io/badge/Programming-orange?color=5f87bf)
 ![saas provider](https://img.shields.io/badge/SaaS-orange?color=5f87bf)
@@ -64,7 +64,7 @@ You can start with [quick start](https://diagrams.mingrammer.com/docs/getting-st
 
 | Event Processing                                             | Stateful Architecture                                        | Advanced Web Service                                         |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![event processing](https://diagrams.mingrammer.com/img/event_processing_diagram.png) | ![stateful architecture](https://diagrams.mingrammer.com/img/stateful_architecture_diagram.png) | ![advanced web service with on-premise](https://diagrams.mingrammer.com/img/advanced_web_service_with_on-premise.png) |
+| ![event processing](https://diagrams.mingrammer.com/img/event_processing_diagram.png) | ![stateful architecture](https://diagrams.mingrammer.com/img/stateful_architecture_diagram.png) | ![advanced web service with on-premises](https://diagrams.mingrammer.com/img/advanced_web_service_with_on-premises.png) |
 
 You can find all the examples on the [examples](https://diagrams.mingrammer.com/docs/getting-started/examples) page.
 

@@ -16,6 +16,10 @@ class Backbone(_Framework):
     _icon = "backbone.png"
 
 
+class Camel(_Framework):
+    _icon = "camel.png"
+
+
 class Django(_Framework):
     _icon = "django.png"
 
@@ -42,6 +46,10 @@ class Graphql(_Framework):
 
 class Hibernate(_Framework):
     _icon = "hibernate.png"
+
+
+class Jhipster(_Framework):
+   _icon = "jhipster.png"
 
 
 class Laravel(_Framework):
@@ -84,3 +92,4 @@ class Vue(_Framework):
 
 FastAPI = Fastapi
 GraphQL = Graphql
+JHipster = Jhipster
