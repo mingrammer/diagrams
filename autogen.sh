@@ -7,6 +7,7 @@ providers=(
   "onprem"
   "aws"
   "azure"
+  "camunda"
   "digitalocean"
   "gcp"
   "ibm"
