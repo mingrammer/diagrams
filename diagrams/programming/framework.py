@@ -44,8 +44,12 @@ class Graphql(_Framework):
     _icon = "graphql.png"
 
 
+class Hibernate(_Framework):
+    _icon = "hibernate.png"
+
+
 class Jhipster(_Framework):
-    _icon = "jhipster.png"
+   _icon = "jhipster.png"
 
 
 class Laravel(_Framework):
