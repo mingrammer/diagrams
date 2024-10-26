@@ -20,6 +20,10 @@ class Django(_Framework):
     _icon = "django.png"
 
 
+class Dotnet(_Framework):
+    _icon = "dotnet.png"
+
+
 class Ember(_Framework):
     _icon = "ember.png"
 
@@ -48,6 +52,10 @@ class Micronaut(_Framework):
     _icon = "micronaut.png"
 
 
+class Nextjs(_Framework):
+    _icon = "nextjs.png"
+
+
 class Quarkus(_Framework):
     _icon = "quarkus.png"
 
@@ -72,16 +80,12 @@ class Svelte(_Framework):
     _icon = "svelte.png"
 
 
+class Vercel(_Framework):
+    _icon = "vercel.png"
+
+
 class Vue(_Framework):
     _icon = "vue.png"
-
-
-class Dotnet(_Framework):
-    _icon = "dotnet.png"
-
-
-class Nextjs(_Framework):
-    _icon = "nextjs.png"
 
 
 # Aliases

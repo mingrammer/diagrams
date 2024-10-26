@@ -92,6 +92,9 @@ Node classes list of programming provider.
 <img width="30" src="/img/resources/programming/framework/django.png" alt="Django" style="float: left; padding-right: 5px;" >
 **diagrams.programming.framework.Django**
 
+<img width="30" src="/img/resources/programming/framework/dotnet.png" alt="Dotnet" style="float: left; padding-right: 5px;" >
+**diagrams.programming.framework.Dotnet**, **DotNet** (alias)
+
 <img width="30" src="/img/resources/programming/framework/ember.png" alt="Ember" style="float: left; padding-right: 5px;" >
 **diagrams.programming.framework.Ember**
 
@@ -113,6 +116,9 @@ Node classes list of programming provider.
 <img width="30" src="/img/resources/programming/framework/micronaut.png" alt="Micronaut" style="float: left; padding-right: 5px;" >
 **diagrams.programming.framework.Micronaut**
 
+<img width="30" src="/img/resources/programming/framework/nextjs.png" alt="Nextjs" style="float: left; padding-right: 5px;" >
+**diagrams.programming.framework.Nextjs**, **NextJs** (alias)
+
 <img width="30" src="/img/resources/programming/framework/quarkus.png" alt="Quarkus" style="float: left; padding-right: 5px;" >
 **diagrams.programming.framework.Quarkus**
 
@@ -131,14 +137,11 @@ Node classes list of programming provider.
 <img width="30" src="/img/resources/programming/framework/svelte.png" alt="Svelte" style="float: left; padding-right: 5px;" >
 **diagrams.programming.framework.Svelte**
 
+<img width="30" src="/img/resources/programming/framework/vercel.png" alt="Vercel" style="float: left; padding-right: 5px;" >
+**diagrams.programming.framework.Vercel**
+
 <img width="30" src="/img/resources/programming/framework/vue.png" alt="Vue" style="float: left; padding-right: 5px;" >
 **diagrams.programming.framework.Vue**
-
-<img width="30" src="/img/resources/programming/framework/dotnet.png" alt="Dotnet" style="float: left; padding-right: 5px;" >
- **diagrams.programming.framework.Dotnet**, **DotNet** (alias)
-
-<img width="30" src="/img/resources/programming/framework/nextjs.png" alt="Nextjs" style="float: left; padding-right: 5px;" >
- **diagrams.programming.framework.Nextjs**, **NextJs** (alias)
 
 ## programming.language
 
