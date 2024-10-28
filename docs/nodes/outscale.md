@@ -3,7 +3,7 @@ id: outscale
 title: Outscale
 ---
 
-Node classes list of outscale provider.
+Node classes list of the outscale provider.
 
 ## outscale.compute
 

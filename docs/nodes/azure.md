@@ -3,7 +3,7 @@ id: azure
 title: Azure
 ---
 
-Node classes list of azure provider.
+Node classes list of the azure provider.
 
 ## azure.analytics
 
@@ -523,6 +523,21 @@ Node classes list of azure provider.
 
 <img width="30" src="/img/resources/azure/mobile/notification-hubs.png" alt="NotificationHubs" style="float: left; padding-right: 5px;" >
 **diagrams.azure.mobile.NotificationHubs**
+
+## azure.monitor
+
+
+<img width="30" src="/img/resources/azure/monitor/change-analysis.png" alt="ChangeAnalysis" style="float: left; padding-right: 5px;" >
+**diagrams.azure.monitor.ChangeAnalysis**
+
+<img width="30" src="/img/resources/azure/monitor/logs.png" alt="Logs" style="float: left; padding-right: 5px;" >
+**diagrams.azure.monitor.Logs**
+
+<img width="30" src="/img/resources/azure/monitor/metrics.png" alt="Metrics" style="float: left; padding-right: 5px;" >
+**diagrams.azure.monitor.Metrics**
+
+<img width="30" src="/img/resources/azure/monitor/monitor.png" alt="Monitor" style="float: left; padding-right: 5px;" >
+**diagrams.azure.monitor.Monitor**
 
 ## azure.network
 
