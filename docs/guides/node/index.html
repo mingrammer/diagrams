@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Nodes · Diagrams</title><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="generator" content="Docusaurus"/><meta name="description" content="Node is a second object representing a node or system component."/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Nodes · Diagrams"/><meta property="og:type" content="website"/><meta property="og:url" content="https://diagrams.mingrammer.com/"/><meta property="og:description" content="Node is a second object representing a node or system component."/><meta property="og:image" content="https://diagrams.mingrammer.com/img/diagrams.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://diagrams.mingrammer.com/img/diagrams.png"/><link rel="shortcut icon" href="/img/diagrams.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script>
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Nodes · Diagrams</title><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="generator" content="Docusaurus"/><meta name="description" content="`Node` is an object representing a node or system component."/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Nodes · Diagrams"/><meta property="og:type" content="website"/><meta property="og:url" content="https://diagrams.mingrammer.com/"/><meta property="og:description" content="`Node` is an object representing a node or system component."/><meta property="og:image" content="https://diagrams.mingrammer.com/img/diagrams.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://diagrams.mingrammer.com/img/diagrams.png"/><link rel="shortcut icon" href="/img/diagrams.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script>
               (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
               (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
               m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -62,9 +62,9 @@
                 };
               }
             });
-        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Nodes</h1></header><article><div><span><p>Node is a second object representing a node or system component.</p>
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Nodes</h1></header><article><div><span><p><code>Node</code> is an object representing a node or system component.</p>
 <h2><a class="anchor" aria-hidden="true" id="basic"></a><a href="#basic" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Basic</h2>
-<p>Node is an abstract concept that represents a single system component object.</p>
+<p><code>Node</code> is an abstract concept that represents a single system component object.</p>
 <p>A node object consists of three parts: <strong>provider</strong>, <strong>resource type</strong> and <strong>name</strong>. You may already have seen each part in the previous example.</p>
 <pre><code class="hljs css language-python"><span class="hljs-keyword">from</span> diagrams <span class="hljs-keyword">import</span> Diagram
 <span class="hljs-keyword">from</span> diagrams.aws.compute <span class="hljs-keyword">import</span> EC2
@@ -72,8 +72,8 @@
 <span class="hljs-keyword">with</span> Diagram(<span class="hljs-string">"Simple Diagram"</span>):
     EC2(<span class="hljs-string">"web"</span>)
 </code></pre>
-<p>In above example, the <code>EC2</code> is a node of <code>compute</code> resource type which provided by <code>aws</code> provider.</p>
-<p>You can use other node objects in a similar manner like:</p>
+<p>In the example above, the <code>EC2</code> is a node of resource type <code>compute</code> which is provided by the <code>aws</code> provider.</p>
+<p>You can use other node objects in a similar manner:</p>
 <pre><code class="hljs css language-python"><span class="hljs-comment"># aws resources</span>
 <span class="hljs-keyword">from</span> diagrams.aws.compute <span class="hljs-keyword">import</span> ECS, Lambda
 <span class="hljs-keyword">from</span> diagrams.aws.database <span class="hljs-keyword">import</span> RDS, ElastiCache
@@ -92,7 +92,7 @@
 
 <span class="hljs-comment"># gcp resources</span>
 <span class="hljs-keyword">from</span> diagrams.gcp.compute <span class="hljs-keyword">import</span> AppEngine, GKE
-<span class="hljs-keyword">from</span> diagrams.gcp.ml <span class="hljs-keyword">import</span> AutoML 
+<span class="hljs-keyword">from</span> diagrams.gcp.ml <span class="hljs-keyword">import</span> AutoML
 ...
 
 <span class="hljs-comment"># k8s resources</span>
@@ -106,13 +106,14 @@
 <span class="hljs-keyword">from</span> diagrams.oci.network <span class="hljs-keyword">import</span> Firewall
 <span class="hljs-keyword">from</span> diagrams.oci.storage <span class="hljs-keyword">import</span> FileStorage, StorageGateway
 </code></pre>
-<p>You can find all available nodes list in <a href="https://diagrams.mingrammer.com/docs/nodes/aws">Here</a>.</p>
+<p>You can find lists of all available nodes for each provider in the sidebar on the left.</p>
+<p>For example, <a href="https://diagrams.mingrammer.com/docs/nodes/aws">here</a> is the list of all available AWS nodes.</p>
 <h2><a class="anchor" aria-hidden="true" id="data-flow"></a><a href="#data-flow" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Data Flow</h2>
-<p>You can represent data flow by connecting the nodes with these operators: <code>&gt;&gt;</code>, <code>&lt;&lt;</code> and <code>-</code>.</p>
+<p>You can represent data flow by connecting the nodes with the operators <code>&gt;&gt;</code>, <code>&lt;&lt;</code>, and <code>-</code>.</p>
 <ul>
-<li><strong>&gt;&gt;</strong>: Connect nodes in left to right direction.</li>
-<li><strong>&lt;&lt;</strong>: Connect nodes in right to left direction.</li>
-<li><strong>-</strong>: Connect nodes in no direction. Undirected.</li>
+<li><strong>&gt;&gt;</strong> connects nodes in left to right direction.</li>
+<li><strong>&lt;&lt;</strong> connects nodes in right to left direction.</li>
+<li><strong>-</strong> connects nodes in no direction. Undirected.</li>
 </ul>
 <pre><code class="hljs css language-python"><span class="hljs-keyword">from</span> diagrams <span class="hljs-keyword">import</span> Diagram
 <span class="hljs-keyword">from</span> diagrams.aws.compute <span class="hljs-keyword">import</span> EC2
@@ -126,15 +127,15 @@
     (ELB(<span class="hljs-string">"lb"</span>) &gt;&gt; EC2(<span class="hljs-string">"web"</span>)) - EC2(<span class="hljs-string">"web"</span>) &gt;&gt; RDS(<span class="hljs-string">"userdb"</span>)
 </code></pre>
 <blockquote>
-<p>Be careful when using the <code>-</code> and any shift operators together, which could cause unexpected results due to operator precedence.</p>
+<p>Be careful when using <code>-</code> and any shift operators together. It can cause unexpected results due to Python's operator precedence, so you might have to use parentheses.</p>
 </blockquote>
 <p><img src="/img/web_services_diagram.png" alt="web services diagram"></p>
 <blockquote>
 <p>The order of rendered diagrams is the reverse of the declaration order.</p>
 </blockquote>
-<p>You can change the data flow direction with <code>direction</code> parameter. Default is <strong>LR</strong>.</p>
+<p>You can change the data flow direction with the <code>direction</code> parameter. The default is <strong>LR</strong>.</p>
 <blockquote>
-<p>(TB, BT, LR and RL) are allowed.</p>
+<p>Allowed values are: TB, BT, LR, and RL</p>
 </blockquote>
 <pre><code class="hljs css language-python"><span class="hljs-keyword">from</span> diagrams <span class="hljs-keyword">import</span> Diagram
 <span class="hljs-keyword">from</span> diagrams.aws.compute <span class="hljs-keyword">import</span> EC2
@@ -152,7 +153,7 @@
 </code></pre>
 <p><img src="/img/workers_diagram.png" alt="workers diagram"></p>
 <h2><a class="anchor" aria-hidden="true" id="group-data-flow"></a><a href="#group-data-flow" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Group Data Flow</h2>
-<p>Above worker example has too many redundant flows. In this case, you can group nodes into a list so that all nodes are connected to other nodes at once.</p>
+<p>The above worker example has too many redundant flows. To avoid this, you can group nodes into a list so that all nodes are connected to other nodes at once:</p>
 <pre><code class="hljs css language-python"><span class="hljs-keyword">from</span> diagrams <span class="hljs-keyword">import</span> Diagram
 <span class="hljs-keyword">from</span> diagrams.aws.compute <span class="hljs-keyword">import</span> EC2
 <span class="hljs-keyword">from</span> diagrams.aws.database <span class="hljs-keyword">import</span> RDS
@@ -169,4 +170,4 @@
 <blockquote>
 <p>You can't connect two <strong>lists</strong> directly because shift/arithmetic operations between lists are not allowed in Python.</p>
 </blockquote>
-</span></div></article></div><div class="docLastUpdate"><em>Last updated on 2/23/2021</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/guides/diagram"><span class="arrow-prev">← </span><span>Diagrams</span></a><a class="docs-next button" href="/docs/guides/cluster"><span>Clusters</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#basic">Basic</a></li><li><a href="#data-flow">Data Flow</a></li><li><a href="#group-data-flow">Group Data Flow</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/diagrams.ico" alt="Diagrams" width="66" height="58"/></a><div><h5>Docs</h5><a href="/docs/getting-started/installation">Getting Started</a><a href="/docs/guides/diagram">Guides</a><a href="/docs/nodes/aws">Nodes</a></div><div><h5>More</h5><iframe src="https://ghbtns.com/github-btn.html?user=mingrammer&amp;repo=diagrams&amp;type=star&amp;count=true&amp;size=large" frameBorder="0" scrolling="0" width="170" height="30" title="Star mingrammer/diagrams on GitHub"></iframe></div></section><section class="copyright">Copyright © 2023 mingrammer</section></footer></div></body></html>
+</span></div></article></div><div class="docLastUpdate"><em>Last updated on 4/13/2024</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/guides/diagram"><span class="arrow-prev">← </span><span>Diagrams</span></a><a class="docs-next button" href="/docs/guides/cluster"><span>Clusters</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#basic">Basic</a></li><li><a href="#data-flow">Data Flow</a></li><li><a href="#group-data-flow">Group Data Flow</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/diagrams.ico" alt="Diagrams" width="66" height="58"/></a><div><h5>Docs</h5><a href="/docs/getting-started/installation">Getting Started</a><a href="/docs/guides/diagram">Guides</a><a href="/docs/nodes/aws">Nodes</a></div><div><h5>More</h5><iframe src="https://ghbtns.com/github-btn.html?user=mingrammer&amp;repo=diagrams&amp;type=star&amp;count=true&amp;size=large" frameBorder="0" scrolling="0" width="170" height="30" title="Star mingrammer/diagrams on GitHub"></iframe></div></section><section class="copyright">Copyright © 2024 mingrammer</section></footer></div></body></html>
