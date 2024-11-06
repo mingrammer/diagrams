@@ -16,6 +16,7 @@ PROVIDERS = (
     "onprem",
     "aws",
     "azure",
+    "camunda",
     "digitalocean",
     "gcp",
     "ibm",
@@ -46,6 +47,7 @@ FILE_PREFIXES = {
     "onprem": (),
     "aws": ("Amazon-", "AWS-"),
     "azure": ("Azure-",),
+    "camunda": (),
     "digitalocean": (),
     "gcp": ("Cloud-",),
     "firebase": ("Cloud-",),
@@ -470,4 +472,5 @@ ALIASES = {
             "Tripleo": "TripleO",
         }
     },
+    "camunda": {},
 }
