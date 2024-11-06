@@ -429,7 +429,9 @@ ALIASES = {
     "programming": {
         "framework": {
             "Fastapi": "FastAPI",
-            "Graphql": "GraphQL"
+            "Graphql": "GraphQL",
+            "Dotnet": "DotNet",
+            "Nextjs": "NextJs"
         },
         "language": {
             "Javascript": "JavaScript",

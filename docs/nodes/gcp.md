@@ -3,7 +3,7 @@ id: gcp
 title: GCP
 ---
 
-Node classes list of gcp provider.
+Node classes list of the gcp provider.
 
 ## gcp.analytics
 
