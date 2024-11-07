@@ -7,6 +7,7 @@ on:
     paths:
       - ".github/workflows/test.yml"
       - "pyproject.toml"
+      - "poetry.lock"
       - "**.py"
   pull_request:
     branches:
@@ -14,6 +15,7 @@ on:
     paths:
       - ".github/workflows/test.yml"
       - "pyproject.toml"
+      - "poetry.lock"
       - "**.py"
 
 jobs:
