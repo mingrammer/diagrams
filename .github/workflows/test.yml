@@ -6,12 +6,14 @@ on:
       - master
     paths:
       - ".github/workflows/test.yml"
+      - "pyproject.toml"
       - "**.py"
   pull_request:
     branches:
       - master
     paths:
       - ".github/workflows/test.yml"
+      - "pyproject.toml"
       - "**.py"
 
 jobs:
