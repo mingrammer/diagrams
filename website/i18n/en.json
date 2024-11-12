@@ -76,6 +76,9 @@
       },
       "nodes/saas": {
         "title": "Saas"
+      },
+      "nodes/snowflake": {
+        "title": "Snowflake"
       }
     },
     "links": {
