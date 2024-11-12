@@ -42,11 +42,11 @@ def gen_classes(pvd: str, typ: str, paths: Iterable[str]) -> str:
 
 def gen_apidoc(pvd: str, typ_paths: dict) -> str:
     try:
-      default_tmp = cfg.TMPL_APIDOC.split('.')
-      tmpl_file = f"{default_tmp[0]}_{pvd}.{default_tmp[1]}"
-      tmpl = load_tmpl(tmpl_file)
+        default_tmp = cfg.TMPL_APIDOC.split(".")
+        tmpl_file = f"{default_tmp[0]}_{pvd}.{default_tmp[1]}"
+        tmpl = load_tmpl(tmpl_file)
     except exceptions.TemplateNotFound:
-      tmpl = load_tmpl(cfg.TMPL_APIDOC)
+        tmpl = load_tmpl(cfg.TMPL_APIDOC)
 
     # TODO: remove
     def _gen_class_name(path: str) -> str:
@@ -68,6 +68,8 @@ def gen_apidoc(pvd: str, typ_paths: dict) -> str:
 def make_module(pvd: str, typ: str, classes: str) -> None:
     """Create a module file"""
     mod_path = os.path.join(app_root_dir(pvd), f"{typ}.py")
+    os.makedirs(os.path.dirname(mod_path), exist_ok=True)
+
     with open(mod_path, "w+") as f:
         f.write(classes)
 

@@ -24,6 +24,7 @@
       "nodes/digitalocean",
       "nodes/elastic",
       "nodes/outscale",
+      "nodes/snowflake",
       "nodes/generic",
       "nodes/programming",
       "nodes/saas",
