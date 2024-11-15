@@ -120,6 +120,10 @@ class SiteToSiteVpn(_Network):
     _icon = "site-to-site-vpn.png"
 
 
+class TransitGatewayAttachment(_Network):
+    _icon = "transit-gateway-attachment.png"
+
+
 class TransitGateway(_Network):
     _icon = "transit-gateway.png"
 
@@ -172,3 +176,6 @@ ALB = ElbApplicationLoadBalancer
 CLB = ElbClassicLoadBalancer
 NLB = ElbNetworkLoadBalancer
 GAX = GlobalAccelerator
+IGW = InternetGateway
+TGW = TransitGateway
+TGWAttach = TransitGatewayAttachment
