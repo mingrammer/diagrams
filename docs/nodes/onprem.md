@@ -437,6 +437,9 @@ Node classes list of the onprem provider.
 <img width="30" src="/img/resources/onprem/network/linkerd.png" alt="Linkerd" style="float: left; padding-right: 5px;" >
 **diagrams.onprem.network.Linkerd**
 
+<img width="30" src="/img/resources/onprem/network/mikrotik.png" alt="Mikrotik" style="float: left; padding-right: 5px;" >
+**diagrams.onprem.network.Mikrotik**
+
 <img width="30" src="/img/resources/onprem/network/nginx.png" alt="Nginx" style="float: left; padding-right: 5px;" >
 **diagrams.onprem.network.Nginx**
 
