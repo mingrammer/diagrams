@@ -119,6 +119,15 @@ Node classes list of the saas provider.
 <img width="30" src="/img/resources/saas/recommendation/recombee.png" alt="Recombee" style="float: left; padding-right: 5px;" >
 **diagrams.saas.recommendation.Recombee**
 
+## saas.security
+
+
+<img width="30" src="/img/resources/saas/security/scrowdstrike.png" alt="Scrowdstrike" style="float: left; padding-right: 5px;" >
+**diagrams.saas.security.Scrowdstrike**
+
+<img width="30" src="/img/resources/saas/security/sonarqube.png" alt="Sonarqube" style="float: left; padding-right: 5px;" >
+**diagrams.saas.security.Sonarqube**
+
 ## saas.social
 
 
