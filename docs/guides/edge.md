@@ -3,13 +3,13 @@ id: edge
 title: Edges
 ---
 
-Edge is representing an edge between Nodes.
+`Edge` represents an edge between nodes.
 
 ## Basic
 
-Edge is an object representing a connection between Nodes with some additional properties.
+`Edge` is an object representing a connection between nodes with some additional properties.
 
-An edge object contains three attributes: **label**, **color** and **style** which mirror corresponding graphviz edge attributes.
+An edge object contains three attributes: **label**, **color**, and **style**. They mirror the corresponding Graphviz edge attributes.
 
 ```python
 from diagrams import Cluster, Diagram, Edge
@@ -22,7 +22,7 @@ from diagrams.onprem.monitoring import Grafana, Prometheus
 from diagrams.onprem.network import Nginx
 from diagrams.onprem.queue import Kafka
 
-with Diagram(name="Advanced Web Service with On-Premise (colored)", show=False):
+with Diagram(name="Advanced Web Service with On-Premises (colored)", show=False):
     ingress = Nginx("ingress")
 
     metrics = Prometheus("metric")
@@ -66,4 +66,4 @@ with Diagram(name="Advanced Web Service with On-Premise (colored)", show=False):
         >> aggregator
 ```
 
-![advanced web service with on-premise diagram colored](/img/advanced_web_service_with_on-premise_colored.png)
+![advanced web service with on-premises diagram colored](/img/advanced_web_service_with_on-premises_colored.png)

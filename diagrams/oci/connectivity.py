@@ -32,12 +32,12 @@ class CustomerDatacntrWhite(_Connectivity):
     _icon = "customer-datacntr-white.png"
 
 
-class CustomerPremiseWhite(_Connectivity):
-    _icon = "customer-premise-white.png"
+class CustomerPremisesWhite(_Connectivity):
+    _icon = "customer-premises-white.png"
 
 
-class CustomerPremise(_Connectivity):
-    _icon = "customer-premise.png"
+class CustomerPremises(_Connectivity):
+    _icon = "customer-premises.png"
 
 
 class DisconnectedRegionsWhite(_Connectivity):

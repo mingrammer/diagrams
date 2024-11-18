@@ -16,8 +16,16 @@ class Backbone(_Framework):
     _icon = "backbone.png"
 
 
+class Camel(_Framework):
+    _icon = "camel.png"
+
+
 class Django(_Framework):
     _icon = "django.png"
+
+
+class Dotnet(_Framework):
+    _icon = "dotnet.png"
 
 
 class Ember(_Framework):
@@ -40,17 +48,29 @@ class Graphql(_Framework):
     _icon = "graphql.png"
 
 
+class Hibernate(_Framework):
+    _icon = "hibernate.png"
+
+
+class Jhipster(_Framework):
+   _icon = "jhipster.png"
+
+
 class Laravel(_Framework):
     _icon = "laravel.png"
 
 
 class Micronaut(_Framework):
     _icon = "micronaut.png"
+    
 
+class Nextjs(_Framework):
+    _icon = "nextjs.png"
+    
 
 class Phoenix(_Framework):
     _icon = "phoenix.png"
-
+    
 
 class Quarkus(_Framework):
     _icon = "quarkus.png"
@@ -76,6 +96,10 @@ class Svelte(_Framework):
     _icon = "svelte.png"
 
 
+class Vercel(_Framework):
+    _icon = "vercel.png"
+
+
 class Vue(_Framework):
     _icon = "vue.png"
 
@@ -84,3 +108,6 @@ class Vue(_Framework):
 
 FastAPI = Fastapi
 GraphQL = Graphql
+DotNet = Dotnet
+NextJs = Nextjs
+JHipster = Jhipster

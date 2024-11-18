@@ -3,10 +3,13 @@ id: aws
 title: AWS
 ---
 
-Node classes list of aws provider.
+Node classes list of the aws provider.
 
 ## aws.analytics
 
+
+<img width="30" src="/img/resources/aws/analytics/amazon-opensearch-service.png" alt="AmazonOpensearchService" style="float: left; padding-right: 5px;" >
+**diagrams.aws.analytics.AmazonOpensearchService**
 
 <img width="30" src="/img/resources/aws/analytics/analytics.png" alt="Analytics" style="float: left; padding-right: 5px;" >
 **diagrams.aws.analytics.Analytics**
@@ -388,6 +391,9 @@ Node classes list of aws provider.
 
 <img width="30" src="/img/resources/aws/devtools/cloud9.png" alt="Cloud9" style="float: left; padding-right: 5px;" >
 **diagrams.aws.devtools.Cloud9**
+
+<img width="30" src="/img/resources/aws/devtools/codeartifact.png" alt="Codeartifact" style="float: left; padding-right: 5px;" >
+**diagrams.aws.devtools.Codeartifact**
 
 <img width="30" src="/img/resources/aws/devtools/codebuild.png" alt="Codebuild" style="float: left; padding-right: 5px;" >
 **diagrams.aws.devtools.Codebuild**
@@ -800,6 +806,18 @@ Node classes list of aws provider.
 ## aws.management
 
 
+<img width="30" src="/img/resources/aws/management/amazon-devops-guru.png" alt="AmazonDevopsGuru" style="float: left; padding-right: 5px;" >
+**diagrams.aws.management.AmazonDevopsGuru**
+
+<img width="30" src="/img/resources/aws/management/amazon-managed-grafana.png" alt="AmazonManagedGrafana" style="float: left; padding-right: 5px;" >
+**diagrams.aws.management.AmazonManagedGrafana**
+
+<img width="30" src="/img/resources/aws/management/amazon-managed-prometheus.png" alt="AmazonManagedPrometheus" style="float: left; padding-right: 5px;" >
+**diagrams.aws.management.AmazonManagedPrometheus**
+
+<img width="30" src="/img/resources/aws/management/amazon-managed-workflows-apache-airflow.png" alt="AmazonManagedWorkflowsApacheAirflow" style="float: left; padding-right: 5px;" >
+**diagrams.aws.management.AmazonManagedWorkflowsApacheAirflow**
+
 <img width="30" src="/img/resources/aws/management/auto-scaling.png" alt="AutoScaling" style="float: left; padding-right: 5px;" >
 **diagrams.aws.management.AutoScaling**
 
@@ -899,8 +917,14 @@ Node classes list of aws provider.
 <img width="30" src="/img/resources/aws/management/personal-health-dashboard.png" alt="PersonalHealthDashboard" style="float: left; padding-right: 5px;" >
 **diagrams.aws.management.PersonalHealthDashboard**
 
+<img width="30" src="/img/resources/aws/management/proton.png" alt="Proton" style="float: left; padding-right: 5px;" >
+**diagrams.aws.management.Proton**
+
 <img width="30" src="/img/resources/aws/management/service-catalog.png" alt="ServiceCatalog" style="float: left; padding-right: 5px;" >
 **diagrams.aws.management.ServiceCatalog**
+
+<img width="30" src="/img/resources/aws/management/systems-manager-app-config.png" alt="SystemsManagerAppConfig" style="float: left; padding-right: 5px;" >
+**diagrams.aws.management.SystemsManagerAppConfig**
 
 <img width="30" src="/img/resources/aws/management/systems-manager-automation.png" alt="SystemsManagerAutomation" style="float: left; padding-right: 5px;" >
 **diagrams.aws.management.SystemsManagerAutomation**
@@ -1204,6 +1228,9 @@ Node classes list of aws provider.
 
 <img width="30" src="/img/resources/aws/network/nat-gateway.png" alt="NATGateway" style="float: left; padding-right: 5px;" >
 **diagrams.aws.network.NATGateway**
+
+<img width="30" src="/img/resources/aws/network/network-firewall.png" alt="NetworkFirewall" style="float: left; padding-right: 5px;" >
+**diagrams.aws.network.NetworkFirewall**
 
 <img width="30" src="/img/resources/aws/network/networking-and-content-delivery.png" alt="NetworkingAndContentDelivery" style="float: left; padding-right: 5px;" >
 **diagrams.aws.network.NetworkingAndContentDelivery**

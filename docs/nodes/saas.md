@@ -3,7 +3,7 @@ id: saas
 title: Saas
 ---
 
-Node classes list of saas provider.
+Node classes list of the saas provider.
 
 ## saas.alerting
 

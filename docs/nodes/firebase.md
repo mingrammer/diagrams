@@ -3,7 +3,7 @@ id: firebase
 title: Firebase
 ---
 
-Node classes list of firebase provider.
+Node classes list of the firebase provider.
 
 ## firebase.base
 
