@@ -4,8 +4,12 @@ from . import _Saas
 
 
 class _Security(_Saas):
-    _type = "alerting"
+    _type = "security"
     _icon_dir = "resources/saas/security"
+
+
+class Scrowdstrike(_Security):
+    _icon = "scrowdstrike.png"
 
 
 class Sonarqube(_Security):
