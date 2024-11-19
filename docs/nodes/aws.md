@@ -1221,7 +1221,7 @@ Node classes list of the aws provider.
 **diagrams.aws.network.GlobalAccelerator**, **GAX** (alias)
 
 <img width="30" src="/img/resources/aws/network/internet-gateway.png" alt="InternetGateway" style="float: left; padding-right: 5px;" >
-**diagrams.aws.network.InternetGateway**
+**diagrams.aws.network.InternetGateway**, **IGW** (alias)
 
 <img width="30" src="/img/resources/aws/network/nacl.png" alt="Nacl" style="float: left; padding-right: 5px;" >
 **diagrams.aws.network.Nacl**
@@ -1256,8 +1256,11 @@ Node classes list of the aws provider.
 <img width="30" src="/img/resources/aws/network/site-to-site-vpn.png" alt="SiteToSiteVpn" style="float: left; padding-right: 5px;" >
 **diagrams.aws.network.SiteToSiteVpn**
 
+<img width="30" src="/img/resources/aws/network/transit-gateway-attachment.png" alt="TransitGatewayAttachment" style="float: left; padding-right: 5px;" >
+**diagrams.aws.network.TransitGatewayAttachment**, **TGWAttach** (alias)
+
 <img width="30" src="/img/resources/aws/network/transit-gateway.png" alt="TransitGateway" style="float: left; padding-right: 5px;" >
-**diagrams.aws.network.TransitGateway**
+**diagrams.aws.network.TransitGateway**, **TGW** (alias)
 
 <img width="30" src="/img/resources/aws/network/vpc-customer-gateway.png" alt="VPCCustomerGateway" style="float: left; padding-right: 5px;" >
 **diagrams.aws.network.VPCCustomerGateway**
