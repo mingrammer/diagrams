@@ -52,6 +52,10 @@ class Kotlin(_Language):
     _icon = "kotlin.png"
 
 
+class Latex(_Language):
+    _icon = "latex.png"
+
+
 class Matlab(_Language):
     _icon = "matlab.png"
 

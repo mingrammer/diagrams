@@ -3,13 +3,13 @@ id: cluster
 title: Clusters
 ---
 
-Cluster allows you group (or clustering) the nodes in an isolated group.
+`Cluster` allows you to group (or cluster) nodes in an isolated group.
 
 ## Basic
 
-Cluster represents a local cluster context.
+`Cluster` represents a local cluster context.
 
-You can create a cluster context with Cluster class. And you can also connect the nodes in a cluster to other nodes outside a cluster.
+You can create a cluster context using the `Cluster` class. You can also connect the nodes in a cluster to other nodes outside a cluster.
 
 ```python
 from diagrams import Cluster, Diagram
@@ -22,18 +22,18 @@ with Diagram("Simple Web Service with DB Cluster", show=False):
     web = ECS("service")
 
     with Cluster("DB Cluster"):
-        db_master = RDS("master")
-        db_master - [RDS("slave1"),
-                     RDS("slave2")]
+        db_primary = RDS("primary")
+        db_primary - [RDS("replica1"),
+                     RDS("replica2")]
 
-    dns >> web >> db_master
+    dns >> web >> db_primary
 ```
 
 ![simple web service with db cluster diagram](/img/simple_web_service_with_db_cluster_diagram.png)
 
 ## Nested Clusters
 
-Nested clustering is also possible.
+Nested clustering is also possible:
 
 ```python
 from diagrams import Cluster, Diagram
@@ -68,4 +68,4 @@ with Diagram("Event Processing", show=False):
 
 ![event processing diagram](/img/event_processing_diagram.png)
 
-> There is no depth limit of nesting. Feel free to create nested clusters as deep as you want.
+> There is no depth limit to nesting. Feel free to create nested clusters as deep as you want.

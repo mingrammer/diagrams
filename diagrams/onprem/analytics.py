@@ -20,6 +20,10 @@ class Dbt(_Analytics):
     _icon = "dbt.png"
 
 
+class Dremio(_Analytics):
+    _icon = "dremio.png"
+
+
 class Flink(_Analytics):
     _icon = "flink.png"
 
@@ -66,6 +70,10 @@ class Superset(_Analytics):
 
 class Tableau(_Analytics):
     _icon = "tableau.png"
+
+
+class Trino(_Analytics):
+    _icon = "trino.png"
 
 
 # Aliases

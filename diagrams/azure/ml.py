@@ -8,6 +8,14 @@ class _Ml(_Azure):
     _icon_dir = "resources/azure/ml"
 
 
+class AzureOpenAI(_Ml):
+    _icon = "azure-open-ai.png"
+
+
+class AzureSpeedToText(_Ml):
+    _icon = "azure-speed-to-text.png"
+
+
 class BatchAI(_Ml):
     _icon = "batch-ai.png"
 

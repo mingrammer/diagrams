@@ -84,6 +84,10 @@ class NATGateway(_Network):
     _icon = "nat-gateway.png"
 
 
+class NetworkFirewall(_Network):
+    _icon = "network-firewall.png"
+
+
 class NetworkingAndContentDelivery(_Network):
     _icon = "networking-and-content-delivery.png"
 
@@ -114,6 +118,10 @@ class RouteTable(_Network):
 
 class SiteToSiteVpn(_Network):
     _icon = "site-to-site-vpn.png"
+
+
+class TransitGatewayAttachment(_Network):
+    _icon = "transit-gateway-attachment.png"
 
 
 class TransitGateway(_Network):
@@ -168,3 +176,6 @@ ALB = ElbApplicationLoadBalancer
 CLB = ElbClassicLoadBalancer
 NLB = ElbNetworkLoadBalancer
 GAX = GlobalAccelerator
+IGW = InternetGateway
+TGW = TransitGateway
+TGWAttach = TransitGatewayAttachment

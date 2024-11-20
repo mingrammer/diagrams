@@ -1,10 +1,26 @@
 #!/bin/bash
-set -e
 
 app_root_dir="diagrams"
 
 # NOTE: azure icon set is not latest version
-providers=("onprem" "aws" "azure" "gcp" "firebase" "k8s" "alibabacloud" "oci" "programming" "saas" "elastic" "generic" "openstack" "outscale" )
+providers=(
+  "onprem"
+  "aws"
+  "azure"
+  "digitalocean"
+  "gcp"
+  "ibm"
+  "firebase"
+  "k8s"
+  "alibabacloud"
+  "oci"
+  "programming"
+  "saas"
+  "elastic"
+  "generic"
+  "openstack"
+  "outscale"
+)
 
 if ! [ -x "$(command -v round)" ]; then
   echo 'round is not installed'
@@ -33,7 +49,7 @@ for pvd in "${providers[@]}"; do
     echo "converting the svg to png using inkscape for provider '$pvd'"
     python -m scripts.resource svg2png "$pvd"
   fi
-  if [ "$pvd" == "oci" ]; then
+  if [ "$pvd" == "oci" ] || [ "$pvd" = "ibm" ]; then
     echo "converting the svg to png using image magick for provider '$pvd'"
     python -m scripts.resource svg2png2 "$pvd"
   fi
@@ -55,6 +71,10 @@ done
 # Generate doc for custom module
 echo "generating the docs for custom"
 python -m scripts.generate "custom"
+
+# copy icons across to website
+echo "copying icons to website static folder"
+cp -r resources website/static/img/
 
 # run black
 echo "linting the all the diagram modules"

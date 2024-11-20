@@ -5,30 +5,34 @@ on:
     branches:
       - master
     paths:
-      - '.github/workflows/test.yml'
-      - '**.py'
+      - ".github/workflows/test.yml"
+      - "pyproject.toml"
+      - "poetry.lock"
+      - "**.py"
   pull_request:
     branches:
       - master
     paths:
-      - '.github/workflows/test.yml'
-      - '**.py'
+      - ".github/workflows/test.yml"
+      - "pyproject.toml"
+      - "poetry.lock"
+      - "**.py"
 
 jobs:
   test:
     strategy:
       matrix:
-        python: ['3.6', '3.7', '3.8', '3.9']
+        python: ["3.9", "3.10", "3.11", "3.12", "3.13"]
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-python@v2
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python }}
       - name: Setup Graphviz
-        uses: ts-graphviz/setup-graphviz@v1
+        uses: ts-graphviz/setup-graphviz@v2
       - name: Install poetry
-        run: pip install poetry
+        run: curl -sSL https://install.python-poetry.org | python3 -
       - name: Run all tests
         run: |
           poetry install
