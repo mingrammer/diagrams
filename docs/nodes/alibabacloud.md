@@ -5,6 +5,12 @@ title: AlibabaCloud
 
 Node classes list of the alibabacloud provider.
 
+## alibabacloud.alibabacloud
+
+
+<img width="30" src="/img/resources/alibabacloud/alibabacloud.png" alt="AlibabaCloud" style="float: left; padding-right: 5px;" >
+**diagrams.alibabacloud.alibabacloud.AlibabaCloud**
+
 ## alibabacloud.analytics
 
 

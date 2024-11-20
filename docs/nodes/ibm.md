@@ -323,6 +323,12 @@ Node classes list of the ibm provider.
 <img width="30" src="/img/resources/ibm/general/transformation-connectivity.png" alt="TransformationConnectivity" style="float: left; padding-right: 5px;" >
 **diagrams.ibm.general.TransformationConnectivity**
 
+## ibm.ibm
+
+
+<img width="30" src="/img/resources/ibm/ibm.png" alt="IBM" style="float: left; padding-right: 5px;" >
+**diagrams.ibm.ibm.IBM**
+
 ## ibm.infrastructure
 
 

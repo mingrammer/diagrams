@@ -89,10 +89,8 @@ def generate(pvd: str) -> None:
         pngs = list(filter(lambda f: f.endswith(".png"), files))
         paths = list(filter(lambda f: "rounded" not in f, pngs))
 
-        # Skip the top-root directory.
+        # Build the provider itself.
         typ = os.path.basename(root)
-        if typ == pvd:
-            continue
 
         resource_root = os.path.relpath(root, base)
         classes = gen_classes(pvd, typ, paths)

@@ -104,6 +104,12 @@ Node classes list of the aws provider.
 <img width="30" src="/img/resources/aws/ar/sumerian.png" alt="Sumerian" style="float: left; padding-right: 5px;" >
 **diagrams.aws.ar.Sumerian**
 
+## aws.aws
+
+
+<img width="30" src="/img/resources/aws/aws.png" alt="AWS" style="float: left; padding-right: 5px;" >
+**diagrams.aws.aws.AWS**
+
 ## aws.blockchain
 
 

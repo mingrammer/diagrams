@@ -32,6 +32,12 @@ Node classes list of the generic provider.
 <img width="30" src="/img/resources/generic/device/tablet.png" alt="Tablet" style="float: left; padding-right: 5px;" >
 **diagrams.generic.device.Tablet**
 
+## generic.generic
+
+
+<img width="30" src="/img/resources/generic/generic.png" alt="Generic" style="float: left; padding-right: 5px;" >
+**diagrams.generic.generic.Generic**
+
 ## generic.network
 
 

@@ -104,6 +104,12 @@ Node classes list of the k8s provider.
 <img width="30" src="/img/resources/k8s/infra/node.png" alt="Node" style="float: left; padding-right: 5px;" >
 **diagrams.k8s.infra.Node**
 
+## k8s.k8s
+
+
+<img width="30" src="/img/resources/k8s/k8s.png" alt="K8S" style="float: left; padding-right: 5px;" >
+**diagrams.k8s.k8s.K8S**
+
 ## k8s.network
 
 
