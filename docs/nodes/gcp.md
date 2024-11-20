@@ -146,12 +146,6 @@ Node classes list of the gcp provider.
 <img width="30" src="/img/resources/gcp/devtools/tools-for-visual-studio.png" alt="ToolsForVisualStudio" style="float: left; padding-right: 5px;" >
 **diagrams.gcp.devtools.ToolsForVisualStudio**
 
-## gcp.gcp
-
-
-<img width="30" src="/img/resources/gcp/gcp.png" alt="GCP" style="float: left; padding-right: 5px;" >
-**diagrams.gcp.gcp.GCP**
-
 ## gcp.iot
 
 

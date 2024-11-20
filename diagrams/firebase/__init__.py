@@ -10,3 +10,7 @@ class _Firebase(Node):
     _icon_dir = "resources/firebase"
 
     fontcolor = "#ffffff"
+
+
+class Firebase(_Firebase):
+    _icon = "firebase.png"

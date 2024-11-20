@@ -119,12 +119,6 @@ Node classes list of the openstack provider.
 <img width="30" src="/img/resources/openstack/nfv/tacker.png" alt="Tacker" style="float: left; padding-right: 5px;" >
 **diagrams.openstack.nfv.Tacker**
 
-## openstack.openstack
-
-
-<img width="30" src="/img/resources/openstack/openstack.png" alt="OpenStack" style="float: left; padding-right: 5px;" >
-**diagrams.openstack.openstack.OpenStack**
-
 ## openstack.optimization
 
 

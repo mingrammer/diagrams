@@ -35,12 +35,6 @@ Node classes list of the outscale provider.
 <img width="30" src="/img/resources/outscale/network/site-to-site-vpng.png" alt="SiteToSiteVpng" style="float: left; padding-right: 5px;" >
 **diagrams.outscale.network.SiteToSiteVpng**
 
-## outscale.outscale
-
-
-<img width="30" src="/img/resources/outscale/outscale.png" alt="Outscale" style="float: left; padding-right: 5px;" >
-**diagrams.outscale.outscale.Outscale**
-
 ## outscale.security
 
 

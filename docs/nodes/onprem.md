@@ -482,12 +482,6 @@ Node classes list of the onprem provider.
 <img width="30" src="/img/resources/onprem/network/zookeeper.png" alt="Zookeeper" style="float: left; padding-right: 5px;" >
 **diagrams.onprem.network.Zookeeper**
 
-## onprem.onprem
-
-
-<img width="30" src="/img/resources/onprem/onprem.png" alt="OnPrem" style="float: left; padding-right: 5px;" >
-**diagrams.onprem.onprem.OnPrem**
-
 ## onprem.proxmox
 
 

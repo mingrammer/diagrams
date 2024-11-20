@@ -47,12 +47,6 @@ Node classes list of the digitalocean provider.
 <img width="30" src="/img/resources/digitalocean/database/dbaas-standby.png" alt="DbaasStandby" style="float: left; padding-right: 5px;" >
 **diagrams.digitalocean.database.DbaasStandby**
 
-## digitalocean.digitalocean
-
-
-<img width="30" src="/img/resources/digitalocean/digitalocean.png" alt="DigitalOcean" style="float: left; padding-right: 5px;" >
-**diagrams.digitalocean.digitalocean.DigitalOcean**
-
 ## digitalocean.network
 
 

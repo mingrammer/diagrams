@@ -41,12 +41,6 @@ Node classes list of the firebase provider.
 <img width="30" src="/img/resources/firebase/extentions/extensions.png" alt="Extensions" style="float: left; padding-right: 5px;" >
 **diagrams.firebase.extentions.Extensions**
 
-## firebase.firebase
-
-
-<img width="30" src="/img/resources/firebase/firebase.png" alt="Firebase" style="float: left; padding-right: 5px;" >
-**diagrams.firebase.firebase.Firebase**
-
 ## firebase.grow
 
 

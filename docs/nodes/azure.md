@@ -44,12 +44,6 @@ Node classes list of the azure provider.
 <img width="30" src="/img/resources/azure/analytics/synapse-analytics.png" alt="SynapseAnalytics" style="float: left; padding-right: 5px;" >
 **diagrams.azure.analytics.SynapseAnalytics**
 
-## azure.azure
-
-
-<img width="30" src="/img/resources/azure/azure.png" alt="Azure" style="float: left; padding-right: 5px;" >
-**diagrams.azure.azure.Azure**
-
 ## azure.compute
 
 

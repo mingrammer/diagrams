@@ -344,12 +344,6 @@ Node classes list of the oci provider.
 <img width="30" src="/img/resources/oci/network/vcn.png" alt="Vcn" style="float: left; padding-right: 5px;" >
 **diagrams.oci.network.Vcn**
 
-## oci.oci
-
-
-<img width="30" src="/img/resources/oci/oci.png" alt="OCI" style="float: left; padding-right: 5px;" >
-**diagrams.oci.oci.OCI**
-
 ## oci.security
 
 

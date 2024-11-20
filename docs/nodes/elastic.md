@@ -47,12 +47,6 @@ Node classes list of the elastic provider.
 <img width="30" src="/img/resources/elastic/beats/winlogbeat.png" alt="Winlogbeat" style="float: left; padding-right: 5px;" >
 **diagrams.elastic.beats.Winlogbeat**
 
-## elastic.elastic
-
-
-<img width="30" src="/img/resources/elastic/elastic.png" alt="Elastic" style="float: left; padding-right: 5px;" >
-**diagrams.elastic.elastic.Elastic**
-
 ## elastic.elasticsearch
 
 
