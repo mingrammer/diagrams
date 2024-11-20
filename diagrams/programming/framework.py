@@ -84,6 +84,10 @@ class Spring(_Framework):
     _icon = "spring.png"
 
 
+class Sqlpage(_Framework):
+    _icon = "sqlpage.png"
+
+
 class Starlette(_Framework):
     _icon = "starlette.png"
 

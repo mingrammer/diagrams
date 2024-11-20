@@ -88,6 +88,10 @@ class Scala(_Language):
     _icon = "scala.png"
 
 
+class Sql(_Language):
+    _icon = "sql.png"
+
+
 class Swift(_Language):
     _icon = "swift.png"
 

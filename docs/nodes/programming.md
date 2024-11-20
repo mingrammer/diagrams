@@ -140,6 +140,9 @@ Node classes list of the programming provider.
 <img width="30" src="/img/resources/programming/framework/spring.png" alt="Spring" style="float: left; padding-right: 5px;" >
 **diagrams.programming.framework.Spring**
 
+<img width="30" src="/img/resources/programming/framework/sqlpage.png" alt="Sqlpage" style="float: left; padding-right: 5px;" >
+**diagrams.programming.framework.Sqlpage**
+
 <img width="30" src="/img/resources/programming/framework/starlette.png" alt="Starlette" style="float: left; padding-right: 5px;" >
 **diagrams.programming.framework.Starlette**
 
@@ -214,6 +217,9 @@ Node classes list of the programming provider.
 
 <img width="30" src="/img/resources/programming/language/scala.png" alt="Scala" style="float: left; padding-right: 5px;" >
 **diagrams.programming.language.Scala**
+
+<img width="30" src="/img/resources/programming/language/sql.png" alt="Sql" style="float: left; padding-right: 5px;" >
+**diagrams.programming.language.Sql**
 
 <img width="30" src="/img/resources/programming/language/swift.png" alt="Swift" style="float: left; padding-right: 5px;" >
 **diagrams.programming.language.Swift**
