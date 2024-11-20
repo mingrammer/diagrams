@@ -4,7 +4,7 @@
 
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 [![pypi version](https://badge.fury.io/py/diagrams.svg)](https://badge.fury.io/py/diagrams)
-![python version](https://img.shields.io/badge/python-%3E%3D%203.6-blue?logo=python)
+![python version](https://img.shields.io/badge/python-%3E%3D%203.9-blue?logo=python)
 ![Run tests](https://github.com/mingrammer/diagrams/workflows/Run%20tests/badge.svg?branch=master)
 [![todos](https://badgen.net/https/api.tickgit.com/badgen/github.com/mingrammer/diagrams?label=todos)](https://www.tickgit.com/browse?repo=github.com/mingrammer/diagrams)
 ![contributors](https://img.shields.io/github/contributors/mingrammer/diagrams)
@@ -41,7 +41,7 @@ Diagrams lets you draw the cloud system architecture **in Python code**. It was 
 
 ## Getting Started
 
-It requires **Python 3.7** or higher, check your Python version first.
+It requires **Python 3.9** or higher, check your Python version first.
 
 It uses [Graphviz](https://www.graphviz.org/) to render the diagram, so you need to [install Graphviz](https://graphviz.gitlab.io/download/) to use **diagrams**. After installing graphviz (or already have it), install the **diagrams**.
 
