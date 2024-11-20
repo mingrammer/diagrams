@@ -128,6 +128,9 @@ Node classes list of the programming provider.
 <img width="30" src="/img/resources/programming/framework/nextjs.png" alt="Nextjs" style="float: left; padding-right: 5px;" >
 **diagrams.programming.framework.Nextjs**, **NextJs** (alias)
 
+<img width="30" src="/img/resources/programming/framework/phoenix.png" alt="Phoenix" style="float: left; padding-right: 5px;" >
+**diagrams.programming.framework.Phoenix**
+
 <img width="30" src="/img/resources/programming/framework/quarkus.png" alt="Quarkus" style="float: left; padding-right: 5px;" >
 **diagrams.programming.framework.Quarkus**
 
