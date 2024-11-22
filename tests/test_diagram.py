@@ -5,7 +5,7 @@ import pathlib
 
 from diagrams import Cluster, Diagram, Edge, Node
 from diagrams import getcluster, getdiagram, setcluster, setdiagram
-
+from diagrams.aws.network import VPC
 
 class DiagramTest(unittest.TestCase):
     def setUp(self):
@@ -23,6 +23,13 @@ class DiagramTest(unittest.TestCase):
                 os.remove(self.name + ".png")
             except FileNotFoundError:
                 pass
+    
+    def test_cluster_icon(self):
+        self.name = "example-cluster-icon"
+        with Diagram(name=self.name, show=False):
+            cluster = Cluster("example_cluster_icon", providerIconNode=VPC, icon_size=30)
+        self.assertIsNotNone(cluster)
+        self.assertTrue(os.path.exists(f"{self.name}.png"))
 
     def test_validate_direction(self):
         # Normal directions.
