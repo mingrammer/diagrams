@@ -4,7 +4,8 @@ A set of nodes and edges to visualize software architecture using the C4 model.
 
 import html
 import textwrap
-from diagrams import Cluster, Node, Edge
+
+from diagrams import Cluster, Edge, Node
 
 
 def _format_node_label(name, key, description):
