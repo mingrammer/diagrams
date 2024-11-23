@@ -122,8 +122,8 @@ Node classes list of the saas provider.
 ## saas.security
 
 
-<img width="30" src="/img/resources/saas/security/scrowdstrike.png" alt="Scrowdstrike" style="float: left; padding-right: 5px;" >
-**diagrams.saas.security.Scrowdstrike**
+<img width="30" src="/img/resources/saas/security/crowdstrike.png" alt="Crowdstrike" style="float: left; padding-right: 5px;" >
+**diagrams.saas.security.Crowdstrike**
 
 <img width="30" src="/img/resources/saas/security/sonarqube.png" alt="Sonarqube" style="float: left; padding-right: 5px;" >
 **diagrams.saas.security.Sonarqube**
