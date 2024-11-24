@@ -4,14 +4,7 @@ import string
 import unittest
 
 from diagrams import Diagram, setcluster, setdiagram
-from diagrams.c4 import (
-    Container,
-    Database,
-    Person,
-    Relationship,
-    System,
-    SystemBoundary,
-)
+from diagrams.c4 import Container, Database, Person, Relationship, System, SystemBoundary
 
 
 class C4Test(unittest.TestCase):
