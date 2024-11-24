@@ -8,6 +8,10 @@ class _Crm(_Saas):
     _icon_dir = "resources/saas/crm"
 
 
+class Intercom(_Crm):
+    _icon = "intercom.png"
+
+
 class Zendesk(_Crm):
     _icon = "zendesk.png"
 

@@ -83,6 +83,9 @@ Node classes list of the saas provider.
 ## saas.crm
 
 
+<img width="30" src="/img/resources/saas/crm/intercom.png" alt="Intercom" style="float: left; padding-right: 5px;" >
+**diagrams.saas.crm.Intercom**
+
 <img width="30" src="/img/resources/saas/crm/zendesk.png" alt="Zendesk" style="float: left; padding-right: 5px;" >
 **diagrams.saas.crm.Zendesk**
 
