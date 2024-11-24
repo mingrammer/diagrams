@@ -247,56 +247,122 @@ class EdgeTest(unittest.TestCase):
             with Cluster():
                 node1 = Node("node1")
                 nodes = [Node("node2"), Node("node3")]
-                self.assertEqual(nodes - Edge(color="red") - Edge(color="green") - node1, node1)
+                self.assertEqual(
+                    nodes -
+                    Edge(
+                        color="red") -
+                    Edge(
+                        color="green") -
+                    node1,
+                    node1)
 
     def test_node_to_node_with_attributes(self):
         with Diagram(name=os.path.join(self.name, "node_to_node_with_attributes"), show=False):
             with Cluster():
                 node1 = Node("node1")
                 node2 = Node("node2")
-                self.assertEqual(node1 << Edge(color="red", label="1.1") << node2, node2)
-                self.assertEqual(node1 >> Edge(color="green", label="1.2") >> node2, node2)
-                self.assertEqual(node1 << Edge(color="blue", label="1.3") >> node2, node2)
+                self.assertEqual(
+                    node1 << Edge(
+                        color="red",
+                        label="1.1") << node2,
+                    node2)
+                self.assertEqual(
+                    node1 >> Edge(
+                        color="green",
+                        label="1.2") >> node2,
+                    node2)
+                self.assertEqual(
+                    node1 << Edge(
+                        color="blue",
+                        label="1.3") >> node2,
+                    node2)
 
     def test_node_to_node_with_additional_attributes(self):
         with Diagram(name=os.path.join(self.name, "node_to_node_with_additional_attributes"), show=False):
             with Cluster():
                 node1 = Node("node1")
                 node2 = Node("node2")
-                self.assertEqual(node1 << Edge(color="red", label="2.1") << Edge(color="blue") << node2, node2)
-                self.assertEqual(node1 >> Edge(color="green", label="2.2") >> Edge(color="red") >> node2, node2)
-                self.assertEqual(node1 << Edge(color="blue", label="2.3") >> Edge(color="black") >> node2, node2)
+                self.assertEqual(
+                    node1 << Edge(
+                        color="red",
+                        label="2.1") << Edge(
+                        color="blue") << node2,
+                    node2)
+                self.assertEqual(
+                    node1 >> Edge(
+                        color="green",
+                        label="2.2") >> Edge(
+                        color="red") >> node2,
+                    node2)
+                self.assertEqual(
+                    node1 << Edge(
+                        color="blue",
+                        label="2.3") >> Edge(
+                        color="black") >> node2,
+                    node2)
 
     def test_nodes_to_node_with_attributes_loop(self):
         with Diagram(name=os.path.join(self.name, "nodes_to_node_with_attributes_loop"), show=False):
             with Cluster():
                 node = Node("node")
-                self.assertEqual(node >> Edge(color="red", label="3.1") >> node, node)
-                self.assertEqual(node << Edge(color="green", label="3.2") << node, node)
-                self.assertEqual(node >> Edge(color="blue", label="3.3") << node, node)
-                self.assertEqual(node << Edge(color="pink", label="3.4") >> node, node)
+                self.assertEqual(
+                    node >> Edge(
+                        color="red",
+                        label="3.1") >> node,
+                    node)
+                self.assertEqual(
+                    node << Edge(
+                        color="green",
+                        label="3.2") << node,
+                    node)
+                self.assertEqual(
+                    node >> Edge(
+                        color="blue",
+                        label="3.3") << node,
+                    node)
+                self.assertEqual(
+                    node << Edge(
+                        color="pink",
+                        label="3.4") >> node,
+                    node)
 
     def test_nodes_to_node_with_attributes_bothdirectional(self):
         with Diagram(name=os.path.join(self.name, "nodes_to_node_with_attributes_bothdirectional"), show=False):
             with Cluster():
                 node1 = Node("node1")
                 nodes = [Node("node2"), Node("node3")]
-                self.assertEqual(nodes << Edge(color="green", label="4") >> node1, node1)
+                self.assertEqual(
+                    nodes << Edge(
+                        color="green",
+                        label="4") >> node1,
+                    node1)
 
     def test_nodes_to_node_with_attributes_bidirectional(self):
         with Diagram(name=os.path.join(self.name, "nodes_to_node_with_attributes_bidirectional"), show=False):
             with Cluster():
                 node1 = Node("node1")
                 nodes = [Node("node2"), Node("node3")]
-                self.assertEqual(nodes << Edge(color="blue", label="5") >> node1, node1)
+                self.assertEqual(
+                    nodes << Edge(
+                        color="blue",
+                        label="5") >> node1,
+                    node1)
 
     def test_nodes_to_node_with_attributes_onedirectional(self):
         with Diagram(name=os.path.join(self.name, "nodes_to_node_with_attributes_onedirectional"), show=False):
             with Cluster():
                 node1 = Node("node1")
                 nodes = [Node("node2"), Node("node3")]
-                self.assertEqual(nodes >> Edge(color="red", label="6.1") >> node1, node1)
-                self.assertEqual(nodes << Edge(color="green", label="6.2") << node1, node1)
+                self.assertEqual(
+                    nodes >> Edge(
+                        color="red",
+                        label="6.1") >> node1,
+                    node1)
+                self.assertEqual(
+                    nodes << Edge(
+                        color="green",
+                        label="6.2") << node1,
+                    node1)
 
     def test_nodes_to_node_with_additional_attributes_directional(self):
         with Diagram(name=os.path.join(self.name, "nodes_to_node_with_additional_attributes_directional"), show=False):
@@ -304,11 +370,19 @@ class EdgeTest(unittest.TestCase):
                 node1 = Node("node1")
                 nodes = [Node("node2"), Node("node3")]
                 self.assertEqual(
-                    nodes >> Edge(color="red", label="6.1") >> Edge(color="blue", label="6.2") >> node1, node1
-                )
+                    nodes >> Edge(
+                        color="red",
+                        label="6.1") >> Edge(
+                        color="blue",
+                        label="6.2") >> node1,
+                    node1)
                 self.assertEqual(
-                    nodes << Edge(color="green", label="6.3") << Edge(color="pink", label="6.4") << node1, node1
-                )
+                    nodes << Edge(
+                        color="green",
+                        label="6.3") << Edge(
+                        color="pink",
+                        label="6.4") << node1,
+                    node1)
 
 
 class ResourcesTest(unittest.TestCase):
@@ -319,5 +393,12 @@ class ResourcesTest(unittest.TestCase):
         exceeded.
         """
         resources_dir = pathlib.Path(__file__).parent.parent / "resources"
-        max_depth = max(os.path.relpath(d, resources_dir).count(os.sep) + 1 for d, _, _ in os.walk(resources_dir))
+        max_depth = max(
+            os.path.relpath(
+                d,
+                resources_dir).count(
+                os.sep) +
+            1 for d,
+            _,
+            _ in os.walk(resources_dir))
         self.assertLessEqual(max_depth, 2)

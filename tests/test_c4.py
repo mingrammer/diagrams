@@ -16,7 +16,8 @@ from diagrams.c4 import (
 
 class C4Test(unittest.TestCase):
     def setUp(self):
-        self.name = "diagram-" + "".join([random.choice(string.hexdigits) for n in range(7)]).lower()
+        self.name = "diagram-" + \
+            "".join([random.choice(string.hexdigits) for n in range(7)]).lower()
 
     def tearDown(self):
         setdiagram(None)
@@ -29,8 +30,14 @@ class C4Test(unittest.TestCase):
     def test_nodes(self):
         with Diagram(name=self.name, show=False):
             person = Person("person", "A person.")
-            container = Container("container", "Java application", "The application.")
-            database = Database("database", "Oracle database", "Stores information.")
+            container = Container(
+                "container",
+                "Java application",
+                "The application.")
+            database = Database(
+                "database",
+                "Oracle database",
+                "Stores information.")
 
     def test_external_nodes(self):
         with Diagram(name=self.name, show=False):

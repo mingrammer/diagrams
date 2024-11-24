@@ -62,7 +62,8 @@ def gen_apidoc(pvd: str, typ_paths: dict) -> str:
             name = _gen_class_name(path)
             resource_path = os.path.join(resource_root, path)
             alias = cfg.ALIASES[pvd].get(typ, {}).get(name)
-            typ_classes[typ].append({"name": name, "alias": alias, "resource_path": resource_path})
+            typ_classes[typ].append(
+                {"name": name, "alias": alias, "resource_path": resource_path})
     return tmpl.render(pvd=pvd, typ_classes=typ_classes)
 
 

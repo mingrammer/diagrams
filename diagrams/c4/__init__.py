@@ -27,7 +27,8 @@ def _format_description(description):
     """
     wrapper = textwrap.TextWrapper(width=40, max_lines=3)
     lines = [html.escape(line) for line in wrapper.wrap(description)]
-    lines += [""] * (3 - len(lines))  # fill up with empty lines so it is always three
+    # fill up with empty lines so it is always three
+    lines += [""] * (3 - len(lines))
     return "<br/>".join(lines)
 
 
