@@ -8,8 +8,8 @@ class _Security(_Saas):
     _icon_dir = "resources/saas/security"
 
 
-class Scrowdstrike(_Security):
-    _icon = "scrowdstrike.png"
+class Crowdstrike(_Security):
+    _icon = "crowdstrike.png"
 
 
 class Sonarqube(_Security):

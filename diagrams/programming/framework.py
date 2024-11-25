@@ -114,4 +114,3 @@ FastAPI = Fastapi
 GraphQL = Graphql
 DotNet = Dotnet
 NextJs = Nextjs
-JHipster = Jhipster

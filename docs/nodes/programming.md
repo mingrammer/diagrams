@@ -117,7 +117,7 @@ Node classes list of the programming provider.
 **diagrams.programming.framework.Hibernate**
 
 <img width="30" src="/img/resources/programming/framework/jhipster.png" alt="Jhipster" style="float: left; padding-right: 5px;" >
-**diagrams.programming.framework.Jhipster**, **JHipster** (alias)
+**diagrams.programming.framework.Jhipster**
 
 <img width="30" src="/img/resources/programming/framework/laravel.png" alt="Laravel" style="float: left; padding-right: 5px;" >
 **diagrams.programming.framework.Laravel**
