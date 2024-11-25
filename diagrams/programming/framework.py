@@ -53,7 +53,7 @@ class Hibernate(_Framework):
 
 
 class Jhipster(_Framework):
-   _icon = "jhipster.png"
+    _icon = "jhipster.png"
 
 
 class Laravel(_Framework):
@@ -62,15 +62,15 @@ class Laravel(_Framework):
 
 class Micronaut(_Framework):
     _icon = "micronaut.png"
-    
+
 
 class Nextjs(_Framework):
     _icon = "nextjs.png"
-    
+
 
 class Phoenix(_Framework):
     _icon = "phoenix.png"
-    
+
 
 class Quarkus(_Framework):
     _icon = "quarkus.png"
