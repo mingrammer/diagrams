@@ -88,7 +88,7 @@ UPPER_WORDS = {
     "outscale": ("osc",),
     "openstack": ("rpm", "loci", "nfv", "ec2api"),
     "pve": ("pve"),
-    "ibm": ("ibm"),
+    "ibm": ("ibm", "sql", "api", "cdn", "dns", "vpn", "vpc"),
 }
 
 TITLE_WORDS = {
@@ -459,7 +459,34 @@ ALIASES = {
     "outscale": {
         "Osc": "OSC",
     },
-    "ibm": {},
+    "ibm": {
+        "compute": {
+            "HpVirtualServers": "HPVirtualServers",
+            "Vmware": "VMware",
+        },
+        "data": {
+            "TmsDataInterface": "TMSDataInterface"
+        },
+        "database": {
+            "ComposeMysql": "ComposeMySQL",
+            "ComposeRethinkdb": "ComposeRethinkDB",
+            "ComposeScylladb": "ComposeScyllaDB",
+            "Db2Warehouse": "DB2Warehouse",
+            "Db2": "DB2",
+            "Edb": "EDB",
+            "Elasticsearch": "ElasticSearch",
+            "HyperProtectDbaas": "HyperProtectDBaaS",
+            "Mongodb": "MongoDB",
+            "Postgresql": "PostgreSQL",
+            "Rabbitmq": "RabbitMQ",
+        },
+        "devops": {
+            "Devops": "DevOps"
+        },
+        "security": {
+            "OpenBsd": "OpenBSD"
+        }
+    },
     "generic": {},
     "openstack": {
         "user": {

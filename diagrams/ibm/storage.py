@@ -8,12 +8,36 @@ class _Storage(_IBM):
     _icon_dir = "resources/ibm/storage"
 
 
+class BlockStorageVolumes(_Storage):
+    _icon = "block-storage-volumes.png"
+
+
 class BlockStorage(_Storage):
     _icon = "block-storage.png"
 
 
+class Box(_Storage):
+    _icon = "box.png"
+
+
+class Evault(_Storage):
+    _icon = "evault.png"
+
+
+class FileStorage(_Storage):
+    _icon = "file-storage.png"
+
+
+class MassDataMigration(_Storage):
+    _icon = "mass-data-migration.png"
+
+
 class ObjectStorage(_Storage):
     _icon = "object-storage.png"
+
+
+class Portworx(_Storage):
+    _icon = "portworx.png"
 
 
 # Aliases
