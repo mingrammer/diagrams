@@ -80,6 +80,15 @@ Node classes list of the saas provider.
 <img width="30" src="/img/resources/saas/communication/twilio.png" alt="Twilio" style="float: left; padding-right: 5px;" >
 **diagrams.saas.communication.Twilio**
 
+## saas.crm
+
+
+<img width="30" src="/img/resources/saas/crm/intercom.png" alt="Intercom" style="float: left; padding-right: 5px;" >
+**diagrams.saas.crm.Intercom**
+
+<img width="30" src="/img/resources/saas/crm/zendesk.png" alt="Zendesk" style="float: left; padding-right: 5px;" >
+**diagrams.saas.crm.Zendesk**
+
 ## saas.filesharing
 
 
@@ -122,8 +131,8 @@ Node classes list of the saas provider.
 ## saas.security
 
 
-<img width="30" src="/img/resources/saas/security/scrowdstrike.png" alt="Scrowdstrike" style="float: left; padding-right: 5px;" >
-**diagrams.saas.security.Scrowdstrike**
+<img width="30" src="/img/resources/saas/security/crowdstrike.png" alt="Crowdstrike" style="float: left; padding-right: 5px;" >
+**diagrams.saas.security.Crowdstrike**
 
 <img width="30" src="/img/resources/saas/security/sonarqube.png" alt="Sonarqube" style="float: left; padding-right: 5px;" >
 **diagrams.saas.security.Sonarqube**
