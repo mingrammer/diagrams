@@ -56,6 +56,10 @@ class DynamodbItems(_Database):
     _icon = "dynamodb-items.png"
 
 
+class DynamodbStreams(_Database):
+    _icon = "dynamodb-streams.png"
+
+
 class DynamodbTable(_Database):
     _icon = "dynamodb-table.png"
 

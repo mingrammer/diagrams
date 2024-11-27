@@ -317,6 +317,9 @@ Node classes list of the aws provider.
 <img width="30" src="/img/resources/aws/database/dynamodb-items.png" alt="DynamodbItems" style="float: left; padding-right: 5px;" >
 **diagrams.aws.database.DynamodbItems**
 
+<img width="30" src="/img/resources/aws/database/dynamodb-streams.png" alt="DynamodbStreams" style="float: left; padding-right: 5px;" >
+**diagrams.aws.database.DynamodbStreams**
+
 <img width="30" src="/img/resources/aws/database/dynamodb-table.png" alt="DynamodbTable" style="float: left; padding-right: 5px;" >
 **diagrams.aws.database.DynamodbTable**
 
