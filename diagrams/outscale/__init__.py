@@ -6,3 +6,7 @@ class _Outscale(Node):
     _icon_dir = "resources/outscale"
 
     fontcolor = "#ffffff"
+
+
+class Outscale(_Outscale):
+    _icon = "outscale.png"

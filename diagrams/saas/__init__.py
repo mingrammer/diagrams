@@ -10,3 +10,7 @@ class _Saas(Node):
     _icon_dir = "resources/saas"
 
     fontcolor = "#ffffff"
+
+
+class Saas(_Saas):
+    _icon = "saas.png"

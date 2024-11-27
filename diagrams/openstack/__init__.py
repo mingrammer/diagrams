@@ -10,3 +10,7 @@ class _OpenStack(Node):
     _icon_dir = "resources/openstack"
 
     fontcolor = "#ffffff"
+
+
+class OpenStack(_OpenStack):
+    _icon = "openstack.png"

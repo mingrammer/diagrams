@@ -10,3 +10,7 @@ class _OCI(Node):
     _icon_dir = "resources/oci"
 
     fontcolor = "#312D2A"
+
+
+class OCI(_OCI):
+    _icon = "oci.png"

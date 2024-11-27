@@ -10,3 +10,7 @@ class _K8S(Node):
     _icon_dir = "resources/k8s"
 
     fontcolor = "#2d3436"
+
+
+class K8S(_K8S):
+    _icon = "k8s.png"

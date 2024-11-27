@@ -10,3 +10,7 @@ class _Programming(Node):
     _icon_dir = "resources/programming"
 
     fontcolor = "#ffffff"
+
+
+class Programming(_Programming):
+    _icon = "programming.png"

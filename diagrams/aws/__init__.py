@@ -10,3 +10,7 @@ class _AWS(Node):
     _icon_dir = "resources/aws"
 
     fontcolor = "#ffffff"
+
+
+class AWS(_AWS):
+    _icon = "aws.png"

@@ -10,3 +10,7 @@ class _AlibabaCloud(Node):
     _icon_dir = "resources/alibabacloud"
 
     fontcolor = "#ffffff"
+
+
+class AlibabaCloud(_AlibabaCloud):
+    _icon = "alibabacloud.png"
