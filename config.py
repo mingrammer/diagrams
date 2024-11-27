@@ -29,6 +29,7 @@ PROVIDERS = (
     "generic",
     "openstack",
     "outscale",
+    "hashicorp",
 )
 
 #########################
@@ -47,6 +48,7 @@ FILE_PREFIXES = {
     "aws": ("Amazon-", "AWS-"),
     "azure": ("Azure-",),
     "digitalocean": (),
+    "hashicorp": (),
     "gcp": ("Cloud-",),
     "firebase": ("Cloud-",),
     "ibm": (),
@@ -103,6 +105,9 @@ TITLE_WORDS = {
     },
     "digitalocean": {
         "digitalocean": "DigitalOcean"
+    },
+    "hashicorp": {
+        "hashicorp": "HashiCorp"
     },
     "openstack": {
         "openstack": "OpenStack"
@@ -411,6 +416,7 @@ ALIASES = {
         }
     },
     "digitalocean": {},
+    "hashicorp": {},
     "oci": {
         "compute": {
             "VM": "VirtualMachine",
