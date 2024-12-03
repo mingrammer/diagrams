@@ -154,6 +154,7 @@ cleaners = {
     "outscale": cleaner_outscale,
     "generic": cleaner_generic,
     "openstack": cleaner_openstack,
+    "sap": cleaner_generic,
 }
 
 
