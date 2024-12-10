@@ -21,7 +21,7 @@ pre-commit = "^4.0.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^8.3"
-pylint = "^3.2"
+pylint = "^3.3"
 rope = "^1.13"
 isort = "^5.13"
 black = "^24.4"
