@@ -85,6 +85,7 @@ To contribute to diagram, check out [contribution guidelines](CONTRIBUTING.md).
 ## Other languages
 
 - If you are familiar with Go, you can use [go-diagrams](https://github.com/blushft/go-diagrams) as well.
+- Or if you prefer Yaml, you can use [diagrams-as-code](https://github.com/dmytrostriletskyi/diagrams-as-code).
 
 ## License
 
