@@ -20,7 +20,7 @@ typed-ast = {version="^1.5.5", markers="python_version<'3.8'"}
 pre-commit = "^4.0.1"
 
 [tool.poetry.dev-dependencies]
-pytest = "^8.2"
+pytest = "^8.3"
 pylint = "^3.2"
 rope = "^1.13"
 isort = "^5.13"
