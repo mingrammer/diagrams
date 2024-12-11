@@ -8,8 +8,16 @@ class _Integration(_Azure):
     _icon_dir = "resources/azure/integration"
 
 
+class APIConnections(_Integration):
+    _icon = "api-connections.png"
+
+
 class APIForFhir(_Integration):
     _icon = "api-for-fhir.png"
+
+
+class APIManagementServices(_Integration):
+    _icon = "api-management-services.png"
 
 
 class APIManagement(_Integration):
@@ -20,8 +28,36 @@ class AppConfiguration(_Integration):
     _icon = "app-configuration.png"
 
 
+class AzureAPIForFhir(_Integration):
+    _icon = "azure-api-for-fhir.png"
+
+
+class AzureDataCatalog(_Integration):
+    _icon = "azure-data-catalog.png"
+
+
+class AzureDataboxGateway(_Integration):
+    _icon = "azure-databox-gateway.png"
+
+
+class AzureServiceBus(_Integration):
+    _icon = "azure-service-bus.png"
+
+
+class AzureSQLServerStretchDatabases(_Integration):
+    _icon = "azure-sql-server-stretch-databases.png"
+
+
+class AzureStackEdge(_Integration):
+    _icon = "azure-stack-edge.png"
+
+
 class DataCatalog(_Integration):
     _icon = "data-catalog.png"
+
+
+class DataFactories(_Integration):
+    _icon = "data-factories.png"
 
 
 class EventGridDomains(_Integration):
@@ -40,6 +76,10 @@ class IntegrationAccounts(_Integration):
     _icon = "integration-accounts.png"
 
 
+class IntegrationEnvironments(_Integration):
+    _icon = "integration-environments.png"
+
+
 class IntegrationServiceEnvironments(_Integration):
     _icon = "integration-service-environments.png"
 
@@ -52,8 +92,24 @@ class LogicApps(_Integration):
     _icon = "logic-apps.png"
 
 
+class PartnerNamespace(_Integration):
+    _icon = "partner-namespace.png"
+
+
+class PartnerRegistration(_Integration):
+    _icon = "partner-registration.png"
+
+
 class PartnerTopic(_Integration):
     _icon = "partner-topic.png"
+
+
+class PowerPlatform(_Integration):
+    _icon = "power-platform.png"
+
+
+class Relays(_Integration):
+    _icon = "relays.png"
 
 
 class SendgridAccounts(_Integration):
@@ -74,6 +130,10 @@ class ServiceCatalogManagedApplicationDefinitions(_Integration):
 
 class SoftwareAsAService(_Integration):
     _icon = "software-as-a-service.png"
+
+
+class SQLDataWarehouses(_Integration):
+    _icon = "sql-data-warehouses.png"
 
 
 class StorsimpleDeviceManagers(_Integration):
