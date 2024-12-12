@@ -70,6 +70,8 @@ def gen_apidoc(pvd: str, typ_paths: dict) -> str:
 def make_module(pvd: str, typ: str, classes: str) -> None:
     """Create a module file"""
     mod_path = os.path.join(app_root_dir(pvd), f"{typ}.py")
+    os.makedirs(os.path.dirname(mod_path), exist_ok=True)
+
     with open(mod_path, "w+") as f:
         f.write(classes)
 

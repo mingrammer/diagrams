@@ -29,6 +29,7 @@ PROVIDERS = (
     "generic",
     "openstack",
     "outscale",
+    "snowflake",
 )
 
 #########################
@@ -59,6 +60,7 @@ FILE_PREFIXES = {
     "outscale": (),
     "generic": (),
     "openstack": (),
+    "snowflake": (),
 }
 
 #########################
@@ -87,8 +89,9 @@ UPPER_WORDS = {
     "generic": ("vpn", "ios", "xen", "sql", "lxc"),
     "outscale": ("osc",),
     "openstack": ("rpm", "loci", "nfv", "ec2api"),
-    "pve": ("pve"),
-    "ibm": ("ibm"),
+    "pve": ("pve",),
+    "ibm": ("ibm",),
+    "snowflake": ("sn",),
 }
 
 TITLE_WORDS = {
@@ -110,6 +113,9 @@ TITLE_WORDS = {
     "ibm": {
         "ibm": "IBMCloud"
     },
+    "snowflake": {
+        "snowflake": "Snowflake"
+    }
 }
 
 # TODO: check if the classname exists
@@ -473,4 +479,5 @@ ALIASES = {
             "Tripleo": "TripleO",
         }
     },
+    "snowflake": {},
 }
