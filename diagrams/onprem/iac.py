@@ -20,12 +20,20 @@ class Awx(_Iac):
     _icon = "awx.png"
 
 
+class Packer(_Iac):
+    _icon = "packer.png"
+
+
 class Puppet(_Iac):
     _icon = "puppet.png"
 
 
 class Terraform(_Iac):
     _icon = "terraform.png"
+
+
+class Vagrant(_Iac):
+    _icon = "vagrant.png"
 
 
 # Aliases
