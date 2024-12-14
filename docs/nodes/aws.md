@@ -1496,6 +1496,9 @@ Node classes list of the aws provider.
 <img width="30" src="/img/resources/aws/storage/multiple-volumes-resource.png" alt="MultipleVolumesResource" style="float: left; padding-right: 5px;" >
 **diagrams.aws.storage.MultipleVolumesResource**
 
+<img width="30" src="/img/resources/aws/storage/s3-access-points.png" alt="S3AccessPoints" style="float: left; padding-right: 5px;" >
+**diagrams.aws.storage.S3AccessPoints**
+
 <img width="30" src="/img/resources/aws/storage/s3-glacier-archive.png" alt="S3GlacierArchive" style="float: left; padding-right: 5px;" >
 **diagrams.aws.storage.S3GlacierArchive**
 
@@ -1504,6 +1507,9 @@ Node classes list of the aws provider.
 
 <img width="30" src="/img/resources/aws/storage/s3-glacier.png" alt="S3Glacier" style="float: left; padding-right: 5px;" >
 **diagrams.aws.storage.S3Glacier**
+
+<img width="30" src="/img/resources/aws/storage/s3-object-lambda-access-points.png" alt="S3ObjectLambdaAccessPoints" style="float: left; padding-right: 5px;" >
+**diagrams.aws.storage.S3ObjectLambdaAccessPoints**
 
 <img width="30" src="/img/resources/aws/storage/simple-storage-service-s3-bucket-with-objects.png" alt="SimpleStorageServiceS3BucketWithObjects" style="float: left; padding-right: 5px;" >
 **diagrams.aws.storage.SimpleStorageServiceS3BucketWithObjects**
