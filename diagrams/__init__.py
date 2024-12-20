@@ -82,7 +82,7 @@ class Diagram:
         filename: str = "",
         direction: str = "LR",
         curvestyle: str = "ortho",
-        outformat: Union[str, list[str]] = "png",
+        outformat: Union[str, List[str]] = "png",
         autolabel: bool = False,
         show: bool = True,
         strict: bool = False,
