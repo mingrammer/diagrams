@@ -60,6 +60,10 @@ class MultipleVolumesResource(_Storage):
     _icon = "multiple-volumes-resource.png"
 
 
+class S3AccessPoints(_Storage):
+    _icon = "s3-access-points.png"
+
+
 class S3GlacierArchive(_Storage):
     _icon = "s3-glacier-archive.png"
 
@@ -70,6 +74,10 @@ class S3GlacierVault(_Storage):
 
 class S3Glacier(_Storage):
     _icon = "s3-glacier.png"
+
+
+class S3ObjectLambdaAccessPoints(_Storage):
+    _icon = "s3-object-lambda-access-points.png"
 
 
 class SimpleStorageServiceS3BucketWithObjects(_Storage):
