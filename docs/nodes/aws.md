@@ -851,6 +851,9 @@ Node classes list of the aws provider.
 <img width="30" src="/img/resources/aws/management/cloudwatch-event-time-based.png" alt="CloudwatchEventTimeBased" style="float: left; padding-right: 5px;" >
 **diagrams.aws.management.CloudwatchEventTimeBased**
 
+<img width="30" src="/img/resources/aws/management/cloudwatch-logs.png" alt="CloudwatchLogs" style="float: left; padding-right: 5px;" >
+**diagrams.aws.management.CloudwatchLogs**
+
 <img width="30" src="/img/resources/aws/management/cloudwatch-rule.png" alt="CloudwatchRule" style="float: left; padding-right: 5px;" >
 **diagrams.aws.management.CloudwatchRule**
 
