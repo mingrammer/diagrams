@@ -136,6 +136,9 @@ def cleaner_outscale(f):
 def cleaner_openstack(f):
     return f.lower()
 
+def cleaner_gis(f):
+    return f.lower()
+
 
 cleaners = {
     "onprem": cleaner_onprem,
@@ -154,6 +157,7 @@ cleaners = {
     "outscale": cleaner_outscale,
     "generic": cleaner_generic,
     "openstack": cleaner_openstack,
+    "gis": cleaner_gis,
 }
 
 

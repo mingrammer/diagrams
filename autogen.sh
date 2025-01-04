@@ -20,6 +20,7 @@ providers=(
   "generic"
   "openstack"
   "outscale"
+  "gis"
 )
 
 if ! [ -x "$(command -v round)" ]; then
