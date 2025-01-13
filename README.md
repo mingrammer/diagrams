@@ -32,6 +32,7 @@ Diagrams lets you draw the cloud system architecture **in Python code**. It was 
 ![firebase provider](https://img.shields.io/badge/Firebase-orange?logo=firebase&color=FFCA28)
 ![digital ocean provider](https://img.shields.io/badge/DigitalOcean-0080ff?logo=digitalocean&color=0080ff)
 ![elastic provider](https://img.shields.io/badge/Elastic-orange?logo=elastic&color=005571)
+![sap provider](https://img.shields.io/badge/SAP-blue?logo=sap&color=ffffff)
 ![outscale provider](https://img.shields.io/badge/OutScale-orange?color=5f87bf)
 ![on premises provider](https://img.shields.io/badge/OnPremises-orange?color=5f87bf)
 ![generic provider](https://img.shields.io/badge/Generic-orange?color=5f87bf)
