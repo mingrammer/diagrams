@@ -3,13 +3,13 @@ id: diagram
 title: Diagrams
 ---
 
-Diagram is a primary object representing a diagram.
+`Diagram` is a primary object representing a diagram.
 
 ## Basic
 
-Diagram represents a global diagram context.
+`Diagram` represents a global diagram context.
 
-You can create a diagram context with Diagram class. The first parameter of Diagram constructor will be used for output filename.
+You can create a diagram context with the `Diagram` class. The first parameter of the `Diagram` constructor will be used to generate the output filename.
 
 ```python
 from diagrams import Diagram
@@ -19,17 +19,17 @@ with Diagram("Simple Diagram"):
     EC2("web")
 ```
 
-And if you run the above script with below command,
+If you run the above script with the command below,
 
 ```shell
 $ python diagram.py
 ```
 
-It will generate an image file with single `EC2` node drawn as `simple_diagram.png` on your working directory, and open that created image file immediately.
+it will generate an image file with single `EC2` node drawn as `simple_diagram.png` in your working directory and open that created image file immediately.
 
 ## Jupyter Notebooks
 
-Diagrams can be also rendered directly inside the notebook as like this:
+Diagrams can also be rendered directly inside Jupyter notebooks like this:
 
 ```python
 from diagrams import Diagram
@@ -42,9 +42,9 @@ diag
 
 ## Options
 
-You can specify the output file format with `outformat` parameter. Default is **png**.
+You can specify the output file format with the `outformat` parameter. The default is **png**.
 
-> (png, jpg, svg, pdf and dot) are allowed.
+> Allowed formats are: png, jpg, svg, pdf, and dot
 
 ```python
 from diagrams import Diagram
@@ -54,7 +54,7 @@ with Diagram("Simple Diagram", outformat="jpg"):
     EC2("web")
 ```
 
-The `outformat` parameter also support list to output all the defined output in one call.
+The `outformat` parameter also supports a list to output all the defined outputs in one call:
 
 ```python
 from diagrams import Diagram
@@ -64,7 +64,7 @@ with Diagram("Simple Diagram Multi Output", outformat=["jpg", "png", "dot"]):
     EC2("web")
 ```
 
-You can specify the output filename with `filename` parameter. The extension shouldn't be included, it's determined by the `outformat` parameter.
+You can specify the output filename with the `filename` parameter. The extension shouldn't be included, it's determined by the `outformat` parameter.
 
 ```python
 from diagrams import Diagram
@@ -74,7 +74,7 @@ with Diagram("Simple Diagram", filename="my_diagram"):
     EC2("web")
 ```
 
-You can also disable the automatic file opening by setting the `show` parameter as **false**. Default is **true**.
+You can also disable the automatic file opening by setting the `show` parameter to **false**. The default is **true**.
 
 ```python
 from diagrams import Diagram
@@ -84,7 +84,7 @@ with Diagram("Simple Diagram", show=False):
     EC2("web")
 ```
 
-It allows custom Graphviz dot attributes options.
+Diagrams also allow custom Graphviz dot attributes options.
 
 > `graph_attr`, `node_attr` and `edge_attr` are supported. Here is a [reference link](https://www.graphviz.org/doc/info/attrs.html).
 

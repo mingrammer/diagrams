@@ -3,7 +3,7 @@ id: elastic
 title: Elastic
 ---
 
-Node classes list of elastic provider.
+Node classes list of the elastic provider.
 
 ## elastic.agent
 

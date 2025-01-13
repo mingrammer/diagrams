@@ -10,3 +10,7 @@ class _GCP(Node):
     _icon_dir = "resources/gcp"
 
     fontcolor = "#2d3436"
+
+
+class GCP(_GCP):
+    _icon = "gcp.png"

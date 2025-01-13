@@ -5,7 +5,8 @@ from typing import Iterable
 from jinja2 import Environment, FileSystemLoader, Template, exceptions
 
 import config as cfg
-from . import app_root_dir, doc_root_dir, resource_dir, template_dir, base_dir
+
+from . import app_root_dir, base_dir, doc_root_dir, resource_dir, template_dir
 
 _usage = "Usage: generate.py <provider>"
 
@@ -42,11 +43,11 @@ def gen_classes(pvd: str, typ: str, paths: Iterable[str]) -> str:
 
 def gen_apidoc(pvd: str, typ_paths: dict) -> str:
     try:
-      default_tmp = cfg.TMPL_APIDOC.split('.')
-      tmpl_file = f"{default_tmp[0]}_{pvd}.{default_tmp[1]}"
-      tmpl = load_tmpl(tmpl_file)
+        default_tmp = cfg.TMPL_APIDOC.split(".")
+        tmpl_file = f"{default_tmp[0]}_{pvd}.{default_tmp[1]}"
+        tmpl = load_tmpl(tmpl_file)
     except exceptions.TemplateNotFound:
-      tmpl = load_tmpl(cfg.TMPL_APIDOC)
+        tmpl = load_tmpl(cfg.TMPL_APIDOC)
 
     # TODO: remove
     def _gen_class_name(path: str) -> str:
@@ -61,7 +62,8 @@ def gen_apidoc(pvd: str, typ_paths: dict) -> str:
             name = _gen_class_name(path)
             resource_path = os.path.join(resource_root, path)
             alias = cfg.ALIASES[pvd].get(typ, {}).get(name)
-            typ_classes[typ].append({"name": name, "alias": alias, "resource_path": resource_path})
+            typ_classes[typ].append(
+                {"name": name, "alias": alias, "resource_path": resource_path})
     return tmpl.render(pvd=pvd, typ_classes=typ_classes)
 
 

@@ -3,7 +3,7 @@ id: oci
 title: OCI
 ---
 
-Node classes list of oci provider.
+Node classes list of the oci provider.
 
 ## oci.compute
 
@@ -77,11 +77,11 @@ Node classes list of oci provider.
 <img width="30" src="/img/resources/oci/connectivity/customer-datacntr-white.png" alt="CustomerDatacntrWhite" style="float: left; padding-right: 5px;" >
 **diagrams.oci.connectivity.CustomerDatacntrWhite**
 
-<img width="30" src="/img/resources/oci/connectivity/customer-premise-white.png" alt="CustomerPremiseWhite" style="float: left; padding-right: 5px;" >
-**diagrams.oci.connectivity.CustomerPremiseWhite**
+<img width="30" src="/img/resources/oci/connectivity/customer-premises-white.png" alt="CustomerPremisesWhite" style="float: left; padding-right: 5px;" >
+**diagrams.oci.connectivity.CustomerPremisesWhite**
 
-<img width="30" src="/img/resources/oci/connectivity/customer-premise.png" alt="CustomerPremise" style="float: left; padding-right: 5px;" >
-**diagrams.oci.connectivity.CustomerPremise**
+<img width="30" src="/img/resources/oci/connectivity/customer-premises.png" alt="CustomerPremises" style="float: left; padding-right: 5px;" >
+**diagrams.oci.connectivity.CustomerPremises**
 
 <img width="30" src="/img/resources/oci/connectivity/disconnected-regions-white.png" alt="DisconnectedRegionsWhite" style="float: left; padding-right: 5px;" >
 **diagrams.oci.connectivity.DisconnectedRegionsWhite**

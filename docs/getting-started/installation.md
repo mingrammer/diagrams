@@ -3,11 +3,13 @@ id: installation
 title: Installation
 ---
 
-It requires **Python 3.6** or higher, check your Python version first.
+**diagrams** requires **Python 3.7** or higher, check your Python version first.
 
-It uses [Graphviz](https://www.graphviz.org/) to render the diagram, so you need to [install Graphviz](https://graphviz.gitlab.io/download/) to use **diagrams**. After installing graphviz (or already have it), install the **diagrams**.
+**diagrams** uses [Graphviz](https://www.graphviz.org/) to render the diagram, so you need to [install Graphviz](https://graphviz.gitlab.io/download/) to use it.
 
-> macOS users can download the Graphviz via `brew install graphviz` if you're using [Homebrew](https://brew.sh). Similarly, Windows users with [Chocolatey](https://chocolatey.org) installed can run `choco install graphviz`.
+> macOS users using [Homebrew](https://brew.sh) can install Graphviz via `brew install graphviz` . Similarly, Windows users with [Chocolatey](https://chocolatey.org) installed can run `choco install graphviz`.
+
+After installing Graphviz (or if you already have it), install **diagrams**:
 
 ```shell
 # using pip (pip3)
@@ -33,16 +35,18 @@ with Diagram("Web Service", show=False):
     ELB("lb") >> EC2("web") >> RDS("userdb")
 ```
 
-This code generates below diagram.
+To generate the diagram, run:
 
 ```shell
 $ python diagram.py
 ```
 
+This generates the diagram below:
+
 ![web service diagram](/img/web_service_diagram.png)
 
-It will be saved as `web_service.png` on your working directory.
+It will be saved as `web_service.png` in your working directory.
 
 ## Next
 
-See more [Examples](/docs/getting-started/examples) or see [Guides](/docs/guides/diagram) page for more details.
+See more [Examples](/docs/getting-started/examples) or see the [Guides](/docs/guides/diagram) page for more details.

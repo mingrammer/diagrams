@@ -4,7 +4,7 @@ from pathlib import Path
 import config as cfg
 
 
-def base_dir() -> str:
+def base_dir() -> Path:
     return Path(os.path.abspath(os.path.dirname(__file__))).parent
 
 

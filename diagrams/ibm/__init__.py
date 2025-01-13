@@ -10,3 +10,7 @@ class _IBM(Node):
     _icon_dir = "resources/ibm"
 
     fontcolor = "#ffffff"
+
+
+class IBM(_IBM):
+    _icon = "ibm.png"

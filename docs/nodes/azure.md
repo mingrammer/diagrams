@@ -3,7 +3,7 @@ id: azure
 title: Azure
 ---
 
-Node classes list of azure provider.
+Node classes list of the azure provider.
 
 ## azure.analytics
 
@@ -70,6 +70,9 @@ Node classes list of azure provider.
 
 <img width="30" src="/img/resources/azure/compute/cloudsimple-virtual-machines.png" alt="CloudsimpleVirtualMachines" style="float: left; padding-right: 5px;" >
 **diagrams.azure.compute.CloudsimpleVirtualMachines**
+
+<img width="30" src="/img/resources/azure/compute/container-apps.png" alt="ContainerApps" style="float: left; padding-right: 5px;" >
+**diagrams.azure.compute.ContainerApps**
 
 <img width="30" src="/img/resources/azure/compute/container-instances.png" alt="ContainerInstances" style="float: left; padding-right: 5px;" >
 **diagrams.azure.compute.ContainerInstances**
@@ -485,6 +488,12 @@ Node classes list of azure provider.
 ## azure.ml
 
 
+<img width="30" src="/img/resources/azure/ml/azure-open-ai.png" alt="AzureOpenAI" style="float: left; padding-right: 5px;" >
+**diagrams.azure.ml.AzureOpenAI**
+
+<img width="30" src="/img/resources/azure/ml/azure-speed-to-text.png" alt="AzureSpeedToText" style="float: left; padding-right: 5px;" >
+**diagrams.azure.ml.AzureSpeedToText**
+
 <img width="30" src="/img/resources/azure/ml/batch-ai.png" alt="BatchAI" style="float: left; padding-right: 5px;" >
 **diagrams.azure.ml.BatchAI**
 
@@ -520,6 +529,21 @@ Node classes list of azure provider.
 
 <img width="30" src="/img/resources/azure/mobile/notification-hubs.png" alt="NotificationHubs" style="float: left; padding-right: 5px;" >
 **diagrams.azure.mobile.NotificationHubs**
+
+## azure.monitor
+
+
+<img width="30" src="/img/resources/azure/monitor/change-analysis.png" alt="ChangeAnalysis" style="float: left; padding-right: 5px;" >
+**diagrams.azure.monitor.ChangeAnalysis**
+
+<img width="30" src="/img/resources/azure/monitor/logs.png" alt="Logs" style="float: left; padding-right: 5px;" >
+**diagrams.azure.monitor.Logs**
+
+<img width="30" src="/img/resources/azure/monitor/metrics.png" alt="Metrics" style="float: left; padding-right: 5px;" >
+**diagrams.azure.monitor.Metrics**
+
+<img width="30" src="/img/resources/azure/monitor/monitor.png" alt="Monitor" style="float: left; padding-right: 5px;" >
+**diagrams.azure.monitor.Monitor**
 
 ## azure.network
 
@@ -571,6 +595,9 @@ Node classes list of azure provider.
 
 <img width="30" src="/img/resources/azure/network/on-premises-data-gateways.png" alt="OnPremisesDataGateways" style="float: left; padding-right: 5px;" >
 **diagrams.azure.network.OnPremisesDataGateways**
+
+<img width="30" src="/img/resources/azure/network/private-endpoint.png" alt="PrivateEndpoint" style="float: left; padding-right: 5px;" >
+**diagrams.azure.network.PrivateEndpoint**
 
 <img width="30" src="/img/resources/azure/network/public-ip-addresses.png" alt="PublicIpAddresses" style="float: left; padding-right: 5px;" >
 **diagrams.azure.network.PublicIpAddresses**

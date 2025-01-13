@@ -4,7 +4,7 @@
 
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 [![pypi version](https://badge.fury.io/py/diagrams.svg)](https://badge.fury.io/py/diagrams)
-![python version](https://img.shields.io/badge/python-%3E%3D%203.6-blue?logo=python)
+![python version](https://img.shields.io/badge/python-%3E%3D%203.9-blue?logo=python)
 ![Run tests](https://github.com/mingrammer/diagrams/workflows/Run%20tests/badge.svg?branch=master)
 [![todos](https://badgen.net/https/api.tickgit.com/badgen/github.com/mingrammer/diagrams?label=todos)](https://www.tickgit.com/browse?repo=github.com/mingrammer/diagrams)
 ![contributors](https://img.shields.io/github/contributors/mingrammer/diagrams)
@@ -13,7 +13,7 @@
 
 **Diagram as Code**.
 
-Diagrams lets you draw the cloud system architecture **in Python code**. It was born for **prototyping** a new system architecture design without any design tools. You can also describe or visualize the existing system architecture as well. Diagrams currently supports main major providers including: `AWS`, `Azure`, `GCP`, `Kubernetes`, `Alibaba Cloud`, `Oracle Cloud` etc... It also supports `On-Premise` nodes, `SaaS` and major `Programming` frameworks and languages.
+Diagrams lets you draw the cloud system architecture **in Python code**. It was born for **prototyping** a new system architecture design without any design tools. You can also describe or visualize the existing system architecture as well. Diagrams currently supports main major providers including: `AWS`, `Azure`, `GCP`, `Kubernetes`, `Alibaba Cloud`, `Oracle Cloud` etc... It also supports `On-Premises` nodes, `SaaS` and major `Programming` frameworks and languages.
 
 **Diagram as Code** also allows you to **track** the architecture diagram changes in any **version control** system.
 
@@ -33,7 +33,7 @@ Diagrams lets you draw the cloud system architecture **in Python code**. It was 
 ![digital ocean provider](https://img.shields.io/badge/DigitalOcean-0080ff?logo=digitalocean&color=0080ff)
 ![elastic provider](https://img.shields.io/badge/Elastic-orange?logo=elastic&color=005571)
 ![outscale provider](https://img.shields.io/badge/OutScale-orange?color=5f87bf)
-![on premise provider](https://img.shields.io/badge/OnPremise-orange?color=5f87bf)
+![on premises provider](https://img.shields.io/badge/OnPremises-orange?color=5f87bf)
 ![generic provider](https://img.shields.io/badge/Generic-orange?color=5f87bf)
 ![programming provider](https://img.shields.io/badge/Programming-orange?color=5f87bf)
 ![saas provider](https://img.shields.io/badge/SaaS-orange?color=5f87bf)
@@ -41,7 +41,7 @@ Diagrams lets you draw the cloud system architecture **in Python code**. It was 
 
 ## Getting Started
 
-It requires **Python 3.6** or higher, check your Python version first.
+It requires **Python 3.9** or higher, check your Python version first.
 
 It uses [Graphviz](https://www.graphviz.org/) to render the diagram, so you need to [install Graphviz](https://graphviz.gitlab.io/download/) to use **diagrams**. After installing graphviz (or already have it), install the **diagrams**.
 
@@ -64,7 +64,7 @@ You can start with [quick start](https://diagrams.mingrammer.com/docs/getting-st
 
 | Event Processing                                             | Stateful Architecture                                        | Advanced Web Service                                         |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![event processing](https://diagrams.mingrammer.com/img/event_processing_diagram.png) | ![stateful architecture](https://diagrams.mingrammer.com/img/stateful_architecture_diagram.png) | ![advanced web service with on-premise](https://diagrams.mingrammer.com/img/advanced_web_service_with_on-premise.png) |
+| ![event processing](https://diagrams.mingrammer.com/img/event_processing_diagram.png) | ![stateful architecture](https://diagrams.mingrammer.com/img/stateful_architecture_diagram.png) | ![advanced web service with on-premises](https://diagrams.mingrammer.com/img/advanced_web_service_with_on-premises.png) |
 
 You can find all the examples on the [examples](https://diagrams.mingrammer.com/docs/getting-started/examples) page.
 
@@ -76,7 +76,7 @@ To contribute to diagram, check out [contribution guidelines](CONTRIBUTING.md).
 
 ## Who uses it?
 
-[GitPitch](https://gitpitch.github.io/gitpitch) is the perfect slide deck solution for Tech Conferences, Training, Developer Advocates, and Educators. Diagrams is now available as a dedicated [Cloud Diagram Markdown Widget](https://gitpitch.github.io/gitpitch/#/diagrams/cloud-architecture) so you can use Diagrams directly on any slide for conferences, meetups, and training.
+[Apache Airflow](https://github.com/apache/airflow) is the most popular data workflow Orchestrator. Airflow uses Diagrams to generate architecture diagrams in their documentation.
 
 [Cloudiscovery](https://github.com/Cloud-Architects/cloudiscovery) helps you to analyze resources in your cloud (AWS/GCP/Azure/Alibaba/IBM) account. It allows you to create a diagram of analyzed cloud resource map based on this Diagrams library, so you can draw your existing cloud infrastructure with Cloudiscovery.
 

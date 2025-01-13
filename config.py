@@ -249,6 +249,9 @@ ALIASES = {
             "ElbClassicLoadBalancer": "CLB",
             "ElbNetworkLoadBalancer": "NLB",
             "GlobalAccelerator": "GAX",
+            "InternetGateway": "IGW",
+            "TransitGateway": "TGW",
+            "TransitGatewayAttachment": "TGWAttach",
         },
         "security": {
             "CertificateManager": "ACM",
@@ -433,7 +436,9 @@ ALIASES = {
     "programming": {
         "framework": {
             "Fastapi": "FastAPI",
-            "Graphql": "GraphQL"
+            "Graphql": "GraphQL",
+            "Dotnet": "DotNet",
+            "Nextjs": "NextJs"
         },
         "language": {
             "Javascript": "JavaScript",

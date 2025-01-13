@@ -3,7 +3,7 @@ id: programming
 title: Programming
 ---
 
-Node classes list of programming provider.
+Node classes list of the programming provider.
 
 ## programming.flowchart
 
@@ -89,8 +89,14 @@ Node classes list of programming provider.
 <img width="30" src="/img/resources/programming/framework/backbone.png" alt="Backbone" style="float: left; padding-right: 5px;" >
 **diagrams.programming.framework.Backbone**
 
+<img width="30" src="/img/resources/programming/framework/camel.png" alt="Camel" style="float: left; padding-right: 5px;" >
+**diagrams.programming.framework.Camel**
+
 <img width="30" src="/img/resources/programming/framework/django.png" alt="Django" style="float: left; padding-right: 5px;" >
 **diagrams.programming.framework.Django**
+
+<img width="30" src="/img/resources/programming/framework/dotnet.png" alt="Dotnet" style="float: left; padding-right: 5px;" >
+**diagrams.programming.framework.Dotnet**, **DotNet** (alias)
 
 <img width="30" src="/img/resources/programming/framework/ember.png" alt="Ember" style="float: left; padding-right: 5px;" >
 **diagrams.programming.framework.Ember**
@@ -107,11 +113,26 @@ Node classes list of programming provider.
 <img width="30" src="/img/resources/programming/framework/graphql.png" alt="Graphql" style="float: left; padding-right: 5px;" >
 **diagrams.programming.framework.Graphql**, **GraphQL** (alias)
 
+<img width="30" src="/img/resources/programming/framework/hibernate.png" alt="Hibernate" style="float: left; padding-right: 5px;" >
+**diagrams.programming.framework.Hibernate**
+
+<img width="30" src="/img/resources/programming/framework/jhipster.png" alt="Jhipster" style="float: left; padding-right: 5px;" >
+**diagrams.programming.framework.Jhipster**
+
 <img width="30" src="/img/resources/programming/framework/laravel.png" alt="Laravel" style="float: left; padding-right: 5px;" >
 **diagrams.programming.framework.Laravel**
 
 <img width="30" src="/img/resources/programming/framework/micronaut.png" alt="Micronaut" style="float: left; padding-right: 5px;" >
 **diagrams.programming.framework.Micronaut**
+
+<img width="30" src="/img/resources/programming/framework/nextjs.png" alt="Nextjs" style="float: left; padding-right: 5px;" >
+**diagrams.programming.framework.Nextjs**, **NextJs** (alias)
+
+<img width="30" src="/img/resources/programming/framework/phoenix.png" alt="Phoenix" style="float: left; padding-right: 5px;" >
+**diagrams.programming.framework.Phoenix**
+
+<img width="30" src="/img/resources/programming/framework/quarkus.png" alt="Quarkus" style="float: left; padding-right: 5px;" >
+**diagrams.programming.framework.Quarkus**
 
 <img width="30" src="/img/resources/programming/framework/rails.png" alt="Rails" style="float: left; padding-right: 5px;" >
 **diagrams.programming.framework.Rails**
@@ -122,11 +143,17 @@ Node classes list of programming provider.
 <img width="30" src="/img/resources/programming/framework/spring.png" alt="Spring" style="float: left; padding-right: 5px;" >
 **diagrams.programming.framework.Spring**
 
+<img width="30" src="/img/resources/programming/framework/sqlpage.png" alt="Sqlpage" style="float: left; padding-right: 5px;" >
+**diagrams.programming.framework.Sqlpage**
+
 <img width="30" src="/img/resources/programming/framework/starlette.png" alt="Starlette" style="float: left; padding-right: 5px;" >
 **diagrams.programming.framework.Starlette**
 
 <img width="30" src="/img/resources/programming/framework/svelte.png" alt="Svelte" style="float: left; padding-right: 5px;" >
 **diagrams.programming.framework.Svelte**
+
+<img width="30" src="/img/resources/programming/framework/vercel.png" alt="Vercel" style="float: left; padding-right: 5px;" >
+**diagrams.programming.framework.Vercel**
 
 <img width="30" src="/img/resources/programming/framework/vue.png" alt="Vue" style="float: left; padding-right: 5px;" >
 **diagrams.programming.framework.Vue**
@@ -193,6 +220,9 @@ Node classes list of programming provider.
 
 <img width="30" src="/img/resources/programming/language/scala.png" alt="Scala" style="float: left; padding-right: 5px;" >
 **diagrams.programming.language.Scala**
+
+<img width="30" src="/img/resources/programming/language/sql.png" alt="Sql" style="float: left; padding-right: 5px;" >
+**diagrams.programming.language.Sql**
 
 <img width="30" src="/img/resources/programming/language/swift.png" alt="Swift" style="float: left; padding-right: 5px;" >
 **diagrams.programming.language.Swift**

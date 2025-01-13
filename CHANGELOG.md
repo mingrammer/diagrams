@@ -394,3 +394,17 @@ The following import changes:
 ### Added
 
 - Support kubernetes diagrams: [3eda1cb](https://github.com/mingrammer/diagrams/commit/3eda1cb6bca8be8a55773d90b93483a8fab3e0f1)
+
+
+## v0.23.5
+
+### Breaking Changes
+
+The following import changes:
+
+#### OCI
+
+| Old import path                                                    | New import path                                               |
+| -------------------------------------------------------------------| --------------------------------------------------------------|
+| `from diagrams.oci.connectivity import CustomerPremiseWhite`       | `from diagrams.oci.connectivity import CustomerPremisesWhite` |
+| `from diagrams.oci.connectivity import CustomerPremises`           | `from diagrams.oci.connectivity import CustomerPremises`      |
