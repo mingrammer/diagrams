@@ -20,6 +20,7 @@ providers=(
   "generic"
   "openstack"
   "outscale"
+  "snowflake"
 )
 
 if ! [ -x "$(command -v round)" ]; then
