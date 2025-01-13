@@ -20,4 +20,8 @@ class Nominatim(_Geocoding):
     _icon = "nominatim.png"
 
 
+class Pelias(_Geocoding):
+    _icon = "pelias.png"
+
+
 # Aliases

@@ -12,6 +12,10 @@ class BAN(_Data):
     _icon = "ban.png"
 
 
+class Here(_Data):
+    _icon = "here.png"
+
+
 class IGN(_Data):
     _icon = "ign.png"
 

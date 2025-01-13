@@ -8,6 +8,10 @@ class _Desktop(_GIS):
     _icon_dir = "resources/gis/desktop"
 
 
+class Maptunik(_Desktop):
+    _icon = "maptunik.png"
+
+
 class QGIS(_Desktop):
     _icon = "qgis.png"
 

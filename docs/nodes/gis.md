@@ -3,7 +3,7 @@ id: gis
 title: GIS
 ---
 
-Node classes list of gis provider.
+Node classes list of the gis provider.
 
 ## gis.cli
 
@@ -11,8 +11,17 @@ Node classes list of gis provider.
 <img width="30" src="/img/resources/gis/cli/gdal.png" alt="Gdal" style="float: left; padding-right: 5px;" >
 **diagrams.gis.cli.Gdal**
 
+<img width="30" src="/img/resources/gis/cli/imposm.png" alt="Imposm" style="float: left; padding-right: 5px;" >
+**diagrams.gis.cli.Imposm**
+
 <img width="30" src="/img/resources/gis/cli/lastools.png" alt="Lastools" style="float: left; padding-right: 5px;" >
 **diagrams.gis.cli.Lastools**
+
+<img width="30" src="/img/resources/gis/cli/mdal.png" alt="Mdal" style="float: left; padding-right: 5px;" >
+**diagrams.gis.cli.Mdal**
+
+<img width="30" src="/img/resources/gis/cli/pdal.png" alt="Pdal" style="float: left; padding-right: 5px;" >
+**diagrams.gis.cli.Pdal**
 
 ## gis.cplusplus
 
@@ -25,6 +34,9 @@ Node classes list of gis provider.
 
 <img width="30" src="/img/resources/gis/data/ban.png" alt="BAN" style="float: left; padding-right: 5px;" >
 **diagrams.gis.data.BAN**
+
+<img width="30" src="/img/resources/gis/data/here.png" alt="Here" style="float: left; padding-right: 5px;" >
+**diagrams.gis.data.Here**
 
 <img width="30" src="/img/resources/gis/data/ign.png" alt="IGN" style="float: left; padding-right: 5px;" >
 **diagrams.gis.data.IGN**
@@ -40,6 +52,9 @@ Node classes list of gis provider.
 
 ## gis.desktop
 
+
+<img width="30" src="/img/resources/gis/desktop/maptunik.png" alt="Maptunik" style="float: left; padding-right: 5px;" >
+**diagrams.gis.desktop.Maptunik**
 
 <img width="30" src="/img/resources/gis/desktop/qgis.png" alt="QGIS" style="float: left; padding-right: 5px;" >
 **diagrams.gis.desktop.QGIS**
@@ -64,6 +79,12 @@ Node classes list of gis provider.
 
 <img width="30" src="/img/resources/gis/geocoding/nominatim.png" alt="Nominatim" style="float: left; padding-right: 5px;" >
 **diagrams.gis.geocoding.Nominatim**
+
+<img width="30" src="/img/resources/gis/geocoding/pelias.png" alt="Pelias" style="float: left; padding-right: 5px;" >
+**diagrams.gis.geocoding.Pelias**
+
+## gis.georchestra
+
 
 ## gis.java
 
@@ -107,6 +128,9 @@ Node classes list of gis provider.
 <img width="30" src="/img/resources/gis/mobile/qfield.png" alt="Qfield" style="float: left; padding-right: 5px;" >
 **diagrams.gis.mobile.Qfield**
 
+<img width="30" src="/img/resources/gis/mobile/smash.png" alt="Smash" style="float: left; padding-right: 5px;" >
+**diagrams.gis.mobile.Smash**
+
 ## gis.ogc
 
 
@@ -140,8 +164,8 @@ Node classes list of gis provider.
 <img width="30" src="/img/resources/gis/routing/graphhopper.png" alt="Graphhopper" style="float: left; padding-right: 5px;" >
 **diagrams.gis.routing.Graphhopper**
 
-<img width="30" src="/img/resources/gis/routing/osmr.png" alt="Osmr" style="float: left; padding-right: 5px;" >
-**diagrams.gis.routing.Osmr**
+<img width="30" src="/img/resources/gis/routing/osrm.png" alt="Osrm" style="float: left; padding-right: 5px;" >
+**diagrams.gis.routing.Osrm**
 
 <img width="30" src="/img/resources/gis/routing/pgrouting.png" alt="Pgrouting" style="float: left; padding-right: 5px;" >
 **diagrams.gis.routing.Pgrouting**
@@ -188,6 +212,9 @@ Node classes list of gis provider.
 <img width="30" src="/img/resources/gis/server/geowebcache.png" alt="Geowebcache" style="float: left; padding-right: 5px;" >
 **diagrams.gis.server.Geowebcache**
 
+<img width="30" src="/img/resources/gis/server/kepler.png" alt="Kepler" style="float: left; padding-right: 5px;" >
+**diagrams.gis.server.Kepler**
+
 <img width="30" src="/img/resources/gis/server/mapproxy.png" alt="Mapproxy" style="float: left; padding-right: 5px;" >
 **diagrams.gis.server.Mapproxy**
 
@@ -196,6 +223,12 @@ Node classes list of gis provider.
 
 <img width="30" src="/img/resources/gis/server/mapstore.png" alt="Mapstore" style="float: left; padding-right: 5px;" >
 **diagrams.gis.server.Mapstore**
+
+<img width="30" src="/img/resources/gis/server/mviewer.png" alt="Mviewer" style="float: left; padding-right: 5px;" >
+**diagrams.gis.server.Mviewer**
+
+<img width="30" src="/img/resources/gis/server/pg_tileserv.png" alt="Pg_Tileserv" style="float: left; padding-right: 5px;" >
+**diagrams.gis.server.Pg_Tileserv**
 
 <img width="30" src="/img/resources/gis/server/pycsw.png" alt="Pycsw" style="float: left; padding-right: 5px;" >
 **diagrams.gis.server.Pycsw**

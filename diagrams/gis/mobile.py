@@ -16,4 +16,8 @@ class Qfield(_Mobile):
     _icon = "qfield.png"
 
 
+class Smash(_Mobile):
+    _icon = "smash.png"
+
+
 # Aliases

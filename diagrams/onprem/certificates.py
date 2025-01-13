@@ -12,6 +12,10 @@ class CertManager(_Certificates):
     _icon = "cert-manager.png"
 
 
+class Certbot(_Certificates):
+    _icon = "certbot.png"
+
+
 class LetsEncrypt(_Certificates):
     _icon = "lets-encrypt.png"
 

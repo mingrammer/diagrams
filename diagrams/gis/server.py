@@ -56,6 +56,10 @@ class Geowebcache(_Server):
     _icon = "geowebcache.png"
 
 
+class Kepler(_Server):
+    _icon = "kepler.png"
+
+
 class Mapproxy(_Server):
     _icon = "mapproxy.png"
 
@@ -66,6 +70,14 @@ class Mapserver(_Server):
 
 class Mapstore(_Server):
     _icon = "mapstore.png"
+
+
+class Mviewer(_Server):
+    _icon = "mviewer.png"
+
+
+class Pg_Tileserv(_Server):
+    _icon = "pg_tileserv.png"
 
 
 class Pycsw(_Server):

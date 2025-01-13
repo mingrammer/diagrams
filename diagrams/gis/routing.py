@@ -12,8 +12,8 @@ class Graphhopper(_Routing):
     _icon = "graphhopper.png"
 
 
-class Osmr(_Routing):
-    _icon = "osmr.png"
+class Osrm(_Routing):
+    _icon = "osrm.png"
 
 
 class Pgrouting(_Routing):

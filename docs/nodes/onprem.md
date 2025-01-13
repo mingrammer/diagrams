@@ -98,6 +98,9 @@ Node classes list of the onprem provider.
 <img width="30" src="/img/resources/onprem/certificates/cert-manager.png" alt="CertManager" style="float: left; padding-right: 5px;" >
 **diagrams.onprem.certificates.CertManager**
 
+<img width="30" src="/img/resources/onprem/certificates/certbot.png" alt="Certbot" style="float: left; padding-right: 5px;" >
+**diagrams.onprem.certificates.Certbot**
+
 <img width="30" src="/img/resources/onprem/certificates/lets-encrypt.png" alt="LetsEncrypt" style="float: left; padding-right: 5px;" >
 **diagrams.onprem.certificates.LetsEncrypt**
 
