@@ -23,12 +23,6 @@ Node classes list of the gis provider.
 <img width="30" src="/img/resources/gis/cli/pdal.png" alt="Pdal" style="float: left; padding-right: 5px;" >
 **diagrams.gis.cli.Pdal**
 
-## gis.cplusplus
-
-
-<img width="30" src="/img/resources/gis/cplusplus/mapnik.png" alt="Mapnik" style="float: left; padding-right: 5px;" >
-**diagrams.gis.cplusplus.Mapnik**
-
 ## gis.data
 
 
@@ -241,3 +235,9 @@ Node classes list of the gis provider.
 
 <img width="30" src="/img/resources/gis/server/zooproject.png" alt="Zooproject" style="float: left; padding-right: 5px;" >
 **diagrams.gis.server.Zooproject**
+
+## gis.toolkit
+
+
+<img width="30" src="/img/resources/gis/toolkit/mapnik.png" alt="Mapnik" style="float: left; padding-right: 5px;" >
+**diagrams.gis.toolkit.Mapnik**
