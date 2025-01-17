@@ -7,7 +7,7 @@ title: Installation
 
 **diagrams** uses [Graphviz](https://www.graphviz.org/) to render the diagram, so you need to [install Graphviz](https://graphviz.gitlab.io/download/) to use it.
 
-> macOS users using [Homebrew](https://brew.sh) can install Graphviz via `brew install graphviz` . Similarly, Windows users with [Chocolatey](https://chocolatey.org) installed can run `choco install graphviz`.
+> macOS users using [Homebrew](https://brew.sh) can install Graphviz via `brew install graphviz` . Similarly, Windows users with [Chocolatey](https://chocolatey.org) installed can run `choco install graphviz` or use [Winget](https://learn.microsoft.com/windows/package-manager/) via `winget install Graphviz.Graphviz`.
 
 After installing Graphviz (or if you already have it), install **diagrams**:
 
