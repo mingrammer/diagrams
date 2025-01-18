@@ -17,6 +17,9 @@ Node classes list of the gis provider.
 <img width="30" src="/img/resources/gis/cli/lastools.png" alt="Lastools" style="float: left; padding-right: 5px;" >
 **diagrams.gis.cli.Lastools**
 
+<img width="30" src="/img/resources/gis/cli/mapnik.png" alt="Mapnik" style="float: left; padding-right: 5px;" >
+**diagrams.gis.cli.Mapnik**
+
 <img width="30" src="/img/resources/gis/cli/mdal.png" alt="Mdal" style="float: left; padding-right: 5px;" >
 **diagrams.gis.cli.Mdal**
 
@@ -238,6 +241,3 @@ Node classes list of the gis provider.
 
 ## gis.toolkit
 
-
-<img width="30" src="/img/resources/gis/toolkit/mapnik.png" alt="Mapnik" style="float: left; padding-right: 5px;" >
-**diagrams.gis.toolkit.Mapnik**

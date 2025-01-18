@@ -8,8 +8,4 @@ class _Toolkit(_GIS):
     _icon_dir = "resources/gis/toolkit"
 
 
-class Mapnik(_Toolkit):
-    _icon = "mapnik.png"
-
-
 # Aliases

@@ -20,6 +20,10 @@ class Lastools(_Cli):
     _icon = "lastools.png"
 
 
+class Mapnik(_Cli):
+    _icon = "mapnik.png"
+
+
 class Mdal(_Cli):
     _icon = "mdal.png"
 
