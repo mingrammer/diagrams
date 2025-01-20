@@ -407,4 +407,4 @@ The following import changes:
 | Old import path                                                    | New import path                                               |
 | -------------------------------------------------------------------| --------------------------------------------------------------|
 | `from diagrams.oci.connectivity import CustomerPremiseWhite`       | `from diagrams.oci.connectivity import CustomerPremisesWhite` |
-| `from diagrams.oci.connectivity import CustomerPremises`           | `from diagrams.oci.connectivity import CustomerPremises`      |
+| `from diagrams.oci.connectivity import CustomerPremise`           | `from diagrams.oci.connectivity import CustomerPremises`      |
