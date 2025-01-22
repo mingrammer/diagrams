@@ -22,10 +22,17 @@
 	// Configure tool-specific properties.
 	"customizations": {
 		"vscode": {
-			"extensions": ["ms-python.python"]
+			"extensions": [
+				"ms-python.python",
+				"ms-python.debugpy",
+				"mhutchie.git-graph",			
+				"mutantdino.resourcemonitor",
+				"tehpeng.diagramspreviewer"
+			]
 		}
 	}
-
+  "workspaceMount": "source=${localWorkspaceFolder},target=/usr/src/diagrams,type=bind",
+	"workspaceFolder": "/usr/src/diagrams"
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
 }

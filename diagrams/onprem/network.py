@@ -72,6 +72,10 @@ class Linkerd(_Network):
     _icon = "linkerd.png"
 
 
+class Mikrotik(_Network):
+    _icon = "mikrotik.png"
+
+
 class Nginx(_Network):
     _icon = "nginx.png"
 

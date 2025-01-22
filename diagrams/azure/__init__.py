@@ -10,3 +10,7 @@ class _Azure(Node):
     _icon_dir = "resources/azure"
 
     fontcolor = "#ffffff"
+
+
+class Azure(_Azure):
+    _icon = "azure.png"

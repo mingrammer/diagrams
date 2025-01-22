@@ -53,7 +53,7 @@ class Hibernate(_Framework):
 
 
 class Jhipster(_Framework):
-   _icon = "jhipster.png"
+    _icon = "jhipster.png"
 
 
 class Laravel(_Framework):
@@ -66,6 +66,10 @@ class Micronaut(_Framework):
 
 class Nextjs(_Framework):
     _icon = "nextjs.png"
+
+
+class Phoenix(_Framework):
+    _icon = "phoenix.png"
 
 
 class Quarkus(_Framework):
@@ -82,6 +86,10 @@ class React(_Framework):
 
 class Spring(_Framework):
     _icon = "spring.png"
+
+
+class Sqlpage(_Framework):
+    _icon = "sqlpage.png"
 
 
 class Starlette(_Framework):
@@ -106,4 +114,3 @@ FastAPI = Fastapi
 GraphQL = Graphql
 DotNet = Dotnet
 NextJs = Nextjs
-JHipster = Jhipster

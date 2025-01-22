@@ -246,6 +246,9 @@ ALIASES = {
             "ElbClassicLoadBalancer": "CLB",
             "ElbNetworkLoadBalancer": "NLB",
             "GlobalAccelerator": "GAX",
+            "InternetGateway": "IGW",
+            "TransitGateway": "TGW",
+            "TransitGatewayAttachment": "TGWAttach",
         },
         "security": {
             "CertificateManager": "ACM",

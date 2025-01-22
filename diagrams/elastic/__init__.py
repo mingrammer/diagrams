@@ -10,3 +10,7 @@ class _Elastic(Node):
     _icon_dir = "resources/elastic"
 
     fontcolor = "#ffffff"
+
+
+class Elastic(_Elastic):
+    _icon = "elastic.png"

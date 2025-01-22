@@ -1,5 +1,5 @@
-# use latest python 3 alpine image.
-FROM python:3-alpine
+# use latest python alpine image.
+FROM python:3.13.1-alpine3.20
 
 # install system dependencies.
 RUN apk update && apk add --no-cache \
@@ -9,14 +9,14 @@ RUN apk update && apk add --no-cache \
 RUN go install github.com/mingrammer/round@latest
 
 # install fonts
-RUN curl -O https://noto-website.storage.googleapis.com/pkgs/NotoSansCJKjp-hinted.zip \
+RUN curl -O https://noto-website-2.storage.googleapis.com/pkgs/NotoSansCJKjp-hinted.zip \
 && mkdir -p /usr/share/fonts/NotoSansCJKjp \
 && unzip NotoSansCJKjp-hinted.zip -d /usr/share/fonts/NotoSansCJKjp/ \
 && rm NotoSansCJKjp-hinted.zip \
 && fc-cache -fv
 
 # add go bin to path.
-ENV PATH "$PATH:/root/go/bin"
+ENV PATH="$PATH:/root/go/bin"
 
 # project directory.
 WORKDIR /usr/src/diagrams

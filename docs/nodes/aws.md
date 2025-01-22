@@ -317,6 +317,9 @@ Node classes list of the aws provider.
 <img width="30" src="/img/resources/aws/database/dynamodb-items.png" alt="DynamodbItems" style="float: left; padding-right: 5px;" >
 **diagrams.aws.database.DynamodbItems**
 
+<img width="30" src="/img/resources/aws/database/dynamodb-streams.png" alt="DynamodbStreams" style="float: left; padding-right: 5px;" >
+**diagrams.aws.database.DynamodbStreams**
+
 <img width="30" src="/img/resources/aws/database/dynamodb-table.png" alt="DynamodbTable" style="float: left; padding-right: 5px;" >
 **diagrams.aws.database.DynamodbTable**
 
@@ -848,6 +851,9 @@ Node classes list of the aws provider.
 <img width="30" src="/img/resources/aws/management/cloudwatch-event-time-based.png" alt="CloudwatchEventTimeBased" style="float: left; padding-right: 5px;" >
 **diagrams.aws.management.CloudwatchEventTimeBased**
 
+<img width="30" src="/img/resources/aws/management/cloudwatch-logs.png" alt="CloudwatchLogs" style="float: left; padding-right: 5px;" >
+**diagrams.aws.management.CloudwatchLogs**
+
 <img width="30" src="/img/resources/aws/management/cloudwatch-rule.png" alt="CloudwatchRule" style="float: left; padding-right: 5px;" >
 **diagrams.aws.management.CloudwatchRule**
 
@@ -1221,7 +1227,7 @@ Node classes list of the aws provider.
 **diagrams.aws.network.GlobalAccelerator**, **GAX** (alias)
 
 <img width="30" src="/img/resources/aws/network/internet-gateway.png" alt="InternetGateway" style="float: left; padding-right: 5px;" >
-**diagrams.aws.network.InternetGateway**
+**diagrams.aws.network.InternetGateway**, **IGW** (alias)
 
 <img width="30" src="/img/resources/aws/network/nacl.png" alt="Nacl" style="float: left; padding-right: 5px;" >
 **diagrams.aws.network.Nacl**
@@ -1256,8 +1262,11 @@ Node classes list of the aws provider.
 <img width="30" src="/img/resources/aws/network/site-to-site-vpn.png" alt="SiteToSiteVpn" style="float: left; padding-right: 5px;" >
 **diagrams.aws.network.SiteToSiteVpn**
 
+<img width="30" src="/img/resources/aws/network/transit-gateway-attachment.png" alt="TransitGatewayAttachment" style="float: left; padding-right: 5px;" >
+**diagrams.aws.network.TransitGatewayAttachment**, **TGWAttach** (alias)
+
 <img width="30" src="/img/resources/aws/network/transit-gateway.png" alt="TransitGateway" style="float: left; padding-right: 5px;" >
-**diagrams.aws.network.TransitGateway**
+**diagrams.aws.network.TransitGateway**, **TGW** (alias)
 
 <img width="30" src="/img/resources/aws/network/vpc-customer-gateway.png" alt="VPCCustomerGateway" style="float: left; padding-right: 5px;" >
 **diagrams.aws.network.VPCCustomerGateway**
@@ -1490,6 +1499,9 @@ Node classes list of the aws provider.
 <img width="30" src="/img/resources/aws/storage/multiple-volumes-resource.png" alt="MultipleVolumesResource" style="float: left; padding-right: 5px;" >
 **diagrams.aws.storage.MultipleVolumesResource**
 
+<img width="30" src="/img/resources/aws/storage/s3-access-points.png" alt="S3AccessPoints" style="float: left; padding-right: 5px;" >
+**diagrams.aws.storage.S3AccessPoints**
+
 <img width="30" src="/img/resources/aws/storage/s3-glacier-archive.png" alt="S3GlacierArchive" style="float: left; padding-right: 5px;" >
 **diagrams.aws.storage.S3GlacierArchive**
 
@@ -1498,6 +1510,9 @@ Node classes list of the aws provider.
 
 <img width="30" src="/img/resources/aws/storage/s3-glacier.png" alt="S3Glacier" style="float: left; padding-right: 5px;" >
 **diagrams.aws.storage.S3Glacier**
+
+<img width="30" src="/img/resources/aws/storage/s3-object-lambda-access-points.png" alt="S3ObjectLambdaAccessPoints" style="float: left; padding-right: 5px;" >
+**diagrams.aws.storage.S3ObjectLambdaAccessPoints**
 
 <img width="30" src="/img/resources/aws/storage/simple-storage-service-s3-bucket-with-objects.png" alt="SimpleStorageServiceS3BucketWithObjects" style="float: left; padding-right: 5px;" >
 **diagrams.aws.storage.SimpleStorageServiceS3BucketWithObjects**

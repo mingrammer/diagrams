@@ -59,7 +59,8 @@ To be able to develop and run diagrams locally on you Mac device, you should hav
 
     ```shell
     brew install imagemagick inkscape black
-    go get github.com/mingrammer/round
+    go install github.com/mingrammer/round@latest
+    # ln -sf ~/go/bin/round ~/.local/bin/round
     ```
 
 5. Run unit tests to confirm that it's working.
