@@ -240,4 +240,3 @@ Node classes list of the gis provider.
 **diagrams.gis.server.Zooproject**
 
 ## gis.toolkit
-
