@@ -9,7 +9,7 @@
 			"extensions": [
 				"ms-python.python",
 				"ms-python.debugpy",
-				"mhutchie.git-graph",			
+				"mhutchie.git-graph",
 				"mutantdino.resourcemonitor",
 				"tehpeng.diagramspreviewer"
 			]
