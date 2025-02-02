@@ -29,6 +29,7 @@ PROVIDERS = (
     "generic",
     "openstack",
     "outscale",
+    "gis"
 )
 
 #########################
@@ -59,6 +60,7 @@ FILE_PREFIXES = {
     "outscale": (),
     "generic": (),
     "openstack": (),
+    "gis": (),
 }
 
 #########################
@@ -89,6 +91,7 @@ UPPER_WORDS = {
     "openstack": ("rpm", "loci", "nfv", "ec2api"),
     "pve": ("pve",),
     "ibm": ("ibm",),
+    "gis": ("gis","ban","ign","ogc","qgis","wfs","wms"),
 }
 
 TITLE_WORDS = {
@@ -411,6 +414,7 @@ ALIASES = {
         }
     },
     "digitalocean": {},
+    "gis": {},
     "oci": {
         "compute": {
             "VM": "VirtualMachine",
