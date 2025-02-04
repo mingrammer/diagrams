@@ -136,6 +136,7 @@ def cleaner_outscale(f):
 def cleaner_openstack(f):
     return f.lower()
 
+
 def cleaner_gis(f):
     return f.lower()
 
