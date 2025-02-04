@@ -89,8 +89,8 @@ UPPER_WORDS = {
     "generic": ("vpn", "ios", "xen", "sql", "lxc"),
     "outscale": ("osc",),
     "openstack": ("rpm", "loci", "nfv", "ec2api"),
-    "pve": ("pve"),
-    "ibm": ("ibm"),
+    "pve": ("pve",),
+    "ibm": ("ibm",),
     "gis": ("gis","ban","ign","ogc","qgis","wfs","wms"),
 }
 
