@@ -281,6 +281,9 @@ Node classes list of the onprem provider.
 <img width="30" src="/img/resources/onprem/iac/awx.png" alt="Awx" style="float: left; padding-right: 5px;" >
 **diagrams.onprem.iac.Awx**
 
+<img width="30" src="/img/resources/onprem/iac/pulumi.png" alt="Pulumi" style="float: left; padding-right: 5px;" >
+**diagrams.onprem.iac.Pulumi**
+
 <img width="30" src="/img/resources/onprem/iac/puppet.png" alt="Puppet" style="float: left; padding-right: 5px;" >
 **diagrams.onprem.iac.Puppet**
 
