@@ -238,5 +238,3 @@ Node classes list of the gis provider.
 
 <img width="30" src="/img/resources/gis/server/zooproject.png" alt="Zooproject" style="float: left; padding-right: 5px;" >
 **diagrams.gis.server.Zooproject**
-
-## gis.toolkit
