@@ -35,6 +35,12 @@ Node classes list of the saas provider.
 <img width="30" src="/img/resources/saas/analytics/stitch.png" alt="Stitch" style="float: left; padding-right: 5px;" >
 **diagrams.saas.analytics.Stitch**
 
+## saas.automation
+
+
+<img width="30" src="/img/resources/saas/automation/n8n.png" alt="N8N" style="float: left; padding-right: 5px;" >
+**diagrams.saas.automation.N8N**
+
 ## saas.cdn
 
 
