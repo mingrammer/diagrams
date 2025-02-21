@@ -16,6 +16,10 @@ class AugmentedAi(_ML):
     _icon = "augmented-ai.png"
 
 
+class Bedrock(_ML):
+    _icon = "bedrock.png"
+
+
 class Comprehend(_ML):
     _icon = "comprehend.png"
 
