@@ -1073,6 +1073,9 @@ Node classes list of the aws provider.
 <img width="30" src="/img/resources/aws/ml/augmented-ai.png" alt="AugmentedAi" style="float: left; padding-right: 5px;" >
 **diagrams.aws.ml.AugmentedAi**
 
+<img width="30" src="/img/resources/aws/ml/bedrock.png" alt="Bedrock" style="float: left; padding-right: 5px;" >
+**diagrams.aws.ml.Bedrock**
+
 <img width="30" src="/img/resources/aws/ml/comprehend.png" alt="Comprehend" style="float: left; padding-right: 5px;" >
 **diagrams.aws.ml.Comprehend**
 
