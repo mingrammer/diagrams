@@ -528,7 +528,7 @@ class Edge:
         for o in other:
             if isinstance(o, Edge):
                 o.forward = forward if forward else o.forward
-                o.reverse = forward if forward else o.reverse
+                o.reverse = reverse if reverse else o.reverse
                 self._attrs = o.attrs.copy()
                 result.append(o)
             else:
