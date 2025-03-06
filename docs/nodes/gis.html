@@ -1,0 +1,207 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>GIS · Diagrams</title><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="generator" content="Docusaurus"/><meta name="description" content="Node classes list of the gis provider."/><meta name="docsearch:language" content="en"/><meta property="og:title" content="GIS · Diagrams"/><meta property="og:type" content="website"/><meta property="og:url" content="https://diagrams.mingrammer.com/"/><meta property="og:description" content="Node classes list of the gis provider."/><meta property="og:image" content="https://diagrams.mingrammer.com/img/diagrams.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://diagrams.mingrammer.com/img/diagrams.png"/><link rel="shortcut icon" href="/img/diagrams.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script>
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+              ga('create', 'UA-84081627-3', 'auto');
+              ga('send', 'pageview');
+            </script><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/diagrams.ico" alt="Diagrams"/><h2 class="headerTitleWithLogo">Diagrams</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docs/getting-started/installation" target="_self">Docs</a></li><li class="siteNavGroupActive"><a href="/docs/guides/diagram" target="_self">Guides</a></li><li class="siteNavGroupActive"><a href="/docs/nodes/aws" target="_self">Nodes</a></li><li class=""><a href="https://github.com/mingrammer/diagrams" target="_self">GitHub</a></li><li class=""><a href="https://www.buymeacoffee.com/mingrammer" target="_self">Sponsoring</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Nodes</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Getting Started</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/getting-started/installation">Installation</a></li><li class="navListItem"><a class="navItem" href="/docs/getting-started/examples">Examples</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Guides</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/guides/diagram">Diagrams</a></li><li class="navListItem"><a class="navItem" href="/docs/guides/node">Nodes</a></li><li class="navListItem"><a class="navItem" href="/docs/guides/cluster">Clusters</a></li><li class="navListItem"><a class="navItem" href="/docs/guides/edge">Edges</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Nodes</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/nodes/onprem">OnPrem</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/aws">AWS</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/azure">Azure</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/gcp">GCP</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/ibm">IBM</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/k8s">K8S</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/alibabacloud">AlibabaCloud</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/oci">OCI</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/openstack">OpenStack</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/firebase">Firebase</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/digitalocean">DigitalOcean</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/elastic">Elastic</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/outscale">Outscale</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/generic">Generic</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/programming">Programming</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/saas">Saas</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/c4">C4</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/custom">Custom</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docs/nodes/gis">GIS</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">GIS</h1></header><article><div><span><p>Node classes list of the gis provider.</p>
+<h2><a class="anchor" aria-hidden="true" id="giscli"></a><a href="#giscli" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>gis.cli</h2>
+<p><img width="30" src="/img/resources/gis/cli/gdal.png" alt="Gdal" style="float: left; padding-right: 5px;" >
+<strong>diagrams.gis.cli.Gdal</strong></p>
+<p><img width="30" src="/img/resources/gis/cli/imposm.png" alt="Imposm" style="float: left; padding-right: 5px;" >
+<strong>diagrams.gis.cli.Imposm</strong></p>
+<p><img width="30" src="/img/resources/gis/cli/lastools.png" alt="Lastools" style="float: left; padding-right: 5px;" >
+<strong>diagrams.gis.cli.Lastools</strong></p>
+<p><img width="30" src="/img/resources/gis/cli/mapnik.png" alt="Mapnik" style="float: left; padding-right: 5px;" >
+<strong>diagrams.gis.cli.Mapnik</strong></p>
+<p><img width="30" src="/img/resources/gis/cli/mdal.png" alt="Mdal" style="float: left; padding-right: 5px;" >
+<strong>diagrams.gis.cli.Mdal</strong></p>
+<p><img width="30" src="/img/resources/gis/cli/pdal.png" alt="Pdal" style="float: left; padding-right: 5px;" >
+<strong>diagrams.gis.cli.Pdal</strong></p>
+<h2><a class="anchor" aria-hidden="true" id="gisdata"></a><a href="#gisdata" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>gis.data</h2>
+<p><img width="30" src="/img/resources/gis/data/ban.png" alt="BAN" style="float: left; padding-right: 5px;" >
+<strong>diagrams.gis.data.BAN</strong></p>
+<p><img width="30" src="/img/resources/gis/data/here.png" alt="Here" style="float: left; padding-right: 5px;" >
+<strong>diagrams.gis.data.Here</strong></p>
+<p><img width="30" src="/img/resources/gis/data/ign.png" alt="IGN" style="float: left; padding-right: 5px;" >
+<strong>diagrams.gis.data.IGN</strong></p>
+<p><img width="30" src="/img/resources/gis/data/openstreetmap.png" alt="Openstreetmap" style="float: left; padding-right: 5px;" >
+<strong>diagrams.gis.data.Openstreetmap</strong></p>
+<h2><a class="anchor" aria-hidden="true" id="gisdatabase"></a><a href="#gisdatabase" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>gis.database</h2>
+<p><img width="30" src="/img/resources/gis/database/postgis.png" alt="Postgis" style="float: left; padding-right: 5px;" >
+<strong>diagrams.gis.database.Postgis</strong></p>
+<h2><a class="anchor" aria-hidden="true" id="gisdesktop"></a><a href="#gisdesktop" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>gis.desktop</h2>
+<p><img width="30" src="/img/resources/gis/desktop/maptunik.png" alt="Maptunik" style="float: left; padding-right: 5px;" >
+<strong>diagrams.gis.desktop.Maptunik</strong></p>
+<p><img width="30" src="/img/resources/gis/desktop/qgis.png" alt="QGIS" style="float: left; padding-right: 5px;" >
+<strong>diagrams.gis.desktop.QGIS</strong></p>
+<h2><a class="anchor" aria-hidden="true" id="gisformat"></a><a href="#gisformat" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>gis.format</h2>
+<p><img width="30" src="/img/resources/gis/format/geopackage.png" alt="Geopackage" style="float: left; padding-right: 5px;" >
+<strong>diagrams.gis.format.Geopackage</strong></p>
+<p><img width="30" src="/img/resources/gis/format/geoparquet.png" alt="Geoparquet" style="float: left; padding-right: 5px;" >
+<strong>diagrams.gis.format.Geoparquet</strong></p>
+<h2><a class="anchor" aria-hidden="true" id="gisgeocoding"></a><a href="#gisgeocoding" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>gis.geocoding</h2>
+<p><img width="30" src="/img/resources/gis/geocoding/addok.png" alt="Addok" style="float: left; padding-right: 5px;" >
+<strong>diagrams.gis.geocoding.Addok</strong></p>
+<p><img width="30" src="/img/resources/gis/geocoding/gisgraphy.png" alt="Gisgraphy" style="float: left; padding-right: 5px;" >
+<strong>diagrams.gis.geocoding.Gisgraphy</strong></p>
+<p><img width="30" src="/img/resources/gis/geocoding/nominatim.png" alt="Nominatim" style="float: left; padding-right: 5px;" >
+<strong>diagrams.gis.geocoding.Nominatim</strong></p>
+<p><img width="30" src="/img/resources/gis/geocoding/pelias.png" alt="Pelias" style="float: left; padding-right: 5px;" >
+<strong>diagrams.gis.geocoding.Pelias</strong></p>
+<h2><a class="anchor" aria-hidden="true" id="gisgeorchestra"></a><a href="#gisgeorchestra" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>gis.georchestra</h2>
+<h2><a class="anchor" aria-hidden="true" id="gisjava"></a><a href="#gisjava" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>gis.java</h2>
+<p><img width="30" src="/img/resources/gis/java/geotools.png" alt="Geotools" style="float: left; padding-right: 5px;" >
+<strong>diagrams.gis.java.Geotools</strong></p>
+<h2><a class="anchor" aria-hidden="true" id="gisjavascript"></a><a href="#gisjavascript" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>gis.javascript</h2>
+<p><img width="30" src="/img/resources/gis/javascript/cesium.png" alt="Cesium" style="float: left; padding-right: 5px;" >
+<strong>diagrams.gis.javascript.Cesium</strong></p>
+<p><img width="30" src="/img/resources/gis/javascript/geostyler.png" alt="Geostyler" style="float: left; padding-right: 5px;" >
+<strong>diagrams.gis.javascript.Geostyler</strong></p>
+<p><img width="30" src="/img/resources/gis/javascript/keplerjs.png" alt="Keplerjs" style="float: left; padding-right: 5px;" >
+<strong>diagrams.gis.javascript.Keplerjs</strong></p>
+<p><img width="30" src="/img/resources/gis/javascript/leaflet.png" alt="Leaflet" style="float: left; padding-right: 5px;" >
+<strong>diagrams.gis.javascript.Leaflet</strong></p>
+<p><img width="30" src="/img/resources/gis/javascript/maplibre.png" alt="Maplibre" style="float: left; padding-right: 5px;" >
+<strong>diagrams.gis.javascript.Maplibre</strong></p>
+<p><img width="30" src="/img/resources/gis/javascript/ol-ext.png" alt="OlExt" style="float: left; padding-right: 5px;" >
+<strong>diagrams.gis.javascript.OlExt</strong></p>
+<p><img width="30" src="/img/resources/gis/javascript/openlayers.png" alt="Openlayers" style="float: left; padding-right: 5px;" >
+<strong>diagrams.gis.javascript.Openlayers</strong></p>
+<p><img width="30" src="/img/resources/gis/javascript/turfjs.png" alt="Turfjs" style="float: left; padding-right: 5px;" >
+<strong>diagrams.gis.javascript.Turfjs</strong></p>
+<h2><a class="anchor" aria-hidden="true" id="gismobile"></a><a href="#gismobile" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>gis.mobile</h2>
+<p><img width="30" src="/img/resources/gis/mobile/mergin.png" alt="Mergin" style="float: left; padding-right: 5px;" >
+<strong>diagrams.gis.mobile.Mergin</strong></p>
+<p><img width="30" src="/img/resources/gis/mobile/qfield.png" alt="Qfield" style="float: left; padding-right: 5px;" >
+<strong>diagrams.gis.mobile.Qfield</strong></p>
+<p><img width="30" src="/img/resources/gis/mobile/smash.png" alt="Smash" style="float: left; padding-right: 5px;" >
+<strong>diagrams.gis.mobile.Smash</strong></p>
+<h2><a class="anchor" aria-hidden="true" id="gisogc"></a><a href="#gisogc" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>gis.ogc</h2>
+<p><img width="30" src="/img/resources/gis/ogc/ogc.png" alt="OGC" style="float: left; padding-right: 5px;" >
+<strong>diagrams.gis.ogc.OGC</strong></p>
+<p><img width="30" src="/img/resources/gis/ogc/wfs.png" alt="WFS" style="float: left; padding-right: 5px;" >
+<strong>diagrams.gis.ogc.WFS</strong></p>
+<p><img width="30" src="/img/resources/gis/ogc/wms.png" alt="WMS" style="float: left; padding-right: 5px;" >
+<strong>diagrams.gis.ogc.WMS</strong></p>
+<h2><a class="anchor" aria-hidden="true" id="gisorganization"></a><a href="#gisorganization" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>gis.organization</h2>
+<p><img width="30" src="/img/resources/gis/organization/osgeo.png" alt="Osgeo" style="float: left; padding-right: 5px;" >
+<strong>diagrams.gis.organization.Osgeo</strong></p>
+<h2><a class="anchor" aria-hidden="true" id="gispython"></a><a href="#gispython" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>gis.python</h2>
+<p><img width="30" src="/img/resources/gis/python/geopandas.png" alt="Geopandas" style="float: left; padding-right: 5px;" >
+<strong>diagrams.gis.python.Geopandas</strong></p>
+<p><img width="30" src="/img/resources/gis/python/pysal.png" alt="Pysal" style="float: left; padding-right: 5px;" >
+<strong>diagrams.gis.python.Pysal</strong></p>
+<h2><a class="anchor" aria-hidden="true" id="gisrouting"></a><a href="#gisrouting" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>gis.routing</h2>
+<p><img width="30" src="/img/resources/gis/routing/graphhopper.png" alt="Graphhopper" style="float: left; padding-right: 5px;" >
+<strong>diagrams.gis.routing.Graphhopper</strong></p>
+<p><img width="30" src="/img/resources/gis/routing/osrm.png" alt="Osrm" style="float: left; padding-right: 5px;" >
+<strong>diagrams.gis.routing.Osrm</strong></p>
+<p><img width="30" src="/img/resources/gis/routing/pgrouting.png" alt="Pgrouting" style="float: left; padding-right: 5px;" >
+<strong>diagrams.gis.routing.Pgrouting</strong></p>
+<p><img width="30" src="/img/resources/gis/routing/valhalla.png" alt="Valhalla" style="float: left; padding-right: 5px;" >
+<strong>diagrams.gis.routing.Valhalla</strong></p>
+<h2><a class="anchor" aria-hidden="true" id="gisserver"></a><a href="#gisserver" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>gis.server</h2>
+<p><img width="30" src="/img/resources/gis/server/actinia.png" alt="Actinia" style="float: left; padding-right: 5px;" >
+<strong>diagrams.gis.server.Actinia</strong></p>
+<p><img width="30" src="/img/resources/gis/server/baremaps.png" alt="Baremaps" style="float: left; padding-right: 5px;" >
+<strong>diagrams.gis.server.Baremaps</strong></p>
+<p><img width="30" src="/img/resources/gis/server/deegree.png" alt="Deegree" style="float: left; padding-right: 5px;" >
+<strong>diagrams.gis.server.Deegree</strong></p>
+<p><img width="30" src="/img/resources/gis/server/g3w-suite.png" alt="G3WSuite" style="float: left; padding-right: 5px;" >
+<strong>diagrams.gis.server.G3WSuite</strong></p>
+<p><img width="30" src="/img/resources/gis/server/geohealthcheck.png" alt="Geohealthcheck" style="float: left; padding-right: 5px;" >
+<strong>diagrams.gis.server.Geohealthcheck</strong></p>
+<p><img width="30" src="/img/resources/gis/server/geomapfish.png" alt="Geomapfish" style="float: left; padding-right: 5px;" >
+<strong>diagrams.gis.server.Geomapfish</strong></p>
+<p><img width="30" src="/img/resources/gis/server/geomesa.png" alt="Geomesa" style="float: left; padding-right: 5px;" >
+<strong>diagrams.gis.server.Geomesa</strong></p>
+<p><img width="30" src="/img/resources/gis/server/geonetwork.png" alt="Geonetwork" style="float: left; padding-right: 5px;" >
+<strong>diagrams.gis.server.Geonetwork</strong></p>
+<p><img width="30" src="/img/resources/gis/server/geonode.png" alt="Geonode" style="float: left; padding-right: 5px;" >
+<strong>diagrams.gis.server.Geonode</strong></p>
+<p><img width="30" src="/img/resources/gis/server/georchestra.png" alt="Georchestra" style="float: left; padding-right: 5px;" >
+<strong>diagrams.gis.server.Georchestra</strong></p>
+<p><img width="30" src="/img/resources/gis/server/geoserver.png" alt="Geoserver" style="float: left; padding-right: 5px;" >
+<strong>diagrams.gis.server.Geoserver</strong></p>
+<p><img width="30" src="/img/resources/gis/server/geowebcache.png" alt="Geowebcache" style="float: left; padding-right: 5px;" >
+<strong>diagrams.gis.server.Geowebcache</strong></p>
+<p><img width="30" src="/img/resources/gis/server/kepler.png" alt="Kepler" style="float: left; padding-right: 5px;" >
+<strong>diagrams.gis.server.Kepler</strong></p>
+<p><img width="30" src="/img/resources/gis/server/mapproxy.png" alt="Mapproxy" style="float: left; padding-right: 5px;" >
+<strong>diagrams.gis.server.Mapproxy</strong></p>
+<p><img width="30" src="/img/resources/gis/server/mapserver.png" alt="Mapserver" style="float: left; padding-right: 5px;" >
+<strong>diagrams.gis.server.Mapserver</strong></p>
+<p><img width="30" src="/img/resources/gis/server/mapstore.png" alt="Mapstore" style="float: left; padding-right: 5px;" >
+<strong>diagrams.gis.server.Mapstore</strong></p>
+<p><img width="30" src="/img/resources/gis/server/mviewer.png" alt="Mviewer" style="float: left; padding-right: 5px;" >
+<strong>diagrams.gis.server.Mviewer</strong></p>
+<p><img width="30" src="/img/resources/gis/server/pg_tileserv.png" alt="Pg_Tileserv" style="float: left; padding-right: 5px;" >
+<strong>diagrams.gis.server.Pg_Tileserv</strong></p>
+<p><img width="30" src="/img/resources/gis/server/pycsw.png" alt="Pycsw" style="float: left; padding-right: 5px;" >
+<strong>diagrams.gis.server.Pycsw</strong></p>
+<p><img width="30" src="/img/resources/gis/server/pygeoapi.png" alt="Pygeoapi" style="float: left; padding-right: 5px;" >
+<strong>diagrams.gis.server.Pygeoapi</strong></p>
+<p><img width="30" src="/img/resources/gis/server/qgis-server.png" alt="QGISServer" style="float: left; padding-right: 5px;" >
+<strong>diagrams.gis.server.QGISServer</strong></p>
+<p><img width="30" src="/img/resources/gis/server/zooproject.png" alt="Zooproject" style="float: left; padding-right: 5px;" >
+<strong>diagrams.gis.server.Zooproject</strong></p>
+</span></div></article></div><div class="docLastUpdate"><em>Last updated on 2/11/2025</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/nodes/custom"><span class="arrow-prev">← </span><span>Custom</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#giscli">gis.cli</a></li><li><a href="#gisdata">gis.data</a></li><li><a href="#gisdatabase">gis.database</a></li><li><a href="#gisdesktop">gis.desktop</a></li><li><a href="#gisformat">gis.format</a></li><li><a href="#gisgeocoding">gis.geocoding</a></li><li><a href="#gisgeorchestra">gis.georchestra</a></li><li><a href="#gisjava">gis.java</a></li><li><a href="#gisjavascript">gis.javascript</a></li><li><a href="#gismobile">gis.mobile</a></li><li><a href="#gisogc">gis.ogc</a></li><li><a href="#gisorganization">gis.organization</a></li><li><a href="#gispython">gis.python</a></li><li><a href="#gisrouting">gis.routing</a></li><li><a href="#gisserver">gis.server</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/diagrams.ico" alt="Diagrams" width="66" height="58"/></a><div><h5>Docs</h5><a href="/docs/getting-started/installation">Getting Started</a><a href="/docs/guides/diagram">Guides</a><a href="/docs/nodes/aws">Nodes</a></div><div><h5>More</h5><iframe src="https://ghbtns.com/github-btn.html?user=mingrammer&amp;repo=diagrams&amp;type=star&amp;count=true&amp;size=large" frameBorder="0" scrolling="0" width="170" height="30" title="Star mingrammer/diagrams on GitHub"></iframe></div></section><section class="copyright">Copyright © 2025 mingrammer</section></footer></div></body></html>
