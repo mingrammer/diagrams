@@ -203,6 +203,9 @@ Node classes list of the onprem provider.
 <img width="30" src="/img/resources/onprem/database/druid.png" alt="Druid" style="float: left; padding-right: 5px;" >
 **diagrams.onprem.database.Druid**
 
+<img width="30" src="/img/resources/onprem/database/duckdb.png" alt="Duckdb" style="float: left; padding-right: 5px;" >
+**diagrams.onprem.database.Duckdb**
+
 <img width="30" src="/img/resources/onprem/database/hbase.png" alt="Hbase" style="float: left; padding-right: 5px;" >
 **diagrams.onprem.database.Hbase**, **HBase** (alias)
 
