@@ -203,6 +203,9 @@ Node classes list of the aws provider.
 <img width="30" src="/img/resources/aws/compute/elastic-container-service-service.png" alt="ElasticContainerServiceService" style="float: left; padding-right: 5px;" >
 **diagrams.aws.compute.ElasticContainerServiceService**
 
+<img width="30" src="/img/resources/aws/compute/elastic-container-service-task.png" alt="ElasticContainerServiceTask" style="float: left; padding-right: 5px;" >
+**diagrams.aws.compute.ElasticContainerServiceTask**
+
 <img width="30" src="/img/resources/aws/compute/elastic-container-service.png" alt="ElasticContainerService" style="float: left; padding-right: 5px;" >
 **diagrams.aws.compute.ElasticContainerService**, **ECS** (alias)
 
