@@ -1454,14 +1454,6 @@ classnames@^2.2.6:
   version "2.2.6"
   resolved "https://registry.npmjs.org/classnames/-/classnames-2.2.6.tgz"
 
-clipboard@^2.0.0:
-  version "2.0.7"
-  resolved "https://registry.npmjs.org/clipboard/-/clipboard-2.0.7.tgz"
-  dependencies:
-    good-listener "^1.2.2"
-    select "^1.1.2"
-    tiny-emitter "^2.0.0"
-
 clone-response@1.0.2:
   version "1.0.2"
   resolved "https://registry.npmjs.org/clone-response/-/clone-response-1.0.2.tgz"
@@ -1936,10 +1928,6 @@ define-property@^2.0.2:
 delayed-stream@~1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/delayed-stream/-/delayed-stream-1.0.0.tgz"
-
-delegate@^3.1.2:
-  version "3.2.0"
-  resolved "https://registry.npmjs.org/delegate/-/delegate-3.2.0.tgz"
 
 depd@~1.1.2:
   version "1.1.2"
@@ -2860,12 +2848,6 @@ globule@^1.0.0:
     glob "~7.1.1"
     lodash "~4.17.10"
     minimatch "~3.0.2"
-
-good-listener@^1.2.2:
-  version "1.2.2"
-  resolved "https://registry.npmjs.org/good-listener/-/good-listener-1.2.2.tgz"
-  dependencies:
-    delegate "^3.1.2"
 
 got@^7.0.0:
   version "7.1.0"
@@ -4700,10 +4682,8 @@ prepend-http@^2.0.0:
   resolved "https://registry.npmjs.org/prepend-http/-/prepend-http-2.0.0.tgz"
 
 prismjs@^1.22.0:
-  version "1.23.0"
-  resolved "https://registry.npmjs.org/prismjs/-/prismjs-1.23.0.tgz"
-  optionalDependencies:
-    clipboard "^2.0.0"
+  version "1.30.0"
+  resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.30.0.tgz#d9709969d9d4e16403f6f348c63553b19f0975a9"
 
 process-nextick-args@~2.0.0:
   version "2.0.1"
@@ -5147,10 +5127,6 @@ seek-bzip@^1.0.5:
   resolved "https://registry.npmjs.org/seek-bzip/-/seek-bzip-1.0.6.tgz"
   dependencies:
     commander "^2.8.1"
-
-select@^1.1.2:
-  version "1.1.2"
-  resolved "https://registry.npmjs.org/select/-/select-1.1.2.tgz"
 
 semver-regex@^2.0.0:
   version "2.0.0"
@@ -5614,10 +5590,6 @@ timed-out@^4.0.0, timed-out@^4.0.1:
 timsort@^0.3.0:
   version "0.3.0"
   resolved "https://registry.npmjs.org/timsort/-/timsort-0.3.0.tgz"
-
-tiny-emitter@^2.0.0:
-  version "2.1.0"
-  resolved "https://registry.npmjs.org/tiny-emitter/-/tiny-emitter-2.1.0.tgz"
 
 tiny-lr@^1.1.1:
   version "1.1.1"
