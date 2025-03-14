@@ -20,4 +20,8 @@ class Fastly(_Cdn):
     _icon = "fastly.png"
 
 
+class Imperva(_Cdn):
+    _icon = "imperva.png"
+
+
 # Aliases
