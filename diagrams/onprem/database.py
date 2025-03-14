@@ -36,6 +36,10 @@ class Druid(_Database):
     _icon = "druid.png"
 
 
+class Duckdb(_Database):
+    _icon = "duckdb.png"
+
+
 class Hbase(_Database):
     _icon = "hbase.png"
 
