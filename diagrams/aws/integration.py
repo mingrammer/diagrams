@@ -32,8 +32,28 @@ class EventbridgeDefaultEventBusResource(_Integration):
     _icon = "eventbridge-default-event-bus-resource.png"
 
 
+class EventbridgeEvent(_Integration):
+    _icon = "eventbridge-event.png"
+
+
+class EventbridgePipes(_Integration):
+    _icon = "eventbridge-pipes.png"
+
+
+class EventbridgeRule(_Integration):
+    _icon = "eventbridge-rule.png"
+
+
 class EventbridgeSaasPartnerEventBusResource(_Integration):
     _icon = "eventbridge-saas-partner-event-bus-resource.png"
+
+
+class EventbridgeScheduler(_Integration):
+    _icon = "eventbridge-scheduler.png"
+
+
+class EventbridgeSchema(_Integration):
+    _icon = "eventbridge-schema.png"
 
 
 class Eventbridge(_Integration):
