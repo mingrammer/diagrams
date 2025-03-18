@@ -398,6 +398,9 @@ Node classes list of the aws provider.
 <img width="30" src="/img/resources/aws/devtools/cloud9.png" alt="Cloud9" style="float: left; padding-right: 5px;" >
 **diagrams.aws.devtools.Cloud9**
 
+<img width="30" src="/img/resources/aws/devtools/cloudshell.png" alt="Cloudshell" style="float: left; padding-right: 5px;" >
+**diagrams.aws.devtools.Cloudshell**
+
 <img width="30" src="/img/resources/aws/devtools/codeartifact.png" alt="Codeartifact" style="float: left; padding-right: 5px;" >
 **diagrams.aws.devtools.Codeartifact**
 
