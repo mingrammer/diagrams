@@ -41,6 +41,9 @@ Node classes list of the gis provider.
 <img width="30" src="/img/resources/gis/data/openstreetmap.png" alt="Openstreetmap" style="float: left; padding-right: 5px;" >
 **diagrams.gis.data.Openstreetmap**
 
+<img width="30" src="/img/resources/gis/data/overturemaps.png" alt="Overturemaps" style="float: left; padding-right: 5px;" >
+**diagrams.gis.data.Overturemaps**
+
 ## gis.database
 
 
