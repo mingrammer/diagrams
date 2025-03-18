@@ -587,8 +587,23 @@ Node classes list of the aws provider.
 <img width="30" src="/img/resources/aws/integration/eventbridge-default-event-bus-resource.png" alt="EventbridgeDefaultEventBusResource" style="float: left; padding-right: 5px;" >
 **diagrams.aws.integration.EventbridgeDefaultEventBusResource**
 
+<img width="30" src="/img/resources/aws/integration/eventbridge-event.png" alt="EventbridgeEvent" style="float: left; padding-right: 5px;" >
+**diagrams.aws.integration.EventbridgeEvent**
+
+<img width="30" src="/img/resources/aws/integration/eventbridge-pipes.png" alt="EventbridgePipes" style="float: left; padding-right: 5px;" >
+**diagrams.aws.integration.EventbridgePipes**
+
+<img width="30" src="/img/resources/aws/integration/eventbridge-rule.png" alt="EventbridgeRule" style="float: left; padding-right: 5px;" >
+**diagrams.aws.integration.EventbridgeRule**
+
 <img width="30" src="/img/resources/aws/integration/eventbridge-saas-partner-event-bus-resource.png" alt="EventbridgeSaasPartnerEventBusResource" style="float: left; padding-right: 5px;" >
 **diagrams.aws.integration.EventbridgeSaasPartnerEventBusResource**
+
+<img width="30" src="/img/resources/aws/integration/eventbridge-scheduler.png" alt="EventbridgeScheduler" style="float: left; padding-right: 5px;" >
+**diagrams.aws.integration.EventbridgeScheduler**
+
+<img width="30" src="/img/resources/aws/integration/eventbridge-schema.png" alt="EventbridgeSchema" style="float: left; padding-right: 5px;" >
+**diagrams.aws.integration.EventbridgeSchema**
 
 <img width="30" src="/img/resources/aws/integration/eventbridge.png" alt="Eventbridge" style="float: left; padding-right: 5px;" >
 **diagrams.aws.integration.Eventbridge**
