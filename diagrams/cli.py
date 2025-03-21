@@ -3,6 +3,14 @@ import sys
 
 
 def run() -> int:
+    """
+    Run diagrams code files in a diagrams environment.
+    Args:
+        paths: A list of paths to Python files containing diagrams code.
+
+    Returns:
+        The exit code.
+    """
     parser = argparse.ArgumentParser(
         description="Run diagrams code files in a diagrams environment.",
     )
@@ -16,8 +24,7 @@ def run() -> int:
     args = parser.parse_args()
 
     for path in args.paths:
-        print(path)
-        with open(path) as f:
+        with open(path, encoding='utf-8') as f:
             exec(f.read())
 
     return 0
