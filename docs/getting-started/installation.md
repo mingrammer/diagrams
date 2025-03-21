@@ -20,6 +20,9 @@ $ pipenv install diagrams
 
 # using poetry
 $ poetry add diagrams
+
+# using uv
+$ uv tool install diagrams
 ```
 
 ## Quick Start
@@ -46,6 +49,14 @@ This generates the diagram below:
 ![web service diagram](/img/web_service_diagram.png)
 
 It will be saved as `web_service.png` in your working directory.
+
+### CLI
+
+With the `diagrams` CLI you can process one or more diagram files at once.
+
+```shell
+$ diagrams diagram1.py diagram2.py
+```
 
 ## Next
 
