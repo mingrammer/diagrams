@@ -7,6 +7,7 @@ Node classes list of the azure provider.
 
 ## azure.analytics
 
+
 <img width="30" src="/img/resources/azure/analytics/analysis-services.png" alt="AnalysisServices" style="float: left; padding-right: 5px;" >
 **diagrams.azure.analytics.AnalysisServices**
 
@@ -44,6 +45,7 @@ Node classes list of the azure provider.
 **diagrams.azure.analytics.SynapseAnalytics**
 
 ## azure.compute
+
 
 <img width="30" src="/img/resources/azure/compute/app-services.png" alt="AppServices" style="float: left; padding-right: 5px;" >
 **diagrams.azure.compute.AppServices**
@@ -140,6 +142,7 @@ Node classes list of the azure provider.
 
 ## azure.database
 
+
 <img width="30" src="/img/resources/azure/database/blob-storage.png" alt="BlobStorage" style="float: left; padding-right: 5px;" >
 **diagrams.azure.database.BlobStorage**
 
@@ -214,6 +217,7 @@ Node classes list of the azure provider.
 
 ## azure.devops
 
+
 <img width="30" src="/img/resources/azure/devops/application-insights.png" alt="ApplicationInsights" style="float: left; padding-right: 5px;" >
 **diagrams.azure.devops.ApplicationInsights**
 
@@ -242,6 +246,7 @@ Node classes list of the azure provider.
 **diagrams.azure.devops.TestPlans**
 
 ## azure.general
+
 
 <img width="30" src="/img/resources/azure/general/allresources.png" alt="Allresources" style="float: left; padding-right: 5px;" >
 **diagrams.azure.general.Allresources**
@@ -323,6 +328,7 @@ Node classes list of the azure provider.
 
 ## azure.identity
 
+
 <img width="30" src="/img/resources/azure/identity/access-review.png" alt="AccessReview" style="float: left; padding-right: 5px;" >
 **diagrams.azure.identity.AccessReview**
 
@@ -369,6 +375,7 @@ Node classes list of the azure provider.
 **diagrams.azure.identity.Users**
 
 ## azure.integration
+
 
 <img width="30" src="/img/resources/azure/integration/api-for-fhir.png" alt="APIForFhir" style="float: left; padding-right: 5px;" >
 **diagrams.azure.integration.APIForFhir**
@@ -429,6 +436,7 @@ Node classes list of the azure provider.
 
 ## azure.iot
 
+
 <img width="30" src="/img/resources/azure/iot/device-provisioning-services.png" alt="DeviceProvisioningServices" style="float: left; padding-right: 5px;" >
 **diagrams.azure.iot.DeviceProvisioningServices**
 
@@ -461,6 +469,7 @@ Node classes list of the azure provider.
 
 ## azure.migration
 
+
 <img width="30" src="/img/resources/azure/migration/data-box-edge.png" alt="DataBoxEdge" style="float: left; padding-right: 5px;" >
 **diagrams.azure.migration.DataBoxEdge**
 
@@ -477,6 +486,7 @@ Node classes list of the azure provider.
 **diagrams.azure.migration.RecoveryServicesVaults**
 
 ## azure.ml
+
 
 <img width="30" src="/img/resources/azure/ml/azure-open-ai.png" alt="AzureOpenAI" style="float: left; padding-right: 5px;" >
 **diagrams.azure.ml.AzureOpenAI**
@@ -510,6 +520,7 @@ Node classes list of the azure provider.
 
 ## azure.mobile
 
+
 <img width="30" src="/img/resources/azure/mobile/app-service-mobile.png" alt="AppServiceMobile" style="float: left; padding-right: 5px;" >
 **diagrams.azure.mobile.AppServiceMobile**
 
@@ -520,6 +531,7 @@ Node classes list of the azure provider.
 **diagrams.azure.mobile.NotificationHubs**
 
 ## azure.monitor
+
 
 <img width="30" src="/img/resources/azure/monitor/change-analysis.png" alt="ChangeAnalysis" style="float: left; padding-right: 5px;" >
 **diagrams.azure.monitor.ChangeAnalysis**
@@ -534,6 +546,7 @@ Node classes list of the azure provider.
 **diagrams.azure.monitor.Monitor**
 
 ## azure.network
+
 
 <img width="30" src="/img/resources/azure/network/application-gateway.png" alt="ApplicationGateway" style="float: left; padding-right: 5px;" >
 **diagrams.azure.network.ApplicationGateway**
@@ -621,6 +634,7 @@ Node classes list of the azure provider.
 
 ## azure.security
 
+
 <img width="30" src="/img/resources/azure/security/application-security-groups.png" alt="ApplicationSecurityGroups" style="float: left; padding-right: 5px;" >
 **diagrams.azure.security.ApplicationSecurityGroups**
 
@@ -643,6 +657,7 @@ Node classes list of the azure provider.
 **diagrams.azure.security.Sentinel**
 
 ## azure.storage
+
 
 <img width="30" src="/img/resources/azure/storage/archive-storage.png" alt="ArchiveStorage" style="float: left; padding-right: 5px;" >
 **diagrams.azure.storage.ArchiveStorage**
@@ -693,6 +708,7 @@ Node classes list of the azure provider.
 **diagrams.azure.storage.TableStorage**
 
 ## azure.web
+
 
 <img width="30" src="/img/resources/azure/web/api-connections.png" alt="APIConnections" style="float: left; padding-right: 5px;" >
 **diagrams.azure.web.APIConnections**
