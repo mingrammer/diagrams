@@ -12,8 +12,8 @@ class AzureOpenAI(_Ml):
     _icon = "azure-open-ai.png"
 
 
-class AzureSpeedToText(_Ml):
-    _icon = "azure-speed-to-text.png"
+class AzureSpeechService(_Ml):
+    _icon = "azure-speech-service.png"
 
 
 class BatchAI(_Ml):
