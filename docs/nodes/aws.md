@@ -1001,6 +1001,9 @@ Node classes list of the aws provider.
 <img width="30" src="/img/resources/aws/management/trusted-advisor.png" alt="TrustedAdvisor" style="float: left; padding-right: 5px;" >
 **diagrams.aws.management.TrustedAdvisor**
 
+<img width="30" src="/img/resources/aws/management/user-notifications.png" alt="UserNotifications" style="float: left; padding-right: 5px;" >
+**diagrams.aws.management.UserNotifications**
+
 <img width="30" src="/img/resources/aws/management/well-architected-tool.png" alt="WellArchitectedTool" style="float: left; padding-right: 5px;" >
 **diagrams.aws.management.WellArchitectedTool**
 
