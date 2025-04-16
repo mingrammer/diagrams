@@ -1,0 +1,273 @@
+Metadata-Version: 2.1
+Name: graphviz
+Version: 0.20.3
+Summary: Simple Python interface for Graphviz
+Home-page: https://github.com/xflr6/graphviz
+Author: Sebastian Bank
+Author-email: sebastian.bank@uni-leipzig.de
+License: MIT
+Project-URL: Documentation, https://graphviz.readthedocs.io
+Project-URL: Changelog, https://graphviz.readthedocs.io/en/latest/changelog.html
+Project-URL: Issue Tracker, https://github.com/xflr6/graphviz/issues
+Project-URL: CI, https://github.com/xflr6/graphviz/actions
+Project-URL: Coverage, https://codecov.io/gh/xflr6/graphviz
+Keywords: graph visualization dot render
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+License-File: LICENSE.txt
+Provides-Extra: dev
+Requires-Dist: tox >=3 ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: pep8-naming ; extra == 'dev'
+Requires-Dist: wheel ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: sphinx <7,>=5 ; extra == 'docs'
+Requires-Dist: sphinx-autodoc-typehints ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+Provides-Extra: test
+Requires-Dist: pytest <8.1,>=7 ; extra == 'test'
+Requires-Dist: pytest-mock >=3 ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: coverage ; extra == 'test'
+
+Graphviz
+========
+
+|PyPI version| |License| |Supported Python| |Wheel| |Downloads|
+
+|Build| |Codecov| |Readthedocs-stable| |Readthedocs-latest|
+
+|Binder-stable|
+
+This package facilitates the creation and rendering of graph descriptions in
+the DOT_ language of the Graphviz_ graph drawing software (`upstream repo`_)
+from Python.
+
+Create a graph object, assemble the graph by adding nodes and edges, and
+retrieve its DOT source code string. Save the source code to a file and render
+it with the Graphviz installation of your system.
+
+Use the ``view`` option/method to directly inspect the resulting (PDF, PNG,
+SVG, etc.) file with its default application. Graphs can also be rendered
+and displayed within `Jupyter notebooks`_ (formerly known as
+`IPython notebooks`_,
+`example <notebook_>`_, `nbviewer <notebook-nbviewer_>`_)
+as well as the `Jupyter QtConsole`_.
+
+
+Links
+-----
+
+- GitHub: https://github.com/xflr6/graphviz
+- PyPI: https://pypi.org/project/graphviz/
+- Documentation: https://graphviz.readthedocs.io
+- Changelog: https://graphviz.readthedocs.io/en/latest/changelog.html
+- Issue Tracker: https://github.com/xflr6/graphviz/issues
+- Download: https://pypi.org/project/graphviz/#files
+
+
+Installation
+------------
+
+This package runs under Python 3.8+, use pip_ to install:
+
+.. code:: bash
+
+    $ pip install graphviz
+
+To render the generated DOT source code, you also need to install Graphviz_
+(`download page <upstream-download_>`_,
+`archived versions <upstream-archived_>`_,
+`installation procedure for Windows <upstream-windows_>`_).
+
+Make sure that the directory containing the ``dot`` executable is on your
+systems' ``PATH``
+(sometimes done by the installer;
+setting ``PATH``
+on `Linux <set-path-linux_>`_,
+`Mac <set-path-darwin_>`_,
+and `Windows <set-path-windows_>`_).
+
+Anaconda_: see the conda-forge_ package
+`conda-forge/python-graphviz <conda-forge-python-graphviz_>`_
+(`feedstock <conda-forge-python-graphviz-feedstock_>`_),
+which should automatically ``conda install``
+`conda-forge/graphviz <conda-forge-graphviz_>`_
+(`feedstock <conda-forge-graphviz-feedstock_>`_) as dependency.
+
+
+Quickstart
+----------
+
+Create a graph object:
+
+.. code:: python
+
+    >>> import graphviz  # doctest: +NO_EXE
+    >>> dot = graphviz.Digraph(comment='The Round Table')
+    >>> dot  #doctest: +ELLIPSIS
+    <graphviz.graphs.Digraph object at 0x...>
+
+Add nodes and edges:
+
+.. code:: python
+
+    >>> dot.node('A', 'King Arthur')  # doctest: +NO_EXE
+    >>> dot.node('B', 'Sir Bedevere the Wise')
+    >>> dot.node('L', 'Sir Lancelot the Brave')
+
+    >>> dot.edges(['AB', 'AL'])
+    >>> dot.edge('B', 'L', constraint='false')
+
+Check the generated source code:
+
+.. code:: python
+
+    >>> print(dot.source)  # doctest: +NORMALIZE_WHITESPACE +NO_EXE
+    // The Round Table
+    digraph {
+        A [label="King Arthur"]
+        B [label="Sir Bedevere the Wise"]
+        L [label="Sir Lancelot the Brave"]
+        A -> B
+        A -> L
+        B -> L [constraint=false]
+    }
+
+Save and render the source code (skip/ignore any ``doctest_mark_exe()`` lines):
+
+.. code:: python
+
+    >>> doctest_mark_exe()  # skip this line
+
+    >>> dot.render('doctest-output/round-table.gv').replace('\\', '/')
+    'doctest-output/round-table.gv.pdf'
+
+Save and render and view the result:
+
+.. code:: python
+
+    >>> doctest_mark_exe()  # skip this line
+
+    >>> dot.render('doctest-output/round-table.gv', view=True)  # doctest: +SKIP
+    'doctest-output/round-table.gv.pdf'
+
+.. image:: https://raw.github.com/xflr6/graphviz/master/docs/_static/round-table.svg
+    :align: center
+    :alt: round-table.svg
+
+**Caveat:**
+Backslash-escapes and strings of the form ``<...>``
+have a special meaning in the DOT language.
+If you need to render arbitrary strings (e.g. from user input),
+check the details in the `user guide`_.
+
+
+See also
+--------
+
+- pygraphviz_ |--| full-blown interface wrapping the Graphviz C library with SWIG
+- graphviz-python_ |--| official Python bindings
+  (`documentation <graphviz-python-docs_>`_)
+- pydot_ |--| stable pure-Python approach, requires pyparsing
+
+
+License
+-------
+
+This package is distributed under the `MIT license`_.
+
+
+Development
+-----------
+
+- Development documentation: https://graphviz.readthedocs.io/en/latest/development.html
+- Release process: https://graphviz.readthedocs.io/en/latest/release_process.html
+
+
+.. _Graphviz:  https://www.graphviz.org
+.. _DOT: https://www.graphviz.org/doc/info/lang.html
+.. _upstream repo: https://gitlab.com/graphviz/graphviz/
+.. _upstream-download: https://www.graphviz.org/download/
+.. _upstream-archived: https://www2.graphviz.org/Archive/stable/
+.. _upstream-windows: https://forum.graphviz.org/t/new-simplified-installation-procedure-on-windows/224
+
+.. _set-path-windows: https://www.computerhope.com/issues/ch000549.htm
+.. _set-path-linux: https://stackoverflow.com/questions/14637979/how-to-permanently-set-path-on-linux-unix
+.. _set-path-darwin: https://stackoverflow.com/questions/22465332/setting-path-environment-variable-in-osx-permanently
+
+.. _pip: https://pip.pypa.io
+
+.. _Jupyter notebooks: https://jupyter.org
+.. _IPython notebooks: https://ipython.org/notebook.html
+.. _Jupyter QtConsole: https://qtconsole.readthedocs.io
+
+.. _notebook: https://github.com/xflr6/graphviz/blob/master/examples/graphviz-notebook.ipynb
+.. _notebook-nbviewer: https://nbviewer.org/github/xflr6/graphviz/blob/master/examples/graphviz-notebook.ipynb
+
+.. _Anaconda: https://docs.anaconda.com/anaconda/install/
+.. _conda-forge: https://conda-forge.org
+.. _conda-forge-python-graphviz: https://anaconda.org/conda-forge/python-graphviz
+.. _conda-forge-python-graphviz-feedstock: https://github.com/conda-forge/python-graphviz-feedstock
+.. _conda-forge-graphviz: https://anaconda.org/conda-forge/graphviz
+.. _conda-forge-graphviz-feedstock: https://github.com/conda-forge/graphviz-feedstock
+
+.. _user guide: https://graphviz.readthedocs.io/en/stable/manual.html
+
+.. _pygraphviz: https://pypi.org/project/pygraphviz/
+.. _graphviz-python: https://pypi.org/project/graphviz-python/
+.. _graphviz-python-docs: https://www.graphviz.org/pdf/gv.3python.pdf
+.. _pydot: https://pypi.org/project/pydot/
+
+.. _MIT license: https://opensource.org/licenses/MIT
+
+
+.. |--| unicode:: U+2013
+
+
+.. |PyPI version| image:: https://img.shields.io/pypi/v/graphviz.svg
+    :target: https://pypi.org/project/graphviz/
+    :alt: Latest PyPI Version
+.. |License| image:: https://img.shields.io/pypi/l/graphviz.svg
+    :target: https://github.com/xflr6/graphviz/blob/master/LICENSE.txt
+    :alt: License
+.. |Supported Python| image:: https://img.shields.io/pypi/pyversions/graphviz.svg
+    :target: https://pypi.org/project/graphviz/
+    :alt: Supported Python Versions
+.. |Wheel| image:: https://img.shields.io/pypi/wheel/graphviz.svg
+    :target: https://pypi.org/project/graphviz/#files
+    :alt: Wheel format
+.. |Downloads| image::  https://img.shields.io/pypi/dm/graphviz.svg
+    :target: https://pypistats.org/packages/graphviz
+    :alt: Monthly downloads
+
+.. |Build| image:: https://github.com/xflr6/graphviz/actions/workflows/build.yaml/badge.svg?branch=master
+    :target: https://github.com/xflr6/graphviz/actions/workflows/build.yaml?query=branch%3Amaster
+    :alt: Build
+.. |Codecov| image:: https://codecov.io/gh/xflr6/graphviz/branch/master/graph/badge.svg
+    :target: https://codecov.io/gh/xflr6/graphviz
+    :alt: Codecov
+.. |Readthedocs-stable| image:: https://readthedocs.org/projects/graphviz/badge/?version=stable
+    :target: https://graphviz.readthedocs.io/en/stable/
+    :alt: Readthedocs (stable)
+.. |Readthedocs-latest| image:: https://readthedocs.org/projects/graphviz/badge/?version=latest
+    :target: https://graphviz.readthedocs.io/en/latest/
+    :alt: Readthedocs (latest)
+
+.. |Binder-stable| image:: https://img.shields.io/badge/launch-binder%20(stable)-579ACA.svg?logo=data:image/png;base64,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
+    :target: https://mybinder.org/v2/gh/xflr6/graphviz/stable
+    :alt: Binder (stable)
