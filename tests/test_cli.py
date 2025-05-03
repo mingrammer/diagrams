@@ -1,9 +1,10 @@
 import os
 import unittest
-from unittest.mock import mock_open, patch
 from io import StringIO
+from unittest.mock import mock_open, patch
 
 from diagrams.cli import run
+
 
 class CliTest(unittest.TestCase):
     def setUp(self):
@@ -29,6 +30,7 @@ with Diagram("test_2", show=False, direction="TB"):
                   EC2("worker4"),
                   EC2("työntekijä 4")] >> RDS("events")
 """
+
     def tearDown(self):
         try:
             os.remove("test.png")
@@ -46,7 +48,6 @@ with Diagram("test_2", show=False, direction="TB"):
             os.remove(self.test_file)
         except FileNotFoundError:
             pass
-
 
     def test_run_with_multiple_files(self):
 
