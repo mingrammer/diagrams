@@ -89,6 +89,7 @@ class Diagram:
         graph_attr: Optional[dict] = None,
         node_attr: Optional[dict] = None,
         edge_attr: Optional[dict] = None,
+        save_to_disk: bool = True,  # Add flag to control saving behavior
     ):
         """Diagram represents a global diagrams context.
 
@@ -118,6 +119,9 @@ class Diagram:
             filename = "_".join(self.name.split()).lower()
         self.filename = filename
         self.dot = Digraph(self.name, filename=self.filename, strict=strict)
+        if save_to_disk is None:
+            save_to_disk = True
+
 
         # Set attributes.
         for k, v in self._default_graph_attrs.items():
@@ -153,6 +157,7 @@ class Diagram:
 
         self.show = show
         self.autolabel = autolabel
+        self.save_to_disk = save_to_disk
 
     def __str__(self) -> str:
         return str(self.dot)
@@ -162,10 +167,12 @@ class Diagram:
         return self
 
     def __exit__(self, exc_type, exc_value, traceback):
-        self.render()
-        # Remove the graphviz file leaving only the image.
-        os.remove(self.filename)
+        if self.save_to_disk:  # Only render if save_to_disk is True
+            self.render()
+            # Remove the graphviz file leaving only the image.
+            os.remove(self.filename)
         setdiagram(None)
+
 
     def _repr_png_(self):
         return self.dot.pipe(format="png")
