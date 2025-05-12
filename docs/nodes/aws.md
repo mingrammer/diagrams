@@ -1142,6 +1142,9 @@ Node classes list of the aws provider.
 <img width="30" src="/img/resources/aws/ml/polly.png" alt="Polly" style="float: left; padding-right: 5px;" >
 **diagrams.aws.ml.Polly**
 
+<img width="30" src="/img/resources/aws/ml/q.png" alt="Q" style="float: left; padding-right: 5px;" >
+**diagrams.aws.ml.Q**
+
 <img width="30" src="/img/resources/aws/ml/rekognition-image.png" alt="RekognitionImage" style="float: left; padding-right: 5px;" >
 **diagrams.aws.ml.RekognitionImage**
 
