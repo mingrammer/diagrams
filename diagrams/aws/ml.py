@@ -76,6 +76,10 @@ class Polly(_ML):
     _icon = "polly.png"
 
 
+class Q(_ML):
+    _icon = "q.png"
+
+
 class RekognitionImage(_ML):
     _icon = "rekognition-image.png"
 
