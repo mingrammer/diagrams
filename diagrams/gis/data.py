@@ -24,4 +24,8 @@ class Openstreetmap(_Data):
     _icon = "openstreetmap.png"
 
 
+class Overturemaps(_Data):
+    _icon = "overturemaps.png"
+
+
 # Aliases

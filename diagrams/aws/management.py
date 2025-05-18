@@ -236,6 +236,10 @@ class TrustedAdvisor(_Management):
     _icon = "trusted-advisor.png"
 
 
+class UserNotifications(_Management):
+    _icon = "user-notifications.png"
+
+
 class WellArchitectedTool(_Management):
     _icon = "well-architected-tool.png"
 
