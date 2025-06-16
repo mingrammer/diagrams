@@ -165,19 +165,19 @@ typing = ["typing-extensions (>=4.12.2) ; python_version < \"3.11\""]
 
 [[package]]
 name = "graphviz"
-version = "0.20.3"
+version = "0.21"
 description = "Simple Python interface for Graphviz"
 optional = false
-python-versions = ">=3.8"
+python-versions = ">=3.9"
 groups = ["main"]
 files = [
-    {file = "graphviz-0.20.3-py3-none-any.whl", hash = "sha256:81f848f2904515d8cd359cc611faba817598d2feaac4027b266aa3eda7b3dde5"},
-    {file = "graphviz-0.20.3.zip", hash = "sha256:09d6bc81e6a9fa392e7ba52135a9d49f1ed62526f96499325930e87ca1b5925d"},
+    {file = "graphviz-0.21-py3-none-any.whl", hash = "sha256:54f33de9f4f911d7e84e4191749cac8cc5653f815b06738c54db9a15ab8b1e42"},
+    {file = "graphviz-0.21.tar.gz", hash = "sha256:20743e7183be82aaaa8ad6c93f8893c923bd6658a04c32ee115edb3c8a835f78"},
 ]
 
 [package.extras]
-dev = ["flake8", "pep8-naming", "tox (>=3)", "twine", "wheel"]
-docs = ["sphinx (>=5,<7)", "sphinx-autodoc-typehints", "sphinx-rtd-theme"]
+dev = ["Flake8-pyproject", "build", "flake8", "pep8-naming", "tox (>=3)", "twine", "wheel"]
+docs = ["sphinx (>=5,<7)", "sphinx-autodoc-typehints", "sphinx-rtd-theme (>=0.2.5)"]
 test = ["coverage", "pytest (>=7,<8.1)", "pytest-cov", "pytest-mock (>=3)"]
 
 [[package]]
@@ -661,4 +661,4 @@ test = ["covdefaults (>=2.3)", "coverage (>=7.2.7)", "coverage-enable-subprocess
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.9"
-content-hash = "78ae88d1d235107f62ea2adffe4b59a248df35660ea1b565f06261e8ea286d86"
+content-hash = "affed7c8b0962b3d91cf6354cc48f2496d55207705ee9d93f6661d657d1d7e48"
