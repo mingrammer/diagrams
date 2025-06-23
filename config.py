@@ -29,7 +29,8 @@ PROVIDERS = (
     "generic",
     "openstack",
     "outscale",
-    "gis"
+    "gis",
+    "sap",
 )
 
 #########################
@@ -61,6 +62,7 @@ FILE_PREFIXES = {
     "generic": (),
     "openstack": (),
     "gis": (),
+    "sap": (),
 }
 
 #########################
@@ -92,6 +94,7 @@ UPPER_WORDS = {
     "pve": ("pve",),
     "ibm": ("ibm",),
     "gis": ("gis","ban","ign","ogc","qgis","wfs","wms"),
+    "sap": ("sap", "btp", "hana", "api", "s4hana"),
 }
 
 TITLE_WORDS = {
@@ -112,6 +115,9 @@ TITLE_WORDS = {
     },
     "ibm": {
         "ibm": "IBMCloud"
+    },
+    "sap": {
+        "sap": "SAP"
     },
 }
 
@@ -477,4 +483,5 @@ ALIASES = {
             "Tripleo": "TripleO",
         }
     },
+    "sap": { }
 }
