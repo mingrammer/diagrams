@@ -140,6 +140,7 @@ def cleaner_openstack(f):
 def cleaner_gis(f):
     return f.lower()
 
+
 def cleaner_sap(f):
     return f.lower()
 
