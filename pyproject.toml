@@ -21,7 +21,7 @@ typed-ast = {version="^1.5.5", markers="python_version<'3.8'"}
 [tool.poetry.dev-dependencies]
 pytest = "^8.4"
 pylint = "^3.3"
-rope = "^1.13"
+rope = "^1.14"
 isort = "^5.13"
 black = "^24.4"
 pre-commit = "^4.0.1"
