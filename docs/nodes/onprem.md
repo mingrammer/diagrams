@@ -236,6 +236,9 @@ Node classes list of the onprem provider.
 <img width="30" src="/img/resources/onprem/database/postgresql.png" alt="Postgresql" style="float: left; padding-right: 5px;" >
 **diagrams.onprem.database.Postgresql**, **PostgreSQL** (alias)
 
+<img width="30" src="/img/resources/onprem/database/qdrant.png" alt="Qdrant" style="float: left; padding-right: 5px;" >
+**diagrams.onprem.database.Qdrant**, **Qdrant** (alias)
+
 <img width="30" src="/img/resources/onprem/database/scylla.png" alt="Scylla" style="float: left; padding-right: 5px;" >
 **diagrams.onprem.database.Scylla**
 
