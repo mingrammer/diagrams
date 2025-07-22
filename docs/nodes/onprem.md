@@ -410,6 +410,15 @@ Node classes list of the onprem provider.
 <img width="30" src="/img/resources/onprem/network/caddy.png" alt="Caddy" style="float: left; padding-right: 5px;" >
 **diagrams.onprem.network.Caddy**
 
+<img width="30" src="/img/resources/onprem/network/cisco-router.png" alt="CiscoRouter" style="float: left; padding-right: 5px;" >
+**diagrams.onprem.network.CiscoRouter**
+
+<img width="30" src="/img/resources/onprem/network/cisco-switch-l2.png" alt="CiscoSwitchL2" style="float: left; padding-right: 5px;" >
+**diagrams.onprem.network.CiscoSwitchL2**
+
+<img width="30" src="/img/resources/onprem/network/cisco-switch-l3.png" alt="CiscoSwitchL3" style="float: left; padding-right: 5px;" >
+**diagrams.onprem.network.CiscoSwitchL3**
+
 <img width="30" src="/img/resources/onprem/network/consul.png" alt="Consul" style="float: left; padding-right: 5px;" >
 **diagrams.onprem.network.Consul**
 
