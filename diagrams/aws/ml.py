@@ -8,6 +8,14 @@ class _ML(_AWS):
     _icon_dir = "resources/aws/ml"
 
 
+class Agentcore(_ML):
+    _icon = "agentcore.png"
+
+
+class AiAgent(_ML):
+    _icon = "ai-agent.png"
+
+
 class AmazonCodewhisperer(_ML):
     _icon = "amazon-codewhisperer.png"
 
@@ -34,6 +42,14 @@ class AWSNeuron(_ML):
 
 class Bedrock(_ML):
     _icon = "bedrock.png"
+
+
+class BrowserTool(_ML):
+    _icon = "browser-tool.png"
+
+
+class CodeInterpreter(_ML):
+    _icon = "code-interpreter.png"
 
 
 class Comprehend(_ML):
@@ -64,12 +80,24 @@ class ElasticInference(_ML):
     _icon = "elastic-inference.png"
 
 
+class Evaluations(_ML):
+    _icon = "evaluations.png"
+
+
 class Forecast(_ML):
     _icon = "forecast.png"
 
 
 class FraudDetector(_ML):
     _icon = "fraud-detector.png"
+
+
+class Gateway(_ML):
+    _icon = "gateway.png"
+
+
+class Identity(_ML):
+    _icon = "identity.png"
 
 
 class Kendra(_ML):
@@ -84,8 +112,20 @@ class MachineLearning(_ML):
     _icon = "machine-learning.png"
 
 
+class Memory(_ML):
+    _icon = "memory.png"
+
+
+class Observability(_ML):
+    _icon = "observability.png"
+
+
 class Personalize(_ML):
     _icon = "personalize.png"
+
+
+class PolicyEngineAgenticGuardrails(_ML):
+    _icon = "policy-engine-agentic-guardrails.png"
 
 
 class Polly(_ML):
@@ -106,6 +146,10 @@ class RekognitionVideo(_ML):
 
 class Rekognition(_ML):
     _icon = "rekognition.png"
+
+
+class Runtime(_ML):
+    _icon = "runtime.png"
 
 
 class SagemakerGroundTruth(_ML):
