@@ -8,12 +8,28 @@ class _ML(_AWS):
     _icon_dir = "resources/aws/ml"
 
 
+class AmazonCodewhisperer(_ML):
+    _icon = "amazon-codewhisperer.png"
+
+
+class AmazonNova(_ML):
+    _icon = "amazon-nova.png"
+
+
 class ApacheMxnetOnAWS(_ML):
     _icon = "apache-mxnet-on-aws.png"
 
 
 class AugmentedAi(_ML):
     _icon = "augmented-ai.png"
+
+
+class AWSAppStudio(_ML):
+    _icon = "aws-app-studio.png"
+
+
+class AWSNeuron(_ML):
+    _icon = "aws-neuron.png"
 
 
 class Bedrock(_ML):
