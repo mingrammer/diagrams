@@ -29,6 +29,7 @@ PROVIDERS = (
     "generic",
     "openstack",
     "outscale",
+    "gis"
 )
 
 #########################
@@ -59,6 +60,7 @@ FILE_PREFIXES = {
     "outscale": (),
     "generic": (),
     "openstack": (),
+    "gis": (),
 }
 
 #########################
@@ -87,8 +89,9 @@ UPPER_WORDS = {
     "generic": ("vpn", "ios", "xen", "sql", "lxc"),
     "outscale": ("osc",),
     "openstack": ("rpm", "loci", "nfv", "ec2api"),
-    "pve": ("pve"),
-    "ibm": ("ibm"),
+    "pve": ("pve",),
+    "ibm": ("ibm",),
+    "gis": ("gis","ban","ign","ogc","qgis","wfs","wms"),
 }
 
 TITLE_WORDS = {
@@ -143,6 +146,7 @@ ALIASES = {
             "Mssql": "MSSQL",
             "Mysql": "MySQL",
             "Postgresql": "PostgreSQL",
+            "Qdrant": "Qdrant",
         },
         "gitops": {
             "Argocd": "ArgoCD",
@@ -411,6 +415,7 @@ ALIASES = {
         }
     },
     "digitalocean": {},
+    "gis": {},
     "oci": {
         "compute": {
             "VM": "VirtualMachine",

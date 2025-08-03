@@ -82,6 +82,8 @@ To contribute to diagram, check out [contribution guidelines](CONTRIBUTING.md).
 
 [Airflow Diagrams](https://github.com/feluelle/airflow-diagrams) is an Airflow plugin that aims to easily visualise your Airflow DAGs on service level from providers like AWS, GCP, Azure, etc. via diagrams.
 
+[KubeDiagrams](https://github.com/philippemerle/KubeDiagrams) is a tool to generate Kubernetes architecture diagrams from Kubernetes manifest files, kustomization files, Helm charts, and actual cluster state. [KubeDiagrams](https://github.com/philippemerle/KubeDiagrams) supports all Kubernetes built-in resources, any custom resources, and label-based resource clustering.
+
 ## Other languages
 
 - If you are familiar with Go, you can use [go-diagrams](https://github.com/blushft/go-diagrams) as well.

@@ -96,6 +96,10 @@ class ElasticContainerServiceService(_Compute):
     _icon = "elastic-container-service-service.png"
 
 
+class ElasticContainerServiceTask(_Compute):
+    _icon = "elastic-container-service-task.png"
+
+
 class ElasticContainerService(_Compute):
     _icon = "elastic-container-service.png"
 

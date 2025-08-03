@@ -16,6 +16,10 @@ class AugmentedAi(_ML):
     _icon = "augmented-ai.png"
 
 
+class Bedrock(_ML):
+    _icon = "bedrock.png"
+
+
 class Comprehend(_ML):
     _icon = "comprehend.png"
 
@@ -70,6 +74,10 @@ class Personalize(_ML):
 
 class Polly(_ML):
     _icon = "polly.png"
+
+
+class Q(_ML):
+    _icon = "q.png"
 
 
 class RekognitionImage(_ML):

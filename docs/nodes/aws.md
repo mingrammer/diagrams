@@ -203,6 +203,9 @@ Node classes list of the aws provider.
 <img width="30" src="/img/resources/aws/compute/elastic-container-service-service.png" alt="ElasticContainerServiceService" style="float: left; padding-right: 5px;" >
 **diagrams.aws.compute.ElasticContainerServiceService**
 
+<img width="30" src="/img/resources/aws/compute/elastic-container-service-task.png" alt="ElasticContainerServiceTask" style="float: left; padding-right: 5px;" >
+**diagrams.aws.compute.ElasticContainerServiceTask**
+
 <img width="30" src="/img/resources/aws/compute/elastic-container-service.png" alt="ElasticContainerService" style="float: left; padding-right: 5px;" >
 **diagrams.aws.compute.ElasticContainerService**, **ECS** (alias)
 
@@ -395,6 +398,9 @@ Node classes list of the aws provider.
 <img width="30" src="/img/resources/aws/devtools/cloud9.png" alt="Cloud9" style="float: left; padding-right: 5px;" >
 **diagrams.aws.devtools.Cloud9**
 
+<img width="30" src="/img/resources/aws/devtools/cloudshell.png" alt="Cloudshell" style="float: left; padding-right: 5px;" >
+**diagrams.aws.devtools.Cloudshell**
+
 <img width="30" src="/img/resources/aws/devtools/codeartifact.png" alt="Codeartifact" style="float: left; padding-right: 5px;" >
 **diagrams.aws.devtools.Codeartifact**
 
@@ -584,8 +590,23 @@ Node classes list of the aws provider.
 <img width="30" src="/img/resources/aws/integration/eventbridge-default-event-bus-resource.png" alt="EventbridgeDefaultEventBusResource" style="float: left; padding-right: 5px;" >
 **diagrams.aws.integration.EventbridgeDefaultEventBusResource**
 
+<img width="30" src="/img/resources/aws/integration/eventbridge-event.png" alt="EventbridgeEvent" style="float: left; padding-right: 5px;" >
+**diagrams.aws.integration.EventbridgeEvent**
+
+<img width="30" src="/img/resources/aws/integration/eventbridge-pipes.png" alt="EventbridgePipes" style="float: left; padding-right: 5px;" >
+**diagrams.aws.integration.EventbridgePipes**
+
+<img width="30" src="/img/resources/aws/integration/eventbridge-rule.png" alt="EventbridgeRule" style="float: left; padding-right: 5px;" >
+**diagrams.aws.integration.EventbridgeRule**
+
 <img width="30" src="/img/resources/aws/integration/eventbridge-saas-partner-event-bus-resource.png" alt="EventbridgeSaasPartnerEventBusResource" style="float: left; padding-right: 5px;" >
 **diagrams.aws.integration.EventbridgeSaasPartnerEventBusResource**
+
+<img width="30" src="/img/resources/aws/integration/eventbridge-scheduler.png" alt="EventbridgeScheduler" style="float: left; padding-right: 5px;" >
+**diagrams.aws.integration.EventbridgeScheduler**
+
+<img width="30" src="/img/resources/aws/integration/eventbridge-schema.png" alt="EventbridgeSchema" style="float: left; padding-right: 5px;" >
+**diagrams.aws.integration.EventbridgeSchema**
 
 <img width="30" src="/img/resources/aws/integration/eventbridge.png" alt="Eventbridge" style="float: left; padding-right: 5px;" >
 **diagrams.aws.integration.Eventbridge**
@@ -980,6 +1001,9 @@ Node classes list of the aws provider.
 <img width="30" src="/img/resources/aws/management/trusted-advisor.png" alt="TrustedAdvisor" style="float: left; padding-right: 5px;" >
 **diagrams.aws.management.TrustedAdvisor**
 
+<img width="30" src="/img/resources/aws/management/user-notifications.png" alt="UserNotifications" style="float: left; padding-right: 5px;" >
+**diagrams.aws.management.UserNotifications**
+
 <img width="30" src="/img/resources/aws/management/well-architected-tool.png" alt="WellArchitectedTool" style="float: left; padding-right: 5px;" >
 **diagrams.aws.management.WellArchitectedTool**
 
@@ -1073,6 +1097,9 @@ Node classes list of the aws provider.
 <img width="30" src="/img/resources/aws/ml/augmented-ai.png" alt="AugmentedAi" style="float: left; padding-right: 5px;" >
 **diagrams.aws.ml.AugmentedAi**
 
+<img width="30" src="/img/resources/aws/ml/bedrock.png" alt="Bedrock" style="float: left; padding-right: 5px;" >
+**diagrams.aws.ml.Bedrock**
+
 <img width="30" src="/img/resources/aws/ml/comprehend.png" alt="Comprehend" style="float: left; padding-right: 5px;" >
 **diagrams.aws.ml.Comprehend**
 
@@ -1114,6 +1141,9 @@ Node classes list of the aws provider.
 
 <img width="30" src="/img/resources/aws/ml/polly.png" alt="Polly" style="float: left; padding-right: 5px;" >
 **diagrams.aws.ml.Polly**
+
+<img width="30" src="/img/resources/aws/ml/q.png" alt="Q" style="float: left; padding-right: 5px;" >
+**diagrams.aws.ml.Q**
 
 <img width="30" src="/img/resources/aws/ml/rekognition-image.png" alt="RekognitionImage" style="float: left; padding-right: 5px;" >
 **diagrams.aws.ml.RekognitionImage**

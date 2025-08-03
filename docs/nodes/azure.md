@@ -1571,8 +1571,8 @@ Node classes list of azure provider.
 <img width="30" src="/img/resources/azure/ml/azure-open-ai.png" alt="AzureOpenAI" style="float: left; padding-right: 5px;" >
 **diagrams.azure.ml.AzureOpenAI**
 
-<img width="30" src="/img/resources/azure/ml/azure-speed-to-text.png" alt="AzureSpeedToText" style="float: left; padding-right: 5px;" >
-**diagrams.azure.ml.AzureSpeedToText**
+<img width="30" src="/img/resources/azure/ml/azure-speech-service.png" alt="AzureSpeechService" style="float: left; padding-right: 5px;" >
+**diagrams.azure.ml.AzureSpeechService**
 
 <img width="30" src="/img/resources/azure/ml/batch-ai.png" alt="BatchAI" style="float: left; padding-right: 5px;" >
 **diagrams.azure.ml.BatchAI**
