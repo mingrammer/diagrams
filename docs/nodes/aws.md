@@ -200,6 +200,9 @@ Node classes list of the aws provider.
 <img width="30" src="/img/resources/aws/compute/elastic-container-service-container.png" alt="ElasticContainerServiceContainer" style="float: left; padding-right: 5px;" >
 **diagrams.aws.compute.ElasticContainerServiceContainer**
 
+<img width="30" src="/img/resources/aws/compute/elastic-container-service-service-connect.png" alt="ElasticContainerServiceServiceConnect" style="float: left; padding-right: 5px;" >
+**diagrams.aws.compute.ElasticContainerServiceServiceConnect**
+
 <img width="30" src="/img/resources/aws/compute/elastic-container-service-service.png" alt="ElasticContainerServiceService" style="float: left; padding-right: 5px;" >
 **diagrams.aws.compute.ElasticContainerServiceService**
 
