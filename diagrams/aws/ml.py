@@ -124,6 +124,10 @@ class Transcribe(_ML):
     _icon = "transcribe.png"
 
 
+class Transform(_ML):
+    _icon = "transform.png"
+
+
 class Translate(_ML):
     _icon = "translate.png"
 
