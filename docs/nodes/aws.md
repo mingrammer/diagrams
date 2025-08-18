@@ -1181,6 +1181,9 @@ Node classes list of the aws provider.
 <img width="30" src="/img/resources/aws/ml/transcribe.png" alt="Transcribe" style="float: left; padding-right: 5px;" >
 **diagrams.aws.ml.Transcribe**
 
+<img width="30" src="/img/resources/aws/ml/transform.png" alt="Transform" style="float: left; padding-right: 5px;" >
+**diagrams.aws.ml.Transform**
+
 <img width="30" src="/img/resources/aws/ml/translate.png" alt="Translate" style="float: left; padding-right: 5px;" >
 **diagrams.aws.ml.Translate**
 
