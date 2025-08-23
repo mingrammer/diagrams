@@ -140,6 +140,10 @@ class SecurityIdentityAndCompliance(_Security):
     _icon = "security-identity-and-compliance.png"
 
 
+class SecurityLake(_Security):
+    _icon = "security-lake.png"
+
+
 class ShieldAdvanced(_Security):
     _icon = "shield-advanced.png"
 
