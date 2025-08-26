@@ -131,6 +131,18 @@ Node classes list of the saas provider.
 <img width="30" src="/img/resources/saas/media/cloudinary.png" alt="Cloudinary" style="float: left; padding-right: 5px;" >
 **diagrams.saas.media.Cloudinary**
 
+## saas.payment
+
+
+<img width="30" src="/img/resources/saas/payment/adyen.png" alt="Adyen" style="float: left; padding-right: 5px;" >
+**diagrams.saas.payment.Adyen**
+
+<img width="30" src="/img/resources/saas/payment/paypal.png" alt="Paypal" style="float: left; padding-right: 5px;" >
+**diagrams.saas.payment.Paypal**
+
+<img width="30" src="/img/resources/saas/payment/stripe.png" alt="Stripe" style="float: left; padding-right: 5px;" >
+**diagrams.saas.payment.Stripe**
+
 ## saas.recommendation
 
 
