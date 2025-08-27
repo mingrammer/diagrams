@@ -29,7 +29,8 @@ PROVIDERS = (
     "generic",
     "openstack",
     "outscale",
-    "gis"
+    "gis",
+    "scaleway"
 )
 
 #########################
@@ -61,6 +62,7 @@ FILE_PREFIXES = {
     "generic": (),
     "openstack": (),
     "gis": (),
+    "scaleway": (),
 }
 
 #########################
@@ -478,4 +480,5 @@ ALIASES = {
             "Tripleo": "TripleO",
         }
     },
+    "scaleway": {},
 }
