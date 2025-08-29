@@ -1091,14 +1091,38 @@ Node classes list of the aws provider.
 ## aws.ml
 
 
+<img width="30" src="/img/resources/aws/ml/agentcore.png" alt="AGENTCORE" style="float: left; padding-right: 5px;" >
+**diagrams.aws.ml.AGENTCORE**
+
+<img width="30" src="/img/resources/aws/ml/ai-agent.png" alt="AiAgent" style="float: left; padding-right: 5px;" >
+**diagrams.aws.ml.AiAgent**
+
+<img width="30" src="/img/resources/aws/ml/amazon-codewhisperer.png" alt="AmazonCodewhisperer" style="float: left; padding-right: 5px;" >
+**diagrams.aws.ml.AmazonCodewhisperer**
+
+<img width="30" src="/img/resources/aws/ml/amazon-nova.png" alt="AmazonNova" style="float: left; padding-right: 5px;" >
+**diagrams.aws.ml.AmazonNova**
+
 <img width="30" src="/img/resources/aws/ml/apache-mxnet-on-aws.png" alt="ApacheMxnetOnAWS" style="float: left; padding-right: 5px;" >
 **diagrams.aws.ml.ApacheMxnetOnAWS**
 
 <img width="30" src="/img/resources/aws/ml/augmented-ai.png" alt="AugmentedAi" style="float: left; padding-right: 5px;" >
 **diagrams.aws.ml.AugmentedAi**
 
+<img width="30" src="/img/resources/aws/ml/aws-app-studio.png" alt="AWSAppStudio" style="float: left; padding-right: 5px;" >
+**diagrams.aws.ml.AWSAppStudio**
+
+<img width="30" src="/img/resources/aws/ml/aws-neuron.png" alt="AWSNeuron" style="float: left; padding-right: 5px;" >
+**diagrams.aws.ml.AWSNeuron**
+
 <img width="30" src="/img/resources/aws/ml/bedrock.png" alt="Bedrock" style="float: left; padding-right: 5px;" >
 **diagrams.aws.ml.Bedrock**
+
+<img width="30" src="/img/resources/aws/ml/browser-tool.png" alt="BrowserTool" style="float: left; padding-right: 5px;" >
+**diagrams.aws.ml.BrowserTool**
+
+<img width="30" src="/img/resources/aws/ml/code-interpreter.png" alt="CodeInterpreter" style="float: left; padding-right: 5px;" >
+**diagrams.aws.ml.CodeInterpreter**
 
 <img width="30" src="/img/resources/aws/ml/comprehend.png" alt="Comprehend" style="float: left; padding-right: 5px;" >
 **diagrams.aws.ml.Comprehend**
@@ -1121,11 +1145,20 @@ Node classes list of the aws provider.
 <img width="30" src="/img/resources/aws/ml/elastic-inference.png" alt="ElasticInference" style="float: left; padding-right: 5px;" >
 **diagrams.aws.ml.ElasticInference**
 
+<img width="30" src="/img/resources/aws/ml/evaluations.png" alt="Evaluations" style="float: left; padding-right: 5px;" >
+**diagrams.aws.ml.Evaluations**
+
 <img width="30" src="/img/resources/aws/ml/forecast.png" alt="Forecast" style="float: left; padding-right: 5px;" >
 **diagrams.aws.ml.Forecast**
 
 <img width="30" src="/img/resources/aws/ml/fraud-detector.png" alt="FraudDetector" style="float: left; padding-right: 5px;" >
 **diagrams.aws.ml.FraudDetector**
+
+<img width="30" src="/img/resources/aws/ml/gateway.png" alt="Gateway" style="float: left; padding-right: 5px;" >
+**diagrams.aws.ml.Gateway**
+
+<img width="30" src="/img/resources/aws/ml/identity.png" alt="Identity" style="float: left; padding-right: 5px;" >
+**diagrams.aws.ml.Identity**
 
 <img width="30" src="/img/resources/aws/ml/kendra.png" alt="Kendra" style="float: left; padding-right: 5px;" >
 **diagrams.aws.ml.Kendra**
@@ -1136,8 +1169,17 @@ Node classes list of the aws provider.
 <img width="30" src="/img/resources/aws/ml/machine-learning.png" alt="MachineLearning" style="float: left; padding-right: 5px;" >
 **diagrams.aws.ml.MachineLearning**
 
+<img width="30" src="/img/resources/aws/ml/memory.png" alt="Memory" style="float: left; padding-right: 5px;" >
+**diagrams.aws.ml.Memory**
+
+<img width="30" src="/img/resources/aws/ml/observability.png" alt="Observability" style="float: left; padding-right: 5px;" >
+**diagrams.aws.ml.Observability**, **OBS** (alias)
+
 <img width="30" src="/img/resources/aws/ml/personalize.png" alt="Personalize" style="float: left; padding-right: 5px;" >
 **diagrams.aws.ml.Personalize**
+
+<img width="30" src="/img/resources/aws/ml/policy-engine-agentic-guardrails.png" alt="PolicyEngineAgenticGuardrails" style="float: left; padding-right: 5px;" >
+**diagrams.aws.ml.PolicyEngineAgenticGuardrails**, **PEAG** (alias)
 
 <img width="30" src="/img/resources/aws/ml/polly.png" alt="Polly" style="float: left; padding-right: 5px;" >
 **diagrams.aws.ml.Polly**
@@ -1153,6 +1195,9 @@ Node classes list of the aws provider.
 
 <img width="30" src="/img/resources/aws/ml/rekognition.png" alt="Rekognition" style="float: left; padding-right: 5px;" >
 **diagrams.aws.ml.Rekognition**
+
+<img width="30" src="/img/resources/aws/ml/runtime.png" alt="Runtime" style="float: left; padding-right: 5px;" >
+**diagrams.aws.ml.Runtime**
 
 <img width="30" src="/img/resources/aws/ml/sagemaker-ground-truth.png" alt="SagemakerGroundTruth" style="float: left; padding-right: 5px;" >
 **diagrams.aws.ml.SagemakerGroundTruth**
