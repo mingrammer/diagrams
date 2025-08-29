@@ -24,7 +24,7 @@ def run() -> int:
     args = parser.parse_args()
 
     for path in args.paths:
-        with open(path, encoding='utf-8') as f:
+        with open(path, encoding="utf-8") as f:
             exec(f.read())
 
     return 0
