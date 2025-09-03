@@ -16,10 +16,6 @@ class AiAgent(_ML):
     _icon = "ai-agent.png"
 
 
-class AmazonCodewhisperer(_ML):
-    _icon = "amazon-codewhisperer.png"
-
-
 class AmazonNova(_ML):
     _icon = "amazon-nova.png"
 
