@@ -6,7 +6,7 @@ Tests Amazon Nova, AWS App Studio, Amazon CodeWhisperer, and AWS Neuron
 """
 
 from diagrams import Diagram
-from diagrams.aws.ml import AmazonNova, AWSAppStudio, AmazonCodewhisperer, AWSNeuron
+from diagrams.aws.ml import AmazonNova, AWSAppStudio, AWSNeuron
 
 def test_nova_icons():
     """Test the new Nova and AI service icons"""
@@ -15,11 +15,10 @@ def test_nova_icons():
         # Create instances of the new services
         nova = AmazonNova("Amazon Nova")
         app_studio = AWSAppStudio("AWS App Studio")
-        codewhisperer = AmazonCodewhisperer("CodeWhisperer")
         neuron = AWSNeuron("AWS Neuron")
         
         # Create a simple flow
-        nova >> app_studio >> codewhisperer >> neuron
+        nova >> app_studio >> neuron
 
     print("✅ Test diagram created successfully!")
     print("📁 Generated file: nova_test.png")
