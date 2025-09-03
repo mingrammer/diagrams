@@ -76,7 +76,7 @@ TMPL_APIDOC = "apidoc.tmpl"
 TMPL_MODULE = "module.tmpl"
 
 UPPER_WORDS = {
-    "aws": ("aws", "api", "ebs", "ec2", "efs", "emr", "rds", "ml", "mq", "nat", "vpc", "waf", "sdk"),
+    "aws": ("aws", "api", "ebs", "ec2", "efs", "emr", "rds", "ml", "mq", "nat", "vpc", "waf", "sdk", "aiagent", "agentcore"),
     "azure": ("ad", "b2c", "ai", "api", "cdn", "ddos", "dns", "fxt", "hana", "hd", "id", "sap", "sql", "vm", "vpn", "vpc"),
     "gcp": ("gcp", "ai", "api", "cdn", "dns", "gke", "gpu", "iap", "ml", "nat", "os", "sdk", "sql", "tpu", "vpn"),
     "firebase": ("ab", "fcm", "ml"),
@@ -242,6 +242,8 @@ ALIASES = {
         },
         "ml": {
             "DeepLearningContainers": "DLC",
+            "PolicyEngineAgenticGuardrails": "PEAG",
+            "Observability": "OBS",
         },
         "network": {
             "CloudFront": "CF",
