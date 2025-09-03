@@ -1097,9 +1097,6 @@ Node classes list of the aws provider.
 <img width="30" src="/img/resources/aws/ml/ai-agent.png" alt="AiAgent" style="float: left; padding-right: 5px;" >
 **diagrams.aws.ml.AiAgent**
 
-<img width="30" src="/img/resources/aws/ml/amazon-codewhisperer.png" alt="AmazonCodewhisperer" style="float: left; padding-right: 5px;" >
-**diagrams.aws.ml.AmazonCodewhisperer**
-
 <img width="30" src="/img/resources/aws/ml/amazon-nova.png" alt="AmazonNova" style="float: left; padding-right: 5px;" >
 **diagrams.aws.ml.AmazonNova**
 
