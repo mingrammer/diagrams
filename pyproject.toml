@@ -7,7 +7,12 @@ authors = ["mingrammer <mingrammer@gmail.com>"]
 readme = "README.md"
 homepage = "https://diagrams.mingrammer.com"
 repository = "https://github.com/mingrammer/diagrams"
-include = ["resources/**/*"]
+packages = [
+    { include = "diagrams", from = "." }
+]
+include = [
+    { path = "resources", format = ["sdist", "wheel"] }
+]
 
 [tool.poetry.scripts]
 diagrams="diagrams.cli:main"
