@@ -8,6 +8,26 @@ class _Security(_GCP):
     _icon_dir = "resources/gcp/security"
 
 
+class AccessContextManager(_Security):
+    _icon = "access-context-manager.png"
+
+
+class AssuredWorkloads(_Security):
+    _icon = "assured-workloads.png"
+
+
+class CertificateAuthorityService(_Security):
+    _icon = "certificate-authority-service.png"
+
+
+class CertificateManager(_Security):
+    _icon = "certificate-manager.png"
+
+
+class CloudAssetInventory(_Security):
+    _icon = "cloud-asset-inventory.png"
+
+
 class Iam(_Security):
     _icon = "iam.png"
 
@@ -24,8 +44,16 @@ class ResourceManager(_Security):
     _icon = "resource-manager.png"
 
 
+class SecretManager(_Security):
+    _icon = "secret-manager.png"
+
+
 class SecurityCommandCenter(_Security):
     _icon = "security-command-center.png"
+
+
+class SecurityHealthAdvisor(_Security):
+    _icon = "security-health-advisor.png"
 
 
 class SecurityScanner(_Security):
@@ -34,5 +62,6 @@ class SecurityScanner(_Security):
 
 # Aliases
 
+ACM = AccessContextManager
 KMS = KeyManagementService
 SCC = SecurityCommandCenter

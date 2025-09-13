@@ -8,8 +8,14 @@ class _Migration(_GCP):
     _icon_dir = "resources/gcp/migration"
 
 
+class MigrateComputeEngine(_Migration):
+    _icon = "migrate-compute-engine.png"
+
+
 class TransferAppliance(_Migration):
     _icon = "transfer-appliance.png"
 
 
 # Aliases
+
+CE = MigrateComputeEngine

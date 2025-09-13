@@ -12,6 +12,10 @@ class Filestore(_Storage):
     _icon = "filestore.png"
 
 
+class LocalSSD(_Storage):
+    _icon = "local-ssd.png"
+
+
 class PersistentDisk(_Storage):
     _icon = "persistent-disk.png"
 
@@ -22,4 +26,5 @@ class Storage(_Storage):
 
 # Aliases
 
+SSD = LocalSSD
 GCS = Storage

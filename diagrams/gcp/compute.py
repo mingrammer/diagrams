@@ -12,6 +12,10 @@ class AppEngine(_Compute):
     _icon = "app-engine.png"
 
 
+class BinaryAuthorization(_Compute):
+    _icon = "binary-authorization.png"
+
+
 class ComputeEngine(_Compute):
     _icon = "compute-engine.png"
 
@@ -36,6 +40,18 @@ class KubernetesEngine(_Compute):
     _icon = "kubernetes-engine.png"
 
 
+class OSConfigurationManagement(_Compute):
+    _icon = "os-configuration-management.png"
+
+
+class OSInventoryManagement(_Compute):
+    _icon = "os-inventory-management.png"
+
+
+class OSPatchManagement(_Compute):
+    _icon = "os-patch-management.png"
+
+
 class Run(_Compute):
     _icon = "run.png"
 
@@ -43,6 +59,7 @@ class Run(_Compute):
 # Aliases
 
 GAE = AppEngine
-GCF = Functions
 GCE = ComputeEngine
+GCF = Functions
 GKE = KubernetesEngine
+CloudRun = Run

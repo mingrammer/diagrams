@@ -84,6 +84,10 @@ class TranslationAPI(_ML):
     _icon = "translation-api.png"
 
 
+class VertexAI(_ML):
+    _icon = "vertex-ai.png"
+
+
 class VideoIntelligenceAPI(_ML):
     _icon = "video-intelligence-api.png"
 
