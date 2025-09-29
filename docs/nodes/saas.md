@@ -161,6 +161,10 @@ Node classes list of the saas provider.
 <img width="30" src="/img/resources/saas/security/sonarqube.png" alt="Sonarqube" style="float: left; padding-right: 5px;" >
 **diagrams.saas.security.Sonarqube**
 
+## saas.search
+
+- **diagrams.saas.search.Algolia**
+
 ## saas.social
 
 
