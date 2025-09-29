@@ -113,7 +113,7 @@ class Diagram:
             edge_attr = {}
         self.name = name
         if not name and not filename:
-            filename = "diagrams_image"
+            filename = os.environ.get('DIAGRAMS_FILENAME', "diagrams_image")
         elif not filename:
             filename = "_".join(self.name.split()).lower()
         self.filename = filename
@@ -144,7 +144,7 @@ class Diagram:
         else:
             if not self._validate_outformat(outformat):
                 raise ValueError(f'"{outformat}" is not a valid output format')
-        self.outformat = outformat
+        self.outformat = os.environ.get('DIAGRAMS_OUTFORMAT', outformat)
 
         # Merge passed in attributes
         self.dot.graph_attr.update(graph_attr)
