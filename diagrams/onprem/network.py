@@ -24,6 +24,18 @@ class Caddy(_Network):
     _icon = "caddy.png"
 
 
+class CiscoRouter(_Network):
+    _icon = "cisco-router.png"
+
+
+class CiscoSwitchL2(_Network):
+    _icon = "cisco-switch-l2.png"
+
+
+class CiscoSwitchL3(_Network):
+    _icon = "cisco-switch-l3.png"
+
+
 class Consul(_Network):
     _icon = "consul.png"
 

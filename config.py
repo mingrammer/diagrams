@@ -146,6 +146,7 @@ ALIASES = {
             "Mssql": "MSSQL",
             "Mysql": "MySQL",
             "Postgresql": "PostgreSQL",
+            "Qdrant": "Qdrant",
         },
         "gitops": {
             "Argocd": "ArgoCD",

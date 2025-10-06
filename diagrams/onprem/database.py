@@ -80,6 +80,10 @@ class Postgresql(_Database):
     _icon = "postgresql.png"
 
 
+class Qdrant(_Database):
+    _icon = "qdrant.png"
+
+
 class Scylla(_Database):
     _icon = "scylla.png"
 
@@ -97,3 +101,4 @@ MongoDB = Mongodb
 MSSQL = Mssql
 MySQL = Mysql
 PostgreSQL = Postgresql
+Qdrant = Qdrant

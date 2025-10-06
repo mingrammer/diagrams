@@ -200,6 +200,9 @@ Node classes list of the aws provider.
 <img width="30" src="/img/resources/aws/compute/elastic-container-service-container.png" alt="ElasticContainerServiceContainer" style="float: left; padding-right: 5px;" >
 **diagrams.aws.compute.ElasticContainerServiceContainer**
 
+<img width="30" src="/img/resources/aws/compute/elastic-container-service-service-connect.png" alt="ElasticContainerServiceServiceConnect" style="float: left; padding-right: 5px;" >
+**diagrams.aws.compute.ElasticContainerServiceServiceConnect**
+
 <img width="30" src="/img/resources/aws/compute/elastic-container-service-service.png" alt="ElasticContainerServiceService" style="float: left; padding-right: 5px;" >
 **diagrams.aws.compute.ElasticContainerServiceService**
 
@@ -1142,6 +1145,9 @@ Node classes list of the aws provider.
 <img width="30" src="/img/resources/aws/ml/polly.png" alt="Polly" style="float: left; padding-right: 5px;" >
 **diagrams.aws.ml.Polly**
 
+<img width="30" src="/img/resources/aws/ml/q.png" alt="Q" style="float: left; padding-right: 5px;" >
+**diagrams.aws.ml.Q**
+
 <img width="30" src="/img/resources/aws/ml/rekognition-image.png" alt="RekognitionImage" style="float: left; padding-right: 5px;" >
 **diagrams.aws.ml.RekognitionImage**
 
@@ -1174,6 +1180,9 @@ Node classes list of the aws provider.
 
 <img width="30" src="/img/resources/aws/ml/transcribe.png" alt="Transcribe" style="float: left; padding-right: 5px;" >
 **diagrams.aws.ml.Transcribe**
+
+<img width="30" src="/img/resources/aws/ml/transform.png" alt="Transform" style="float: left; padding-right: 5px;" >
+**diagrams.aws.ml.Transform**
 
 <img width="30" src="/img/resources/aws/ml/translate.png" alt="Translate" style="float: left; padding-right: 5px;" >
 **diagrams.aws.ml.Translate**
@@ -1465,6 +1474,9 @@ Node classes list of the aws provider.
 
 <img width="30" src="/img/resources/aws/security/security-identity-and-compliance.png" alt="SecurityIdentityAndCompliance" style="float: left; padding-right: 5px;" >
 **diagrams.aws.security.SecurityIdentityAndCompliance**
+
+<img width="30" src="/img/resources/aws/security/security-lake.png" alt="SecurityLake" style="float: left; padding-right: 5px;" >
+**diagrams.aws.security.SecurityLake**
 
 <img width="30" src="/img/resources/aws/security/shield-advanced.png" alt="ShieldAdvanced" style="float: left; padding-right: 5px;" >
 **diagrams.aws.security.ShieldAdvanced**
