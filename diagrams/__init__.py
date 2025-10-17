@@ -315,14 +315,13 @@ class Node:
                 self.label = prefix
 
         # fmt: off
-        # If a node has an icon, increase the height slightly to avoid
-        # that label being spanned between icon image and white space.
-        # Increase the height by the number of new lines included in the label.
-        padding = 0.4 * (self.label.count('\n'))
+        # If a node has an icon, set the imagepos attr so
+        # that that the icon image is top centered.
         self._attrs = {
             "shape": "none",
-            "height": str(self._height + padding),
+            "height": str(self._height),
             "image": self._load_icon(),
+            "imagepos": "tc",
         } if self._icon else {}
 
         # fmt: on
