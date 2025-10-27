@@ -78,7 +78,7 @@ TMPL_MODULE = "module.tmpl"
 UPPER_WORDS = {
     "aws": ("aws", "api", "ebs", "ec2", "efs", "emr", "rds", "ml", "mq", "nat", "vpc", "waf", "sdk"),
     "azure": ("ad", "b2c", "ai", "api", "cdn", "ddos", "dns", "fxt", "hana", "hd", "id", "sap", "sql", "vm", "vpn", "vpc"),
-    "gcp": ("gcp", "ai", "api", "cdn", "dns", "gke", "gpu", "iap", "ml", "nat", "os", "sdk", "sql", "tpu", "vpn"),
+    "gcp": ("gcp", "ai", "api", "cdn", "dns", "gke", "gpu", "iap", "ids", "ml", "nat", "os", "sdk", "sql", "ssd", "tpu", "vpn"),
     "firebase": ("ab", "fcm", "ml"),
     "k8s": (
         "api", "cm", "ccm", "crb", "crd", "ds", "etcd", "hpa", "k8s", "ns", "psp", "pv", "pvc", "rb", "rs",
@@ -289,15 +289,19 @@ ALIASES = {
         },
         "compute": {
             "AppEngine": "GAE",
-            "Functions": "GCF",
             "ComputeEngine": "GCE",
+            "Functions": "GCF",
             "KubernetesEngine": "GKE",
+            "Run": "CloudRun",
         },
         "database": {
             "Bigtable": "BigTable",
         },
         "devtools": {
             "ContainerRegistry": "GCR",
+        },
+        "migration": {
+            "MigrateComputeEngine": "CE",
         },
         "ml": {
             "Automl": "AutoML",
@@ -306,13 +310,17 @@ ALIASES = {
             "TextToSpeech": "TTS",
         },
         "network": {
-            "VirtualPrivateCloud": "VPC"
+            "CloudIDS": "IDS",
+            "PrivateServiceConnect": "PSC",
+            "VirtualPrivateCloud": "VPC",
         },
         "security": {
+            "AccessContextManager": "ACM",
             "KeyManagementService": "KMS",
             "SecurityCommandCenter": "SCC",
         },
         "storage": {
+            "LocalSSD": "SSD",
             "Storage": "GCS",
         },
     },

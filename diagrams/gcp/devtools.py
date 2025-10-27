@@ -12,6 +12,10 @@ class Build(_Devtools):
     _icon = "build.png"
 
 
+class CloudShell(_Devtools):
+    _icon = "cloud-shell.png"
+
+
 class CodeForIntellij(_Devtools):
     _icon = "code-for-intellij.png"
 
@@ -42,6 +46,10 @@ class Scheduler(_Devtools):
 
 class SDK(_Devtools):
     _icon = "sdk.png"
+
+
+class ServiceCatalog(_Devtools):
+    _icon = "service-catalog.png"
 
 
 class SourceRepositories(_Devtools):

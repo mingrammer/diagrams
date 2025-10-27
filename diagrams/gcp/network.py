@@ -16,6 +16,10 @@ class CDN(_Network):
     _icon = "cdn.png"
 
 
+class CloudIDS(_Network):
+    _icon = "cloud-ids.png"
+
+
 class DedicatedInterconnect(_Network):
     _icon = "dedicated-interconnect.png"
 
@@ -40,6 +44,26 @@ class NAT(_Network):
     _icon = "nat.png"
 
 
+class NetworkConnectivityCenter(_Network):
+    _icon = "network-connectivity-center.png"
+
+
+class NetworkIntelligenceCenter(_Network):
+    _icon = "network-intelligence-center.png"
+
+
+class NetworkSecurity(_Network):
+    _icon = "network-security.png"
+
+
+class NetworkTiers(_Network):
+    _icon = "network-tiers.png"
+
+
+class NetworkTopology(_Network):
+    _icon = "network-topology.png"
+
+
 class Network(_Network):
     _icon = "network.png"
 
@@ -52,12 +76,20 @@ class PremiumNetworkTier(_Network):
     _icon = "premium-network-tier.png"
 
 
+class PrivateServiceConnect(_Network):
+    _icon = "private-service-connect.png"
+
+
 class Router(_Network):
     _icon = "router.png"
 
 
 class Routes(_Network):
     _icon = "routes.png"
+
+
+class ServiceMesh(_Network):
+    _icon = "service-mesh.png"
 
 
 class StandardNetworkTier(_Network):
@@ -78,4 +110,6 @@ class VPN(_Network):
 
 # Aliases
 
+IDS = CloudIDS
+PSC = PrivateServiceConnect
 VPC = VirtualPrivateCloud
