@@ -12,6 +12,10 @@ class Angular(_Framework):
     _icon = "angular.png"
 
 
+class Astro(_Framework):
+    _icon = "astro.png"
+
+
 class Backbone(_Framework):
     _icon = "backbone.png"
 
