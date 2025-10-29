@@ -23,7 +23,7 @@ pytest = "^8.4"
 pylint = "^3.3"
 rope = "^1.13"
 isort = "^6.0"
-black = "^24.4"
+black = "^25.9"
 pre-commit = "^4.3.0"
 
 [tool.black]
