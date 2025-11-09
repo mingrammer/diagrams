@@ -16,7 +16,6 @@ diagrams="diagrams.cli:main"
 python = "^3.9"
 graphviz = ">=0.13.2,<0.21.0"
 jinja2 = ">=2.10,<4.0"
-typed-ast = {version="^1.5.5", markers="python_version<'3.8'"}
 
 [tool.poetry.dev-dependencies]
 pytest = "^8.4"
