@@ -12,6 +12,26 @@ class ArchiveStorage(_Storage):
     _icon = "archive-storage.png"
 
 
+class AzureDataboxGateway(_Storage):
+    _icon = "azure-databox-gateway.png"
+
+
+class AzureFileshares(_Storage):
+    _icon = "azure-fileshares.png"
+
+
+class AzureHcpCache(_Storage):
+    _icon = "azure-hcp-cache.png"
+
+
+class AzureNetappFiles(_Storage):
+    _icon = "azure-netapp-files.png"
+
+
+class AzureStackEdge(_Storage):
+    _icon = "azure-stack-edge.png"
+
+
 class Azurefxtedgefiler(_Storage):
     _icon = "azurefxtedgefiler.png"
 
@@ -28,12 +48,28 @@ class DataBox(_Storage):
     _icon = "data-box.png"
 
 
+class DataLakeStorageGen1(_Storage):
+    _icon = "data-lake-storage-gen1.png"
+
+
 class DataLakeStorage(_Storage):
     _icon = "data-lake-storage.png"
 
 
+class DataShareInvitations(_Storage):
+    _icon = "data-share-invitations.png"
+
+
+class DataShares(_Storage):
+    _icon = "data-shares.png"
+
+
 class GeneralStorage(_Storage):
     _icon = "general-storage.png"
+
+
+class ImportExportJobs(_Storage):
+    _icon = "import-export-jobs.png"
 
 
 class NetappFiles(_Storage):
@@ -42,6 +78,10 @@ class NetappFiles(_Storage):
 
 class QueuesStorage(_Storage):
     _icon = "queues-storage.png"
+
+
+class RecoveryServicesVaults(_Storage):
+    _icon = "recovery-services-vaults.png"
 
 
 class StorageAccountsClassic(_Storage):

@@ -44,6 +44,10 @@ class Genomics(_Analytics):
     _icon = "genomics.png"
 
 
+class Looker(_Analytics):
+    _icon = "looker.png"
+
+
 class Pubsub(_Analytics):
     _icon = "pubsub.png"
 

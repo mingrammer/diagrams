@@ -10,3 +10,7 @@ class _Generic(Node):
     _icon_dir = "resources/generic"
 
     fontcolor = "#ffffff"
+
+
+class Generic(_Generic):
+    _icon = "generic.png"

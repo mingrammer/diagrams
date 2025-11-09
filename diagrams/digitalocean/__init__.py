@@ -10,3 +10,7 @@ class _DigitalOcean(Node):
     _icon_dir = "resources/digitalocean"
 
     fontcolor = "#ffffff"
+
+
+class DigitalOcean(_DigitalOcean):
+    _icon = "digitalocean.png"

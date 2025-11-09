@@ -8,6 +8,14 @@ class _Devops(_Azure):
     _icon_dir = "resources/azure/devops"
 
 
+class APIConnections(_Devops):
+    _icon = "api-connections.png"
+
+
+class APIManagementServices(_Devops):
+    _icon = "api-management-services.png"
+
+
 class ApplicationInsights(_Devops):
     _icon = "application-insights.png"
 
@@ -16,8 +24,28 @@ class Artifacts(_Devops):
     _icon = "artifacts.png"
 
 
+class AzureDevops(_Devops):
+    _icon = "azure-devops.png"
+
+
 class Boards(_Devops):
     _icon = "boards.png"
+
+
+class ChangeAnalysis(_Devops):
+    _icon = "change-analysis.png"
+
+
+class Cloudtest(_Devops):
+    _icon = "cloudtest.png"
+
+
+class CodeOptimization(_Devops):
+    _icon = "code-optimization.png"
+
+
+class DevopsStarter(_Devops):
+    _icon = "devops-starter.png"
 
 
 class Devops(_Devops):
@@ -28,8 +56,16 @@ class DevtestLabs(_Devops):
     _icon = "devtest-labs.png"
 
 
+class LabAccounts(_Devops):
+    _icon = "lab-accounts.png"
+
+
 class LabServices(_Devops):
     _icon = "lab-services.png"
+
+
+class LoadTesting(_Devops):
+    _icon = "load-testing.png"
 
 
 class Pipelines(_Devops):

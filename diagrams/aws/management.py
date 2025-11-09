@@ -64,6 +64,10 @@ class CloudwatchEventTimeBased(_Management):
     _icon = "cloudwatch-event-time-based.png"
 
 
+class CloudwatchLogs(_Management):
+    _icon = "cloudwatch-logs.png"
+
+
 class CloudwatchRule(_Management):
     _icon = "cloudwatch-rule.png"
 
@@ -230,6 +234,10 @@ class TrustedAdvisorChecklist(_Management):
 
 class TrustedAdvisor(_Management):
     _icon = "trusted-advisor.png"
+
+
+class UserNotifications(_Management):
+    _icon = "user-notifications.png"
 
 
 class WellArchitectedTool(_Management):

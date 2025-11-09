@@ -35,6 +35,9 @@ Node classes list of the gcp provider.
 <img width="30" src="/img/resources/gcp/analytics/genomics.png" alt="Genomics" style="float: left; padding-right: 5px;" >
 **diagrams.gcp.analytics.Genomics**
 
+<img width="30" src="/img/resources/gcp/analytics/looker.png" alt="Looker" style="float: left; padding-right: 5px;" >
+**diagrams.gcp.analytics.Looker**
+
 <img width="30" src="/img/resources/gcp/analytics/pubsub.png" alt="Pubsub" style="float: left; padding-right: 5px;" >
 **diagrams.gcp.analytics.Pubsub**, **PubSub** (alias)
 
@@ -56,6 +59,9 @@ Node classes list of the gcp provider.
 <img width="30" src="/img/resources/gcp/compute/app-engine.png" alt="AppEngine" style="float: left; padding-right: 5px;" >
 **diagrams.gcp.compute.AppEngine**, **GAE** (alias)
 
+<img width="30" src="/img/resources/gcp/compute/binary-authorization.png" alt="BinaryAuthorization" style="float: left; padding-right: 5px;" >
+**diagrams.gcp.compute.BinaryAuthorization**
+
 <img width="30" src="/img/resources/gcp/compute/compute-engine.png" alt="ComputeEngine" style="float: left; padding-right: 5px;" >
 **diagrams.gcp.compute.ComputeEngine**, **GCE** (alias)
 
@@ -74,8 +80,17 @@ Node classes list of the gcp provider.
 <img width="30" src="/img/resources/gcp/compute/kubernetes-engine.png" alt="KubernetesEngine" style="float: left; padding-right: 5px;" >
 **diagrams.gcp.compute.KubernetesEngine**, **GKE** (alias)
 
+<img width="30" src="/img/resources/gcp/compute/os-configuration-management.png" alt="OSConfigurationManagement" style="float: left; padding-right: 5px;" >
+**diagrams.gcp.compute.OSConfigurationManagement**
+
+<img width="30" src="/img/resources/gcp/compute/os-inventory-management.png" alt="OSInventoryManagement" style="float: left; padding-right: 5px;" >
+**diagrams.gcp.compute.OSInventoryManagement**
+
+<img width="30" src="/img/resources/gcp/compute/os-patch-management.png" alt="OSPatchManagement" style="float: left; padding-right: 5px;" >
+**diagrams.gcp.compute.OSPatchManagement**
+
 <img width="30" src="/img/resources/gcp/compute/run.png" alt="Run" style="float: left; padding-right: 5px;" >
-**diagrams.gcp.compute.Run**
+**diagrams.gcp.compute.Run**, **CloudRun** (alias)
 
 ## gcp.database
 
@@ -104,6 +119,9 @@ Node classes list of the gcp provider.
 <img width="30" src="/img/resources/gcp/devtools/build.png" alt="Build" style="float: left; padding-right: 5px;" >
 **diagrams.gcp.devtools.Build**
 
+<img width="30" src="/img/resources/gcp/devtools/cloud-shell.png" alt="CloudShell" style="float: left; padding-right: 5px;" >
+**diagrams.gcp.devtools.CloudShell**
+
 <img width="30" src="/img/resources/gcp/devtools/code-for-intellij.png" alt="CodeForIntellij" style="float: left; padding-right: 5px;" >
 **diagrams.gcp.devtools.CodeForIntellij**
 
@@ -127,6 +145,9 @@ Node classes list of the gcp provider.
 
 <img width="30" src="/img/resources/gcp/devtools/sdk.png" alt="SDK" style="float: left; padding-right: 5px;" >
 **diagrams.gcp.devtools.SDK**
+
+<img width="30" src="/img/resources/gcp/devtools/service-catalog.png" alt="ServiceCatalog" style="float: left; padding-right: 5px;" >
+**diagrams.gcp.devtools.ServiceCatalog**
 
 <img width="30" src="/img/resources/gcp/devtools/source-repositories.png" alt="SourceRepositories" style="float: left; padding-right: 5px;" >
 **diagrams.gcp.devtools.SourceRepositories**
@@ -152,8 +173,26 @@ Node classes list of the gcp provider.
 <img width="30" src="/img/resources/gcp/iot/iot-core.png" alt="IotCore" style="float: left; padding-right: 5px;" >
 **diagrams.gcp.iot.IotCore**
 
+## gcp.management
+
+
+<img width="30" src="/img/resources/gcp/management/billing.png" alt="Billing" style="float: left; padding-right: 5px;" >
+**diagrams.gcp.management.Billing**
+
+<img width="30" src="/img/resources/gcp/management/project.png" alt="Project" style="float: left; padding-right: 5px;" >
+**diagrams.gcp.management.Project**
+
+<img width="30" src="/img/resources/gcp/management/quotas.png" alt="Quotas" style="float: left; padding-right: 5px;" >
+**diagrams.gcp.management.Quotas**
+
+<img width="30" src="/img/resources/gcp/management/support.png" alt="Support" style="float: left; padding-right: 5px;" >
+**diagrams.gcp.management.Support**
+
 ## gcp.migration
 
+
+<img width="30" src="/img/resources/gcp/migration/migrate-compute-engine.png" alt="MigrateComputeEngine" style="float: left; padding-right: 5px;" >
+**diagrams.gcp.migration.MigrateComputeEngine**, **CE** (alias)
 
 <img width="30" src="/img/resources/gcp/migration/transfer-appliance.png" alt="TransferAppliance" style="float: left; padding-right: 5px;" >
 **diagrams.gcp.migration.TransferAppliance**
@@ -218,6 +257,9 @@ Node classes list of the gcp provider.
 <img width="30" src="/img/resources/gcp/ml/translation-api.png" alt="TranslationAPI" style="float: left; padding-right: 5px;" >
 **diagrams.gcp.ml.TranslationAPI**
 
+<img width="30" src="/img/resources/gcp/ml/vertex-ai.png" alt="VertexAI" style="float: left; padding-right: 5px;" >
+**diagrams.gcp.ml.VertexAI**
+
 <img width="30" src="/img/resources/gcp/ml/video-intelligence-api.png" alt="VideoIntelligenceAPI" style="float: left; padding-right: 5px;" >
 **diagrams.gcp.ml.VideoIntelligenceAPI**
 
@@ -232,6 +274,9 @@ Node classes list of the gcp provider.
 
 <img width="30" src="/img/resources/gcp/network/cdn.png" alt="CDN" style="float: left; padding-right: 5px;" >
 **diagrams.gcp.network.CDN**
+
+<img width="30" src="/img/resources/gcp/network/cloud-ids.png" alt="CloudIDS" style="float: left; padding-right: 5px;" >
+**diagrams.gcp.network.CloudIDS**, **IDS** (alias)
 
 <img width="30" src="/img/resources/gcp/network/dedicated-interconnect.png" alt="DedicatedInterconnect" style="float: left; padding-right: 5px;" >
 **diagrams.gcp.network.DedicatedInterconnect**
@@ -251,6 +296,21 @@ Node classes list of the gcp provider.
 <img width="30" src="/img/resources/gcp/network/nat.png" alt="NAT" style="float: left; padding-right: 5px;" >
 **diagrams.gcp.network.NAT**
 
+<img width="30" src="/img/resources/gcp/network/network-connectivity-center.png" alt="NetworkConnectivityCenter" style="float: left; padding-right: 5px;" >
+**diagrams.gcp.network.NetworkConnectivityCenter**
+
+<img width="30" src="/img/resources/gcp/network/network-intelligence-center.png" alt="NetworkIntelligenceCenter" style="float: left; padding-right: 5px;" >
+**diagrams.gcp.network.NetworkIntelligenceCenter**
+
+<img width="30" src="/img/resources/gcp/network/network-security.png" alt="NetworkSecurity" style="float: left; padding-right: 5px;" >
+**diagrams.gcp.network.NetworkSecurity**
+
+<img width="30" src="/img/resources/gcp/network/network-tiers.png" alt="NetworkTiers" style="float: left; padding-right: 5px;" >
+**diagrams.gcp.network.NetworkTiers**
+
+<img width="30" src="/img/resources/gcp/network/network-topology.png" alt="NetworkTopology" style="float: left; padding-right: 5px;" >
+**diagrams.gcp.network.NetworkTopology**
+
 <img width="30" src="/img/resources/gcp/network/network.png" alt="Network" style="float: left; padding-right: 5px;" >
 **diagrams.gcp.network.Network**
 
@@ -260,11 +320,17 @@ Node classes list of the gcp provider.
 <img width="30" src="/img/resources/gcp/network/premium-network-tier.png" alt="PremiumNetworkTier" style="float: left; padding-right: 5px;" >
 **diagrams.gcp.network.PremiumNetworkTier**
 
+<img width="30" src="/img/resources/gcp/network/private-service-connect.png" alt="PrivateServiceConnect" style="float: left; padding-right: 5px;" >
+**diagrams.gcp.network.PrivateServiceConnect**, **PSC** (alias)
+
 <img width="30" src="/img/resources/gcp/network/router.png" alt="Router" style="float: left; padding-right: 5px;" >
 **diagrams.gcp.network.Router**
 
 <img width="30" src="/img/resources/gcp/network/routes.png" alt="Routes" style="float: left; padding-right: 5px;" >
 **diagrams.gcp.network.Routes**
+
+<img width="30" src="/img/resources/gcp/network/service-mesh.png" alt="ServiceMesh" style="float: left; padding-right: 5px;" >
+**diagrams.gcp.network.ServiceMesh**
 
 <img width="30" src="/img/resources/gcp/network/standard-network-tier.png" alt="StandardNetworkTier" style="float: left; padding-right: 5px;" >
 **diagrams.gcp.network.StandardNetworkTier**
@@ -290,6 +356,21 @@ Node classes list of the gcp provider.
 ## gcp.security
 
 
+<img width="30" src="/img/resources/gcp/security/access-context-manager.png" alt="AccessContextManager" style="float: left; padding-right: 5px;" >
+**diagrams.gcp.security.AccessContextManager**, **ACM** (alias)
+
+<img width="30" src="/img/resources/gcp/security/assured-workloads.png" alt="AssuredWorkloads" style="float: left; padding-right: 5px;" >
+**diagrams.gcp.security.AssuredWorkloads**
+
+<img width="30" src="/img/resources/gcp/security/certificate-authority-service.png" alt="CertificateAuthorityService" style="float: left; padding-right: 5px;" >
+**diagrams.gcp.security.CertificateAuthorityService**
+
+<img width="30" src="/img/resources/gcp/security/certificate-manager.png" alt="CertificateManager" style="float: left; padding-right: 5px;" >
+**diagrams.gcp.security.CertificateManager**
+
+<img width="30" src="/img/resources/gcp/security/cloud-asset-inventory.png" alt="CloudAssetInventory" style="float: left; padding-right: 5px;" >
+**diagrams.gcp.security.CloudAssetInventory**
+
 <img width="30" src="/img/resources/gcp/security/iam.png" alt="Iam" style="float: left; padding-right: 5px;" >
 **diagrams.gcp.security.Iam**
 
@@ -302,8 +383,14 @@ Node classes list of the gcp provider.
 <img width="30" src="/img/resources/gcp/security/resource-manager.png" alt="ResourceManager" style="float: left; padding-right: 5px;" >
 **diagrams.gcp.security.ResourceManager**
 
+<img width="30" src="/img/resources/gcp/security/secret-manager.png" alt="SecretManager" style="float: left; padding-right: 5px;" >
+**diagrams.gcp.security.SecretManager**
+
 <img width="30" src="/img/resources/gcp/security/security-command-center.png" alt="SecurityCommandCenter" style="float: left; padding-right: 5px;" >
 **diagrams.gcp.security.SecurityCommandCenter**, **SCC** (alias)
+
+<img width="30" src="/img/resources/gcp/security/security-health-advisor.png" alt="SecurityHealthAdvisor" style="float: left; padding-right: 5px;" >
+**diagrams.gcp.security.SecurityHealthAdvisor**
 
 <img width="30" src="/img/resources/gcp/security/security-scanner.png" alt="SecurityScanner" style="float: left; padding-right: 5px;" >
 **diagrams.gcp.security.SecurityScanner**
@@ -313,6 +400,9 @@ Node classes list of the gcp provider.
 
 <img width="30" src="/img/resources/gcp/storage/filestore.png" alt="Filestore" style="float: left; padding-right: 5px;" >
 **diagrams.gcp.storage.Filestore**
+
+<img width="30" src="/img/resources/gcp/storage/local-ssd.png" alt="LocalSSD" style="float: left; padding-right: 5px;" >
+**diagrams.gcp.storage.LocalSSD**, **SSD** (alias)
 
 <img width="30" src="/img/resources/gcp/storage/persistent-disk.png" alt="PersistentDisk" style="float: left; padding-right: 5px;" >
 **diagrams.gcp.storage.PersistentDisk**

@@ -36,6 +36,10 @@ class Druid(_Database):
     _icon = "druid.png"
 
 
+class Duckdb(_Database):
+    _icon = "duckdb.png"
+
+
 class Hbase(_Database):
     _icon = "hbase.png"
 
@@ -76,6 +80,10 @@ class Postgresql(_Database):
     _icon = "postgresql.png"
 
 
+class Qdrant(_Database):
+    _icon = "qdrant.png"
+
+
 class Scylla(_Database):
     _icon = "scylla.png"
 
@@ -93,3 +101,4 @@ MongoDB = Mongodb
 MSSQL = Mssql
 MySQL = Mysql
 PostgreSQL = Postgresql
+Qdrant = Qdrant

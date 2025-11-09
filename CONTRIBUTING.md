@@ -43,6 +43,45 @@ Then just run the `./autogen.sh` to generate the added or updated node classes. 
 [black]: https://pypi.org/project/black
 [inkscape]: https://inkscape.org/ko/release
 
+#### Update Specific Instructions for Azure Icons
+
+Download and unzip [Azure Icons](https://learn.microsoft.com/en-us/azure/architecture/icons/)
+
+Execute inside Azure_Public_Service_Icons/Icons/
+```bash
+# Rename some diretories
+mv ai\ +\ machine\ learning/ aimachinelearning/
+mv app\ services/ appservices
+mv azure\ stack/ azurestack
+mv azure\ ecosystem/ azureecosystem
+mv management\ +\ governance/ managementgovernance
+mv  mixed\ reality mixedreality
+mv new\ icons/ newicons
+#  Convert Name to name
+rename -f 'y/A-Z/a-z/' ./*/*
+# Create png files and eliminate ?????-icon-service from namefile
+find . -type f -name "*.svg" -exec bash -c 'inkscape -h 256  --export-filename="${0%.svg}.png" "$0";mv "${0%.svg}.png" "$(echo "${0%.svg}.png" | sed -r 's/[0-9]{5}-icon-service-//')"' {} \;
+# Delete svg files
+find . -type f -name "*.svg" -exec bash -c 'rm "$0"' {} \;
+```
+
+If you get any errors with autogen, it will probably be a '+' in  filename 
+
+### Add new provider
+
+To add a new provider to Diagrams, please follow the steps below in addition to the image intructions above:
+- in `autogen.sh` add in the `providers` variable the new provider code
+- in `config.py`:
+  - in the `providers` variable, add the new provider code
+  - in the `FILE_PREFIXES` variable, add a new entry with your new provider code. And eventually a file prefix
+  - Optionnaly, update the `UPPER_WORDS` variable to a new entry with your new provider code.
+  - in the `ALIASES` variable, add a new entry with your new provider code. See below on how to add new aliases.
+- in `scripts/resource.py`:
+  - add a function `cleaner_XXX` (replace XXX by your provider name). For the implementation look at the existing functions
+  - in the `cleaners` variable, add an entry with your new provider code and the function defined above
+- in `sidebars.json`, update the `Nodes` array to add the reference of the new provider
+- in the `diagrams` folder, add a new file `__init__.py` for the new provider. For the content look at the existing providers
+
 ### Update Aliases
 
 Some node classes have alias. For example, `aws.compute.ECS` class is an alias

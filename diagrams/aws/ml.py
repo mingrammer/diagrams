@@ -16,6 +16,10 @@ class AugmentedAi(_ML):
     _icon = "augmented-ai.png"
 
 
+class Bedrock(_ML):
+    _icon = "bedrock.png"
+
+
 class Comprehend(_ML):
     _icon = "comprehend.png"
 
@@ -72,6 +76,10 @@ class Polly(_ML):
     _icon = "polly.png"
 
 
+class Q(_ML):
+    _icon = "q.png"
+
+
 class RekognitionImage(_ML):
     _icon = "rekognition-image.png"
 
@@ -114,6 +122,10 @@ class Textract(_ML):
 
 class Transcribe(_ML):
     _icon = "transcribe.png"
+
+
+class Transform(_ML):
+    _icon = "transform.png"
 
 
 class Translate(_ML):

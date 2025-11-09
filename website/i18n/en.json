@@ -53,6 +53,9 @@
       "nodes/generic": {
         "title": "Generic"
       },
+      "nodes/gis": {
+        "title": "GIS"
+      },
       "nodes/ibm": {
         "title": "IBM"
       },

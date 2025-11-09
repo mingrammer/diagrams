@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "diagrams"
-version = "0.24.1"
+version = "0.24.4"
 description = "Diagram as Code"
 license = "MIT"
 authors = ["mingrammer <mingrammer@gmail.com>"]
@@ -16,14 +16,14 @@ diagrams="diagrams.cli:main"
 python = "^3.9"
 graphviz = ">=0.13.2,<0.21.0"
 jinja2 = ">=2.10,<4.0"
-pre-commit = "^4.0.1"
 
 [tool.poetry.dev-dependencies]
-pytest = "^8.3"
+pytest = "^8.4"
 pylint = "^3.3"
 rope = "^1.13"
-isort = "^5.13"
+isort = "^6.0"
 black = "^24.4"
+pre-commit = "^4.3.0"
 
 [tool.black]
 line-length=120

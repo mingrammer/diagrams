@@ -35,6 +35,12 @@ Node classes list of the saas provider.
 <img width="30" src="/img/resources/saas/analytics/stitch.png" alt="Stitch" style="float: left; padding-right: 5px;" >
 **diagrams.saas.analytics.Stitch**
 
+## saas.automation
+
+
+<img width="30" src="/img/resources/saas/automation/n8n.png" alt="N8N" style="float: left; padding-right: 5px;" >
+**diagrams.saas.automation.N8N**
+
 ## saas.cdn
 
 
@@ -46,6 +52,9 @@ Node classes list of the saas provider.
 
 <img width="30" src="/img/resources/saas/cdn/fastly.png" alt="Fastly" style="float: left; padding-right: 5px;" >
 **diagrams.saas.cdn.Fastly**
+
+<img width="30" src="/img/resources/saas/cdn/imperva.png" alt="Imperva" style="float: left; padding-right: 5px;" >
+**diagrams.saas.cdn.Imperva**
 
 ## saas.chat
 
@@ -121,6 +130,21 @@ Node classes list of the saas provider.
 
 <img width="30" src="/img/resources/saas/media/cloudinary.png" alt="Cloudinary" style="float: left; padding-right: 5px;" >
 **diagrams.saas.media.Cloudinary**
+
+## saas.payment
+
+
+<img width="30" src="/img/resources/saas/payment/adyen.png" alt="Adyen" style="float: left; padding-right: 5px;" >
+**diagrams.saas.payment.Adyen**
+
+<img width="30" src="/img/resources/saas/payment/amazon-pay.png" alt="AmazonPay" style="float: left; padding-right: 5px;" >
+**diagrams.saas.payment.AmazonPay**
+
+<img width="30" src="/img/resources/saas/payment/paypal.png" alt="Paypal" style="float: left; padding-right: 5px;" >
+**diagrams.saas.payment.Paypal**
+
+<img width="30" src="/img/resources/saas/payment/stripe.png" alt="Stripe" style="float: left; padding-right: 5px;" >
+**diagrams.saas.payment.Stripe**
 
 ## saas.recommendation
 
