@@ -1,12 +1,32 @@
-[tool.poetry]
+[project]
 name = "diagrams"
-version = "0.24.4"
+version = "0.25.0"
 description = "Diagram as Code"
-license = "MIT"
-authors = ["mingrammer <mingrammer@gmail.com>"]
+authors = [{ name = "mingrammer", email = "mingrammer@gmail.com" }]
+requires-python = "~=3.9"
 readme = "README.md"
-homepage = "https://diagrams.mingrammer.com"
-repository = "https://github.com/mingrammer/diagrams"
+license = "MIT"
+dependencies = [
+    "graphviz>=0.13.2,<0.21.0",
+    "jinja2>=2.10,<4.0",
+    "typed-ast>=1.5.5,<2 ; python_version<'3.8'",
+    "pre-commit>=4.0.1,<5",
+]
+
+[project.urls]
+Homepage = "https://diagrams.mingrammer.com"
+Repository = "https://github.com/mingrammer/diagrams"
+
+[dependency-groups]
+dev = [
+    "pytest~=8.3",
+    "pylint~=3.3",
+    "rope~=1.13",
+    "isort~=5.13",
+    "black~=24.4",
+]
+
+[tool.hatch.build.targets.sdist]
 include = ["resources/**/*"]
 
 [tool.poetry.scripts]
@@ -25,6 +45,9 @@ rope = "^1.13"
 isort = "^6.0"
 black = "^24.4"
 pre-commit = "^4.3.0"
+
+[tool.hatch.build.targets.wheel]
+include = ["resources/**/*"]
 
 [tool.black]
 line-length=120
