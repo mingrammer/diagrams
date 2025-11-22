@@ -139,8 +139,7 @@ class Diagram:
         if isinstance(outformat, list):
             for one_format in outformat:
                 if not self._validate_outformat(one_format):
-                    raise ValueError(
-                        f'"{one_format}" is not a valid output format')
+                    raise ValueError(f'"{one_format}" is not a valid output format')
         else:
             if not self._validate_outformat(outformat):
                 raise ValueError(f'"{outformat}" is not a valid output format')
@@ -492,8 +491,7 @@ class Edge:
         """Implement Self - Node or Edge and Self - [Nodes]"""
         return self.connect(other)
 
-    def __rsub__(self, other: Union[List["Node"],
-                 List["Edge"]]) -> List["Edge"]:
+    def __rsub__(self, other: Union[List["Node"], List["Edge"]]) -> List["Edge"]:
         """Called for [Nodes] or [Edges] - Self because list don't have __sub__ operators."""
         return self.append(other)
 
@@ -507,23 +505,15 @@ class Edge:
         self.reverse = True
         return self.connect(other)
 
-    def __rrshift__(self,
-                    other: Union[List["Node"],
-                                 List["Edge"]]) -> List["Edge"]:
+    def __rrshift__(self, other: Union[List["Node"], List["Edge"]]) -> List["Edge"]:
         """Called for [Nodes] or [Edges] >> Self because list of Edges don't have __rshift__ operators."""
         return self.append(other, forward=True)
 
-    def __rlshift__(self,
-                    other: Union[List["Node"],
-                                 List["Edge"]]) -> List["Edge"]:
+    def __rlshift__(self, other: Union[List["Node"], List["Edge"]]) -> List["Edge"]:
         """Called for [Nodes] or [Edges] << Self because list of Edges don't have __lshift__ operators."""
         return self.append(other, reverse=True)
 
-    def append(self,
-               other: Union[List["Node"],
-                            List["Edge"]],
-               forward=None,
-               reverse=None) -> List["Edge"]:
+    def append(self, other: Union[List["Node"], List["Edge"]], forward=None, reverse=None) -> List["Edge"]:
         result = []
         for o in other:
             if isinstance(o, Edge):
@@ -532,12 +522,7 @@ class Edge:
                 self._attrs = o.attrs.copy()
                 result.append(o)
             else:
-                result.append(
-                    Edge(
-                        o,
-                        forward=forward,
-                        reverse=reverse,
-                        **self._attrs))
+                result.append(Edge(o, forward=forward, reverse=reverse, **self._attrs))
         return result
 
     def connect(self, other: Union["Node", "Edge", List["Node"]]):
