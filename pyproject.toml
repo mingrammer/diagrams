@@ -17,6 +17,9 @@ dependencies = [
     "pre-commit>=4.0.1,<5",
 ]
 
+[project.scripts]
+diagrams = "diagrams.cli:main"
+
 [project.urls]
 Homepage = "https://diagrams.mingrammer.com"
 Repository = "https://github.com/mingrammer/diagrams"
@@ -32,23 +35,6 @@ dev = [
 
 [tool.hatch.build]
 only-include = ["diagrams", "resources"]
-
-[tool.poetry.scripts]
-diagrams="diagrams.cli:main"
-
-[tool.poetry.dependencies]
-python = "^3.9"
-graphviz = ">=0.13.2,<0.21.0"
-jinja2 = ">=2.10,<4.0"
-typed-ast = {version="^1.5.5", markers="python_version<'3.8'"}
-
-[tool.poetry.group.dev.dependencies]
-pytest = "^8.4"
-pylint = "^3.3"
-rope = "^1.13"
-isort = "^6.0"
-black = "^24.4"
-pre-commit = "^4.3.0"
 
 [tool.black]
 line-length=120
