@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "diagrams"
-version = "0.25.0"
+version = "0.25.1"
 description = "Diagram as Code"
 authors = [{ name = "mingrammer", email = "mingrammer@gmail.com" }]
 requires-python = "~=3.9"
