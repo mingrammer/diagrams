@@ -393,3 +393,49 @@ class ResourcesTest(unittest.TestCase):
             _,
             _ in os.walk(resources_dir))
         self.assertLessEqual(max_depth, 2)
+
+    def test_resources_exist_and_render(self):
+        """
+        Test that resources directory exists and icons can be loaded for rendering.
+        This ensures the package build includes all necessary resource files.
+        """
+        from diagrams.aws.compute import EC2
+        from diagrams.aws.database import RDS
+
+        # Verify resources directory exists
+        resources_dir = pathlib.Path(__file__).parent.parent / "resources"
+        self.assertTrue(resources_dir.exists(), "resources directory should exist")
+
+        # Verify AWS resources exist (sample check)
+        aws_compute_dir = resources_dir / "aws" / "compute"
+        self.assertTrue(aws_compute_dir.exists(), "AWS compute resources should exist")
+
+        # Verify icon files exist
+        ec2_icon = aws_compute_dir / "ec2.png"
+        self.assertTrue(ec2_icon.exists(), "EC2 icon should exist")
+
+        # Test that nodes can load their icons
+        test_diagram_name = "test_resources_render"
+        try:
+            with Diagram(test_diagram_name, show=False):
+                ec2_node = EC2("test-ec2")
+                rds_node = RDS("test-rds")
+
+                # Verify nodes have icon attributes set
+                self.assertIsNotNone(ec2_node._icon, "EC2 node should have an icon")
+                self.assertIsNotNone(rds_node._icon, "RDS node should have an icon")
+
+                # Verify icon paths are valid
+                ec2_icon_path = ec2_node._load_icon()
+                rds_icon_path = rds_node._load_icon()
+
+                self.assertTrue(os.path.exists(ec2_icon_path),
+                                f"EC2 icon path should exist: {ec2_icon_path}")
+                self.assertTrue(os.path.exists(rds_icon_path),
+                                f"RDS icon path should exist: {rds_icon_path}")
+        finally:
+            # Clean up generated files
+            try:
+                os.remove(test_diagram_name + ".png")
+            except FileNotFoundError:
+                pass
