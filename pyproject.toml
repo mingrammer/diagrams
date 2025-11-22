@@ -1,3 +1,7 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
 [project]
 name = "diagrams"
 version = "0.25.0"
@@ -26,8 +30,8 @@ dev = [
     "black~=24.4",
 ]
 
-[tool.hatch.build.targets.sdist]
-include = ["resources/**/*"]
+[tool.hatch.build]
+only-include = ["diagrams", "resources"]
 
 [tool.poetry.scripts]
 diagrams="diagrams.cli:main"
@@ -45,9 +49,6 @@ rope = "^1.13"
 isort = "^6.0"
 black = "^24.4"
 pre-commit = "^4.3.0"
-
-[tool.hatch.build.targets.wheel]
-include = ["resources/**/*"]
 
 [tool.black]
 line-length=120
