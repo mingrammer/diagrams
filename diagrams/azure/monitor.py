@@ -38,6 +38,8 @@ class DiagnosticsSettings(_Monitor):
 
 class LogAnalyticsWorkspaces(_Monitor):
     _icon = "log-analytics-workspaces.png"
+
+
 class Logs(_Monitor):
     _icon = "logs.png"
 

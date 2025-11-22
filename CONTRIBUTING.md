@@ -65,7 +65,7 @@ find . -type f -name "*.svg" -exec bash -c 'inkscape -h 256  --export-filename="
 find . -type f -name "*.svg" -exec bash -c 'rm "$0"' {} \;
 ```
 
-If you get any errors with autogen, it will probably be a '+' in  filename 
+If you get any errors with autogen, it will probably be a '+' in  filename
 
 ### Add new provider
 
