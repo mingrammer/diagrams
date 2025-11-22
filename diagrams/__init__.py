@@ -62,7 +62,7 @@ class Diagram:
         # imagepos attribute is not backward compatible
         # TODO: check graphviz version to see if "imagepos" is available >= 2.40
         # https://github.com/xflr6/graphviz/blob/master/graphviz/backend.py#L248
-        # "imagepos": "tc",
+        "imagepos": "tc",
         "imagescale": "true",
         "fontname": "Sans-Serif",
         "fontsize": "13",
