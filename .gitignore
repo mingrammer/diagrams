@@ -11,6 +11,14 @@ __pycache__/
 # graphviz
 *.gv*
 
+# test outputs
+diagram-*
+diagrams_image
+example_*
+my_custom_name
+test_diagram.py
+test_resources_render
+
 # dist
 dist
 website/build

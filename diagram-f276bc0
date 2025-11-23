@@ -1,9 +1,0 @@
-digraph "diagram-f276bc0" {
-	graph [fontcolor="#2D3436" fontname="Sans-Serif" fontsize=15 label="diagram-f276bc0" nodesep=0.60 pad=2.0 rankdir=LR ranksep=0.75 splines=ortho]
-	node [fixedsize=true fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13 height=1.4 imagescale=true labelloc=b shape=box style=rounded width=1.4]
-	edge [color="#7B8894"]
-	d203be521dbd43c8aeb03d4a6b8e5191 [label=<<font point-size="12"><b>container1</b></font><br/><font point-size="9">[Container]<br/></font>> fillcolor=dodgerblue3 fixedsize=true fontcolor=white height=1 labelloc=c shape=rect style=filled width=2]
-	"387f4dac0f604af3a548a3b973dacf7d" [label=<<font point-size="12"><b>container2</b></font><br/><font point-size="9">[Container]<br/></font>> fillcolor=dodgerblue3 fixedsize=true fontcolor=white height=1 labelloc=c shape=rect style=filled width=2]
-	d203be521dbd43c8aeb03d4a6b8e5191 -> "387f4dac0f604af3a548a3b973dacf7d" [label=<<font point-size="10">depends on</font>> color=gray60 dir=forward fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13 style=dashed]
-	d203be521dbd43c8aeb03d4a6b8e5191 -> "387f4dac0f604af3a548a3b973dacf7d" [label=<<font point-size="10">is depended on by</font>> color=gray60 dir=back fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13 style=dashed]
-}

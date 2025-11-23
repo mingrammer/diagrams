@@ -1,7 +1,0 @@
-digraph test_resources_render {
-	graph [fontcolor="#2D3436" fontname="Sans-Serif" fontsize=15 label=test_resources_render nodesep=0.60 pad=2.0 rankdir=LR ranksep=0.75 splines=ortho]
-	node [fixedsize=true fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13 height=1.4 imagescale=true labelloc=b shape=box style=rounded width=1.4]
-	edge [color="#7B8894"]
-	e3bddeae331a4c14869f108a92ac3b80 [label="test-ec2" height=1.9 image="/home/runner/work/diagrams/diagrams/resources/aws/compute/ec2.png" shape=none]
-	"9ec4b6d0627149d28dda2ccb2792fcb3" [label="test-rds" height=1.9 image="/home/runner/work/diagrams/diagrams/resources/aws/database/rds.png" shape=none]
-}

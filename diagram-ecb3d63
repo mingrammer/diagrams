@@ -1,7 +1,0 @@
-digraph "diagram-ecb3d63" {
-	graph [fontcolor="#2D3436" fontname="Sans-Serif" fontsize=15 label="diagram-ecb3d63" nodesep=0.60 pad=2.0 rankdir=LR ranksep=0.75 splines=ortho]
-	node [fixedsize=true fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13 height=1.4 imagescale=true labelloc=b shape=box style=rounded width=1.4]
-	edge [color="#7B8894"]
-	"430f4de0b37c4101abf3eac190ba9268" [label=<<font point-size="12"><b>system</b></font><br/><font point-size="9">[System]<br/></font><br/><font point-size="10">The internal system.<br/><br/></font>> fillcolor=dodgerblue4 fixedsize=true fontcolor=white height=1.6 labelloc=c shape=rect style=filled width=2.6]
-	"4a0ca384bda048a6853f58f613016af3" [label=<<font point-size="12"><b>unknown</b></font><br/><font point-size="9">[System]<br/></font>> fillcolor=dodgerblue4 fixedsize=true fontcolor=white height=1 labelloc=c shape=rect style=filled width=2]
-}
