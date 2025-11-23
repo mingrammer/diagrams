@@ -119,5 +119,116 @@
         &gt;&gt; Edge(color=<span class="hljs-string">"darkorange"</span>) \
         &gt;&gt; aggregator
 </code></pre>
-<p><img src="/img/advanced_web_service_with_on-premises_colored.png" alt="advanced web service with on-premises diagram colored"></p>
-</span></div></article></div><div class="docLastUpdate"><em>Last updated on 10/1/2024</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/guides/cluster"><span class="arrow-prev">← </span><span>Clusters</span></a><a class="docs-next button" href="/docs/nodes/onprem"><span class="function-name-prevnext">OnPrem</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#basic">Basic</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/diagrams.ico" alt="Diagrams" width="66" height="58"/></a><div><h5>Docs</h5><a href="/docs/getting-started/installation">Getting Started</a><a href="/docs/guides/diagram">Guides</a><a href="/docs/nodes/aws">Nodes</a></div><div><h5>More</h5><iframe src="https://ghbtns.com/github-btn.html?user=mingrammer&amp;repo=diagrams&amp;type=star&amp;count=true&amp;size=large" frameBorder="0" scrolling="0" width="170" height="30" title="Star mingrammer/diagrams on GitHub"></iframe></div></section><section class="copyright">Copyright © 2025 mingrammer</section></footer></div></body></html>
+<p><img src="/img/advanced_web_service_with_on-premise_colored.png" alt="advanced web service with on-premise diagram colored"></p>
+<h2><a class="anchor" aria-hidden="true" id="less-edges"></a><a href="#less-edges" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Less Edges</h2>
+<p>As you can see on the previous graph the edges can quickly become noisy. Below are two examples to solve this problem.</p>
+<p>One approach is to get creative with the Node class to create blank placeholders, together with named nodes within Clusters, and then only pointing to single named elements within those Clusters.</p>
+<p>Compare the output below to the example output above .</p>
+<pre><code class="hljs css language-python"><span class="hljs-keyword">from</span> diagrams <span class="hljs-keyword">import</span> Cluster, Diagram, Node
+<span class="hljs-keyword">from</span> diagrams.onprem.analytics <span class="hljs-keyword">import</span> Spark
+<span class="hljs-keyword">from</span> diagrams.onprem.compute <span class="hljs-keyword">import</span> Server
+<span class="hljs-keyword">from</span> diagrams.onprem.database <span class="hljs-keyword">import</span> PostgreSQL
+<span class="hljs-keyword">from</span> diagrams.onprem.inmemory <span class="hljs-keyword">import</span> Redis
+<span class="hljs-keyword">from</span> diagrams.onprem.aggregator <span class="hljs-keyword">import</span> Fluentd
+<span class="hljs-keyword">from</span> diagrams.onprem.monitoring <span class="hljs-keyword">import</span> Grafana, Prometheus
+<span class="hljs-keyword">from</span> diagrams.onprem.network <span class="hljs-keyword">import</span> Nginx
+<span class="hljs-keyword">from</span> diagrams.onprem.queue <span class="hljs-keyword">import</span> Kafka
+
+<span class="hljs-keyword">with</span> Diagram(<span class="hljs-string">"\nAdvanced Web Service with On-Premise Less edges"</span>, show=<span class="hljs-literal">False</span>) <span class="hljs-keyword">as</span> diag:
+    ingress = Nginx(<span class="hljs-string">"ingress"</span>)
+
+    <span class="hljs-keyword">with</span> Cluster(<span class="hljs-string">"Service Cluster"</span>):
+        serv1 = Server(<span class="hljs-string">"grpc1"</span>)
+        serv2 = Server(<span class="hljs-string">"grpc2"</span>)
+        serv3 = Server(<span class="hljs-string">"grpc3"</span>)
+
+    <span class="hljs-keyword">with</span> Cluster(<span class="hljs-string">""</span>):
+        blankHA = Node(<span class="hljs-string">""</span>, shape=<span class="hljs-string">"plaintext"</span>, width=<span class="hljs-string">"0"</span>, height=<span class="hljs-string">"0"</span>)
+
+        metrics = Prometheus(<span class="hljs-string">"metric"</span>)
+        metrics &lt;&lt; Grafana(<span class="hljs-string">"monitoring"</span>)
+
+        aggregator = Fluentd(<span class="hljs-string">"logging"</span>)
+        blankHA &gt;&gt; aggregator &gt;&gt; Kafka(<span class="hljs-string">"stream"</span>) &gt;&gt; Spark(<span class="hljs-string">"analytics"</span>)
+
+        <span class="hljs-keyword">with</span> Cluster(<span class="hljs-string">"Database HA"</span>):
+            db = PostgreSQL(<span class="hljs-string">"users"</span>)
+            db - PostgreSQL(<span class="hljs-string">"replica"</span>) &lt;&lt; metrics
+            blankHA &gt;&gt; db
+
+        <span class="hljs-keyword">with</span> Cluster(<span class="hljs-string">"Sessions HA"</span>):
+            sess = Redis(<span class="hljs-string">"session"</span>)
+            sess - Redis(<span class="hljs-string">"replica"</span>) &lt;&lt; metrics
+            blankHA &gt;&gt; sess
+
+    ingress &gt;&gt; serv2 &gt;&gt; blankHA
+
+diag
+</code></pre>
+<p><img src="/img/advanced_web_service_with_on-premise_less_edges.png" alt="advanced web service with on-premise less edges"></p>
+<h2><a class="anchor" aria-hidden="true" id="merged-edges"></a><a href="#merged-edges" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Merged Edges</h2>
+<p>Yet another option is to set the graph_attr dictionary key &quot;concentrate&quot; to &quot;true&quot;.</p>
+<p>Note the following restrictions:</p>
+<ol>
+<li>the Edge must end at the same headport</li>
+<li>This only works when the &quot;splines&quot; graph_attr key is set to the value &quot;spline&quot;. It has no effect when the value was set to &quot;ortho&quot;, which is the default for the diagrams library.</li>
+<li>this will only work with the &quot;dot&quot; layout engine, which is the default for the diagrams library.</li>
+</ol>
+<p>For more information see:</p>
+<p><a href="https://graphviz.gitlab.io/doc/info/attrs.html#d:concentrate">https://graphviz.gitlab.io/doc/info/attrs.html#d:concentrate</a></p>
+<p><a href="https://www.graphviz.org/pdf/dotguide.pdf">https://www.graphviz.org/pdf/dotguide.pdf</a> Section 3.3 Concentrators</p>
+<pre><code class="hljs css language-python"><span class="hljs-keyword">from</span> diagrams <span class="hljs-keyword">import</span> Cluster, Diagram, Edge, Node
+<span class="hljs-keyword">from</span> diagrams.onprem.analytics <span class="hljs-keyword">import</span> Spark
+<span class="hljs-keyword">from</span> diagrams.onprem.compute <span class="hljs-keyword">import</span> Server
+<span class="hljs-keyword">from</span> diagrams.onprem.database <span class="hljs-keyword">import</span> PostgreSQL
+<span class="hljs-keyword">from</span> diagrams.onprem.inmemory <span class="hljs-keyword">import</span> Redis
+<span class="hljs-keyword">from</span> diagrams.onprem.aggregator <span class="hljs-keyword">import</span> Fluentd
+<span class="hljs-keyword">from</span> diagrams.onprem.monitoring <span class="hljs-keyword">import</span> Grafana, Prometheus
+<span class="hljs-keyword">from</span> diagrams.onprem.network <span class="hljs-keyword">import</span> Nginx
+<span class="hljs-keyword">from</span> diagrams.onprem.queue <span class="hljs-keyword">import</span> Kafka
+
+graph_attr = {
+    <span class="hljs-string">"concentrate"</span>: <span class="hljs-string">"true"</span>,
+    <span class="hljs-string">"splines"</span>: <span class="hljs-string">"spline"</span>,
+}
+
+edge_attr = {
+    <span class="hljs-string">"minlen"</span>:<span class="hljs-string">"3"</span>,
+}
+
+<span class="hljs-keyword">with</span> Diagram(<span class="hljs-string">"\n\nAdvanced Web Service with On-Premise Merged edges"</span>, show=<span class="hljs-literal">False</span>,
+            graph_attr=graph_attr,
+            edge_attr=edge_attr) <span class="hljs-keyword">as</span> diag:
+
+    ingress = Nginx(<span class="hljs-string">"ingress"</span>)
+
+    metrics = Prometheus(<span class="hljs-string">"metric"</span>)
+    metrics &lt;&lt; Edge(minlen=<span class="hljs-string">"0"</span>) &lt;&lt; Grafana(<span class="hljs-string">"monitoring"</span>)
+
+    <span class="hljs-keyword">with</span> Cluster(<span class="hljs-string">"Service Cluster"</span>):
+        grpsrv = [
+            Server(<span class="hljs-string">"grpc1"</span>),
+            Server(<span class="hljs-string">"grpc2"</span>),
+            Server(<span class="hljs-string">"grpc3"</span>)]
+
+    blank = Node(<span class="hljs-string">""</span>, shape=<span class="hljs-string">"plaintext"</span>, height=<span class="hljs-string">"0.0"</span>, width=<span class="hljs-string">"0.0"</span>)
+
+    <span class="hljs-keyword">with</span> Cluster(<span class="hljs-string">"Sessions HA"</span>):
+        sess = Redis(<span class="hljs-string">"session"</span>)
+        sess - Redis(<span class="hljs-string">"replica"</span>) &lt;&lt; metrics
+
+    <span class="hljs-keyword">with</span> Cluster(<span class="hljs-string">"Database HA"</span>):
+        db = PostgreSQL(<span class="hljs-string">"users"</span>)
+        db - PostgreSQL(<span class="hljs-string">"replica"</span>) &lt;&lt; metrics
+
+    aggregator = Fluentd(<span class="hljs-string">"logging"</span>)
+    aggregator &gt;&gt; Kafka(<span class="hljs-string">"stream"</span>) &gt;&gt; Spark(<span class="hljs-string">"analytics"</span>)
+
+    ingress &gt;&gt; [grpsrv[<span class="hljs-number">0</span>], grpsrv[<span class="hljs-number">1</span>], grpsrv[<span class="hljs-number">2</span>],]
+    [grpsrv[<span class="hljs-number">0</span>], grpsrv[<span class="hljs-number">1</span>], grpsrv[<span class="hljs-number">2</span>],] - Edge(headport=<span class="hljs-string">"w"</span>, minlen=<span class="hljs-string">"1"</span>) - blank
+    blank &gt;&gt; Edge(headport=<span class="hljs-string">"w"</span>, minlen=<span class="hljs-string">"2"</span>) &gt;&gt; [sess, db, aggregator]
+
+diag
+</code></pre>
+<p><img src="/img/advanced_web_service_with_on-premise_merged_edges.png" alt="advanced web service with on-premise merged edges"></p>
+</span></div></article></div><div class="docLastUpdate"><em>Last updated on 5/11/2025</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/guides/cluster"><span class="arrow-prev">← </span><span>Clusters</span></a><a class="docs-next button" href="/docs/nodes/onprem"><span class="function-name-prevnext">OnPrem</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#basic">Basic</a></li><li><a href="#less-edges">Less Edges</a></li><li><a href="#merged-edges">Merged Edges</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/diagrams.ico" alt="Diagrams" width="66" height="58"/></a><div><h5>Docs</h5><a href="/docs/getting-started/installation">Getting Started</a><a href="/docs/guides/diagram">Guides</a><a href="/docs/nodes/aws">Nodes</a></div><div><h5>More</h5><iframe src="https://ghbtns.com/github-btn.html?user=mingrammer&amp;repo=diagrams&amp;type=star&amp;count=true&amp;size=large" frameBorder="0" scrolling="0" width="170" height="30" title="Star mingrammer/diagrams on GitHub"></iframe></div></section><section class="copyright">Copyright © 2025 mingrammer</section></footer></div></body></html>
