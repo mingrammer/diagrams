@@ -21,6 +21,7 @@ providers=(
   "openstack"
   "outscale"
   "gis"
+  "volcengine"
 )
 
 if ! [ -x "$(command -v round)" ]; then

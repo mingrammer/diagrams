@@ -29,7 +29,8 @@ PROVIDERS = (
     "generic",
     "openstack",
     "outscale",
-    "gis"
+    "gis",
+    "volcengine"
 )
 
 #########################
@@ -61,6 +62,7 @@ FILE_PREFIXES = {
     "generic": (),
     "openstack": (),
     "gis": (),
+    "volcengine": (),
 }
 
 #########################
@@ -484,6 +486,35 @@ ALIASES = {
         "deployment": {
             "Kolla": "KollaAnsible",
             "Tripleo": "TripleO",
+        }
+    },
+    "volcengine": {
+        "application": {
+            "ApiGateway": "APIG",
+            "TorchLogService": "TLS",
+        },
+        "compute": {
+            "AutoScaling": "AS",
+            "ContainerRegistry": "CR",
+            "ElasticComputeService": "ECS",
+            "MicroservicesEngine": "MSE",
+            "VolcengineKubernetesEngine": "VKE",
+            "FunctionAsAService": "FaaS",
+        },
+        "network": {
+            "CloudEnterpriseNetwork": "CEN",
+            "ElasticIpAddress": "EIP",
+            "NatGateway": "NAT",
+            "VirtualPrivateCloud": "VPC",
+            "ClassicLoadBalancer": "CLB",
+        },
+        "security": {
+            "WebApplicationFirewall": "WAF",
+        },
+        "storage": {
+            "TorchObjectStorage": "TOS",
+            "ElasticBlockStorage": "EBS",
+            "ElasticFileStorage": "EFS",
         }
     },
 }

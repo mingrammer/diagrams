@@ -29,7 +29,8 @@
       "nodes/saas",
       "nodes/c4",
       "nodes/custom",
-      "nodes/gis"
+      "nodes/gis",
+      "nodes/volcengine"
     ]
   }
 }
