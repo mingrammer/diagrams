@@ -29,7 +29,7 @@ dev = [
     "pylint~=3.3",
     "rope~=1.13",
     "isort~=6.0",
-    "black~=24.4",
+    "black>=24.4,<26.0",
     "pre-commit~=4.0",
 ]
 
