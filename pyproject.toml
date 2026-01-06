@@ -26,7 +26,7 @@ Repository = "https://github.com/mingrammer/diagrams"
 [dependency-groups]
 dev = [
     "pytest~=8.3",
-    "pylint~=3.3",
+    "pylint>=3.3,<5.0",
     "rope~=1.13",
     "isort~=6.0",
     "black~=24.4",
