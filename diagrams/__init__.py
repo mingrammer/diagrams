@@ -6,6 +6,36 @@ from typing import Dict, List, Optional, Union
 
 from graphviz import Digraph
 
+# Theme definitions for diagram styling
+# Each theme defines: cluster background colors (by depth), border color, edge color
+THEMES = {
+    "neutral": {
+        "bgcolor": ("#F8F9FA", "#F1F3F5", "#E9ECEF", "#DEE2E6"),
+        "pencolor": "#ADB5BD",
+        "edgecolor": "#495057",
+    },
+    "pastel": {
+        "bgcolor": ("#E5F5FD", "#EBF3E7", "#ECE8F6", "#FDF7E3"),
+        "pencolor": "#AEB6BE",
+        "edgecolor": "#7B8894",
+    },
+    "blues": {
+        "bgcolor": ("#E7F5FF", "#D0EBFF", "#A5D8FF", "#74C0FC"),
+        "pencolor": "#339AF0",
+        "edgecolor": "#1971C2",
+    },
+    "greens": {
+        "bgcolor": ("#EBFBEE", "#D3F9D8", "#B2F2BB", "#8CE99A"),
+        "pencolor": "#40C057",
+        "edgecolor": "#2F9E44",
+    },
+    "orange": {
+        "bgcolor": ("#FFF4E6", "#FFE8CC", "#FFD8A8", "#FFC078"),
+        "pencolor": "#FD7E14",
+        "edgecolor": "#E8590C",
+    },
+}
+
 # Global contexts for a diagrams and a cluster.
 #
 # These global contexts are for letting the clusters and nodes know
@@ -39,15 +69,15 @@ def setcluster(cluster: "Cluster"):
 
 class Diagram:
     __directions = ("TB", "BT", "LR", "RL")
-    __curvestyles = ("ortho", "curved")
+    __curvestyles = ("ortho", "curved", "spline", "polyline")
     __outformats = ("png", "jpg", "svg", "pdf", "dot")
 
     # fmt: off
     _default_graph_attrs = {
         "pad": "2.0",
         "splines": "ortho",
-        "nodesep": "0.60",
-        "ranksep": "0.75",
+        "nodesep": "0.70",
+        "ranksep": "0.90",
         "fontname": "Sans-Serif",
         "fontsize": "15",
         "fontcolor": "#2D3436",
@@ -69,7 +99,8 @@ class Diagram:
         "fontcolor": "#2D3436",
     }
     _default_edge_attrs = {
-        "color": "#7B8894",
+        "color": "#495057",
+        "arrowsize": "0.8",
     }
 
     # fmt: on
@@ -81,11 +112,12 @@ class Diagram:
         name: str = "",
         filename: str = "",
         direction: str = "LR",
-        curvestyle: str = "ortho",
+        curvestyle: str = "spline",
         outformat: Union[str, list[str]] = "png",
         autolabel: bool = False,
         show: bool = True,
         strict: bool = False,
+        theme: str = "neutral",
         graph_attr: Optional[dict] = None,
         node_attr: Optional[dict] = None,
         edge_attr: Optional[dict] = None,
@@ -97,9 +129,10 @@ class Diagram:
         :param filename: The output filename, without the extension (.png).
             If not given, it will be generated from the name.
         :param direction: Data flow direction. Default is 'left to right'.
-        :param curvestyle: Curve bending style. One of "ortho" or "curved".
+        :param curvestyle: Edge routing style. One of "ortho", "curved", "spline", or "polyline".
         :param outformat: Output file format. Default is 'png'.
         :param show: Open generated image after save if true, just only save otherwise.
+        :param theme: Color theme. One of "neutral", "pastel", "blues", "greens", "orange".
         :param graph_attr: Provide graph_attr dot config attributes.
         :param node_attr: Provide node_attr dot config attributes.
         :param edge_attr: Provide edge_attr dot config attributes.
@@ -111,6 +144,13 @@ class Diagram:
             node_attr = {}
         if edge_attr is None:
             edge_attr = {}
+
+        # Validate and set theme
+        if theme not in THEMES:
+            raise ValueError(f'"{theme}" is not a valid theme. Choose from: {", ".join(THEMES.keys())}')
+        self.theme = theme
+        self._theme_config = THEMES[theme]
+
         self.name = name
         if not name and not filename:
             filename = "diagrams_image"
@@ -127,6 +167,9 @@ class Diagram:
             self.dot.node_attr[k] = v
         for k, v in self._default_edge_attrs.items():
             self.dot.edge_attr[k] = v
+
+        # Apply theme edge color
+        self.dot.edge_attr["color"] = self._theme_config["edgecolor"]
 
         if not self._validate_direction(direction):
             raise ValueError(f'"{direction}" is not a valid direction')
@@ -201,14 +244,12 @@ class Diagram:
 
 class Cluster:
     __directions = ("TB", "BT", "LR", "RL")
-    __bgcolors = ("#E5F5FD", "#EBF3E7", "#ECE8F6", "#FDF7E3")
 
     # fmt: off
     _default_graph_attrs = {
         "shape": "box",
         "style": "rounded",
         "labeljust": "l",
-        "pencolor": "#AEB6BE",
         "fontname": "Sans-Serif",
         "fontsize": "12",
     }
@@ -235,6 +276,15 @@ class Cluster:
         self.label = label
         self.name = "cluster_" + self.label
 
+        # Node must be belong to a diagrams.
+        self._diagram = getdiagram()
+        if self._diagram is None:
+            raise EnvironmentError("Global diagrams context not set up")
+        self._parent = getcluster()
+
+        # Get theme configuration from the diagram
+        theme_config = self._diagram._theme_config
+
         self.dot = Digraph(self.name)
 
         # Set attributes.
@@ -242,20 +292,18 @@ class Cluster:
             self.dot.graph_attr[k] = v
         self.dot.graph_attr["label"] = self.label
 
+        # Apply theme colors
+        self.dot.graph_attr["pencolor"] = theme_config["pencolor"]
+
         if not self._validate_direction(direction):
             raise ValueError(f'"{direction}" is not a valid direction')
         self.dot.graph_attr["rankdir"] = direction
 
-        # Node must be belong to a diagrams.
-        self._diagram = getdiagram()
-        if self._diagram is None:
-            raise EnvironmentError("Global diagrams context not set up")
-        self._parent = getcluster()
-
         # Set cluster depth for distinguishing the background color
         self.depth = self._parent.depth + 1 if self._parent else 0
-        coloridx = self.depth % len(self.__bgcolors)
-        self.dot.graph_attr["bgcolor"] = self.__bgcolors[coloridx]
+        bgcolors = theme_config["bgcolor"]
+        coloridx = self.depth % len(bgcolors)
+        self.dot.graph_attr["bgcolor"] = bgcolors[coloridx]
 
         # Merge passed in attributes
         self.dot.graph_attr.update(graph_attr)
