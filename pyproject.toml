@@ -23,15 +23,13 @@ diagrams = "diagrams.cli:main"
 Homepage = "https://diagrams.mingrammer.com"
 Repository = "https://github.com/mingrammer/diagrams"
 
-[dependency-groups]
-dev = [
-    "pytest~=8.3",
-    "pylint~=3.3",
-    "rope~=1.13",
-    "isort~=6.0",
-    "black~=24.4",
-    "pre-commit~=4.0",
-]
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3"
+pylint = "^3.3"
+rope = "^1.13"
+isort = "^6.0"
+black = "^24.4"
+pre-commit = "^4.0"
 
 [tool.hatch.build]
 only-include = ["diagrams", "resources"]
