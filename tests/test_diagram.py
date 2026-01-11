@@ -34,14 +34,24 @@ class DiagramTest(unittest.TestCase):
                 Diagram(direction=dir)
 
     def test_validate_curvestyle(self):
-        # Normal directions.
-        for cvs in ("ortho", "curved", "CURVED"):
+        # Normal curvestyles.
+        for cvs in ("ortho", "curved", "spline", "polyline", "CURVED"):
             Diagram(curvestyle=cvs)
 
-        # Invalid directions.
+        # Invalid curvestyles.
         for cvs in ("tangent", "unknown"):
             with self.assertRaises(ValueError):
                 Diagram(curvestyle=cvs)
+
+    def test_validate_theme(self):
+        # Valid themes.
+        for theme in ("neutral", "pastel", "blues", "greens", "orange"):
+            Diagram(theme=theme)
+
+        # Invalid themes.
+        for theme in ("dark", "unknown"):
+            with self.assertRaises(ValueError):
+                Diagram(theme=theme)
 
     def test_validate_outformat(self):
         # Normal output formats.
