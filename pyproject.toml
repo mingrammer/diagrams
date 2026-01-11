@@ -30,7 +30,7 @@ dev = [
     "rope~=1.13",
     "isort~=6.0",
     "black~=24.4",
-    "pre-commit~=3.5",
+    "pre-commit>=3.5",
 ]
 
 [tool.hatch.build]

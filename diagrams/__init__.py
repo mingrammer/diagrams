@@ -75,7 +75,7 @@ class Diagram:
     # fmt: off
     _default_graph_attrs = {
         "pad": "2.0",
-        "splines": "ortho",
+        "splines": "spline",
         "nodesep": "0.70",
         "ranksep": "0.90",
         "fontname": "Sans-Serif",
@@ -276,7 +276,7 @@ class Cluster:
         self.label = label
         self.name = "cluster_" + self.label
 
-        # Node must be belong to a diagrams.
+        # Node must belong to a diagram.
         self._diagram = getdiagram()
         if self._diagram is None:
             raise EnvironmentError("Global diagrams context not set up")
@@ -350,7 +350,7 @@ class Node:
         self._id = nodeid or self._rand_id()
         self.label = label
 
-        # Node must be belong to a diagrams.
+        # Node must belong to a diagram.
         self._diagram = getdiagram()
         if self._diagram is None:
             raise EnvironmentError("Global diagrams context not set up")
