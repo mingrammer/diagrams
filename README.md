@@ -84,6 +84,8 @@ To contribute to diagram, check out [contribution guidelines](CONTRIBUTING.md).
 
 [KubeDiagrams](https://github.com/philippemerle/KubeDiagrams) is a tool to generate Kubernetes architecture diagrams from Kubernetes manifest files, kustomization files, Helm charts, and actual cluster state. [KubeDiagrams](https://github.com/philippemerle/KubeDiagrams) supports all Kubernetes built-in resources, any custom resources, and label-based resource clustering.
 
+[clouda.ai](https://clouda.ai) is an AI-powered online editor and diagram renderer for Diagrams. It allows you to generate diagrams by describing your architecture in natural language, and edit and render diagrams directly in your browser without installing Python or Graphviz locally.
+
 ## Other languages
 
 - If you are familiar with Go, you can use [go-diagrams](https://github.com/blushft/go-diagrams) as well.
