@@ -84,6 +84,8 @@ To contribute to diagram, check out [contribution guidelines](CONTRIBUTING.md).
 
 [KubeDiagrams](https://github.com/philippemerle/KubeDiagrams) is a tool to generate Kubernetes architecture diagrams from Kubernetes manifest files, kustomization files, Helm charts, and actual cluster state. [KubeDiagrams](https://github.com/philippemerle/KubeDiagrams) supports all Kubernetes built-in resources, any custom resources, and label-based resource clustering.
 
+[AWS CloudFormation Diagrams](https://github.com/philippemerle/AWS-CloudFormation-Diagrams) is a simple CLI script to generate AWS architecture diagrams from AWS CloudFormation templates.
+
 ## Other languages
 
 - If you are familiar with Go, you can use [go-diagrams](https://github.com/blushft/go-diagrams) as well.
