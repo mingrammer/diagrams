@@ -3,7 +3,7 @@ import os
 import uuid
 from pathlib import Path
 from typing import Dict, List, Optional, Union
-
+from io import BytesIO
 from graphviz import Digraph
 
 # Theme definitions for diagram styling
@@ -72,7 +72,7 @@ class Diagram:
     __curvestyles = ("ortho", "curved", "spline", "polyline")
     __outformats = ("png", "jpg", "svg", "pdf", "dot")
 
-    # fmt: off
+    # Default graph attributes
     _default_graph_attrs = {
         "pad": "2.0",
         "splines": "spline",
@@ -89,10 +89,6 @@ class Diagram:
         "width": "1.4",
         "height": "1.4",
         "labelloc": "b",
-        # imagepos attribute is not backward compatible
-        # TODO: check graphviz version to see if "imagepos" is available >= 2.40
-        # https://github.com/xflr6/graphviz/blob/master/graphviz/backend.py#L248
-        # "imagepos": "tc",
         "imagescale": "true",
         "fontname": "Sans-Serif",
         "fontsize": "13",
@@ -103,10 +99,6 @@ class Diagram:
         "arrowsize": "0.8",
     }
 
-    # fmt: on
-
-    # TODO: Label position option
-    # TODO: Save directory option (filename + directory?)
     def __init__(
         self,
         name: str = "",
@@ -121,6 +113,7 @@ class Diagram:
         graph_attr: Optional[dict] = None,
         node_attr: Optional[dict] = None,
         edge_attr: Optional[dict] = None,
+        output_buffer: Optional[BytesIO] = None  # New parameter
     ):
         """Diagram represents a global diagrams context.
 
@@ -136,7 +129,7 @@ class Diagram:
         :param graph_attr: Provide graph_attr dot config attributes.
         :param node_attr: Provide node_attr dot config attributes.
         :param edge_attr: Provide edge_attr dot config attributes.
-        :param strict: Rendering should merge multi-edges.
+        :param output_buffer: Optional in-memory buffer to write the output to.
         """
         if graph_attr is None:
             graph_attr = {}
@@ -196,9 +189,7 @@ class Diagram:
 
         self.show = show
         self.autolabel = autolabel
-
-    def __str__(self) -> str:
-        return str(self.dot)
+        self.output_buffer = output_buffer  # Store the buffer
 
     def __enter__(self):
         setdiagram(self)
@@ -206,8 +197,8 @@ class Diagram:
 
     def __exit__(self, exc_type, exc_value, traceback):
         self.render()
-        # Remove the graphviz file leaving only the image.
-        os.remove(self.filename)
+        if not self.output_buffer:
+            os.remove(self.filename)
         setdiagram(None)
 
     def _repr_png_(self):
@@ -237,9 +228,15 @@ class Diagram:
     def render(self) -> None:
         if isinstance(self.outformat, list):
             for one_format in self.outformat:
-                self.dot.render(format=one_format, view=self.show, quiet=True)
+                if self.output_buffer:
+                    self.output_buffer.write(self.dot.pipe(format=one_format))
+                else:
+                    self.dot.render(format=one_format, view=self.show, quiet=True)
         else:
-            self.dot.render(format=self.outformat, view=self.show, quiet=True)
+            if self.output_buffer:
+                self.output_buffer.write(self.dot.pipe(format=self.outformat))
+            else:
+                self.dot.render(format=self.outformat, view=self.show, quiet=True)
 
 
 class Cluster:
