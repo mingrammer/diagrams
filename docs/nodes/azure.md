@@ -3,7 +3,7 @@ id: azure
 title: Azure
 ---
 
-Node classes list of azure provider.
+Node classes list of the azure provider.
 
 ## azure.aimachinelearning
 
@@ -49,6 +49,9 @@ Node classes list of azure provider.
 
 <img width="30" src="/img/resources/azure/aimachinelearning/content-moderators.png" alt="ContentModerators" style="float: left; padding-right: 5px;" >
 **diagrams.azure.aimachinelearning.ContentModerators**
+
+<img width="30" src="/img/resources/azure/aimachinelearning/content-safety.png" alt="ContentSafety" style="float: left; padding-right: 5px;" >
+**diagrams.azure.aimachinelearning.ContentSafety**
 
 <img width="30" src="/img/resources/azure/aimachinelearning/custom-vision.png" alt="CustomVision" style="float: left; padding-right: 5px;" >
 **diagrams.azure.aimachinelearning.CustomVision**
@@ -254,6 +257,9 @@ Node classes list of azure provider.
 ## azure.compute
 
 
+<img width="30" src="/img/resources/azure/compute/aks-automatic.png" alt="AksAutomatic" style="float: left; padding-right: 5px;" >
+**diagrams.azure.compute.AksAutomatic**
+
 <img width="30" src="/img/resources/azure/compute/app-services.png" alt="AppServices" style="float: left; padding-right: 5px;" >
 **diagrams.azure.compute.AppServices**
 
@@ -286,6 +292,9 @@ Node classes list of azure provider.
 
 <img width="30" src="/img/resources/azure/compute/cloudsimple-virtual-machines.png" alt="CloudsimpleVirtualMachines" style="float: left; padding-right: 5px;" >
 **diagrams.azure.compute.CloudsimpleVirtualMachines**
+
+<img width="30" src="/img/resources/azure/compute/compute-fleet.png" alt="ComputeFleet" style="float: left; padding-right: 5px;" >
+**diagrams.azure.compute.ComputeFleet**
 
 <img width="30" src="/img/resources/azure/compute/container-apps.png" alt="ContainerApps" style="float: left; padding-right: 5px;" >
 **diagrams.azure.compute.ContainerApps**
@@ -644,6 +653,9 @@ Node classes list of azure provider.
 <img width="30" src="/img/resources/azure/devops/load-testing.png" alt="LoadTesting" style="float: left; padding-right: 5px;" >
 **diagrams.azure.devops.LoadTesting**
 
+<img width="30" src="/img/resources/azure/devops/managed-devops-pools.png" alt="ManagedDevopsPools" style="float: left; padding-right: 5px;" >
+**diagrams.azure.devops.ManagedDevopsPools**
+
 <img width="30" src="/img/resources/azure/devops/pipelines.png" alt="Pipelines" style="float: left; padding-right: 5px;" >
 **diagrams.azure.devops.Pipelines**
 
@@ -652,6 +664,9 @@ Node classes list of azure provider.
 
 <img width="30" src="/img/resources/azure/devops/test-plans.png" alt="TestPlans" style="float: left; padding-right: 5px;" >
 **diagrams.azure.devops.TestPlans**
+
+<img width="30" src="/img/resources/azure/devops/workspace-gateway.png" alt="WorkspaceGateway" style="float: left; padding-right: 5px;" >
+**diagrams.azure.devops.WorkspaceGateway**
 
 ## azure.general
 
@@ -1001,6 +1016,9 @@ Node classes list of azure provider.
 ## azure.hybridmulticloud
 
 
+<img width="30" src="/img/resources/azure/hybridmulticloud/azure-monitor-pipeline.png" alt="AzureMonitorPipeline" style="float: left; padding-right: 5px;" >
+**diagrams.azure.hybridmulticloud.AzureMonitorPipeline**
+
 <img width="30" src="/img/resources/azure/hybridmulticloud/azure-operator-5g-core.png" alt="AzureOperator5GCore" style="float: left; padding-right: 5px;" >
 **diagrams.azure.hybridmulticloud.AzureOperator5GCore**
 
@@ -1085,17 +1103,41 @@ Node classes list of azure provider.
 <img width="30" src="/img/resources/azure/identity/enterprise-applications.png" alt="EnterpriseApplications" style="float: left; padding-right: 5px;" >
 **diagrams.azure.identity.EnterpriseApplications**
 
+<img width="30" src="/img/resources/azure/identity/entra-connect-health.png" alt="EntraConnectHealth" style="float: left; padding-right: 5px;" >
+**diagrams.azure.identity.EntraConnectHealth**
+
+<img width="30" src="/img/resources/azure/identity/entra-connect-sync.png" alt="EntraConnectSync" style="float: left; padding-right: 5px;" >
+**diagrams.azure.identity.EntraConnectSync**
+
 <img width="30" src="/img/resources/azure/identity/entra-connect.png" alt="EntraConnect" style="float: left; padding-right: 5px;" >
 **diagrams.azure.identity.EntraConnect**
 
 <img width="30" src="/img/resources/azure/identity/entra-domain-services.png" alt="EntraDomainServices" style="float: left; padding-right: 5px;" >
 **diagrams.azure.identity.EntraDomainServices**
 
+<img width="30" src="/img/resources/azure/identity/entra-global-secure-access.png" alt="EntraGlobalSecureAccess" style="float: left; padding-right: 5px;" >
+**diagrams.azure.identity.EntraGlobalSecureAccess**
+
 <img width="30" src="/img/resources/azure/identity/entra-id-protection.png" alt="EntraIDProtection" style="float: left; padding-right: 5px;" >
 **diagrams.azure.identity.EntraIDProtection**
 
+<img width="30" src="/img/resources/azure/identity/entra-identity-custom-roles.png" alt="EntraIdentityCustomRoles" style="float: left; padding-right: 5px;" >
+**diagrams.azure.identity.EntraIdentityCustomRoles**
+
+<img width="30" src="/img/resources/azure/identity/entra-identity-licenses.png" alt="EntraIdentityLicenses" style="float: left; padding-right: 5px;" >
+**diagrams.azure.identity.EntraIdentityLicenses**
+
+<img width="30" src="/img/resources/azure/identity/entra-identity-roles-and-administrators.png" alt="EntraIdentityRolesAndAdministrators" style="float: left; padding-right: 5px;" >
+**diagrams.azure.identity.EntraIdentityRolesAndAdministrators**
+
+<img width="30" src="/img/resources/azure/identity/entra-internet-access.png" alt="EntraInternetAccess" style="float: left; padding-right: 5px;" >
+**diagrams.azure.identity.EntraInternetAccess**
+
 <img width="30" src="/img/resources/azure/identity/entra-managed-identities.png" alt="EntraManagedIdentities" style="float: left; padding-right: 5px;" >
 **diagrams.azure.identity.EntraManagedIdentities**
+
+<img width="30" src="/img/resources/azure/identity/entra-private-access.png" alt="EntraPrivateAccess" style="float: left; padding-right: 5px;" >
+**diagrams.azure.identity.EntraPrivateAccess**
 
 <img width="30" src="/img/resources/azure/identity/entra-privleged-identity-management.png" alt="EntraPrivlegedIdentityManagement" style="float: left; padding-right: 5px;" >
 **diagrams.azure.identity.EntraPrivlegedIdentityManagement**
@@ -1124,6 +1166,9 @@ Node classes list of azure provider.
 <img width="30" src="/img/resources/azure/identity/managed-identities.png" alt="ManagedIdentities" style="float: left; padding-right: 5px;" >
 **diagrams.azure.identity.ManagedIdentities**
 
+<img width="30" src="/img/resources/azure/identity/multi-factor-authentication.png" alt="MultiFactorAuthentication" style="float: left; padding-right: 5px;" >
+**diagrams.azure.identity.MultiFactorAuthentication**
+
 <img width="30" src="/img/resources/azure/identity/private-access.png" alt="PrivateAccess" style="float: left; padding-right: 5px;" >
 **diagrams.azure.identity.PrivateAccess**
 
@@ -1141,6 +1186,9 @@ Node classes list of azure provider.
 
 <img width="30" src="/img/resources/azure/identity/verifiable-credentials.png" alt="VerifiableCredentials" style="float: left; padding-right: 5px;" >
 **diagrams.azure.identity.VerifiableCredentials**
+
+<img width="30" src="/img/resources/azure/identity/verification-as-a-service.png" alt="VerificationAsAService" style="float: left; padding-right: 5px;" >
+**diagrams.azure.identity.VerificationAsAService**
 
 ## azure.integration
 
@@ -1177,6 +1225,9 @@ Node classes list of azure provider.
 
 <img width="30" src="/img/resources/azure/integration/azure-stack-edge.png" alt="AzureStackEdge" style="float: left; padding-right: 5px;" >
 **diagrams.azure.integration.AzureStackEdge**
+
+<img width="30" src="/img/resources/azure/integration/business-process-tracking.png" alt="BusinessProcessTracking" style="float: left; padding-right: 5px;" >
+**diagrams.azure.integration.BusinessProcessTracking**
 
 <img width="30" src="/img/resources/azure/integration/data-catalog.png" alt="DataCatalog" style="float: left; padding-right: 5px;" >
 **diagrams.azure.integration.DataCatalog**
@@ -1280,6 +1331,9 @@ Node classes list of azure provider.
 <img width="30" src="/img/resources/azure/intune/ebooks.png" alt="Ebooks" style="float: left; padding-right: 5px;" >
 **diagrams.azure.intune.Ebooks**
 
+<img width="30" src="/img/resources/azure/intune/entra-identity-roles-and-administrators.png" alt="EntraIdentityRolesAndAdministrators" style="float: left; padding-right: 5px;" >
+**diagrams.azure.intune.EntraIdentityRolesAndAdministrators**
+
 <img width="30" src="/img/resources/azure/intune/exchange-access.png" alt="ExchangeAccess" style="float: left; padding-right: 5px;" >
 **diagrams.azure.intune.ExchangeAccess**
 
@@ -1318,6 +1372,9 @@ Node classes list of azure provider.
 
 <img width="30" src="/img/resources/azure/iot/azure-maps-accounts.png" alt="AzureMapsAccounts" style="float: left; padding-right: 5px;" >
 **diagrams.azure.iot.AzureMapsAccounts**
+
+<img width="30" src="/img/resources/azure/iot/azure-stack-hci-sizer.png" alt="AzureStackHciSizer" style="float: left; padding-right: 5px;" >
+**diagrams.azure.iot.AzureStackHciSizer**
 
 <img width="30" src="/img/resources/azure/iot/azure-stack.png" alt="AzureStack" style="float: left; padding-right: 5px;" >
 **diagrams.azure.iot.AzureStack**
@@ -1643,6 +1700,9 @@ Node classes list of azure provider.
 <img width="30" src="/img/resources/azure/monitor/log-analytics-workspaces.png" alt="LogAnalyticsWorkspaces" style="float: left; padding-right: 5px;" >
 **diagrams.azure.monitor.LogAnalyticsWorkspaces**
 
+<img width="30" src="/img/resources/azure/monitor/logs.png" alt="Logs" style="float: left; padding-right: 5px;" >
+**diagrams.azure.monitor.Logs**
+
 <img width="30" src="/img/resources/azure/monitor/metrics.png" alt="Metrics" style="float: left; padding-right: 5px;" >
 **diagrams.azure.monitor.Metrics**
 
@@ -1741,6 +1801,9 @@ Node classes list of azure provider.
 
 ## azure.networking
 
+
+<img width="30" src="/img/resources/azure/networking/application-gateway-containers.png" alt="ApplicationGatewayContainers" style="float: left; padding-right: 5px;" >
+**diagrams.azure.networking.ApplicationGatewayContainers**
 
 <img width="30" src="/img/resources/azure/networking/application-gateways.png" alt="ApplicationGateways" style="float: left; padding-right: 5px;" >
 **diagrams.azure.networking.ApplicationGateways**
@@ -1898,11 +1961,50 @@ Node classes list of azure provider.
 ## azure.newicons
 
 
+<img width="30" src="/img/resources/azure/newicons/ai-at-edge.png" alt="AIAtEdge" style="float: left; padding-right: 5px;" >
+**diagrams.azure.newicons.AIAtEdge**
+
+<img width="30" src="/img/resources/azure/newicons/aks-network-policy.png" alt="AksNetworkPolicy" style="float: left; padding-right: 5px;" >
+**diagrams.azure.newicons.AksNetworkPolicy**
+
+<img width="30" src="/img/resources/azure/newicons/azure-app-testing.png" alt="AzureAppTesting" style="float: left; padding-right: 5px;" >
+**diagrams.azure.newicons.AzureAppTesting**
+
+<img width="30" src="/img/resources/azure/newicons/azure-consumption-commitment.png" alt="AzureConsumptionCommitment" style="float: left; padding-right: 5px;" >
+**diagrams.azure.newicons.AzureConsumptionCommitment**
+
+<img width="30" src="/img/resources/azure/newicons/azure-container-storage.png" alt="AzureContainerStorage" style="float: left; padding-right: 5px;" >
+**diagrams.azure.newicons.AzureContainerStorage**
+
+<img width="30" src="/img/resources/azure/newicons/azure-linux.png" alt="AzureLinux" style="float: left; padding-right: 5px;" >
+**diagrams.azure.newicons.AzureLinux**
+
+<img width="30" src="/img/resources/azure/newicons/azure-local.png" alt="AzureLocal" style="float: left; padding-right: 5px;" >
+**diagrams.azure.newicons.AzureLocal**
+
+<img width="30" src="/img/resources/azure/newicons/azure-managed-redis.png" alt="AzureManagedRedis" style="float: left; padding-right: 5px;" >
+**diagrams.azure.newicons.AzureManagedRedis**
+
 <img width="30" src="/img/resources/azure/newicons/azure-sustainability.png" alt="AzureSustainability" style="float: left; padding-right: 5px;" >
 **diagrams.azure.newicons.AzureSustainability**
 
+<img width="30" src="/img/resources/azure/newicons/breeze.png" alt="Breeze" style="float: left; padding-right: 5px;" >
+**diagrams.azure.newicons.Breeze**
+
 <img width="30" src="/img/resources/azure/newicons/connected-vehicle-platform.png" alt="ConnectedVehiclePlatform" style="float: left; padding-right: 5px;" >
 **diagrams.azure.newicons.ConnectedVehiclePlatform**
+
+<img width="30" src="/img/resources/azure/newicons/data-virtualization.png" alt="DataVirtualization" style="float: left; padding-right: 5px;" >
+**diagrams.azure.newicons.DataVirtualization**
+
+<img width="30" src="/img/resources/azure/newicons/edge-actions.png" alt="EdgeActions" style="float: left; padding-right: 5px;" >
+**diagrams.azure.newicons.EdgeActions**
+
+<img width="30" src="/img/resources/azure/newicons/edge-storage-accelerator.png" alt="EdgeStorageAccelerator" style="float: left; padding-right: 5px;" >
+**diagrams.azure.newicons.EdgeStorageAccelerator**
+
+<img width="30" src="/img/resources/azure/newicons/engage-center-connect.png" alt="EngageCenterConnect" style="float: left; padding-right: 5px;" >
+**diagrams.azure.newicons.EngageCenterConnect**
 
 <img width="30" src="/img/resources/azure/newicons/entra-connect-health.png" alt="EntraConnectHealth" style="float: left; padding-right: 5px;" >
 **diagrams.azure.newicons.EntraConnectHealth**
@@ -1910,14 +2012,92 @@ Node classes list of azure provider.
 <img width="30" src="/img/resources/azure/newicons/entra-connect-sync.png" alt="EntraConnectSync" style="float: left; padding-right: 5px;" >
 **diagrams.azure.newicons.EntraConnectSync**
 
+<img width="30" src="/img/resources/azure/newicons/external-id-modified.png" alt="ExternalIDModified" style="float: left; padding-right: 5px;" >
+**diagrams.azure.newicons.ExternalIDModified**
+
+<img width="30" src="/img/resources/azure/newicons/external-id.png" alt="ExternalID" style="float: left; padding-right: 5px;" >
+**diagrams.azure.newicons.ExternalID**
+
+<img width="30" src="/img/resources/azure/newicons/frd-qa.png" alt="FrdQa" style="float: left; padding-right: 5px;" >
+**diagrams.azure.newicons.FrdQa**
+
+<img width="30" src="/img/resources/azure/newicons/hybrid-connectivity-hub.png" alt="HybridConnectivityHub" style="float: left; padding-right: 5px;" >
+**diagrams.azure.newicons.HybridConnectivityHub**
+
 <img width="30" src="/img/resources/azure/newicons/icm-troubleshooting.png" alt="IcmTroubleshooting" style="float: left; padding-right: 5px;" >
 **diagrams.azure.newicons.IcmTroubleshooting**
+
+<img width="30" src="/img/resources/azure/newicons/kubernetes-hub.png" alt="KubernetesHub" style="float: left; padding-right: 5px;" >
+**diagrams.azure.newicons.KubernetesHub**
+
+<img width="30" src="/img/resources/azure/newicons/landing-zone.png" alt="LandingZone" style="float: left; padding-right: 5px;" >
+**diagrams.azure.newicons.LandingZone**
+
+<img width="30" src="/img/resources/azure/newicons/load-balancer-hub.png" alt="LoadBalancerHub" style="float: left; padding-right: 5px;" >
+**diagrams.azure.newicons.LoadBalancerHub**
+
+<img width="30" src="/img/resources/azure/newicons/logic-apps-template.png" alt="LogicAppsTemplate" style="float: left; padding-right: 5px;" >
+**diagrams.azure.newicons.LogicAppsTemplate**
+
+<img width="30" src="/img/resources/azure/newicons/microsoft-discovery.png" alt="MicrosoftDiscovery" style="float: left; padding-right: 5px;" >
+**diagrams.azure.newicons.MicrosoftDiscovery**
+
+<img width="30" src="/img/resources/azure/newicons/monitor-issues.png" alt="MonitorIssues" style="float: left; padding-right: 5px;" >
+**diagrams.azure.newicons.MonitorIssues**
+
+<img width="30" src="/img/resources/azure/newicons/network-foundation-hub.png" alt="NetworkFoundationHub" style="float: left; padding-right: 5px;" >
+**diagrams.azure.newicons.NetworkFoundationHub**
+
+<img width="30" src="/img/resources/azure/newicons/network-security-hub.png" alt="NetworkSecurityHub" style="float: left; padding-right: 5px;" >
+**diagrams.azure.newicons.NetworkSecurityHub**
+
+<img width="30" src="/img/resources/azure/newicons/operation-center.png" alt="OperationCenter" style="float: left; padding-right: 5px;" >
+**diagrams.azure.newicons.OperationCenter**
 
 <img width="30" src="/img/resources/azure/newicons/osconfig.png" alt="Osconfig" style="float: left; padding-right: 5px;" >
 **diagrams.azure.newicons.Osconfig**
 
+<img width="30" src="/img/resources/azure/newicons/planetary-computer-pro.png" alt="PlanetaryComputerPro" style="float: left; padding-right: 5px;" >
+**diagrams.azure.newicons.PlanetaryComputerPro**
+
+<img width="30" src="/img/resources/azure/newicons/promethus.png" alt="Promethus" style="float: left; padding-right: 5px;" >
+**diagrams.azure.newicons.Promethus**
+
+<img width="30" src="/img/resources/azure/newicons/pubsub.png" alt="Pubsub" style="float: left; padding-right: 5px;" >
+**diagrams.azure.newicons.Pubsub**
+
+<img width="30" src="/img/resources/azure/newicons/scheduled-actions.png" alt="ScheduledActions" style="float: left; padding-right: 5px;" >
+**diagrams.azure.newicons.ScheduledActions**
+
+<img width="30" src="/img/resources/azure/newicons/service-group-relationships.png" alt="ServiceGroupRelationships" style="float: left; padding-right: 5px;" >
+**diagrams.azure.newicons.ServiceGroupRelationships**
+
+<img width="30" src="/img/resources/azure/newicons/service-groups.png" alt="ServiceGroups" style="float: left; padding-right: 5px;" >
+**diagrams.azure.newicons.ServiceGroups**
+
+<img width="30" src="/img/resources/azure/newicons/sql-database-fleet-manager.png" alt="SQLDatabaseFleetManager" style="float: left; padding-right: 5px;" >
+**diagrams.azure.newicons.SQLDatabaseFleetManager**
+
+<img width="30" src="/img/resources/azure/newicons/stage-maps.png" alt="StageMaps" style="float: left; padding-right: 5px;" >
+**diagrams.azure.newicons.StageMaps**
+
 <img width="30" src="/img/resources/azure/newicons/storage-actions.png" alt="StorageActions" style="float: left; padding-right: 5px;" >
 **diagrams.azure.newicons.StorageActions**
+
+<img width="30" src="/img/resources/azure/newicons/storage-hubs.png" alt="StorageHubs" style="float: left; padding-right: 5px;" >
+**diagrams.azure.newicons.StorageHubs**
+
+<img width="30" src="/img/resources/azure/newicons/toolchain-orchestrator.png" alt="ToolchainOrchestrator" style="float: left; padding-right: 5px;" >
+**diagrams.azure.newicons.ToolchainOrchestrator**
+
+<img width="30" src="/img/resources/azure/newicons/vnet-appliance.png" alt="VnetAppliance" style="float: left; padding-right: 5px;" >
+**diagrams.azure.newicons.VnetAppliance**
+
+<img width="30" src="/img/resources/azure/newicons/vpnclientwindows.png" alt="Vpnclientwindows" style="float: left; padding-right: 5px;" >
+**diagrams.azure.newicons.Vpnclientwindows**
+
+<img width="30" src="/img/resources/azure/newicons/workload-orchestration.png" alt="WorkloadOrchestration" style="float: left; padding-right: 5px;" >
+**diagrams.azure.newicons.WorkloadOrchestration**
 
 ## azure.other
 
@@ -2018,6 +2198,9 @@ Node classes list of azure provider.
 <img width="30" src="/img/resources/azure/other/azure-support-center-blue.png" alt="AzureSupportCenterBlue" style="float: left; padding-right: 5px;" >
 **diagrams.azure.other.AzureSupportCenterBlue**
 
+<img width="30" src="/img/resources/azure/other/azure-sustainability.png" alt="AzureSustainability" style="float: left; padding-right: 5px;" >
+**diagrams.azure.other.AzureSustainability**
+
 <img width="30" src="/img/resources/azure/other/azure-video-indexer.png" alt="AzureVideoIndexer" style="float: left; padding-right: 5px;" >
 **diagrams.azure.other.AzureVideoIndexer**
 
@@ -2059,6 +2242,9 @@ Node classes list of azure provider.
 
 <img width="30" src="/img/resources/azure/other/confidential-ledgers.png" alt="ConfidentialLedgers" style="float: left; padding-right: 5px;" >
 **diagrams.azure.other.ConfidentialLedgers**
+
+<img width="30" src="/img/resources/azure/other/connected-vehicle-platform.png" alt="ConnectedVehiclePlatform" style="float: left; padding-right: 5px;" >
+**diagrams.azure.other.ConnectedVehiclePlatform**
 
 <img width="30" src="/img/resources/azure/other/container-apps-environments.png" alt="ContainerAppsEnvironments" style="float: left; padding-right: 5px;" >
 **diagrams.azure.other.ContainerAppsEnvironments**
@@ -2162,6 +2348,9 @@ Node classes list of azure provider.
 <img width="30" src="/img/resources/azure/other/elastic-san.png" alt="ElasticSan" style="float: left; padding-right: 5px;" >
 **diagrams.azure.other.ElasticSan**
 
+<img width="30" src="/img/resources/azure/other/entra-identity-licenses.png" alt="EntraIdentityLicenses" style="float: left; padding-right: 5px;" >
+**diagrams.azure.other.EntraIdentityLicenses**
+
 <img width="30" src="/img/resources/azure/other/exchange-on-premises-access.png" alt="ExchangeOnPremisesAccess" style="float: left; padding-right: 5px;" >
 **diagrams.azure.other.ExchangeOnPremisesAccess**
 
@@ -2179,6 +2368,9 @@ Node classes list of azure provider.
 
 <img width="30" src="/img/resources/azure/other/hdi-aks-cluster.png" alt="HdiAksCluster" style="float: left; padding-right: 5px;" >
 **diagrams.azure.other.HdiAksCluster**
+
+<img width="30" src="/img/resources/azure/other/icm-troubleshooting.png" alt="IcmTroubleshooting" style="float: left; padding-right: 5px;" >
+**diagrams.azure.other.IcmTroubleshooting**
 
 <img width="30" src="/img/resources/azure/other/instance-pools.png" alt="InstancePools" style="float: left; padding-right: 5px;" >
 **diagrams.azure.other.InstancePools**
@@ -2213,6 +2405,9 @@ Node classes list of azure provider.
 <img width="30" src="/img/resources/azure/other/modular-data-center.png" alt="ModularDataCenter" style="float: left; padding-right: 5px;" >
 **diagrams.azure.other.ModularDataCenter**
 
+<img width="30" src="/img/resources/azure/other/monitor-health-models.png" alt="MonitorHealthModels" style="float: left; padding-right: 5px;" >
+**diagrams.azure.other.MonitorHealthModels**
+
 <img width="30" src="/img/resources/azure/other/network-managers.png" alt="NetworkManagers" style="float: left; padding-right: 5px;" >
 **diagrams.azure.other.NetworkManagers**
 
@@ -2221,6 +2416,9 @@ Node classes list of azure provider.
 
 <img width="30" src="/img/resources/azure/other/open-supply-chain-platform.png" alt="OpenSupplyChainPlatform" style="float: left; padding-right: 5px;" >
 **diagrams.azure.other.OpenSupplyChainPlatform**
+
+<img width="30" src="/img/resources/azure/other/osconfig.png" alt="Osconfig" style="float: left; padding-right: 5px;" >
+**diagrams.azure.other.Osconfig**
 
 <img width="30" src="/img/resources/azure/other/peering-service.png" alt="PeeringService" style="float: left; padding-right: 5px;" >
 **diagrams.azure.other.PeeringService**
@@ -2291,6 +2489,9 @@ Node classes list of azure provider.
 <img width="30" src="/img/resources/azure/other/vm-image-version.png" alt="VMImageVersion" style="float: left; padding-right: 5px;" >
 **diagrams.azure.other.VMImageVersion**
 
+<img width="30" src="/img/resources/azure/other/wac-installer.png" alt="WacInstaller" style="float: left; padding-right: 5px;" >
+**diagrams.azure.other.WacInstaller**
+
 <img width="30" src="/img/resources/azure/other/wac.png" alt="Wac" style="float: left; padding-right: 5px;" >
 **diagrams.azure.other.Wac**
 
@@ -2341,6 +2542,12 @@ Node classes list of azure provider.
 
 <img width="30" src="/img/resources/azure/security/detonation.png" alt="Detonation" style="float: left; padding-right: 5px;" >
 **diagrams.azure.security.Detonation**
+
+<img width="30" src="/img/resources/azure/security/entra-identity-risky-signins.png" alt="EntraIdentityRiskySignins" style="float: left; padding-right: 5px;" >
+**diagrams.azure.security.EntraIdentityRiskySignins**
+
+<img width="30" src="/img/resources/azure/security/entra-identity-risky-users.png" alt="EntraIdentityRiskyUsers" style="float: left; padding-right: 5px;" >
+**diagrams.azure.security.EntraIdentityRiskyUsers**
 
 <img width="30" src="/img/resources/azure/security/extended-security-updates.png" alt="ExtendedSecurityUpdates" style="float: left; padding-right: 5px;" >
 **diagrams.azure.security.ExtendedSecurityUpdates**
@@ -2426,6 +2633,9 @@ Node classes list of azure provider.
 <img width="30" src="/img/resources/azure/storage/import-export-jobs.png" alt="ImportExportJobs" style="float: left; padding-right: 5px;" >
 **diagrams.azure.storage.ImportExportJobs**
 
+<img width="30" src="/img/resources/azure/storage/managed-file-shares.png" alt="ManagedFileShares" style="float: left; padding-right: 5px;" >
+**diagrams.azure.storage.ManagedFileShares**
+
 <img width="30" src="/img/resources/azure/storage/netapp-files.png" alt="NetappFiles" style="float: left; padding-right: 5px;" >
 **diagrams.azure.storage.NetappFiles**
 
@@ -2440,6 +2650,9 @@ Node classes list of azure provider.
 
 <img width="30" src="/img/resources/azure/storage/storage-accounts.png" alt="StorageAccounts" style="float: left; padding-right: 5px;" >
 **diagrams.azure.storage.StorageAccounts**
+
+<img width="30" src="/img/resources/azure/storage/storage-actions.png" alt="StorageActions" style="float: left; padding-right: 5px;" >
+**diagrams.azure.storage.StorageActions**
 
 <img width="30" src="/img/resources/azure/storage/storage-explorer.png" alt="StorageExplorer" style="float: left; padding-right: 5px;" >
 **diagrams.azure.storage.StorageExplorer**
@@ -2482,6 +2695,9 @@ Node classes list of azure provider.
 
 <img width="30" src="/img/resources/azure/web/app-services.png" alt="AppServices" style="float: left; padding-right: 5px;" >
 **diagrams.azure.web.AppServices**
+
+<img width="30" src="/img/resources/azure/web/app-space-component.png" alt="AppSpaceComponent" style="float: left; padding-right: 5px;" >
+**diagrams.azure.web.AppSpaceComponent**
 
 <img width="30" src="/img/resources/azure/web/app-space.png" alt="AppSpace" style="float: left; padding-right: 5px;" >
 **diagrams.azure.web.AppSpace**

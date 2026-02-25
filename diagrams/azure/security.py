@@ -52,6 +52,14 @@ class Detonation(_Security):
     _icon = "detonation.png"
 
 
+class EntraIdentityRiskySignins(_Security):
+    _icon = "entra-identity-risky-signins.png"
+
+
+class EntraIdentityRiskyUsers(_Security):
+    _icon = "entra-identity-risky-users.png"
+
+
 class ExtendedSecurityUpdates(_Security):
     _icon = "extended-security-updates.png"
 

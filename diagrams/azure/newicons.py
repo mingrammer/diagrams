@@ -8,12 +8,64 @@ class _Newicons(_Azure):
     _icon_dir = "resources/azure/newicons"
 
 
+class AIAtEdge(_Newicons):
+    _icon = "ai-at-edge.png"
+
+
+class AksNetworkPolicy(_Newicons):
+    _icon = "aks-network-policy.png"
+
+
+class AzureAppTesting(_Newicons):
+    _icon = "azure-app-testing.png"
+
+
+class AzureConsumptionCommitment(_Newicons):
+    _icon = "azure-consumption-commitment.png"
+
+
+class AzureContainerStorage(_Newicons):
+    _icon = "azure-container-storage.png"
+
+
+class AzureLinux(_Newicons):
+    _icon = "azure-linux.png"
+
+
+class AzureLocal(_Newicons):
+    _icon = "azure-local.png"
+
+
+class AzureManagedRedis(_Newicons):
+    _icon = "azure-managed-redis.png"
+
+
 class AzureSustainability(_Newicons):
     _icon = "azure-sustainability.png"
 
 
+class Breeze(_Newicons):
+    _icon = "breeze.png"
+
+
 class ConnectedVehiclePlatform(_Newicons):
     _icon = "connected-vehicle-platform.png"
+
+
+class DataVirtualization(_Newicons):
+    _icon = "data-virtualization.png"
+
+
+class EdgeActions(_Newicons):
+    _icon = "edge-actions.png"
+
+
+class EdgeStorageAccelerator(_Newicons):
+    _icon = "edge-storage-accelerator.png"
+
+
+class EngageCenterConnect(_Newicons):
+    _icon = "engage-center-connect.png"
 
 
 class EntraConnectHealth(_Newicons):
@@ -24,16 +76,120 @@ class EntraConnectSync(_Newicons):
     _icon = "entra-connect-sync.png"
 
 
+class ExternalIDModified(_Newicons):
+    _icon = "external-id-modified.png"
+
+
+class ExternalID(_Newicons):
+    _icon = "external-id.png"
+
+
+class FrdQa(_Newicons):
+    _icon = "frd-qa.png"
+
+
+class HybridConnectivityHub(_Newicons):
+    _icon = "hybrid-connectivity-hub.png"
+
+
 class IcmTroubleshooting(_Newicons):
     _icon = "icm-troubleshooting.png"
+
+
+class KubernetesHub(_Newicons):
+    _icon = "kubernetes-hub.png"
+
+
+class LandingZone(_Newicons):
+    _icon = "landing-zone.png"
+
+
+class LoadBalancerHub(_Newicons):
+    _icon = "load-balancer-hub.png"
+
+
+class LogicAppsTemplate(_Newicons):
+    _icon = "logic-apps-template.png"
+
+
+class MicrosoftDiscovery(_Newicons):
+    _icon = "microsoft-discovery.png"
+
+
+class MonitorIssues(_Newicons):
+    _icon = "monitor-issues.png"
+
+
+class NetworkFoundationHub(_Newicons):
+    _icon = "network-foundation-hub.png"
+
+
+class NetworkSecurityHub(_Newicons):
+    _icon = "network-security-hub.png"
+
+
+class OperationCenter(_Newicons):
+    _icon = "operation-center.png"
 
 
 class Osconfig(_Newicons):
     _icon = "osconfig.png"
 
 
+class PlanetaryComputerPro(_Newicons):
+    _icon = "planetary-computer-pro.png"
+
+
+class Promethus(_Newicons):
+    _icon = "promethus.png"
+
+
+class Pubsub(_Newicons):
+    _icon = "pubsub.png"
+
+
+class ScheduledActions(_Newicons):
+    _icon = "scheduled-actions.png"
+
+
+class ServiceGroupRelationships(_Newicons):
+    _icon = "service-group-relationships.png"
+
+
+class ServiceGroups(_Newicons):
+    _icon = "service-groups.png"
+
+
+class SQLDatabaseFleetManager(_Newicons):
+    _icon = "sql-database-fleet-manager.png"
+
+
+class StageMaps(_Newicons):
+    _icon = "stage-maps.png"
+
+
 class StorageActions(_Newicons):
     _icon = "storage-actions.png"
+
+
+class StorageHubs(_Newicons):
+    _icon = "storage-hubs.png"
+
+
+class ToolchainOrchestrator(_Newicons):
+    _icon = "toolchain-orchestrator.png"
+
+
+class VnetAppliance(_Newicons):
+    _icon = "vnet-appliance.png"
+
+
+class Vpnclientwindows(_Newicons):
+    _icon = "vpnclientwindows.png"
+
+
+class WorkloadOrchestration(_Newicons):
+    _icon = "workload-orchestration.png"
 
 
 # Aliases

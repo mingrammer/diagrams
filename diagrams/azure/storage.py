@@ -72,6 +72,10 @@ class ImportExportJobs(_Storage):
     _icon = "import-export-jobs.png"
 
 
+class ManagedFileShares(_Storage):
+    _icon = "managed-file-shares.png"
+
+
 class NetappFiles(_Storage):
     _icon = "netapp-files.png"
 
@@ -90,6 +94,10 @@ class StorageAccountsClassic(_Storage):
 
 class StorageAccounts(_Storage):
     _icon = "storage-accounts.png"
+
+
+class StorageActions(_Storage):
+    _icon = "storage-actions.png"
 
 
 class StorageExplorer(_Storage):

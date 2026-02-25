@@ -8,6 +8,10 @@ class _Hybridmulticloud(_Azure):
     _icon_dir = "resources/azure/hybridmulticloud"
 
 
+class AzureMonitorPipeline(_Hybridmulticloud):
+    _icon = "azure-monitor-pipeline.png"
+
+
 class AzureOperator5GCore(_Hybridmulticloud):
     _icon = "azure-operator-5g-core.png"
 

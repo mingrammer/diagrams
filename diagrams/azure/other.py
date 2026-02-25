@@ -136,6 +136,10 @@ class AzureSupportCenterBlue(_Other):
     _icon = "azure-support-center-blue.png"
 
 
+class AzureSustainability(_Other):
+    _icon = "azure-sustainability.png"
+
+
 class AzureVideoIndexer(_Other):
     _icon = "azure-video-indexer.png"
 
@@ -190,6 +194,10 @@ class ComplianceCenter(_Other):
 
 class ConfidentialLedgers(_Other):
     _icon = "confidential-ledgers.png"
+
+
+class ConnectedVehiclePlatform(_Other):
+    _icon = "connected-vehicle-platform.png"
 
 
 class ContainerAppsEnvironments(_Other):
@@ -328,6 +336,10 @@ class ElasticSan(_Other):
     _icon = "elastic-san.png"
 
 
+class EntraIdentityLicenses(_Other):
+    _icon = "entra-identity-licenses.png"
+
+
 class ExchangeOnPremisesAccess(_Other):
     _icon = "exchange-on-premises-access.png"
 
@@ -350,6 +362,10 @@ class Fiji(_Other):
 
 class HdiAksCluster(_Other):
     _icon = "hdi-aks-cluster.png"
+
+
+class IcmTroubleshooting(_Other):
+    _icon = "icm-troubleshooting.png"
 
 
 class InstancePools(_Other):
@@ -396,6 +412,10 @@ class ModularDataCenter(_Other):
     _icon = "modular-data-center.png"
 
 
+class MonitorHealthModels(_Other):
+    _icon = "monitor-health-models.png"
+
+
 class NetworkManagers(_Other):
     _icon = "network-managers.png"
 
@@ -406,6 +426,10 @@ class NetworkSecurityPerimeters(_Other):
 
 class OpenSupplyChainPlatform(_Other):
     _icon = "open-supply-chain-platform.png"
+
+
+class Osconfig(_Other):
+    _icon = "osconfig.png"
 
 
 class PeeringService(_Other):
@@ -498,6 +522,10 @@ class VMAppVersions(_Other):
 
 class VMImageVersion(_Other):
     _icon = "vm-image-version.png"
+
+
+class WacInstaller(_Other):
+    _icon = "wac-installer.png"
 
 
 class Wac(_Other):
