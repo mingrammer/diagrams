@@ -49,6 +49,7 @@ with Diagram("Clustered Web Services", show=False):
 
     dns >> lb >> svc_group
     svc_group >> db_primary
+    db_primary - db_secondary
     svc_group >> memcached
 ```
 
