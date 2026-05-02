@@ -3,8 +3,12 @@ import unittest
 
 from diagrams import Diagram, setcluster, setdiagram
 from diagrams.aws.ml import (
+    DLC,
+    OBS,
+    PEAG,
     AgentCore,
     AiAgent,
+    AIAgent,
     AmazonNova,
     AWSAppStudio,
     AWSNeuron,
@@ -17,10 +21,6 @@ from diagrams.aws.ml import (
     Observability,
     PolicyEngineAgenticGuardrails,
     Runtime,
-    AIAgent,
-    DLC,
-    OBS,
-    PEAG,
 )
 
 
