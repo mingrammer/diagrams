@@ -1094,11 +1094,11 @@ Node classes list of the aws provider.
 ## aws.ml
 
 
-<img width="30" src="/img/resources/aws/ml/agentcore.png" alt="AGENTCORE" style="float: left; padding-right: 5px;" >
-**diagrams.aws.ml.AGENTCORE**
+<img width="30" src="/img/resources/aws/ml/agentcore.png" alt="AgentCore" style="float: left; padding-right: 5px;" >
+**diagrams.aws.ml.AgentCore**
 
 <img width="30" src="/img/resources/aws/ml/ai-agent.png" alt="AiAgent" style="float: left; padding-right: 5px;" >
-**diagrams.aws.ml.AiAgent**
+**diagrams.aws.ml.AiAgent**, **AIAgent** (alias)
 
 <img width="30" src="/img/resources/aws/ml/amazon-nova.png" alt="AmazonNova" style="float: left; padding-right: 5px;" >
 **diagrams.aws.ml.AmazonNova**

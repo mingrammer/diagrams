@@ -8,7 +8,7 @@ class _ML(_AWS):
     _icon_dir = "resources/aws/ml"
 
 
-class AGENTCORE(_ML):
+class AgentCore(_ML):
     _icon = "agentcore.png"
 
 
@@ -190,6 +190,7 @@ class Translate(_ML):
 
 # Aliases
 
+AIAgent = AiAgent
 DLC = DeepLearningContainers
 PEAG = PolicyEngineAgenticGuardrails
 OBS = Observability
