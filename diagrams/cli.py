@@ -1,4 +1,5 @@
 import argparse
+import runpy
 import sys
 
 
@@ -24,8 +25,7 @@ def run() -> int:
     args = parser.parse_args()
 
     for path in args.paths:
-        with open(path, encoding='utf-8') as f:
-            exec(f.read())
+        runpy.run_path(path, run_name="__main__")
 
     return 0
 
