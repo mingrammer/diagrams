@@ -3751,8 +3751,8 @@ lodash.sortby@^4.7.0:
   resolved "https://registry.npmjs.org/lodash.sortby/-/lodash.sortby-4.7.0.tgz"
 
 lodash.template@^4.4.0:
-  version "4.5.0"
-  resolved "https://registry.npmjs.org/lodash.template/-/lodash.template-4.5.0.tgz"
+  version "4.18.1"
+  resolved "https://registry.yarnpkg.com/lodash.template/-/lodash.template-4.18.1.tgz#9968d00568070d03e358505b5a28b0cbd8fbfd5f"
   dependencies:
     lodash._reinterpolate "^3.0.0"
     lodash.templatesettings "^4.0.0"
