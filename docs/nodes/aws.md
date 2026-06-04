@@ -1304,6 +1304,9 @@ Node classes list of the aws provider.
 <img width="30" src="/img/resources/aws/network/transit-gateway.png" alt="TransitGateway" style="float: left; padding-right: 5px;" >
 **diagrams.aws.network.TransitGateway**, **TGW** (alias)
 
+<img width="30" src="/img/resources/aws/network/verified-access.png" alt="VerifiedAccess" style="float: left; padding-right: 5px;" >
+**diagrams.aws.network.VerifiedAccess**
+
 <img width="30" src="/img/resources/aws/network/vpc-customer-gateway.png" alt="VPCCustomerGateway" style="float: left; padding-right: 5px;" >
 **diagrams.aws.network.VPCCustomerGateway**
 
