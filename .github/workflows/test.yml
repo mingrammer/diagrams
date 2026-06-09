@@ -32,7 +32,7 @@ jobs:
       - name: Setup Graphviz
         uses: ts-graphviz/setup-graphviz@v2
       - name: Install poetry
-        run: pipx install poetry==2.1.1
+        run: curl -sSL https://install.python-poetry.org | python3 - --version 2.2.1
       - name: Run all tests
         run: |
           poetry install
