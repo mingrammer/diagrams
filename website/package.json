@@ -12,6 +12,6 @@
     "docusaurus": "^1.14.7"
   },
   "dependencies": {
-    "minimist": "^1.2.7"
+    "minimist": "^1.2.8"
   }
 }
