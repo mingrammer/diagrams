@@ -96,6 +96,14 @@ class EnterpriseApplications(_Identity):
     _icon = "enterprise-applications.png"
 
 
+class EntraConnectHealth(_Identity):
+    _icon = "entra-connect-health.png"
+
+
+class EntraConnectSync(_Identity):
+    _icon = "entra-connect-sync.png"
+
+
 class EntraConnect(_Identity):
     _icon = "entra-connect.png"
 
@@ -104,12 +112,36 @@ class EntraDomainServices(_Identity):
     _icon = "entra-domain-services.png"
 
 
+class EntraGlobalSecureAccess(_Identity):
+    _icon = "entra-global-secure-access.png"
+
+
 class EntraIDProtection(_Identity):
     _icon = "entra-id-protection.png"
 
 
+class EntraIdentityCustomRoles(_Identity):
+    _icon = "entra-identity-custom-roles.png"
+
+
+class EntraIdentityLicenses(_Identity):
+    _icon = "entra-identity-licenses.png"
+
+
+class EntraIdentityRolesAndAdministrators(_Identity):
+    _icon = "entra-identity-roles-and-administrators.png"
+
+
+class EntraInternetAccess(_Identity):
+    _icon = "entra-internet-access.png"
+
+
 class EntraManagedIdentities(_Identity):
     _icon = "entra-managed-identities.png"
+
+
+class EntraPrivateAccess(_Identity):
+    _icon = "entra-private-access.png"
 
 
 class EntraPrivlegedIdentityManagement(_Identity):
@@ -148,6 +180,10 @@ class ManagedIdentities(_Identity):
     _icon = "managed-identities.png"
 
 
+class MultiFactorAuthentication(_Identity):
+    _icon = "multi-factor-authentication.png"
+
+
 class PrivateAccess(_Identity):
     _icon = "private-access.png"
 
@@ -170,6 +206,10 @@ class Users(_Identity):
 
 class VerifiableCredentials(_Identity):
     _icon = "verifiable-credentials.png"
+
+
+class VerificationAsAService(_Identity):
+    _icon = "verification-as-a-service.png"
 
 
 # Aliases

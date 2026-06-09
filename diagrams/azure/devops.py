@@ -68,6 +68,10 @@ class LoadTesting(_Devops):
     _icon = "load-testing.png"
 
 
+class ManagedDevopsPools(_Devops):
+    _icon = "managed-devops-pools.png"
+
+
 class Pipelines(_Devops):
     _icon = "pipelines.png"
 
@@ -78,6 +82,10 @@ class Repos(_Devops):
 
 class TestPlans(_Devops):
     _icon = "test-plans.png"
+
+
+class WorkspaceGateway(_Devops):
+    _icon = "workspace-gateway.png"
 
 
 # Aliases
