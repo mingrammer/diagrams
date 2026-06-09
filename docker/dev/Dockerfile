@@ -9,10 +9,10 @@ RUN apk update && apk add --no-cache \
 RUN go install github.com/mingrammer/round@latest
 
 # install fonts
-RUN curl -O https://noto-website-2.storage.googleapis.com/pkgs/NotoSansCJKjp-hinted.zip \
+RUN curl -L -O https://github.com/notofonts/noto-cjk/releases/download/Sans2.004/06_NotoSansCJKjp.zip \
 && mkdir -p /usr/share/fonts/NotoSansCJKjp \
-&& unzip NotoSansCJKjp-hinted.zip -d /usr/share/fonts/NotoSansCJKjp/ \
-&& rm NotoSansCJKjp-hinted.zip \
+&& unzip 06_NotoSansCJKjp.zip -d /usr/share/fonts/NotoSansCJKjp/ \
+&& rm 06_NotoSansCJKjp.zip \
 && fc-cache -fv
 
 # add go bin to path.
