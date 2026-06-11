@@ -1493,6 +1493,9 @@ Node classes list of the aws provider.
 <img width="30" src="/img/resources/aws/security/single-sign-on.png" alt="SingleSignOn" style="float: left; padding-right: 5px;" >
 **diagrams.aws.security.SingleSignOn**
 
+<img width="30" src="/img/resources/aws/security/verified-permissions.png" alt="VerifiedPermissions" style="float: left; padding-right: 5px;" >
+**diagrams.aws.security.VerifiedPermissions**
+
 <img width="30" src="/img/resources/aws/security/waf-filtering-rule.png" alt="WAFFilteringRule" style="float: left; padding-right: 5px;" >
 **diagrams.aws.security.WAFFilteringRule**
 
