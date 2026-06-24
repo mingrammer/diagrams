@@ -146,6 +146,9 @@ Node classes list of the aws provider.
 <img width="30" src="/img/resources/aws/compute/batch.png" alt="Batch" style="float: left; padding-right: 5px;" >
 **diagrams.aws.compute.Batch**
 
+<img width="30" src="/img/resources/aws/compute/bottlerocket.png" alt="Bottlerocket" style="float: left; padding-right: 5px;" >
+**diagrams.aws.compute.Bottlerocket**
+
 <img width="30" src="/img/resources/aws/compute/compute-optimizer.png" alt="ComputeOptimizer" style="float: left; padding-right: 5px;" >
 **diagrams.aws.compute.ComputeOptimizer**
 
