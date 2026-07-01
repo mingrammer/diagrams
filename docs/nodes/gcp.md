@@ -395,6 +395,9 @@ Node classes list of the gcp provider.
 <img width="30" src="/img/resources/gcp/security/security-scanner.png" alt="SecurityScanner" style="float: left; padding-right: 5px;" >
 **diagrams.gcp.security.SecurityScanner**
 
+<img width="30" src="/img/resources/gcp/security/workload-identity-pool.png" alt="WorkloadIdentityPool" style="float: left; padding-right: 5px;" >
+**diagrams.gcp.security.WorkloadIdentityPool**
+
 ## gcp.storage
 
 
