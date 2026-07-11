@@ -896,6 +896,9 @@ Node classes list of the aws provider.
 <img width="30" src="/img/resources/aws/management/control-tower.png" alt="ControlTower" style="float: left; padding-right: 5px;" >
 **diagrams.aws.management.ControlTower**
 
+<img width="30" src="/img/resources/aws/management/devops-agent.png" alt="DevopsAgent" style="float: left; padding-right: 5px;" >
+**diagrams.aws.management.DevopsAgent**
+
 <img width="30" src="/img/resources/aws/management/license-manager.png" alt="LicenseManager" style="float: left; padding-right: 5px;" >
 **diagrams.aws.management.LicenseManager**
 
