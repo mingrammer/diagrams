@@ -1,4 +1,5 @@
 import argparse
+import runpy
 import sys
 
 
@@ -24,8 +25,10 @@ def run() -> int:
     args = parser.parse_args()
 
     for path in args.paths:
-        with open(path, encoding='utf-8') as f:
-            exec(f.read())
+        if not path.endswith(".py"):
+            print(f"Error: {path} is not a Python file", file=sys.stderr)
+            return 1
+        runpy.run_path(path, run_name="__main__")
 
     return 0
 
