@@ -92,6 +92,10 @@ class ControlTower(_Management):
     _icon = "control-tower.png"
 
 
+class DevopsAgent(_Management):
+    _icon = "devops-agent.png"
+
+
 class LicenseManager(_Management):
     _icon = "license-manager.png"
 

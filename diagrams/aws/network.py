@@ -128,6 +128,10 @@ class TransitGateway(_Network):
     _icon = "transit-gateway.png"
 
 
+class VerifiedAccess(_Network):
+    _icon = "verified-access.png"
+
+
 class VPCCustomerGateway(_Network):
     _icon = "vpc-customer-gateway.png"
 

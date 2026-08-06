@@ -20,6 +20,10 @@ class Batch(_Compute):
     _icon = "batch.png"
 
 
+class Bottlerocket(_Compute):
+    _icon = "bottlerocket.png"
+
+
 class ComputeOptimizer(_Compute):
     _icon = "compute-optimizer.png"
 
