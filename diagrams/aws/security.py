@@ -160,6 +160,10 @@ class SingleSignOn(_Security):
     _icon = "single-sign-on.png"
 
 
+class VerifiedPermissions(_Security):
+    _icon = "verified-permissions.png"
+
+
 class WAFFilteringRule(_Security):
     _icon = "waf-filtering-rule.png"
 

@@ -146,6 +146,9 @@ Node classes list of the aws provider.
 <img width="30" src="/img/resources/aws/compute/batch.png" alt="Batch" style="float: left; padding-right: 5px;" >
 **diagrams.aws.compute.Batch**
 
+<img width="30" src="/img/resources/aws/compute/bottlerocket.png" alt="Bottlerocket" style="float: left; padding-right: 5px;" >
+**diagrams.aws.compute.Bottlerocket**
+
 <img width="30" src="/img/resources/aws/compute/compute-optimizer.png" alt="ComputeOptimizer" style="float: left; padding-right: 5px;" >
 **diagrams.aws.compute.ComputeOptimizer**
 
@@ -896,6 +899,9 @@ Node classes list of the aws provider.
 <img width="30" src="/img/resources/aws/management/control-tower.png" alt="ControlTower" style="float: left; padding-right: 5px;" >
 **diagrams.aws.management.ControlTower**
 
+<img width="30" src="/img/resources/aws/management/devops-agent.png" alt="DevopsAgent" style="float: left; padding-right: 5px;" >
+**diagrams.aws.management.DevopsAgent**
+
 <img width="30" src="/img/resources/aws/management/license-manager.png" alt="LicenseManager" style="float: left; padding-right: 5px;" >
 **diagrams.aws.management.LicenseManager**
 
@@ -1304,6 +1310,9 @@ Node classes list of the aws provider.
 <img width="30" src="/img/resources/aws/network/transit-gateway.png" alt="TransitGateway" style="float: left; padding-right: 5px;" >
 **diagrams.aws.network.TransitGateway**, **TGW** (alias)
 
+<img width="30" src="/img/resources/aws/network/verified-access.png" alt="VerifiedAccess" style="float: left; padding-right: 5px;" >
+**diagrams.aws.network.VerifiedAccess**
+
 <img width="30" src="/img/resources/aws/network/vpc-customer-gateway.png" alt="VPCCustomerGateway" style="float: left; padding-right: 5px;" >
 **diagrams.aws.network.VPCCustomerGateway**
 
@@ -1489,6 +1498,9 @@ Node classes list of the aws provider.
 
 <img width="30" src="/img/resources/aws/security/single-sign-on.png" alt="SingleSignOn" style="float: left; padding-right: 5px;" >
 **diagrams.aws.security.SingleSignOn**
+
+<img width="30" src="/img/resources/aws/security/verified-permissions.png" alt="VerifiedPermissions" style="float: left; padding-right: 5px;" >
+**diagrams.aws.security.VerifiedPermissions**
 
 <img width="30" src="/img/resources/aws/security/waf-filtering-rule.png" alt="WAFFilteringRule" style="float: left; padding-right: 5px;" >
 **diagrams.aws.security.WAFFilteringRule**
