@@ -64,6 +64,10 @@ class ContentModerators(_Aimachinelearning):
     _icon = "content-moderators.png"
 
 
+class ContentSafety(_Aimachinelearning):
+    _icon = "content-safety.png"
+
+
 class CustomVision(_Aimachinelearning):
     _icon = "custom-vision.png"
 

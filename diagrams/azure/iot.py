@@ -24,6 +24,10 @@ class AzureMapsAccounts(_Iot):
     _icon = "azure-maps-accounts.png"
 
 
+class AzureStackHciSizer(_Iot):
+    _icon = "azure-stack-hci-sizer.png"
+
+
 class AzureStack(_Iot):
     _icon = "azure-stack.png"
 
