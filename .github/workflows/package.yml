@@ -1,0 +1,118 @@
+name: Verify built artifacts
+
+# The regular test job installs from the source tree, where `diagrams/cli.py`
+# and `resources/` are always present. That is why #1149 (console script
+# pointing at a module that was never shipped) and #1099 (0.25.0 wheel built
+# with no resources at all) both reached PyPI green. This workflow tests the
+# sdist and the wheel instead.
+
+on:
+  push:
+    branches:
+      - master
+    tags:
+      - "v*"
+  pull_request:
+    branches:
+      - master
+    paths:
+      - ".github/workflows/package.yml"
+      - "pyproject.toml"
+      - "resources/**"
+      - "**.py"
+
+jobs:
+  artifacts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Setup Graphviz
+        uses: ts-graphviz/setup-graphviz@v2
+
+      - name: Build sdist and wheel
+        run: |
+          python -m pip install --upgrade build
+          python -m build
+
+      - name: The sdist must carry the CLI module and the icon tree
+        # Only the sdist is inspected by listing: the wheel is covered more
+        # strongly below, where it is installed and tests/test_packaging.py
+        # loads every entry point and resolves every icon on disk.
+        run: |
+          set -euo pipefail
+          archive=$(ls dist/*.tar.gz)
+          # Write the listing to a file rather than piping it into grep: `grep -q`
+          # exits on the first match and closes the pipe, which kills the writer
+          # with EPIPE and makes pipefail report a false failure.
+          tar tzf "$archive" | cut -d/ -f2- > /tmp/sdist-names.txt
+          grep -qx 'diagrams/cli.py' /tmp/sdist-names.txt \
+            || { echo "::error::$archive is missing diagrams/cli.py (issue #1149)"; exit 1; }
+          icons=$(grep -c '^resources/.*\.png$' /tmp/sdist-names.txt || true)
+          echo "$archive contains $icons icons"
+          [ "$icons" -gt 2000 ] \
+            || { echo "::error::$archive contains only $icons icons (issue #1099)"; exit 1; }
+
+      - name: Install the wheel into a clean environment
+        run: |
+          python -m venv /tmp/wheelenv
+          /tmp/wheelenv/bin/pip install dist/*.whl
+
+      - name: Packaging invariants must hold for the installed distribution
+        run: |
+          set -euo pipefail
+          # Run from a scratch directory so the checkout cannot shadow the
+          # installed package - that shadowing is exactly what hid these bugs.
+          mkdir -p /tmp/pkgcheck
+          cp tests/test_packaging.py /tmp/pkgcheck/
+          cd /tmp/pkgcheck
+          /tmp/wheelenv/bin/python -m unittest -v test_packaging 2>&1 | tee result.txt
+          # The suite skips itself when it cannot see an installed distribution.
+          # Here it must actually run, otherwise this step passes without
+          # checking the wheel at all.
+          grep -q 'skipped' result.txt \
+            && { echo "::error::packaging invariants were skipped, not run against the wheel"; exit 1; }
+          true
+
+      - name: Console script must render a diagram with real icons
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/e2e && cd /tmp/e2e
+          cat > example.py <<'EOF'
+          from diagrams import Diagram
+          from diagrams.aws.compute import EC2
+          from diagrams.aws.database import RDS
+          from diagrams.aws.network import ELB
+
+          with Diagram("web_service", show=False):
+              ELB("lb") >> EC2("web") >> RDS("userdb")
+          EOF
+          /tmp/wheelenv/bin/diagrams example.py
+          # A diagram whose icons failed to load still exits 0 and still writes a
+          # PNG - 0.25.0 produced an 8 KB image of empty boxes - so assert on size.
+          size=$(wc -c < web_service.png)
+          echo "rendered web_service.png: ${size} bytes"
+          [ "$size" -gt 20000 ] \
+            || { echo "::error::rendered diagram is ${size} bytes; icons did not load (issue #1099)"; exit 1; }
+
+      - name: pipx install of the wheel must provide a working console script
+        run: |
+          set -euo pipefail
+          python -m pip install --upgrade pipx
+          python -m pipx install dist/*.whl
+          cd /tmp/e2e && rm -f web_service.png
+          "$(python -m pipx environment --value PIPX_BIN_DIR)/diagrams" example.py
+          test -s web_service.png
+
+  tag-version:
+    if: startsWith(github.ref, 'refs/tags/v')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Tag must name the version in pyproject.toml
+        run: python -m scripts.check_release_version "${GITHUB_REF_NAME}"

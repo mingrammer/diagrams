@@ -1,5 +1,13 @@
 # Changelogs
 
+## Unreleased
+
+### Deprecated
+
+- `diagrams.gis.cplusplus.Mapnik` is now an alias of `diagrams.gis.cli.Mapnik` and warns on
+  import. The `gis.cplusplus` module never had an icon directory, so it always rendered a
+  blank node; the alias will be removed in the next major release.
+
 ## 0.17.0
 
 ### Added
