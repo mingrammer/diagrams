@@ -2061,7 +2061,7 @@ Node classes list of the azure provider.
 **diagrams.azure.newicons.PlanetaryComputerPro**
 
 <img width="30" src="/img/resources/azure/newicons/promethus.png" alt="Promethus" style="float: left; padding-right: 5px;" >
-**diagrams.azure.newicons.Promethus**
+**diagrams.azure.newicons.Promethus**, **Prometheus** (alias)
 
 <img width="30" src="/img/resources/azure/newicons/pubsub.png" alt="Pubsub" style="float: left; padding-right: 5px;" >
 **diagrams.azure.newicons.Pubsub**

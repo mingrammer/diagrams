@@ -193,3 +193,5 @@ class WorkloadOrchestration(_Newicons):
 
 
 # Aliases
+
+Prometheus = Promethus
