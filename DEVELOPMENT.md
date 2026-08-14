@@ -58,7 +58,7 @@ To be able to develop and run diagrams locally on you Mac device, you should hav
 4. Install diagrams binary dependencies.
 
     ```shell
-    brew install imagemagick inkscape black
+    brew install imagemagick librsvg black
     go install github.com/mingrammer/round@latest
     # ln -sf ~/go/bin/round ~/.local/bin/round
     ```
