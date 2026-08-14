@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diagrams Playground</title>
+    <!-- Real diagrams project logo; relative href survives sub-path deploys. -->
+    <link rel="icon" type="image/png" href="diagrams-logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Analytics (GA4) — same property as the docs site, so the
+         playground shows up alongside diagrams.mingrammer.com traffic. -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y1TWCZ0L77"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-Y1TWCZ0L77");
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="./src/main.tsx"></script>
+  </body>
+</html>
