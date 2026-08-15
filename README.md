@@ -41,6 +41,8 @@ Diagrams lets you draw the cloud system architecture **in Python code**. It was 
 
 ## Getting Started
 
+> Want to try it first? The [**Playground**](https://diagrams.mingrammer.com/playground/) runs **diagrams** right in your browser — no installation required.
+
 It requires **Python 3.9** or higher, check your Python version first.
 
 It uses [Graphviz](https://www.graphviz.org/) to render the diagram, so you need to [install Graphviz](https://graphviz.gitlab.io/download/) to use **diagrams**. After installing graphviz (or already have it), install the **diagrams**.
@@ -59,6 +61,12 @@ $ poetry add diagrams
 ```
 
 You can start with [quick start](https://diagrams.mingrammer.com/docs/getting-started/installation#quick-start). Check out [guides](https://diagrams.mingrammer.com/docs/guides/diagram) for more details, and you can find all available nodes list in [here](https://diagrams.mingrammer.com/docs/nodes/aws).
+
+## Playground
+
+[**diagrams.mingrammer.com/playground**](https://diagrams.mingrammer.com/playground/)
+
+Write **diagrams** code and see the rendered diagram instantly, without installing anything. It runs the real **diagrams** package in your browser via [Pyodide](https://pyodide.org), and supports node search, autocompletion, PNG/SVG/JPEG export, and shareable links.
 
 ## Examples
 

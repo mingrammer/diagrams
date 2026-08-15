@@ -1,0 +1,1308 @@
+/* ============================================================
+   Diagrams Playground — light-first soft modern SaaS theme
+   ============================================================ */
+
+/* ---------- Theme-agnostic tokens ---------- */
+:root {
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  --radius-sm: 10px; /* buttons / inputs */
+  --radius-md: 12px; /* cards / panels */
+  --radius-lg: 16px; /* diagram card */
+
+  --accent: #6366f1;
+  --accent-hover: #4f46e5;
+  --accent-soft: #eef2ff;
+}
+
+/* ---------- Light theme (DEFAULT) ---------- */
+:root[data-theme="light"] {
+  --page-bg: #ffffff;
+  --panel-bg: #ffffff;
+  --panel-alt: #f8f9fb;
+  --input-bg: #f3f4f6;
+  --border: #e5e7eb;
+  --text: #111827;
+  --text-muted: #6b7280;
+
+  /* Accordion surfaces: provider rows sit on --panel-bg at rest; --surface-1
+     tints a provider row's header on hover and while expanded
+     (aria-expanded), and --surface-2 tints that header's count badge in the
+     same states, kept distinct from --surface-1 so the badge still reads as
+     a separate pill. */
+  --surface-1: #f1f2f5;
+  --surface-2: #fafbfc;
+
+  --shadow-1: 0 1px 2px rgba(17, 24, 39, 0.04), 0 1px 3px rgba(17, 24, 39, 0.06);
+  --shadow-2: 0 4px 24px rgba(17, 24, 39, 0.08);
+
+  --status-ready-bg: #dcfce7;
+  --status-ready-fg: #15803d;
+  --status-busy-bg: #fef3c7;
+  --status-busy-fg: #b45309;
+  --status-error-bg: #fee2e2;
+  --status-error-fg: #b91c1c;
+
+  --share-bg: #111827;
+  --share-fg: #ffffff;
+
+  --canvas-bg: #fafafb;
+  --canvas-dot: #d1d5db;
+
+  --error-bg: #fef2f2;
+  --error-border: #fecaca;
+  --error-fg: #b91c1c;
+
+  --chip-bg: rgba(255, 255, 255, 0.92);
+  --chip-fg: var(--text-muted);
+
+  --cm-bg: #ffffff;
+  --cm-fg: var(--text);
+  --cm-caret: #111827;
+  --cm-selection: rgba(99, 102, 241, 0.18);
+  --cm-active-line: #f8f9fb;
+  --cm-gutter-bg: #ffffff;
+  --cm-gutter-fg: var(--text-muted);
+  --cm-gutter-border: var(--border);
+  --cm-active-gutter-bg: #f3f4f6;
+  --cm-active-gutter-fg: var(--text);
+  --cm-selection-match: rgba(99, 102, 241, 0.15);
+  --cm-matching-bracket-bg: rgba(99, 102, 241, 0.15);
+  --cm-matching-bracket-outline: var(--accent);
+  --cm-tooltip-bg: #ffffff;
+  --cm-tooltip-border: var(--border);
+  --cm-tooltip-fg: var(--text);
+  --cm-autocomplete-selected-bg: var(--accent);
+  --cm-autocomplete-selected-fg: #ffffff;
+
+  --syn-keyword: #7c3aed;
+  --syn-string: #c2410c;
+  --syn-comment: #9ca3af;
+  --syn-function: #2563eb;
+  --syn-number: #0d9488;
+  --syn-operator: var(--text);
+  --syn-variable: var(--text);
+  --syn-property: #2563eb;
+  --syn-bool: #7c3aed;
+  --syn-atom: #7c3aed;
+}
+
+/* ---------- Dark theme (neutral grays, indigo accent stays) ---------- */
+:root[data-theme="dark"] {
+  --page-bg: #0f1115;
+  --panel-bg: #16181d;
+  --panel-alt: #1b1e24;
+  --input-bg: #1e2127;
+  --border: #2a2d34;
+  --text: #e5e7eb;
+  --text-muted: #9ca3af;
+
+  /* Accordion surfaces — dark equivalents, see light theme comment above. */
+  --surface-1: #1e2128;
+  --surface-2: #1a1c22;
+
+  --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.3), 0 2px 8px rgba(0, 0, 0, 0.24);
+  --shadow-2: 0 4px 24px rgba(0, 0, 0, 0.4);
+
+  --status-ready-bg: rgba(34, 197, 94, 0.16);
+  --status-ready-fg: #4ade80;
+  --status-busy-bg: rgba(245, 158, 11, 0.16);
+  --status-busy-fg: #fbbf24;
+  --status-error-bg: rgba(239, 68, 68, 0.16);
+  --status-error-fg: #f87171;
+
+  --share-bg: #ffffff;
+  --share-fg: #111827;
+
+  --canvas-bg: #131519;
+  --canvas-dot: #2a2d34;
+
+  --error-bg: rgba(239, 68, 68, 0.1);
+  --error-border: rgba(239, 68, 68, 0.35);
+  --error-fg: #f87171;
+
+  --chip-bg: rgba(22, 24, 29, 0.85);
+  --chip-fg: var(--text-muted);
+
+  --cm-bg: #16181d;
+  --cm-fg: var(--text);
+  --cm-caret: #e5e7eb;
+  --cm-selection: rgba(99, 102, 241, 0.32);
+  --cm-active-line: #1b1e24;
+  --cm-gutter-bg: #16181d;
+  --cm-gutter-fg: var(--text-muted);
+  --cm-gutter-border: var(--border);
+  --cm-active-gutter-bg: #1e2127;
+  --cm-active-gutter-fg: var(--text);
+  --cm-selection-match: rgba(99, 102, 241, 0.25);
+  --cm-matching-bracket-bg: rgba(99, 102, 241, 0.25);
+  --cm-matching-bracket-outline: var(--accent);
+  --cm-tooltip-bg: #1b1e24;
+  --cm-tooltip-border: var(--border);
+  --cm-tooltip-fg: var(--text);
+  --cm-autocomplete-selected-bg: var(--accent);
+  --cm-autocomplete-selected-fg: #ffffff;
+
+  --syn-keyword: #a78bfa;
+  --syn-string: #fb923c;
+  --syn-comment: #6b7280;
+  --syn-function: #60a5fa;
+  --syn-number: #2dd4bf;
+  --syn-operator: var(--text);
+  --syn-variable: var(--text);
+  --syn-property: #60a5fa;
+  --syn-bool: #a78bfa;
+  --syn-atom: #a78bfa;
+}
+
+/* ---------- Reset & base ---------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+html,
+body,
+#root,
+.app {
+  height: 100%;
+  font-family: var(--font-sans);
+  background: var(--page-bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  transition: background-color 160ms ease, color 160ms ease;
+}
+
+/* ---------- Scrollbars ---------- */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+}
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 6px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+  background-clip: padding-box;
+}
+
+/* ---------- Motion ---------- */
+@keyframes fade-slide {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes loading-sweep {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
+/* ---------- Buttons (shared baseline) ---------- */
+.app button {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+  transition: background-color 120ms ease, color 120ms ease, border-color 120ms ease, transform 120ms ease,
+    box-shadow 120ms ease;
+}
+.app button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+/* Ghost bordered button — used for Theme / GitHub / Docs. Fixed height so
+   the GitHub button (whose inner star pill would otherwise inflate it)
+   lines up exactly with its plain siblings. */
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 32px;
+  box-sizing: border-box;
+  color: var(--text);
+  background: var(--panel-bg);
+  border: 1px solid var(--border);
+  padding: 0 12px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: var(--radius-sm);
+  transition: border-color 120ms ease, color 120ms ease, background-color 120ms ease;
+}
+.btn-ghost:hover,
+.btn-ghost:focus-visible {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.btn-ghost:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+/* Star-count badge inside the GitHub ghost button (logo + "GitHub" + count). */
+.gh-stars {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  margin-left: 2px;
+  padding: 2px 7px;
+  border-radius: 999px;
+  background: var(--panel-alt);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  line-height: 1;
+}
+.gh-stars svg {
+  color: #f5b400;
+}
+
+/* Filled dark "Share" button — same fixed height as the ghost buttons. */
+.btn-share {
+  display: inline-flex;
+  align-items: center;
+  height: 32px;
+  box-sizing: border-box;
+  color: var(--share-fg);
+  background: var(--share-bg);
+  border: 1px solid var(--share-bg);
+  padding: 0 16px;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+}
+.btn-share:hover {
+  opacity: 0.9;
+}
+
+/* ---------- Header (single row) ---------- */
+.toolbar {
+  position: relative;
+  background: var(--page-bg);
+  border-bottom: 1px solid var(--border);
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  animation: fade-slide 420ms ease-out both;
+}
+.toolbar::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 2px;
+  background: var(--accent);
+  opacity: 0;
+  transform: translateX(-100%);
+  pointer-events: none;
+}
+.toolbar.is-loading::after {
+  opacity: 1;
+  animation: loading-sweep 1.1s ease-in-out infinite;
+}
+/* White chip in BOTH themes — the logo's dark strokes need a light ground. */
+.app-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #ffffff;
+}
+.toolbar-title {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--text);
+  letter-spacing: -0.01em;
+}
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px 4px 8px;
+  border-radius: 999px;
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 500;
+}
+.status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.status-pill--ready {
+  background: var(--status-ready-bg);
+  color: var(--status-ready-fg);
+}
+.status-pill--ready .status-dot {
+  background: var(--status-ready-fg);
+}
+.status-pill--busy {
+  background: var(--status-busy-bg);
+  color: var(--status-busy-fg);
+}
+.status-pill--busy .status-dot {
+  background: var(--status-busy-fg);
+}
+.status-pill--error {
+  background: var(--status-error-bg);
+  color: var(--status-error-fg);
+}
+.status-pill--error .status-dot {
+  background: var(--status-error-fg);
+}
+.toolbar-spacer {
+  flex: 1;
+}
+.toolbar-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ---------- Examples row ---------- */
+.examples {
+  position: relative;
+  background: var(--page-bg);
+  border-bottom: 1px solid var(--border);
+  padding: 10px 20px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+  animation: fade-slide 420ms ease-out both;
+  animation-delay: 30ms;
+}
+.examples-label {
+  font-family: var(--font-sans);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-right: 4px;
+}
+.example-pill {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text);
+  background: var(--panel-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 6px 12px;
+}
+.example-pill:hover,
+.example-pill:focus-visible {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.example-pill.is-active {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  color: var(--accent-hover);
+}
+
+/* ---------- Main row ---------- */
+/* Flat layout (mockup): panels butt together and are separated by 1px
+   hairlines only — no gaps, no per-panel cards/shadows/rounding. */
+.main {
+  flex: 1;
+  display: flex;
+  min-height: 0;
+  gap: 0;
+  padding: 0;
+  background: var(--panel-bg);
+}
+
+/* ---------- Split container (editor + handle + preview) ---------- */
+.split-container {
+  flex: 1;
+  display: flex;
+  min-width: 0;
+  min-height: 0;
+}
+
+/* ---------- Node search sidebar ---------- */
+/* Width is set inline (resizable via DragHandle); 260px is the CSS
+   fallback. The right divider line is the DragHandle itself. */
+.node-search {
+  width: 260px;
+  flex-shrink: 0;
+  background: var(--panel-bg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  animation: fade-slide 420ms ease-out both;
+}
+.search-input-wrap {
+  position: relative;
+  margin: 12px;
+}
+.search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+  pointer-events: none;
+  display: inline-flex;
+}
+.node-search input {
+  width: 100%;
+  padding: 8px 10px 8px 32px;
+  background: var(--input-bg);
+  border: 1px solid transparent;
+  border-radius: var(--radius-md);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: 13px;
+  outline: none;
+  transition: border-color 120ms ease, box-shadow 120ms ease, background-color 120ms ease;
+}
+.node-search input::placeholder {
+  color: var(--text-muted);
+}
+.node-search input:focus {
+  background: var(--panel-bg);
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-soft);
+}
+.node-search-results {
+  flex: 1;
+  overflow-y: auto;
+  list-style: none;
+  padding: 0 8px 12px;
+  font-size: 13px;
+}
+
+/* Shared class row (flat search results + expanded-category tree rows).
+   Fixed layout that never shifts — no hover-revealed controls live here;
+   actions are a right-click context menu instead (see .ctx-menu below).
+   Row hover/focus is a subtle background tint only.
+   Horizontal padding lives on the row itself (not on an ancestor <ul>), so
+   the row's own box — and therefore its hover/focus background — always
+   spans the full width of the results list, edge to edge, regardless of
+   tree depth; only the padding-left (content inset) grows with depth. */
+.hit-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 100ms ease;
+}
+.hit-row:hover,
+.hit-row:focus-visible {
+  background-color: var(--panel-alt);
+}
+.hit-row:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: -2px;
+}
+/* Class row nested inside an expanded tree category (depth 2): the
+   .tree-class-rows container carries the indent + rail (see below); the
+   row itself only keeps its base padding. */
+.hit-row.is-tree-class {
+  padding-left: 8px;
+}
+/* Bare node icon — the real icon image with no wrapper box (no border,
+   background, or radius): just a fixed-size flex slot for alignment. */
+.hit-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+.hit-name {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--text);
+}
+.hit-module {
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  flex-shrink: 0;
+  max-width: 40%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Right-click context menu for a hit row: Copy import / Insert import.
+   Portaled to document.body (see NodeSearch.tsx) so position:fixed is
+   always viewport-relative; z-index 1000 keeps it above the editor. */
+.ctx-menu {
+  position: fixed;
+  z-index: 1000;
+  min-width: 160px;
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  background: var(--panel-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: var(--shadow-2);
+  animation: fade-slide 100ms ease-out both;
+}
+.ctx-menu button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 6px 10px;
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text);
+  background: transparent;
+  border: none;
+  border-radius: var(--radius-sm);
+}
+.ctx-menu button:hover,
+.ctx-menu button:focus-visible {
+  background: var(--accent-soft);
+  color: var(--accent-hover);
+}
+
+/* ---------- Node tree (browse view, shown when search is empty) ----------
+   Mockup style: no section divider lines, rounded row highlights, count
+   PILLS on provider rows, mono category names, and one thin vertical rail
+   per expanded level for depth. */
+.tree-node {
+  display: block;
+  padding: 0;
+}
+.tree-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 8px;
+  background-color: transparent;
+  border: none;
+  border-radius: 8px;
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: 13px;
+  text-align: left;
+  transition: background-color 100ms ease;
+}
+.tree-row:hover {
+  background-color: var(--panel-alt);
+}
+/* Provider row: rounded highlight while open (mockup), sticky while its
+   subtree scrolls so you always know which provider you're browsing.
+   Opaque bg when stuck so rows don't ghost through underneath. */
+.tree-provider-row {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: var(--panel-bg);
+}
+.tree-provider-row:hover,
+.tree-provider-row[aria-expanded="true"] {
+  background-color: var(--surface-1);
+}
+/* Centered SVG caret (see Chevron in NodeSearch.tsx): fixed square box +
+   center transform-origin so the open-rotation spins in place at BOTH tree
+   levels. */
+.tree-chevron {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  color: var(--text-muted);
+  transition: transform 150ms ease;
+  transform-origin: center;
+}
+.tree-provider-row[aria-expanded="true"] .tree-chevron,
+.tree-category-row[aria-expanded="true"] .tree-chevron {
+  transform: rotate(90deg);
+}
+.tree-provider-name {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--text);
+}
+.tree-category-name {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 12.5px;
+  color: var(--text);
+}
+/* Counts: provider level = rounded pill, category level = plain muted. */
+.tree-badge {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+.tree-provider-row .tree-badge {
+  background: var(--surface-1);
+  border-radius: 999px;
+  padding: 2px 8px;
+}
+.tree-provider-row:hover .tree-badge,
+.tree-provider-row[aria-expanded="true"] .tree-badge {
+  background: var(--surface-2);
+}
+/* Expanded levels: no bg tint — a single thin vertical rail per level
+   (mockup) carries the hierarchy, aligned under the parent's chevron. */
+.tree-children {
+  list-style: none;
+  margin: 2px 0 6px 17px;
+  padding-left: 4px;
+  border-left: 1px solid var(--border);
+}
+.tree-class-rows {
+  list-style: none;
+  margin: 2px 0 6px 17px;
+  padding-left: 4px;
+  border-left: 1px solid var(--border);
+}
+
+/* ---------- Editor column ---------- */
+.editor-column {
+  /* flex-basis is set inline as a ${splitRatio}% of .split-container; no
+     grow/shrink so the drag ratio is respected exactly, with the preview
+     pane (flex: 1) filling whatever remains. */
+  flex: 0 0 auto;
+  min-width: 160px;
+  display: flex;
+  flex-direction: column;
+  background: var(--panel-bg);
+  overflow: hidden;
+  animation: fade-slide 420ms ease-out both;
+  animation-delay: 60ms;
+}
+.editor-pane-wrap {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+/* Fixed height shared with .preview-header so the two panel headers sit on
+   the same baseline and their bottom hairlines form one continuous line. */
+.editor-topbar {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 46px;
+  box-sizing: border-box;
+  padding: 0 16px;
+  border-bottom: 1px solid var(--border);
+  background: var(--panel-bg);
+}
+.editor-filename {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--text);
+}
+.editor-linecount {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-muted);
+}
+.editor-pane {
+  flex: 1;
+  overflow: auto;
+  min-height: 0;
+}
+.editor-pane .cm-editor {
+  height: 100%;
+}
+/* Line-number gutter: slightly smaller digits than the code, with a bit of
+   breathing room on both sides of the number column. */
+.editor-pane .cm-lineNumbers .cm-gutterElement {
+  font-size: 11.5px;
+  padding: 0 10px 0 12px;
+}
+.cm-signature-hint {
+  background: var(--panel-bg);
+  color: var(--accent-hover);
+  padding: 5px 10px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  max-width: 480px;
+  box-shadow: var(--shadow-2);
+}
+
+/* ---------- Split handle ---------- */
+/* A flush 1px divider that takes exactly 1px of layout — no white gutter
+   on either side. The invisible ::before overlay extends the drag hit-area
+   4px into each neighboring panel (pseudo-element events hit the handle). */
+.split-handle {
+  flex: 0 0 1px;
+  width: 1px;
+  cursor: col-resize;
+  background: var(--border);
+  position: relative;
+  touch-action: none;
+  transition: background-color 120ms ease;
+  z-index: 4;
+}
+.split-handle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -4px;
+  right: -4px;
+  background: transparent;
+}
+.split-handle:hover,
+.split-handle.is-active {
+  background: var(--accent);
+}
+
+/* ---------- Error panel (traceback) ---------- */
+.error-panel {
+  max-height: 30%;
+  overflow: auto;
+  background: var(--error-bg);
+  color: var(--error-fg);
+  padding: 12px 14px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  border-top: 1px solid var(--error-border);
+  /* The export bar is now always the last element in .editor-column, so it
+     owns the rounded bottom corners instead of this panel. */
+}
+.error-panel::before {
+  content: "TRACEBACK";
+  display: block;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: var(--error-fg);
+  opacity: 0.85;
+  margin-bottom: 5px;
+}
+
+/* ---------- Preview pane ---------- */
+.preview-pane {
+  flex: 1 1 0;
+  min-width: 160px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: var(--panel-bg);
+  overflow: hidden;
+  animation: fade-slide 420ms ease-out both;
+  animation-delay: 120ms;
+}
+
+/* Fixed header bar: a real flex sibling above `.preview-canvas` (not part of
+   the transformed content), so it never pans/zooms with the diagram. Opaque
+   themed surface + hairline bottom border + z-index keep it visually
+   anchored above the canvas at all times. */
+.preview-header {
+  position: relative;
+  z-index: 3;
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  height: 46px;
+  box-sizing: border-box;
+  padding: 0 16px;
+  background: var(--panel-bg);
+  border-bottom: 1px solid var(--border);
+}
+
+/* True infinite canvas: a fixed, clipped viewport. All pan/zoom lives in the
+   `.preview-content` transform below — this element never scrolls. The
+   dot-grid background-position is driven by tx/ty (inline style) so the
+   grid visually pans in lockstep with the content. */
+.preview-canvas {
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+  touch-action: none;
+  color: var(--text);
+  background-color: var(--canvas-bg);
+  background-image: radial-gradient(var(--canvas-dot) 1px, transparent 1px);
+  background-size: 16px 16px;
+  transition: background-color 160ms ease;
+  cursor: grab;
+}
+.preview-canvas.is-panning {
+  cursor: grabbing;
+  user-select: none;
+}
+
+/* Absolutely-positioned content layer — translate(tx,ty) scale(s) with
+   transform-origin 0 0 is applied inline (see PreviewPane.tsx) so tx/ty can
+   go negative with no bounds, unlike the old scrollLeft/scrollTop pan. */
+.preview-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: 0 0;
+}
+
+.diagram-block {
+  margin-bottom: 28px;
+}
+/* Per-sheet name label, shown above each sheet only when there are multiple
+   diagrams (the fixed header only ever shows the first diagram's name), so
+   panning users can tell sheets apart. */
+.sheet-label {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.diagram-header-left {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+  min-width: 0;
+}
+.diagram-name {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* Click-to-edit affordance: the pencil icon stays hidden until hover/focus so
+   the header doesn't look cluttered while just viewing the diagram. */
+.diagram-name--editable {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 4px;
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+}
+.diagram-name--editable:hover,
+.diagram-name--editable:focus-visible {
+  color: var(--accent-hover);
+}
+.diagram-name-edit-icon {
+  font-size: 11px;
+  color: var(--text-muted);
+  opacity: 0;
+  transition: opacity 120ms ease;
+}
+.diagram-name--editable:hover .diagram-name-edit-icon,
+.diagram-name--editable:focus-visible .diagram-name-edit-icon {
+  opacity: 1;
+}
+/* Inline rename input — same font/size as `.diagram-name` so the swap
+   doesn't reflow the header, plus a subtle bordered field to read as
+   editable. */
+.diagram-name-input {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--text);
+  background: var(--panel-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 1px 6px;
+  min-width: 80px;
+  max-width: 260px;
+  outline: none;
+}
+.diagram-name-input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-soft);
+}
+.diagram-meta {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+.diagram-header-right {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.zoom-segment {
+  display: inline-flex;
+  align-items: stretch;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+.zoom-segment button {
+  border: none;
+  border-radius: 0;
+  background: var(--panel-bg);
+  color: var(--text);
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1;
+}
+.zoom-segment button + button {
+  border-left: 1px solid var(--border);
+}
+.zoom-segment button:hover {
+  color: var(--accent-hover);
+}
+.zoom-pct {
+  font-family: var(--font-mono);
+  min-width: 44px;
+  text-align: center;
+}
+
+.preview-overlay-chip {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: var(--chip-bg);
+  border: 1px solid var(--border);
+  color: var(--chip-fg);
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 500;
+  box-shadow: var(--shadow-1);
+  pointer-events: none;
+  backdrop-filter: blur(4px);
+}
+
+.render-ms-chip {
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  z-index: 2;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--chip-bg);
+  border: 1px solid var(--border);
+  color: var(--chip-fg);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  box-shadow: var(--shadow-1);
+  pointer-events: none;
+  backdrop-filter: blur(4px);
+}
+
+/* ---------- Export bar (permanently visible, docked under the editor) ----------
+   Two full-width stacked rows on the plain panel surface, separated from
+   the editor above by a single full-bleed hairline (the same divider
+   treatment every panel section uses):
+    - fields row — `SIZE [W] × [H] px [Auto switch]` (+ TARGET select when
+      several diagrams exist), stretched across the full row. One Auto
+      switch governs both dimensions.
+    - actions row — PNG / SVG / JPEG download buttons stretched equally,
+      plus a compact "Copy Image" clipboard button, each with a small icon. */
+.export-bar {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 18px 16px;
+  background: var(--panel-bg);
+  border-top: 1px solid var(--border);
+  border-radius: 0;
+}
+.export-bar-row {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+}
+.export-bar-row-fields {
+  justify-content: space-between;
+}
+.export-bar-row-actions {
+  align-items: center;
+}
+.export-field {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  min-width: 0;
+}
+.export-field-label {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+/* SIZE inputs: two bordered pixel fields joined by "×", indigo focus ring;
+   dimmed while the Auto switch is on. */
+.export-size-input {
+  flex: 1;
+  min-width: 64px;
+  width: auto;
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text);
+  background: var(--panel-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 6px 8px;
+}
+.export-size-input:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-soft);
+}
+.export-size-input:disabled {
+  color: var(--text-muted);
+  background: var(--surface-1);
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.export-size-x,
+.export-size-px {
+  color: var(--text-muted);
+  font-size: 12px;
+  flex-shrink: 0;
+}
+/* Auto switch: pill with a sliding knob (mockup). aria-checked drives the
+   on/off visuals. */
+.export-auto-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 5px 12px 5px 6px;
+  background: var(--panel-bg);
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text);
+}
+.export-auto-toggle .toggle-track {
+  position: relative;
+  width: 28px;
+  height: 16px;
+  border-radius: 999px;
+  background: var(--border);
+  transition: background-color 150ms ease;
+  flex-shrink: 0;
+}
+.export-auto-toggle .toggle-knob {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  transition: transform 150ms ease;
+}
+.export-auto-toggle[aria-checked="true"] .toggle-track {
+  background: var(--accent);
+}
+.export-auto-toggle[aria-checked="true"] .toggle-knob {
+  transform: translateX(12px);
+}
+/* (BACKGROUND option removed — exports always use a white background.) */
+.export-bar-select {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  color: var(--text);
+  background: var(--panel-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 5px 8px;
+  max-width: 160px;
+  flex-shrink: 0;
+}
+.export-download-btn,
+.export-copy-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  flex: 1 1 0;
+}
+.export-download-btn {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--text);
+  background: var(--panel-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 6px 13px;
+}
+.export-download-btn:hover:not(:disabled) {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.export-download-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.export-copy-btn {
+  flex: 0 0 auto;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--text-muted);
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 6px 13px;
+}
+.export-copy-btn:hover:not(:disabled) {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.export-copy-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.export-bar-message {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+.export-bar-message-error {
+  color: var(--error-fg);
+}
+.export-bar-message-success {
+  color: var(--status-ready-fg);
+}
+
+/* The diagram itself always renders on a white card — icons are drawn for a
+   light background, so this stays white in BOTH themes. */
+.diagram-card {
+  display: inline-block;
+  background: #ffffff;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+  padding: 20px;
+}
+
+/* ---------- CodeMirror search panel (Mod-F) — theme both modes ---------- */
+.editor-pane .cm-panels {
+  background: var(--panel-alt);
+  color: var(--text);
+  border-color: var(--border);
+}
+.editor-pane .cm-panels.cm-panels-top {
+  border-bottom: 1px solid var(--border);
+}
+.editor-pane .cm-panel.cm-search label {
+  color: var(--text-muted);
+}
+.editor-pane .cm-textfield {
+  background: var(--panel-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text);
+}
+.editor-pane .cm-button {
+  background: var(--panel-bg);
+  background-image: none;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text);
+}
+.editor-pane .cm-button:active {
+  background: var(--surface-1);
+}
+.editor-pane .cm-searchMatch {
+  background: rgba(245, 184, 92, 0.35);
+}
+.editor-pane .cm-searchMatch-selected {
+  background: rgba(99, 102, 241, 0.4);
+}
+
+/* ---------- CodeMirror autocomplete / tooltip chrome ---------- */
+.cm-tooltip {
+  background: var(--cm-tooltip-bg);
+  border: 1px solid var(--cm-tooltip-border);
+  border-radius: var(--radius-sm);
+  color: var(--cm-tooltip-fg);
+  font-family: var(--font-mono);
+}
+.cm-tooltip-autocomplete ul li[aria-selected] {
+  background: var(--cm-autocomplete-selected-bg) !important;
+  color: var(--cm-autocomplete-selected-fg) !important;
+}

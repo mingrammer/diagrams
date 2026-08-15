@@ -3,6 +3,8 @@ id: installation
 title: Installation
 ---
 
+> Prefer to try it without installing? The [**Playground**](/playground/) runs **diagrams** in your browser.
+
 **diagrams** requires **Python 3.7** or higher, check your Python version first.
 
 **diagrams** uses [Graphviz](https://www.graphviz.org/) to render the diagram, so you need to [install Graphviz](https://graphviz.gitlab.io/download/) to use it.
