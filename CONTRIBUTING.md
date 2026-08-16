@@ -31,41 +31,44 @@ ffmpeg -i my_big_image.jpg -vf scale=w=256:h=256:force_original_aspect_ratio=dec
 Then just run the `./autogen.sh` to generate the added or updated node classes. (cf. [DEVELOPMENT][DEVELOPMENT.md])
 
 > IMPORTANT NOTE: To run `autogen.sh`, you need the [round][round], [black][black] and
-> [inkscape][inkscape] command line tools that are used for cleaning the image
+> [rsvg-convert][librsvg] command line tools that are used for cleaning the image
 > resource filenames and formatting the generated python code.
 >
-> macOS users can download inkscape via Homebrew.
+> macOS users can install `rsvg-convert` with `brew install librsvg`.
 >
 > Or you can use the docker image.
 
 [DEVELOPMENT.md]: ./DEVELOPMENT.md
 [round]: https://github.com/mingrammer/round
 [black]: https://pypi.org/project/black
-[inkscape]: https://inkscape.org/ko/release
+[librsvg]: https://gitlab.gnome.org/GNOME/librsvg
 
 #### Update Specific Instructions for Azure Icons
 
-Download and unzip [Azure Icons](https://learn.microsoft.com/en-us/azure/architecture/icons/)
+Download and unzip [Azure Icons](https://learn.microsoft.com/en-us/azure/architecture/icons/).
 
-Execute inside Azure_Public_Service_Icons/Icons/
+The only manual step is renaming the directories that ship with spaces and `+`
+signs in their names, since those become the python module names. Execute inside
+`Azure_Public_Service_Icons/Icons/`:
+
 ```bash
-# Rename some diretories
-mv ai\ +\ machine\ learning/ aimachinelearning/
+mv ai\ +\ machine\ learning/ aimachinelearning
 mv app\ services/ appservices
 mv azure\ stack/ azurestack
 mv azure\ ecosystem/ azureecosystem
 mv management\ +\ governance/ managementgovernance
-mv  mixed\ reality mixedreality
+mv mixed\ reality/ mixedreality
 mv new\ icons/ newicons
-#  Convert Name to name
-rename -f 'y/A-Z/a-z/' ./*/*
-# Create png files and eliminate ?????-icon-service from namefile
-find . -type f -name "*.svg" -exec bash -c 'inkscape -h 256  --export-filename="${0%.svg}.png" "$0";mv "${0%.svg}.png" "$(echo "${0%.svg}.png" | sed -r 's/[0-9]{5}-icon-service-//')"' {} \;
-# Delete svg files
-find . -type f -name "*.svg" -exec bash -c 'rm "$0"' {} \;
 ```
 
-If you get any errors with autogen, it will probably be a '+' in  filename
+Then copy the directories into `resources/azure/` and run `./autogen.sh`. Don't
+convert the SVGs by hand: `autogen.sh` rasterises them with `rsvg-convert` at the
+size configured in [config.py](config.py), lowercases the file names and strips
+the `?????-icon-service-` prefix for you. Converting them yourself with a
+different tool produces byte-different PNGs from identical artwork, which turns
+an icon refresh into hundreds of files that only look changed.
+
+If any file name still trips up autogen, it's most likely a `+` left in it.
 
 ### Add new provider
 
@@ -94,10 +97,10 @@ or update the `ALIASES` map in [config.py](config.py).
 Then just run the `./autogen.sh` to generate the added or updated aliases. (cf. [DEVELOPMENT][DEVELOPMENT.md])
 
 > IMPORTANT NOTE: To run `autogen.sh`, you need the [round][round] and
-> [inkscape][inkscape] command line tools that are used for cleaning the image
+> [rsvg-convert][librsvg] command line tools that are used for cleaning the image
 > resource filenames.
 >
-> macOS users can download inkscape via Homebrew.
+> macOS users can install `rsvg-convert` with `brew install librsvg`.
 >
 > Or you can use the docker image.
 

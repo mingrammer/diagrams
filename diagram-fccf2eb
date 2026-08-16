@@ -1,0 +1,9 @@
+digraph "diagram-fccf2eb" {
+	graph [fontcolor="#2D3436" fontname="Sans-Serif" fontsize=15 label="diagram-fccf2eb" nodesep=0.70 pad=2.0 rankdir=LR ranksep=0.90 splines=spline]
+	node [fixedsize=true fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13 height=1.4 imagepos=tc imagescale=true labelloc=b shape=box style=rounded width=1.4]
+	edge [arrowsize=0.8 color="#495057"]
+	subgraph cluster_System {
+		graph [bgcolor=white fontname="Sans-Serif" fontsize=12 label=System labeljust=l margin=16 pencolor="#ADB5BD" rankdir=LR shape=box style=dashed]
+		"680ecb98ce7b4aa391d9b566b7bdba10" [label=<<font point-size="12"><b>container</b></font><br/><font point-size="9">[Container: type]<br/></font><br/><font point-size="10">description<br/><br/></font>> fillcolor=dodgerblue3 fixedsize=true fontcolor=white height=1.6 labelloc=c shape=rect style=filled width=2.6]
+	}
+}
