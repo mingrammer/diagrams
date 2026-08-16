@@ -101,7 +101,9 @@ export default function Toolbar({ status, onShare, shared }: Props) {
       <span className="app-mark" aria-hidden="true">
         <img src="diagrams-logo.png" alt="" width={22} height={22} />
       </span>
-      <strong className="toolbar-title">Diagrams Playground</strong>
+      {/* The page's only h1 — the app is a single tool, and crawlers that do
+          run JS should still find a real heading. */}
+      <h1 className="toolbar-title">Diagrams Playground</h1>
       <div className={`status-pill status-pill--${variant}`}>
         <span className="status-dot" aria-hidden="true" />
         <span data-testid="status">{status}</span>
