@@ -3,7 +3,7 @@ id: installation
 title: Installation
 ---
 
-> Prefer to try it without installing? The [**Playground**](/playground/) runs **diagrams** in your browser.
+> Prefer to try it without installing? The [**online playground**](/playground/) runs **diagrams** in your browser — see the [playground guide](/docs/getting-started/playground).
 
 **diagrams** requires **Python 3.7** or higher, check your Python version first.
 

@@ -11,6 +11,9 @@
       "getting-started/installation": {
         "title": "Installation"
       },
+      "getting-started/playground": {
+        "title": "Online Playground"
+      },
       "guides/cluster": {
         "title": "Clusters"
       },
