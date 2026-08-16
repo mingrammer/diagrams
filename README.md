@@ -41,7 +41,7 @@ Diagrams lets you draw the cloud system architecture **in Python code**. It was 
 
 ## Getting Started
 
-> Want to try it first? The [**Playground**](https://diagrams.mingrammer.com/playground/) runs **diagrams** right in your browser — no installation required.
+> Want to try it first? The [**online playground**](https://diagrams.mingrammer.com/playground/) runs **diagrams** right in your browser — no installation required.
 
 It requires **Python 3.9** or higher, check your Python version first.
 
@@ -66,7 +66,7 @@ You can start with [quick start](https://diagrams.mingrammer.com/docs/getting-st
 
 [**diagrams.mingrammer.com/playground**](https://diagrams.mingrammer.com/playground/)
 
-Write **diagrams** code and see the rendered diagram instantly, without installing anything. It runs the real **diagrams** package in your browser via [Pyodide](https://pyodide.org), and supports node search, autocompletion, PNG/SVG/JPEG export, and shareable links.
+A free online editor for **diagrams**: write Diagram as Code in Python and see the rendered architecture diagram instantly, without installing Python or Graphviz. It runs the real **diagrams** package in your browser via [Pyodide](https://pyodide.org), and supports node search, autocompletion, PNG/SVG/JPEG export, and shareable links. See the [playground guide](https://diagrams.mingrammer.com/docs/getting-started/playground) for details.
 
 ## Examples
 
