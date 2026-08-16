@@ -1,0 +1,307 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Examples · Diagrams</title><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="generator" content="Docusaurus"/><meta name="description" content="Here are some more examples."/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Examples · Diagrams"/><meta property="og:type" content="website"/><meta property="og:url" content="https://diagrams.mingrammer.com/"/><meta property="og:description" content="Here are some more examples."/><meta property="og:image" content="https://diagrams.mingrammer.com/img/diagrams.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://diagrams.mingrammer.com/img/diagrams.png"/><link rel="shortcut icon" href="/img/diagrams.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-Y1TWCZ0L77"></script><script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments); }
+              gtag('js', new Date());
+              gtag('config', 'G-Y1TWCZ0L77');
+            </script><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/diagrams.ico" alt="Diagrams"/><h2 class="headerTitleWithLogo">Diagrams</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docs/getting-started/installation" target="_self">Docs</a></li><li class="siteNavGroupActive"><a href="/docs/guides/diagram" target="_self">Guides</a></li><li class="siteNavGroupActive"><a href="/docs/nodes/aws" target="_self">Nodes</a></li><li class=""><a href="/playground/" target="_self">Playground</a></li><li class=""><a href="https://github.com/mingrammer/diagrams" target="_self">GitHub</a></li><li class=""><a href="https://www.buymeacoffee.com/mingrammer" target="_self">Sponsoring</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Getting Started</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Getting Started</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/getting-started/installation">Installation</a></li><li class="navListItem"><a class="navItem" href="/docs/getting-started/playground">Online Playground</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docs/getting-started/examples">Examples</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Guides</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/guides/diagram">Diagrams</a></li><li class="navListItem"><a class="navItem" href="/docs/guides/node">Nodes</a></li><li class="navListItem"><a class="navItem" href="/docs/guides/cluster">Clusters</a></li><li class="navListItem"><a class="navItem" href="/docs/guides/edge">Edges</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Nodes</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/nodes/onprem">OnPrem</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/aws">AWS</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/azure">Azure</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/gcp">GCP</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/ibm">IBM</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/k8s">K8S</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/alibabacloud">AlibabaCloud</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/oci">OCI</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/openstack">OpenStack</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/firebase">Firebase</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/digitalocean">DigitalOcean</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/elastic">Elastic</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/outscale">Outscale</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/generic">Generic</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/programming">Programming</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/saas">Saas</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/c4">C4</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/custom">Custom</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/gis">GIS</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Examples</h1></header><article><div><span><p>Here are some more examples.</p>
+<h2><a class="anchor" aria-hidden="true" id="grouped-workers-on-aws"></a><a href="#grouped-workers-on-aws" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Grouped Workers on AWS</h2>
+<pre><code class="hljs css language-python"><span class="hljs-keyword">from</span> diagrams <span class="hljs-keyword">import</span> Diagram
+<span class="hljs-keyword">from</span> diagrams.aws.compute <span class="hljs-keyword">import</span> EC2
+<span class="hljs-keyword">from</span> diagrams.aws.database <span class="hljs-keyword">import</span> RDS
+<span class="hljs-keyword">from</span> diagrams.aws.network <span class="hljs-keyword">import</span> ELB
+
+<span class="hljs-keyword">with</span> Diagram(<span class="hljs-string">"Grouped Workers"</span>, show=<span class="hljs-literal">False</span>, direction=<span class="hljs-string">"TB"</span>):
+    ELB(<span class="hljs-string">"lb"</span>) &gt;&gt; [EC2(<span class="hljs-string">"worker1"</span>),
+                  EC2(<span class="hljs-string">"worker2"</span>),
+                  EC2(<span class="hljs-string">"worker3"</span>),
+                  EC2(<span class="hljs-string">"worker4"</span>),
+                  EC2(<span class="hljs-string">"worker5"</span>)] &gt;&gt; RDS(<span class="hljs-string">"events"</span>)
+</code></pre>
+<p><img src="/img/grouped_workers_diagram.png" alt="grouped workers diagram"></p>
+<h2><a class="anchor" aria-hidden="true" id="clustered-web-services"></a><a href="#clustered-web-services" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Clustered Web Services</h2>
+<pre><code class="hljs css language-python"><span class="hljs-keyword">from</span> diagrams <span class="hljs-keyword">import</span> Cluster, Diagram
+<span class="hljs-keyword">from</span> diagrams.aws.compute <span class="hljs-keyword">import</span> ECS
+<span class="hljs-keyword">from</span> diagrams.aws.database <span class="hljs-keyword">import</span> ElastiCache, RDS
+<span class="hljs-keyword">from</span> diagrams.aws.network <span class="hljs-keyword">import</span> ELB
+<span class="hljs-keyword">from</span> diagrams.aws.network <span class="hljs-keyword">import</span> Route53
+
+<span class="hljs-keyword">with</span> Diagram(<span class="hljs-string">"Clustered Web Services"</span>, show=<span class="hljs-literal">False</span>):
+    dns = Route53(<span class="hljs-string">"dns"</span>)
+    lb = ELB(<span class="hljs-string">"lb"</span>)
+
+    <span class="hljs-keyword">with</span> Cluster(<span class="hljs-string">"Services"</span>):
+        svc_group = [ECS(<span class="hljs-string">"web1"</span>),
+                     ECS(<span class="hljs-string">"web2"</span>),
+                     ECS(<span class="hljs-string">"web3"</span>)]
+
+    <span class="hljs-keyword">with</span> Cluster(<span class="hljs-string">"DB Cluster"</span>):
+        db_primary = RDS(<span class="hljs-string">"userdb"</span>)
+        db_primary - [RDS(<span class="hljs-string">"userdb ro"</span>)]
+
+    memcached = ElastiCache(<span class="hljs-string">"memcached"</span>)
+
+    dns &gt;&gt; lb &gt;&gt; svc_group
+    svc_group &gt;&gt; db_primary
+    svc_group &gt;&gt; memcached
+</code></pre>
+<p><img src="/img/clustered_web_services_diagram.png" alt="clustered web services diagram"></p>
+<h2><a class="anchor" aria-hidden="true" id="event-processing-on-aws"></a><a href="#event-processing-on-aws" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Event Processing on AWS</h2>
+<pre><code class="hljs css language-python"><span class="hljs-keyword">from</span> diagrams <span class="hljs-keyword">import</span> Cluster, Diagram
+<span class="hljs-keyword">from</span> diagrams.aws.compute <span class="hljs-keyword">import</span> ECS, EKS, Lambda
+<span class="hljs-keyword">from</span> diagrams.aws.database <span class="hljs-keyword">import</span> Redshift
+<span class="hljs-keyword">from</span> diagrams.aws.integration <span class="hljs-keyword">import</span> SQS
+<span class="hljs-keyword">from</span> diagrams.aws.storage <span class="hljs-keyword">import</span> S3
+
+<span class="hljs-keyword">with</span> Diagram(<span class="hljs-string">"Event Processing"</span>, show=<span class="hljs-literal">False</span>):
+    source = EKS(<span class="hljs-string">"k8s source"</span>)
+
+    <span class="hljs-keyword">with</span> Cluster(<span class="hljs-string">"Event Flows"</span>):
+        <span class="hljs-keyword">with</span> Cluster(<span class="hljs-string">"Event Workers"</span>):
+            workers = [ECS(<span class="hljs-string">"worker1"</span>),
+                       ECS(<span class="hljs-string">"worker2"</span>),
+                       ECS(<span class="hljs-string">"worker3"</span>)]
+
+        queue = SQS(<span class="hljs-string">"event queue"</span>)
+
+        <span class="hljs-keyword">with</span> Cluster(<span class="hljs-string">"Processing"</span>):
+            handlers = [Lambda(<span class="hljs-string">"proc1"</span>),
+                        Lambda(<span class="hljs-string">"proc2"</span>),
+                        Lambda(<span class="hljs-string">"proc3"</span>)]
+
+    store = S3(<span class="hljs-string">"events store"</span>)
+    dw = Redshift(<span class="hljs-string">"analytics"</span>)
+
+    source &gt;&gt; workers &gt;&gt; queue &gt;&gt; handlers
+    handlers &gt;&gt; store
+    handlers &gt;&gt; dw
+</code></pre>
+<p><img src="/img/event_processing_diagram.png" alt="event processing diagram"></p>
+<h2><a class="anchor" aria-hidden="true" id="message-collecting-system-on-gcp"></a><a href="#message-collecting-system-on-gcp" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Message Collecting System on GCP</h2>
+<pre><code class="hljs css language-python"><span class="hljs-keyword">from</span> diagrams <span class="hljs-keyword">import</span> Cluster, Diagram
+<span class="hljs-keyword">from</span> diagrams.gcp.analytics <span class="hljs-keyword">import</span> BigQuery, Dataflow, PubSub
+<span class="hljs-keyword">from</span> diagrams.gcp.compute <span class="hljs-keyword">import</span> AppEngine, Functions
+<span class="hljs-keyword">from</span> diagrams.gcp.database <span class="hljs-keyword">import</span> BigTable
+<span class="hljs-keyword">from</span> diagrams.gcp.iot <span class="hljs-keyword">import</span> IotCore
+<span class="hljs-keyword">from</span> diagrams.gcp.storage <span class="hljs-keyword">import</span> GCS
+
+<span class="hljs-keyword">with</span> Diagram(<span class="hljs-string">"Message Collecting"</span>, show=<span class="hljs-literal">False</span>):
+    pubsub = PubSub(<span class="hljs-string">"pubsub"</span>)
+
+    <span class="hljs-keyword">with</span> Cluster(<span class="hljs-string">"Source of Data"</span>):
+        [IotCore(<span class="hljs-string">"core1"</span>),
+         IotCore(<span class="hljs-string">"core2"</span>),
+         IotCore(<span class="hljs-string">"core3"</span>)] &gt;&gt; pubsub
+
+    <span class="hljs-keyword">with</span> Cluster(<span class="hljs-string">"Targets"</span>):
+        <span class="hljs-keyword">with</span> Cluster(<span class="hljs-string">"Data Flow"</span>):
+            flow = Dataflow(<span class="hljs-string">"data flow"</span>)
+
+        <span class="hljs-keyword">with</span> Cluster(<span class="hljs-string">"Data Lake"</span>):
+            flow &gt;&gt; [BigQuery(<span class="hljs-string">"bq"</span>),
+                     GCS(<span class="hljs-string">"storage"</span>)]
+
+        <span class="hljs-keyword">with</span> Cluster(<span class="hljs-string">"Event Driven"</span>):
+            <span class="hljs-keyword">with</span> Cluster(<span class="hljs-string">"Processing"</span>):
+                flow &gt;&gt; AppEngine(<span class="hljs-string">"engine"</span>) &gt;&gt; BigTable(<span class="hljs-string">"bigtable"</span>)
+
+            <span class="hljs-keyword">with</span> Cluster(<span class="hljs-string">"Serverless"</span>):
+                flow &gt;&gt; Functions(<span class="hljs-string">"func"</span>) &gt;&gt; AppEngine(<span class="hljs-string">"appengine"</span>)
+
+    pubsub &gt;&gt; flow
+</code></pre>
+<p><img src="/img/message_collecting_diagram.png" alt="message collecting diagram"></p>
+<h2><a class="anchor" aria-hidden="true" id="exposed-pod-with-3-replicas-on-kubernetes"></a><a href="#exposed-pod-with-3-replicas-on-kubernetes" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Exposed Pod with 3 Replicas on Kubernetes</h2>
+<pre><code class="hljs css language-python"><span class="hljs-keyword">from</span> diagrams <span class="hljs-keyword">import</span> Diagram
+<span class="hljs-keyword">from</span> diagrams.k8s.clusterconfig <span class="hljs-keyword">import</span> HPA
+<span class="hljs-keyword">from</span> diagrams.k8s.compute <span class="hljs-keyword">import</span> Deployment, Pod, ReplicaSet
+<span class="hljs-keyword">from</span> diagrams.k8s.network <span class="hljs-keyword">import</span> Ingress, Service
+
+<span class="hljs-keyword">with</span> Diagram(<span class="hljs-string">"Exposed Pod with 3 Replicas"</span>, show=<span class="hljs-literal">False</span>):
+    net = Ingress(<span class="hljs-string">"domain.com"</span>) &gt;&gt; Service(<span class="hljs-string">"svc"</span>)
+    net &gt;&gt; [Pod(<span class="hljs-string">"pod1"</span>),
+            Pod(<span class="hljs-string">"pod2"</span>),
+            Pod(<span class="hljs-string">"pod3"</span>)] &lt;&lt; ReplicaSet(<span class="hljs-string">"rs"</span>) &lt;&lt; Deployment(<span class="hljs-string">"dp"</span>) &lt;&lt; HPA(<span class="hljs-string">"hpa"</span>)
+
+</code></pre>
+<p><img src="/img/exposed_pod_with_3_replicas_diagram.png" alt="exposed pod with 3 replicas diagram"></p>
+<h2><a class="anchor" aria-hidden="true" id="stateful-architecture-on-kubernetes"></a><a href="#stateful-architecture-on-kubernetes" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Stateful Architecture on Kubernetes</h2>
+<pre><code class="hljs css language-python"><span class="hljs-keyword">from</span> diagrams <span class="hljs-keyword">import</span> Cluster, Diagram
+<span class="hljs-keyword">from</span> diagrams.k8s.compute <span class="hljs-keyword">import</span> Pod, StatefulSet
+<span class="hljs-keyword">from</span> diagrams.k8s.network <span class="hljs-keyword">import</span> Service
+<span class="hljs-keyword">from</span> diagrams.k8s.storage <span class="hljs-keyword">import</span> PV, PVC, StorageClass
+
+<span class="hljs-keyword">with</span> Diagram(<span class="hljs-string">"Stateful Architecture"</span>, show=<span class="hljs-literal">False</span>):
+    <span class="hljs-keyword">with</span> Cluster(<span class="hljs-string">"Apps"</span>):
+        svc = Service(<span class="hljs-string">"svc"</span>)
+        sts = StatefulSet(<span class="hljs-string">"sts"</span>)
+
+        apps = []
+        <span class="hljs-keyword">for</span> _ <span class="hljs-keyword">in</span> range(<span class="hljs-number">3</span>):
+            pod = Pod(<span class="hljs-string">"pod"</span>)
+            pvc = PVC(<span class="hljs-string">"pvc"</span>)
+            pod - sts - pvc
+            apps.append(svc &gt;&gt; pod &gt;&gt; pvc)
+
+    apps &lt;&lt; PV(<span class="hljs-string">"pv"</span>) &lt;&lt; StorageClass(<span class="hljs-string">"sc"</span>)
+</code></pre>
+<p><img src="/img/stateful_architecture_diagram.png" alt="stateful architecture diagram"></p>
+<h2><a class="anchor" aria-hidden="true" id="advanced-web-service-with-on-premises"></a><a href="#advanced-web-service-with-on-premises" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Advanced Web Service with On-Premises</h2>
+<pre><code class="hljs css language-python"><span class="hljs-keyword">from</span> diagrams <span class="hljs-keyword">import</span> Cluster, Diagram
+<span class="hljs-keyword">from</span> diagrams.onprem.analytics <span class="hljs-keyword">import</span> Spark
+<span class="hljs-keyword">from</span> diagrams.onprem.compute <span class="hljs-keyword">import</span> Server
+<span class="hljs-keyword">from</span> diagrams.onprem.database <span class="hljs-keyword">import</span> PostgreSQL
+<span class="hljs-keyword">from</span> diagrams.onprem.inmemory <span class="hljs-keyword">import</span> Redis
+<span class="hljs-keyword">from</span> diagrams.onprem.aggregator <span class="hljs-keyword">import</span> Fluentd
+<span class="hljs-keyword">from</span> diagrams.onprem.monitoring <span class="hljs-keyword">import</span> Grafana, Prometheus
+<span class="hljs-keyword">from</span> diagrams.onprem.network <span class="hljs-keyword">import</span> Nginx
+<span class="hljs-keyword">from</span> diagrams.onprem.queue <span class="hljs-keyword">import</span> Kafka
+
+<span class="hljs-keyword">with</span> Diagram(<span class="hljs-string">"Advanced Web Service with On-Premises"</span>, show=<span class="hljs-literal">False</span>):
+    ingress = Nginx(<span class="hljs-string">"ingress"</span>)
+
+    metrics = Prometheus(<span class="hljs-string">"metric"</span>)
+    metrics &lt;&lt; Grafana(<span class="hljs-string">"monitoring"</span>)
+
+    <span class="hljs-keyword">with</span> Cluster(<span class="hljs-string">"Service Cluster"</span>):
+        grpcsvc = [
+            Server(<span class="hljs-string">"grpc1"</span>),
+            Server(<span class="hljs-string">"grpc2"</span>),
+            Server(<span class="hljs-string">"grpc3"</span>)]
+
+    <span class="hljs-keyword">with</span> Cluster(<span class="hljs-string">"Sessions HA"</span>):
+        primary = Redis(<span class="hljs-string">"session"</span>)
+        primary - Redis(<span class="hljs-string">"replica"</span>) &lt;&lt; metrics
+        grpcsvc &gt;&gt; primary
+
+    <span class="hljs-keyword">with</span> Cluster(<span class="hljs-string">"Database HA"</span>):
+        primary = PostgreSQL(<span class="hljs-string">"users"</span>)
+        primary - PostgreSQL(<span class="hljs-string">"replica"</span>) &lt;&lt; metrics
+        grpcsvc &gt;&gt; primary
+
+    aggregator = Fluentd(<span class="hljs-string">"logging"</span>)
+    aggregator &gt;&gt; Kafka(<span class="hljs-string">"stream"</span>) &gt;&gt; Spark(<span class="hljs-string">"analytics"</span>)
+
+    ingress &gt;&gt; grpcsvc &gt;&gt; aggregator
+</code></pre>
+<p><img src="/img/advanced_web_service_with_on-premises.png" alt="advanced web service with on-premises diagram"></p>
+<h2><a class="anchor" aria-hidden="true" id="advanced-web-service-with-on-premises-with-colors-and-labels"></a><a href="#advanced-web-service-with-on-premises-with-colors-and-labels" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Advanced Web Service with On-Premises (with colors and labels)</h2>
+<pre><code class="hljs css language-python"><span class="hljs-keyword">from</span> diagrams <span class="hljs-keyword">import</span> Cluster, Diagram, Edge
+<span class="hljs-keyword">from</span> diagrams.onprem.analytics <span class="hljs-keyword">import</span> Spark
+<span class="hljs-keyword">from</span> diagrams.onprem.compute <span class="hljs-keyword">import</span> Server
+<span class="hljs-keyword">from</span> diagrams.onprem.database <span class="hljs-keyword">import</span> PostgreSQL
+<span class="hljs-keyword">from</span> diagrams.onprem.inmemory <span class="hljs-keyword">import</span> Redis
+<span class="hljs-keyword">from</span> diagrams.onprem.aggregator <span class="hljs-keyword">import</span> Fluentd
+<span class="hljs-keyword">from</span> diagrams.onprem.monitoring <span class="hljs-keyword">import</span> Grafana, Prometheus
+<span class="hljs-keyword">from</span> diagrams.onprem.network <span class="hljs-keyword">import</span> Nginx
+<span class="hljs-keyword">from</span> diagrams.onprem.queue <span class="hljs-keyword">import</span> Kafka
+
+<span class="hljs-keyword">with</span> Diagram(name=<span class="hljs-string">"Advanced Web Service with On-Premises (colored)"</span>, show=<span class="hljs-literal">False</span>):
+    ingress = Nginx(<span class="hljs-string">"ingress"</span>)
+
+    metrics = Prometheus(<span class="hljs-string">"metric"</span>)
+    metrics &lt;&lt; Edge(color=<span class="hljs-string">"firebrick"</span>, style=<span class="hljs-string">"dashed"</span>) &lt;&lt; Grafana(<span class="hljs-string">"monitoring"</span>)
+
+    <span class="hljs-keyword">with</span> Cluster(<span class="hljs-string">"Service Cluster"</span>):
+        grpcsvc = [
+            Server(<span class="hljs-string">"grpc1"</span>),
+            Server(<span class="hljs-string">"grpc2"</span>),
+            Server(<span class="hljs-string">"grpc3"</span>)]
+
+    <span class="hljs-keyword">with</span> Cluster(<span class="hljs-string">"Sessions HA"</span>):
+        primary = Redis(<span class="hljs-string">"session"</span>)
+        primary - Edge(color=<span class="hljs-string">"brown"</span>, style=<span class="hljs-string">"dashed"</span>) - Redis(<span class="hljs-string">"replica"</span>) &lt;&lt; Edge(label=<span class="hljs-string">"collect"</span>) &lt;&lt; metrics
+        grpcsvc &gt;&gt; Edge(color=<span class="hljs-string">"brown"</span>) &gt;&gt; primary
+
+    <span class="hljs-keyword">with</span> Cluster(<span class="hljs-string">"Database HA"</span>):
+        primary = PostgreSQL(<span class="hljs-string">"users"</span>)
+        primary - Edge(color=<span class="hljs-string">"brown"</span>, style=<span class="hljs-string">"dotted"</span>) - PostgreSQL(<span class="hljs-string">"replica"</span>) &lt;&lt; Edge(label=<span class="hljs-string">"collect"</span>) &lt;&lt; metrics
+        grpcsvc &gt;&gt; Edge(color=<span class="hljs-string">"black"</span>) &gt;&gt; primary
+
+    aggregator = Fluentd(<span class="hljs-string">"logging"</span>)
+    aggregator &gt;&gt; Edge(label=<span class="hljs-string">"parse"</span>) &gt;&gt; Kafka(<span class="hljs-string">"stream"</span>) &gt;&gt; Edge(color=<span class="hljs-string">"black"</span>, style=<span class="hljs-string">"bold"</span>) &gt;&gt; Spark(<span class="hljs-string">"analytics"</span>)
+
+    ingress &gt;&gt; Edge(color=<span class="hljs-string">"darkgreen"</span>) &lt;&lt; grpcsvc &gt;&gt; Edge(color=<span class="hljs-string">"darkorange"</span>) &gt;&gt; aggregator
+</code></pre>
+<p><img src="/img/advanced_web_service_with_on-premises_colored.png" alt="advanced web service with on-premises diagram colored"></p>
+<h2><a class="anchor" aria-hidden="true" id="rabbitmq-consumers-with-custom-nodes"></a><a href="#rabbitmq-consumers-with-custom-nodes" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>RabbitMQ Consumers with Custom Nodes</h2>
+<pre><code class="hljs css language-python"><span class="hljs-keyword">from</span> urllib.request <span class="hljs-keyword">import</span> urlretrieve
+
+<span class="hljs-keyword">from</span> diagrams <span class="hljs-keyword">import</span> Cluster, Diagram
+<span class="hljs-keyword">from</span> diagrams.aws.database <span class="hljs-keyword">import</span> Aurora
+<span class="hljs-keyword">from</span> diagrams.custom <span class="hljs-keyword">import</span> Custom
+<span class="hljs-keyword">from</span> diagrams.k8s.compute <span class="hljs-keyword">import</span> Pod
+
+<span class="hljs-comment"># Download an image to be used into a Custom Node class</span>
+rabbitmq_url = <span class="hljs-string">"https://jpadilla.github.io/rabbitmqapp/assets/img/icon.png"</span>
+rabbitmq_icon = <span class="hljs-string">"rabbitmq.png"</span>
+urlretrieve(rabbitmq_url, rabbitmq_icon)
+
+<span class="hljs-keyword">with</span> Diagram(<span class="hljs-string">"Broker Consumers"</span>, show=<span class="hljs-literal">False</span>):
+    <span class="hljs-keyword">with</span> Cluster(<span class="hljs-string">"Consumers"</span>):
+        consumers = [
+            Pod(<span class="hljs-string">"worker"</span>),
+            Pod(<span class="hljs-string">"worker"</span>),
+            Pod(<span class="hljs-string">"worker"</span>)]
+
+    queue = Custom(<span class="hljs-string">"Message queue"</span>, rabbitmq_icon)
+
+    queue &gt;&gt; consumers &gt;&gt; Aurora(<span class="hljs-string">"Database"</span>)
+</code></pre>
+<p><img src="/img/rabbitmq_consumers_diagram.png" alt="rabbitmq consumers diagram"></p>
+</span></div></article></div><div class="docLastUpdate"><em>Last updated on 8/16/2026</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/getting-started/playground"><span class="arrow-prev">← </span><span>Online Playground</span></a><a class="docs-next button" href="/docs/guides/diagram"><span>Diagrams</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#grouped-workers-on-aws">Grouped Workers on AWS</a></li><li><a href="#clustered-web-services">Clustered Web Services</a></li><li><a href="#event-processing-on-aws">Event Processing on AWS</a></li><li><a href="#message-collecting-system-on-gcp">Message Collecting System on GCP</a></li><li><a href="#exposed-pod-with-3-replicas-on-kubernetes">Exposed Pod with 3 Replicas on Kubernetes</a></li><li><a href="#stateful-architecture-on-kubernetes">Stateful Architecture on Kubernetes</a></li><li><a href="#advanced-web-service-with-on-premises">Advanced Web Service with On-Premises</a></li><li><a href="#advanced-web-service-with-on-premises-with-colors-and-labels">Advanced Web Service with On-Premises (with colors and labels)</a></li><li><a href="#rabbitmq-consumers-with-custom-nodes">RabbitMQ Consumers with Custom Nodes</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/diagrams.ico" alt="Diagrams" width="66" height="58"/></a><div><h5>Docs</h5><a href="/docs/getting-started/installation">Getting Started</a><a href="/docs/guides/diagram">Guides</a><a href="/docs/nodes/aws">Nodes</a></div><div><h5>More</h5><iframe src="https://ghbtns.com/github-btn.html?user=mingrammer&amp;repo=diagrams&amp;type=star&amp;count=true&amp;size=large" frameBorder="0" scrolling="0" width="170" height="30" title="Star mingrammer/diagrams on GitHub"></iframe></div></section><section class="copyright">Copyright © 2026 mingrammer</section></footer></div></body></html>

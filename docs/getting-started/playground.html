@@ -1,0 +1,95 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Online Playground · Diagrams</title><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="generator" content="Docusaurus"/><meta name="description" content="The **Diagrams Playground** is a free online editor for the **diagrams** library. Write Diagram as Code in Python and see the rendered architecture diagram appear next to it — in your web browser, with nothing to install."/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Online Playground · Diagrams"/><meta property="og:type" content="website"/><meta property="og:url" content="https://diagrams.mingrammer.com/"/><meta property="og:description" content="The **Diagrams Playground** is a free online editor for the **diagrams** library. Write Diagram as Code in Python and see the rendered architecture diagram appear next to it — in your web browser, with nothing to install."/><meta property="og:image" content="https://diagrams.mingrammer.com/img/diagrams.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://diagrams.mingrammer.com/img/diagrams.png"/><link rel="shortcut icon" href="/img/diagrams.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-Y1TWCZ0L77"></script><script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments); }
+              gtag('js', new Date());
+              gtag('config', 'G-Y1TWCZ0L77');
+            </script><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/diagrams.ico" alt="Diagrams"/><h2 class="headerTitleWithLogo">Diagrams</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docs/getting-started/installation" target="_self">Docs</a></li><li class="siteNavGroupActive"><a href="/docs/guides/diagram" target="_self">Guides</a></li><li class="siteNavGroupActive"><a href="/docs/nodes/aws" target="_self">Nodes</a></li><li class=""><a href="/playground/" target="_self">Playground</a></li><li class=""><a href="https://github.com/mingrammer/diagrams" target="_self">GitHub</a></li><li class=""><a href="https://www.buymeacoffee.com/mingrammer" target="_self">Sponsoring</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Getting Started</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Getting Started</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/getting-started/installation">Installation</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docs/getting-started/playground">Online Playground</a></li><li class="navListItem"><a class="navItem" href="/docs/getting-started/examples">Examples</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Guides</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/guides/diagram">Diagrams</a></li><li class="navListItem"><a class="navItem" href="/docs/guides/node">Nodes</a></li><li class="navListItem"><a class="navItem" href="/docs/guides/cluster">Clusters</a></li><li class="navListItem"><a class="navItem" href="/docs/guides/edge">Edges</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Nodes</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/nodes/onprem">OnPrem</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/aws">AWS</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/azure">Azure</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/gcp">GCP</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/ibm">IBM</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/k8s">K8S</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/alibabacloud">AlibabaCloud</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/oci">OCI</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/openstack">OpenStack</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/firebase">Firebase</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/digitalocean">DigitalOcean</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/elastic">Elastic</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/outscale">Outscale</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/generic">Generic</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/programming">Programming</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/saas">Saas</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/c4">C4</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/custom">Custom</a></li><li class="navListItem"><a class="navItem" href="/docs/nodes/gis">GIS</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Online Playground</h1></header><article><div><span><p>The <strong>Diagrams Playground</strong> is a free online editor for the <strong>diagrams</strong> library. Write Diagram as Code in Python and see the rendered architecture diagram appear next to it — in your web browser, with nothing to install.</p>
+<blockquote>
+<p><strong><a href="/playground/">Open the Playground →</a></strong></p>
+</blockquote>
+<h2><a class="anchor" aria-hidden="true" id="why-use-it"></a><a href="#why-use-it" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Why use it</h2>
+<p>Installing <strong>diagrams</strong> locally means installing Python <em>and</em> <a href="https://www.graphviz.org/">Graphviz</a>. The playground skips both, which makes it handy when you want to:</p>
+<ul>
+<li>try <strong>diagrams</strong> before installing anything,</li>
+<li>sketch a cloud architecture diagram from a laptop that isn't set up for Python,</li>
+<li>share a working diagram with a teammate as a single link,</li>
+<li>look up which node classes exist for AWS, Azure, GCP, Kubernetes and the other providers.</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="what-it-can-do"></a><a href="#what-it-can-do" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>What it can do</h2>
+<ul>
+<li><strong>Live preview</strong> — the diagram re-renders as you type.</li>
+<li><strong>Node browser</strong> — search every available node, or browse the full provider → category tree, and click to insert the matching <code>import</code>.</li>
+<li><strong>Autocompletion</strong> — import paths and node names complete as you type, with signature hints for <code>Diagram</code>, <code>Cluster</code> and <code>Edge</code>.</li>
+<li><strong>Export</strong> — download the result as PNG, SVG or JPEG at a size you choose, or copy the image straight to your clipboard.</li>
+<li><strong>Share links</strong> — the whole diagram is encoded into the URL, so sending the link is enough. Nothing is stored on a server.</li>
+<li><strong>Examples</strong> — start from a ready-made diagram instead of a blank editor.</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="how-it-works"></a><a href="#how-it-works" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>How it works</h2>
+<p>The playground runs the real <strong>diagrams</strong> package — not a reimplementation — inside your browser using <a href="https://pyodide.org">Pyodide</a>, which is CPython compiled to WebAssembly. Graph layout is done by a WebAssembly build of Graphviz.</p>
+<p>Everything executes locally in the browser tab: your code is never uploaded, and there is no backend. The first visit downloads the Python runtime, so it takes a few seconds; after that it is cached.</p>
+<h2><a class="anchor" aria-hidden="true" id="when-to-install-instead"></a><a href="#when-to-install-instead" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>When to install instead</h2>
+<p>The playground is for quick work and sharing. Install the library (<a href="/docs/getting-started/installation">installation guide</a>) when you want to:</p>
+<ul>
+<li>keep diagrams in version control next to your code,</li>
+<li>generate diagrams in CI or a build script,</li>
+<li>use custom local icons, or</li>
+<li>work offline.</li>
+</ul>
+<p>The Python code is identical either way, so anything you write in the playground runs unchanged after <code>pip install diagrams</code>.</p>
+</span></div></article></div><div class="docLastUpdate"><em>Last updated on 8/16/2026</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/getting-started/installation"><span class="arrow-prev">← </span><span>Installation</span></a><a class="docs-next button" href="/docs/getting-started/examples"><span>Examples</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#why-use-it">Why use it</a></li><li><a href="#what-it-can-do">What it can do</a></li><li><a href="#how-it-works">How it works</a></li><li><a href="#when-to-install-instead">When to install instead</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/diagrams.ico" alt="Diagrams" width="66" height="58"/></a><div><h5>Docs</h5><a href="/docs/getting-started/installation">Getting Started</a><a href="/docs/guides/diagram">Guides</a><a href="/docs/nodes/aws">Nodes</a></div><div><h5>More</h5><iframe src="https://ghbtns.com/github-btn.html?user=mingrammer&amp;repo=diagrams&amp;type=star&amp;count=true&amp;size=large" frameBorder="0" scrolling="0" width="170" height="30" title="Star mingrammer/diagrams on GitHub"></iframe></div></section><section class="copyright">Copyright © 2026 mingrammer</section></footer></div></body></html>
