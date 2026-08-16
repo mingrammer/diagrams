@@ -1,10 +1,33 @@
 import contextvars
+import importlib.metadata
 import os
 import uuid
 from pathlib import Path
 from typing import Dict, List, Optional, Union
 
 from graphviz import Digraph
+
+
+def _distribution_version() -> str:
+    # Single source of truth is `version` in pyproject.toml; read it back from the
+    # installed distribution rather than repeating the literal here. When this
+    # import is a source checkout shadowing a separately installed release, the
+    # environment's metadata describes the install, not this code - report the
+    # dev placeholder rather than the wrong release number.
+    try:
+        dist = importlib.metadata.distribution("diagrams")
+    except importlib.metadata.PackageNotFoundError:
+        return "0.0.0.dev0"
+    installed_init = Path(str(dist.locate_file("diagrams/__init__.py")))
+    try:
+        if installed_init.exists() and installed_init.resolve() != Path(__file__).resolve():
+            return "0.0.0.dev0"
+    except OSError:  # pragma: no cover - unreadable install location
+        pass
+    return dist.version
+
+
+__version__ = _distribution_version()
 
 # Theme definitions for diagram styling
 # Each theme defines: cluster background colors (by depth), border color, edge color

@@ -31,8 +31,28 @@ isort = "^6.0"
 black = "^24.4"
 pre-commit = "^4.0"
 
-[tool.hatch.build]
+# The wheel ships the package and the icon tree it loads at runtime, and nothing
+# else. `resources` is a top-level directory because diagrams.Node._load_icon
+# resolves icons relative to the *parent* of the diagrams package.
+[tool.hatch.build.targets.wheel]
 only-include = ["diagrams", "resources"]
+
+# The sdist additionally carries the test suite and the release-version check,
+# so distribution packagers can verify a build without cloning the repository.
+# Not the rest of scripts/ or autogen.sh: those need templates/, website/ and
+# external binaries, and shipping them without their inputs advertises a script
+# that cannot run. Note tests/test_packaging.py skips itself unless `import
+# diagrams` resolves to an installed copy - run it from outside the unpacked
+# tree so it exercises the build under test, not the source that ships with it.
+[tool.hatch.build.targets.sdist]
+only-include = [
+    "diagrams",
+    "resources",
+    "tests",
+    "scripts/__init__.py",
+    "scripts/check_release_version.py",
+    "CHANGELOG.md",
+]
 
 [tool.black]
 line-length=120
