@@ -3,9 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Diagrams Playground</title>
+    <title>Diagrams Playground — Diagram as Code in your browser</title>
+    <meta
+      name="description"
+      content="Write Python and watch cloud architecture diagrams render instantly in your browser — nothing to install. Powered by the diagrams library running on Pyodide."
+    />
+    <link rel="canonical" href="https://diagrams.mingrammer.com/playground/" />
     <!-- Real diagrams project logo; relative href survives sub-path deploys. -->
     <link rel="icon" type="image/png" href="diagrams-logo.png" />
+
+    <!-- Social cards. These need absolute URLs, and the crawlers that read
+         them never execute JavaScript — which is also why #root ships with
+         static fallback content below. -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Diagrams" />
+    <meta property="og:url" content="https://diagrams.mingrammer.com/playground/" />
+    <meta property="og:title" content="Diagrams Playground — Diagram as Code in your browser" />
+    <meta
+      property="og:description"
+      content="Write Python and watch cloud architecture diagrams render instantly in your browser — nothing to install."
+    />
+    <meta property="og:image" content="https://diagrams.mingrammer.com/playground/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="The Diagrams Playground: Python code on the left, a rendered cloud architecture diagram on the right."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Diagrams Playground — Diagram as Code in your browser" />
+    <meta
+      name="twitter:description"
+      content="Write Python and watch cloud architecture diagrams render instantly in your browser — nothing to install."
+    />
+    <meta name="twitter:image" content="https://diagrams.mingrammer.com/playground/og-image.png" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,7 +57,42 @@
     </script>
   </head>
   <body>
-    <div id="root"></div>
+    <!-- React replaces this subtree on mount (createRoot clears the
+         container). Until then it gives crawlers and social-card bots real
+         content to read, and gives visitors something better than a blank
+         page while the bundle loads. Styles are inline so it renders even
+         before the CSS bundle arrives. -->
+    <div id="root">
+      <main
+        style="
+          max-width: 40rem;
+          margin: 0 auto;
+          padding: 4rem 1.5rem;
+          font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+          color: #111827;
+          line-height: 1.6;
+        "
+      >
+        <h1 style="font-size: 1.6rem; margin: 0 0 1rem">Diagrams Playground</h1>
+        <p style="margin: 0 0 1rem">
+          Write <strong>diagrams</strong> code in Python and see the rendered cloud architecture diagram
+          instantly — right in your browser, with nothing to install.
+        </p>
+        <p style="margin: 0 0 1rem; color: #6b7280">
+          Loading the playground…
+        </p>
+        <noscript>
+          <p style="margin: 0 0 1rem; color: #b91c1c">
+            JavaScript is required to run the playground.
+          </p>
+        </noscript>
+        <p style="margin: 0; color: #6b7280">
+          <a href="https://diagrams.mingrammer.com/">Documentation</a>
+          ·
+          <a href="https://github.com/mingrammer/diagrams">GitHub</a>
+        </p>
+      </main>
+    </div>
     <script type="module" src="./src/main.tsx"></script>
   </body>
 </html>

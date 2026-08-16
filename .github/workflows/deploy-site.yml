@@ -69,6 +69,23 @@ jobs:
           mkdir -p _site/playground
           cp -a playground/dist/. _site/playground/
           test -f _site/CNAME || echo "diagrams.mingrammer.com" > _site/CNAME
+          # Docusaurus only lists its own pages, so add the playground to the
+          # sitemap it generated.
+          python3 - <<'PY'
+          from pathlib import Path
+
+          sitemap = Path("_site/sitemap.xml")
+          entry = (
+              "<url><loc>https://diagrams.mingrammer.com/playground/</loc>"
+              "<changefreq>weekly</changefreq><priority>0.8</priority></url>"
+          )
+          xml = sitemap.read_text()
+          if "/playground/" not in xml:
+              sitemap.write_text(xml.replace("</urlset>", entry + "</urlset>"))
+              print("added playground to sitemap")
+          else:
+              print("playground already in sitemap")
+          PY
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v4
