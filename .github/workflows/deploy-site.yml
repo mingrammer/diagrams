@@ -85,6 +85,22 @@ jobs:
               print("added playground to sitemap")
           else:
               print("playground already in sitemap")
+
+          # Google Search Console ownership check. Docusaurus 1.x has no
+          # config hook for arbitrary <head> tags, and the verifier reads the
+          # served HTML without running JS, so the tag is injected into the
+          # built homepage here.
+          verification = (
+              '<meta name="google-site-verification" '
+              'content="p1XvVxyPOUJ6LYX5rAqSAM27tW2AFMaacg1BTr8mfR4" />'
+          )
+          home = Path("_site/index.html")
+          html = home.read_text()
+          if "google-site-verification" not in html:
+              home.write_text(html.replace("<head>", "<head>" + verification, 1))
+              print("added Search Console verification to homepage")
+          else:
+              print("verification tag already present")
           PY
 
       - name: Deploy to gh-pages
