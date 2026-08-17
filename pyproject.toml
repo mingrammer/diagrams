@@ -23,13 +23,15 @@ diagrams = "diagrams.cli:main"
 Homepage = "https://diagrams.mingrammer.com"
 Repository = "https://github.com/mingrammer/diagrams"
 
-[tool.hatch.envs.dev.dependencies]
-pytest = ">=8.3,<9"
-pylint = ">=3.3,<4"
-rope = ">=1.13,<2"
-isort = ">=6.0,<7"
-black = ">=24.4,<25"
-pre-commit = ">=4.0,<5"
+[tool.hatch.envs.dev]
+dependencies = [
+    "pytest>=8.3,<9",
+    "pylint>=3.3,<4",
+    "rope>=1.13,<2",
+    "isort>=6.0,<7",
+    "black>=24.4,<25",
+    "pre-commit>=4.0,<5",
+]
 
 [tool.hatch.build]
 only-include = ["diagrams", "resources"]
