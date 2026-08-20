@@ -48,6 +48,10 @@ class Ebooks(_Intune):
     _icon = "ebooks.png"
 
 
+class EntraIdentityRolesAndAdministrators(_Intune):
+    _icon = "entra-identity-roles-and-administrators.png"
+
+
 class ExchangeAccess(_Intune):
     _icon = "exchange-access.png"
 

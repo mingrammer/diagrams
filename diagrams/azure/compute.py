@@ -8,6 +8,10 @@ class _Compute(_Azure):
     _icon_dir = "resources/azure/compute"
 
 
+class AksAutomatic(_Compute):
+    _icon = "aks-automatic.png"
+
+
 class AppServices(_Compute):
     _icon = "app-services.png"
 
@@ -50,6 +54,10 @@ class CloudServices(_Compute):
 
 class CloudsimpleVirtualMachines(_Compute):
     _icon = "cloudsimple-virtual-machines.png"
+
+
+class ComputeFleet(_Compute):
+    _icon = "compute-fleet.png"
 
 
 class ContainerApps(_Compute):

@@ -8,6 +8,10 @@ class _Networking(_Azure):
     _icon_dir = "resources/azure/networking"
 
 
+class ApplicationGatewayContainers(_Networking):
+    _icon = "application-gateway-containers.png"
+
+
 class ApplicationGateways(_Networking):
     _icon = "application-gateways.png"
 

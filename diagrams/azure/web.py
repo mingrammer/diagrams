@@ -40,6 +40,10 @@ class AppServices(_Web):
     _icon = "app-services.png"
 
 
+class AppSpaceComponent(_Web):
+    _icon = "app-space-component.png"
+
+
 class AppSpace(_Web):
     _icon = "app-space.png"
 

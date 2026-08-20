@@ -52,6 +52,10 @@ class AzureStackEdge(_Integration):
     _icon = "azure-stack-edge.png"
 
 
+class BusinessProcessTracking(_Integration):
+    _icon = "business-process-tracking.png"
+
+
 class DataCatalog(_Integration):
     _icon = "data-catalog.png"
 

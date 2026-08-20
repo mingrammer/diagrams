@@ -1,0 +1,111 @@
+name: Deploy Static Site
+
+# Single source of truth for the gh-pages branch (served at
+# diagrams.mingrammer.com). Builds BOTH the Docusaurus docs and the
+# playground, assembles them into one tree (docs at the root, playground
+# under /playground/), and deploys the whole thing. Because everything is
+# rebuilt and published together, the docs and the playground can never
+# overwrite each other — this replaces the old manual `website/publish.sh`
+# and the separate playground deploy.
+#
+# Safety: the deploy step only runs if every build step succeeds, so a failed
+# build leaves the live gh-pages branch untouched.
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - "website/**"
+      - "playground/**"
+      - "diagrams/**"
+      - "resources/**"
+      - ".github/workflows/deploy-site.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: deploy-site
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # --- Docs (Docusaurus v1) -> website/build/diagrams/ (includes CNAME) ---
+      - name: Build docs
+        working-directory: website
+        env:
+          # Docusaurus 1.x uses a legacy webpack/OpenSSL path that needs this
+          # on Node 17+.
+          NODE_OPTIONS: --openssl-legacy-provider
+        run: |
+          npm install --no-audit --no-fund
+          npm run build
+
+      # --- Playground (Pyodide assets + Vite) -> playground/dist/ ---
+      - name: Install diagrams (for asset generation)
+        run: pip install .
+      - name: Build playground
+        run: |
+          cd playground && npm ci && cd ..
+          python3 playground/scripts/gen_catalog.py --repo-root . --out playground/public
+          cd playground && npm run build
+
+      # --- Assemble the combined site ---
+      - name: Assemble site
+        run: |
+          rm -rf _site
+          cp -a website/build/diagrams _site
+          mkdir -p _site/playground
+          cp -a playground/dist/. _site/playground/
+          test -f _site/CNAME || echo "diagrams.mingrammer.com" > _site/CNAME
+          # Docusaurus only lists its own pages, so add the playground to the
+          # sitemap it generated.
+          python3 - <<'PY'
+          from pathlib import Path
+
+          sitemap = Path("_site/sitemap.xml")
+          entry = (
+              "<url><loc>https://diagrams.mingrammer.com/playground/</loc>"
+              "<changefreq>weekly</changefreq><priority>0.8</priority></url>"
+          )
+          xml = sitemap.read_text()
+          if "/playground/" not in xml:
+              sitemap.write_text(xml.replace("</urlset>", entry + "</urlset>"))
+              print("added playground to sitemap")
+          else:
+              print("playground already in sitemap")
+
+          # Google Search Console ownership check. Docusaurus 1.x has no
+          # config hook for arbitrary <head> tags, and the verifier reads the
+          # served HTML without running JS, so the tag is injected into the
+          # built homepage here.
+          verification = (
+              '<meta name="google-site-verification" '
+              'content="p1XvVxyPOUJ6LYX5rAqSAM27tW2AFMaacg1BTr8mfR4" />'
+          )
+          home = Path("_site/index.html")
+          html = home.read_text()
+          if "google-site-verification" not in html:
+              home.write_text(html.replace("<head>", "<head>" + verification, 1))
+              print("added Search Console verification to homepage")
+          else:
+              print("verification tag already present")
+          PY
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: _site
+          force_orphan: true
