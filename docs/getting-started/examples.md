@@ -177,7 +177,7 @@ from diagrams import Cluster, Diagram
 from diagrams.onprem.analytics import Spark
 from diagrams.onprem.compute import Server
 from diagrams.onprem.database import PostgreSQL
-from diagrams.onprem.inmemory import Redis
+from diagrams.onprem.inmemory import Valkey
 from diagrams.onprem.aggregator import Fluentd
 from diagrams.onprem.monitoring import Grafana, Prometheus
 from diagrams.onprem.network import Nginx
@@ -196,8 +196,8 @@ with Diagram("Advanced Web Service with On-Premises", show=False):
             Server("grpc3")]
 
     with Cluster("Sessions HA"):
-        primary = Redis("session")
-        primary - Redis("replica") << metrics
+        primary = Valkey("session")
+        primary - Valkey("replica") << metrics
         grpcsvc >> primary
 
     with Cluster("Database HA"):
@@ -220,7 +220,7 @@ from diagrams import Cluster, Diagram, Edge
 from diagrams.onprem.analytics import Spark
 from diagrams.onprem.compute import Server
 from diagrams.onprem.database import PostgreSQL
-from diagrams.onprem.inmemory import Redis
+from diagrams.onprem.inmemory import Valkey
 from diagrams.onprem.aggregator import Fluentd
 from diagrams.onprem.monitoring import Grafana, Prometheus
 from diagrams.onprem.network import Nginx
@@ -239,8 +239,8 @@ with Diagram(name="Advanced Web Service with On-Premises (colored)", show=False)
             Server("grpc3")]
 
     with Cluster("Sessions HA"):
-        primary = Redis("session")
-        primary - Edge(color="brown", style="dashed") - Redis("replica") << Edge(label="collect") << metrics
+        primary = Valkey("session")
+        primary - Edge(color="brown", style="dashed") - Valkey("replica") << Edge(label="collect") << metrics
         grpcsvc >> Edge(color="brown") >> primary
 
     with Cluster("Database HA"):
