@@ -1,0 +1,12 @@
+node_modules/
+dist/
+public/icons/
+public/wheels/
+public/catalog.json
+test-results/
+playwright-report/
+*.tsbuildinfo
+vite.config.js
+vite.config.d.ts
+.omc/
+.vite/

@@ -2,6 +2,7 @@
   "docs": {
     "Getting Started": [
       "getting-started/installation",
+      "getting-started/playground",
       "getting-started/examples"
     ],
     "Guides": [

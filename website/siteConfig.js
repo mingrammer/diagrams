@@ -21,6 +21,7 @@ const siteConfig = {
     {doc: 'getting-started/installation', label: 'Docs'},
     {doc: 'guides/diagram', label: 'Guides'},
     {doc: 'nodes/aws', label: 'Nodes'},
+    {href: '/playground/', label: 'Playground'},
     {href: 'https://github.com/mingrammer/diagrams', label: 'GitHub'},
     {href: 'https://www.buymeacoffee.com/mingrammer', label: 'Sponsoring'},
   ],
@@ -57,7 +58,10 @@ const siteConfig = {
 
   enableUpdateTime: true,
 
-  gaTrackingId: 'UA-84081627-3',
+  // GA4 measurement ID — requires gaGtag so Docusaurus emits gtag.js
+  // instead of the legacy (and now shut down) analytics.js.
+  gaTrackingId: 'G-Y1TWCZ0L77',
+  gaGtag: true,
 };
 
 module.exports = siteConfig;

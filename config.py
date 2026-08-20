@@ -281,6 +281,10 @@ ALIASES = {
             "KubernetesServices": "AKS",
             "VMScaleSet": "VMSS"
         },
+        # Upstream ships this icon as promethus.svg; expose the correct spelling too.
+        "newicons": {
+            "Promethus": "Prometheus",
+        },
     },
     "gcp": {
         "analytics": {

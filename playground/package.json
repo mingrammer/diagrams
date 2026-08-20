@@ -1,0 +1,41 @@
+{
+  "name": "diagrams-playground",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "assets": "cd .. && python3 playground/scripts/gen_catalog.py --repo-root . --out playground/public",
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview --port 4173",
+    "test": "vitest run",
+    "e2e": "playwright test"
+  },
+  "dependencies": {
+    "@codemirror/autocomplete": "^6.18.0",
+    "@codemirror/commands": "^6.10.4",
+    "@codemirror/lang-python": "^6.1.6",
+    "@codemirror/language": "^6.12.4",
+    "@codemirror/state": "^6.4.1",
+    "@codemirror/view": "^6.34.0",
+    "@lezer/highlight": "^1.2.3",
+    "@hpcc-js/wasm-graphviz": "^1.7.0",
+    "codemirror": "^6.0.1",
+    "dompurify": "^3.1.6",
+    "pako": "^2.1.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.47.0",
+    "@testing-library/react": "^16.0.1",
+    "@types/pako": "^2.0.3",
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "jsdom": "^25.0.0",
+    "typescript": "~5.6.2",
+    "vite": "^5.4.3",
+    "vitest": "^2.1.0"
+  }
+}
