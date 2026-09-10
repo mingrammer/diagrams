@@ -6,15 +6,21 @@ updates:
     interval: daily
     time: "08:00"
   open-pull-requests-limit: 10
+  cooldown:
+    default-days: 7
 - package-ecosystem: npm
   directory: "/website"
   schedule:
     interval: daily
     time: "08:00"
   open-pull-requests-limit: 10
+  cooldown:
+    default-days: 7
 - package-ecosystem: docker
   directory: "/docker/dev"
   schedule:
     interval: daily
     time: "08:00"
   open-pull-requests-limit: 10
+  cooldown:
+    default-days: 7
