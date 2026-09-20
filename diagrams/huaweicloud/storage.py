@@ -46,12 +46,12 @@ class VBS(_Storage):
 # Aliases
 
 
-ObjectStorageService = Obs
-ContentDeliveryNetwork = Cdn
-ElasticVolumeService = Evs
-StorageFileSystem = Sfs
-CloudServerBackupService = Csbs
-DataExpressService = Des
-DedicatedEnterpriseStorageService = Dess
-VolumeBackupService = Vbs
-DedicatedStorageService = Dss
+ObjectStorageService = OBS
+ContentDeliveryNetwork = CDN
+ElasticVolumeService = EVS
+StorageFileSystem = SFS
+CloudServerBackupService = CSBS
+DataExpressService = DES
+DedicatedEnterpriseStorageService = DESS
+VolumeBackupService = VBS
+DedicatedStorageService = DSS
