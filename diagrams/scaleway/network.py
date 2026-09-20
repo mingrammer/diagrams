@@ -2,7 +2,6 @@
 
 from . import _Scaleway
 
-
 class _Network(_Scaleway):
     _type = "network"
     _icon_dir = "resources/scaleway/network"
@@ -10,78 +9,41 @@ class _Network(_Scaleway):
 
 class Backends(_Network):
     _icon = "backends.png"
-
-
 class Cdn(_Network):
     _icon = "cdn.png"
-
-
 class Ddos(_Network):
     _icon = "ddos.png"
-
-
-class Domainsanddns(_Network):
-    _icon = "domainsanddns.png"
-
-
-class Edgeservices(_Network):
-    _icon = "edgeservices.png"
-
-
-class Flexibleip(_Network):
-    _icon = "flexibleip.png"
-
-
+class DomainsAndDns(_Network):
+    _icon = "domains-and-dns.png"
+class EdgeServices(_Network):
+    _icon = "edge-services.png"
+class FlexibleIp(_Network):
+    _icon = "flexible-ip.png"
 class Frontends(_Network):
     _icon = "frontends.png"
-
-
 class Interlink(_Network):
     _icon = "interlink.png"
-
-
 class Ipam(_Network):
     _icon = "ipam.png"
-
-
-class Loadbalancers(_Network):
-    _icon = "loadbalancers.png"
-
-
-class Networkacls(_Network):
-    _icon = "networkacls.png"
-
-
-class Privateip(_Network):
-    _icon = "privateip.png"
-
-
-class Privatenetworks(_Network):
-    _icon = "privatenetworks.png"
-
-
-class Publicgateway(_Network):
-    _icon = "publicgateway.png"
-
-
+class LoadBalancers(_Network):
+    _icon = "load-balancers.png"
+class NetworkAcls(_Network):
+    _icon = "network-acls.png"
+class PrivateIp(_Network):
+    _icon = "private-ip.png"
+class PrivateNetworks(_Network):
+    _icon = "private-networks.png"
+class PublicGateway(_Network):
+    _icon = "public-gateway.png"
 class Router(_Network):
     _icon = "router.png"
-
-
-class Sslcertificates(_Network):
-    _icon = "sslcertificates.png"
-
-
+class SslCertificates(_Network):
+    _icon = "ssl-certificates.png"
 class Vpc(_Network):
     _icon = "vpc.png"
-
-
 class Vpn(_Network):
     _icon = "vpn.png"
-
-
 class Zone(_Network):
     _icon = "zone.png"
-
 
 # Aliases

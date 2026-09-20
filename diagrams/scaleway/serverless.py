@@ -2,50 +2,30 @@
 
 from . import _Scaleway
 
-
 class _Serverless(_Scaleway):
     _type = "serverless"
     _icon_dir = "resources/scaleway/serverless"
 
 
-class Apigateway(_Serverless):
-    _icon = "apigateway.png"
-
-
-class Managedrabbitmq(_Serverless):
-    _icon = "managedrabbitmq.png"
-
-
+class ApiGateway(_Serverless):
+    _icon = "api-gateway.png"
+class ManagedRabbitmq(_Serverless):
+    _icon = "managed-rabbitmq.png"
 class Nats(_Serverless):
     _icon = "nats.png"
-
-
 class Queues(_Serverless):
     _icon = "queues.png"
-
-
 class Queuing(_Serverless):
     _icon = "queuing.png"
-
-
-class Serverlesscontainers(_Serverless):
-    _icon = "serverlesscontainers.png"
-
-
-class Serverlessdb(_Serverless):
-    _icon = "serverlessdb.png"
-
-
-class Serverlessfunctions(_Serverless):
-    _icon = "serverlessfunctions.png"
-
-
-class Serverlessjobs(_Serverless):
-    _icon = "serverlessjobs.png"
-
-
-class Topicsandevents(_Serverless):
-    _icon = "topicsandevents.png"
-
+class ServerlessContainers(_Serverless):
+    _icon = "serverless-containers.png"
+class ServerlessDb(_Serverless):
+    _icon = "serverless-db.png"
+class ServerlessFunctions(_Serverless):
+    _icon = "serverless-functions.png"
+class ServerlessJobs(_Serverless):
+    _icon = "serverless-jobs.png"
+class TopicsAndEvents(_Serverless):
+    _icon = "topics-and-events.png"
 
 # Aliases

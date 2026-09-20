@@ -2,34 +2,22 @@
 
 from . import _Scaleway
 
-
 class _Containers(_Scaleway):
     _type = "containers"
     _icon_dir = "resources/scaleway/containers"
 
 
-class Applicationlibrary(_Containers):
-    _icon = "applicationlibrary.png"
-
-
-class Containerregistry(_Containers):
-    _icon = "containerregistry.png"
-
-
-class Dedicatedcontrolplane(_Containers):
-    _icon = "dedicatedcontrolplane.png"
-
-
-class Kuberneteskapsule(_Containers):
-    _icon = "kuberneteskapsule.png"
-
-
-class Kuberneteskosmos(_Containers):
-    _icon = "kuberneteskosmos.png"
-
-
+class ApplicationLibrary(_Containers):
+    _icon = "application-library.png"
+class ContainerRegistry(_Containers):
+    _icon = "container-registry.png"
+class DedicatedControlPlane(_Containers):
+    _icon = "dedicated-control-plane.png"
+class KubernetesKapsule(_Containers):
+    _icon = "kubernetes-kapsule.png"
+class KubernetesKosmos(_Containers):
+    _icon = "kubernetes-kosmos.png"
 class Pool(_Containers):
     _icon = "pool.png"
-
 
 # Aliases

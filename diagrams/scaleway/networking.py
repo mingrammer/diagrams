@@ -2,7 +2,6 @@
 
 from . import _Scaleway
 
-
 class _Networking(_Scaleway):
     _type = "networking"
     _icon_dir = "resources/scaleway/networking"
@@ -10,6 +9,5 @@ class _Networking(_Scaleway):
 
 class Bandwidth(_Networking):
     _icon = "bandwidth.png"
-
 
 # Aliases

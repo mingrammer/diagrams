@@ -2,14 +2,12 @@
 
 from . import _Scaleway
 
-
 class _Account(_Scaleway):
     _type = "account"
     _icon_dir = "resources/scaleway/account"
 
 
-class Accountexperience(_Account):
-    _icon = "accountexperience.png"
-
+class AccountExperience(_Account):
+    _icon = "account-experience.png"
 
 # Aliases

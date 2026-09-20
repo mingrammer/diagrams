@@ -2,30 +2,20 @@
 
 from . import _Scaleway
 
-
 class _Storage(_Scaleway):
     _type = "storage"
     _icon_dir = "resources/scaleway/storage"
 
 
-class Blockstorage(_Storage):
-    _icon = "blockstorage.png"
-
-
-class Coldstorage(_Storage):
-    _icon = "coldstorage.png"
-
-
-class Filestorage(_Storage):
-    _icon = "filestorage.png"
-
-
-class Lifecyclerules(_Storage):
-    _icon = "lifecyclerules.png"
-
-
-class Objectstorage(_Storage):
-    _icon = "objectstorage.png"
-
+class BlockStorage(_Storage):
+    _icon = "block-storage.png"
+class ColdStorage(_Storage):
+    _icon = "cold-storage.png"
+class FileStorage(_Storage):
+    _icon = "file-storage.png"
+class LifecycleRules(_Storage):
+    _icon = "lifecycle-rules.png"
+class ObjectStorage(_Storage):
+    _icon = "object-storage.png"
 
 # Aliases

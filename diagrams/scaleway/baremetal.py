@@ -2,122 +2,66 @@
 
 from . import _Scaleway
 
-
 class _Baremetal(_Scaleway):
     _type = "baremetal"
     _icon_dir = "resources/scaleway/baremetal"
 
 
-class Additionaldisks(_Baremetal):
-    _icon = "additionaldisks.png"
-
-
-class Coreservers(_Baremetal):
-    _icon = "coreservers.png"
-
-
-class Dedibackup(_Baremetal):
-    _icon = "dedibackup.png"
-
-
-class Dedicatedservers(_Baremetal):
-    _icon = "dedicatedservers.png"
-
-
-class Dedirack(_Baremetal):
-    _icon = "dedirack.png"
-
-
-class Elasticmetal(_Baremetal):
-    _icon = "elasticmetal.png"
-
-
-class Elasticmetalaluminium(_Baremetal):
-    _icon = "elasticmetalaluminium.png"
-
-
-class Elasticmetalberyllium(_Baremetal):
-    _icon = "elasticmetalberyllium.png"
-
-
-class Elasticmetaliridium(_Baremetal):
-    _icon = "elasticmetaliridium.png"
-
-
-class Elasticmetallithium(_Baremetal):
-    _icon = "elasticmetallithium.png"
-
-
-class Elasticmetalriscv(_Baremetal):
-    _icon = "elasticmetalriscv.png"
-
-
-class Elasticmetaltitanium(_Baremetal):
-    _icon = "elasticmetaltitanium.png"
-
-
-class Gpuservers(_Baremetal):
-    _icon = "gpuservers.png"
-
-
-class Ipfailover(_Baremetal):
-    _icon = "ipfailover.png"
-
-
-class Macmini(_Baremetal):
-    _icon = "macmini.png"
-
-
-class Macminim1(_Baremetal):
-    _icon = "macminim1.png"
-
-
-class Macminim2(_Baremetal):
-    _icon = "macminim2.png"
-
-
-class Macminim4(_Baremetal):
-    _icon = "macminim4.png"
-
-
-class Proservers(_Baremetal):
-    _icon = "proservers.png"
-
-
+class AdditionalDisks(_Baremetal):
+    _icon = "additional-disks.png"
+class CoreServers(_Baremetal):
+    _icon = "core-servers.png"
+class DediBackup(_Baremetal):
+    _icon = "dedi-backup.png"
+class DediRack(_Baremetal):
+    _icon = "dedi-rack.png"
+class DedicatedServers(_Baremetal):
+    _icon = "dedicated-servers.png"
+class ElasticMetalAluminium(_Baremetal):
+    _icon = "elastic-metal-aluminium.png"
+class ElasticMetalBeryllium(_Baremetal):
+    _icon = "elastic-metal-beryllium.png"
+class ElasticMetalIridium(_Baremetal):
+    _icon = "elastic-metal-iridium.png"
+class ElasticMetalLithium(_Baremetal):
+    _icon = "elastic-metal-lithium.png"
+class ElasticMetalRiscv(_Baremetal):
+    _icon = "elastic-metal-riscv.png"
+class ElasticMetalTitanium(_Baremetal):
+    _icon = "elastic-metal-titanium.png"
+class ElasticMetal(_Baremetal):
+    _icon = "elastic-metal.png"
+class GpuServers(_Baremetal):
+    _icon = "gpu-servers.png"
+class IpFailover(_Baremetal):
+    _icon = "ip-failover.png"
+class MacMiniM1(_Baremetal):
+    _icon = "mac-mini-m1.png"
+class MacMiniM2(_Baremetal):
+    _icon = "mac-mini-m2.png"
+class MacMiniM4(_Baremetal):
+    _icon = "mac-mini-m4.png"
+class MacMini(_Baremetal):
+    _icon = "mac-mini.png"
+class ProServers(_Baremetal):
+    _icon = "pro-servers.png"
+class RpnSan(_Baremetal):
+    _icon = "rpn-san.png"
+class RpnV1(_Baremetal):
+    _icon = "rpn-v1.png"
+class RpnV2(_Baremetal):
+    _icon = "rpn-v2.png"
 class Rpn(_Baremetal):
     _icon = "rpn.png"
-
-
-class Rpnsan(_Baremetal):
-    _icon = "rpnsan.png"
-
-
-class Rpnv1(_Baremetal):
-    _icon = "rpnv1.png"
-
-
-class Rpnv2(_Baremetal):
-    _icon = "rpnv2.png"
-
-
-class Startservers(_Baremetal):
-    _icon = "startservers.png"
-
-
-class Storeservers(_Baremetal):
-    _icon = "storeservers.png"
-
-
-class Vpsproservers(_Baremetal):
-    _icon = "vpsproservers.png"
-
-
-class Vpsservers(_Baremetal):
-    _icon = "vpsservers.png"
-
-
-class Vpsstartservers(_Baremetal):
-    _icon = "vpsstartservers.png"
-
+class StartServers(_Baremetal):
+    _icon = "start-servers.png"
+class StoreServers(_Baremetal):
+    _icon = "store-servers.png"
+class VpsProServers(_Baremetal):
+    _icon = "vps-pro-servers.png"
+class VpsServers(_Baremetal):
+    _icon = "vps-servers.png"
+class VpsStartServers(_Baremetal):
+    _icon = "vps-start-servers.png"
 
 # Aliases

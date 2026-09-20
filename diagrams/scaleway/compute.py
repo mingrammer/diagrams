@@ -2,62 +2,36 @@
 
 from . import _Scaleway
 
-
 class _Compute(_Scaleway):
     _type = "compute"
     _icon_dir = "resources/scaleway/compute"
 
 
-class Cloudinit(_Compute):
-    _icon = "cloudinit.png"
-
-
-class Costoptimizedinstances(_Compute):
-    _icon = "costoptimizedinstances.png"
-
-
-class Gpuinstances(_Compute):
-    _icon = "gpuinstances.png"
-
-
+class CloudInit(_Compute):
+    _icon = "cloud-init.png"
+class CostOptimizedInstances(_Compute):
+    _icon = "cost-optimized-instances.png"
+class GpuInstances(_Compute):
+    _icon = "gpu-instances.png"
 class Images(_Compute):
     _icon = "images.png"
-
-
+class InstanceScalingGroups(_Compute):
+    _icon = "instance-scaling-groups.png"
 class Instances(_Compute):
     _icon = "instances.png"
-
-
-class Instancescalinggroups(_Compute):
-    _icon = "instancescalinggroups.png"
-
-
-class Learninginstances(_Compute):
-    _icon = "learninginstances.png"
-
-
-class Localstorage(_Compute):
-    _icon = "localstorage.png"
-
-
-class Placementgroup(_Compute):
-    _icon = "placementgroup.png"
-
-
-class Productionoptimizedinstances(_Compute):
-    _icon = "productionoptimizedinstances.png"
-
-
-class Securitygroup(_Compute):
-    _icon = "securitygroup.png"
-
-
+class LearningInstances(_Compute):
+    _icon = "learning-instances.png"
+class LocalStorage(_Compute):
+    _icon = "local-storage.png"
+class PlacementGroup(_Compute):
+    _icon = "placement-group.png"
+class ProductionOptimizedInstances(_Compute):
+    _icon = "production-optimized-instances.png"
+class SecurityGroup(_Compute):
+    _icon = "security-group.png"
 class Snapshots(_Compute):
     _icon = "snapshots.png"
-
-
-class Workloadoptimizedinstances(_Compute):
-    _icon = "workloadoptimizedinstances.png"
-
+class WorkloadOptimizedInstances(_Compute):
+    _icon = "workload-optimized-instances.png"
 
 # Aliases

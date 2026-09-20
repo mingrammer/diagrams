@@ -2,22 +2,16 @@
 
 from . import _Scaleway
 
-
 class _Infrastructure(_Scaleway):
     _type = "infrastructure"
     _icon_dir = "resources/scaleway/infrastructure"
 
 
-class Distributionsinstantapps(_Infrastructure):
-    _icon = "distributionsinstantapps.png"
-
-
+class DistributionsInstantApps(_Infrastructure):
+    _icon = "distributions-instant-apps.png"
 class Os(_Infrastructure):
     _icon = "os.png"
-
-
 class Server(_Infrastructure):
     _icon = "server.png"
-
 
 # Aliases

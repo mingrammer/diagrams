@@ -2,7 +2,6 @@
 
 from . import _Scaleway
 
-
 class _Billing(_Scaleway):
     _type = "billing"
     _icon_dir = "resources/scaleway/billing"
@@ -10,26 +9,15 @@ class _Billing(_Scaleway):
 
 class Billing(_Billing):
     _icon = "billing.png"
-
-
 class Cb(_Billing):
     _icon = "cb.png"
-
-
-class Costmanager(_Billing):
-    _icon = "costmanager.png"
-
-
-class Savingsplans(_Billing):
-    _icon = "savingsplans.png"
-
-
+class CostManager(_Billing):
+    _icon = "cost-manager.png"
+class SavingsPlans(_Billing):
+    _icon = "savings-plans.png"
 class Sepa(_Billing):
     _icon = "sepa.png"
-
-
-class Verifycard(_Billing):
-    _icon = "verifycard.png"
-
+class VerifyCard(_Billing):
+    _icon = "verify-card.png"
 
 # Aliases

@@ -2,50 +2,30 @@
 
 from . import _Scaleway
 
-
 class _Content(_Scaleway):
     _type = "content"
     _icon_dir = "resources/scaleway/content"
 
 
-class Advancedsettings(_Content):
-    _icon = "advancedsettings.png"
-
-
-class Changelogs(_Content):
-    _icon = "changelogs.png"
-
-
-class Deletemarker(_Content):
-    _icon = "deletemarker.png"
-
-
+class AdvancedSettings(_Content):
+    _icon = "advanced-settings.png"
+class ChangeLogs(_Content):
+    _icon = "change-logs.png"
+class DeleteMarker(_Content):
+    _icon = "delete-marker.png"
 class Documentation(_Content):
     _icon = "documentation.png"
-
-
 class File(_Content):
     _icon = "file.png"
-
-
 class Folder(_Content):
     _icon = "folder.png"
-
-
 class Rocket(_Content):
     _icon = "rocket.png"
-
-
 class Sms(_Content):
     _icon = "sms.png"
-
-
 class Tutorial(_Content):
     _icon = "tutorial.png"
-
-
 class Video(_Content):
     _icon = "video.png"
-
 
 # Aliases

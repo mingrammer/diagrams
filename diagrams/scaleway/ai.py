@@ -2,30 +2,20 @@
 
 from . import _Scaleway
 
-
 class _Ai(_Scaleway):
     _type = "ai"
     _icon_dir = "resources/scaleway/ai"
 
 
-class Custombuiltclusters(_Ai):
-    _icon = "custombuiltclusters.png"
-
-
-class Distributeddatalab(_Ai):
-    _icon = "distributeddatalab.png"
-
-
-class Generativeapi(_Ai):
-    _icon = "generativeapi.png"
-
-
+class CustomBuiltClusters(_Ai):
+    _icon = "custom-built-clusters.png"
+class DistributedDataLab(_Ai):
+    _icon = "distributed-data-lab.png"
+class GenerativeApi(_Ai):
+    _icon = "generative-api.png"
 class Inference(_Ai):
     _icon = "inference.png"
-
-
-class Ondemandclusters(_Ai):
-    _icon = "ondemandclusters.png"
-
+class OnDemandClusters(_Ai):
+    _icon = "on-demand-clusters.png"
 
 # Aliases

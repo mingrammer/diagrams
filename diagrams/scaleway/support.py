@@ -2,7 +2,6 @@
 
 from . import _Scaleway
 
-
 class _Support(_Scaleway):
     _type = "support"
     _icon_dir = "resources/scaleway/support"
@@ -10,30 +9,17 @@ class _Support(_Scaleway):
 
 class Abuse(_Support):
     _icon = "abuse.png"
-
-
-class Basicsupport(_Support):
-    _icon = "basicsupport.png"
-
-
-class Goldsupport(_Support):
-    _icon = "goldsupport.png"
-
-
-class Platinumsupport(_Support):
-    _icon = "platinumsupport.png"
-
-
-class Servicelevel(_Support):
-    _icon = "servicelevel.png"
-
-
-class Silversupport(_Support):
-    _icon = "silversupport.png"
-
-
+class BasicSupport(_Support):
+    _icon = "basic-support.png"
+class GoldSupport(_Support):
+    _icon = "gold-support.png"
+class PlatinumSupport(_Support):
+    _icon = "platinum-support.png"
+class ServiceLevel(_Support):
+    _icon = "service-level.png"
+class SilverSupport(_Support):
+    _icon = "silver-support.png"
 class Support(_Support):
     _icon = "support.png"
-
 
 # Aliases
