@@ -2,6 +2,7 @@
 
 from . import _HuaweiCloud
 
+
 class _Edge(_HuaweiCloud):
     _type = "edge"
     _icon_dir = "resources/huaweicloud/edge"
@@ -9,16 +10,25 @@ class _Edge(_HuaweiCloud):
 
 class CDN(_Edge):
     _icon = "cdn.png"
+
+
 class IEC(_Edge):
     _icon = "iec.png"
+
+
 class IEF(_Edge):
     _icon = "ief.png"
+
+
 class IES(_Edge):
     _icon = "ies.png"
+
+
 class WSA(_Edge):
     _icon = "wsa.png"
 
 # Aliases
+
 
 IntelligentEdgeFabric = IEF
 IntelligentEdgeSite = IES

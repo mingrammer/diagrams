@@ -2,6 +2,7 @@
 
 from . import _HuaweiCloud
 
+
 class _Blockchain(_HuaweiCloud):
     _type = "blockchain"
     _icon_dir = "resources/huaweicloud/blockchain"
@@ -11,5 +12,6 @@ class BCS(_Blockchain):
     _icon = "bcs.png"
 
 # Aliases
+
 
 BlockChainService = BCS

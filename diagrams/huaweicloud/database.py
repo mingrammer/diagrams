@@ -2,6 +2,7 @@
 
 from . import _HuaweiCloud
 
+
 class _Database(_HuaweiCloud):
     _type = "database"
     _icon_dir = "resources/huaweicloud/database"
@@ -9,30 +10,53 @@ class _Database(_HuaweiCloud):
 
 class DataAdminService(_Database):
     _icon = "data-admin-service.png"
+
+
 class DataReplicationService(_Database):
     _icon = "data-replication-service.png"
+
+
 class DatabaseTaurus(_Database):
     _icon = "database-taurus.png"
+
+
 class DistributedDatabaseMiddleware(_Database):
     _icon = "distributed-database-middleware.png"
+
+
 class GaussdbforCassandra(_Database):
     _icon = "gaussdbfor-cassandra.png"
+
+
 class GaussdbforMongo(_Database):
     _icon = "gaussdbfor-mongo.png"
+
+
 class GaussdbforMysql(_Database):
     _icon = "gaussdbfor-mysql.png"
+
+
 class GaussdbforNosql(_Database):
     _icon = "gaussdbfor-nosql.png"
+
+
 class GaussdbforOpengauss(_Database):
     _icon = "gaussdbfor-opengauss.png"
+
+
 class GaussdbforPostgre(_Database):
     _icon = "gaussdbfor-postgre.png"
+
+
 class RelationalDatabaseService(_Database):
     _icon = "relational-database-service.png"
+
+
 class UGO(_Database):
     _icon = "ugo.png"
 
 # Aliases
+
 
 DAS = DataAdminService
 RDS = RelationalDatabaseService

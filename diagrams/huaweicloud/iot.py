@@ -2,6 +2,7 @@
 
 from . import _HuaweiCloud
 
+
 class _Iot(_HuaweiCloud):
     _type = "iot"
     _icon_dir = "resources/huaweicloud/iot"
@@ -9,16 +10,28 @@ class _Iot(_HuaweiCloud):
 
 class GSL(_Iot):
     _icon = "gsl.png"
+
+
 class IotAnalytics(_Iot):
     _icon = "iot-analytics.png"
+
+
 class IotDeviceAccess(_Iot):
     _icon = "iot-device-access.png"
+
+
 class IotMessageQueue(_Iot):
     _icon = "iot-message-queue.png"
+
+
 class IotPlatform(_Iot):
     _icon = "iot-platform.png"
+
+
 class IotStage(_Iot):
     _icon = "iot-stage.png"
+
+
 class IotStudio(_Iot):
     _icon = "iot-studio.png"
 

@@ -2,6 +2,7 @@
 
 from . import _HuaweiCloud
 
+
 class _Network(_HuaweiCloud):
     _type = "network"
     _icon_dir = "resources/huaweicloud/network"
@@ -9,20 +10,33 @@ class _Network(_HuaweiCloud):
 
 class DirectConnect(_Network):
     _icon = "direct-connect.png"
+
+
 class DomainNameService(_Network):
     _icon = "domain-name-service.png"
+
+
 class ElasticIp(_Network):
     _icon = "elastic-ip.png"
+
+
 class ElasticLoadBalance(_Network):
     _icon = "elastic-load-balance.png"
+
+
 class NatGateway(_Network):
     _icon = "nat-gateway.png"
+
+
 class VirtualPrivateCloud(_Network):
     _icon = "virtual-private-cloud.png"
+
+
 class VirtualPrivateNetwork(_Network):
     _icon = "virtual-private-network.png"
 
 # Aliases
+
 
 ELB = ElasticLoadBalance
 VPC = VirtualPrivateCloud

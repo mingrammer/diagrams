@@ -2,6 +2,7 @@
 
 from . import _HuaweiCloud
 
+
 class _Application(_HuaweiCloud):
     _type = "application"
     _icon_dir = "resources/huaweicloud/application"
@@ -9,18 +10,32 @@ class _Application(_HuaweiCloud):
 
 class CAE(_Application):
     _icon = "cae.png"
+
+
 class CSE(_Application):
     _icon = "cse.png"
+
+
 class DMS(_Application):
     _icon = "dms.png"
+
+
 class ECPC(_Application):
     _icon = "ecpc.png"
+
+
 class FunctionStage(_Application):
     _icon = "function-stage.png"
+
+
 class Memcached(_Application):
     _icon = "memcached.png"
+
+
 class ServiceStage(_Application):
     _icon = "service-stage.png"
+
+
 class SMN(_Application):
     _icon = "smn.png"
 

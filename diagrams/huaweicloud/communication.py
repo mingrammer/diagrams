@@ -2,6 +2,7 @@
 
 from . import _HuaweiCloud
 
+
 class _Communication(_HuaweiCloud):
     _type = "communication"
     _icon_dir = "resources/huaweicloud/communication"
@@ -9,12 +10,20 @@ class _Communication(_HuaweiCloud):
 
 class CloudIpcc(_Communication):
     _icon = "cloud-ipcc.png"
+
+
 class CloudPbx(_Communication):
     _icon = "cloud-pbx.png"
+
+
 class IM(_Communication):
     _icon = "im.png"
+
+
 class MSGSMS(_Communication):
     _icon = "msgsms.png"
+
+
 class VoiceCall(_Communication):
     _icon = "voice-call.png"
 

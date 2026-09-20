@@ -2,6 +2,7 @@
 
 from . import _HuaweiCloud
 
+
 class _Compute(_HuaweiCloud):
     _type = "compute"
     _icon_dir = "resources/huaweicloud/compute"
@@ -9,20 +10,33 @@ class _Compute(_HuaweiCloud):
 
 class AutoScaling(_Compute):
     _icon = "auto-scaling.png"
+
+
 class BareMetalServer(_Compute):
     _icon = "bare-metal-server.png"
+
+
 class CloudContainerEngine(_Compute):
     _icon = "cloud-container-engine.png"
+
+
 class DedicatedCloud(_Compute):
     _icon = "dedicated-cloud.png"
+
+
 class DedicatedHost(_Compute):
     _icon = "dedicated-host.png"
+
+
 class ElasticComputeService(_Compute):
     _icon = "elastic-compute-service.png"
+
+
 class ImageService(_Compute):
     _icon = "image-service.png"
 
 # Aliases
+
 
 AS = AutoScaling
 BMS = BareMetalServer

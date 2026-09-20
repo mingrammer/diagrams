@@ -2,6 +2,7 @@
 
 from . import _HuaweiCloud
 
+
 class _Storage(_HuaweiCloud):
     _type = "storage"
     _icon_dir = "resources/huaweicloud/storage"
@@ -9,24 +10,41 @@ class _Storage(_HuaweiCloud):
 
 class CDN(_Storage):
     _icon = "cdn.png"
+
+
 class CSBS(_Storage):
     _icon = "csbs.png"
+
+
 class DES(_Storage):
     _icon = "des.png"
+
+
 class DESS(_Storage):
     _icon = "dess.png"
+
+
 class DSS(_Storage):
     _icon = "dss.png"
+
+
 class EVS(_Storage):
     _icon = "evs.png"
+
+
 class OBS(_Storage):
     _icon = "obs.png"
+
+
 class SFS(_Storage):
     _icon = "sfs.png"
+
+
 class VBS(_Storage):
     _icon = "vbs.png"
 
 # Aliases
+
 
 ObjectStorageService = Obs
 ContentDeliveryNetwork = Cdn

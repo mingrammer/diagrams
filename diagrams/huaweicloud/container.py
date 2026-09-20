@@ -2,6 +2,7 @@
 
 from . import _HuaweiCloud
 
+
 class _Container(_HuaweiCloud):
     _type = "container"
     _icon_dir = "resources/huaweicloud/container"
@@ -9,14 +10,21 @@ class _Container(_HuaweiCloud):
 
 class AOS(_Container):
     _icon = "aos.png"
+
+
 class CCE(_Container):
     _icon = "cce.png"
+
+
 class CCI(_Container):
     _icon = "cci.png"
+
+
 class SWR(_Container):
     _icon = "swr.png"
 
 # Aliases
+
 
 ApplicationOrchestrationService = AOS
 CloudContainerEngine = CCE
