@@ -31,7 +31,7 @@ def cleaner_aws(f):
     f = f.replace("-light-bg", "")
     for p in cfg.FILE_PREFIXES["aws"]:
         if f.startswith(p):
-            f = f[len(p):]
+            f = f[len(p) :]
             break
     return f.lower()
 
@@ -42,7 +42,7 @@ def cleaner_azure(f):
     f = "-".join(f.split())
     for p in cfg.FILE_PREFIXES["azure"]:
         if f.startswith(p):
-            f = f[len(p):]
+            f = f[len(p) :]
             break
     return f.lower()
 
@@ -52,7 +52,7 @@ def cleaner_gcp(f):
     f = "-".join(f.split())
     for p in cfg.FILE_PREFIXES["gcp"]:
         if f.startswith(p):
-            f = f[len(p):]
+            f = f[len(p) :]
             break
     return f.lower()
 
@@ -62,7 +62,7 @@ def cleaner_ibm(f):
     f = "-".join(f.split())
     for p in cfg.FILE_PREFIXES["ibm"]:
         if f.startswith(p):
-            f = f[len(p):]
+            f = f[len(p) :]
             break
     return f.lower()
 
@@ -72,7 +72,7 @@ def cleaner_firebase(f):
     f = "-".join(f.split())
     for p in cfg.FILE_PREFIXES["firebase"]:
         if f.startswith(p):
-            f = f[len(p):]
+            f = f[len(p) :]
             break
     return f.lower()
 
@@ -81,7 +81,7 @@ def cleaner_k8s(f):
     f = f.replace("-256", "")
     for p in cfg.FILE_PREFIXES["k8s"]:
         if f.startswith(p):
-            f = f[len(p):]
+            f = f[len(p) :]
             break
     return f.lower()
 
@@ -90,7 +90,7 @@ def cleaner_digitalocean(f):
     f = f.replace("-32", "")
     for p in cfg.FILE_PREFIXES["digitalocean"]:
         if f.startswith(p):
-            f = f[len(p):]
+            f = f[len(p) :]
             break
     return f.lower()
 
@@ -98,7 +98,7 @@ def cleaner_digitalocean(f):
 def cleaner_alibabacloud(f):
     for p in cfg.FILE_PREFIXES["alibabacloud"]:
         if f.startswith(p):
-            f = f[len(p):]
+            f = f[len(p) :]
             break
     return f.lower()
 
@@ -108,7 +108,7 @@ def cleaner_oci(f):
     f = f.replace("_", "-")
     for p in cfg.FILE_PREFIXES["oci"]:
         if f.startswith(p):
-            f = f[len(p):]
+            f = f[len(p) :]
             break
     return f.lower()
 
@@ -141,6 +141,10 @@ def cleaner_gis(f):
     return f.lower()
 
 
+def cleaner_scaleway(f):
+    return f.lower()
+
+
 cleaners = {
     "onprem": cleaner_onprem,
     "aws": cleaner_aws,
@@ -159,6 +163,7 @@ cleaners = {
     "generic": cleaner_generic,
     "openstack": cleaner_openstack,
     "gis": cleaner_gis,
+    "scaleway": cleaner_scaleway,
 }
 
 
@@ -208,8 +213,7 @@ def svg2png2(pvd: str) -> None:
     def _convert(base: str, path: str):
         path_src = os.path.join(base, path)
         path_dest = path_src.replace(".svg", ".png")
-        subprocess.run([cfg.CMD_SVG2PNG_IM, *
-                        cfg.CMD_SVG2PNG_IM_OPTS, path_src, path_dest])
+        subprocess.run([cfg.CMD_SVG2PNG_IM, *cfg.CMD_SVG2PNG_IM_OPTS, path_src, path_dest])
         subprocess.run(["rm", path_src])
 
     for root, _, files in os.walk(resource_dir(pvd)):
