@@ -110,6 +110,21 @@ class DiagramTest(unittest.TestCase):
             Node("node1")
         self.assertTrue(os.path.exists(f"{self.name}.png"))
 
+    def test_filename_suffix_env_var(self):
+        self.name = "my_custom_name"
+        suffix = ".generated"
+        os.environ["DIAGRAMS_FILENAME_SUFFIX"] = suffix
+        try:
+            with Diagram(name="Example 1", filename=self.name, show=False):
+                Node("node1")
+            self.assertTrue(os.path.exists(f"{self.name}{suffix}.png"))
+        finally:
+            del os.environ["DIAGRAMS_FILENAME_SUFFIX"]
+            try:
+                os.remove(f"{self.name}{suffix}.png")
+            except FileNotFoundError:
+                pass
+
     def test_empty_name(self):
         """Check that providing an empty name don't crash, but save in a diagrams_image.xxx file."""
         self.name = "diagrams_image"
