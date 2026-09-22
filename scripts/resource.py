@@ -141,6 +141,14 @@ def cleaner_gis(f):
     return f.lower()
 
 
+def cleaner_huaweicloud(f):
+    for p in cfg.FILE_PREFIXES["huaweicloud"]:
+        if f.startswith(p):
+            f = f[len(p):]
+            break
+    return f.lower()
+
+
 cleaners = {
     "onprem": cleaner_onprem,
     "aws": cleaner_aws,
@@ -159,6 +167,7 @@ cleaners = {
     "generic": cleaner_generic,
     "openstack": cleaner_openstack,
     "gis": cleaner_gis,
+    "huaweicloud": cleaner_huaweicloud,
 }
 
 
