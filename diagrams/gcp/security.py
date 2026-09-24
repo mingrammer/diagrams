@@ -60,6 +60,10 @@ class SecurityScanner(_Security):
     _icon = "security-scanner.png"
 
 
+class WorkloadIdentityPool(_Security):
+    _icon = "workload-identity-pool.png"
+
+
 # Aliases
 
 ACM = AccessContextManager
