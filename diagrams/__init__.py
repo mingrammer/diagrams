@@ -196,11 +196,11 @@ class Diagram:
 
         if not self._validate_direction(direction):
             raise ValueError(f'"{direction}" is not a valid direction')
-        self.dot.graph_attr["rankdir"] = direction
+        self.dot.graph_attr["rankdir"] = direction.upper()
 
         if not self._validate_curvestyle(curvestyle):
             raise ValueError(f'"{curvestyle}" is not a valid curvestyle')
-        self.dot.graph_attr["splines"] = curvestyle
+        self.dot.graph_attr["splines"] = curvestyle.lower()
 
         if isinstance(outformat, list):
             for one_format in outformat:
