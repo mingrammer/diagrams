@@ -102,7 +102,8 @@ TITLE_WORDS = {
         "alibabacloud": "AlibabaCloud"
     },
     "aws": {
-        "cloudfront": "CloudFront"
+        "agentcore": "AgentCore",
+        "cloudfront": "CloudFront",
     },
     "digitalocean": {
         "digitalocean": "DigitalOcean"
@@ -241,7 +242,10 @@ ALIASES = {
             "ServerMigrationService": "SMS",
         },
         "ml": {
+            "AiAgent": "AIAgent",
             "DeepLearningContainers": "DLC",
+            "PolicyEngineAgenticGuardrails": "PEAG",
+            "Observability": "OBS",
         },
         "network": {
             "CloudFront": "CF",
