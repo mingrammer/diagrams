@@ -8,12 +8,76 @@ class _Database(_AWS):
     _icon_dir = "resources/aws/database"
 
 
+class AuroraAmazonAuroraInstanceAlternate(_Database):
+    _icon = "aurora-amazon-aurora-instance-alternate.png"
+
+
+class AuroraAmazonRDSInstanceAlternate(_Database):
+    _icon = "aurora-amazon-rds-instance-alternate.png"
+
+
+class AuroraAmazonRDSInstance(_Database):
+    _icon = "aurora-amazon-rds-instance.png"
+
+
 class AuroraInstance(_Database):
     _icon = "aurora-instance.png"
 
 
+class AuroraMariadbInstanceAlternate(_Database):
+    _icon = "aurora-mariadb-instance-alternate.png"
+
+
+class AuroraMariadbInstance(_Database):
+    _icon = "aurora-mariadb-instance.png"
+
+
+class AuroraMysqlInstanceAlternate(_Database):
+    _icon = "aurora-mysql-instance-alternate.png"
+
+
+class AuroraMysqlInstance(_Database):
+    _icon = "aurora-mysql-instance.png"
+
+
+class AuroraOracleInstanceAlternate(_Database):
+    _icon = "aurora-oracle-instance-alternate.png"
+
+
+class AuroraOracleInstance(_Database):
+    _icon = "aurora-oracle-instance.png"
+
+
+class AuroraPiopsInstance(_Database):
+    _icon = "aurora-piops-instance.png"
+
+
+class AuroraPostgresqlInstanceAlternate(_Database):
+    _icon = "aurora-postgresql-instance-alternate.png"
+
+
+class AuroraPostgresqlInstance(_Database):
+    _icon = "aurora-postgresql-instance.png"
+
+
+class AuroraSqlServerInstanceAlternate(_Database):
+    _icon = "aurora-sql-server-instance-alternate.png"
+
+
+class AuroraSqlServerInstance(_Database):
+    _icon = "aurora-sql-server-instance.png"
+
+
+class AuroraTrustedLanguageExtensionsForPostgresql(_Database):
+    _icon = "aurora-trusted-language-extensions-for-postgresql.png"
+
+
 class Aurora(_Database):
     _icon = "aurora.png"
+
+
+class DatabaseMigrationServiceDatabaseMigrationWorkflowOrJob(_Database):
+    _icon = "database-migration-service-database-migration-workflow-or-job.png"
 
 
 class DatabaseMigrationServiceDatabaseMigrationWorkflow(_Database):
@@ -28,8 +92,20 @@ class Database(_Database):
     _icon = "database.png"
 
 
+class DocumentdbElasticClusters(_Database):
+    _icon = "documentdb-elastic-clusters.png"
+
+
 class DocumentdbMongodbCompatibility(_Database):
     _icon = "documentdb-mongodb-compatibility.png"
+
+
+class Documentdb(_Database):
+    _icon = "documentdb.png"
+
+
+class DynamodbAmazonDynamodbAccelerator(_Database):
+    _icon = "dynamodb-amazon-dynamodb-accelerator.png"
 
 
 class DynamodbAttribute(_Database):
@@ -56,6 +132,18 @@ class DynamodbItems(_Database):
     _icon = "dynamodb-items.png"
 
 
+class DynamodbStandardAccessTableClass(_Database):
+    _icon = "dynamodb-standard-access-table-class.png"
+
+
+class DynamodbStandardInfrequentAccessTableClass(_Database):
+    _icon = "dynamodb-standard-infrequent-access-table-class.png"
+
+
+class DynamodbStream(_Database):
+    _icon = "dynamodb-stream.png"
+
+
 class DynamodbStreams(_Database):
     _icon = "dynamodb-streams.png"
 
@@ -80,6 +168,10 @@ class ElasticacheForRedis(_Database):
     _icon = "elasticache-for-redis.png"
 
 
+class ElasticacheForValkey(_Database):
+    _icon = "elasticache-for-valkey.png"
+
+
 class Elasticache(_Database):
     _icon = "elasticache.png"
 
@@ -88,12 +180,28 @@ class KeyspacesManagedApacheCassandraService(_Database):
     _icon = "keyspaces-managed-apache-cassandra-service.png"
 
 
+class Keyspaces(_Database):
+    _icon = "keyspaces.png"
+
+
+class Memorydb(_Database):
+    _icon = "memorydb.png"
+
+
 class Neptune(_Database):
     _icon = "neptune.png"
 
 
+class OracleDatabaseAtAWS(_Database):
+    _icon = "oracle-database-at-aws.png"
+
+
 class QuantumLedgerDatabaseQldb(_Database):
     _icon = "quantum-ledger-database-qldb.png"
+
+
+class RDSBlueGreenDeployments(_Database):
+    _icon = "rds-blue-green-deployments.png"
 
 
 class RDSInstance(_Database):
@@ -104,12 +212,24 @@ class RDSMariadbInstance(_Database):
     _icon = "rds-mariadb-instance.png"
 
 
+class RDSMultiAzDbCluster(_Database):
+    _icon = "rds-multi-az-db-cluster.png"
+
+
+class RDSMultiAz(_Database):
+    _icon = "rds-multi-az.png"
+
+
 class RDSMysqlInstance(_Database):
     _icon = "rds-mysql-instance.png"
 
 
 class RDSOnVmware(_Database):
     _icon = "rds-on-vmware.png"
+
+
+class RDSOptimizedWrites(_Database):
+    _icon = "rds-optimized-writes.png"
 
 
 class RDSOracleInstance(_Database):
@@ -120,8 +240,20 @@ class RDSPostgresqlInstance(_Database):
     _icon = "rds-postgresql-instance.png"
 
 
+class RDSProxyInstanceAlternate(_Database):
+    _icon = "rds-proxy-instance-alternate.png"
+
+
+class RDSProxyInstance(_Database):
+    _icon = "rds-proxy-instance.png"
+
+
 class RDSSqlServerInstance(_Database):
     _icon = "rds-sql-server-instance.png"
+
+
+class RDSTrustedLanguageExtensionsForPostgresql(_Database):
+    _icon = "rds-trusted-language-extensions-for-postgresql.png"
 
 
 class RDS(_Database):
@@ -148,9 +280,18 @@ class Timestream(_Database):
 
 DMS = DatabaseMigrationService
 DocumentDB = DocumentdbMongodbCompatibility
-DAX = DynamodbDax
+DocumentDBElasticClusters = DocumentdbElasticClusters
+DocDB = Documentdb
+DAX = DynamodbAmazonDynamodbAccelerator
+DynamodbDAX = DynamodbDax
 DynamodbGSI = DynamodbGlobalSecondaryIndex
 DB = Database
 DDB = Dynamodb
 ElastiCache = Elasticache
+ElastiCacheForValkey = ElasticacheForValkey
+Cassandra = Keyspaces
+KeyspacesCassandra = KeyspacesManagedApacheCassandraService
+MemoryDB = Memorydb
+OracleDB = OracleDatabaseAtAWS
 QLDB = QuantumLedgerDatabaseQldb
+RDSProxy = RDSProxyInstance

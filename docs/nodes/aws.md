@@ -290,11 +290,59 @@ Node classes list of the aws provider.
 ## aws.database
 
 
+<img width="30" src="/img/resources/aws/database/aurora-amazon-aurora-instance-alternate.png" alt="AuroraAmazonAuroraInstanceAlternate" style="float: left; padding-right: 5px;" >
+**diagrams.aws.database.AuroraAmazonAuroraInstanceAlternate**
+
+<img width="30" src="/img/resources/aws/database/aurora-amazon-rds-instance-alternate.png" alt="AuroraAmazonRDSInstanceAlternate" style="float: left; padding-right: 5px;" >
+**diagrams.aws.database.AuroraAmazonRDSInstanceAlternate**
+
+<img width="30" src="/img/resources/aws/database/aurora-amazon-rds-instance.png" alt="AuroraAmazonRDSInstance" style="float: left; padding-right: 5px;" >
+**diagrams.aws.database.AuroraAmazonRDSInstance**
+
 <img width="30" src="/img/resources/aws/database/aurora-instance.png" alt="AuroraInstance" style="float: left; padding-right: 5px;" >
 **diagrams.aws.database.AuroraInstance**
 
+<img width="30" src="/img/resources/aws/database/aurora-mariadb-instance-alternate.png" alt="AuroraMariadbInstanceAlternate" style="float: left; padding-right: 5px;" >
+**diagrams.aws.database.AuroraMariadbInstanceAlternate**
+
+<img width="30" src="/img/resources/aws/database/aurora-mariadb-instance.png" alt="AuroraMariadbInstance" style="float: left; padding-right: 5px;" >
+**diagrams.aws.database.AuroraMariadbInstance**
+
+<img width="30" src="/img/resources/aws/database/aurora-mysql-instance-alternate.png" alt="AuroraMysqlInstanceAlternate" style="float: left; padding-right: 5px;" >
+**diagrams.aws.database.AuroraMysqlInstanceAlternate**
+
+<img width="30" src="/img/resources/aws/database/aurora-mysql-instance.png" alt="AuroraMysqlInstance" style="float: left; padding-right: 5px;" >
+**diagrams.aws.database.AuroraMysqlInstance**
+
+<img width="30" src="/img/resources/aws/database/aurora-oracle-instance-alternate.png" alt="AuroraOracleInstanceAlternate" style="float: left; padding-right: 5px;" >
+**diagrams.aws.database.AuroraOracleInstanceAlternate**
+
+<img width="30" src="/img/resources/aws/database/aurora-oracle-instance.png" alt="AuroraOracleInstance" style="float: left; padding-right: 5px;" >
+**diagrams.aws.database.AuroraOracleInstance**
+
+<img width="30" src="/img/resources/aws/database/aurora-piops-instance.png" alt="AuroraPiopsInstance" style="float: left; padding-right: 5px;" >
+**diagrams.aws.database.AuroraPiopsInstance**
+
+<img width="30" src="/img/resources/aws/database/aurora-postgresql-instance-alternate.png" alt="AuroraPostgresqlInstanceAlternate" style="float: left; padding-right: 5px;" >
+**diagrams.aws.database.AuroraPostgresqlInstanceAlternate**
+
+<img width="30" src="/img/resources/aws/database/aurora-postgresql-instance.png" alt="AuroraPostgresqlInstance" style="float: left; padding-right: 5px;" >
+**diagrams.aws.database.AuroraPostgresqlInstance**
+
+<img width="30" src="/img/resources/aws/database/aurora-sql-server-instance-alternate.png" alt="AuroraSqlServerInstanceAlternate" style="float: left; padding-right: 5px;" >
+**diagrams.aws.database.AuroraSqlServerInstanceAlternate**
+
+<img width="30" src="/img/resources/aws/database/aurora-sql-server-instance.png" alt="AuroraSqlServerInstance" style="float: left; padding-right: 5px;" >
+**diagrams.aws.database.AuroraSqlServerInstance**
+
+<img width="30" src="/img/resources/aws/database/aurora-trusted-language-extensions-for-postgresql.png" alt="AuroraTrustedLanguageExtensionsForPostgresql" style="float: left; padding-right: 5px;" >
+**diagrams.aws.database.AuroraTrustedLanguageExtensionsForPostgresql**
+
 <img width="30" src="/img/resources/aws/database/aurora.png" alt="Aurora" style="float: left; padding-right: 5px;" >
 **diagrams.aws.database.Aurora**
+
+<img width="30" src="/img/resources/aws/database/database-migration-service-database-migration-workflow-or-job.png" alt="DatabaseMigrationServiceDatabaseMigrationWorkflowOrJob" style="float: left; padding-right: 5px;" >
+**diagrams.aws.database.DatabaseMigrationServiceDatabaseMigrationWorkflowOrJob**
 
 <img width="30" src="/img/resources/aws/database/database-migration-service-database-migration-workflow.png" alt="DatabaseMigrationServiceDatabaseMigrationWorkflow" style="float: left; padding-right: 5px;" >
 **diagrams.aws.database.DatabaseMigrationServiceDatabaseMigrationWorkflow**
@@ -305,8 +353,17 @@ Node classes list of the aws provider.
 <img width="30" src="/img/resources/aws/database/database.png" alt="Database" style="float: left; padding-right: 5px;" >
 **diagrams.aws.database.Database**, **DB** (alias)
 
+<img width="30" src="/img/resources/aws/database/documentdb-elastic-clusters.png" alt="DocumentdbElasticClusters" style="float: left; padding-right: 5px;" >
+**diagrams.aws.database.DocumentdbElasticClusters**, **DocumentDBElasticClusters** (alias)
+
 <img width="30" src="/img/resources/aws/database/documentdb-mongodb-compatibility.png" alt="DocumentdbMongodbCompatibility" style="float: left; padding-right: 5px;" >
 **diagrams.aws.database.DocumentdbMongodbCompatibility**, **DocumentDB** (alias)
+
+<img width="30" src="/img/resources/aws/database/documentdb.png" alt="Documentdb" style="float: left; padding-right: 5px;" >
+**diagrams.aws.database.Documentdb**, **DocDB** (alias)
+
+<img width="30" src="/img/resources/aws/database/dynamodb-amazon-dynamodb-accelerator.png" alt="DynamodbAmazonDynamodbAccelerator" style="float: left; padding-right: 5px;" >
+**diagrams.aws.database.DynamodbAmazonDynamodbAccelerator**, **DAX** (alias)
 
 <img width="30" src="/img/resources/aws/database/dynamodb-attribute.png" alt="DynamodbAttribute" style="float: left; padding-right: 5px;" >
 **diagrams.aws.database.DynamodbAttribute**
@@ -315,7 +372,7 @@ Node classes list of the aws provider.
 **diagrams.aws.database.DynamodbAttributes**
 
 <img width="30" src="/img/resources/aws/database/dynamodb-dax.png" alt="DynamodbDax" style="float: left; padding-right: 5px;" >
-**diagrams.aws.database.DynamodbDax**, **DAX** (alias)
+**diagrams.aws.database.DynamodbDax**, **DynamodbDAX** (alias)
 
 <img width="30" src="/img/resources/aws/database/dynamodb-global-secondary-index.png" alt="DynamodbGlobalSecondaryIndex" style="float: left; padding-right: 5px;" >
 **diagrams.aws.database.DynamodbGlobalSecondaryIndex**, **DynamodbGSI** (alias)
@@ -325,6 +382,15 @@ Node classes list of the aws provider.
 
 <img width="30" src="/img/resources/aws/database/dynamodb-items.png" alt="DynamodbItems" style="float: left; padding-right: 5px;" >
 **diagrams.aws.database.DynamodbItems**
+
+<img width="30" src="/img/resources/aws/database/dynamodb-standard-access-table-class.png" alt="DynamodbStandardAccessTableClass" style="float: left; padding-right: 5px;" >
+**diagrams.aws.database.DynamodbStandardAccessTableClass**
+
+<img width="30" src="/img/resources/aws/database/dynamodb-standard-infrequent-access-table-class.png" alt="DynamodbStandardInfrequentAccessTableClass" style="float: left; padding-right: 5px;" >
+**diagrams.aws.database.DynamodbStandardInfrequentAccessTableClass**
+
+<img width="30" src="/img/resources/aws/database/dynamodb-stream.png" alt="DynamodbStream" style="float: left; padding-right: 5px;" >
+**diagrams.aws.database.DynamodbStream**
 
 <img width="30" src="/img/resources/aws/database/dynamodb-streams.png" alt="DynamodbStreams" style="float: left; padding-right: 5px;" >
 **diagrams.aws.database.DynamodbStreams**
@@ -344,17 +410,32 @@ Node classes list of the aws provider.
 <img width="30" src="/img/resources/aws/database/elasticache-for-redis.png" alt="ElasticacheForRedis" style="float: left; padding-right: 5px;" >
 **diagrams.aws.database.ElasticacheForRedis**
 
+<img width="30" src="/img/resources/aws/database/elasticache-for-valkey.png" alt="ElasticacheForValkey" style="float: left; padding-right: 5px;" >
+**diagrams.aws.database.ElasticacheForValkey**, **ElastiCacheForValkey** (alias)
+
 <img width="30" src="/img/resources/aws/database/elasticache.png" alt="Elasticache" style="float: left; padding-right: 5px;" >
 **diagrams.aws.database.Elasticache**, **ElastiCache** (alias)
 
 <img width="30" src="/img/resources/aws/database/keyspaces-managed-apache-cassandra-service.png" alt="KeyspacesManagedApacheCassandraService" style="float: left; padding-right: 5px;" >
-**diagrams.aws.database.KeyspacesManagedApacheCassandraService**
+**diagrams.aws.database.KeyspacesManagedApacheCassandraService**, **KeyspacesCassandra** (alias)
+
+<img width="30" src="/img/resources/aws/database/keyspaces.png" alt="Keyspaces" style="float: left; padding-right: 5px;" >
+**diagrams.aws.database.Keyspaces**, **Cassandra** (alias)
+
+<img width="30" src="/img/resources/aws/database/memorydb.png" alt="Memorydb" style="float: left; padding-right: 5px;" >
+**diagrams.aws.database.Memorydb**, **MemoryDB** (alias)
 
 <img width="30" src="/img/resources/aws/database/neptune.png" alt="Neptune" style="float: left; padding-right: 5px;" >
 **diagrams.aws.database.Neptune**
 
+<img width="30" src="/img/resources/aws/database/oracle-database-at-aws.png" alt="OracleDatabaseAtAWS" style="float: left; padding-right: 5px;" >
+**diagrams.aws.database.OracleDatabaseAtAWS**, **OracleDB** (alias)
+
 <img width="30" src="/img/resources/aws/database/quantum-ledger-database-qldb.png" alt="QuantumLedgerDatabaseQldb" style="float: left; padding-right: 5px;" >
 **diagrams.aws.database.QuantumLedgerDatabaseQldb**, **QLDB** (alias)
+
+<img width="30" src="/img/resources/aws/database/rds-blue-green-deployments.png" alt="RDSBlueGreenDeployments" style="float: left; padding-right: 5px;" >
+**diagrams.aws.database.RDSBlueGreenDeployments**
 
 <img width="30" src="/img/resources/aws/database/rds-instance.png" alt="RDSInstance" style="float: left; padding-right: 5px;" >
 **diagrams.aws.database.RDSInstance**
@@ -362,11 +443,20 @@ Node classes list of the aws provider.
 <img width="30" src="/img/resources/aws/database/rds-mariadb-instance.png" alt="RDSMariadbInstance" style="float: left; padding-right: 5px;" >
 **diagrams.aws.database.RDSMariadbInstance**
 
+<img width="30" src="/img/resources/aws/database/rds-multi-az-db-cluster.png" alt="RDSMultiAzDbCluster" style="float: left; padding-right: 5px;" >
+**diagrams.aws.database.RDSMultiAzDbCluster**
+
+<img width="30" src="/img/resources/aws/database/rds-multi-az.png" alt="RDSMultiAz" style="float: left; padding-right: 5px;" >
+**diagrams.aws.database.RDSMultiAz**
+
 <img width="30" src="/img/resources/aws/database/rds-mysql-instance.png" alt="RDSMysqlInstance" style="float: left; padding-right: 5px;" >
 **diagrams.aws.database.RDSMysqlInstance**
 
 <img width="30" src="/img/resources/aws/database/rds-on-vmware.png" alt="RDSOnVmware" style="float: left; padding-right: 5px;" >
 **diagrams.aws.database.RDSOnVmware**
+
+<img width="30" src="/img/resources/aws/database/rds-optimized-writes.png" alt="RDSOptimizedWrites" style="float: left; padding-right: 5px;" >
+**diagrams.aws.database.RDSOptimizedWrites**
 
 <img width="30" src="/img/resources/aws/database/rds-oracle-instance.png" alt="RDSOracleInstance" style="float: left; padding-right: 5px;" >
 **diagrams.aws.database.RDSOracleInstance**
@@ -374,8 +464,17 @@ Node classes list of the aws provider.
 <img width="30" src="/img/resources/aws/database/rds-postgresql-instance.png" alt="RDSPostgresqlInstance" style="float: left; padding-right: 5px;" >
 **diagrams.aws.database.RDSPostgresqlInstance**
 
+<img width="30" src="/img/resources/aws/database/rds-proxy-instance-alternate.png" alt="RDSProxyInstanceAlternate" style="float: left; padding-right: 5px;" >
+**diagrams.aws.database.RDSProxyInstanceAlternate**
+
+<img width="30" src="/img/resources/aws/database/rds-proxy-instance.png" alt="RDSProxyInstance" style="float: left; padding-right: 5px;" >
+**diagrams.aws.database.RDSProxyInstance**, **RDSProxy** (alias)
+
 <img width="30" src="/img/resources/aws/database/rds-sql-server-instance.png" alt="RDSSqlServerInstance" style="float: left; padding-right: 5px;" >
 **diagrams.aws.database.RDSSqlServerInstance**
+
+<img width="30" src="/img/resources/aws/database/rds-trusted-language-extensions-for-postgresql.png" alt="RDSTrustedLanguageExtensionsForPostgresql" style="float: left; padding-right: 5px;" >
+**diagrams.aws.database.RDSTrustedLanguageExtensionsForPostgresql**
 
 <img width="30" src="/img/resources/aws/database/rds.png" alt="RDS" style="float: left; padding-right: 5px;" >
 **diagrams.aws.database.RDS**
