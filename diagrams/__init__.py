@@ -134,6 +134,7 @@ class Diagram:
         self,
         name: str = "",
         filename: str = "",
+        directory: Union[str, os.PathLike] = "",
         direction: str = "LR",
         curvestyle: str = "spline",
         outformat: Union[str, list[str]] = "png",
@@ -180,7 +181,10 @@ class Diagram:
         elif not filename:
             filename = "_".join(self.name.split()).lower()
         self.filename = filename
-        self.dot = Digraph(self.name, filename=self.filename, strict=strict)
+        self.directory = directory
+        self.dot = Digraph(
+            self.name, filename=self.filename, directory=directory, strict=strict
+        )
 
         # Set attributes.
         for k, v in self._default_graph_attrs.items():
@@ -230,7 +234,8 @@ class Diagram:
     def __exit__(self, exc_type, exc_value, traceback):
         self.render()
         # Remove the graphviz file leaving only the image.
-        os.remove(self.filename)
+        path = os.path.join(self.directory, self.filename)
+        os.remove(path)
         setdiagram(None)
 
     def _repr_png_(self):
