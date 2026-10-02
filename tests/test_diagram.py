@@ -1,7 +1,10 @@
 import os
 import pathlib
 import shutil
+import tempfile
 import unittest
+
+from graphviz import CalledProcessError
 
 from diagrams import Cluster, Diagram, Edge, Node, getcluster, getdiagram, setcluster, setdiagram
 
@@ -73,6 +76,15 @@ class DiagramTest(unittest.TestCase):
         # Node must be belong to a diagrams.
         with self.assertRaises(EnvironmentError):
             Node("node")
+
+    def test_render_error_clears_global_context(self):
+        with tempfile.TemporaryDirectory() as directory:
+            with self.assertRaises(CalledProcessError):
+                with Diagram(filename=os.path.join(directory, "broken"), show=False):
+                    Node("<<invalid>>")
+            self.assertIsNone(getdiagram())
+            with self.assertRaises(EnvironmentError):
+                Node("outside diagram")
 
     def test_node_to_node(self):
         with Diagram(name=os.path.join(self.name, "node_to_node"), show=False):
