@@ -16,7 +16,7 @@ from diagrams import Cluster, Diagram, Edge
 from diagrams.onprem.analytics import Spark
 from diagrams.onprem.compute import Server
 from diagrams.onprem.database import PostgreSQL
-from diagrams.onprem.inmemory import Redis
+from diagrams.onprem.inmemory import Valkey
 from diagrams.onprem.aggregator import Fluentd
 from diagrams.onprem.monitoring import Grafana, Prometheus
 from diagrams.onprem.network import Nginx
@@ -35,10 +35,10 @@ with Diagram(name="Advanced Web Service with On-Premises (colored)", show=False)
             Server("grpc3")]
 
     with Cluster("Sessions HA"):
-        primary = Redis("session")
+        primary = Valkey("session")
         primary \
             - Edge(color="brown", style="dashed") \
-            - Redis("replica") \
+            - Valkey("replica") \
             << Edge(label="collect") \
             << metrics
         grpcsvc >> Edge(color="brown") >> primary
@@ -80,7 +80,7 @@ from diagrams import Cluster, Diagram, Node
 from diagrams.onprem.analytics import Spark
 from diagrams.onprem.compute import Server
 from diagrams.onprem.database import PostgreSQL
-from diagrams.onprem.inmemory import Redis
+from diagrams.onprem.inmemory import Valkey
 from diagrams.onprem.aggregator import Fluentd
 from diagrams.onprem.monitoring import Grafana, Prometheus
 from diagrams.onprem.network import Nginx
@@ -109,8 +109,8 @@ with Diagram("\nAdvanced Web Service with On-Premise Less edges", show=False) as
             blankHA >> db
 
         with Cluster("Sessions HA"):
-            sess = Redis("session")
-            sess - Redis("replica") << metrics
+            sess = Valkey("session")
+            sess - Valkey("replica") << metrics
             blankHA >> sess
 
     ingress >> serv2 >> blankHA
@@ -143,7 +143,7 @@ from diagrams import Cluster, Diagram, Edge, Node
 from diagrams.onprem.analytics import Spark
 from diagrams.onprem.compute import Server
 from diagrams.onprem.database import PostgreSQL
-from diagrams.onprem.inmemory import Redis
+from diagrams.onprem.inmemory import Valkey
 from diagrams.onprem.aggregator import Fluentd
 from diagrams.onprem.monitoring import Grafana, Prometheus
 from diagrams.onprem.network import Nginx
@@ -176,8 +176,8 @@ with Diagram("\n\nAdvanced Web Service with On-Premise Merged edges", show=False
     blank = Node("", shape="plaintext", height="0.0", width="0.0")
 
     with Cluster("Sessions HA"):
-        sess = Redis("session")
-        sess - Redis("replica") << metrics
+        sess = Valkey("session")
+        sess - Valkey("replica") << metrics
 
     with Cluster("Database HA"):
         db = PostgreSQL("users")
