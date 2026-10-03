@@ -151,6 +151,9 @@ class Diagram:
             filename isn't given.
         :param filename: The output filename, without the extension (.png).
             If not given, it will be generated from the name.
+            If the environment variable DIAGRAMS_FILENAME_SUFFIX is set, its
+            value is appended to the filename (e.g. suffix ".generated"
+            turns "diagrams_image" into "diagrams_image.generated").
         :param direction: Data flow direction. Default is 'left to right'.
         :param curvestyle: Edge routing style. One of "ortho", "curved", "spline", or "polyline".
         :param outformat: Output file format. Default is 'png'.
@@ -179,6 +182,9 @@ class Diagram:
             filename = "diagrams_image"
         elif not filename:
             filename = "_".join(self.name.split()).lower()
+        filename_suffix = os.environ.get("DIAGRAMS_FILENAME_SUFFIX", "")
+        if filename_suffix:
+            filename = f"{filename}{filename_suffix}"
         self.filename = filename
         self.dot = Digraph(self.name, filename=self.filename, strict=strict)
 
