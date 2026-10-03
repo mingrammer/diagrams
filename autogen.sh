@@ -27,8 +27,8 @@ if ! [ -x "$(command -v round)" ]; then
   exit 1
 fi
 
-if ! [ -x "$(command -v inkscape)" ]; then
-  echo 'inkscape is not installed'
+if ! [ -x "$(command -v rsvg-convert)" ]; then
+  echo 'rsvg-convert is not installed (it ships with librsvg)'
   exit 1
 fi
 
@@ -46,7 +46,7 @@ fi
 for pvd in "${providers[@]}"; do
   # convert the svg to png for azure provider
   if [ "$pvd" = "onprem" ] || [ "$pvd" = "azure" ]; then
-    echo "converting the svg to png using inkscape for provider '$pvd'"
+    echo "converting the svg to png using rsvg-convert for provider '$pvd'"
     python -m scripts.resource svg2png "$pvd"
   fi
   if [ "$pvd" == "oci" ] || [ "$pvd" = "ibm" ]; then

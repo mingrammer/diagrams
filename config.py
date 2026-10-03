@@ -38,8 +38,10 @@ PROVIDERS = (
 
 CMD_ROUND = "round"
 CMD_ROUND_OPTS = ("-w",)
-CMD_SVG2PNG = "inkscape"
-CMD_SVG2PNG_OPTS = ("-w", "256", "-h", "256", "--export-type", "png")
+# Both -w and -h are given without --keep-aspect-ratio, so every icon comes out
+# exactly 256x256 no matter what the source SVG declares.
+CMD_SVG2PNG = "rsvg-convert"
+CMD_SVG2PNG_OPTS = ("-w", "256", "-h", "256")
 CMD_SVG2PNG_IM = "convert"
 CMD_SVG2PNG_IM_OPTS = ("-shave", "25%x25%", "-resize", "256x256!")
 
