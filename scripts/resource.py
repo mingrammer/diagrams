@@ -141,6 +141,10 @@ def cleaner_gis(f):
     return f.lower()
 
 
+def cleaner_sap(f):
+    return f.lower()
+
+
 cleaners = {
     "onprem": cleaner_onprem,
     "aws": cleaner_aws,
@@ -159,6 +163,7 @@ cleaners = {
     "generic": cleaner_generic,
     "openstack": cleaner_openstack,
     "gis": cleaner_gis,
+    "sap": cleaner_sap,
 }
 
 
