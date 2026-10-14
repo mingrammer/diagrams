@@ -1553,6 +1553,9 @@ Node classes list of the aws provider.
 <img width="30" src="/img/resources/aws/storage/s3-access-points.png" alt="S3AccessPoints" style="float: left; padding-right: 5px;" >
 **diagrams.aws.storage.S3AccessPoints**
 
+<img width="30" src="/img/resources/aws/storage/s3-files.png" alt="S3Files" style="float: left; padding-right: 5px;" >
+**diagrams.aws.storage.S3Files**
+
 <img width="30" src="/img/resources/aws/storage/s3-glacier-archive.png" alt="S3GlacierArchive" style="float: left; padding-right: 5px;" >
 **diagrams.aws.storage.S3GlacierArchive**
 
