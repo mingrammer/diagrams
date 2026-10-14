@@ -140,6 +140,8 @@ def cleaner_openstack(f):
 def cleaner_gis(f):
     return f.lower()
 
+def cleaner_scaleway(f):
+    return f.lower()
 
 cleaners = {
     "onprem": cleaner_onprem,
@@ -159,6 +161,7 @@ cleaners = {
     "generic": cleaner_generic,
     "openstack": cleaner_openstack,
     "gis": cleaner_gis,
+    "scaleway": cleaner_scaleway,
 }
 
 
