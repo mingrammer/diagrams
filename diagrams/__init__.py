@@ -490,9 +490,9 @@ class Node:
         :return: Connected node.
         """
         if not isinstance(node, Node):
-            ValueError(f"{node} is not a valid Node")
+            raise ValueError(f"{node} is not a valid Node")
         if not isinstance(edge, Edge):
-            ValueError(f"{edge} is not a valid Edge")
+            raise ValueError(f"{edge} is not a valid Edge")
         # An edge must be added on the global diagrams, not a cluster.
         self._diagram.connect(self, node, edge)
         return node
