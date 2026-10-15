@@ -1,0 +1,8 @@
+digraph "diagram-bbc0d60" {
+	graph [fontcolor="#2D3436" fontname="Sans-Serif" fontsize=15 label="diagram-bbc0d60" nodesep=0.70 pad=2.0 rankdir=LR ranksep=0.90 splines=spline]
+	node [fixedsize=true fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13 height=1.4 imagepos=tc imagescale=true labelloc=b shape=box style=rounded width=1.4]
+	edge [arrowsize=0.8 color="#495057"]
+	"222c43da7c214ee682504f8b4d200a4c" [label=<<font point-size="12"><b>person</b></font><br/><font point-size="9">[Person]<br/></font><br/><font point-size="10">A person.<br/><br/></font>> fillcolor=dodgerblue4 fixedsize=true fontcolor=white height=1.6 labelloc=c shape=rect style="rounded,filled" width=2.6]
+	"9a9be51209cf49c1b4a9733b8d73ed12" [label=<<font point-size="12"><b>container</b></font><br/><font point-size="9">[Container: Java application]<br/></font><br/><font point-size="10">The application.<br/><br/></font>> fillcolor=dodgerblue3 fixedsize=true fontcolor=white height=1.6 labelloc=c shape=rect style=filled width=2.6]
+	"671efd01cb324573a3e3345a41d16228" [label=<<font point-size="12"><b>database</b></font><br/><font point-size="9">[Database: Oracle database]<br/></font><br/><font point-size="10">Stores information.<br/><br/></font>> fillcolor=dodgerblue3 fixedsize=true fontcolor=white height=1.6 labelloc=b shape=cylinder style=filled width=2.6]
+}

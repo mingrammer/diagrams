@@ -7,6 +7,7 @@ There are 2 commands available.
 """
 
 import os
+import re
 import subprocess
 import sys
 
@@ -40,6 +41,8 @@ def cleaner_azure(f):
     f = f.replace("_", "-")
     f = f.replace("(", "").replace(")", "")
     f = "-".join(f.split())
+    # The official icon pack numbers every file, e.g. 10021-icon-service-Batch-Accounts.
+    f = re.sub(r"^\d+-icon-service-", "", f, flags=re.IGNORECASE)
     for p in cfg.FILE_PREFIXES["azure"]:
         if f.startswith(p):
             f = f[len(p):]
@@ -190,12 +193,14 @@ def round_png(pvd: str) -> None:
 
 
 def svg2png(pvd: str) -> None:
-    """Convert the svg into png"""
+    """Convert the svg into png using rsvg-convert"""
 
     def _convert(base: str, path: str):
-        path = os.path.join(base, path)
-        subprocess.run([cfg.CMD_SVG2PNG, *cfg.CMD_SVG2PNG_OPTS, path])
-        subprocess.run(["rm", path])
+        path_src = os.path.join(base, path)
+        path_dest = path_src.replace(".svg", ".png")
+        # rsvg-convert writes the png to stdout unless it's given an output path.
+        subprocess.run([cfg.CMD_SVG2PNG, *cfg.CMD_SVG2PNG_OPTS, "-o", path_dest, path_src])
+        subprocess.run(["rm", path_src])
 
     for root, _, files in os.walk(resource_dir(pvd)):
         svgs = filter(lambda f: f.endswith(".svg"), files)

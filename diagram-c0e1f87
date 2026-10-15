@@ -1,0 +1,7 @@
+digraph "diagram-c0e1f87" {
+	graph [fontcolor="#2D3436" fontname="Sans-Serif" fontsize=15 label="diagram-c0e1f87" nodesep=0.70 pad=2.0 rankdir=LR ranksep=0.90 splines=spline]
+	node [fixedsize=true fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13 height=1.4 imagepos=tc imagescale=true labelloc=b shape=box style=rounded width=1.4]
+	edge [arrowsize=0.8 color="#495057"]
+	"65692efd972d4878a3ece16f8c0c2821" [label=<<font point-size="12"><b>system</b></font><br/><font point-size="9">[System]<br/></font><br/><font point-size="10">The internal system.<br/><br/></font>> fillcolor=dodgerblue4 fixedsize=true fontcolor=white height=1.6 labelloc=c shape=rect style=filled width=2.6]
+	"616f387771ae4dac9c707fcacb7f6810" [label=<<font point-size="12"><b>unknown</b></font><br/><font point-size="9">[System]<br/></font>> fillcolor=dodgerblue4 fixedsize=true fontcolor=white height=1 labelloc=c shape=rect style=filled width=2]
+}

@@ -3,7 +3,7 @@ FROM python:3-alpine
 
 # install system dependencies.
 RUN apk update && apk add --no-cache \
-  gcc libc-dev g++ graphviz git bash go imagemagick inkscape ttf-opensans curl fontconfig xdg-utils \
+  gcc libc-dev g++ graphviz git bash go imagemagick rsvg-convert ttf-opensans curl fontconfig xdg-utils \
   nodejs npm
 
 # install go package.

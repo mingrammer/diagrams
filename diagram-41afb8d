@@ -1,0 +1,9 @@
+digraph "diagram-41afb8d" {
+	graph [fontcolor="#2D3436" fontname="Sans-Serif" fontsize=15 label="diagram-41afb8d" nodesep=0.70 pad=2.0 rankdir=LR ranksep=0.90 splines=spline]
+	node [fixedsize=true fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13 height=1.4 imagepos=tc imagescale=true labelloc=b shape=box style=rounded width=1.4]
+	edge [arrowsize=0.8 color="#495057"]
+	"3c58e1471ef6411ebaf38d367a8d259f" [label=<<font point-size="12"><b>container1</b></font><br/><font point-size="9">[Container]<br/></font>> fillcolor=dodgerblue3 fixedsize=true fontcolor=white height=1 labelloc=c shape=rect style=filled width=2]
+	"2cefb5aa2e8149bea9c8c4dc7994d46b" [label=<<font point-size="12"><b>container2</b></font><br/><font point-size="9">[Container]<br/></font>> fillcolor=dodgerblue3 fixedsize=true fontcolor=white height=1 labelloc=c shape=rect style=filled width=2]
+	"3c58e1471ef6411ebaf38d367a8d259f" -> "2cefb5aa2e8149bea9c8c4dc7994d46b" [label=<<font point-size="10">depends on</font>> color=gray60 dir=forward fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13 style=dashed]
+	"3c58e1471ef6411ebaf38d367a8d259f" -> "2cefb5aa2e8149bea9c8c4dc7994d46b" [label=<<font point-size="10">is depended on by</font>> color=gray60 dir=back fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13 style=dashed]
+}
