@@ -29,7 +29,8 @@ PROVIDERS = (
     "generic",
     "openstack",
     "outscale",
-    "gis"
+    "gis",
+    "huaweicloud",
 )
 
 #########################
@@ -61,6 +62,7 @@ FILE_PREFIXES = {
     "generic": (),
     "openstack": (),
     "gis": (),
+    "huaweicloud": (),
 }
 
 #########################
@@ -92,6 +94,7 @@ UPPER_WORDS = {
     "pve": ("pve",),
     "ibm": ("ibm",),
     "gis": ("gis","ban","ign","ogc","qgis","wfs","wms"),
+    "huaweicloud": ('ais', 'cdm', 'cs', 'dgc', 'dli', 'dws', 'ges', 'mls', 'mrs', 'nlp', 'cae', 'cse', 'dms', 'ecpc', 'smn', 'bcs', 'im', 'msgsms', 'aos', 'cce', 'cci', 'swr', 'ugo', 'cdn', 'iec', 'ief', 'ies', 'wsa', 'gsl', 'cas', 'ccs', 'ces', 'crs', 'cts', 'hcus', 'iam', 'icms', 'rts', 'tms', 'aad', 'aag', 'ars', 'dbss', 'hids', 'hss', 'hvd', 'hwaf', 'kms', 'pts', 'sas', 'sca', 'scs', 'ssa', 'waf', 'wtp', 'cdn', 'csbs', 'des', 'dess', 'dss', 'evs', 'obs', 'sfs', 'vbs', 'live', 'mpc', 'rtc', 'vis', 'vod'),
 }
 
 TITLE_WORDS = {
@@ -112,6 +115,9 @@ TITLE_WORDS = {
     },
     "ibm": {
         "ibm": "IBMCloud"
+    },
+    "huaweicloud": {
+        "huaweicloud": "HuaweiCloud"
     },
 }
 
@@ -489,5 +495,70 @@ ALIASES = {
             "Kolla": "KollaAnsible",
             "Tripleo": "TripleO",
         }
+    },
+    "huaweicloud": {
+        "compute": {
+            "AutoScaling": "AS",
+            "BareMetalServer": "BMS",
+            "CloudContainerEngine": "CCE",
+            "DedicatedHost": "DeH",
+            "DedicatedCloud": "DeC",
+            "ElasticComputeService": "ECS",
+            "ImageService": "IMS",
+        },
+        "database": {
+            "DataAdminService": "DAS",
+            "RelationalDatabaseService": "RDS",
+            "DataReplicationService": "DRS",
+            "DistributedDatabaseMiddleware": "DDM",
+        },
+        "network": {
+            "ElasticLoadBalance": "ELB",
+            "VirtualPrivateCloud": "VPC",
+            "DomainNameService": "DNS",
+            "DirectConnect": "DC",
+            "NatGateway": "NAT",
+            "ElasticIp": "EIP",
+            "VirtualPrivateNetwork": "VPN",
+        },
+        "security": {
+        },
+        "storage": {
+            "OBS": "ObjectStorageService",
+            "CDN": "ContentDeliveryNetwork",
+            "EVS": "ElasticVolumeService",
+            "SFS": "StorageFileSystem",
+            "CSBS": "CloudServerBackupService",
+            "DES": "DataExpressService",
+            "DESS": "DedicatedEnterpriseStorageService",
+            "VBS": "VolumeBackupService",
+            "DSS": "DedicatedStorageService",
+        },
+        "container": {
+            "AOS": "ApplicationOrchestrationService",
+            "CCE": "CloudContainerEngine",
+            "CCI": "CloudContainerInstance",
+            "SWR": "SoftwareRepository",
+        },
+        "ai_analytics": {
+            "ModelArts": "MA",
+            "MRS": "MapReduceService",
+            "AIS": "ArtificialIntelligenceService",
+            "CS": "CloudStreamingService",
+            "DLI": "DataLakeInsight",
+            "CDM": "CloudDataMigrationService",
+            "NLP": "NaturalLanguageProcessingService",
+            "MLS": "MachineLearningService",
+            "DWS": "DataWarehouseService",
+        },
+        "blockchain": {
+            "BCS": "BlockChainService"
+        },
+        "edge": {
+            "IEF": "IntelligentEdgeFabric",
+            "IES": "IntelligentEdgeSite",
+            "WSA": "WholeSiteAcceleration",
+            "IEC": "IntelligentEdgeCloud",
+        },
     },
 }
