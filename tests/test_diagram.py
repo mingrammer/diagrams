@@ -43,6 +43,11 @@ class DiagramTest(unittest.TestCase):
             with self.assertRaises(ValueError):
                 Diagram(curvestyle=cvs)
 
+    def test_case_insensitive_graph_attributes(self):
+        diagram = Diagram(direction="lr", curvestyle="CURVED")
+        self.assertEqual(diagram.dot.graph_attr["rankdir"], "LR")
+        self.assertEqual(diagram.dot.graph_attr["splines"], "curved")
+
     def test_validate_theme(self):
         # Valid themes.
         for theme in ("neutral", "pastel", "blues", "greens", "orange"):
