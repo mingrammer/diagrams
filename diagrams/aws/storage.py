@@ -64,6 +64,10 @@ class S3AccessPoints(_Storage):
     _icon = "s3-access-points.png"
 
 
+class S3Files(_Storage):
+    _icon = "s3-files.png"
+
+
 class S3GlacierArchive(_Storage):
     _icon = "s3-glacier-archive.png"
 
