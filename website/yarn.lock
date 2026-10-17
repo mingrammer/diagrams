@@ -3629,8 +3629,8 @@ jpegtran-bin@^4.0.0:
   resolved "https://registry.npmjs.org/js-tokens/-/js-tokens-4.0.0.tgz"
 
 js-yaml@^3.13.1, js-yaml@^3.8.1:
-  version "3.14.1"
-  resolved "https://registry.npmjs.org/js-yaml/-/js-yaml-3.14.1.tgz"
+  version "3.15.2"
+  resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.15.2.tgz#3f83823ac6be17f570f23b2ecdef3777ff5ea364"
   dependencies:
     argparse "^1.0.7"
     esprima "^4.0.0"
