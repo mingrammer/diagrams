@@ -390,11 +390,20 @@ class Node:
         # that label being spanned between icon image and white space.
         # Increase the height by the number of new lines included in the label.
         padding = 0.4 * (self.label.count('\n'))
-        self._attrs = {
-            "shape": "none",
-            "height": str(self._height + padding),
-            "image": self._load_icon(),
-        } if self._icon else {}
+        if self._icon:
+            icon = self._load_icon()
+            # A portrait icon (taller than wide) is scaled to the node width, so
+            # it grows taller than the square area reserved for icons and covers
+            # the label. Add the extra icon height back to keep the label clear.
+            width = attrs.get("width", self._diagram.dot.node_attr.get("width"))
+            padding += self._portrait_icon_padding(icon, width)
+            self._attrs = {
+                "shape": "none",
+                "height": str(self._height + padding),
+                "image": icon,
+            }
+        else:
+            self._attrs = {}
 
         # fmt: on
         self._attrs.update(attrs)
@@ -504,6 +513,29 @@ class Node:
     def _load_icon(self):
         basedir = Path(os.path.abspath(os.path.dirname(__file__)))
         return os.path.join(basedir.parent, self._icon_dir, self._icon)
+
+    @staticmethod
+    def _portrait_icon_padding(icon_path, node_width) -> float:
+        """Return the extra node height needed by a portrait PNG icon.
+
+        Icons are drawn in a square area as wide as the node; a taller icon
+        overflows it by ``node_width * (height / width - 1)``. Square, landscape,
+        non-PNG or unreadable icons need no extra height.
+        """
+        try:
+            node_width = float(node_width)
+            with open(icon_path, "rb") as f:
+                header = f.read(24)
+        except (OSError, TypeError, ValueError):
+            return 0.0
+        # PNG signature followed by the IHDR chunk, which starts with width and height.
+        if len(header) < 24 or header[:8] != b"\x89PNG\r\n\x1a\n" or header[12:16] != b"IHDR":
+            return 0.0
+        width = int.from_bytes(header[16:20], "big")
+        height = int.from_bytes(header[20:24], "big")
+        if width <= 0 or height <= width:
+            return 0.0
+        return round(node_width * (height / width - 1), 2)
 
 
 class Edge:
