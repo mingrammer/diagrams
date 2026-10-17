@@ -135,6 +135,44 @@ class DiagramTest(unittest.TestCase):
         os.remove(self.name + ".dot")
 
 
+class NodeHeightTest(unittest.TestCase):
+    def setUp(self):
+        setdiagram(Diagram(show=False))
+
+    def tearDown(self):
+        setdiagram(None)
+        setcluster(None)
+
+    def test_square_icon_height_unchanged(self):
+        from diagrams.aws.compute import EC2
+
+        self.assertEqual(EC2("label")._attrs["height"], "1.9")
+        self.assertEqual(EC2("two\nlines")._attrs["height"], "2.3")
+
+    def test_portrait_icon_gets_extra_height(self):
+        # raspbian.png is 204x256, so at 1.4in wide it is about 0.36in taller than the icon area.
+        from diagrams.generic.os import Raspbian
+
+        self.assertEqual(Raspbian("label")._attrs["height"], "2.26")
+        self.assertEqual(Raspbian("two\nlines")._attrs["height"], "2.66")
+
+    def test_portrait_icon_padding_follows_node_width(self):
+        from diagrams.generic.os import Raspbian
+
+        self.assertEqual(Raspbian("label", width="1")._attrs["height"], "2.15")
+
+    def test_explicit_height_is_kept(self):
+        from diagrams.generic.os import Raspbian
+
+        self.assertEqual(Raspbian("label", height="3")._attrs["height"], "3")
+
+    def test_unreadable_icon_height_unchanged(self):
+        from diagrams.custom import Custom
+
+        node = Custom("label", "does-not-exist.png")
+        self.assertEqual(node._attrs["height"], "1.9")
+
+
 class ClusterTest(unittest.TestCase):
     def setUp(self):
         self.name = "cluster_test"
