@@ -1502,8 +1502,26 @@ Node classes list of the aws provider.
 <img width="30" src="/img/resources/aws/security/verified-permissions.png" alt="VerifiedPermissions" style="float: left; padding-right: 5px;" >
 **diagrams.aws.security.VerifiedPermissions**
 
+<img width="30" src="/img/resources/aws/security/waf-bad-bot.png" alt="WAFBadBot" style="float: left; padding-right: 5px;" >
+**diagrams.aws.security.WAFBadBot**
+
+<img width="30" src="/img/resources/aws/security/waf-bot-control.png" alt="WAFBotControl" style="float: left; padding-right: 5px;" >
+**diagrams.aws.security.WAFBotControl**
+
+<img width="30" src="/img/resources/aws/security/waf-bot.png" alt="WAFBot" style="float: left; padding-right: 5px;" >
+**diagrams.aws.security.WAFBot**
+
 <img width="30" src="/img/resources/aws/security/waf-filtering-rule.png" alt="WAFFilteringRule" style="float: left; padding-right: 5px;" >
 **diagrams.aws.security.WAFFilteringRule**
+
+<img width="30" src="/img/resources/aws/security/waf-labels.png" alt="WAFLabels" style="float: left; padding-right: 5px;" >
+**diagrams.aws.security.WAFLabels**
+
+<img width="30" src="/img/resources/aws/security/waf-managed-rule.png" alt="WAFManagedRule" style="float: left; padding-right: 5px;" >
+**diagrams.aws.security.WAFManagedRule**
+
+<img width="30" src="/img/resources/aws/security/waf-rule.png" alt="WAFRule" style="float: left; padding-right: 5px;" >
+**diagrams.aws.security.WAFRule**
 
 <img width="30" src="/img/resources/aws/security/waf.png" alt="WAF" style="float: left; padding-right: 5px;" >
 **diagrams.aws.security.WAF**
