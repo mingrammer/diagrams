@@ -164,8 +164,32 @@ class VerifiedPermissions(_Security):
     _icon = "verified-permissions.png"
 
 
+class WAFBadBot(_Security):
+    _icon = "waf-bad-bot.png"
+
+
+class WAFBotControl(_Security):
+    _icon = "waf-bot-control.png"
+
+
+class WAFBot(_Security):
+    _icon = "waf-bot.png"
+
+
 class WAFFilteringRule(_Security):
     _icon = "waf-filtering-rule.png"
+
+
+class WAFLabels(_Security):
+    _icon = "waf-labels.png"
+
+
+class WAFManagedRule(_Security):
+    _icon = "waf-managed-rule.png"
+
+
+class WAFRule(_Security):
+    _icon = "waf-rule.png"
 
 
 class WAF(_Security):
