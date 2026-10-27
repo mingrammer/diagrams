@@ -21,7 +21,7 @@
     "@lezer/highlight": "^1.2.3",
     "@hpcc-js/wasm-graphviz": "^1.7.0",
     "codemirror": "^6.0.1",
-    "dompurify": "^3.1.6",
+    "dompurify": "^3.4.17",
     "pako": "^2.1.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
