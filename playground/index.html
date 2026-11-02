@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diagrams Playground — Online Python Diagram Editor</title>
+    <meta
+      name="description"
+      content="Run the Python diagrams library online. Write Diagram as Code in your browser and render AWS, Azure, GCP and Kubernetes architecture diagrams — no install required."
+    />
+    <link rel="canonical" href="https://diagrams.mingrammer.com/playground/" />
+    <!-- Search Console ownership, in case /playground/ is registered as its
+         own URL-prefix property (the site root gets the same tag at deploy). -->
+    <meta name="google-site-verification" content="p1XvVxyPOUJ6LYX5rAqSAM27tW2AFMaacg1BTr8mfR4" />
+    <!-- Real diagrams project logo; relative href survives sub-path deploys. -->
+    <link rel="icon" type="image/png" href="diagrams-logo.png" />
+
+    <!-- Social cards. These need absolute URLs, and the crawlers that read
+         them never execute JavaScript — which is also why #root ships with
+         static fallback content below. -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Diagrams" />
+    <meta property="og:url" content="https://diagrams.mingrammer.com/playground/" />
+    <meta property="og:title" content="Diagrams Playground — Online Python Diagram Editor" />
+    <meta
+      property="og:description"
+      content="Write Diagram as Code in your browser and render AWS, Azure, GCP and Kubernetes architecture diagrams instantly — no install required."
+    />
+    <meta property="og:image" content="https://diagrams.mingrammer.com/playground/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="The Diagrams Playground: Python code on the left, a rendered cloud architecture diagram on the right."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Diagrams Playground — Online Python Diagram Editor" />
+    <meta
+      name="twitter:description"
+      content="Write Diagram as Code in your browser and render AWS, Azure, GCP and Kubernetes architecture diagrams instantly — no install required."
+    />
+    <meta name="twitter:image" content="https://diagrams.mingrammer.com/playground/og-image.png" />
+
+    <!-- Tells search engines this page is the tool itself, not an article
+         about it. Everything here is factual: it is free and runs entirely
+         in the browser. -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Diagrams Playground",
+        "alternateName": "Python Diagrams Online Editor",
+        "url": "https://diagrams.mingrammer.com/playground/",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Any (runs in a web browser)",
+        "browserRequirements": "Requires JavaScript and WebAssembly",
+        "description": "An online editor for the Python diagrams library. Write Diagram as Code in the browser and render AWS, Azure, GCP and Kubernetes architecture diagrams without installing anything.",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "license": "https://github.com/mingrammer/diagrams/blob/master/LICENSE",
+        "isPartOf": { "@type": "WebSite", "name": "Diagrams", "url": "https://diagrams.mingrammer.com/" }
+      }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Analytics (GA4) — same property as the docs site, so the
+         playground shows up alongside diagrams.mingrammer.com traffic. -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y1TWCZ0L77"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-Y1TWCZ0L77");
+    </script>
+    <script type="module" crossorigin src="./assets/index-XdDheAPU.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CpDlVvr4.css">
+  </head>
+  <body>
+    <!-- React replaces this subtree on mount (createRoot clears the
+         container). Until then it gives crawlers and social-card bots real
+         content to read, and gives visitors something better than a blank
+         page while the bundle loads. Styles are inline so it renders even
+         before the CSS bundle arrives. -->
+    <div id="root">
+      <main
+        style="
+          max-width: 40rem;
+          margin: 0 auto;
+          padding: 4rem 1.5rem;
+          font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+          color: #111827;
+          line-height: 1.6;
+        "
+      >
+        <h1 style="font-size: 1.6rem; margin: 0 0 1rem">Diagrams Playground</h1>
+        <p style="margin: 0 0 1rem">
+          Write <strong>diagrams</strong> code in Python and see the rendered cloud architecture diagram
+          instantly — right in your browser, with nothing to install.
+        </p>
+        <p style="margin: 0 0 1rem; color: #6b7280">
+          Loading the playground…
+        </p>
+        <noscript>
+          <p style="margin: 0 0 1rem; color: #b91c1c">
+            JavaScript is required to run the playground.
+          </p>
+        </noscript>
+        <p style="margin: 0; color: #6b7280">
+          <a href="https://diagrams.mingrammer.com/">Documentation</a>
+          ·
+          <a href="https://github.com/mingrammer/diagrams">GitHub</a>
+        </p>
+      </main>
+    </div>
+  </body>
+</html>
