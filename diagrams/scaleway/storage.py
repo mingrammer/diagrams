@@ -2,6 +2,7 @@
 
 from . import _Scaleway
 
+
 class _Storage(_Scaleway):
     _type = "storage"
     _icon_dir = "resources/scaleway/storage"
@@ -9,12 +10,20 @@ class _Storage(_Scaleway):
 
 class BlockStorage(_Storage):
     _icon = "block-storage.png"
+
+
 class ColdStorage(_Storage):
     _icon = "cold-storage.png"
+
+
 class FileStorage(_Storage):
     _icon = "file-storage.png"
+
+
 class LifecycleRules(_Storage):
     _icon = "lifecycle-rules.png"
+
+
 class ObjectStorage(_Storage):
     _icon = "object-storage.png"
 

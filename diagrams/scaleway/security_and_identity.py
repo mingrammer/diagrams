@@ -2,6 +2,7 @@
 
 from . import _Scaleway
 
+
 class _Security_And_Identity(_Scaleway):
     _type = "security_and_identity"
     _icon_dir = "resources/scaleway/security_and_identity"
@@ -9,20 +10,36 @@ class _Security_And_Identity(_Scaleway):
 
 class ApiKey(_Security_And_Identity):
     _icon = "api-key.png"
+
+
 class Application(_Security_And_Identity):
     _icon = "application.png"
+
+
 class AuditTrail(_Security_And_Identity):
     _icon = "audit-trail.png"
+
+
 class Iam(_Security_And_Identity):
     _icon = "iam.png"
+
+
 class KeyManager(_Security_And_Identity):
     _icon = "key-manager.png"
+
+
 class MultiUsers(_Security_And_Identity):
     _icon = "multi-users.png"
+
+
 class Policy(_Security_And_Identity):
     _icon = "policy.png"
+
+
 class SecretManager(_Security_And_Identity):
     _icon = "secret-manager.png"
+
+
 class User(_Security_And_Identity):
     _icon = "user.png"
 

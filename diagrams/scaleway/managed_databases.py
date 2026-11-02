@@ -2,6 +2,7 @@
 
 from . import _Scaleway
 
+
 class _Managed_Databases(_Scaleway):
     _type = "managed_databases"
     _icon_dir = "resources/scaleway/managed_databases"
@@ -9,14 +10,24 @@ class _Managed_Databases(_Scaleway):
 
 class DataWarehouse(_Managed_Databases):
     _icon = "data-warehouse.png"
+
+
 class DatabaseForRedis(_Managed_Databases):
     _icon = "database-for-redis.png"
+
+
 class ManagedDatabase(_Managed_Databases):
     _icon = "managed-database.png"
+
+
 class ManagedMongodb(_Managed_Databases):
     _icon = "managed-mongodb.png"
+
+
 class ManagedSearchDatabase(_Managed_Databases):
     _icon = "managed-search-database.png"
+
+
 class PostgresqlMysqlDatabase(_Managed_Databases):
     _icon = "postgresql-mysql-database.png"
 

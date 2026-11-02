@@ -2,6 +2,7 @@
 
 from . import _Scaleway
 
+
 class _Environmental_Footprint(_Scaleway):
     _type = "environmental_footprint"
     _icon_dir = "resources/scaleway/environmental_footprint"

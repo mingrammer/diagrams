@@ -2,6 +2,7 @@
 
 from . import _Scaleway
 
+
 class _Dev_And_Automation_Tools(_Scaleway):
     _type = "dev_and_automation_tools"
     _icon_dir = "resources/scaleway/dev_and_automation_tools"
@@ -9,14 +10,24 @@ class _Dev_And_Automation_Tools(_Scaleway):
 
 class Ansible(_Dev_And_Automation_Tools):
     _icon = "ansible.png"
+
+
 class Packer(_Dev_And_Automation_Tools):
     _icon = "packer.png"
+
+
 class SdkGo(_Dev_And_Automation_Tools):
     _icon = "sdk-go.png"
+
+
 class SdkJs(_Dev_And_Automation_Tools):
     _icon = "sdk-js.png"
+
+
 class SdkPython(_Dev_And_Automation_Tools):
     _icon = "sdk-python.png"
+
+
 class Sdk(_Dev_And_Automation_Tools):
     _icon = "sdk.png"
 

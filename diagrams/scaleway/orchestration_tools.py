@@ -2,6 +2,7 @@
 
 from . import _Scaleway
 
+
 class _Orchestration_Tools(_Scaleway):
     _type = "orchestration_tools"
     _icon_dir = "resources/scaleway/orchestration_tools"
@@ -9,12 +10,20 @@ class _Orchestration_Tools(_Scaleway):
 
 class Api(_Orchestration_Tools):
     _icon = "api.png"
+
+
 class Cli(_Orchestration_Tools):
     _icon = "cli.png"
+
+
 class Console(_Orchestration_Tools):
     _icon = "console.png"
+
+
 class Terraform(_Orchestration_Tools):
     _icon = "terraform.png"
+
+
 class WebPlatform(_Orchestration_Tools):
     _icon = "web-platform.png"
 

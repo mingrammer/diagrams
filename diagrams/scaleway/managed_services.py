@@ -2,6 +2,7 @@
 
 from . import _Scaleway
 
+
 class _Managed_Services(_Scaleway):
     _type = "managed_services"
     _icon_dir = "resources/scaleway/managed_services"
@@ -9,16 +10,28 @@ class _Managed_Services(_Scaleway):
 
 class Devices(_Managed_Services):
     _icon = "devices.png"
+
+
 class HubNetworks(_Managed_Services):
     _icon = "hub-networks.png"
+
+
 class HubRoutes(_Managed_Services):
     _icon = "hub-routes.png"
+
+
 class IotHub(_Managed_Services):
     _icon = "iot-hub.png"
+
+
 class Smtp(_Managed_Services):
     _icon = "smtp.png"
+
+
 class TransactionalEmail(_Managed_Services):
     _icon = "transactional-email.png"
+
+
 class WebHosting(_Managed_Services):
     _icon = "web-hosting.png"
 

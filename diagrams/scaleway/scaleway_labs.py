@@ -2,6 +2,7 @@
 
 from . import _Scaleway
 
+
 class _Scaleway_Labs(_Scaleway):
     _type = "scaleway_labs"
     _icon_dir = "resources/scaleway/scaleway_labs"
@@ -9,10 +10,16 @@ class _Scaleway_Labs(_Scaleway):
 
 class IpfsNaming(_Scaleway_Labs):
     _icon = "ipfs-naming.png"
+
+
 class IpfsPinning(_Scaleway_Labs):
     _icon = "ipfs-pinning.png"
+
+
 class Qaas(_Scaleway_Labs):
     _icon = "qaas.png"
+
+
 class QuantumApplication(_Scaleway_Labs):
     _icon = "quantum-application.png"
 
