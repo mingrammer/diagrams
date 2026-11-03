@@ -74,6 +74,19 @@ class DiagramTest(unittest.TestCase):
         with self.assertRaises(EnvironmentError):
             Node("node")
 
+    def test_connect_rejects_invalid_node(self):
+        with Diagram(filename=self.name, show=False):
+            node = Node("source")
+            with self.assertRaisesRegex(ValueError, "not a valid Node"):
+                node.connect("invalid", Edge())
+
+    def test_connect_rejects_invalid_edge(self):
+        with Diagram(filename=self.name, show=False):
+            source = Node("source")
+            target = Node("target")
+            with self.assertRaisesRegex(ValueError, "not a valid Edge"):
+                source.connect(target, "invalid")
+
     def test_node_to_node(self):
         with Diagram(name=os.path.join(self.name, "node_to_node"), show=False):
             node1 = Node("node1")
