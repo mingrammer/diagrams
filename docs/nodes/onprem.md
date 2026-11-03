@@ -317,6 +317,9 @@ Node classes list of the onprem provider.
 <img width="30" src="/img/resources/onprem/inmemory/redis.png" alt="Redis" style="float: left; padding-right: 5px;" >
 **diagrams.onprem.inmemory.Redis**
 
+<img width="30" src="/img/resources/onprem/inmemory/valkey.png" alt="Valkey" style="float: left; padding-right: 5px;" >
+**diagrams.onprem.inmemory.Valkey**
+
 ## onprem.logging
 
 

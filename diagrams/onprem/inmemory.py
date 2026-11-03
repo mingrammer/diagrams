@@ -24,4 +24,8 @@ class Redis(_Inmemory):
     _icon = "redis.png"
 
 
+class Valkey(_Inmemory):
+    _icon = "valkey.png"
+
+
 # Aliases
