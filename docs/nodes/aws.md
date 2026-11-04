@@ -1571,11 +1571,23 @@ Node classes list of the aws provider.
 <img width="30" src="/img/resources/aws/storage/s3-access-points.png" alt="S3AccessPoints" style="float: left; padding-right: 5px;" >
 **diagrams.aws.storage.S3AccessPoints**
 
+<img width="30" src="/img/resources/aws/storage/s3-express-one-zone.png" alt="S3ExpressOneZone" style="float: left; padding-right: 5px;" >
+**diagrams.aws.storage.S3ExpressOneZone**
+
 <img width="30" src="/img/resources/aws/storage/s3-files.png" alt="S3Files" style="float: left; padding-right: 5px;" >
 **diagrams.aws.storage.S3Files**
 
 <img width="30" src="/img/resources/aws/storage/s3-glacier-archive.png" alt="S3GlacierArchive" style="float: left; padding-right: 5px;" >
 **diagrams.aws.storage.S3GlacierArchive**
+
+<img width="30" src="/img/resources/aws/storage/s3-glacier-deep-archive.png" alt="S3GlacierDeepArchive" style="float: left; padding-right: 5px;" >
+**diagrams.aws.storage.S3GlacierDeepArchive**
+
+<img width="30" src="/img/resources/aws/storage/s3-glacier-flexible-retrieval.png" alt="S3GlacierFlexibleRetrieval" style="float: left; padding-right: 5px;" >
+**diagrams.aws.storage.S3GlacierFlexibleRetrieval**
+
+<img width="30" src="/img/resources/aws/storage/s3-glacier-instant-retrieval.png" alt="S3GlacierInstantRetrieval" style="float: left; padding-right: 5px;" >
+**diagrams.aws.storage.S3GlacierInstantRetrieval**
 
 <img width="30" src="/img/resources/aws/storage/s3-glacier-vault.png" alt="S3GlacierVault" style="float: left; padding-right: 5px;" >
 **diagrams.aws.storage.S3GlacierVault**
@@ -1583,8 +1595,20 @@ Node classes list of the aws provider.
 <img width="30" src="/img/resources/aws/storage/s3-glacier.png" alt="S3Glacier" style="float: left; padding-right: 5px;" >
 **diagrams.aws.storage.S3Glacier**
 
+<img width="30" src="/img/resources/aws/storage/s3-intelligent-tiering.png" alt="S3IntelligentTiering" style="float: left; padding-right: 5px;" >
+**diagrams.aws.storage.S3IntelligentTiering**
+
 <img width="30" src="/img/resources/aws/storage/s3-object-lambda-access-points.png" alt="S3ObjectLambdaAccessPoints" style="float: left; padding-right: 5px;" >
 **diagrams.aws.storage.S3ObjectLambdaAccessPoints**
+
+<img width="30" src="/img/resources/aws/storage/s3-one-zone-ia.png" alt="S3OneZoneIa" style="float: left; padding-right: 5px;" >
+**diagrams.aws.storage.S3OneZoneIa**
+
+<img width="30" src="/img/resources/aws/storage/s3-standard-ia.png" alt="S3StandardIa" style="float: left; padding-right: 5px;" >
+**diagrams.aws.storage.S3StandardIa**
+
+<img width="30" src="/img/resources/aws/storage/s3-standard.png" alt="S3Standard" style="float: left; padding-right: 5px;" >
+**diagrams.aws.storage.S3Standard**
 
 <img width="30" src="/img/resources/aws/storage/simple-storage-service-s3-bucket-with-objects.png" alt="SimpleStorageServiceS3BucketWithObjects" style="float: left; padding-right: 5px;" >
 **diagrams.aws.storage.SimpleStorageServiceS3BucketWithObjects**

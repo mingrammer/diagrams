@@ -64,12 +64,28 @@ class S3AccessPoints(_Storage):
     _icon = "s3-access-points.png"
 
 
+class S3ExpressOneZone(_Storage):
+    _icon = "s3-express-one-zone.png"
+
+
 class S3Files(_Storage):
     _icon = "s3-files.png"
 
 
 class S3GlacierArchive(_Storage):
     _icon = "s3-glacier-archive.png"
+
+
+class S3GlacierDeepArchive(_Storage):
+    _icon = "s3-glacier-deep-archive.png"
+
+
+class S3GlacierFlexibleRetrieval(_Storage):
+    _icon = "s3-glacier-flexible-retrieval.png"
+
+
+class S3GlacierInstantRetrieval(_Storage):
+    _icon = "s3-glacier-instant-retrieval.png"
 
 
 class S3GlacierVault(_Storage):
@@ -80,8 +96,24 @@ class S3Glacier(_Storage):
     _icon = "s3-glacier.png"
 
 
+class S3IntelligentTiering(_Storage):
+    _icon = "s3-intelligent-tiering.png"
+
+
 class S3ObjectLambdaAccessPoints(_Storage):
     _icon = "s3-object-lambda-access-points.png"
+
+
+class S3OneZoneIa(_Storage):
+    _icon = "s3-one-zone-ia.png"
+
+
+class S3StandardIa(_Storage):
+    _icon = "s3-standard-ia.png"
+
+
+class S3Standard(_Storage):
+    _icon = "s3-standard.png"
 
 
 class SimpleStorageServiceS3BucketWithObjects(_Storage):
