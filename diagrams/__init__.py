@@ -1,11 +1,16 @@
+import base64
 import contextvars
+import html
 import importlib.metadata
+import mimetypes
 import os
+import re
 import uuid
 from pathlib import Path
 from typing import Dict, List, Optional, Union
 
 from graphviz import Digraph
+from graphviz import view as view_file
 
 
 def _distribution_version() -> str:
@@ -88,6 +93,41 @@ def getcluster() -> "Cluster":
 
 def setcluster(cluster: "Cluster"):
     __cluster.set(cluster)
+
+
+_SVG_IMAGE_HREF = re.compile(r'(<image\b[^>]*?\s(?:xlink:)?href=")([^"]*)"')
+
+
+def _image_data_uri(path: str) -> Optional[str]:
+    mime, _ = mimetypes.guess_type(path)
+    if not mime or not mime.startswith("image/") or not os.path.isfile(path):
+        return None
+    with open(path, "rb") as f:
+        data = base64.b64encode(f.read()).decode("ascii")
+    return f"data:{mime};base64,{data}"
+
+
+def _embed_svg_images(svg_path: str) -> None:
+    """Replace the local image files referenced by an SVG file with data URIs."""
+    # Graphviz resolves relative image paths from the directory it renders in,
+    # which is the directory of the output file.
+    base_dir = os.path.dirname(svg_path)
+    data_uris = {}
+
+    def embed(match: re.Match) -> str:
+        href = html.unescape(match.group(2))
+        if href not in data_uris:
+            data_uris[href] = _image_data_uri(os.path.join(base_dir, href))
+        if data_uris[href] is None:
+            return match.group(0)
+        return f'{match.group(1)}{data_uris[href]}"'
+
+    with open(svg_path, encoding="utf-8", newline="") as f:
+        svg = f.read()
+    embedded = _SVG_IMAGE_HREF.sub(embed, svg)
+    if embedded != svg:
+        with open(svg_path, "w", encoding="utf-8", newline="") as f:
+            f.write(embedded)
 
 
 class Diagram:
@@ -260,9 +300,21 @@ class Diagram:
     def render(self) -> None:
         if isinstance(self.outformat, list):
             for one_format in self.outformat:
-                self.dot.render(format=one_format, view=self.show, quiet=True)
+                self._render(one_format)
         else:
-            self.dot.render(format=self.outformat, view=self.show, quiet=True)
+            self._render(self.outformat)
+
+    def _render(self, outformat: str) -> None:
+        if outformat.lower() != "svg":
+            self.dot.render(format=outformat, view=self.show, quiet=True)
+            return
+        # Graphviz links node icons in SVG output by their local file path, so
+        # the icons are missing once the file is moved, published or opened in a
+        # viewer that doesn't load local files. Embed them to make it portable.
+        path = self.dot.render(format=outformat, quiet=True)
+        _embed_svg_images(path)
+        if self.show:
+            view_file(path)
 
 
 class Cluster:
