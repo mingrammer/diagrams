@@ -1,3 +1,4 @@
+import base64
 import os
 import pathlib
 import shutil
@@ -133,6 +134,27 @@ class DiagramTest(unittest.TestCase):
 
         # clean the dot file as it only generated here
         os.remove(self.name + ".dot")
+
+    def test_svg_embeds_icons(self):
+        """Check that svg output embeds the icons instead of linking local files."""
+        from diagrams.aws.compute import EC2
+        from diagrams.custom import Custom
+
+        os.makedirs(self.name)
+        filename = os.path.join(self.name, "svg_icons")
+        with Diagram(filename=filename, show=False, outformat="svg"):
+            icon = EC2("web")._load_icon()
+            # Graphviz resolves relative icon paths from the output directory.
+            shutil.copy(icon, os.path.join(self.name, "custom.png"))
+            Custom("custom", "custom.png")
+
+        with open(filename + ".svg", encoding="utf-8") as f:
+            svg = f.read()
+        with open(icon, "rb") as f:
+            data_uri = "data:image/png;base64," + base64.b64encode(f.read()).decode("ascii")
+        self.assertEqual(svg.count(f'href="{data_uri}"'), 2)
+        self.assertNotIn(icon, svg)
+        self.assertNotIn('href="custom.png"', svg)
 
 
 class NodeHeightTest(unittest.TestCase):
